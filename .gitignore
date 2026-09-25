@@ -1,0 +1,11 @@
+**/__pycache__/
+*.pyc
+.DS_Store
+._*
+.env
+.state/
+.cache/
+**/data/
+*.tar
+*.tar.gz
+*.part-*

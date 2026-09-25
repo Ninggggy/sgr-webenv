@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pagetitle }}</title>
+<link rel="stylesheet" href="/assets/browse/css/arXiv.css">
+<link rel="stylesheet" href="/assets/browse/css/browse_search.css">
+<link rel="stylesheet" href="/assets/browse/css/tooltip.css">
+<link rel="icon" href="/assets/browse/images/icons/favicon-32x32.png">
+<script>
+  window.MathJax = {
+    messageStyle: "none",
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true,
+      ignoreClass: '.*',
+      processClass: 'mathjax.*'
+    },
+    TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js"],
+        noErrors: {
+          inlineDelimiters: ["$","$"],
+          multiLine: false,
+          style: {
+            "font-size": "normal",
+            "border": ""
+          }
+        }
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  };
+</script>
+{% if request.cookies.get('arxiv_mathjax') != 'disabled' %}<script src='/assets/mathjax/MathJax.js'></script>{% endif %}
+<script defer src='/assets/mathjax-toggle.js'></script>
+
+{% block addl_head %}{% endblock %}</head><body {% block body_id %}{% endblock %} class="with-cu-identity"><div class="flex-wrap-footer">
+{% include 'archived-header.html' %}
+<main><div id="content">
+{% block content %}{% endblock %}</div></main>
+{% include 'archived-footer.html' %}
+</div></body></html>

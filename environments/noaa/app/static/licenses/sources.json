@@ -1,0 +1,47 @@
+[
+  {
+    "file": "jquery-3.7.1-MIT.txt",
+    "source": "https://raw.githubusercontent.com/jquery/jquery/3.7.1/LICENSE.txt"
+  },
+  {
+    "file": "jquery-ui-1.13.2-MIT.txt",
+    "source": "https://raw.githubusercontent.com/jquery/jquery-ui/1.13.2/LICENSE.txt"
+  },
+  {
+    "file": "bootstrap-5.3.2-MIT.txt",
+    "source": "https://raw.githubusercontent.com/twbs/bootstrap/v5.3.2/LICENSE"
+  },
+  {
+    "file": "bootstrap-icons-1.10.5-MIT.txt",
+    "source": "https://raw.githubusercontent.com/twbs/icons/v1.10.5/LICENSE"
+  },
+  {
+    "file": "Font-Awesome-6.0.0-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.0.0/LICENSE.txt"
+  },
+  {
+    "file": "leaflet-1.8.0-BSD.txt",
+    "source": "https://raw.githubusercontent.com/Leaflet/Leaflet/v1.8.0/LICENSE"
+  },
+  {
+    "file": "noUiSlider-15.8.1-MIT.txt",
+    "source": "https://raw.githubusercontent.com/leongersen/noUiSlider/15.8.1/LICENSE.md"
+  },
+  {
+    "file": "leaflet-easyPrint-MIT.txt",
+    "source": "https://raw.githubusercontent.com/rowanwins/leaflet-easyPrint/gh-pages/LICENSE"
+  },
+  {
+    "file": "dom-to-image-MIT.txt",
+    "source": "https://raw.githubusercontent.com/tsayen/dom-to-image/master/LICENSE"
+  },
+  {
+    "file": "FileSaver-MIT.txt",
+    "source": "https://raw.githubusercontent.com/eligrey/FileSaver.js/master/LICENSE.md"
+  },
+  {
+    "file": "tablesorter-2.32.0-MIT.txt",
+    "source": "https://raw.githubusercontent.com/Mottie/tablesorter/v2.32.0/js/jquery.tablesorter.js",
+    "note": "Upstream dual-license notice plus standard MIT terms; MIT option selected."
+  }
+]

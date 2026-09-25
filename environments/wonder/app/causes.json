@@ -1,0 +1,1332 @@
+{
+  "GR130-001": {
+    "label": "Certain infectious and parasitic diseases (A00-B99,U07.1)",
+    "ancestors": [
+      "GR130-001"
+    ],
+    "rankable": false
+  },
+  "GR130-002": {
+    "label": "Certain intestinal infectious diseases (A00-A08)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-002"
+    ],
+    "rankable": false
+  },
+  "GR130-003": {
+    "label": "#Diarrhea and gastroenteritis of infectious origin (A09)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-003"
+    ],
+    "rankable": true
+  },
+  "GR130-004": {
+    "label": "#Tuberculosis (A16-A19)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-004"
+    ],
+    "rankable": true
+  },
+  "GR130-005": {
+    "label": "#Tetanus (A33,A35)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-005"
+    ],
+    "rankable": true
+  },
+  "GR130-006": {
+    "label": "#Diphtheria (A36)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-006"
+    ],
+    "rankable": true
+  },
+  "GR130-007": {
+    "label": "#Whooping cough (A37)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-007"
+    ],
+    "rankable": true
+  },
+  "GR130-008": {
+    "label": "#Meningococcal infection (A39)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-008"
+    ],
+    "rankable": true
+  },
+  "GR130-009": {
+    "label": "#Septicemia (A40-A41)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-009"
+    ],
+    "rankable": true
+  },
+  "GR130-010": {
+    "label": "#Congenital syphilis (A50)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-010"
+    ],
+    "rankable": true
+  },
+  "GR130-011": {
+    "label": "#Gonococcal infection (A54)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-011"
+    ],
+    "rankable": true
+  },
+  "GR130-012": {
+    "label": "Viral diseases (A80-B34,U07.1)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012"
+    ],
+    "rankable": false
+  },
+  "GR130-013": {
+    "label": "#Acute poliomyelitis (A80)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-013"
+    ],
+    "rankable": true
+  },
+  "GR130-014": {
+    "label": "#Varicella (chickenpox) (B01)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-014"
+    ],
+    "rankable": true
+  },
+  "GR130-015": {
+    "label": "#Measles (B05)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-015"
+    ],
+    "rankable": true
+  },
+  "GR130-016": {
+    "label": "#Human immunodeficiency virus (HIV) disease (B20-B24)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-016"
+    ],
+    "rankable": true
+  },
+  "GR130-017": {
+    "label": "#Mumps (B26)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-017"
+    ],
+    "rankable": true
+  },
+  "GR130-018": {
+    "label": "Other and unspecified viral diseases (A81-B00,B02-B04,B06-B19,B25,B27-B34,U07.1)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-012",
+      "GR130-018"
+    ],
+    "rankable": false
+  },
+  "GR130-019": {
+    "label": "#Candidiasis (B37)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-019"
+    ],
+    "rankable": true
+  },
+  "GR130-020": {
+    "label": "#Malaria (B50-B54)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-020"
+    ],
+    "rankable": true
+  },
+  "GR130-021": {
+    "label": "#Pneumocystosis (B59)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-021"
+    ],
+    "rankable": true
+  },
+  "GR130-022": {
+    "label": "All other and unspecified infectious and parasitic diseases (A20-A32,A38,A42-A49,A51-A53,A55-A79,B35-B36,B38-B49,B55-B58,B60-B99)",
+    "ancestors": [
+      "GR130-001",
+      "GR130-022"
+    ],
+    "rankable": false
+  },
+  "GR130-023": {
+    "label": "Neoplasms (C00-D48)",
+    "ancestors": [
+      "GR130-023"
+    ],
+    "rankable": false
+  },
+  "GR130-024": {
+    "label": "#Malignant neoplasms (C00-C97)",
+    "ancestors": [
+      "GR130-023",
+      "GR130-024"
+    ],
+    "rankable": true
+  },
+  "GR130-025": {
+    "label": "Hodgkin disease and non-Hodgkin lymphomas (C81-C85)",
+    "ancestors": [
+      "GR130-023",
+      "GR130-024",
+      "GR130-025"
+    ],
+    "rankable": false
+  },
+  "GR130-026": {
+    "label": "Leukemia (C91-C95)",
+    "ancestors": [
+      "GR130-023",
+      "GR130-024",
+      "GR130-026"
+    ],
+    "rankable": false
+  },
+  "GR130-027": {
+    "label": "Other and unspecified malignant neoplasms (C00-C80,C88,C90,C96-C97)",
+    "ancestors": [
+      "GR130-023",
+      "GR130-024",
+      "GR130-027"
+    ],
+    "rankable": false
+  },
+  "GR130-028": {
+    "label": "#In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown behavior (D00-D48)",
+    "ancestors": [
+      "GR130-023",
+      "GR130-028"
+    ],
+    "rankable": true
+  },
+  "GR130-029": {
+    "label": "#Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)",
+    "ancestors": [
+      "GR130-029"
+    ],
+    "rankable": true
+  },
+  "GR130-030": {
+    "label": "Anemias (D50-D64)",
+    "ancestors": [
+      "GR130-029",
+      "GR130-030"
+    ],
+    "rankable": false
+  },
+  "GR130-031": {
+    "label": "Hemorrhagic conditions and other diseases of blood and blood-forming organs (D65-D76)",
+    "ancestors": [
+      "GR130-029",
+      "GR130-031"
+    ],
+    "rankable": false
+  },
+  "GR130-032": {
+    "label": "Certain disorders involving the immune mechanism (D80-D89)",
+    "ancestors": [
+      "GR130-029",
+      "GR130-032"
+    ],
+    "rankable": false
+  },
+  "GR130-033": {
+    "label": "Endocrine, nutritional and metabolic diseases (E00-E88)",
+    "ancestors": [
+      "GR130-033"
+    ],
+    "rankable": false
+  },
+  "GR130-034": {
+    "label": "#Short stature, not elsewhere classified (E34.3)",
+    "ancestors": [
+      "GR130-033",
+      "GR130-034"
+    ],
+    "rankable": true
+  },
+  "GR130-035": {
+    "label": "#Nutritional deficiencies (E40-E64)",
+    "ancestors": [
+      "GR130-033",
+      "GR130-035"
+    ],
+    "rankable": true
+  },
+  "GR130-036": {
+    "label": "#Cystic fibrosis (E84)",
+    "ancestors": [
+      "GR130-033",
+      "GR130-036"
+    ],
+    "rankable": true
+  },
+  "GR130-037": {
+    "label": "#Volume depletion, disorders of fluid, electrolyte and acid-base balance (E86-E87)",
+    "ancestors": [
+      "GR130-033",
+      "GR130-037"
+    ],
+    "rankable": true
+  },
+  "GR130-038": {
+    "label": "All other endocrine, nutritional and metabolic diseases (E00-E32,E34.0-E34.2,E34.4-E34.9,E65-E83,E85,E88)",
+    "ancestors": [
+      "GR130-033",
+      "GR130-038"
+    ],
+    "rankable": false
+  },
+  "GR130-039": {
+    "label": "Diseases of the nervous system (G00-G98)",
+    "ancestors": [
+      "GR130-039"
+    ],
+    "rankable": false
+  },
+  "GR130-040": {
+    "label": "#Meningitis (G00,G03)",
+    "ancestors": [
+      "GR130-039",
+      "GR130-040"
+    ],
+    "rankable": true
+  },
+  "GR130-041": {
+    "label": "#Infantile spinal muscular atrophy, type I (Werdnig-Hoffman) (G12.0)",
+    "ancestors": [
+      "GR130-039",
+      "GR130-041"
+    ],
+    "rankable": true
+  },
+  "GR130-042": {
+    "label": "#Infantile cerebral palsy (G80)",
+    "ancestors": [
+      "GR130-039",
+      "GR130-042"
+    ],
+    "rankable": true
+  },
+  "GR130-043": {
+    "label": "#Anoxic brain damage, not elsewhere classified (G93.1)",
+    "ancestors": [
+      "GR130-039",
+      "GR130-043"
+    ],
+    "rankable": true
+  },
+  "GR130-044": {
+    "label": "Other diseases of nervous system (G04,G06-G11,G12.1-G12.9,G20-G72,G81-G92,G93.0,G93.2-G93.9,G95-G98)",
+    "ancestors": [
+      "GR130-039",
+      "GR130-044"
+    ],
+    "rankable": false
+  },
+  "GR130-045": {
+    "label": "#Diseases of the ear and mastoid process (H60-H93)",
+    "ancestors": [
+      "GR130-045"
+    ],
+    "rankable": true
+  },
+  "GR130-046": {
+    "label": "#Diseases of the circulatory system (I00-I99)",
+    "ancestors": [
+      "GR130-046"
+    ],
+    "rankable": true
+  },
+  "GR130-047": {
+    "label": "Pulmonary heart disease and diseases of pulmonary circulation (I26-I28)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-047"
+    ],
+    "rankable": false
+  },
+  "GR130-048": {
+    "label": "Pericarditis, endocarditis and myocarditis (I30,I33,I40)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-048"
+    ],
+    "rankable": false
+  },
+  "GR130-049": {
+    "label": "Cardiomyopathy (I42)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-049"
+    ],
+    "rankable": false
+  },
+  "GR130-050": {
+    "label": "Cardiac arrest (I46)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-050"
+    ],
+    "rankable": false
+  },
+  "GR130-051": {
+    "label": "Cerebrovascular diseases (I60-I69)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-051"
+    ],
+    "rankable": false
+  },
+  "GR130-052": {
+    "label": "All other diseases of circulatory system (I00-I25,I31,I34-I38,I44-I45,I47-I51,I70-I99)",
+    "ancestors": [
+      "GR130-046",
+      "GR130-052"
+    ],
+    "rankable": false
+  },
+  "GR130-053": {
+    "label": "Diseases of the respiratory system (J00-J98,U04)",
+    "ancestors": [
+      "GR130-053"
+    ],
+    "rankable": false
+  },
+  "GR130-054": {
+    "label": "#Acute upper respiratory infections (J00-J06)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-054"
+    ],
+    "rankable": true
+  },
+  "GR130-055": {
+    "label": "#Influenza and pneumonia (J09-J18)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-055"
+    ],
+    "rankable": true
+  },
+  "GR130-056": {
+    "label": "Influenza (J09-J11)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-055",
+      "GR130-056"
+    ],
+    "rankable": false
+  },
+  "GR130-057": {
+    "label": "Pneumonia (J12-J18)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-055",
+      "GR130-057"
+    ],
+    "rankable": false
+  },
+  "GR130-058": {
+    "label": "#Acute bronchitis and acute bronchiolitis (J20-J21)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-058"
+    ],
+    "rankable": true
+  },
+  "GR130-059": {
+    "label": "#Bronchitis, chronic and unspecified (J40-J42)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-059"
+    ],
+    "rankable": true
+  },
+  "GR130-060": {
+    "label": "#Asthma (J45-J46)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-060"
+    ],
+    "rankable": true
+  },
+  "GR130-061": {
+    "label": "#Pneumonitis due to solids and liquids (J69)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-061"
+    ],
+    "rankable": true
+  },
+  "GR130-062": {
+    "label": "Other and unspecified diseases of respiratory system (J22,J30-J39,J43-J44,J47-J68,J70-J98,U04)",
+    "ancestors": [
+      "GR130-053",
+      "GR130-062"
+    ],
+    "rankable": false
+  },
+  "GR130-063": {
+    "label": "Diseases of the digestive system (K00-K92)",
+    "ancestors": [
+      "GR130-063"
+    ],
+    "rankable": false
+  },
+  "GR130-064": {
+    "label": "#Gastritis, duodenitis, and noninfective enteritis and colitis (K29,K50-K55)",
+    "ancestors": [
+      "GR130-063",
+      "GR130-064"
+    ],
+    "rankable": true
+  },
+  "GR130-065": {
+    "label": "#Hernia of abdominal cavity and intestinal obstruction without hernia (K40-K46,K56)",
+    "ancestors": [
+      "GR130-063",
+      "GR130-065"
+    ],
+    "rankable": true
+  },
+  "GR130-066": {
+    "label": "All other and unspecified diseases of digestive system (K00-K28,K30-K38,K57-K92)",
+    "ancestors": [
+      "GR130-063",
+      "GR130-066"
+    ],
+    "rankable": false
+  },
+  "GR130-067": {
+    "label": "Diseases of the genitourinary system (N00-N95)",
+    "ancestors": [
+      "GR130-067"
+    ],
+    "rankable": false
+  },
+  "GR130-068": {
+    "label": "#Renal failure and other disorders of kidney (N17-N19,N25,N27)",
+    "ancestors": [
+      "GR130-067",
+      "GR130-068"
+    ],
+    "rankable": true
+  },
+  "GR130-069": {
+    "label": "Other and unspecified diseases of genitourinary system (N00-N15,N20-N23,N26,N28-N95)",
+    "ancestors": [
+      "GR130-067",
+      "GR130-069"
+    ],
+    "rankable": false
+  },
+  "GR130-070": {
+    "label": "Certain conditions originating in the perinatal period (P00-P96)",
+    "ancestors": [
+      "GR130-070"
+    ],
+    "rankable": false
+  },
+  "GR130-071": {
+    "label": "Newborn affected by maternal factors and by complications of pregnancy, labor and delivery (P00-P04)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071"
+    ],
+    "rankable": false
+  },
+  "GR130-072": {
+    "label": "#Newborn affected by maternal hypertensive disorders (P00.0)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-072"
+    ],
+    "rankable": true
+  },
+  "GR130-073": {
+    "label": "#Newborn affected by other maternal conditions which may be unrelated to present pregnancy (P00.1-P00.9)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-073"
+    ],
+    "rankable": true
+  },
+  "GR130-074": {
+    "label": "#Newborn affected by maternal complications of pregnancy (P01)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-074"
+    ],
+    "rankable": true
+  },
+  "GR130-075": {
+    "label": "Newborn affected by incompetent cervix (P01.0)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-074",
+      "GR130-075"
+    ],
+    "rankable": false
+  },
+  "GR130-076": {
+    "label": "Newborn affected by premature rupture of membranes (P01.1)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-074",
+      "GR130-076"
+    ],
+    "rankable": false
+  },
+  "GR130-077": {
+    "label": "Newborn affected by multiple pregnancy (P01.5)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-074",
+      "GR130-077"
+    ],
+    "rankable": false
+  },
+  "GR130-078": {
+    "label": "Newborn affected by other maternal complications of pregnancy (P01.2-P01.4,P01.6-P01.9)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-074",
+      "GR130-078"
+    ],
+    "rankable": false
+  },
+  "GR130-079": {
+    "label": "#Newborn affected by complications of placenta, cord and membranes (P02)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-079"
+    ],
+    "rankable": true
+  },
+  "GR130-080": {
+    "label": "Newborn affected by complications involving placenta (P02.0-P02.3)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-079",
+      "GR130-080"
+    ],
+    "rankable": false
+  },
+  "GR130-081": {
+    "label": "Newborn affected by complications involving cord (P02.4-P02.6)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-079",
+      "GR130-081"
+    ],
+    "rankable": false
+  },
+  "GR130-082": {
+    "label": "Newborn affected by chorioamnionitis (P02.7)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-079",
+      "GR130-082"
+    ],
+    "rankable": false
+  },
+  "GR130-083": {
+    "label": "Newborn affected by other and unspecified abnormalities of membranes (P02.8-P02.9)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-079",
+      "GR130-083"
+    ],
+    "rankable": false
+  },
+  "GR130-084": {
+    "label": "#Newborn affected by other complications of labor and delivery (P03)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-084"
+    ],
+    "rankable": true
+  },
+  "GR130-085": {
+    "label": "#Newborn affected by noxious influences transmitted via placenta or breast milk (P04)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-071",
+      "GR130-085"
+    ],
+    "rankable": true
+  },
+  "GR130-086": {
+    "label": "Disorders related to length of gestation and fetal malnutrition (P05-P08)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086"
+    ],
+    "rankable": false
+  },
+  "GR130-087": {
+    "label": "#Slow fetal growth and fetal malnutrition (P05)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086",
+      "GR130-087"
+    ],
+    "rankable": true
+  },
+  "GR130-088": {
+    "label": "#Disorders related to short gestation and low birth weight, not elsewhere classified (P07)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086",
+      "GR130-088"
+    ],
+    "rankable": true
+  },
+  "GR130-089": {
+    "label": "Extremely low birth weight or extreme immaturity (P07.0,P07.2)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086",
+      "GR130-088",
+      "GR130-089"
+    ],
+    "rankable": false
+  },
+  "GR130-090": {
+    "label": "Other low birth weight or preterm (P07.1,P07.3)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086",
+      "GR130-088",
+      "GR130-090"
+    ],
+    "rankable": false
+  },
+  "GR130-091": {
+    "label": "#Disorders related to long gestation and high birth weight (P08)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-086",
+      "GR130-091"
+    ],
+    "rankable": true
+  },
+  "GR130-092": {
+    "label": "#Birth trauma (P10-P15)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-092"
+    ],
+    "rankable": true
+  },
+  "GR130-093": {
+    "label": "#Intrauterine hypoxia and birth asphyxia (P20-P21)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-093"
+    ],
+    "rankable": true
+  },
+  "GR130-094": {
+    "label": "Intrauterine hypoxia (P20)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-093",
+      "GR130-094"
+    ],
+    "rankable": false
+  },
+  "GR130-095": {
+    "label": "Birth asphyxia (P21)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-093",
+      "GR130-095"
+    ],
+    "rankable": false
+  },
+  "GR130-096": {
+    "label": "#Respiratory distress of newborn (P22)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-096"
+    ],
+    "rankable": true
+  },
+  "GR130-097": {
+    "label": "Other respiratory conditions originating in the perinatal period (P23-P28)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097"
+    ],
+    "rankable": false
+  },
+  "GR130-098": {
+    "label": "#Congenital pneumonia (P23)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-098"
+    ],
+    "rankable": true
+  },
+  "GR130-099": {
+    "label": "#Neonatal aspiration syndromes (P24)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-099"
+    ],
+    "rankable": true
+  },
+  "GR130-100": {
+    "label": "#Interstitial emphysema and related conditions originating in the perinatal period (P25)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-100"
+    ],
+    "rankable": true
+  },
+  "GR130-101": {
+    "label": "#Pulmonary hemorrhage originating in the perinatal period (P26)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-101"
+    ],
+    "rankable": true
+  },
+  "GR130-102": {
+    "label": "#Chronic respiratory disease originating in the perinatal period (P27)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-102"
+    ],
+    "rankable": true
+  },
+  "GR130-103": {
+    "label": "#Atelectasis (P28.0-P28.1)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-103"
+    ],
+    "rankable": true
+  },
+  "GR130-104": {
+    "label": "All other respiratory conditions originating in the perinatal period (P28.2-P28.9)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-097",
+      "GR130-104"
+    ],
+    "rankable": false
+  },
+  "GR130-105": {
+    "label": "Infections specific to the perinatal period (P35-P39)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-105"
+    ],
+    "rankable": false
+  },
+  "GR130-106": {
+    "label": "#Bacterial sepsis of newborn (P36)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-105",
+      "GR130-106"
+    ],
+    "rankable": true
+  },
+  "GR130-107": {
+    "label": "#Omphalitis of newborn with or without mild hemorrhage (P38)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-105",
+      "GR130-107"
+    ],
+    "rankable": true
+  },
+  "GR130-108": {
+    "label": "All other infections specific to the perinatal period (P35,P37,P39)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-105",
+      "GR130-108"
+    ],
+    "rankable": false
+  },
+  "GR130-109": {
+    "label": "Hemorrhagic and hematological disorders of newborn (P50-P61)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-109"
+    ],
+    "rankable": false
+  },
+  "GR130-110": {
+    "label": "#Neonatal hemorrhage (P50-P52,P54)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-109",
+      "GR130-110"
+    ],
+    "rankable": true
+  },
+  "GR130-111": {
+    "label": "#Hemorrhagic disease of newborn (P53)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-109",
+      "GR130-111"
+    ],
+    "rankable": true
+  },
+  "GR130-112": {
+    "label": "#Hemolytic disease of newborn due to isoimmunization and other perinatal jaundice (P55-P59)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-109",
+      "GR130-112"
+    ],
+    "rankable": true
+  },
+  "GR130-113": {
+    "label": "#Hematological disorders (P60-P61)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-109",
+      "GR130-113"
+    ],
+    "rankable": true
+  },
+  "GR130-114": {
+    "label": "#Syndrome of infant of a diabetic mother and neonatal diabetes mellitus (P70.0-P70.2)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-114"
+    ],
+    "rankable": true
+  },
+  "GR130-115": {
+    "label": "#Necrotizing enterocolitis of newborn (P77)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-115"
+    ],
+    "rankable": true
+  },
+  "GR130-116": {
+    "label": "#Hydrops fetalis not due to hemolytic disease (P83.2)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-116"
+    ],
+    "rankable": true
+  },
+  "GR130-117": {
+    "label": "Other perinatal conditions (P29,P70.3-P70.9,P71-P76,P78-P81,P83.0-P83.1,P83.3-P83.9,P90-P96)",
+    "ancestors": [
+      "GR130-070",
+      "GR130-117"
+    ],
+    "rankable": false
+  },
+  "GR130-118": {
+    "label": "#Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",
+    "ancestors": [
+      "GR130-118"
+    ],
+    "rankable": true
+  },
+  "GR130-119": {
+    "label": "Anencephaly and similar malformations (Q00)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-119"
+    ],
+    "rankable": false
+  },
+  "GR130-120": {
+    "label": "Congenital hydrocephalus (Q03)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-120"
+    ],
+    "rankable": false
+  },
+  "GR130-121": {
+    "label": "Spina bifida (Q05)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-121"
+    ],
+    "rankable": false
+  },
+  "GR130-122": {
+    "label": "Other congenital malformations of nervous system (Q01-Q02,Q04,Q06-Q07)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-122"
+    ],
+    "rankable": false
+  },
+  "GR130-123": {
+    "label": "Congenital malformations of heart (Q20-Q24)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-123"
+    ],
+    "rankable": false
+  },
+  "GR130-124": {
+    "label": "Other congenital malformations of circulatory system (Q25-Q28)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-124"
+    ],
+    "rankable": false
+  },
+  "GR130-125": {
+    "label": "Congenital malformations of respiratory system (Q30-Q34)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-125"
+    ],
+    "rankable": false
+  },
+  "GR130-126": {
+    "label": "Congenital malformations of digestive system (Q35-Q45)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-126"
+    ],
+    "rankable": false
+  },
+  "GR130-127": {
+    "label": "Congenital malformations of genitourinary system (Q50-Q64)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-127"
+    ],
+    "rankable": false
+  },
+  "GR130-128": {
+    "label": "Congenital malformations and deformations of musculoskeletal system, limbs and integument (Q65-Q85)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-128"
+    ],
+    "rankable": false
+  },
+  "GR130-129": {
+    "label": "Down syndrome (Q90)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-129"
+    ],
+    "rankable": false
+  },
+  "GR130-130": {
+    "label": "Edward syndrome (Q91.0-Q91.3)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-130"
+    ],
+    "rankable": false
+  },
+  "GR130-131": {
+    "label": "Patau syndrome (Q91.4-Q91.7)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-131"
+    ],
+    "rankable": false
+  },
+  "GR130-132": {
+    "label": "Other congenital malformations and deformations (Q10-Q18,Q86-Q89)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-132"
+    ],
+    "rankable": false
+  },
+  "GR130-133": {
+    "label": "Other chromosomal abnormalities, not elsewhere classified (Q92-Q99)",
+    "ancestors": [
+      "GR130-118",
+      "GR130-133"
+    ],
+    "rankable": false
+  },
+  "GR130-134": {
+    "label": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)",
+    "ancestors": [
+      "GR130-134"
+    ],
+    "rankable": false
+  },
+  "GR130-135": {
+    "label": "#Sudden infant death syndrome (R95)",
+    "ancestors": [
+      "GR130-134",
+      "GR130-135"
+    ],
+    "rankable": true
+  },
+  "GR130-136": {
+    "label": "Other symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R53,R55-R94,R96-R99)",
+    "ancestors": [
+      "GR130-134",
+      "GR130-136"
+    ],
+    "rankable": false
+  },
+  "GR130-137": {
+    "label": "All other diseases (F00-F99,H00-H57,L00-M99)",
+    "ancestors": [
+      "GR130-137"
+    ],
+    "rankable": false
+  },
+  "GR130-138": {
+    "label": "External causes of mortality (*U01,V01-Y84)",
+    "ancestors": [
+      "GR130-138"
+    ],
+    "rankable": false
+  },
+  "GR130-139": {
+    "label": "#Accidents (unintentional injuries) (V01-X59)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139"
+    ],
+    "rankable": true
+  },
+  "GR130-140": {
+    "label": "Transport accidents (V01-V99)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-140"
+    ],
+    "rankable": false
+  },
+  "GR130-141": {
+    "label": "Motor vehicle accidents (V02-V04,V09.0,V09.2,V12-V14,V19.0-V19.2,V19.4-V19.6,V20-V79,V80.3-V80.5,V81.0-V81.1,V82.0-V82.1,V83-V86,V87.0-V87.8,V88.0-V88.8,V89.0,V89.2)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-140",
+      "GR130-141"
+    ],
+    "rankable": false
+  },
+  "GR130-142": {
+    "label": "Other and unspecified transport accidents (V01,V05-V06,V09.1,V09.3-V09.9,V10-V11,V15-V18,V19.3,V19.8-V19.9,V80.0-V80.2,V80.6-V80.9,V81.2-V81.9,V82.2-V82.9,V87.9,V88.9,V89.1,V89.3,V89.9,V90-V99)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-140",
+      "GR130-142"
+    ],
+    "rankable": false
+  },
+  "GR130-143": {
+    "label": "Falls (W00-W19)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-143"
+    ],
+    "rankable": false
+  },
+  "GR130-144": {
+    "label": "Accidental discharge of firearms (W32-W34)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-144"
+    ],
+    "rankable": false
+  },
+  "GR130-145": {
+    "label": "Accidental drowning and submersion (W65-W74)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-145"
+    ],
+    "rankable": false
+  },
+  "GR130-146": {
+    "label": "Accidental suffocation and strangulation in bed (W75)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-146"
+    ],
+    "rankable": false
+  },
+  "GR130-147": {
+    "label": "Other accidental suffocation and strangulation (W76-W77,W81-W84)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-147"
+    ],
+    "rankable": false
+  },
+  "GR130-148": {
+    "label": "Accidental inhalation and ingestion of food or other objects causing obstruction of respiratory tract (W78-W80)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-148"
+    ],
+    "rankable": false
+  },
+  "GR130-149": {
+    "label": "Accidents caused by exposure to smoke, fire and flames (X00-X09)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-149"
+    ],
+    "rankable": false
+  },
+  "GR130-150": {
+    "label": "Accidental poisoning and exposure to noxious substances (X40-X49)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-150"
+    ],
+    "rankable": false
+  },
+  "GR130-151": {
+    "label": "Other and unspecified accidents (W20-W31,W35-W64,W85-W99,X10-X39,X50-X59)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-139",
+      "GR130-151"
+    ],
+    "rankable": false
+  },
+  "GR130-152": {
+    "label": "#Assault (homicide) (*U01,X85-Y09)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-152"
+    ],
+    "rankable": true
+  },
+  "GR130-153": {
+    "label": "Assault (homicide) by hanging, strangulation and suffocation (X91)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-152",
+      "GR130-153"
+    ],
+    "rankable": false
+  },
+  "GR130-154": {
+    "label": "Assault (homicide) by discharge of firearms (*U01.4,X93-X95)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-152",
+      "GR130-154"
+    ],
+    "rankable": false
+  },
+  "GR130-155": {
+    "label": "Neglect, abandonment and other maltreatment syndromes (Y06-Y07)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-152",
+      "GR130-155"
+    ],
+    "rankable": false
+  },
+  "GR130-156": {
+    "label": "Assault (homicide) by other and unspecified means (*U01.0-*U01.3,*U01.5-*U01.9,X85-X90,X92,X96-X99,Y00-Y05,Y08-Y09)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-152",
+      "GR130-156"
+    ],
+    "rankable": false
+  },
+  "GR130-157": {
+    "label": "#Complications of medical and surgical care (Y40-Y84)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-157"
+    ],
+    "rankable": true
+  },
+  "GR130-158": {
+    "label": "Other external causes (Y10-Y36)",
+    "ancestors": [
+      "GR130-138",
+      "GR130-158"
+    ],
+    "rankable": false
+  },
+  "GR130-999": {
+    "label": "All unspecified codes",
+    "ancestors": [
+      "GR130-999"
+    ],
+    "rankable": false
+  }
+}

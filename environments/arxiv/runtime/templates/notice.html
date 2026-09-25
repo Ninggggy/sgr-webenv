@@ -1,0 +1,2 @@
+{% extends 'search/base.html' %}
+{% block content %}<section class="section"><h1 class="title">Offline environment</h1><p>{{ message }}</p>{% if current_paper %}<p><a href="/abs/{{ current_paper }}">View current paper and complete submission history</a></p>{% endif %}<p><a href="javascript:history.back()">Return to previous page</a> · <a href="/search/advanced">Advanced search</a> · <a href="/">Home</a></p></section>{% endblock %}

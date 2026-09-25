@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate>2026-09-23T04:38:34Z</responseDate>
+                <request verb="GetRecord" identifier="oai:arXiv.org:2203.11171" metadataPrefix="arXivRaw">http://oaipmh.arxiv.org/oai</request>
+
+
+    <GetRecord>
+                <record>
+                <header>
+        <identifier>oai:arXiv.org:2203.11171</identifier>
+        <datestamp>2023-03-08</datestamp>
+            <setSpec>cs:cs:CL</setSpec>
+            <setSpec>cs:cs:AI</setSpec>
+    </header>
+
+            <metadata>
+                        <arXivRaw xmlns="http://arxiv.org/OAI/arXivRaw/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://arxiv.org/OAI/arXivRaw/ https://oaipmh.arxiv.org/OAI/arXivRaw.xsd">
+        <id>2203.11171</id>
+        <submitter>Xuezhi Wang</submitter>
+            <version version="v1">
+                <date>Mon, 21 Mar 2022 17:48:52 GMT</date>
+                <size>7808kb</size>
+                    <source_type>D</source_type>
+            </version>
+            <version version="v2">
+                <date>Wed, 06 Apr 2022 04:40:11 GMT</date>
+                <size>12644kb</size>
+                    <source_type>D</source_type>
+            </version>
+            <version version="v3">
+                <date>Tue, 04 Oct 2022 16:46:29 GMT</date>
+                <size>12967kb</size>
+                    <source_type>D</source_type>
+            </version>
+            <version version="v4">
+                <date>Tue, 07 Mar 2023 17:57:37 GMT</date>
+                <size>12750kb</size>
+                    <source_type>D</source_type>
+            </version>
+        <title>Self-Consistency Improves Chain of Thought Reasoning in Language Models</title>
+        <authors>Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou</authors>
+        <categories>cs.CL cs.AI</categories>
+            <comments>Published at ICLR 2023. V2: added PaLM results; V3: added UL2 results; V4: camera ready version at ICLR 2023</comments>
+            <license>http://creativecommons.org/licenses/by/4.0/</license>
+            <abstract>Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9%), SVAMP (+11.0%), AQuA (+12.2%), StrategyQA (+6.4%) and ARC-challenge (+3.9%).</abstract>
+    </arXivRaw>
+
+            </metadata>
+        </record>
+
+    </GetRecord>
+</OAI-PMH>

@@ -1,0 +1,13 @@
+ARG BASE=ghcr.io/ninggggy/sgr-webenv-runtime:1
+FROM ${BASE}
+COPY requirements.txt /tmp/requirements.txt
+RUN python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
+COPY upstream/arxiv-search/search /opt/search/search
+COPY upstream/arxiv-search/mappings /opt/search/mappings
+COPY upstream/arxiv-base/arxiv /opt/base/arxiv
+COPY runtime/ /app/
+COPY tools/build_index.py /app/build_index.py
+ENV PYTHONPATH=/opt/search:/opt/base:/app PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 AWS_EC2_METADATA_DISABLED=true
+WORKDIR /app
+USER 1000:1000
+CMD ["python3", "-m", "gunicorn", "--bind=0.0.0.0:8080", "--workers=2", "--timeout=60", "--worker-tmp-dir=/tmp", "--no-control-socket", "app:app"]

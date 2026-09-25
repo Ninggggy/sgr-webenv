@@ -1,0 +1,77 @@
+{
+    "103" : {
+        "name"     : "Ohio Valley Climate Region",
+        "oldName"  : "Central Climate Region",
+        "centroid" : { "lat" : 38.71, "lon" : -86.7692 },
+        "bounds"   : { "ymin" : 34.982972, "xmin" : -95.774704, "ymax" : 42.508481, "xmax" : -77.719519 },
+        "stateIds" : [ 11, 12, 15, 23, 33, 40, 46 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "102" : {
+        "name"     : "Upper Midwest Climate Region",
+        "oldName"  : "East North Central Climate Region",
+        "centroid" : { "lat" : 44.6023, "lon" : -91.1726 },
+        "bounds"   : { "ymin" : 40.375501, "xmin" : -97.239209, "ymax" : 49.384358, "xmax" : -82.413474 },
+        "stateIds" : [ 13, 20, 21, 47 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "101" : {
+        "name"     : "Northeast Climate Region",
+        "centroid" : { "lat" : 42.5514, "lon" : -74.2784 },
+        "bounds"   : { "ymin" : 37.911717, "xmin" : -80.519891, "ymax" : 47.459686, "xmax" : -66.949895 },
+        "stateIds" : [ 6, 7, 17, 18, 19, 27, 28, 30, 36, 37, 43 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "108" : {
+        "name"     : "Northwest Climate Region",
+        "centroid" : { "lat" : 45.0696, "lon" : -118.5694 },
+        "bounds"   : { "ymin" : 41.988057, "xmin" : -124.763068, "ymax" : 49.002494, "xmax" : -111.043564 },
+        "stateIds" : [ 10, 35, 45 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "106" : {
+        "name"     : "South Climate Region",
+        "centroid" : { "lat" : 33.1841, "lon" : -96.9004 },
+        "bounds"   : { "ymin" : 25.837377, "xmin" : -106.645646, "ymax" : 40.003162, "xmax" : -88.097888 },
+        "stateIds" : [ 3, 14, 16, 22, 34, 41 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "104" : {
+        "name"     : "Southeast Climate Region",
+        "centroid" : { "lat" : 33.2749, "lon" : -83.1782 },
+        "bounds"   : { "ymin" : 24.523096, "xmin" : -88.473227, "ymax" : 39.466012, "xmax" : -75.242266 },
+        "stateIds" : [ 1, 8, 9, 31, 38, 44 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "107" : {
+        "name"     : "Southwest Climate Region",
+        "centroid" : { "lat" : 36.5622, "lon" : -108.0711 },
+        "bounds"   : { "ymin" : 31.332177, "xmin" : -114.81651, "ymax" : 42.001567, "xmax" : -102.041524 },
+        "stateIds" : [ 2, 5, 29, 42 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "109" : {
+        "name"     : "West Climate Region",
+        "centroid" : { "lat" : 38.1285, "lon" : -117.6751 },
+        "bounds"   : { "ymin" : 32.534156, "xmin" : -124.409591, "ymax" : 42.009518, "xmax" : -114.039648 },
+        "stateIds" : [ 4, 26 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    },
+    "105" : {
+        "name"     : "Northern Rockies and Plains Climate Region",
+        "oldName"  : "West North Central Climate Region",
+        "centroid" : { "lat" : 45.5097, "lon" : -105.2265 },
+        "bounds"   : { "ymin" : 39.999998, "xmin" : -116.050003, "ymax" : 49.00139, "xmax" : -95.30829 },
+        "stateIds" : [ 24, 25, 32, 39, 48 ],
+        "regionGroupId" : -1,
+        "regionGroup" : "Climate Regions"
+    }
+}

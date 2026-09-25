@@ -1,0 +1,2924 @@
+{
+  "year": {
+    "label": "Year",
+    "options": [
+      [
+        "2016",
+        "2016"
+      ],
+      [
+        "2017",
+        "2017"
+      ],
+      [
+        "2018",
+        "2018"
+      ],
+      [
+        "2019",
+        "2019"
+      ],
+      [
+        "2020",
+        "2020"
+      ],
+      [
+        "2021",
+        "2021"
+      ],
+      [
+        "2022",
+        "2022"
+      ],
+      [
+        "2023",
+        "2023"
+      ],
+      [
+        "2024",
+        "2024"
+      ]
+    ]
+  },
+  "month": {
+    "label": "Month",
+    "options": [
+      [
+        "1",
+        "January"
+      ],
+      [
+        "2",
+        "February"
+      ],
+      [
+        "3",
+        "March"
+      ],
+      [
+        "4",
+        "April"
+      ],
+      [
+        "5",
+        "May"
+      ],
+      [
+        "6",
+        "June"
+      ],
+      [
+        "7",
+        "July"
+      ],
+      [
+        "8",
+        "August"
+      ],
+      [
+        "9",
+        "September"
+      ],
+      [
+        "10",
+        "October"
+      ],
+      [
+        "11",
+        "November"
+      ],
+      [
+        "12",
+        "December"
+      ]
+    ]
+  },
+  "race": {
+    "label": "Mother's Single Race 6",
+    "options": [
+      [
+        "1002-5",
+        "American Indian or Alaska Native"
+      ],
+      [
+        "A",
+        "Asian"
+      ],
+      [
+        "2054-5",
+        "Black or African American"
+      ],
+      [
+        "NHOPI",
+        "Native Hawaiian or Other Pacific Islander"
+      ],
+      [
+        "2106-3",
+        "White"
+      ],
+      [
+        "M",
+        "More than one race"
+      ],
+      [
+        "UNK",
+        "Unknown or Not Stated"
+      ],
+      [
+        "NA",
+        "Not Available"
+      ],
+      [
+        "NR",
+        "Not Reported"
+      ]
+    ]
+  },
+  "hispanic": {
+    "label": "Mother's Hispanic Origin",
+    "options": [
+      [
+        "2135-2",
+        "Hispanic or Latino"
+      ],
+      [
+        "2186-5",
+        "Not Hispanic or Latino"
+      ],
+      [
+        "9",
+        "Unknown or Not Stated"
+      ]
+    ]
+  },
+  "origin": {
+    "label": "Mother's Expanded Hispanic Origin",
+    "options": [
+      [
+        "0",
+        "Non-Hispanic"
+      ],
+      [
+        "2148-5",
+        "Mexican"
+      ],
+      [
+        "2180-8",
+        "Puerto Rican"
+      ],
+      [
+        "2182-4",
+        "Cuban"
+      ],
+      [
+        "4",
+        "Central or South American"
+      ],
+      [
+        "7",
+        "Dominican"
+      ],
+      [
+        "5",
+        "Other and Unknown Hispanic"
+      ],
+      [
+        "9",
+        "Unknown or Not Stated"
+      ],
+      [
+        "10",
+        "Not Available"
+      ],
+      [
+        "100",
+        "Not Reported"
+      ]
+    ]
+  },
+  "origin_recode": {
+    "label": "Mother's Hispanic Origin Recode (Dominican combined)",
+    "options": [
+      [
+        "0",
+        "Non-Hispanic"
+      ],
+      [
+        "2148-5",
+        "Mexican"
+      ],
+      [
+        "2180-8",
+        "Puerto Rican"
+      ],
+      [
+        "2182-4",
+        "Cuban"
+      ],
+      [
+        "4",
+        "Central or South American"
+      ],
+      [
+        "5",
+        "Other and Unknown Hispanic (including Dominican)"
+      ],
+      [
+        "9",
+        "Unknown or Not Stated"
+      ],
+      [
+        "10",
+        "Not Available"
+      ],
+      [
+        "100",
+        "Not Reported"
+      ]
+    ]
+  },
+  "place": {
+    "label": "Birthplace",
+    "options": [
+      [
+        "1",
+        "Hospital"
+      ],
+      [
+        "2",
+        "Freestanding Birth Center"
+      ],
+      [
+        "3",
+        "Home (intended)"
+      ],
+      [
+        "4",
+        "Home (not intended)"
+      ],
+      [
+        "5",
+        "Home (unknown if intended)"
+      ],
+      [
+        "6",
+        "Clinic / Doctor's Office"
+      ],
+      [
+        "7",
+        "Other"
+      ],
+      [
+        "9",
+        "Unknown or Not Stated"
+      ],
+      [
+        "10",
+        "Not Reported"
+      ]
+    ]
+  },
+  "place6": {
+    "label": "Birthplace Recode 6",
+    "options": [
+      [
+        "1",
+        "In Hospital"
+      ],
+      [
+        "2",
+        "Freestanding Birth Center"
+      ],
+      [
+        "3",
+        "Clinic/Doctor's Office"
+      ],
+      [
+        "4",
+        "Residence"
+      ],
+      [
+        "5",
+        "Other"
+      ],
+      [
+        "9",
+        "Unknown or Not Stated"
+      ],
+      [
+        "10",
+        "Not Reported"
+      ]
+    ]
+  },
+  "place3": {
+    "label": "Birthplace Recode 3",
+    "options": [
+      [
+        "1",
+        "In Hospital"
+      ],
+      [
+        "2",
+        "Not in Hospital"
+      ],
+      [
+        "3",
+        "Unknown or Not Stated"
+      ],
+      [
+        "100",
+        "Not Reported"
+      ]
+    ]
+  },
+  "mother_age": {
+    "label": "Age of Mother 9",
+    "options": [
+      [
+        "15",
+        "Under 15 years"
+      ],
+      [
+        "15-19",
+        "15-19 years"
+      ],
+      [
+        "20-24",
+        "20-24 years"
+      ],
+      [
+        "25-29",
+        "25-29 years"
+      ],
+      [
+        "30-34",
+        "30-34 years"
+      ],
+      [
+        "35-39",
+        "35-39 years"
+      ],
+      [
+        "40-44",
+        "40-44 years"
+      ],
+      [
+        "45-49",
+        "45-49 years"
+      ],
+      [
+        "50+",
+        "50 years and over"
+      ]
+    ]
+  },
+  "sex": {
+    "label": "Sex of Infant",
+    "options": [
+      [
+        "F",
+        "Female"
+      ],
+      [
+        "M",
+        "Male"
+      ]
+    ]
+  },
+  "gestation": {
+    "label": "OE Gestational Age Recode 10",
+    "options": [
+      [
+        "01",
+        "Under 20 weeks"
+      ],
+      [
+        "02",
+        "20 - 27 weeks"
+      ],
+      [
+        "03",
+        "28 - 31 weeks"
+      ],
+      [
+        "04",
+        "32 - 35 weeks"
+      ],
+      [
+        "05",
+        "36 weeks"
+      ],
+      [
+        "06",
+        "37 - 39 weeks"
+      ],
+      [
+        "07",
+        "40 weeks"
+      ],
+      [
+        "08",
+        "41 weeks"
+      ],
+      [
+        "09",
+        "42 weeks or more"
+      ],
+      [
+        "10",
+        "Unknown or Not Stated"
+      ]
+    ]
+  },
+  "weight": {
+    "label": "Infant Birth Weight 12",
+    "options": [
+      [
+        "01",
+        "499 grams or less"
+      ],
+      [
+        "02",
+        "500 - 999 grams"
+      ],
+      [
+        "03",
+        "1000 - 1499 grams"
+      ],
+      [
+        "04",
+        "1500 - 1999 grams"
+      ],
+      [
+        "05",
+        "2000 - 2499 grams"
+      ],
+      [
+        "06",
+        "2500 - 2999 grams"
+      ],
+      [
+        "07",
+        "3000 - 3499 grams"
+      ],
+      [
+        "08",
+        "3500 - 3999 grams"
+      ],
+      [
+        "09",
+        "4000 - 4499 grams"
+      ],
+      [
+        "10",
+        "4500 - 4999 grams"
+      ],
+      [
+        "11",
+        "5000 - 8165 grams"
+      ],
+      [
+        "12",
+        "Unknown or Not Stated"
+      ]
+    ]
+  },
+  "plurality": {
+    "label": "Plurality",
+    "options": [
+      [
+        "1",
+        "Single"
+      ],
+      [
+        "2",
+        "Twin"
+      ],
+      [
+        "3",
+        "Triplet or higher"
+      ]
+    ]
+  },
+  "death_age": {
+    "label": "Age of Infant at Death 5",
+    "options": [
+      [
+        "01",
+        "Under 1 hour"
+      ],
+      [
+        "02",
+        "1 - 23 hours"
+      ],
+      [
+        "03",
+        "1 - 6 days"
+      ],
+      [
+        "04",
+        "7 - 27 days"
+      ],
+      [
+        "05",
+        "28 - 364 days"
+      ]
+    ]
+  },
+  "cause": {
+    "label": "ICD-10 130 Cause List (Infants)",
+    "options": [
+      [
+        "GR130-001",
+        "Certain infectious and parasitic diseases (A00-B99,U07.1)"
+      ],
+      [
+        "GR130-002",
+        "Certain intestinal infectious diseases (A00-A08)"
+      ],
+      [
+        "GR130-003",
+        "#Diarrhea and gastroenteritis of infectious origin (A09)"
+      ],
+      [
+        "GR130-004",
+        "#Tuberculosis (A16-A19)"
+      ],
+      [
+        "GR130-005",
+        "#Tetanus (A33,A35)"
+      ],
+      [
+        "GR130-006",
+        "#Diphtheria (A36)"
+      ],
+      [
+        "GR130-007",
+        "#Whooping cough (A37)"
+      ],
+      [
+        "GR130-008",
+        "#Meningococcal infection (A39)"
+      ],
+      [
+        "GR130-009",
+        "#Septicemia (A40-A41)"
+      ],
+      [
+        "GR130-010",
+        "#Congenital syphilis (A50)"
+      ],
+      [
+        "GR130-011",
+        "#Gonococcal infection (A54)"
+      ],
+      [
+        "GR130-012",
+        "Viral diseases (A80-B34,U07.1)"
+      ],
+      [
+        "GR130-013",
+        "#Acute poliomyelitis (A80)"
+      ],
+      [
+        "GR130-014",
+        "#Varicella (chickenpox) (B01)"
+      ],
+      [
+        "GR130-015",
+        "#Measles (B05)"
+      ],
+      [
+        "GR130-016",
+        "#Human immunodeficiency virus (HIV) disease (B20-B24)"
+      ],
+      [
+        "GR130-017",
+        "#Mumps (B26)"
+      ],
+      [
+        "GR130-018",
+        "Other and unspecified viral diseases (A81-B00,B02-B04,B06-B19,B25,B27-B34,U07.1)"
+      ],
+      [
+        "GR130-019",
+        "#Candidiasis (B37)"
+      ],
+      [
+        "GR130-020",
+        "#Malaria (B50-B54)"
+      ],
+      [
+        "GR130-021",
+        "#Pneumocystosis (B59)"
+      ],
+      [
+        "GR130-022",
+        "All other and unspecified infectious and parasitic diseases (A20-A32,A38,A42-A49,A51-A53,A55-A79,B35-B36,B38-B49,B55-B58,B60-B99)"
+      ],
+      [
+        "GR130-023",
+        "Neoplasms (C00-D48)"
+      ],
+      [
+        "GR130-024",
+        "#Malignant neoplasms (C00-C97)"
+      ],
+      [
+        "GR130-025",
+        "Hodgkin disease and non-Hodgkin lymphomas (C81-C85)"
+      ],
+      [
+        "GR130-026",
+        "Leukemia (C91-C95)"
+      ],
+      [
+        "GR130-027",
+        "Other and unspecified malignant neoplasms (C00-C80,C88,C90,C96-C97)"
+      ],
+      [
+        "GR130-028",
+        "#In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown behavior (D00-D48)"
+      ],
+      [
+        "GR130-029",
+        "#Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)"
+      ],
+      [
+        "GR130-030",
+        "Anemias (D50-D64)"
+      ],
+      [
+        "GR130-031",
+        "Hemorrhagic conditions and other diseases of blood and blood-forming organs (D65-D76)"
+      ],
+      [
+        "GR130-032",
+        "Certain disorders involving the immune mechanism (D80-D89)"
+      ],
+      [
+        "GR130-033",
+        "Endocrine, nutritional and metabolic diseases (E00-E88)"
+      ],
+      [
+        "GR130-034",
+        "#Short stature, not elsewhere classified (E34.3)"
+      ],
+      [
+        "GR130-035",
+        "#Nutritional deficiencies (E40-E64)"
+      ],
+      [
+        "GR130-036",
+        "#Cystic fibrosis (E84)"
+      ],
+      [
+        "GR130-037",
+        "#Volume depletion, disorders of fluid, electrolyte and acid-base balance (E86-E87)"
+      ],
+      [
+        "GR130-038",
+        "All other endocrine, nutritional and metabolic diseases (E00-E32,E34.0-E34.2,E34.4-E34.9,E65-E83,E85,E88)"
+      ],
+      [
+        "GR130-039",
+        "Diseases of the nervous system (G00-G98)"
+      ],
+      [
+        "GR130-040",
+        "#Meningitis (G00,G03)"
+      ],
+      [
+        "GR130-041",
+        "#Infantile spinal muscular atrophy, type I (Werdnig-Hoffman) (G12.0)"
+      ],
+      [
+        "GR130-042",
+        "#Infantile cerebral palsy (G80)"
+      ],
+      [
+        "GR130-043",
+        "#Anoxic brain damage, not elsewhere classified (G93.1)"
+      ],
+      [
+        "GR130-044",
+        "Other diseases of nervous system (G04,G06-G11,G12.1-G12.9,G20-G72,G81-G92,G93.0,G93.2-G93.9,G95-G98)"
+      ],
+      [
+        "GR130-045",
+        "#Diseases of the ear and mastoid process (H60-H93)"
+      ],
+      [
+        "GR130-046",
+        "#Diseases of the circulatory system (I00-I99)"
+      ],
+      [
+        "GR130-047",
+        "Pulmonary heart disease and diseases of pulmonary circulation (I26-I28)"
+      ],
+      [
+        "GR130-048",
+        "Pericarditis, endocarditis and myocarditis (I30,I33,I40)"
+      ],
+      [
+        "GR130-049",
+        "Cardiomyopathy (I42)"
+      ],
+      [
+        "GR130-050",
+        "Cardiac arrest (I46)"
+      ],
+      [
+        "GR130-051",
+        "Cerebrovascular diseases (I60-I69)"
+      ],
+      [
+        "GR130-052",
+        "All other diseases of circulatory system (I00-I25,I31,I34-I38,I44-I45,I47-I51,I70-I99)"
+      ],
+      [
+        "GR130-053",
+        "Diseases of the respiratory system (J00-J98,U04)"
+      ],
+      [
+        "GR130-054",
+        "#Acute upper respiratory infections (J00-J06)"
+      ],
+      [
+        "GR130-055",
+        "#Influenza and pneumonia (J09-J18)"
+      ],
+      [
+        "GR130-056",
+        "Influenza (J09-J11)"
+      ],
+      [
+        "GR130-057",
+        "Pneumonia (J12-J18)"
+      ],
+      [
+        "GR130-058",
+        "#Acute bronchitis and acute bronchiolitis (J20-J21)"
+      ],
+      [
+        "GR130-059",
+        "#Bronchitis, chronic and unspecified (J40-J42)"
+      ],
+      [
+        "GR130-060",
+        "#Asthma (J45-J46)"
+      ],
+      [
+        "GR130-061",
+        "#Pneumonitis due to solids and liquids (J69)"
+      ],
+      [
+        "GR130-062",
+        "Other and unspecified diseases of respiratory system (J22,J30-J39,J43-J44,J47-J68,J70-J98,U04)"
+      ],
+      [
+        "GR130-063",
+        "Diseases of the digestive system (K00-K92)"
+      ],
+      [
+        "GR130-064",
+        "#Gastritis, duodenitis, and noninfective enteritis and colitis (K29,K50-K55)"
+      ],
+      [
+        "GR130-065",
+        "#Hernia of abdominal cavity and intestinal obstruction without hernia (K40-K46,K56)"
+      ],
+      [
+        "GR130-066",
+        "All other and unspecified diseases of digestive system (K00-K28,K30-K38,K57-K92)"
+      ],
+      [
+        "GR130-067",
+        "Diseases of the genitourinary system (N00-N95)"
+      ],
+      [
+        "GR130-068",
+        "#Renal failure and other disorders of kidney (N17-N19,N25,N27)"
+      ],
+      [
+        "GR130-069",
+        "Other and unspecified diseases of genitourinary system (N00-N15,N20-N23,N26,N28-N95)"
+      ],
+      [
+        "GR130-070",
+        "Certain conditions originating in the perinatal period (P00-P96)"
+      ],
+      [
+        "GR130-071",
+        "Newborn affected by maternal factors and by complications of pregnancy, labor and delivery (P00-P04)"
+      ],
+      [
+        "GR130-072",
+        "#Newborn affected by maternal hypertensive disorders (P00.0)"
+      ],
+      [
+        "GR130-073",
+        "#Newborn affected by other maternal conditions which may be unrelated to present pregnancy (P00.1-P00.9)"
+      ],
+      [
+        "GR130-074",
+        "#Newborn affected by maternal complications of pregnancy (P01)"
+      ],
+      [
+        "GR130-075",
+        "Newborn affected by incompetent cervix (P01.0)"
+      ],
+      [
+        "GR130-076",
+        "Newborn affected by premature rupture of membranes (P01.1)"
+      ],
+      [
+        "GR130-077",
+        "Newborn affected by multiple pregnancy (P01.5)"
+      ],
+      [
+        "GR130-078",
+        "Newborn affected by other maternal complications of pregnancy (P01.2-P01.4,P01.6-P01.9)"
+      ],
+      [
+        "GR130-079",
+        "#Newborn affected by complications of placenta, cord and membranes (P02)"
+      ],
+      [
+        "GR130-080",
+        "Newborn affected by complications involving placenta (P02.0-P02.3)"
+      ],
+      [
+        "GR130-081",
+        "Newborn affected by complications involving cord (P02.4-P02.6)"
+      ],
+      [
+        "GR130-082",
+        "Newborn affected by chorioamnionitis (P02.7)"
+      ],
+      [
+        "GR130-083",
+        "Newborn affected by other and unspecified abnormalities of membranes (P02.8-P02.9)"
+      ],
+      [
+        "GR130-084",
+        "#Newborn affected by other complications of labor and delivery (P03)"
+      ],
+      [
+        "GR130-085",
+        "#Newborn affected by noxious influences transmitted via placenta or breast milk (P04)"
+      ],
+      [
+        "GR130-086",
+        "Disorders related to length of gestation and fetal malnutrition (P05-P08)"
+      ],
+      [
+        "GR130-087",
+        "#Slow fetal growth and fetal malnutrition (P05)"
+      ],
+      [
+        "GR130-088",
+        "#Disorders related to short gestation and low birth weight, not elsewhere classified (P07)"
+      ],
+      [
+        "GR130-089",
+        "Extremely low birth weight or extreme immaturity (P07.0,P07.2)"
+      ],
+      [
+        "GR130-090",
+        "Other low birth weight or preterm (P07.1,P07.3)"
+      ],
+      [
+        "GR130-091",
+        "#Disorders related to long gestation and high birth weight (P08)"
+      ],
+      [
+        "GR130-092",
+        "#Birth trauma (P10-P15)"
+      ],
+      [
+        "GR130-093",
+        "#Intrauterine hypoxia and birth asphyxia (P20-P21)"
+      ],
+      [
+        "GR130-094",
+        "Intrauterine hypoxia (P20)"
+      ],
+      [
+        "GR130-095",
+        "Birth asphyxia (P21)"
+      ],
+      [
+        "GR130-096",
+        "#Respiratory distress of newborn (P22)"
+      ],
+      [
+        "GR130-097",
+        "Other respiratory conditions originating in the perinatal period (P23-P28)"
+      ],
+      [
+        "GR130-098",
+        "#Congenital pneumonia (P23)"
+      ],
+      [
+        "GR130-099",
+        "#Neonatal aspiration syndromes (P24)"
+      ],
+      [
+        "GR130-100",
+        "#Interstitial emphysema and related conditions originating in the perinatal period (P25)"
+      ],
+      [
+        "GR130-101",
+        "#Pulmonary hemorrhage originating in the perinatal period (P26)"
+      ],
+      [
+        "GR130-102",
+        "#Chronic respiratory disease originating in the perinatal period (P27)"
+      ],
+      [
+        "GR130-103",
+        "#Atelectasis (P28.0-P28.1)"
+      ],
+      [
+        "GR130-104",
+        "All other respiratory conditions originating in the perinatal period (P28.2-P28.9)"
+      ],
+      [
+        "GR130-105",
+        "Infections specific to the perinatal period (P35-P39)"
+      ],
+      [
+        "GR130-106",
+        "#Bacterial sepsis of newborn (P36)"
+      ],
+      [
+        "GR130-107",
+        "#Omphalitis of newborn with or without mild hemorrhage (P38)"
+      ],
+      [
+        "GR130-108",
+        "All other infections specific to the perinatal period (P35,P37,P39)"
+      ],
+      [
+        "GR130-109",
+        "Hemorrhagic and hematological disorders of newborn (P50-P61)"
+      ],
+      [
+        "GR130-110",
+        "#Neonatal hemorrhage (P50-P52,P54)"
+      ],
+      [
+        "GR130-111",
+        "#Hemorrhagic disease of newborn (P53)"
+      ],
+      [
+        "GR130-112",
+        "#Hemolytic disease of newborn due to isoimmunization and other perinatal jaundice (P55-P59)"
+      ],
+      [
+        "GR130-113",
+        "#Hematological disorders (P60-P61)"
+      ],
+      [
+        "GR130-114",
+        "#Syndrome of infant of a diabetic mother and neonatal diabetes mellitus (P70.0-P70.2)"
+      ],
+      [
+        "GR130-115",
+        "#Necrotizing enterocolitis of newborn (P77)"
+      ],
+      [
+        "GR130-116",
+        "#Hydrops fetalis not due to hemolytic disease (P83.2)"
+      ],
+      [
+        "GR130-117",
+        "Other perinatal conditions (P29,P70.3-P70.9,P71-P76,P78-P81,P83.0-P83.1,P83.3-P83.9,P90-P96)"
+      ],
+      [
+        "GR130-118",
+        "#Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)"
+      ],
+      [
+        "GR130-119",
+        "Anencephaly and similar malformations (Q00)"
+      ],
+      [
+        "GR130-120",
+        "Congenital hydrocephalus (Q03)"
+      ],
+      [
+        "GR130-121",
+        "Spina bifida (Q05)"
+      ],
+      [
+        "GR130-122",
+        "Other congenital malformations of nervous system (Q01-Q02,Q04,Q06-Q07)"
+      ],
+      [
+        "GR130-123",
+        "Congenital malformations of heart (Q20-Q24)"
+      ],
+      [
+        "GR130-124",
+        "Other congenital malformations of circulatory system (Q25-Q28)"
+      ],
+      [
+        "GR130-125",
+        "Congenital malformations of respiratory system (Q30-Q34)"
+      ],
+      [
+        "GR130-126",
+        "Congenital malformations of digestive system (Q35-Q45)"
+      ],
+      [
+        "GR130-127",
+        "Congenital malformations of genitourinary system (Q50-Q64)"
+      ],
+      [
+        "GR130-128",
+        "Congenital malformations and deformations of musculoskeletal system, limbs and integument (Q65-Q85)"
+      ],
+      [
+        "GR130-129",
+        "Down syndrome (Q90)"
+      ],
+      [
+        "GR130-130",
+        "Edward syndrome (Q91.0-Q91.3)"
+      ],
+      [
+        "GR130-131",
+        "Patau syndrome (Q91.4-Q91.7)"
+      ],
+      [
+        "GR130-132",
+        "Other congenital malformations and deformations (Q10-Q18,Q86-Q89)"
+      ],
+      [
+        "GR130-133",
+        "Other chromosomal abnormalities, not elsewhere classified (Q92-Q99)"
+      ],
+      [
+        "GR130-134",
+        "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)"
+      ],
+      [
+        "GR130-135",
+        "#Sudden infant death syndrome (R95)"
+      ],
+      [
+        "GR130-136",
+        "Other symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R53,R55-R94,R96-R99)"
+      ],
+      [
+        "GR130-137",
+        "All other diseases (F00-F99,H00-H57,L00-M99)"
+      ],
+      [
+        "GR130-138",
+        "External causes of mortality (*U01,V01-Y84)"
+      ],
+      [
+        "GR130-139",
+        "#Accidents (unintentional injuries) (V01-X59)"
+      ],
+      [
+        "GR130-140",
+        "Transport accidents (V01-V99)"
+      ],
+      [
+        "GR130-141",
+        "Motor vehicle accidents (V02-V04,V09.0,V09.2,V12-V14,V19.0-V19.2,V19.4-V19.6,V20-V79,V80.3-V80.5,V81.0-V81.1,V82.0-V82.1,V83-V86,V87.0-V87.8,V88.0-V88.8,V89.0,V89.2)"
+      ],
+      [
+        "GR130-142",
+        "Other and unspecified transport accidents (V01,V05-V06,V09.1,V09.3-V09.9,V10-V11,V15-V18,V19.3,V19.8-V19.9,V80.0-V80.2,V80.6-V80.9,V81.2-V81.9,V82.2-V82.9,V87.9,V88.9,V89.1,V89.3,V89.9,V90-V99)"
+      ],
+      [
+        "GR130-143",
+        "Falls (W00-W19)"
+      ],
+      [
+        "GR130-144",
+        "Accidental discharge of firearms (W32-W34)"
+      ],
+      [
+        "GR130-145",
+        "Accidental drowning and submersion (W65-W74)"
+      ],
+      [
+        "GR130-146",
+        "Accidental suffocation and strangulation in bed (W75)"
+      ],
+      [
+        "GR130-147",
+        "Other accidental suffocation and strangulation (W76-W77,W81-W84)"
+      ],
+      [
+        "GR130-148",
+        "Accidental inhalation and ingestion of food or other objects causing obstruction of respiratory tract (W78-W80)"
+      ],
+      [
+        "GR130-149",
+        "Accidents caused by exposure to smoke, fire and flames (X00-X09)"
+      ],
+      [
+        "GR130-150",
+        "Accidental poisoning and exposure to noxious substances (X40-X49)"
+      ],
+      [
+        "GR130-151",
+        "Other and unspecified accidents (W20-W31,W35-W64,W85-W99,X10-X39,X50-X59)"
+      ],
+      [
+        "GR130-152",
+        "#Assault (homicide) (*U01,X85-Y09)"
+      ],
+      [
+        "GR130-153",
+        "Assault (homicide) by hanging, strangulation and suffocation (X91)"
+      ],
+      [
+        "GR130-154",
+        "Assault (homicide) by discharge of firearms (*U01.4,X93-X95)"
+      ],
+      [
+        "GR130-155",
+        "Neglect, abandonment and other maltreatment syndromes (Y06-Y07)"
+      ],
+      [
+        "GR130-156",
+        "Assault (homicide) by other and unspecified means (*U01.0-*U01.3,*U01.5-*U01.9,X85-X90,X92,X96-X99,Y00-Y05,Y08-Y09)"
+      ],
+      [
+        "GR130-157",
+        "#Complications of medical and surgical care (Y40-Y84)"
+      ],
+      [
+        "GR130-158",
+        "Other external causes (Y10-Y36)"
+      ],
+      [
+        "GR130-999",
+        "All unspecified codes"
+      ]
+    ]
+  },
+  "death_days": {
+    "label": "Age of Infant at Death in days",
+    "options": [
+      [
+        "0",
+        "0 days"
+      ],
+      [
+        "1",
+        "1 days"
+      ],
+      [
+        "2",
+        "2 days"
+      ],
+      [
+        "3",
+        "3 days"
+      ],
+      [
+        "4",
+        "4 days"
+      ],
+      [
+        "5",
+        "5 days"
+      ],
+      [
+        "6",
+        "6 days"
+      ],
+      [
+        "7",
+        "7 days"
+      ],
+      [
+        "8",
+        "8 days"
+      ],
+      [
+        "9",
+        "9 days"
+      ],
+      [
+        "10",
+        "10 days"
+      ],
+      [
+        "11",
+        "11 days"
+      ],
+      [
+        "12",
+        "12 days"
+      ],
+      [
+        "13",
+        "13 days"
+      ],
+      [
+        "14",
+        "14 days"
+      ],
+      [
+        "15",
+        "15 days"
+      ],
+      [
+        "16",
+        "16 days"
+      ],
+      [
+        "17",
+        "17 days"
+      ],
+      [
+        "18",
+        "18 days"
+      ],
+      [
+        "19",
+        "19 days"
+      ],
+      [
+        "20",
+        "20 days"
+      ],
+      [
+        "21",
+        "21 days"
+      ],
+      [
+        "22",
+        "22 days"
+      ],
+      [
+        "23",
+        "23 days"
+      ],
+      [
+        "24",
+        "24 days"
+      ],
+      [
+        "25",
+        "25 days"
+      ],
+      [
+        "26",
+        "26 days"
+      ],
+      [
+        "27",
+        "27 days"
+      ],
+      [
+        "28",
+        "28 days"
+      ],
+      [
+        "29",
+        "29 days"
+      ],
+      [
+        "30",
+        "30 days"
+      ],
+      [
+        "31",
+        "31 days"
+      ],
+      [
+        "32",
+        "32 days"
+      ],
+      [
+        "33",
+        "33 days"
+      ],
+      [
+        "34",
+        "34 days"
+      ],
+      [
+        "35",
+        "35 days"
+      ],
+      [
+        "36",
+        "36 days"
+      ],
+      [
+        "37",
+        "37 days"
+      ],
+      [
+        "38",
+        "38 days"
+      ],
+      [
+        "39",
+        "39 days"
+      ],
+      [
+        "40",
+        "40 days"
+      ],
+      [
+        "41",
+        "41 days"
+      ],
+      [
+        "42",
+        "42 days"
+      ],
+      [
+        "43",
+        "43 days"
+      ],
+      [
+        "44",
+        "44 days"
+      ],
+      [
+        "45",
+        "45 days"
+      ],
+      [
+        "46",
+        "46 days"
+      ],
+      [
+        "47",
+        "47 days"
+      ],
+      [
+        "48",
+        "48 days"
+      ],
+      [
+        "49",
+        "49 days"
+      ],
+      [
+        "50",
+        "50 days"
+      ],
+      [
+        "51",
+        "51 days"
+      ],
+      [
+        "52",
+        "52 days"
+      ],
+      [
+        "53",
+        "53 days"
+      ],
+      [
+        "54",
+        "54 days"
+      ],
+      [
+        "55",
+        "55 days"
+      ],
+      [
+        "56",
+        "56 days"
+      ],
+      [
+        "57",
+        "57 days"
+      ],
+      [
+        "58",
+        "58 days"
+      ],
+      [
+        "59",
+        "59 days"
+      ],
+      [
+        "60",
+        "60 days"
+      ],
+      [
+        "61",
+        "61 days"
+      ],
+      [
+        "62",
+        "62 days"
+      ],
+      [
+        "63",
+        "63 days"
+      ],
+      [
+        "64",
+        "64 days"
+      ],
+      [
+        "65",
+        "65 days"
+      ],
+      [
+        "66",
+        "66 days"
+      ],
+      [
+        "67",
+        "67 days"
+      ],
+      [
+        "68",
+        "68 days"
+      ],
+      [
+        "69",
+        "69 days"
+      ],
+      [
+        "70",
+        "70 days"
+      ],
+      [
+        "71",
+        "71 days"
+      ],
+      [
+        "72",
+        "72 days"
+      ],
+      [
+        "73",
+        "73 days"
+      ],
+      [
+        "74",
+        "74 days"
+      ],
+      [
+        "75",
+        "75 days"
+      ],
+      [
+        "76",
+        "76 days"
+      ],
+      [
+        "77",
+        "77 days"
+      ],
+      [
+        "78",
+        "78 days"
+      ],
+      [
+        "79",
+        "79 days"
+      ],
+      [
+        "80",
+        "80 days"
+      ],
+      [
+        "81",
+        "81 days"
+      ],
+      [
+        "82",
+        "82 days"
+      ],
+      [
+        "83",
+        "83 days"
+      ],
+      [
+        "84",
+        "84 days"
+      ],
+      [
+        "85",
+        "85 days"
+      ],
+      [
+        "86",
+        "86 days"
+      ],
+      [
+        "87",
+        "87 days"
+      ],
+      [
+        "88",
+        "88 days"
+      ],
+      [
+        "89",
+        "89 days"
+      ],
+      [
+        "90",
+        "90 days"
+      ],
+      [
+        "91",
+        "91 days"
+      ],
+      [
+        "92",
+        "92 days"
+      ],
+      [
+        "93",
+        "93 days"
+      ],
+      [
+        "94",
+        "94 days"
+      ],
+      [
+        "95",
+        "95 days"
+      ],
+      [
+        "96",
+        "96 days"
+      ],
+      [
+        "97",
+        "97 days"
+      ],
+      [
+        "98",
+        "98 days"
+      ],
+      [
+        "99",
+        "99 days"
+      ],
+      [
+        "100",
+        "100 days"
+      ],
+      [
+        "101",
+        "101 days"
+      ],
+      [
+        "102",
+        "102 days"
+      ],
+      [
+        "103",
+        "103 days"
+      ],
+      [
+        "104",
+        "104 days"
+      ],
+      [
+        "105",
+        "105 days"
+      ],
+      [
+        "106",
+        "106 days"
+      ],
+      [
+        "107",
+        "107 days"
+      ],
+      [
+        "108",
+        "108 days"
+      ],
+      [
+        "109",
+        "109 days"
+      ],
+      [
+        "110",
+        "110 days"
+      ],
+      [
+        "111",
+        "111 days"
+      ],
+      [
+        "112",
+        "112 days"
+      ],
+      [
+        "113",
+        "113 days"
+      ],
+      [
+        "114",
+        "114 days"
+      ],
+      [
+        "115",
+        "115 days"
+      ],
+      [
+        "116",
+        "116 days"
+      ],
+      [
+        "117",
+        "117 days"
+      ],
+      [
+        "118",
+        "118 days"
+      ],
+      [
+        "119",
+        "119 days"
+      ],
+      [
+        "120",
+        "120 days"
+      ],
+      [
+        "121",
+        "121 days"
+      ],
+      [
+        "122",
+        "122 days"
+      ],
+      [
+        "123",
+        "123 days"
+      ],
+      [
+        "124",
+        "124 days"
+      ],
+      [
+        "125",
+        "125 days"
+      ],
+      [
+        "126",
+        "126 days"
+      ],
+      [
+        "127",
+        "127 days"
+      ],
+      [
+        "128",
+        "128 days"
+      ],
+      [
+        "129",
+        "129 days"
+      ],
+      [
+        "130",
+        "130 days"
+      ],
+      [
+        "131",
+        "131 days"
+      ],
+      [
+        "132",
+        "132 days"
+      ],
+      [
+        "133",
+        "133 days"
+      ],
+      [
+        "134",
+        "134 days"
+      ],
+      [
+        "135",
+        "135 days"
+      ],
+      [
+        "136",
+        "136 days"
+      ],
+      [
+        "137",
+        "137 days"
+      ],
+      [
+        "138",
+        "138 days"
+      ],
+      [
+        "139",
+        "139 days"
+      ],
+      [
+        "140",
+        "140 days"
+      ],
+      [
+        "141",
+        "141 days"
+      ],
+      [
+        "142",
+        "142 days"
+      ],
+      [
+        "143",
+        "143 days"
+      ],
+      [
+        "144",
+        "144 days"
+      ],
+      [
+        "145",
+        "145 days"
+      ],
+      [
+        "146",
+        "146 days"
+      ],
+      [
+        "147",
+        "147 days"
+      ],
+      [
+        "148",
+        "148 days"
+      ],
+      [
+        "149",
+        "149 days"
+      ],
+      [
+        "150",
+        "150 days"
+      ],
+      [
+        "151",
+        "151 days"
+      ],
+      [
+        "152",
+        "152 days"
+      ],
+      [
+        "153",
+        "153 days"
+      ],
+      [
+        "154",
+        "154 days"
+      ],
+      [
+        "155",
+        "155 days"
+      ],
+      [
+        "156",
+        "156 days"
+      ],
+      [
+        "157",
+        "157 days"
+      ],
+      [
+        "158",
+        "158 days"
+      ],
+      [
+        "159",
+        "159 days"
+      ],
+      [
+        "160",
+        "160 days"
+      ],
+      [
+        "161",
+        "161 days"
+      ],
+      [
+        "162",
+        "162 days"
+      ],
+      [
+        "163",
+        "163 days"
+      ],
+      [
+        "164",
+        "164 days"
+      ],
+      [
+        "165",
+        "165 days"
+      ],
+      [
+        "166",
+        "166 days"
+      ],
+      [
+        "167",
+        "167 days"
+      ],
+      [
+        "168",
+        "168 days"
+      ],
+      [
+        "169",
+        "169 days"
+      ],
+      [
+        "170",
+        "170 days"
+      ],
+      [
+        "171",
+        "171 days"
+      ],
+      [
+        "172",
+        "172 days"
+      ],
+      [
+        "173",
+        "173 days"
+      ],
+      [
+        "174",
+        "174 days"
+      ],
+      [
+        "175",
+        "175 days"
+      ],
+      [
+        "176",
+        "176 days"
+      ],
+      [
+        "177",
+        "177 days"
+      ],
+      [
+        "178",
+        "178 days"
+      ],
+      [
+        "179",
+        "179 days"
+      ],
+      [
+        "180",
+        "180 days"
+      ],
+      [
+        "181",
+        "181 days"
+      ],
+      [
+        "182",
+        "182 days"
+      ],
+      [
+        "183",
+        "183 days"
+      ],
+      [
+        "184",
+        "184 days"
+      ],
+      [
+        "185",
+        "185 days"
+      ],
+      [
+        "186",
+        "186 days"
+      ],
+      [
+        "187",
+        "187 days"
+      ],
+      [
+        "188",
+        "188 days"
+      ],
+      [
+        "189",
+        "189 days"
+      ],
+      [
+        "190",
+        "190 days"
+      ],
+      [
+        "191",
+        "191 days"
+      ],
+      [
+        "192",
+        "192 days"
+      ],
+      [
+        "193",
+        "193 days"
+      ],
+      [
+        "194",
+        "194 days"
+      ],
+      [
+        "195",
+        "195 days"
+      ],
+      [
+        "196",
+        "196 days"
+      ],
+      [
+        "197",
+        "197 days"
+      ],
+      [
+        "198",
+        "198 days"
+      ],
+      [
+        "199",
+        "199 days"
+      ],
+      [
+        "200",
+        "200 days"
+      ],
+      [
+        "201",
+        "201 days"
+      ],
+      [
+        "202",
+        "202 days"
+      ],
+      [
+        "203",
+        "203 days"
+      ],
+      [
+        "204",
+        "204 days"
+      ],
+      [
+        "205",
+        "205 days"
+      ],
+      [
+        "206",
+        "206 days"
+      ],
+      [
+        "207",
+        "207 days"
+      ],
+      [
+        "208",
+        "208 days"
+      ],
+      [
+        "209",
+        "209 days"
+      ],
+      [
+        "210",
+        "210 days"
+      ],
+      [
+        "211",
+        "211 days"
+      ],
+      [
+        "212",
+        "212 days"
+      ],
+      [
+        "213",
+        "213 days"
+      ],
+      [
+        "214",
+        "214 days"
+      ],
+      [
+        "215",
+        "215 days"
+      ],
+      [
+        "216",
+        "216 days"
+      ],
+      [
+        "217",
+        "217 days"
+      ],
+      [
+        "218",
+        "218 days"
+      ],
+      [
+        "219",
+        "219 days"
+      ],
+      [
+        "220",
+        "220 days"
+      ],
+      [
+        "221",
+        "221 days"
+      ],
+      [
+        "222",
+        "222 days"
+      ],
+      [
+        "223",
+        "223 days"
+      ],
+      [
+        "224",
+        "224 days"
+      ],
+      [
+        "225",
+        "225 days"
+      ],
+      [
+        "226",
+        "226 days"
+      ],
+      [
+        "227",
+        "227 days"
+      ],
+      [
+        "228",
+        "228 days"
+      ],
+      [
+        "229",
+        "229 days"
+      ],
+      [
+        "230",
+        "230 days"
+      ],
+      [
+        "231",
+        "231 days"
+      ],
+      [
+        "232",
+        "232 days"
+      ],
+      [
+        "233",
+        "233 days"
+      ],
+      [
+        "234",
+        "234 days"
+      ],
+      [
+        "235",
+        "235 days"
+      ],
+      [
+        "236",
+        "236 days"
+      ],
+      [
+        "237",
+        "237 days"
+      ],
+      [
+        "238",
+        "238 days"
+      ],
+      [
+        "239",
+        "239 days"
+      ],
+      [
+        "240",
+        "240 days"
+      ],
+      [
+        "241",
+        "241 days"
+      ],
+      [
+        "242",
+        "242 days"
+      ],
+      [
+        "243",
+        "243 days"
+      ],
+      [
+        "244",
+        "244 days"
+      ],
+      [
+        "245",
+        "245 days"
+      ],
+      [
+        "246",
+        "246 days"
+      ],
+      [
+        "247",
+        "247 days"
+      ],
+      [
+        "248",
+        "248 days"
+      ],
+      [
+        "249",
+        "249 days"
+      ],
+      [
+        "250",
+        "250 days"
+      ],
+      [
+        "251",
+        "251 days"
+      ],
+      [
+        "252",
+        "252 days"
+      ],
+      [
+        "253",
+        "253 days"
+      ],
+      [
+        "254",
+        "254 days"
+      ],
+      [
+        "255",
+        "255 days"
+      ],
+      [
+        "256",
+        "256 days"
+      ],
+      [
+        "257",
+        "257 days"
+      ],
+      [
+        "258",
+        "258 days"
+      ],
+      [
+        "259",
+        "259 days"
+      ],
+      [
+        "260",
+        "260 days"
+      ],
+      [
+        "261",
+        "261 days"
+      ],
+      [
+        "262",
+        "262 days"
+      ],
+      [
+        "263",
+        "263 days"
+      ],
+      [
+        "264",
+        "264 days"
+      ],
+      [
+        "265",
+        "265 days"
+      ],
+      [
+        "266",
+        "266 days"
+      ],
+      [
+        "267",
+        "267 days"
+      ],
+      [
+        "268",
+        "268 days"
+      ],
+      [
+        "269",
+        "269 days"
+      ],
+      [
+        "270",
+        "270 days"
+      ],
+      [
+        "271",
+        "271 days"
+      ],
+      [
+        "272",
+        "272 days"
+      ],
+      [
+        "273",
+        "273 days"
+      ],
+      [
+        "274",
+        "274 days"
+      ],
+      [
+        "275",
+        "275 days"
+      ],
+      [
+        "276",
+        "276 days"
+      ],
+      [
+        "277",
+        "277 days"
+      ],
+      [
+        "278",
+        "278 days"
+      ],
+      [
+        "279",
+        "279 days"
+      ],
+      [
+        "280",
+        "280 days"
+      ],
+      [
+        "281",
+        "281 days"
+      ],
+      [
+        "282",
+        "282 days"
+      ],
+      [
+        "283",
+        "283 days"
+      ],
+      [
+        "284",
+        "284 days"
+      ],
+      [
+        "285",
+        "285 days"
+      ],
+      [
+        "286",
+        "286 days"
+      ],
+      [
+        "287",
+        "287 days"
+      ],
+      [
+        "288",
+        "288 days"
+      ],
+      [
+        "289",
+        "289 days"
+      ],
+      [
+        "290",
+        "290 days"
+      ],
+      [
+        "291",
+        "291 days"
+      ],
+      [
+        "292",
+        "292 days"
+      ],
+      [
+        "293",
+        "293 days"
+      ],
+      [
+        "294",
+        "294 days"
+      ],
+      [
+        "295",
+        "295 days"
+      ],
+      [
+        "296",
+        "296 days"
+      ],
+      [
+        "297",
+        "297 days"
+      ],
+      [
+        "298",
+        "298 days"
+      ],
+      [
+        "299",
+        "299 days"
+      ],
+      [
+        "300",
+        "300 days"
+      ],
+      [
+        "301",
+        "301 days"
+      ],
+      [
+        "302",
+        "302 days"
+      ],
+      [
+        "303",
+        "303 days"
+      ],
+      [
+        "304",
+        "304 days"
+      ],
+      [
+        "305",
+        "305 days"
+      ],
+      [
+        "306",
+        "306 days"
+      ],
+      [
+        "307",
+        "307 days"
+      ],
+      [
+        "308",
+        "308 days"
+      ],
+      [
+        "309",
+        "309 days"
+      ],
+      [
+        "310",
+        "310 days"
+      ],
+      [
+        "311",
+        "311 days"
+      ],
+      [
+        "312",
+        "312 days"
+      ],
+      [
+        "313",
+        "313 days"
+      ],
+      [
+        "314",
+        "314 days"
+      ],
+      [
+        "315",
+        "315 days"
+      ],
+      [
+        "316",
+        "316 days"
+      ],
+      [
+        "317",
+        "317 days"
+      ],
+      [
+        "318",
+        "318 days"
+      ],
+      [
+        "319",
+        "319 days"
+      ],
+      [
+        "320",
+        "320 days"
+      ],
+      [
+        "321",
+        "321 days"
+      ],
+      [
+        "322",
+        "322 days"
+      ],
+      [
+        "323",
+        "323 days"
+      ],
+      [
+        "324",
+        "324 days"
+      ],
+      [
+        "325",
+        "325 days"
+      ],
+      [
+        "326",
+        "326 days"
+      ],
+      [
+        "327",
+        "327 days"
+      ],
+      [
+        "328",
+        "328 days"
+      ],
+      [
+        "329",
+        "329 days"
+      ],
+      [
+        "330",
+        "330 days"
+      ],
+      [
+        "331",
+        "331 days"
+      ],
+      [
+        "332",
+        "332 days"
+      ],
+      [
+        "333",
+        "333 days"
+      ],
+      [
+        "334",
+        "334 days"
+      ],
+      [
+        "335",
+        "335 days"
+      ],
+      [
+        "336",
+        "336 days"
+      ],
+      [
+        "337",
+        "337 days"
+      ],
+      [
+        "338",
+        "338 days"
+      ],
+      [
+        "339",
+        "339 days"
+      ],
+      [
+        "340",
+        "340 days"
+      ],
+      [
+        "341",
+        "341 days"
+      ],
+      [
+        "342",
+        "342 days"
+      ],
+      [
+        "343",
+        "343 days"
+      ],
+      [
+        "344",
+        "344 days"
+      ],
+      [
+        "345",
+        "345 days"
+      ],
+      [
+        "346",
+        "346 days"
+      ],
+      [
+        "347",
+        "347 days"
+      ],
+      [
+        "348",
+        "348 days"
+      ],
+      [
+        "349",
+        "349 days"
+      ],
+      [
+        "350",
+        "350 days"
+      ],
+      [
+        "351",
+        "351 days"
+      ],
+      [
+        "352",
+        "352 days"
+      ],
+      [
+        "353",
+        "353 days"
+      ],
+      [
+        "354",
+        "354 days"
+      ],
+      [
+        "355",
+        "355 days"
+      ],
+      [
+        "356",
+        "356 days"
+      ],
+      [
+        "357",
+        "357 days"
+      ],
+      [
+        "358",
+        "358 days"
+      ],
+      [
+        "359",
+        "359 days"
+      ],
+      [
+        "360",
+        "360 days"
+      ],
+      [
+        "361",
+        "361 days"
+      ],
+      [
+        "362",
+        "362 days"
+      ],
+      [
+        "363",
+        "363 days"
+      ],
+      [
+        "364",
+        "364 days"
+      ]
+    ]
+  },
+  "leading": {
+    "label": "15 Leading Causes of Death (Infants)",
+    "options": [
+      [
+        "GR130-003",
+        "#Diarrhea and gastroenteritis of infectious origin (A09)"
+      ],
+      [
+        "GR130-004",
+        "#Tuberculosis (A16-A19)"
+      ],
+      [
+        "GR130-005",
+        "#Tetanus (A33,A35)"
+      ],
+      [
+        "GR130-006",
+        "#Diphtheria (A36)"
+      ],
+      [
+        "GR130-007",
+        "#Whooping cough (A37)"
+      ],
+      [
+        "GR130-008",
+        "#Meningococcal infection (A39)"
+      ],
+      [
+        "GR130-009",
+        "#Septicemia (A40-A41)"
+      ],
+      [
+        "GR130-010",
+        "#Congenital syphilis (A50)"
+      ],
+      [
+        "GR130-011",
+        "#Gonococcal infection (A54)"
+      ],
+      [
+        "GR130-013",
+        "#Acute poliomyelitis (A80)"
+      ],
+      [
+        "GR130-014",
+        "#Varicella (chickenpox) (B01)"
+      ],
+      [
+        "GR130-015",
+        "#Measles (B05)"
+      ],
+      [
+        "GR130-016",
+        "#Human immunodeficiency virus (HIV) disease (B20-B24)"
+      ],
+      [
+        "GR130-017",
+        "#Mumps (B26)"
+      ],
+      [
+        "GR130-019",
+        "#Candidiasis (B37)"
+      ],
+      [
+        "GR130-020",
+        "#Malaria (B50-B54)"
+      ],
+      [
+        "GR130-021",
+        "#Pneumocystosis (B59)"
+      ],
+      [
+        "GR130-024",
+        "#Malignant neoplasms (C00-C97)"
+      ],
+      [
+        "GR130-028",
+        "#In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown behavior (D00-D48)"
+      ],
+      [
+        "GR130-029",
+        "#Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)"
+      ],
+      [
+        "GR130-034",
+        "#Short stature, not elsewhere classified (E34.3)"
+      ],
+      [
+        "GR130-035",
+        "#Nutritional deficiencies (E40-E64)"
+      ],
+      [
+        "GR130-036",
+        "#Cystic fibrosis (E84)"
+      ],
+      [
+        "GR130-037",
+        "#Volume depletion, disorders of fluid, electrolyte and acid-base balance (E86-E87)"
+      ],
+      [
+        "GR130-040",
+        "#Meningitis (G00,G03)"
+      ],
+      [
+        "GR130-041",
+        "#Infantile spinal muscular atrophy, type I (Werdnig-Hoffman) (G12.0)"
+      ],
+      [
+        "GR130-042",
+        "#Infantile cerebral palsy (G80)"
+      ],
+      [
+        "GR130-043",
+        "#Anoxic brain damage, not elsewhere classified (G93.1)"
+      ],
+      [
+        "GR130-045",
+        "#Diseases of the ear and mastoid process (H60-H93)"
+      ],
+      [
+        "GR130-046",
+        "#Diseases of the circulatory system (I00-I99)"
+      ],
+      [
+        "GR130-054",
+        "#Acute upper respiratory infections (J00-J06)"
+      ],
+      [
+        "GR130-055",
+        "#Influenza and pneumonia (J09-J18)"
+      ],
+      [
+        "GR130-058",
+        "#Acute bronchitis and acute bronchiolitis (J20-J21)"
+      ],
+      [
+        "GR130-059",
+        "#Bronchitis, chronic and unspecified (J40-J42)"
+      ],
+      [
+        "GR130-060",
+        "#Asthma (J45-J46)"
+      ],
+      [
+        "GR130-061",
+        "#Pneumonitis due to solids and liquids (J69)"
+      ],
+      [
+        "GR130-064",
+        "#Gastritis, duodenitis, and noninfective enteritis and colitis (K29,K50-K55)"
+      ],
+      [
+        "GR130-065",
+        "#Hernia of abdominal cavity and intestinal obstruction without hernia (K40-K46,K56)"
+      ],
+      [
+        "GR130-068",
+        "#Renal failure and other disorders of kidney (N17-N19,N25,N27)"
+      ],
+      [
+        "GR130-072",
+        "#Newborn affected by maternal hypertensive disorders (P00.0)"
+      ],
+      [
+        "GR130-073",
+        "#Newborn affected by other maternal conditions which may be unrelated to present pregnancy (P00.1-P00.9)"
+      ],
+      [
+        "GR130-074",
+        "#Newborn affected by maternal complications of pregnancy (P01)"
+      ],
+      [
+        "GR130-079",
+        "#Newborn affected by complications of placenta, cord and membranes (P02)"
+      ],
+      [
+        "GR130-084",
+        "#Newborn affected by other complications of labor and delivery (P03)"
+      ],
+      [
+        "GR130-085",
+        "#Newborn affected by noxious influences transmitted via placenta or breast milk (P04)"
+      ],
+      [
+        "GR130-087",
+        "#Slow fetal growth and fetal malnutrition (P05)"
+      ],
+      [
+        "GR130-088",
+        "#Disorders related to short gestation and low birth weight, not elsewhere classified (P07)"
+      ],
+      [
+        "GR130-091",
+        "#Disorders related to long gestation and high birth weight (P08)"
+      ],
+      [
+        "GR130-092",
+        "#Birth trauma (P10-P15)"
+      ],
+      [
+        "GR130-093",
+        "#Intrauterine hypoxia and birth asphyxia (P20-P21)"
+      ],
+      [
+        "GR130-096",
+        "#Respiratory distress of newborn (P22)"
+      ],
+      [
+        "GR130-098",
+        "#Congenital pneumonia (P23)"
+      ],
+      [
+        "GR130-099",
+        "#Neonatal aspiration syndromes (P24)"
+      ],
+      [
+        "GR130-100",
+        "#Interstitial emphysema and related conditions originating in the perinatal period (P25)"
+      ],
+      [
+        "GR130-101",
+        "#Pulmonary hemorrhage originating in the perinatal period (P26)"
+      ],
+      [
+        "GR130-102",
+        "#Chronic respiratory disease originating in the perinatal period (P27)"
+      ],
+      [
+        "GR130-103",
+        "#Atelectasis (P28.0-P28.1)"
+      ],
+      [
+        "GR130-106",
+        "#Bacterial sepsis of newborn (P36)"
+      ],
+      [
+        "GR130-107",
+        "#Omphalitis of newborn with or without mild hemorrhage (P38)"
+      ],
+      [
+        "GR130-110",
+        "#Neonatal hemorrhage (P50-P52,P54)"
+      ],
+      [
+        "GR130-111",
+        "#Hemorrhagic disease of newborn (P53)"
+      ],
+      [
+        "GR130-112",
+        "#Hemolytic disease of newborn due to isoimmunization and other perinatal jaundice (P55-P59)"
+      ],
+      [
+        "GR130-113",
+        "#Hematological disorders (P60-P61)"
+      ],
+      [
+        "GR130-114",
+        "#Syndrome of infant of a diabetic mother and neonatal diabetes mellitus (P70.0-P70.2)"
+      ],
+      [
+        "GR130-115",
+        "#Necrotizing enterocolitis of newborn (P77)"
+      ],
+      [
+        "GR130-116",
+        "#Hydrops fetalis not due to hemolytic disease (P83.2)"
+      ],
+      [
+        "GR130-118",
+        "#Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)"
+      ],
+      [
+        "GR130-135",
+        "#Sudden infant death syndrome (R95)"
+      ],
+      [
+        "GR130-139",
+        "#Accidents (unintentional injuries) (V01-X59)"
+      ],
+      [
+        "GR130-152",
+        "#Assault (homicide) (*U01,X85-Y09)"
+      ],
+      [
+        "GR130-157",
+        "#Complications of medical and surgical care (Y40-Y84)"
+      ]
+    ]
+  }
+}

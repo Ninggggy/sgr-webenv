@@ -1,0 +1,7 @@
+ARG BASE=ghcr.io/ninggggy/sgr-webenv-runtime:1
+FROM ${BASE}
+WORKDIR /app
+COPY app/ /app/
+USER 1000:1000
+ENV WATEROFFICE_DATA=/data PYTHONDONTWRITEBYTECODE=1
+CMD ["python3", "/app/server.py"]

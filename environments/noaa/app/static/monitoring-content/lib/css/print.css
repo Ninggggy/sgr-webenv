@@ -1,0 +1,54 @@
+.ncei-header-footer-container,
+#backToTop,
+.tabs,
+.noprint { display: none !important; }
+
+#print-head {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style:  italic;
+  font-size:   24px;
+  font-weight: 400;
+  line-height: 1.33rem;
+  color:       #1c1d1f;
+}
+
+a { color: #1c1d1f !important; text-decoration: none !important; }
+
+.container { padding: 0 !important; }
+
+#top-bar {
+  background-color: #ffffff !important;
+  color:            #1c1d1f !important;
+  margin:           0 !important;
+  padding:          0 !important;
+}
+
+#top-bar h1 {
+  margin:  1em 0 !important;
+  padding: 0 !important;
+}
+
+.card { border-width: 1px !important; }
+
+button, .btn {
+  color:              #1c1d1f !important;
+  background-color:   transparent !important;
+  border:             1px solid rgba(0,0,0,.125) !important;
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn:disabled {
+  color: #c6cace !important;
+}
+
+.form-success,
+.form-error { border-width: 1px !important; }
+
+.accordian .accordian-button::after { color: #1c1d1f !important; }
+
+table * { background: none !important; color: #1c1d1f !important; }
+td,th { border: solid 1px #000 !important; }
+
+.pagination { display: none !important; }

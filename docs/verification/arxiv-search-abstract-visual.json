@@ -1,0 +1,66 @@
+{
+  "search": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "boxes_equal": true,
+      "visible_text_equal": true,
+      "failed_resources": [],
+      "blocked_requests": []
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "boxes_equal": true,
+      "visible_text_equal": true,
+      "failed_resources": [],
+      "blocked_requests": []
+    }
+  ],
+  "abstract": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "measurements_equal": false,
+      "failed_resources": [],
+      "blocked_requests": [],
+      "equal_previous_local_measurements": true,
+      "differences": [
+        "Submission-history sender and PDF sizes unavailable in metadata; timestamps retained",
+        "Excluded source-download label is Other formats rather than TeX Source; sidebar height differs by 1.375px"
+      ]
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "measurements_equal": false,
+      "failed_resources": [],
+      "blocked_requests": [],
+      "equal_previous_local_measurements": true,
+      "differences": [
+        "Submission-history sender and PDF sizes unavailable in metadata; timestamps retained",
+        "Excluded source-download label is Other formats rather than TeX Source; sidebar height differs by 1.375px"
+      ]
+    }
+  ],
+  "interaction": {
+    "interaction": "citation, excluded-service controls and MathJax toggle passed",
+    "formula_count": 13,
+    "blocked": [],
+    "failed": [
+      [
+        "http://web:8080/offline/unavailable",
+        501
+      ]
+    ]
+  },
+  "note": "Archived public references; current-eight features only. An intentional unsupported-feature response is HTTP 501, not a missing asset."
+}

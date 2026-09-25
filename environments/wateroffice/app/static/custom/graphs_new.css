@@ -1,0 +1,113 @@
+#graph{
+  max-height: 705px;
+}
+
+#settings{
+  max-height: 893px;
+  overflow-x: scroll;
+}
+
+#settings section{
+  padding-left: 10px;
+}
+
+#settings section > h3{
+  margin-left: -10px;
+}
+
+.danger-msg{
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 70%;
+  text-align: center;
+  background-color: #F2DEDE;
+  color: #A94442;
+  line-height: 1.4375;
+}
+
+.warning-msg{
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 70%;
+  text-align: center;
+  background-color: #FCF8E3;
+  color: #8A6D3B;
+  line-height: 1.4375;
+}
+
+@-webkit-keyframes rotation{
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.graph-container{
+  display: grid;
+  place-items: center;
+}
+
+.loading{
+  -webkit-animation: rotation 1.5s infinite linear;
+}
+
+/* custom legend */
+
+#legend-container ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#legend-container ul li{
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#legend-container ul li span{
+  border-style: solid;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+#legend-container ul li span.line{
+  height: 2px;
+  width: 60px;
+}
+
+#legend-container ul li span.circle{
+  height: 10px;
+  width: 10px;
+  border-radius: 30px;
+}
+
+#legend-container ul li span.statistics{
+  height: 5px;
+  width: 60px;
+  border: none;
+}
+
+#legend-container ul li p{
+  font-size: 14px;
+  line-height: 1.4375;
+  margin: 0;
+  padding: 0;
+}

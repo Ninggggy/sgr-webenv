@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "path": "/abs/2101.01097",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "path": "/abs/2101.01097v1",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/abs/2101.01097v999",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/bibtex/2101.01097",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "path": "/bibtex/2101.01097v1",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?id_list=2101.01097v1",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?id_list=2101.01097v999",
+      "expected": 404,
+      "actual": 404,
+      "passed": true
+    },
+    {
+      "path": "/search/?query=graph&include_older_versions=1",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?search_query=ti:graph&include_older_versions=1",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/list/cs/new",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/list/cs/recent",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/catchup",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/pdf/2101.01097",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/src/2101.01097",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/login",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/search/?query=test&searchtype=orcid",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/search/?query=test&searchtype=author_id",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/search/?query=test&searchtype=msc_class",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?search_query=orcid:123",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?search_query=msc:11A41",
+      "expected": 501,
+      "actual": 501,
+      "passed": true
+    },
+    {
+      "path": "/api/query?search_query=cat:astro-ph",
+      "expected": 503,
+      "actual": 503,
+      "passed": true
+    },
+    {
+      "check": "true first submission date remains 30 Dec 2020",
+      "passed": true
+    },
+    {
+      "check": "explicit latest version serves real current page",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

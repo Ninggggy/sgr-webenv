@@ -1,0 +1,166 @@
+{
+  "cdd": {
+    "101": {
+       "1": { "begVal":   20, "interval":   13 },
+      "12": { "begVal":  100, "interval":  120 },
+      "24": { "begVal":  200, "interval":  230 },
+      "36": { "begVal":  300, "interval":  320 },
+      "48": { "begVal":  500, "interval":  450 },
+      "60": { "begVal":  600, "interval":  540 }
+    },
+    "102": {
+       "1": { "begVal":   20, "interval":   13 },
+      "12": { "begVal":  100, "interval":   90 },
+      "24": { "begVal":  200, "interval":  180 },
+      "36": { "begVal":  300, "interval":  320 },
+      "48": { "begVal":  400, "interval":  360 },
+      "60": { "begVal":  500, "interval":  450 }
+    },
+    "103": {
+       "1": { "begVal":   20, "interval":   23 },
+      "12": { "begVal":  200, "interval":  150 },
+      "24": { "begVal":  300, "interval":  270 },
+      "36": { "begVal":  500, "interval":  450 },
+      "48": { "begVal":  700, "interval":  530 },
+      "60": { "begVal":  300, "interval":  770 }
+    },
+    "104": {
+       "1": { "begVal":   20, "interval":   48 },
+      "12": { "begVal":  200, "interval":  380 },
+      "24": { "begVal":  800, "interval":  720 },
+      "36": { "begVal": 1000, "interval":  900 },
+      "48": { "begVal": 1500, "interval": 1350 },
+      "60": { "begVal": 1200, "interval": 1880 }
+    },
+    "105": {
+       "1": { "begVal":   20, "interval":   13 },
+      "12": { "begVal":   50, "interval":   95 },
+      "24": { "begVal":  200, "interval":  180 },
+      "36": { "begVal":  200, "interval":  280 },
+      "48": { "begVal":  500, "interval":  400 },
+      "60": { "begVal":  500, "interval":  450 }
+    },
+    "106": {
+       "1": { "begVal":   20, "interval":   53 },
+      "12": { "begVal":  100, "interval":  290 },
+      "24": { "begVal":  600, "interval":  540 },
+      "36": { "begVal": 1000, "interval":  800 },
+      "48": { "begVal": 1000, "interval": 1200 },
+      "60": { "begVal": 1500, "interval": 1350 }
+    },
+    "107": {
+       "1": { "begVal":   20, "interval":   28 },
+      "12": { "begVal":   50, "interval":  245 },
+      "24": { "begVal":  500, "interval":  550 },
+      "36": { "begVal":  500, "interval":  650 },
+      "48": { "begVal": 1000, "interval":  900 },
+      "60": { "begVal": 1000, "interval": 1300 }
+    },
+    "108": {
+       "1": { "begVal":   30, "interval":    3 },
+      "12": { "begVal":   30, "interval":   57 },
+      "24": { "begVal":  100, "interval":   90 },
+      "36": { "begVal":  200, "interval":  180 },
+      "48": { "begVal":  200, "interval":  180 },
+      "60": { "begVal":  200, "interval":  280 }
+    },
+    "109": {
+       "1": { "begVal":   20, "interval":   13 },
+      "12": { "begVal":   50, "interval":  195 },
+      "24": { "begVal":  200, "interval":  380 },
+      "36": { "begVal":  500, "interval":  550 },
+      "48": { "begVal":  500, "interval":  750 },
+      "60": { "begVal":  800, "interval":  920 }
+    },
+    "110": {
+       "1": { "begVal":   20, "interval":   48 },
+      "12": { "begVal":  300, "interval":  370 },
+      "24": { "begVal":  500, "interval":  750 },
+      "36": { "begVal":  700, "interval":  930 },
+      "48": { "begVal":  700, "interval": 1230 },
+      "60": { "begVal": 1100, "interval": 1690 }
+    }
+  },
+  "hdd": {
+    "101": {
+       "1": { "begVal":    50, "interval":  145 },
+      "12": { "begVal":   700, "interval":  830 },
+      "24": { "begVal":  2000, "interval": 1500 },
+      "36": { "begVal":  3000, "interval": 2100 },
+      "48": { "begVal":  4000, "interval": 3100 },
+      "60": { "begVal":  5000, "interval": 4300 }
+    },
+    "102": {
+       "1": { "begVal":    50, "interval":  175 },
+      "12": { "begVal":   800, "interval":  920 },
+      "24": { "begVal":  2000, "interval": 1800 },
+      "36": { "begVal":  3000, "interval": 2200 },
+      "48": { "begVal":  4000, "interval": 3300 },
+      "60": { "begVal":  5000, "interval": 4500 }
+    },
+    "103": {
+       "1": { "begVal":    50, "interval":  125 },
+      "12": { "begVal":   500, "interval":  650 },
+      "24": { "begVal":  2000, "interval": 1200 },
+      "36": { "begVal":  2000, "interval": 1500 },
+      "48": { "begVal":  3000, "interval": 2300 },
+      "60": { "begVal":  2000, "interval": 3100 }
+    },
+    "104": {
+       "1": { "begVal":    50, "interval":   85 },
+      "12": { "begVal":   500, "interval":  450 },
+      "24": { "begVal":  1000, "interval":  900 },
+      "36": { "begVal":  1500, "interval": 1150 },
+      "48": { "begVal":  2000, "interval": 1700 },
+      "60": { "begVal":  3000, "interval": 2300 }
+    },
+    "105": {
+       "1": { "begVal":    50, "interval":  185 },
+      "12": { "begVal":   800, "interval":  920 },
+      "24": { "begVal":  2000, "interval": 1800 },
+      "36": { "begVal":  3000, "interval": 2600 },
+      "48": { "begVal":  4000, "interval": 3500 },
+      "60": { "begVal":  4000, "interval": 4600 }
+    },
+    "106": {
+       "1": { "begVal":    50, "interval":   95 },
+      "12": { "begVal":   400, "interval":  540 },
+      "24": { "begVal":  1200, "interval":  980 },
+      "36": { "begVal":  2000, "interval": 1300 },
+      "48": { "begVal":  2000, "interval": 1800 },
+      "60": { "begVal":  3000, "interval": 2400 }
+    },
+    "107": {
+       "1": { "begVal":    50, "interval":  135 },
+      "12": { "begVal":   700, "interval":  830 },
+      "24": { "begVal":  2000, "interval": 1600 },
+      "36": { "begVal":  3000, "interval": 2200 },
+      "48": { "begVal":  4000, "interval": 3000 },
+      "60": { "begVal":  5000, "interval": 4200 }
+    },
+    "108": {
+       "1": { "begVal":    50, "interval":  145 },
+      "12": { "begVal":   700, "interval":  830 },
+      "24": { "begVal":  2000, "interval": 1600 },
+      "36": { "begVal":  3000, "interval": 2200 },
+      "48": { "begVal":  4000, "interval": 3000 },
+      "60": { "begVal":  3500, "interval": 4350 }
+    },
+    "109": {
+       "1": { "begVal":    50, "interval":  115 },
+      "12": { "begVal":   600, "interval":  690 },
+      "24": { "begVal":  2000, "interval": 1300 },
+      "36": { "begVal":  2000, "interval": 1700 },
+      "48": { "begVal":  3000, "interval": 2300 },
+      "60": { "begVal":  4000, "interval": 3300 }
+    },
+    "110": {
+       "1": { "begVal":   100, "interval":  180 },
+      "12": { "begVal":   800, "interval":  920 },
+      "24": { "begVal":  2000, "interval": 1800 },
+      "36": { "begVal":  3000, "interval": 2700 },
+      "48": { "begVal":  3000, "interval": 3700 },
+      "60": { "begVal":  5000, "interval": 4500 }
+    }
+  }
+}

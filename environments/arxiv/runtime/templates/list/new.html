@@ -1,0 +1,34 @@
+{%- extends "list/base.html" -%}
+{% import "list/list_macros.html" as list_macros with context %}
+
+{#
+New is quite different than the other list pages.
+It has an index of types of items.
+It needs to do headings for the new/cross/rep sections.
+#}
+
+{% block list_index %}
+<ul>
+  {% for ityp in index_for_types %}
+  <li><a href="{{ityp[1]}}#item{{ityp[2]}}">{{ityp[0]}}</a></li>
+  {% endfor %}
+</ul>
+
+<p>See <a id="recent-{{ context }}" aria-labelledby="recent-{{ context }}" href="/list/{{ context }}/recent">recent</a> articles</p>
+<h3>Showing new listings for {{announced.strftime('%A, %-d %B %Y')}}</h3>
+{% endblock %}
+
+{% block items %}
+
+  {% for sec in sub_sections_for_types %}
+    {%if sec.visible%}
+      {{ list_macros.item_list(sec.items, sec.heading) }}
+    {% endif %}
+  {% endfor %}
+
+  {% if not (sub_sections_for_types[0].visible or sub_sections_for_types[1].visible or sub_sections_for_types[2].visible) %}
+    <p>No updates today.</p>
+  {% endif %}
+
+{% endblock %}
+

@@ -1,0 +1,72 @@
+.latlon-note { margin-left: 105px; }
+
+#filter-options .radio-label { margin-bottom: 0; }
+
+#chartCanvas {
+  min-height: 500px;
+  margin:     0.1em auto;
+}
+
+#values-table caption h3,
+#values-table caption h4 {
+    margin: 0;
+}
+
+label[for="trend"] {
+    width: 100%;
+}
+.note-link {
+    display: inline-block;
+    padding-right: 0.7rem;
+}
+.note-link img {
+    vertical-align: baseline;
+}
+.info-popup {
+    display:     none;
+    position:    absolute;
+    top:         1.75em;
+    left:        0;
+    white-space: nowrap;
+    z-index:     1;
+    background:  #fff;
+    border:      1px solid #3d4551;
+    box-shadow:
+        0.3px 0.3px 0.2px rgba(0, 0, 0, 0.02),
+        0.7px 0.7px 0.5px rgba(0, 0, 0, 0.028),
+        1.3px 1.3px 1px rgba(0, 0, 0, 0.035),
+        2.2px 2.2px 1.8px rgba(0, 0, 0, 0.042),
+        4.2px 4.2px 3.3px rgba(0, 0, 0, 0.05),
+        10px 10px 8px rgba(0, 0, 0, 0.07);
+}
+.info-popup .btn-close {
+    top:   0;
+    right: 0;
+}
+
+.radio-label-text a .fa-solid {
+    padding-left: 3px;
+}
+
+.radio-label input:disabled + .radio-label-text a .fa-solid {
+    color:          #c6cace;
+    pointer-events: none;
+    cursor:         default;
+}
+
+#values-table-title {
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+#values-table-subtitle {
+    font-weight: normal;
+}
+/* API */
+/*******/
+#begbaseyear-parameter .tavg-por-row,
+#endbaseyear-parameter .tavg-por-row {
+    display: none;
+}
+/*******/
+/* API */

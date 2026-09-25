@@ -1,0 +1,605 @@
+{
+  "purpose": "Browser rendering complement to independent source-field checks; historical completeness evaluated separately",
+  "results": [
+    {
+      "id": "0704.2452",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0705.0244",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0706.1860",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0708.0336",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0708.2887",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0711.1943",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0712.3876",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0807.4105",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0811.1312",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0811.1663",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0902.2783",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0903.4966",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0904.1696",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0907.4383",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0907.5126",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0908.2616",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0908.4420",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0909.0103",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0910.3758",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "0912.2380",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1008.3545",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1010.0891",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1103.0133",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1106.1868",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1211.2632",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1303.1282",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1401.0475",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1408.4414",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1409.4802",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1509.05555",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1510.00761",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1511.07404",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1602.06886",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1603.07294",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1605.01438",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1605.04343",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1608.04414",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1703.04981",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1704.08739",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1710.06106",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1807.02289",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1807.05769",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1810.07970",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1811.08337",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1904.12417",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1905.10486",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1910.00916",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "1911.07484",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2001.02160",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2005.01835",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2005.09221",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2008.11255",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2011.04464",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2012.06849",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2104.02456",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2108.04184",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2201.03217",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2203.03013",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2203.14887",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2209.02462",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2302.06957",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2307.13290",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2308.13928",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2406.03290",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2408.14956",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2410.07397",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2504.10425",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2508.09443",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2508.21088",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2510.01980",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2601.04808",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2601.19644",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2602.22403",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "2608.11548",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "alg-geom/9703014",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9405009",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9410022",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9606016",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9606024",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9607006",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cmp-lg/9806003",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cond-mat/0203227",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cs/0602052",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cs/0609037",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cs/9810023",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "cs/9903004",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math-ph/0611042",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math-ph/9911019",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/0503052",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/0507352",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/0605363",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/9805101",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/9810106",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/9905077",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/9910071",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "math/9911216",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "nlin/0202062",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "q-alg/9502015",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "q-alg/9703020",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    },
+    {
+      "id": "quant-ph/9910033",
+      "rendered": true,
+      "blocked": [],
+      "error": null
+    }
+  ]
+}

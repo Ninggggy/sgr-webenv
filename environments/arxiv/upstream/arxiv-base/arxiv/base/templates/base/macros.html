@@ -1,0 +1,275 @@
+{# macros to be available to all templates across arxiv #}
+
+{% macro alerts(messages=[]) %}
+{% if messages -%}
+<div class="notifications" role="alert" aria-atomic="true">
+    {% for category, message in messages -%}
+    <div class="notification is-{{ category }}">
+        {% if message.dismissable %}<button class="delete notification-dismiss"></button>{% endif %}
+        {% if message.title %}<h2 class="is-size-5 is-marginless">{{ message.title }}</h2>{%- endif %}
+        <p>{{ message.message }}</p>
+    </div>
+    {%- endfor %}
+</div>
+{%- endif %}
+{% endmacro %}
+
+
+{% macro compactsearch(alignstyle="level-right") -%}
+  {# Creates an inline search widget with one input box, a dropdown for field
+    selection, a button, and two tiny help/advanced links. Can be wrapped with
+    Bulma's level element to align vertically with other elements in the same
+    horizontal band. Parameter is a Bulma class that sets overall alignment
+    within level wrapper, allowed values are level-left or level-right.
+  #}
+  <div class="search-block {{ alignstyle }}">
+    <form class="level-item mini-search" method="GET" action="{{ url_for('search_box') }}">
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input is-small" type="text" name="query" placeholder="Search..." aria-label="Search term or terms" />
+          <p class="help"><a href="{{ url_for('help') }}">Help</a> | <a href="{{ url_for('search_advanced') }}">Advanced Search</a></p>
+        </div>
+        <div class="control">
+          <div class="select is-small">
+            <select name="searchtype" aria-label="Field to search">
+              <option value="all" selected="selected">All fields</option>
+              <option value="title">Title</option>
+              <option value="author">Author</option>
+              <option value="abstract">Abstract</option>
+              <option value="comments">Comments</option>
+              <option value="journal_ref">Journal reference</option>
+              <option value="acm_class">ACM classification</option>
+              <option value="msc_class">MSC classification</option>
+              <option value="report_num">Report number</option>
+              <option value="paper_id">arXiv identifier</option>
+              <option value="doi">DOI</option>
+              <option value="orcid">ORCID</option>
+              <option value="author_id">arXiv author ID</option>
+              <option value="help">Help pages</option>
+              <option value="full_text">Full text</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="source" value="header">
+        <button class="button is-small is-cul-darker">Search</button>
+      </div>
+    </form>
+  </div>
+{%- endmacro %}
+
+{% macro pagination(current_page) -%}
+  {# Creates a uniform paginator. Currently unfinished - needs parameters
+     to define range, base URL, and current page.
+   #}
+  <nav class="pagination is-small is-centered" role="navigation" aria-label="pagination">
+    <a class="pagination-previous">Previous</a>
+    <a class="pagination-next">Next page</a>
+    <ul class="pagination-list">
+      <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+      <li><span class="pagination-ellipsis">&hellip;</span></li>
+      <li><a class="pagination-link" aria-label="Goto page b">b</a></li>
+      <li><a class="pagination-link is-current" aria-label="Page c" aria-current="page">{{ current_page }}</a></li>
+      <li><a class="pagination-link" aria-label="Goto page d">d</a></li>
+      <li><span class="pagination-ellipsis">&hellip;</span></li>
+      <li><a class="pagination-link" aria-label="Goto page n">n</a></li>
+    </ul>
+  </nav>
+{%- endmacro %}
+
+{%- macro abs_date_line(arxiv_id, submitted_date, version = 1, submission_history = []) -%}
+  {% set this_is_the_first_version = version == 1 %}
+  {% set there_are_more_versions = submission_history and version < submission_history[-1].version %}
+  {% set this_is_the_latest_version = not submission_history or version == submission_history[-1].version %}
+  {% if this_is_the_first_version %}
+    {% set first_version_submitted_date = submitted_date %}
+  {% else %}
+    {% set first_version_submitted_date = submission_history[0].submitted_date %}
+  {% endif %}
+  {% if this_is_the_latest_version %}
+    {% set latest_version_submitted_date = submitted_date %}
+    {% set latest_version = version %}
+  {% else %}
+    {% set latest_version_submitted_date = submission_history[-1].submitted_date %}
+    {% set latest_version = submission_history[-1].version %}
+  {% endif %}
+
+  [Submitted on {{ first_version_submitted_date.strftime('%-d %b %Y') }}
+  {%- if this_is_the_first_version and there_are_more_versions %} (this version){%- endif -%}
+  {%- if not this_is_the_first_version %} (<a href="{{ url_for('abs', paper_id=arxiv_id, version=1) }}">v1</a>){%- endif %}
+  {%- if not this_is_the_first_version and not this_is_the_latest_version -%}
+    , revised {{ submitted_date.strftime('%-d %b %Y') }} (this version, v{{ version }})
+  {%- endif -%}
+  {%- if not this_is_the_latest_version -%}
+    , <em>latest version {{ latest_version_submitted_date.strftime('%-d %b %Y') }}</em> (<a href="{{ url_for('abs', paper_id=arxiv_id, version=latest_version) }}">v{{ latest_version }}</a>)
+  {%- elif not this_is_the_first_version and this_is_the_latest_version -%}
+    , last revised {{ latest_version_submitted_date.strftime('%-d %b %Y') }} (this version, v{{ version }})
+  {%- endif -%}
+  ]
+{%- endmacro -%}
+
+{%- macro version_atag(arxiv_id, version, primary_category) -%}
+  {%- if version -%}
+    {%- set vpart = 'v' ~ version -%}
+  {%- else -%}
+    {%- set vpart = '' -%}
+  {% endif %}
+  {%- if primary_category in arxiv_id -%}
+    <a href="{{ arxiv_id|canonical_url(version) }}">arXiv:{{ arxiv_id }}{{vpart}}</a>
+    {%- else -%}
+    <a href="{{ arxiv_id|canonical_url(version) }}">arXiv:{{ arxiv_id }}{{vpart}}</a> [{{ primary_category }}]
+  {%- endif -%}
+{%- endmacro -%}
+
+{% macro abs(
+    arxiv_id,
+    title,
+    authors,
+    abstract,
+    submitted_date,
+    primary_category,
+    comments = None,
+    msc_class = None,
+    acm_class = None,
+    journal_ref = None,
+    doi = None,
+    report_num = None,
+    version = 1,
+    submission_history = [],
+    secondary_categories = [],
+    include_stylesheet = 1,
+    embed_stylesheet = 0,
+    download_button_markup = None,
+    preprint_doi = None
+) -%}
+
+{% if include_stylesheet and not embed_stylesheet %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('base.static', filename='css/abs.css') }}">
+{% endif %}
+{% if embed_stylesheet %}
+  <style>
+  {{ 'css/abs.css'|embed_content }}
+  </style>
+{% endif %}
+<div id="content-inner">
+  <div id="abs">
+    <div class="dateline">{{ abs_date_line(arxiv_id, submitted_date, version, submission_history) }}</div>
+    <h1 class="title mathjax"><span class="descriptor">Title:</span>{{ title|tex2utf|arxiv_id_urlize|safe }}</h1>
+    <div class="authors"><span class="descriptor">Authors:</span>{{ authors }}</div>
+
+    {#- optionally include markup for the download button -#}
+    {% if download_button_markup %}
+      {{ download_button_markup }}
+    {% endif %}
+
+    <blockquote class="abstract mathjax">
+      <span class="descriptor">Abstract:</span>{{ abstract|tex2utf_no_symbols|abstract_lf_to_br|urlize|safe }}
+    </blockquote>
+
+    <!--CONTEXT-->
+    <div class="metatable">
+      <table summary="Additional metadata">
+        {%- if comments %}
+        <tr>
+          <td class="tablecell label">Comments:</td>
+          <td class="tablecell comments mathjax">{{ comments|tex2utf|urlize|safe }}</td>
+        </tr>
+        {% endif -%}
+        <tr>
+          <td class="tablecell label">Subjects:</td>
+          <td class="tablecell subjects">
+            <span class="primary-subject">{{ primary_category|get_category_display }}</span>
+            {%- for category in secondary_categories|sort(attribute='id') -%}; {{ category|get_category_display }}{%- endfor -%}
+          </td>
+        </tr>
+        {%- if msc_class %}
+        <tr>
+          <td class="tablecell label"><abbr title="Mathematical Subject Classification">MSC</abbr> classes:</td>
+          <td class="tablecell msc-classes">{{ msc_class }}</td>
+        </tr>
+        {% endif -%}
+        {%- if acm_class %}
+        <tr>
+          <td class="tablecell label"><abbr title="Association of Computing Machinery Classification">ACM</abbr>&nbsp;classes:</td>
+          <td class="tablecell acm-classes">{{ acm_class }}</td>
+        </tr>
+        {% endif -%}
+        {%- if journal_ref %}
+        <tr>
+          <td class="tablecell label">Journal&nbsp;reference:</td>
+          <td class="tablecell jref">{{ journal_ref|tex2utf }}</td>
+        </tr>
+        {% endif -%}
+        {%- if doi %}
+        <tr>
+          <td class="tablecell label"><abbr title="Digital Object Identifier">DOI</abbr>:</td>
+          <td class="tablecell msc_classes">{{ doi|escape|abs_doi_to_urls|safe }}</td>
+        </tr>
+        {% endif -%}
+        {%- if report_num %}
+        <tr>
+          <td class="tablecell label">Report&nbsp;number:</td>
+          <td class="tablecell jref">{{ report_num }}</td>
+        </tr>
+        {% endif -%}
+        {%- if preprint_doi %}
+        <tr>
+          <td class="tablecell label"><abbr title="Preprint Digital Object Identifier">Preprint DOI</abbr>:</td>
+          <td class="tablecell msc_classes"><a href="https://doi.org/{{ preprint_doi }}">https://doi.org/{{ preprint_doi }}</a></td>
+        </tr>
+        {% endif -%}
+        <tr>
+          <td class="tablecell label">Cite as:</td>
+          <td class="tablecell arxivid"><span class="arxivid">{{ version_atag(arxiv_id, 0, primary_category) }}</span></td>
+        </tr>
+        <tr>
+          <td class="tablecell label">&nbsp;</td>
+          <td class="tablecell arxividv">(or <span class="arxivid">
+              {{ version_atag(arxiv_id, version, primary_category) }}</span> for this version)
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+{%- endmacro -%}
+
+
+{% macro abs_plaintext(
+    arxiv_id,
+    title,
+    authors,
+    abstract,
+    submitted_date,
+    primary_category,
+    submitter_name,
+    submitter_email,
+    submission_size_bytes,
+    license_uri,
+    comments = None,
+    msc_class = None,
+    acm_class = None,
+    journal_ref = None,
+    doi = None,
+    report_num = None,
+    version = 1,
+    submission_history = [],
+    secondary_categories = []) -%}
+\\
+arXiv:{{ arxiv_id }}
+From: {{ submitter_name }} <{{ submitter_email }}>
+Date: {{ (submitted_date|as_eastern).strftime("%a, %-d %b %Y %H:%M:%S ET") }}   ({{ submission_size_bytes|tidy_filesize }})
+
+Title: {{ title }}
+Authors: {{ authors }}
+Categories: {{ primary_category }}{%- for category in secondary_categories|sort(attribute='id') -%} {{ category }}{%- endfor %}
+{% if comments -%}{{ ("Comments: " + comments)|wordwrap(77, wrapstring="\n  ") }}{%- endif %}
+{% if msc_class -%}MSC classes: {{ msc_class }}{%- endif %}
+{% if acm_class -%}ACM classes: {{ acm_class }}{%- endif %}
+{% if journal_ref -%}Journal reference: {{ journal_ref }}{%- endif %}
+{% if doi -%}DOI: {{ doi }}{%- endif -%}
+{% if report_num -%}Report number: {{ report_num }}{%- endif %}
+License: {{ license_uri }}
+\\
+  {{ abstract|wordwrap(77) }}
+\\
+{% endmacro %}

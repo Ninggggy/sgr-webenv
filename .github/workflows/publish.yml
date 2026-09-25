@@ -1,0 +1,39 @@
+name: Build and publish reviewed containers
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: Dependency chain or environment to build
+        type: choice
+        required: true
+        options: [base, census, wonder, arxiv, wateroffice, verify]
+permissions:
+  contents: read
+  packages: write
+jobs:
+  publish:
+    # Only a trusted, temporary runner registered by the release author.
+    # No paid hosted runner and no execution on pull_request events.
+    runs-on: [self-hosted, sgr-release]
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Isolate registry credentials
+        run: echo "DOCKER_CONFIG=$RUNNER_TEMP/sgr-docker-auth" >> "$GITHUB_ENV"
+      - name: Authenticate to the associated registry
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: printf '%s' "$GHCR_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+      - name: Build and push
+        if: inputs.site != 'verify'
+        env:
+          SITE: ${{ inputs.site }}
+        run: python3 tools/build.py "$SITE" --push
+      - name: Verify registry images
+        if: inputs.site == 'verify'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/verify_images.py
+      - name: Remove temporary registry login
+        if: always()
+        run: docker logout ghcr.io

@@ -1,0 +1,135 @@
+{
+  "scope": "Content regions only; header/footer hidden in both sides, official saved HTML rendered using archived-era local styles. Not full visual equivalence.",
+  "results": [
+    {
+      "page": "home",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "advanced",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": true,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "archive",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "month",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": false,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "year",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "home",
+      "viewport": [
+        1280,
+        800
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "advanced",
+      "viewport": [
+        1280,
+        800
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": true,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "archive",
+      "viewport": [
+        1280,
+        800
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "month",
+      "viewport": [
+        1280,
+        800
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": false,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    },
+    {
+      "page": "year",
+      "viewport": [
+        1280,
+        800
+      ],
+      "controls_equal_archived_reference": true,
+      "boxes_equal_archived_reference": false,
+      "controls_equal_previous_local": true,
+      "boxes_equal_previous_local": true,
+      "failed_local_resources": [],
+      "blocked_local_requests": []
+    }
+  ]
+}

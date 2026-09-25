@@ -1,0 +1,31 @@
+[
+  {
+    "environment": "noaa",
+    "source": "authenticated private draft Release download",
+    "archive_bytes": 22123102,
+    "required_files_and_sqlite_validation": "passed",
+    "anonymous_download": "not tested"
+  },
+  {
+    "environment": "wateroffice",
+    "source": "authenticated private draft Release download",
+    "archive_bytes": 399577798,
+    "required_files_and_sqlite_validation": "passed",
+    "anonymous_download": "not tested"
+  },
+  {
+    "environment": "arxiv",
+    "source": "authenticated private draft Release download",
+    "archive_bytes": 1344524851,
+    "required_files_and_sqlite_validation": "passed",
+    "anonymous_download": "not tested"
+  },
+  {
+    "environment": "census",
+    "source": "authenticated private draft Release download",
+    "archive_bytes": 131009519,
+    "required_files_and_sqlite_validation": "passed",
+    "clean_native_install_and_lifecycle": "passed; see census-lifecycle.json",
+    "anonymous_download": "not tested"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "repository_still_private": true,
+  "removed_initial_commit_retrievable": true,
+  "excluded_library_retrievable_by_old_ref": true,
+  "library_bytes": 876721,
+  "main_branch_contains_excluded_library": false,
+  "public_transition": "blocked until old GitHub objects are removed or publication is transferred to a genuinely clean repository"
+}

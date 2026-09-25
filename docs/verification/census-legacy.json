@@ -1,0 +1,79 @@
+{
+  "environment": "fresh public-source build; native amd64 on original server, independent data directory",
+  "browser_tables": 25,
+  "tasks": [
+    {
+      "task": "census_001",
+      "candidates": 100,
+      "computed_rows": 20,
+      "expected_rows": 20,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with verified formula"
+    },
+    {
+      "task": "census_001-g",
+      "candidates": 100,
+      "computed_rows": 20,
+      "expected_rows": 20,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with verified formula"
+    },
+    {
+      "task": "census_002",
+      "candidates": 33,
+      "computed_rows": 5,
+      "expected_rows": 5,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with revised population definitions"
+    },
+    {
+      "task": "census_002-g",
+      "candidates": 33,
+      "computed_rows": 5,
+      "expected_rows": 5,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with revised population definitions"
+    },
+    {
+      "task": "census_003",
+      "candidates": 58,
+      "computed_rows": 4,
+      "expected_rows": 4,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with verified formula"
+    },
+    {
+      "task": "census_003-g",
+      "candidates": 58,
+      "computed_rows": 4,
+      "expected_rows": 4,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with verified formula"
+    },
+    {
+      "task": "census_004",
+      "candidates": 67,
+      "computed_rows": 7,
+      "expected_rows": 7,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with revised population definitions"
+    },
+    {
+      "task": "census_004-g",
+      "candidates": 67,
+      "computed_rows": 7,
+      "expected_rows": 7,
+      "numeric_match": true,
+      "differences": [],
+      "semantic_status": "consistent with revised population definitions"
+    }
+  ],
+  "not_a_model_evaluation": true
+}

@@ -1,0 +1,7 @@
+# Preserve base-image defaults; processors is ignored by this legacy image's
+# environment-variable adapter, so set it in the real Elasticsearch config.
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+discovery.zen.minimum_master_nodes: 1
+xpack.license.self_generated.type: basic
+processors: 4

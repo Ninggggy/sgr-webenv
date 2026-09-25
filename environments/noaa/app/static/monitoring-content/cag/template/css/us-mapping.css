@@ -1,0 +1,225 @@
+/* ============================================================
+   Leaflet Map
+   ============================================================ */
+
+#map-canvas {
+    position: relative;
+    width: 100%;
+    margin: 0.5em auto;
+    padding: 5px;
+}
+
+.hoverValues {
+    float: none;
+    width: calc(100% - 45px);
+}
+
+#logo {
+    margin-bottom: -0.5px;
+}
+
+/* Map heights */
+
+@media (max-width: 575px) {
+    #map-canvas { height: 450px; }
+
+    #reset-map-bounds,
+    .leaflet-control-easyPrint {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #map-canvas { height: 595px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #map-canvas { height: 600px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #map-canvas { height: 675px; }
+}
+
+@media (min-width: 1200px) {
+    #map-canvas { height: 685px; }
+}
+
+/* Map header */
+
+#mapTitle {
+    font-size: 24px;
+    margin: -5px 150px 0 0;
+}
+
+#mapDate {
+    font-size: 16px;
+    padding: 0 10px 0 0; /* easyPrint hack */
+    text-align: right;
+    margin: -5px 0 -5px 5px;
+}
+
+/* ============================================================
+   Hover Info
+   ============================================================ */
+
+.leaflet-bottom.leaflet-left {
+    width: 100%;
+}
+
+#hoverInfo {
+    padding: 6px 8px;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#hoverLocationName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hoverInstructions {
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: normal;
+    color: #3d4551;
+}
+
+#highlightValues {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hoverReturn {
+    flex: 1;
+    font-size: 16px;
+    display: flex;
+    gap: 1%;
+}
+
+.hoverReturnTitle {
+    font-weight: bold;
+    white-space: nowrap; /* easyPrint hack */
+}
+
+.hoverReturnValue {
+    white-space: nowrap; /* easyPrint hack */
+}
+
+/* Hover responsiveness */
+
+@media (max-width: 767px) {
+    .hoverInstructions,
+    .leaflet-control-zoom,
+    .dd-units-defn,
+    .hoverReturnTitle .paramAbbr,
+    .hoverReturn:not(.currentReturnType) {
+        display: none;
+    }
+
+    .hoverReturnTitle .parameter {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) {
+    .hoverReturnTitle .parameter { display: none; }
+    .hoverReturnTitle .paramAbbr { display: inline; }
+}
+
+/* ============================================================
+   Text Labels
+   ============================================================ */
+
+.textLabels {
+    min-width: 50px;
+    min-height: 1.5em;
+    left: -20px !important;
+    border-radius: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif, "open Sans", Helvetica;
+    font-size: 0.9em;
+    cursor: default !important;
+    color: #000;
+    text-shadow:
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}
+
+/* State-specific nudges */
+
+.textLabels.location-6  { top: -4px !important; }   /* CT */
+.textLabels.location-7  { left: -5px !important; }  /* DE */
+.textLabels.location-18 { top: -10px !important; }  /* MD */
+.textLabels.location-19 { top: -5px !important; }   /* MA */
+.textLabels.location-27 { top: -5px !important; }   /* NH */
+.textLabels.location-28 { left: 0 !important; }     /* NJ */
+.textLabels.location-37 { top: 7px !important; left: -5px !important; } /* RI */
+
+/* Vermont override */
+.textLabels.location-27 { top: 5px !important; }
+
+.cityTextLabels {
+    top: -1.15em;
+}
+
+@media (min-width: 576px) {
+    #pdsi-labels,
+    #phdi-labels,
+    #pmdi-labels,
+    #zndx-labels {
+        margin-left: -0.5em;
+    }
+}
+
+/* ============================================================
+   Show Text Toggle
+   ============================================================ */
+
+input#show-text {
+    position: absolute;
+    opacity: 0;
+}
+
+label#show-text-label {
+    color: #0076d6 !important;
+    background-color: transparent !important;
+}
+
+label#show-text-label:hover {
+    background-color: #a8f2ff !important;
+}
+
+#show-text:checked ~ label#show-text-label,
+#show-text:checked ~ label#show-text-label:hover {
+    color: #ffffff !important;
+    border-color: #0076d6 !important;
+    background-color: #0076d6 !important;
+}
+
+/* ============================================================
+   Text Labels & Download
+   ============================================================ */
+
+#text-download {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    line-height: 2.25em;
+    gap: 10px;
+}
+
+/* ============================================================
+   Values Table
+   ============================================================ */
+
+@media (min-width: 768px) {
+    #values-table .state-abbr { display: none; }
+}
+
+@media (max-width: 767px) {
+    #values-table .state { display: none; }
+}

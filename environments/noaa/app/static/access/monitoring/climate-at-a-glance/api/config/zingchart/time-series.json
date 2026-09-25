@@ -1,0 +1,211 @@
+{
+    "type": "mixed",
+    "globals": {
+        "fontFamily": "Source Sans Pro",
+        "fontSize": 16,
+        "color": "#1c1d1f",
+        "fontWeight": 400
+    },
+    "title": {
+        "text": "Time Series",
+        "textAlign": "left",
+        "fontSize": 20,
+        "fontWeight": 700,
+        "mediaRules": [
+            {
+                "minWidth": 690,
+                "fontSize": "20px"
+            },
+            {
+                "maxWidth": 689,
+                "fontSize": "14px"
+            }
+        ]
+    },
+    "subtitle": {
+        "text": "Date Display",
+        "textAlign": "left",
+        "color": "#3d4551",
+        "marginTop": -25,
+        "mediaRules": [
+            {
+                "minWidth": 690,
+                "fontSize": "16px"
+            },
+            {
+                "maxWidth": 689,
+                "fontSize": "12px"
+            }
+        ]
+    },
+    "images": [
+        {
+            "src": "/monitoring-content/lib/images/noaa-logo-watermark.png",
+            "x": 75,
+            "y": 62
+        }
+    ],
+    "legend": {
+        "layout": "1x",
+        "border": "none",
+        "backgroundColor": "transparent",
+        "item": {
+            "cursor": "hand"
+        },
+        "marker": {
+            "cursor": "hand",
+            "type": "line"
+        }
+    },
+    "zoom": {
+        "label": {
+            "visible": true
+        }
+    },
+    "gui": {
+        "behaviors": [
+            {
+                "id": "SaveAsImagePNG",
+                "enabled": "all",
+                "text": "View as PNG"
+            },
+            {
+                "id": "Print",
+                "enabled": "all",
+                "text": "Print Chart"
+            },
+            {
+                "id": "ViewAll",
+                "enabled": "all",
+                "text": "Reset Zoom"
+            },
+            {
+                "id": "DownloadCSV",
+                "enabled": "none"
+            },
+            {
+                "id": "DownloadXLS",
+                "enabled": "none"
+            },
+            {
+                "id": "HideGuide",
+                "enabled": "none"
+            },
+            {
+                "id": "Reload",
+                "enabled": "none"
+            },
+            {
+                "id": "ViewDataTable",
+                "enabled": "none"
+            },
+            {
+                "id": "ViewSource",
+                "enabled": "none"
+            }
+        ]
+    },
+    "scaleX": {
+        "zooming": true,
+        "guide": {
+            "lineColor": "#dcdee0",
+            "lineStyle": "solid",
+            "visible": true
+        },
+        "item": {
+            "fontColor": "#3d4551",
+            "fontSize": "16px"
+        },
+        "mediaRules": [
+            {
+                "minWidth": 690,
+                "item": {
+                    "fontSize": "16px"
+                }
+            },
+            {
+                "maxWidth": 689,
+                "item": {
+                    "fontSize": "12px"
+                }
+            }
+        ]
+    },
+    "scrollX": {
+        "id": "scrollX",
+        "bar": {
+            "backgroundColor": "#8d9297",
+            "height": 16,
+            "alpha": 0.2
+        },
+        "handle": {
+            "backgroundColor": "#8d9297",
+            "height": 10
+        }
+    },
+    "scaleY": {
+        "label": {
+            "text": "Y-Axis Label"
+        },
+        "thousandsSeparator": ",",
+        "item": {
+            "fontColor": "#3d4551"
+        },
+        "mediaRules": [
+            {
+                "minWidth": 690,
+                "item": {
+                    "fontSize": "16px"
+                }
+            },
+            {
+                "maxWidth": 689,
+                "item": {
+                    "fontSize": "12px"
+                }
+            }
+        ]
+    },
+    "scaleY2": {
+        "label": {
+            "text": "Y-Axis 2 Label"
+        },
+        "guide": {
+            "visible": false
+        },
+        "item": {
+            "fontColor": "#3d4551",
+            "fontSize": "16px"
+        },
+        "thousandsSeparator": ",",
+        "mediaRules": [
+            {
+                "maxWidth": 689,
+                "visible": false
+            }
+        ]
+    },
+    "plot": {
+        "tooltip": {
+            "visible": false
+        }
+    },
+    "plotarea": {
+        "marginTop": 75,
+        "marginLeft": "dynamic",
+        "marginRight": "dynamic"
+    },
+    "crosshairX": {
+        "plotLabel": {
+            "y": 0,
+            "color": "#ffffff",
+            "borderColor": "transparent"
+        },
+        "scaleLabel": {
+            "fontSize": "16px",
+            "backgroundColor": "#3d4551",
+            "color": "#ffffff"
+        }
+    },
+    "series": []
+}

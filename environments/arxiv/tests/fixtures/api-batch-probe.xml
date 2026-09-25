@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/eWhpFVw7XZ4Qj5iAtihK0eQfmAc</id>
+  <title>arXiv Query: search_query=&amp;id_list=2101.01097v1,2203.11171v1&amp;start=0&amp;max_results=2</title>
+  <updated>2026-09-25T05:33:56Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=2&amp;id_list=2101.01097v1,2203.11171v1" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>2</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2101.01097v1</id>
+    <title>Transformer for Image Quality Assessment</title>
+    <updated>2020-12-30T18:43:11Z</updated>
+    <link href="https://arxiv.org/abs/2101.01097v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2101.01097v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transformer has become the new standard method in natural language processing (NLP), and it also attracts research interests in computer vision area. In this paper we investigate the application of Transformer in Image Quality (TRIQ) assessment. Following the original Transformer encoder employed in Vision Transformer (ViT), we propose an architecture of using a shallow Transformer encoder on the top of a feature map extracted by convolution neural networks (CNN). Adaptive positional embedding is employed in the Transformer encoder to handle images with arbitrary resolutions. Different settings of Transformer architectures have been investigated on publicly available image quality databases. We have found that the proposed TRIQ architecture achieves outstanding performance. The implementation of TRIQ is published on Github (https://github.com/junyongyou/triq).</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-30T18:43:11Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Junyong You</name>
+    </author>
+    <author>
+      <name>Jari Korhonen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.11171v1</id>
+    <title>Self-Consistency Improves Chain of Thought Reasoning in Language Models</title>
+    <updated>2022-03-21T17:48:52Z</updated>
+    <link href="https://arxiv.org/abs/2203.11171v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.11171v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We explore a simple ensemble strategy, self-consistency, that significantly improves the reasoning accuracy of large language models. The idea is to sample a diverse set of outputs from a language model and return the most consistent answer in the set. Such ensembling method improves reasoning accuracy when combined with chain of thought prompting. For arithmetic and commonsense reasoning benchmarks we find that self-consistency yields significant accuracy improvements in a variety of datasets, such as GSM8K (+10%), SVAMP (+14%), MultiArith (+24%), CommonsenseQA (+5%) and ARC (easy +4%, challenge +5%).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-21T17:48:52Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuezhi Wang</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Dale Schuurmans</name>
+    </author>
+    <author>
+      <name>Quoc Le</name>
+    </author>
+    <author>
+      <name>Ed Chi</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+  </entry>
+</feed>

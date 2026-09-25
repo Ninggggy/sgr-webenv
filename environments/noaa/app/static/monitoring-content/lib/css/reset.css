@@ -1,0 +1,103 @@
+/* 1. Universal Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Strict Margin & Padding Reset
+   Targeting structural text blocks to prevent layout shifting */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, figcaption, dl, dd, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Base Document Defaults */
+html {
+  -webkit-text-size-adjust: 100%; /* Fix iOS orientation scaling bugs */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  color: #444;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Replaces unstable optimizeLegibility */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bitter", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance; /* Prevents single-word hanging text wraps */
+}
+
+/* 5. Clean Lists */
+ul, ol {
+  list-style: none; /* Strips bullets globally for predictable flexible layouts */
+}
+
+/* 6. Fluid Media Elements */
+picture, video, canvas, svg {
+  display: block;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+}
+
+img, picture {
+  height: auto; /* Preserves layout aspect ratio */
+}
+
+/* 7. Robust Form Controls */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: transparent; /* Prevents user-agent styling overrides */
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical; /* Blocks horizontal scaling from breaking desktop layouts */
+}
+
+/* 8. Data Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Fixed-Width Monospace Code Blocks */
+code, pre, kbd, samp {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+
+/* 10. High-Quality Inline Links */
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+/* 11. Global Keyboard Accessibility Focus Anchor */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* 12. Vestigial Animation & Transition Slowdown
+   Essential safety standard for vestibulo-ocular/motion-sensitive disorders */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

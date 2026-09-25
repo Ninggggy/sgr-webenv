@@ -1,0 +1,159 @@
+{
+  "natality-2019": {
+    "reviewed": true,
+    "guide": "nat2019.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2019.txt"
+  },
+  "natality-2020": {
+    "reviewed": true,
+    "guide": "nat2020.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2020.txt"
+  },
+  "linked-2021": {
+    "reviewed": true,
+    "guide": "linked2021.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-linked-2021.txt"
+  },
+  "natality-2016": {
+    "reviewed": true,
+    "guide": "nat2016.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 115,
+    "evidence": "validation/layout-natality-2016.txt"
+  },
+  "natality-2017": {
+    "reviewed": true,
+    "guide": "nat2017.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 115,
+    "evidence": "validation/layout-natality-2017.txt"
+  },
+  "natality-2018": {
+    "reviewed": true,
+    "guide": "nat2018.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2018.txt"
+  },
+  "natality-2021": {
+    "reviewed": true,
+    "guide": "nat2021.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 115,
+    "evidence": "validation/layout-natality-2021.txt",
+    "unsupported_dimensions": [
+      "origin"
+    ],
+    "limitations": [
+      "The 2021 Natality public file has an inconsistent MHISPX field. Broad Hispanic origin uses the documented MHISP_R recode; expanded Hispanic-origin grouping and filtering are unavailable for this year."
+    ]
+  },
+  "natality-2022": {
+    "reviewed": true,
+    "guide": "nat2022.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2022.txt"
+  },
+  "natality-2023": {
+    "reviewed": true,
+    "guide": "nat2023.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2023.txt"
+  },
+  "linked-2017": {
+    "reviewed": true,
+    "guide": "linked2017.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 115,
+    "evidence": "validation/layout-linked-2017.txt"
+  },
+  "linked-2018": {
+    "reviewed": true,
+    "guide": "linked2018.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 115,
+    "evidence": "validation/layout-linked-2018.txt"
+  },
+  "linked-2019": {
+    "reviewed": true,
+    "guide": "linked2019.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-linked-2019.txt"
+  },
+  "natality-2024": {
+    "reviewed": true,
+    "guide": "nat2024.pdf",
+    "record_length": {
+      "births": 1330
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-natality-2024.txt"
+  },
+  "linked-2020": {
+    "reviewed": true,
+    "guide": "linked2020.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-linked-2020.txt"
+  },
+  "linked-2023": {
+    "reviewed": true,
+    "guide": "linked2023.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-linked-2023.txt"
+  },
+  "linked-2022": {
+    "reviewed": true,
+    "guide": "linked2022.pdf",
+    "record_length": {
+      "births": 1346,
+      "deaths": 1743
+    },
+    "origin_position": 112,
+    "evidence": "validation/layout-linked-2022.txt"
+  }
+}

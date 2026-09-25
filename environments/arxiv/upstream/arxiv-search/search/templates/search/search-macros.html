@@ -1,0 +1,301 @@
+{% macro size_and_order(form, action_uri) %}
+<div class="level breathe-horizontal">
+  <div class="level-left">
+    <form method="GET" action="{{ action_uri }}">
+      <div style="display: none;">
+        {% for field in form %}
+          {% if field != form.size and field != form.order %}
+            {{ field }}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="box field is-grouped is-grouped-multiline level-item">
+        <div class="control">
+          <span class="select is-small">
+            {{ form.size|safe }}
+          </span>
+          {{ form.size.label }}.
+        </div>
+        <div class="control">
+          {{ form.order.label }}
+          <span class="select is-small">
+            {{ form.order|safe }}
+          </span>
+        </div>
+        <div class="control">
+          <button class="button is-small is-link">Go</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{%- endmacro -%}
+
+{% macro pagination(metadata, url_for_page) -%}
+  <nav class="pagination is-small is-centered breathe-horizontal" role="navigation" aria-label="pagination">
+    {% if metadata.current_page > 1 %}
+    <a href="{{ url_for_page(metadata.current_page - 1, metadata.size) }}"
+      class="pagination-previous">Previous
+    </a>
+    {% else %}
+    <a href=""
+      class="pagination-previous is-invisible">Previous
+    </a>
+    {% endif %}
+    {% if metadata.current_page < metadata.total_pages %}
+      <a href="{% if metadata.current_page + 1 <= metadata.max_pages %}{{ url_for_page(metadata.current_page + 1, metadata.size) }}{% endif %}"
+        class="pagination-next" {% if metadata.current_page + 1 > metadata.max_pages %}disabled="true"{% endif %}>Next
+      </a>
+    {% else %}
+    <a href=""
+      class="pagination-next is-invisible">Next
+    </a>
+    {% endif %}
+    <ul class="pagination-list">
+
+      <li>
+        <a href="{{ url_for_page(1, metadata.size) }}"
+          class="pagination-link {% if metadata.current_page == 1 %}is-current{% endif %}"
+          aria-label="Goto page 1">1
+        </a>
+      </li>
+
+      {% if metadata.total_pages < 8 %}
+        {% for p in range(2, metadata.total_pages + 1) %}
+        <li>
+          <a href="{{ url_for_page(p, metadata.size) }}"
+            class="pagination-link {% if metadata.current_page == p %}is-current{% endif %}"
+            aria-label="Page {{ p }}"
+            aria-current="page">{{ p }}
+          </a>
+        </li>
+        {% endfor %}
+      {% else %}
+        {% if metadata.current_page <= 3 %}                             {# Close to the start page #}
+          {% for p in range(2, 6) %}
+          <li>
+            <a href="{{ url_for_page(p, metadata.size) }}"
+              class="pagination-link {% if metadata.current_page == p %}is-current{% endif %}"
+              aria-label="Page {{ p }}"
+              aria-current="page">{{ p }}
+            </a>
+          </li>
+          {% endfor %}
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+        {% elif (metadata.total_pages + 1 - metadata.current_page) <= 3 %}  {# Close to the end page #}
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          {% for p in range(metadata.total_pages - 4, metadata.total_pages + 1) %}
+          <li>
+            <a href="{{ url_for_page(p, metadata.size) }}"
+              class="pagination-link {% if metadata.current_page == p %}is-current{% endif %}"
+              aria-label="Page {{ p }}"
+              aria-current="page">{{ p }}
+            </a>
+          </li>
+          {% endfor %}
+        {% else %}                                                       {# Somewhere in the middle #}
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          {% for p in range(metadata.current_page - 1, metadata.current_page + 2) %}
+          {% if p <= metadata.max_pages %}
+          <li>
+            <a href="{{ url_for_page(p, metadata.size) }}"
+              class="pagination-link {% if metadata.current_page == p %}is-current{% endif %}"
+              aria-label="Page {{ p }}"
+              aria-current="page">{{ p }}
+            </a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </nav>
+  {% if metadata.current_page + 1 > metadata.max_pages %}
+  <p class="has-text-right has-text-grey is-size-7 breathe-horizontal">
+    Only {{ metadata.max_pages }} pages are available. Please refine your search.
+  </p>
+  {% endif %}
+{%- endmacro %}
+
+
+{% macro search_results(form, results, metadata, url_for_page, url_for_author_search, is_current, hide_abstracts) %}
+
+{% if metadata.total_pages > 1 %}
+  {{ pagination(metadata, url_for_page) }}
+{% endif %}
+
+
+<ol class="breathe-horizontal" start="{{ metadata.start + 1}}"> {# Start index is 0-based. #}
+
+{% for result in results %}
+  <li class="arxiv-result">
+    <div class="is-marginless">
+      <p class="list-title is-inline-block">
+        {%- set display_paper_id = result.paper_id if is_current(result) else result.paper_id_v -%}
+        <a href="{{ url_for('abs_by_id', paper_id=display_paper_id) }}">arXiv:{{ display_paper_id }}</a>
+        <span>&nbsp;{{ paper_format_links(result, display_paper_id) }}&nbsp;</span>
+      </p>
+      <div class="tags is-inline-block">
+        <span class="tag is-small {% if result.match.primary_classification %}search-hit{% else %}is-link{% endif %} tooltip is-tooltip-top" data-tooltip="{{ result.primary_classification|category_name }}">{{ result.primary_classification.category.id }}</span>
+        {% if result.secondary_classification %}
+          {% for secondary in result.secondary_classification %}
+            <span class="tag is-small {% if secondary.category.id in result.match.secondary_classification %}search-hit{% else %}is-grey{% endif %} tooltip is-tooltip-top" data-tooltip="{{secondary|category_name}}">{{ secondary.category.id }}</span>
+          {% endfor %}
+        {% endif -%}
+      </div>
+      {% if result.doi %}
+        {% for doi in result.doi %}
+          <div class="is-inline-block" style="margin-left: 0.5rem">
+            <div class="tags has-addons">
+              <span class="tag is-dark is-size-7">doi</span>
+              <span class="tag is-light is-size-7"><a class="" href="https://doi.org/{{ doi }}">{{ doi }} <i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    {# Note: mathjax class should be applied to any element that requires MathJax processing #}
+    <p class="title is-5 mathjax">
+      {% if result.highlight.title %}
+        {{ result.highlight.title | safe }}
+      {% else %}
+        {{ result.title }}
+      {% endif %}
+    </p>
+    <p class="authors">
+      <span class="{% if result.match.author %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">Authors:</span>
+      {% for author in result.authors[0:25] %}
+      {% if author %}<a href="{{ url_for_author_search(author.first_name, author.last_name) }}">{{ author.first_name }} {{ author.last_name }}{% if author.suffix %} {{ author.suffix }}{%- endif -%}</a>{{ ", " if not loop.last }}{% endif %}
+      {% endfor -%}
+      {% if result.authors | length > 25 %}, et al. ({{ result.authors | length - 25 }} additional authors not shown){% endif %}
+    </p>
+    {% if not hide_abstracts %}
+    <p class="abstract mathjax">
+      <span class="{% if result.match.abstract %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">Abstract</span>:
+      <span class="abstract-short has-text-grey-dark mathjax" id="{{result.id}}-abstract-short" style="display: inline;">
+        {{ result.preview.abstract | safe }}
+        {%if result.truncated.abstract %}<a class="is-size-7" style="white-space: nowrap;" onclick="document.getElementById('{{result.id}}-abstract-full').style.display = 'inline'; document.getElementById('{{result.id}}-abstract-short').style.display = 'none';">&#9661; More</a>{% endif %}
+      </span>
+      <span class="abstract-full has-text-grey-dark mathjax" id="{{result.id}}-abstract-full" style="display: none;">
+        {% if result.highlight.abstract %}{{ result.highlight.abstract | safe }}{% else %}{{ result.abstract }}{% endif %}
+        <a class="is-size-7" style="white-space: nowrap;" onclick="document.getElementById('{{result.id}}-abstract-full').style.display = 'none'; document.getElementById('{{result.id}}-abstract-short').style.display = 'inline';">&#9651; Less</a>
+      </span>
+    </p>
+    {% endif %}
+
+    <p class="is-size-7"><span class="has-text-black-bis has-text-weight-semibold">Submitted</span> {{ result.submitted_date.strftime('%-d %B, %Y') }}; {% if result.version > 1 %}<span class="has-text-black-bis has-text-weight-semibold">v1</span> submitted {{ result.submitted_date_first.strftime('%-d %B, %Y') }};{% endif %}
+      <span class="{% if result.match.announced_date_first %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">originally announced</span> {{ result.announced_date_first.strftime('%B %Y') }}.
+      {% if not is_current(result) %}<span class="has-text-weight-bold">Latest version:</span> <a href="{{ url_for('abs_by_id', paper_id=result.latest) }}">{{ result.latest }}</a>.{% endif %}
+    </p>
+    {% if result.comments %}
+    <p class="comments is-size-7">
+      <span class="{% if result.match.comments %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">Comments:</span>
+      <span class="has-text-grey-dark mathjax">{% if result.highlight.comments %}{{ result.highlight.comments | safe }}{% else %}{{ result.comments }}{% endif %}</span>
+    </p>
+    {% endif %}
+
+    {% if result.report_num or result.acm_class or result.msc_class %}
+      <p class="comments is-size-7">
+        {% if result.report_num %}
+          <span class="{% if result.match.report_num %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">Report number:</span>
+          {% if result.highlight.report_num %}{{ result.highlight.report_num | safe }}{% else %}{{ result.report_num }}{% endif %}
+        {% endif %}
+
+        {% if result.msc_class %}
+          <span class="{% if result.match.msc_class %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">MSC Class:</span>
+          {% if result.highlight.msc_class %}{{ result.highlight.msc_class | safe }} ({{ result.msc_class }}){% else %}{{ result.msc_class }}{% endif %}
+        {% endif %}
+
+        {% if result.acm_class %}
+          <span class="{% if result.match.acm_class %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">ACM Class:</span>
+          {% if result.highlight.acm_class %}{{ result.highlight.acm_class | safe }} ({{ result.acm_class }}){% else %}{{ result.acm_class }}{% endif %}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if result.journal_ref %}
+      <p class="comments is-size-7">
+        <span class="{% if result.match.journal_ref %}search-hit{% else %}has-text-black-bis has-text-weight-semibold{% endif %}">Journal ref:</span>
+        {% if result.highlight.journal_ref %}{{ result.highlight.journal_ref | safe }}{% else %}{{ result.journal_ref }}{% endif %}
+      </p>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>
+
+{% if metadata.total_pages > 1 %}
+  {{ pagination(metadata, url_for_page) }}
+{% endif %}
+
+{%- endmacro -%}
+
+{%- macro paper_format_links(result, display_paper_id) -%}
+  {%- for format in result.formats -%}
+    {%- if format in ('pdf', 'pdfonly', 'ps', 'other') -%}
+      {% if loop.first %}[{% endif %}<a href="{{ url_for(format + '_by_id', paper_id=display_paper_id) }}">{{ format|replace("pdfonly", "pdf") }}</a>{% if not loop.last %}, {% else %}]{% endif %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endmacro -%}
+
+{% macro help_tips() %}
+    <article class="message is-link">
+      <div class="message-header">
+        <h4 class="has-text-white is-marginless is-bold">Searching by Author Name</h4>
+      </div>
+      <div class="message-body">
+        <ul>
+          <li>Using the <strong>Author(s) field</strong> produces best results for author name searches.</li>
+          <li>For the most precise name search, follow <strong>surname(s), forename(s)</strong> or <strong>surname(s), initial(s)</strong> pattern: example Hawking, S or Hawking, Stephen</li>
+          <li>For best results on multiple author names, <strong>separate individuals with a ;</strong> (semicolon). Example: Jin, D S; Ye, J</li>
+          <li>Author names enclosed in quotes will return only <strong>exact matches</strong>. For example, "Stephen Hawking" will not return matches for Stephen W. Hawking.</li>
+          <li>Diacritic character variants are automatically searched in the Author(s) field.</li>
+          <li>Queries with no punctuation will treat each term independently.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="message is-link">
+      <div class="message-header">
+        <h4 class="has-text-white is-marginless is-bold">Searching by subcategory</h4>
+      </div>
+      <div class="message-body">
+        <ul>
+          <li>To search within a subcategory select <strong>All fields</strong>.</li>
+          <li>A subcategory search can be combined with an author or keyword search by clicking on <strong>add another term</strong> in advanced search.</li>
+        </ul>
+      </div>
+    </article>
+    <h2 class="title is-5">Tips</h2>
+    <p class="title is-6">Wildcards:</p>
+      <ul>
+       <li>Use ? to replace a single character or * to replace any number of characters.</li>
+       <li>Can be used in any field, but not in the first character position. See Journal References tips for exceptions.</li>
+      </ul>
+    <p class="title is-6">Expressions:</p>
+      <ul>
+         <li>TeX expressions can be searched, enclosed in single $ characters.</li>
+      </ul>
+    <p class="title is-6">Phrases:</p>
+      <ul>
+        <li>Enclose phrases in double quotes for exact matches in title, abstract, and comments.</li>
+      </ul>
+    <p class="title is-6">Dates:</p>
+      <ul>
+        <li>Sorting by announcement date will use the year and month the <em>original version</em> (v1) of the paper was announced.</li>
+        <li>Sorting by submission date will use the year, month and day the <em>latest version</em> of the paper was submitted.</li>
+      </ul>
+    <p class="title is-6">Journal References:</p>
+      <ul>
+        <li>If a journal reference search contains a wildcard, matches will be made using wildcard matching as expected. For example, <strong>math*</strong> will match <em>math</em>, <em>maths</em>, <em>mathematics</em>.</li>
+        <li>If a journal reference search does <strong>not</strong> contain a wildcard, only exact phrases entered will be matched. For example, <strong>math</strong> would match <em>math</em> or <em>math and science</em> but not <em>maths</em> or <em>mathematics</em>.</li>
+        <li>All journal reference searches that do not contain a wildcard are literal searches: a search for <strong>Physica A</strong> will match all papers with journal references containing <em>Physica A</em>, but a search for <strong>Physica A, 245 (1997) 181</strong> will only return the paper with journal reference <em>Physica A, 245 (1997) 181</em>.</li>
+      </ul>
+{% endmacro %}
+
+{% macro show_classic_author_search() -%}
+  <article class="message is-warning">
+    <div class="message-body">
+      <p>For best results searching author names, use format <code>surname, initial</code> OR <code>surname, forename</code>. Separate individual authors with <code>;</code> semicolons.</p>
+    </div>
+  </article>
+{%- endmacro %}

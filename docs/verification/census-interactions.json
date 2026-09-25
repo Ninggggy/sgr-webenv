@@ -1,0 +1,150 @@
+{
+  "checks": [
+    {
+      "name": "operator ge",
+      "pass": true
+    },
+    {
+      "name": "operator gt",
+      "pass": true
+    },
+    {
+      "name": "operator le",
+      "pass": true
+    },
+    {
+      "name": "operator lt",
+      "pass": true
+    },
+    {
+      "name": "operator eq",
+      "pass": true
+    },
+    {
+      "name": "operator ne",
+      "pass": true
+    },
+    {
+      "name": "all three formats downloaded",
+      "pass": true
+    },
+    {
+      "name": "year resets customizations preserves geographies",
+      "pass": true
+    },
+    {
+      "name": "product change preserves geographies",
+      "pass": true
+    },
+    {
+      "name": "transpose and MOE preserve geography and population",
+      "pass": true
+    },
+    {
+      "name": "map removes one county from all counties preserving filter",
+      "pass": true
+    },
+    {
+      "name": "map selection and filters survive reload",
+      "pass": true
+    },
+    {
+      "name": "map add-back restores geography",
+      "pass": true
+    },
+    {
+      "name": "empty map clears legend hover and action",
+      "pass": true
+    },
+    {
+      "name": "scientific threshold restores",
+      "pass": true
+    },
+    {
+      "name": "back restores transpose",
+      "pass": true
+    },
+    {
+      "name": "forward restores transpose",
+      "pass": true
+    },
+    {
+      "name": "copied URL restores independent tab",
+      "pass": true
+    },
+    {
+      "name": "search keeps geographies and announces reset",
+      "pass": true
+    },
+    {
+      "name": "suggestion visibly announces geography reset",
+      "pass": true
+    },
+    {
+      "name": "topic entry resets table scope",
+      "pass": true
+    },
+    {
+      "name": "invalid URL visibly rejected B01001_001E~(NaNne)",
+      "pass": true
+    },
+    {
+      "name": "invalid URL visibly rejected B01001_001E~(1bogus)",
+      "pass": true
+    },
+    {
+      "name": "invalid URL visibly rejected B99999_001E~(1gt)",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /api/table ne",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /download ne",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /api/table bogus",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /download bogus",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /api/table gt",
+      "pass": true
+    },
+    {
+      "name": "HTTP rejects invalid customizations /download gt",
+      "pass": true
+    },
+    {
+      "name": "delayed old query cannot replace latest year",
+      "pass": true
+    },
+    {
+      "name": "leaving workspace invalidates pending response",
+      "pass": true
+    },
+    {
+      "name": "mixed coverage remains explicit",
+      "pass": true
+    },
+    {
+      "name": "no-data geography remains selected",
+      "pass": true
+    },
+    {
+      "name": "no-data map no stale numeric legend",
+      "pass": true
+    },
+    {
+      "name": "no uncaught JavaScript errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

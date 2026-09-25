@@ -1,0 +1,325 @@
+{
+  "purpose": "candidate browser exploration only; no independent relevance or full-scope acceptance",
+  "results": [
+    {
+      "term": "graph",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=graph&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "algebra",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=algebra&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "probability",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=probability&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "topology",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=topology&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "logic",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=logic&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "network",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=network&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "optimization",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=optimization&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "geometry",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=geometry&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "statistics",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=statistics&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "algorithm",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=algorithm&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "quantum",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=quantum&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "entropy",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=entropy&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "matrix",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=matrix&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "manifold",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=manifold&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "regression",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=regression&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "classification",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=classification&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "combinatorics",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=combinatorics&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "differential",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=differential&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "integral",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=integral&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "spectral",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=spectral&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "random",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=random&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "discrete",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=discrete&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "continuous",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=continuous&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "coding",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=coding&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "information",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=information&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "computation",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=computation&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "automata",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=automata&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "language",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=language&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "stochastic",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=stochastic&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "bayesian",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=bayesian&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "convex",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=convex&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "nonlinear",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=nonlinear&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "time-series",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=time-series&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "\"neural network\"",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=%22neural+network%22&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "\"finite group\"",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=%22finite+group%22&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "\"random walk\"",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=%22random+walk%22&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "signal-processing",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=signal-processing&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": false,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "zzzzunmatched827364",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=zzzzunmatched827364&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": true,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "\"an impossible exact phrase 62849\"",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=%22an+impossible+exact+phrase+62849%22&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": true,
+      "error": null,
+      "blocked": []
+    },
+    {
+      "term": "absolutelyunmatchedscope92345",
+      "page_rendered": true,
+      "url": "http://web:8080/search/?query=absolutelyunmatchedscope92345&searchtype=title&size=25&order=-submitted_date&abstracts=hide",
+      "empty": true,
+      "error": null,
+      "blocked": []
+    }
+  ]
+}

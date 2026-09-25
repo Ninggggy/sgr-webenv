@@ -1,0 +1,26 @@
+{% extends 'browse-base.html' %}
+{% block addl_head %}{{ super() }}<link rel="stylesheet" href="{{ url_for('base.static',filename='css/abs.css') }}"><script defer src="/assets/citation.js"></script><script defer src="/assets/offline-labs.js"></script><meta name="citation_arxiv_id" content="{{ paper.id }}v{{ number }}">{% endblock %}
+{% block content %}
+{% import 'fragments/abs.html' as original %}
+<div id="abs-outer"><div class="leftcolumn"><div class="subheader"><h1>{% if classification.group %}{{ classification.group.name }} &gt; {% endif %}{{ classification.category.name }}</h1></div>
+{{ original.abs(paper.id,paper.title,authors_markup,paper.abstract,current_date,primary_obj,
+ comments=paper.comments,msc_class=paper.msc_class,acm_class=paper.acm_class,
+ journal_ref=paper.journal_ref,doi=paper.doi,report_num=paper.report_num,
+ version=number,submission_history=original_history,secondary_categories=secondary_objects) }}
+<div class="submission-history"><h2>Submission history</h2>
+From: <span title="Submitter identity is not supplied by the current metadata source">not included in metadata</span> [<a href="/show-email/{{ paper.id }}">view email</a>]<br>
+{% for v in history %}<strong>{% if v.number != number %}<a href="/abs/{{ paper.id }}v{{ v.number }}?context={{ browse_context }}">[v{{ v.number }}]</a>{% else %}[v{{ v.number }}]{% endif %}</strong> {{ v.date.strftime('%a, %-d %b %Y %H:%M:%S UTC') }}{% if v.source_size %} ({{ v.source_size }}){% endif %}<br>{% endfor %}
+</div></div>
+<div class="extra-services">
+<div class="full-text"><a name="other"></a><span class="descriptor">Full-text links:</span><h2>Access Paper:</h2><ul>
+<li><a class="abs-button download-pdf" href="/pdf/{{ paper.id }}v{{ number }}" accesskey="f">View PDF</a></li>
+<li><a class="abs-button download-format" href="/format/{{ paper.id }}">Other formats</a></li></ul>
+{% if paper.license %}<div class="abs-license"><a href="{{ paper.license }}" title="Rights to this article">view license</a></div>{% endif %}</div>
+<div class="browse">Current browse context: <div class="current">{{ browse_context }}</div>
+<div class="prevnext"><span class="arrow"><a class="abs-button prev-url" href="/prevnext?{{ {'id':paper.id,'function':'prev','context':browse_context}|urlencode }}" accesskey="p">&lt;&nbsp;prev</a></span><span class="is-hidden-mobile"> | </span><span class="arrow"><a class="abs-button next-url" href="/prevnext?{{ {'id':paper.id,'function':'next','context':browse_context}|urlencode }}" accesskey="n">next&nbsp;&gt;</a></span><br></div>
+<div class="list"><a class="abs-button abs-button-grey abs-button-small context-new" href="/list/{{ browse_context }}/new">new</a> | <a class="abs-button abs-button-grey abs-button-small context-recent" href="/list/{{ browse_context }}/recent">recent</a> | <a class="abs-button abs-button-grey abs-button-small context-id" href="/list/{{ browse_context }}/{{ announcement_month }}">{{ announcement_month }}</a></div>
+<div class="abs-switch-cat">Change to browse by:<div class="switch context-change">{% for c in alternate_contexts %}<a {% if '.' in c %}class="subclass"{% endif %} href="/abs/{{ paper.id }}{% if number != history[-1].number %}v{{ number }}{% endif %}?context={{ c }}">{{ c }}</a><br class="is-hidden-mobile">{% endfor %}</div></div></div>
+<div class="extra-ref-cite"><h3>References &amp; Citations</h3><ul><li><a class="abs-button abs-button-small cite-ads" href="/offline/unavailable">NASA ADS</a></li><li><a class="abs-button abs-button-small cite-google-scholar" href="/offline/unavailable">Google Scholar</a></li><li><a class="abs-button abs-button-small cite-semantic-scholar" href="/offline/unavailable">Semantic Scholar</a></li></ul><div style="clear:both;"></div></div>
+<div class="trackbacks"><a href="/offline/unavailable">blog links</a> <span class="what-is-this">(<a href="/offline/unavailable">what is this?</a>)</span></div>
+{% include 'cite.html' %}<div class="bookmarks"><h3>Bookmark</h3><a class="abs-button abs-button-grey abs-button-small" href="/offline/unavailable" title="Bookmark on BibSonomy"><img src="/assets/browse/images/icons/social/bibsonomy.png" alt="BibSonomy logo"></a><a class="abs-button abs-button-grey abs-button-small" href="/offline/unavailable" title="Bookmark on Reddit"><img src="/assets/browse/images/icons/social/reddit.png" alt="Reddit logo"></a></div></div>{% include 'archived-labs.html' %}<div class="endorsers"><a href="/offline/unavailable">Which authors of this paper are endorsers?</a> | <a href="#" id="mathjax_toggle">{{ 'Enable' if request.cookies.get('arxiv_mathjax') == 'disabled' else 'Disable' }} MathJax</a> (<a href="/offline/unavailable">What is MathJax?</a>)</div></div>
+{% endblock %}

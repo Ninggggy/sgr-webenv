@@ -1,0 +1,93 @@
+{
+  "kind": "authenticated registry pull, not anonymous acceptance",
+  "images": [
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-runtime:1",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-runtime"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-browser-base:1",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-browser-base"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-census-web:0.2.1",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-census-web"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-census-browser:0.2",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-census-browser"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-wonder-web:0.3",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wonder-web"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-wonder-browser:0.2",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wonder-browser"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-arxiv-web:0.1.0",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-web"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-arxiv-browser:0.1.0",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-browser"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-arxiv-search:0.1.0",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-search"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-wateroffice-web:0.1.0-dev",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wateroffice-web"
+    },
+    {
+      "image": "ghcr.io/ninggggy/sgr-webenv-wateroffice-browser:0.1.0-dev",
+      "pulled": true,
+      "platform": "linux/amd64",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "visibility": "private",
+      "package_url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wateroffice-browser"
+    }
+  ]
+}

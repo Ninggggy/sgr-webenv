@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Real-Time Hydrometric Data Graph for SAINT JOHN RIVER AT GRAND FALLS (01AF002) [NB] - Water Level and Flow - Environment Canada</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="description" content=""><link href="/vendor/wet/v13.4.0/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="/vendor/wet/v13.4.0/GCWeb/css/theme.min.css" />
+<noscript><link rel="stylesheet" href="/vendor/wet/v13.4.0/wet-boew/css/noscript.min.css" /></noscript>
+<link rel="stylesheet" href="/vendor/css/fontawesome/css/all.min.css"/>
+<link href="/custom/application.css" rel="stylesheet"/>
+<link href="/custom/print.css" rel="stylesheet"/>
+<link href="/custom/graphs_new.css" rel="stylesheet"/>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+
+
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to About this site</a></li></ul>
+</nav>
+<header>
+<div id="wb-bnr" class="container">
+<div class="row">
+    <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+<h2 class="wb-inv">Language selection</h2>
+<ul class="list-inline mrgn-bttm-0">
+<li>
+  <a lang="fr" hreflang="fr" href="//eau.ec.gc.ca/report/real_time_f.html?stn=01AF002&amp;mode=Graph&amp;startDate=2026-09-18&amp;endDate=2026-09-25">
+    <span class="hidden-xs" translate="no">Français</span>
+    <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
+  </a>
+</li>
+</ul>
+</section>
+  <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+<a href="https://www.canada.ca/en.html" property="url">
+<img src="/vendor/wet/v13.4.0/GCWeb/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" /><span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
+</a>
+<meta property="name" content="Government of Canada">
+<meta property="areaServed" typeof="Country" content="Canada" />
+<link property="logo" href="/vendor/wet/v13.4.0/GCWeb/assets/wmms-blk.svg" />
+</div>
+<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+<h2>Search</h2>
+      <form action="https://canada.ca/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
+        <div class="form-group wb-srch-qry">
+          <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+          <input name="cdn" value="canada" type="hidden">
+          <input name="st" value="s" type="hidden">
+          <input name="num" value="10" type="hidden">
+          <input name="langs" value="en" type="hidden">
+          <input name="st1rt" value="1" type="hidden">
+          <input name="s5bm3ts21rch" value="x" type="hidden">
+          <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+          <input type="hidden" name="_charset_" value="UTF-8">
+          <datalist id="wb-srch-q-ac">
+          </datalist>
+        </div>
+        <div class="form-group submit">
+          <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+        </div>
+      </form></section>
+</div>
+</div>
+<hr>
+<div class="container">
+<div class="row"><div class="col-md-8">
+      <nav class="gcweb-menu" typeof="SiteNavigationElement">
+<h2 class="wb-inv">Menu</h2>
+<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+<ul role="menu" aria-orientation="vertical" data-ajax-replace="/data/pco-fetch/sitemenu-v2-en.html"><li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+<li role="presentation"><a role="menuitem" href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li></ul>
+</nav>
+    </div></div>
+</div>
+<nav id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+	<div class="container">
+		<ol class="breadcrumb" typeof="BreadcrumbList">
+<li><a href="http://www.canada.ca/en/index.html">Home</a></li><li><a href="http://www.canada.ca/en/services/environment/index.html">Environment and natural resources</a></li><li><a href="/index_e.html">Water level and flow</a></li><li><a href="/mainmenu/real_time_data_index_e.html">Real-Time Data</a></li><li><a href="/search/real_time_e.html">Hydrometric Data Search</a></li>		</ol>
+	</div>
+</nav>
+</header>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+<div class="container">
+    <noscript>
+    <div class="alert alert-warning">
+      <p>JavaScript in your browser is turned off; for the site to function properly please enable JavaScript.</p>
+    </div>
+  </noscript>
+        <h1 property="name" id="wb-cont">Real-Time Hydrometric Data Graph for SAINT JOHN RIVER AT GRAND FALLS (01AF002) [NB]</h1></div>
+<div class="wide">
+  <div class="container">
+  <p>All times are specified in Atlantic Standard Time (AST).</p>
+</div>
+<div class="row">
+  <div class="col-lg-9 mrgn-bttm-md">
+    <ul class="nav nav-pills hidden-print mrgn-bttm-md pull-right">
+  <li class="active disabled" data-pill="graph"><a href="/report/real_time_e.html?stn=01AF002&amp;mode=Graph&amp;startDate=2026-09-18&amp;endDate=2026-09-25">Graph</a></li>
+  <li data-pill="table"><a href="/report/real_time_e.html?stn=01AF002&amp;mode=Table&amp;startDate=2026-09-18&amp;endDate=2026-09-25">Table</a></li>
+  <li><a href="/download/index_e.html?results_type=real_time">Download?</a></li>
+  <li><a href="/map/index_e.html?type=real_time&amp;default_marker=data_availability&amp;target_station=01AF002"><span class="fas fa-map-marked-alt mrgn-rght-sm"></span>Location on Map</a></li>
+  </ul>
+<div class="clearfix"></div>
+<form class="form-horizontal well hidden-print" method="get" action="/report/real_time_e.html">
+  <div class="row">
+    <div class="col-lg-3">
+      <label class="mrgn-rght-md mrgn-bttm-md" for="station">Station:</label>
+      <select id="station" name="stn" class="form-control short" disabled>
+                <option value="01AF002" selected>01AF002</option>
+              </select>
+    </div>
+    <div class="col-lg-4">
+      <label class="mrgn-rght-md mrgn-bttm-md" for="data-type">Data Type:</label>
+      <select id="data-type" name="data_type" class="form-control short">
+        <option value="real_time">Real-Time</option>
+                        <option value="historical">Historical</option>
+              </select>
+    </div>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-3 text-right">
+      <input type="submit" id="apply" class="btn btn-primary" value="Apply">
+    </div>
+  </div>
+  <input type="hidden" name="mode" value="Graph"/>
+  </form>
+    <div id="legend-container"></div>
+    <div class="graph-container">
+      <canvas id="graph" class="mrgn-bttm-md"></canvas>
+    </div>
+  </div>
+  <div class="col-lg-3 mrgn-bttm-md">
+    <div id="settings" class="panel panel-primary hidden-print">
+      <header class="panel-heading">
+        <h2 class="panel-title">Modify settings</h2>
+      </header>
+      <div class="panel-body">
+        <section>
+          <h3 class="mrgn-tp-0">Date parameters</h3>
+          <div class="btn-group btn-group-justified mrgn-tp-sm mrgn-bttm-sm date-modify">
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "days": 1 }' title="Set start date to end date value minus 1 day.">
+                <span>-1d</span>
+                <span class="wb-inv">Set start date to end date value minus 1 day.</span>
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "days": 7 }' title="Set start date to end date value minus 7 days.">
+                <span>-7d</span>
+                <span class="wb-inv">Set start date to end date value minus 7 days.</span>
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "months": 1 }' title="Set start date to end date value minus 1 month.">
+                <span>-1m</span>
+                <span class="wb-inv">Set start date to end date value minus 1 month.</span>
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "months": 6 }' title="Set start date to end date value minus 6 months.">
+                <span>-6m</span>
+                <span class="wb-inv">Set start date to end date value minus 6 months.</span>
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "years": 1 }' title="Set start date to end date value minus 12 months.">
+                <span>-12m</span>
+                <span class="wb-inv">Set start date to end date value minus 12 months.</span>
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="btn" class="btn btn-default btn-xs" data-action='{ "months": 18 }' title="Set start date to end date value minus 18 months.">
+                <span>-18m</span>
+                <span class="wb-inv">Set start date to end date value minus 18 months.</span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group mrgn-bttm-0">
+                <label for="start-date">
+                  <span>Start date</span>
+                  <span class="datepicker-format nowrap">(<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span>
+                </label>
+                <input type="date" id="start-date" class="form-control input-sm mrgn-bttm-sm" min="2021-09-25" max="2026-09-24" value="2026-09-18">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group mrgn-bttm-0">
+                <label for="end-date">
+                  <span>End date</span>
+                  <span class="datepicker-format nowrap">(<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span>
+                </label>
+                <input type="date" id="end-date" class="form-control input-sm" min="2021-09-25" max="2026-09-25" value="2026-09-25">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Primary Y-axis parameters</h3>
+          <div class="form-group">
+            <label for="y1-type">Parameter type</label>
+            <select id="y1-type" class="form-control input-sm">
+                            <option value="46">Water level (unit values)</option>
+                            <option value="47">Discharge (unit values)</option>
+                            <option value="6">Discharge (daily mean values)</option>
+                            <option value="3">Water level (daily mean values)</option>
+                          </select>
+          </div>
+          <div id="y1-param-info"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="y1-max">Maximum value</label>
+                <input type="number" id="y1-max" class="form-control input-sm" step="any">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="y1-min">Minimum value</label>
+                <input type="number" id="y1-min" class="form-control input-sm" step="any">
+              </div>
+            </div>
+          </div>
+          <details>
+            <summary>Additional statistics</summary>
+            <div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="max1">
+                    <input type="checkbox" id="max1" value="1">Maximum
+                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="min1">
+                    <input type="checkbox" id="min1" value="1">Minimum
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="mean1">
+                    <input type="checkbox" id="mean1" value="1">Mean                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="median1">
+                    <input type="checkbox" id="median1" value="1">Median                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="upper1">
+                    <input type="checkbox" id="upper1" value="1">Upper quartile                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="lower1">
+                    <input type="checkbox" id="lower1" value="1">Lower quartile                  </label>
+                </div>
+              </div>
+              <p class="mrgn-tp-sm mrgn-bttm-0"><small><a href="/statistics_help_e.html">Additional information for statistics</a></small></p>
+            </div>
+          </details>
+        </section>
+        <section>
+          <h3>Secondary Y-axis parameters</h3>
+          <div class="form-group">
+            <label for="y2-type">Parameter type</label>
+            <select id="y2-type" class="form-control input-sm">
+                            <option value="-1">(Second Parameter)</option>
+                            <option value="46">Water level (unit values)</option>
+                            <option value="47" selected>Discharge (unit values)</option>
+                            <option value="6">Discharge (daily mean values)</option>
+                            <option value="3">Water level (daily mean values)</option>
+                          </select>
+          </div>
+          <div id="y2-param-info"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="y2-max">Maximum value</label>
+                <input type="number" id="y2-max" class="form-control input-sm" step="any">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="y2-min">Minimum value</label>
+                <input type="number" id="y2-min" class="form-control input-sm" step="any">
+              </div>
+            </div>
+          </div>
+          <details>
+            <summary>Additional statistics</summary>
+            <div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="max2">
+                    <input type="checkbox" id="max2" value="1">Maximum
+                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="min2">
+                    <input type="checkbox" id="min2" value="1">Minimum
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="mean2">
+                    <input type="checkbox" id="mean2" value="1">Mean                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="median2">
+                    <input type="checkbox" id="median2" value="1">Median                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="upper2">
+                    <input type="checkbox" id="upper2" value="1">Upper quartile                  </label>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <label class="checkbox-inline" for="lower2">
+                    <input type="checkbox" id="lower2" value="1">Lower quartile                  </label>
+                </div>
+              </div>
+              <p class="mrgn-tp-sm mrgn-bttm-0"><small><a href="/statistics_help_e.html">Additional information for statistics</a></small></p>
+            </div>
+          </details>
+        </section>
+        <input type="hidden" id="station-id" value="01AF002">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <p class="hidden-print"><a href="/contactus/faq_e.html#real-time-timeliness">Timeliness of the real-time data</a></p>
+<p>The most recent <a href="/contactus/faq_e.html">water level (primary sensor)</a> recorded is 88.783 metres at 2026-09-25 05:05:00 <abbr title="Atlantic Standard Time (AST)">AST</abbr>.</p><p>The latest water level measurement obtained was 89.520 metres at 2026-08-06 09:10:00 <abbr title="Atlantic Standard Time (AST)">AST</abbr>.</p><p>The latest discharge measurement conducted at 2026-06-25 11:56:00 was 629 cubic metres per second with a mean water level of 91.342 metres.</p><p>The discharge varies by -2.17% from the base rating model at the time of measurement.</p><p>Provisional discharge is obtained by using the most recent rating model with temporary adjustments, if required. Data will be reviewed and may be subject to change before final publication.</p><p>Click the following links for information on <a href="/ice_conditions_e.html">ice conditions at stations, and data spikes and dips</a>.</p><section>
+  <h2>Station Information</h2>
+  <div class="metadata">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="active" class="col-xs-6"><b>Active or discontinued:</b></div>
+          <div aria-labelledby="active" class="col-xs-6">Active</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="province" class="col-xs-6"><b>Province / Territory:</b></div>
+          <div aria-labelledby="province" class="col-xs-6">New Brunswick</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="latitude" class="col-xs-6"><b>Latitude:</b></div>
+          <div aria-labelledby="latitude" class="col-xs-6">47<abbr title="degrees">°</abbr>&#160;02<abbr title="minute">&apos;</abbr>&#160;20<abbr title="second">&quot;</abbr>&#160;<abbr title="North">N</abbr></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="longitude" class="col-xs-6"><b>Longitude:</b></div>
+          <div aria-labelledby="longitude" class="col-xs-6">67<abbr title="degrees">°</abbr>&#160;44<abbr title="minute">&apos;</abbr>&#160;23<abbr title="second">&quot;</abbr>&#160;<abbr title="West">W</abbr></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="gross-drainage" class="col-xs-6"><b>Gross drainage area:</b></div>
+          <div aria-labelledby="gross-drainage" class="col-xs-6">21,870 <abbr title="Square kilometre(s)">km<sup>2</sup></abbr></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="effective-drainage" class="col-xs-6"><b>Effective drainage area:</b></div>
+          <div aria-labelledby="effective-drainage" class="col-xs-6">N/A</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="record-length" class="col-xs-6"><b>Record length:</b></div>
+          <div aria-labelledby="record-length" class="col-xs-6">97 Years</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="record-period" class="col-xs-6"><b>Period of record:</b></div>
+          <div aria-labelledby="record-period" class="col-xs-6">1930-2026</div>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="regulation-type" class="col-xs-6"><b>Regulation type:</b></div>
+          <div aria-labelledby="regulation-type" class="col-xs-6">Regulated</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="regulation-length" class="col-xs-6"><b>Regulation length:</b></div>
+          <div aria-labelledby="regulation-length" class="col-xs-6">N/A</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="realtime-data" class="col-xs-6"><b>Real-time data available:</b></div>
+          <div aria-labelledby="realtime-data" class="col-xs-6">Yes</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="sediment-data" class="col-xs-6"><b>Sediment data available:</b></div>
+          <div aria-labelledby="sediment-data" class="col-xs-6">No</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="water-body" class="col-xs-6"><b>Type of water body:</b></div>
+          <div aria-labelledby="water-body" class="col-xs-6">River</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="rhbn" class="col-xs-6"><b>RHBN:</b></div>
+          <div aria-labelledby="rhbn" class="col-xs-6">No</div>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+     <div class="col-md-6 col-xs-12">
+       <div class="row">
+         <div id="regional-office" class="col-xs-6"><b>Publishing Office:</b></div>
+         <div aria-labelledby="regional-office" class="col-xs-6">DARTMOUTH</div>
+       </div>
+     </div>
+          <div class="col-md-6 col-xs-12">
+       <div class="row">
+         <div id="operation-schedule" class="col-xs-6"><b>Current Operation Schedule:</b></div>
+         <div aria-labelledby="operation-schedule" class="col-xs-6">Continuous</div>
+      </div>
+     </div>
+         </div>
+        <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="contributed-by" class="col-xs-6"><b>Data contributed by:</b></div>
+          <div aria-labelledby="contributed-by" class="col-xs-6">N/A</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="operation-period" class="col-xs-6"><b>Operation Period:</b></div>
+	  <div aria-labelledby="operation-period" class="col-xs-6">JAN - DEC</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="published-data" class="col-xs-6"><b>Vertical datum of published data:</b></div>
+          <div aria-labelledby="published-data" class="col-xs-6">GEODETIC SURVEY OF CANADA DATUM</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div id="datum-data" class="col-xs-6"><b>Datum Conversions:</b></div>
+          <div aria-labelledby="datum-data" class="col-xs-6"><a href="/report/datum_e.html?stn=01AF002&mode=Graph">More information</a></div>
+        </div>
+      </div>
+    </div>
+      </div>
+</section>
+<div class="container"></div>
+<section>
+  <h2>Data Collection History</h2>
+  <div class="table-responsive">
+    <table class="table table-hover table-striped">
+      <caption>This table contains information pertaining to the historical changes of defined elements in the operation of a station.</caption>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Type</th>
+          <th scope="col">Operation schedule</th>
+          <th scope="col">Gauge type</th>
+        </tr>
+      </thead>
+      <tbody>
+                <tr>
+          <td>1930 - 2010</td>
+          <td>Flow</td>
+          <td>Continuous</td>
+          <td>Recorder</td>
+        </tr>
+                <tr>
+          <td>2011 - 2026</td>
+          <td>Flow &amp; Level</td>
+          <td>Continuous</td>
+          <td>Recorder</td>
+        </tr>
+              </tbody>
+    </table>
+  </div>
+</section>
+</div>
+</div>
+<section id="water-topics" class="container hidden-print">
+  <h2 class="wb-inv">What we are doing</h2>
+  <div class="row">
+    <section class="col-lg-4 col-md-6">
+      <h3>Real-time Data</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/search/real_time_e.html">Real-time Station Search</a></li>
+        <li><a href="/map/index_e.html?type=real_time&amp;default_marker=data_availability">Real-time Map Search</a></li>
+        <li><a href="/my_station_list/index_e.html">My Station List</a></li>
+      </ul>
+    </section>
+    <section class="col-lg-4 col-md-6">
+      <h3>Historical Data</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/search/historical_e.html">Historical Station Search</a></li>
+        <li><a href="/map/index_e.html?type=historical">Historical Map Search</a></li>
+        <li><a href="/search/statistics_e.html">Additional Statistics</a></li>
+      </ul>
+    </section>
+    <section class="col-lg-4 col-md-6">
+      <h3>Resources</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/disclaimer_info_e.html">Disclaimer for Hydrometric Information</a></li>
+        <li><a href="/contactus/faq_e.html">Frequently Asked Questions</a></li>
+                  <li><a href="https://www.canada.ca/en/environment-climate-change/services/meteorological-service-standards/publications/hydrometric-data-information.html">Hydrometric Data and Information Service Standards</a></li>
+              </ul>
+    </section>
+  </div>
+</section>
+<section class="pagedetails container">
+	<h2 class="wb-inv">Page details</h2>
+  <div class="row"><div class="col-sm-8 col-md-9 col-lg-9">
+<div data-ajax-replace="">
+	<div class="row row-no-gutters">
+    <div class="col-sm-9 col-md-6 col-lg-5">
+      <a href="https://weather.gc.ca/mainmenu/water_contact_us_e.html" target="_blank" class="btn btn-default btn-block"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></a>		</div>
+	</div>
+</div>
+			</div>
+	</div>
+			<dl id="wb-dtmd">
+				<dt>Date modified:</dt>
+				<dd><time property="dateModified">2026-09-11</time></dd>
+			</dl>
+</section>
+</main>
+<footer id="wb-info">
+	<h2 class="wb-inv">About this site</h2>
+  <div class="gc-contextual"><div class="container">
+    <nav>
+        <h3>Environment and natural resources</h3>
+        <ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+            <li><a href="https://weather.gc.ca/mainmenu/water_contact_us_e.html" target="_blank">Contact us</a></li>
+            <li><a href="https://www.canada.ca/en/services/environment/our-environment.html">Our environment</a></li>
+            <li><a href="https://www.canada.ca/en/services/environment/our-environment/nature-based-climate-solutions.html">Nature-based climate solutions</a></li>
+        </ul>
+    </nav>
+</div></div>
+	<div class="gc-main-footer">
+		<div class="container">
+			<nav>
+				<h3>Government of Canada</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://www.canada.ca/en/contact.html">All contacts</a></li>
+					<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+					<li><a href="https://www.canada.ca/en/government/system.html">About government</a></li></ul>
+				<h4><span class="wb-inv">Themes and topics</span></h4>
+				<ul class="list-unstyled colcount-sm-2 colcount-md-3"><li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
+					<li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+					<li><a href="https://travel.gc.ca/">Travel and tourism</a></li>
+					<li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
+					<li><a href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+					<li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
+					<li><a href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+					<li><a href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+					<li><a href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+					<li><a href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+					<li><a href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+					<li><a href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+					<li><a href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+					<li><a href="https://www.canada.ca/en/services/finance.html">Money and finance</a></li>
+					<li><a href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
+					<li><a href="https://www.canada.ca/en/services/indigenous-peoples.html">Indigenous peoples</a></li>
+					<li><a href="https://www.canada.ca/en/services/veterans-military.html">Veterans and military</a></li>
+					<li><a href="https://www.canada.ca/en/services/youth.html">Youth</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada Corporate</h3>
+				<ul>
+					<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+					<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+					<li><a href="https://www.canada.ca/en/government/about.html">About Canada.ca</a></li><li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li></ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="/vendor/wet/v13.4.0/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="/vendor/js/jquery-2.2.4.min.js"></script>
+<script src="/vendor/wet/v13.4.0/wet-boew/js/wet-boew.min.js"></script>
+<script src="/vendor/wet/v13.4.0/GCWeb/js/theme.min.js"></script>
+<script src="/vendor/js/moment.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/application.js"></script>
+<script src="/js/contact_us.js"></script>
+<script src="/js/real_time_modify.js"></script>
+<script src="/js/dist/real_time_graph.bundle.min.js" type="module"></script>
+</body>
+</html>

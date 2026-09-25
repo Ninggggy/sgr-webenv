@@ -1,0 +1,309 @@
+/* ============================================================
+   Leaflet Map
+   ============================================================ */
+
+#map-canvas {
+    border:           solid 1px #c6cace;
+    background-color: #ffffff;
+}
+
+.mapTooltipValues {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#mapTitle,
+#mapDate {
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    text-shadow: 1px 1px #fff;
+}
+
+
+#mapTitle {
+    line-height: 1em;
+    font-weight: bold;
+    padding:     0;
+}
+
+#mapDate {
+    white-space: nowrap;
+}
+
+/* rank legend */
+.legend span.rankLabel,
+.legend span.rankKey {
+    display:    inline-block;
+    text-align: center;
+}
+
+.legend span.rankKey {
+    text-shadow: none !important;
+    line-height: 1.5em;
+}
+
+.legend span.rankKey > * { vertical-align: middle; }
+
+.legend span.rankLabel:first-of-type { margin-right: 2px; }
+.legend span.rankLabel:last-of-type { margin-left: 2px; }
+
+/* ================================
+   Base Arrow Setup
+================================ */
+
+.legend span.left-arrow,
+.legend span.right-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+}
+
+/* ================================
+   Rank Text Defaults
+================================ */
+
+.rank-text {
+    display: none;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.label-full { display: inline; }
+.label-medium,
+.label-compact { display: none; }
+
+/* ================================
+   768px–991px (Medium)
+================================ */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .label-full,
+    .label-compact { display: none; }
+
+    .label-medium { display: inline; }
+}
+
+/* ================================
+   Mobile (≤767px)
+================================ */
+
+@media (max-width: 767px) {
+
+    .longname { display: none; }
+
+    .label-full,
+    .label-medium { display: none; }
+
+    .label-compact {
+        display: inline;
+        letter-spacing: 0.1em;
+    }
+
+    .legend span.rankKey,
+    .legend span.rankLabel {
+        font-size: 12px;
+    }
+
+    /* Arrow height */
+    .legend span.value-arrow {
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+    }
+    /* Rank Arrow Height */
+    .legend span.left-arrow.rank-arrow,
+    .legend span.right-arrow.rank-arrow {
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+    }
+
+    /* Arrow width */
+    .legend span.right-arrow {
+        border-left: 12px solid;
+    }
+    .legend span.left-arrow {
+        border-right: 12px solid;
+    }
+
+    .legend span.left-arrow,
+    .legend span.right-arrow {
+        vertical-align: -6px;
+    }
+}
+
+/* ================================
+   Desktop (≥768px)
+================================ */
+
+@media (min-width: 768px) {
+
+    .legend span.rankKey,
+    .legend span.rankLabel {
+        font-size: 14px;
+    }
+
+    /* Arrow height */
+    .legend span.value-arrow {
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+    /* Rank Arrow Height */
+    .legend span.left-arrow.rank-arrow,
+    .legend span.right-arrow.rank-arrow {
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+    }
+
+    /* Arrow width */
+    .legend span.right-arrow {
+        border-left: 14px solid;
+    }
+    .legend span.left-arrow {
+        border-right: 14px solid;
+    }
+
+    .legend span.left-arrow,
+    .legend span.right-arrow {
+        vertical-align: -7px;
+    }
+}
+
+/* Legend */
+.legend {
+    white-space: nowrap;
+    text-shadow: 1px 1px #ffffff;
+}
+
+.legend span.key,
+.legend span.label {
+    display:     inline-block;
+    text-align:  center;
+    white-space: nowrap;
+}
+
+.legend span.key {
+    height:        1em;
+    margin-bottom: -0.5em;
+}
+
+@media (max-width: 575px) {
+    .legend span.key,
+    .legend span.label {
+        font-size: 12px;
+        width:     25px;
+    }
+    .legend span.label:first-of-type { margin-left: -10px; }
+}
+
+@media (min-width: 576px) {
+    .legend span.key,
+    .legend span.label {
+        font-size: 14px;
+        width:     30px;
+    }
+    .legend span.key:first-of-type { margin-left: 10px; }
+}
+
+.grayBox {
+    background-color: #DDDDDD;
+    text-align:       center;
+    line-height:      1.1em;
+    font-size:        0.9em;
+    padding:          0.25em;
+}
+/* End Legend */
+/***************/
+/* Leaflet Map */
+
+/* ============================================================
+   Return Radio Buttons
+   ============================================================ */
+
+#return {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#return :disabled + label,
+#return :disabled { display: none; }
+
+/* hide radio button */
+input.return-selection {
+    position: absolute;
+    opacity: 0;
+}
+
+.return-selection:checked ~ label.return-selection-label,
+.return-selection:checked ~ label.return-selection-label:hover {
+    cursor: default !important;
+    color: #dcdee0 !important;
+    background-color: #3d4551 !important;
+}
+
+@media (min-width: 576px) {
+    #return { gap: 5px; }
+
+    label.return-selection-label {
+        margin: 0 5px;
+        width: 116px;
+    }
+}
+
+@media (max-width: 575px) {
+    #return { gap: 3px; }
+
+    label.return-selection-label {
+        margin: 0 1px;
+        width: 91px;
+        font-size: 14px !important;
+    }
+
+    #download strong {
+        display: none;
+    }
+}
+/************************/
+/* Return Radio Buttons */
+
+/* easyPrint hack */
+/* replaces pop-out menu with single button */
+/********************************************/
+/* hide initial icon */
+.leaflet-control-easyPrint-button-export { display: none !important; }
+
+/* show export options menu */
+.easyPrintHolder { display: block !important; }
+
+/* fit border around export options menu */
+.leaflet-control-easyPrint {
+    height: 34px !important;
+}
+.easyPrintHolder {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* replace A4Landscape image with download icon */
+.A4Landscape {
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQzMy41IDQzMy41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MzMuNSA0MzMuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJmaWxlLWRvd25sb2FkIj4KCQk8cGF0aCBkPSJNMzk1LjI1LDE1M2gtMTAyVjBoLTE1M3YxNTNoLTEwMmwxNzguNSwxNzguNUwzOTUuMjUsMTUzeiBNMzguMjUsMzgyLjV2NTFoMzU3di01MUgzOC4yNXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K) !important;
+    transform: rotate(0deg) !important;
+}
+
+/* hide unused export options */
+.A4Portrait,
+.CurrentSize { display: none !important; }
+/******************/
+/* easyPrint hack */
+
+#easyPrint-export-icon:hover { background-color: #dcdee0; }
+
+/* Values Table */
+/****************/
+@media (max-width: 575px) {
+    #values-table { font-size: 0.7em; }
+}
+/****************/
+/* Values Table */

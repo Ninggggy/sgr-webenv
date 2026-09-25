@@ -1,0 +1,505 @@
+#cities:not(:only-of-type):first-of-type {
+    display: none;
+}
+
+.loader-overlay .noaa-loader {
+    top: 150px;
+}
+
+#title-data-info {
+    display:         flex;
+    justify-content: space-between;
+    flex-wrap:       wrap;
+    margin-bottom:   1em;
+}
+
+#section-title {
+    margin-top: 0;
+}
+
+/* Nav Menu */
+/************/
+#cag-nav {
+    margin-bottom: 1em;
+}
+
+#scopes {
+    justify-content: flex-start;
+    margin:          0 !important;
+    position:        relative;
+    z-index:         1;
+}
+
+#scopes li {
+    position: relative;
+}
+
+#scopes > li > a {
+    white-space: nowrap;
+}
+
+#scopes #scope-home {
+    flex: 0;
+}
+
+.tabs > *.selected#scope-home::before,
+.tabs > *#scope-home:hover::before {
+    visibility:       hidden !important;
+    background-color: transparent !important;
+}
+.tabs > *:not(.selected):hover > a { color: #1c1d1f !important; }
+
+/* No dropdown section menu for selected scope
+ * (hide icon indicating hidden dropdown menu)
+ */
+#scopes > .selected > a > .click-icon {
+    display: none;
+}
+
+.selected-section-menu {
+    margin-top: 0 !important;
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+    #scopes {
+        font-size: 14px;
+    }
+
+    .selected-section-menu {
+        font-size: 12px;
+    }
+}
+
+.section-menu {
+    z-index:         2;
+    display:         none;
+    position:        absolute;
+    min-width:       100%;
+    font-size:       0.9em;
+    border-style:    solid;
+    border-color:    #dcdee0;
+    border-width:    0 thin thin thin;
+    list-style:      none;
+    margin:          0 !important;
+    padding:         0 !important;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+.section-menu > * {
+    font-family:        "Source Sans Pro",sans-serif !important;
+    text-align:         left;
+    color:              #1c1d1f;
+    margin:             0 !important;
+    padding:            0 !important;
+    position:           relative;
+    cursor:             default;
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}
+
+.section-menu > * a {
+    color:              #0070CC !important;
+    background-color:   #ffffff;
+    display:            block;
+    height:             100%;
+    padding:            0.75em 0.5em !important;
+    color:              #1c1d1f;
+    text-decoration:    none;
+    font-family:        "Source Sans Pro",sans-serif;
+    line-height:        1.25em;
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}
+
+.section-menu,
+.section-menu > *:last-of-type,
+.section-menu > *:last-of-type a {
+    border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 576px) {
+    .section-menu > * a {
+        white-space: nowrap;
+    }
+}
+
+.section-menu > *.selected a {
+    cursor: default;
+    background-color: #ffffff;
+    color:            #1c1d1f !important;
+}
+.section-menu > *:not(.selected):hover a {
+    color:            #0050d8 !important;
+    background-color: #dcdee0;
+}
+/************/
+/* Nav Menu */
+
+/* Data Info */
+/*************/
+#data-info .modal-body { padding-top: 0; }
+
+#data-info { font-size: 14px; }
+
+#regional-data-info {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+}
+
+#regional-data-info > div:first-of-type {
+    flex: 1 0 59%;
+}
+
+#regional-data-info > div:last-of-type {
+    flex: 1 0 40%;
+}
+
+#cities th {
+    position: sticky;
+    top:      0;
+    z-index:  2;
+}
+
+#cities td.id,
+#cities td.begdate {
+    text-align: right;
+}
+
+@media (max-width: 991px) {
+    .monthlong { display: none; }
+}
+
+@media (min-width: 430px) {
+    #cities td.id {
+        white-space: nowrap;
+    }
+}
+
+#cities tr.ushcn {
+    background-color: #a8f2ff;
+}
+#cities tr.ushcn:nth-child(2n) {
+    background-color: #52daf2;
+}
+
+#cities tr.ushcn a {
+    color: #0050d8;
+}
+#cities tr.ushcn:nth-child(2n) a {
+    color: #004AC8;
+}
+
+@media (min-width: 992px) {
+    #cities .state-name { display: table-cell; }
+    #cities .state-abbr { display: none; }
+}
+
+@media (max-width: 991px) {
+    #cities .state-name { display: none; }
+    #cities .state-abbr { display: table-cell; }
+}
+
+@media (max-width: 575px) {
+    #cities  { font-size: 0.8em; }
+    #cities tr td.id {
+        word-break: break-all;
+    }
+
+    #title-data-info > * {
+        width:      100%;
+        text-align: center;
+    }
+}
+/*************/
+/* Data Info */
+
+/* Form */
+/********/
+#select-form #form-sections {
+    display:         flex;
+    justify-content: space-between;
+}
+
+#select-form #form-sections.with-note {
+    flex-wrap: wrap-reverse;
+}
+
+#select-form #form-sections:not(.with-note) {
+    flex-wrap:   wrap;
+    align-items: flex-start;
+}
+
+#select-form #required {
+    flex:        1 0 auto;
+    line-height: 2.25em;
+}
+
+#select-form #required label {
+    display: inline-block;
+    width:   100px;
+}
+
+#select-form a { text-decoration: none; }
+#select-form #form-notes a { text-decoration: underline; }
+
+#select-form #options {
+    border-radius: 5px;
+}
+
+#select-form #options *:not(p) {
+    font-size: 18px !important;
+}
+#select-form #options *:not(p).small {
+    font-size: 0.8em !important;
+}
+
+#select-form #form-sections #required select {
+    width: calc(100% - 105px);
+}
+
+@media (min-width: 992px) {
+    #select-form #required {
+        margin-right: 15px;
+    }
+
+    #select-form #options {
+        flex: 0 1 33%;
+    }
+
+    #submit-div {
+        position: relative;
+    }
+
+    #select-form:not(.global-form) #form-sections:not(.with-note) + #submit-div #submit {
+        position: absolute;
+        top:      -165px;
+    }
+}
+
+#form-notes {
+    line-height: 1.35em;
+    font-size:   16px;
+    font-style:  italic;
+}
+
+#form-notes p:first-of-type {
+    margin-top: 0;
+}
+
+:not(#select-form) #form-notes {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+    #select-form #required {
+        flex: 1 0 calc(50% - 15px);
+    }
+
+    #select-form #form-notes {
+        flex: 0 1 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #select-form #required {
+        flex: 1 0 calc(60% - 15px);
+    }
+
+    #select-form #form-notes {
+        flex: 0 1 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    #select-form #required {
+        width: 100%;
+    }
+
+    #select-form #options {
+        width:      100%;
+        margin-top: 0.5em;
+    }
+
+    #select-form #form-notes {
+        width:         100%;
+        margin-bottom: 1em;
+    }
+}
+
+#select-form :disabled { background-color: #dcdee0; }
+/********/
+/* Form */
+
+/* Global Coordinates */
+/**********************/
+#coords {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    #coords > *:first-child {
+        margin-right: 20px;
+    }
+    #coords > * {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 767px) {
+    #coords > * {
+        width: 100%;
+    }
+}
+
+#coords > * {
+    vertical-align: top;
+}
+
+#coords .input {
+    display:     inline-block;
+    width:       calc(100% - 105px);
+    line-height: 1em;
+    text-align:  right;
+}
+
+#coords .input input {
+    width:      100%;
+    text-align: right;
+}
+/**********************/
+/* Global Coordinates */
+
+/* Values Table */
+/****************/
+#values-table {
+    table-layout: fixed;
+}
+
+#values-table caption {
+    font-style: normal;
+}
+
+/* --- Vertical Sticky (Header Rows) --- */
+
+#values-table thead tr th {
+    position: sticky;
+    z-index: 2;
+}
+
+/* Row 1 sticks to the top */
+#values-table thead tr:first-child th {
+    top: 0;
+}
+
+/* Row 2 sticks below Row 1.
+   Adjust this value to match the pixel height of your first row. */
+#values-table thead tr:nth-child(2) th {
+    top: 48px;
+}
+
+/* Ensure cells that span both rows stay above Row 2 */
+#values-table thead tr th[rowspan="2"] {
+    z-index: 3;
+}
+
+/* --- Horizontal Sticky (First Column) --- */
+
+/* Sticky column for both header and body */
+#values-table thead tr th[scope=row],
+#values-table tbody tr td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/* --- The Intersection (Top-Left Cell) --- */
+
+/* This cell is both horizontally and vertically sticky.
+   It needs the highest z-index to stay on top of everything. */
+#values-table thead tr th[scope=row] {
+    z-index: 4;
+    padding: 0;
+}
+
+#values-table thead tr th[scope=row] a {
+    text-decoration: none;
+    color: #0076d6;
+    display: block;
+    padding: 10px 15px;
+    border-right: solid 1px #8d9297;
+}
+
+table#values-table tr:nth-child(2n) th[scope=row] {
+    background-color: #dcdee0;
+}
+
+table#values-table tr.even td a,
+table#values-table tr:nth-child(2n) th[scope=row] a {
+    color: #0050d8;
+}
+
+table#values-table tr.odd td a,
+table#values-table tr:nth-child(2n+1) th[scope=row] a {
+    color: #0076d6;
+}
+
+#values-table td:not(.location):not(.left) {
+    text-align: right;
+}
+
+/*- Designations -*/
+/*----------------*/
+ul#designations {
+    list-style: none;
+    padding:    0 !important;
+}
+
+ul#designations .designation-symbol {
+    width: 16px;
+}
+
+table td.rank {
+    position: relative;
+}
+
+table td.rank .designation {
+    position: absolute;
+    display:  block;
+}
+
+table td.rank .designation {
+    font-size: 0.8em;
+    top:       8px;
+}
+
+table td.rank .designation.tie {
+    right: 8px;
+}
+
+table td.rank .designation.insufficient-variability {
+    right: 2px;
+}
+/*----------------*/
+/*- Designations -*/
+
+/****************/
+/* Values Table */
+
+.references li a {
+    word-break: break-all;
+}

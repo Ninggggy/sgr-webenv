@@ -1,0 +1,376 @@
+{%- extends "search/base.html" %}
+
+{% import "search/search-macros.html" as search_macros %}
+
+{% macro select_field(field) %}
+<div class="field is-horizontal">
+  <div class="control">
+    <div class="checkbox">
+      {{ field|safe }}
+      {{ field.label }}
+    </div>
+    {% if field.errors %}
+      <div class="help is-warning">
+        {% for error in field.errors %}
+            {{ error }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro advanced_query(form) %}
+
+<div class="columns is-desktop">
+  <div class="column is-one-half-desktop">
+    {% if form.errors %}
+    <div class="notification is-warning">
+      Whoops! Something went wrong. Please correct errors in the form below.
+    </div>
+    {% endif %}
+    <div class="box">
+      <form method="GET" action="{{ url_for('ui.advanced_search') }}">
+        {{ form.advanced|safe }}
+        {# Field-specific search term fieldset. #}
+        <section data-toggle="fieldset" id="terms-fieldset">
+          <fieldset class="fieldset ">
+            <legend class="legend">Search term(s)</legend>
+            {% for entry in form.terms.entries %}
+              <div class="field has-addons-tablet" data-toggle="fieldset-entry">
+                <div class="control fieldset-hidden-on-first-row">
+                  <span class="select">
+                    <label for="terms-{{loop.index0}}-operator" class="hidden-label">Boolean operator</label>
+                    {{ entry.operator(default='AND')|safe }}
+                  </span>
+                </div>
+                <div class="control is-expanded">
+                  <label for="terms-{{loop.index0}}-term" class="hidden-label">Search term</label>
+                  {% if entry.term.errors %}
+                    {{ entry.term(class='input is-warning', placeholder="Search term...")|safe }}
+                  {% else %}
+                    {{ entry.term(class='input', placeholder="Search term...")|safe }}
+                  {% endif %}
+                  {% if entry.term.errors %}
+                    <div class="help is-warning">
+                      {% for error in entry.term.errors %}
+                          {{ error }}
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+
+                </div>
+                <div class="control">
+                  <label for="terms-{{loop.index0}}-field" class="hidden-label">Field to search</label>
+                  <span class="select">
+                    {{ entry.field(default='title')|safe }}
+                  </span>
+                </div>
+                <div class="control">
+                  <button type="button"
+                    data-toggle="fieldset-remove-row"
+                    id="term-{{loop.index0}}-remove"
+                    class="button is-monospace fieldset-hidden-on-first-row"
+                    aria-label="Remove this search term"
+                    {% if loop.index0 == 0 %}style="visibility:hidden;"{% endif %}
+                    >–
+                  </button>
+                </div>
+              </div>
+            {% endfor %}
+            <div class="field is-clearfix">
+              <div class="control is-pulled-right">
+                <button type="button" class="button is-medium"
+                  data-toggle="fieldset-add-row"
+                  data-target="#terms-fieldset"><span style="font-family:'open-sans',helvetica,sans-serif;">Add another term </span> +
+                </button>
+                <button class="button is-link is-medium">Search</button>
+              </div>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset class="fieldset {% if form.classification.errors %}is-warning{% endif %}">
+            <legend class="legend">Subject</legend>
+            {% if form.classification.errors %}
+              {% for field_name, field_errors in form.classification.errors|dictsort %}
+                {% for error in field_errors %}
+                  <div class="notification is-warning">
+                    {{ error }}
+                  </div>
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+            <div class="help has-text-grey">All classifications will be included by default.</div>
+            <div class="columns is-baseline">
+              <div class="column">
+                {{ select_field(form.classification.computer_science) }}
+                {{ select_field(form.classification.economics) }}
+                {{ select_field(form.classification.eess) }}
+                {{ select_field(form.classification.mathematics) }}
+              </div>
+              <div class="column">
+                {# Physics is odd, since we allow archive selection as well. #}
+                <div class="field is-horizontal is-grouped">
+                  <div class="control">
+                    <div class="checkbox">
+                      {{ form.classification.physics|safe }}
+                      {{ form.classification.physics.label }}
+                    </div>
+                    {% if form.classification.physics.errors %}
+                      <div class="help is-warning">
+                        {% for error in form.classification.physics.errors %}
+                            {{ error }}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="control">
+                    <div class="select is-small">
+                      <label for="classification-physics_archives" class="hidden-label">Subtopic within physics</label>
+                      {{ form.classification.physics_archives|safe }}
+                    </div>
+                    {% if form.classification.physics_archives.errors %}
+                      <div class="help is-warning">
+                        {% for error in form.classification.physics_archives.errors %}
+                            {{ error }}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <script>
+                  $('select#classification-physics_archives').change(function() {
+                    $('input#classification-physics').attr('checked', true);
+                  });
+                </script>
+                {{ select_field(form.classification.q_biology) }}
+                {{ select_field(form.classification.q_finance) }}
+                {{ select_field(form.classification.statistics) }}
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                {% for subfield in form.classification.include_cross_list %}
+                <label class="radio">
+                  {{ subfield }} {{ subfield.label.text }}
+                </label>
+                {% endfor %}
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset {% if form.date.errors %}is-warning{% endif %}">
+            <legend class="legend">Date</legend>
+
+                {% if form.date.filter_by.errors %}
+                  <div class="help is-warning">
+                    {% for error in form.date.filter_by.errors %}
+                        {{ error }}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {% for field in form.date.filter_by %}
+                <div class="field is-grouped">
+                  <div class="control">
+                    <div class="radio"> {# label tags are added by wtforms #}
+                      {{ field|safe }}
+                      {{ field.label }}
+                    </div>
+                  </div>
+                  {# TODO: the JS bits here should be re-implemented elsewhere #}
+                  {% if field.data == 'specific_year' %}
+                  <div class="control is-datefield">
+                    <label for="date-year" class="hidden-label">Enter four digit year</label>
+                    {% if form.date.year.errors %}
+                      {{ form.date.year(placeholder="YYYY", class="input is-small is-danger")|safe }}
+                    {% else %}
+                      {{ form.date.year(placeholder="YYYY", class="input is-small")|safe }}
+                    {% endif %}
+                    <script>
+                      $('#date-year').focus(function() {
+                        $('input[name="date-filter_by"]').attr('checked', false);
+                        $('input[value="specific_year"]').attr('checked', true);
+                      });
+                    </script>
+                    {% if form.date.year.errors %}
+                    <div class="help is-warning">
+                      {% for error in form.date.year.errors %}
+                      {{ error }}
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endif %}
+                </div>
+                {% endfor %}
+                <div class="field is-grouped">
+                  <div class="control">
+                    <div class="control">{{ form.date.from_date.label }}</div>
+                    <div class="control is-datefield">
+                      {% if form.date.from_date.errors %}
+                      {{ form.date.from_date(placeholder="YYYY[-MM[-DD]]", class="input is-small is-danger")|safe }}
+                      {% else %}
+                      {{ form.date.from_date(placeholder="YYYY[-MM[-DD]]", class="input is-small")|safe }}
+                      {% endif %}
+                    </div>
+                    {% if form.date.from_date.errors %}
+                    <div class="help is-warning">
+                      {% for error in form.date.from_date.errors %}
+                      {{ error }}
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  <div class="control">
+                    <div class="control">{{ form.date.to_date.label }}</div>
+                    <div class="control is-datefield">
+                      {% if form.date.to_date.errors %}
+                      {{ form.date.to_date(placeholder="YYYY[-MM[-DD]]", class="input is-small is-danger")|safe }}
+                      {% else %}
+                      {{ form.date.to_date(placeholder="YYYY[-MM[-DD]]", class="input is-small")|safe }}
+                      {% endif %}
+                    </div>
+                    {% if form.date.to_date.errors %}
+                    <div class="help is-warning">
+                      {% for error in form.date.to_date.errors %}
+                      {{ error }}
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="help has-text-grey is-size-7">
+                  When limiting by date range, the lower bound of the "from" date
+                  and the upper bound of the "to" date are used.<br/>For example,
+                  searching with <code>From: 2012-02</code> and <code>To: 2013</code>
+                  will search for papers submitted from
+                  <code>2012-02-01</code> to <code>2013-12-31</code>.
+                </div>
+                <script>
+                  $('#date-to_date').focus(function() {
+                    $('input[name="date-filter_by"]').attr('checked', false);
+                    $('input[value="date_range"]').attr('checked', true);
+                  });
+                  $('#date-from_date').focus(function() {
+                    $('input[name="date-filter_by"]').attr('checked', false);
+                    $('input[value="date_range"]').attr('checked', true);
+                  });
+                </script>
+
+                <hr />
+
+                <div class="field">
+                  <div class="control">
+                    {% for subfield in form.date.date_type %}
+                    <label class="radio">
+                      {{ subfield }} {{ subfield.label.text }}
+                    </label>
+                    {% endfor %}
+                    <p class="help has-text-grey">{{ form.date.date_type.description }}</p>
+                  </div>
+                </div>
+
+          </fieldset>
+        </section>
+        <section>
+          <div class="field">
+            <div class="control">
+              {% for subfield in form.abstracts %}
+              <label class="radio">
+                {{ subfield }} {{ subfield.label.text }}
+              </label>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <div class="field is-horizontal is-grouped">
+                  <div class="control">
+                    <span class="select is-small">
+                      {{ form.size|safe }}
+                    </span>
+                  </div>
+                  <div class="control">
+                   {{ form.size.label }}
+                  </div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="field is-horizontal is-grouped">
+                  <div class="control">
+                    <div class="checkbox">
+                      {{ form.include_older_versions|safe }}
+                      {{ form.include_older_versions.label }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button is-link is-medium">Search</button>
+        </section>
+        <input type="hidden" name="order" value="{{ form.order.data }}">
+        </form>
+      </div>
+    </div>
+    <div class="column">
+      {{ search_macros.help_tips() }}
+    </div>
+  </div>
+
+{%- endmacro -%}
+
+
+{% block title %}
+    {% if not show_form and results %}
+        Showing {{ metadata.start + 1 }}&ndash;{{ metadata.end }} of {{ '{0:,}'.format(metadata.total_results) }} results
+    {% elif show_form %}
+        Advanced Search
+    {% else %}
+        Sorry, your query returned no results
+    {% endif %}
+{% endblock title %}
+
+{% block within_content %}
+  {% if show_form %}
+    <div class="is-clearfix" style="height: 2.5em"> {# TODO - adjust this layout so that it matches across all forms less awkwardly #}
+      <div class="is-pulled-right">
+        {% if query %}
+        <a href="{{ url_with_params("ui.search", {}, {"order": query.order, "size": query.size}) }}">Simple Search</a>
+        {% else %}
+        <a href="{{ url_with_params("ui.search", {}, {"order": form.order.data, "size": form.size.data }) }}">Simple Search</a>
+        {% endif %}
+      </div>
+    </div>
+    {{ advanced_query(form) }}
+  {% else %}
+    {% if has_classic_format %}
+      {{ search_macros.show_classic_author_search() }}
+    {% endif %}
+
+    <div class="columns">
+      <div class="column is-two-thirds-tablet">
+        <p style="margin-bottom: .5em">Query: <a href="{{ current_url_sans_parameters('advanced') }}">{{ query|display_query }}</a></p>
+        <div class="buttons">
+          <a class="button is-link" href="{{ current_url_sans_parameters('advanced') }}">Refine query</a><a class="button" href="{{ url_for('ui.advanced_search') }}">New search</a>
+        </div>
+      </div>
+      <div class="column is-one-third-tablet is-hidden-mobile">
+        <p class="has-text-right" style="margin-top: 1em">
+          {% if query %}
+          <a href="{{ url_with_params("ui.search", {}, {"order": query.order, "size": query.size}) }}">Simple Search</a>
+          {% else %}
+          <a href="{{ url_with_params("ui.search", {}, {"order": form.order.data, "size": form.size.data }) }}">Simple Search</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    {% if results %}
+        {{ search_macros.size_and_order(form, url_for('ui.advanced_search')) }}
+        {{ search_macros.search_results(form, results, metadata, url_for_page, url_for_author_search, is_current, query.hide_abstracts) }}
+    {% endif %}
+  {% endif %}
+{% endblock %}

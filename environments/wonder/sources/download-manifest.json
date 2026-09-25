@@ -1,0 +1,114 @@
+[
+  {
+    "product": "natality",
+    "year": 2016,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2016us.zip",
+    "bytes": 248367974,
+    "filename": "Nat2016us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2017,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2017US.zip",
+    "bytes": 242776873,
+    "filename": "Nat2017US.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2018,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2018us.zip",
+    "bytes": 228246064,
+    "filename": "Nat2018us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2019,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2019us.zip",
+    "bytes": 226407903,
+    "filename": "Nat2019us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2020,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2020us.zip",
+    "bytes": 229997676,
+    "filename": "Nat2020us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2021,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/nat2021us.zip",
+    "bytes": 232756903,
+    "filename": "nat2021us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2022,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/nat2022us.zip",
+    "bytes": 222103574,
+    "filename": "nat2022us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2023,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2023us.zip",
+    "bytes": 229522736,
+    "filename": "Nat2023us.zip"
+  },
+  {
+    "product": "natality",
+    "year": 2024,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/natality/Nat2024us.zip",
+    "bytes": 231829759,
+    "filename": "Nat2024us.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2017,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2017PE2016CO.zip",
+    "bytes": 460879295,
+    "filename": "2017PE2016CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2018,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2018PE2017CO.zip",
+    "bytes": 451827431,
+    "filename": "2018PE2017CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2019,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2019PE2018CO.zip",
+    "bytes": 447265743,
+    "filename": "2019PE2018CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2020,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2020PE2019CO.zip",
+    "bytes": 438388388,
+    "filename": "2020PE2019CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2021,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2021PE2020CO.zip",
+    "bytes": 433532955,
+    "filename": "2021PE2020CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2022,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2022PE2021CO.zip",
+    "bytes": 437642448,
+    "filename": "2022PE2021CO.zip"
+  },
+  {
+    "product": "linked",
+    "year": 2023,
+    "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/period-cohort-linked/2023PE2022CO.zip",
+    "bytes": 434390502,
+    "filename": "2023PE2022CO.zip"
+  }
+]

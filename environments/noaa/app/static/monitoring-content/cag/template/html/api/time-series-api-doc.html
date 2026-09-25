@@ -1,0 +1,262 @@
+<div class="modal fade text-wrap" id="api-doc" tabindex="-1" aria-labelledby="Data Service" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-title" id="Data Service">
+                    Climate at a Glance<br>
+                    <span class="scopeApiName"></span> <span class="sectionApiName"></span> Data Service API
+                </div>
+            </div>
+            <div class="modal-body text-left">
+                <h3>Overview</h3>
+
+                <p>A RESTful application programming interface (API) is available to access Climate at a Glance data. The API can format desired data as comma-separated values (<a href="https://datatracker.ietf.org/doc/html/rfc4180">CSV</a>), JavaScript Object Notation (<a href="https://datatracker.ietf.org/doc/html/rfc7159">JSON</a>), and Extensible Markup Language (<a href="https://datatracker.ietf.org/doc/html/rfc5364">XML</a>). The Data Service is only available via HTTP Strict Transport Security (<a href="https://tools.ietf.org/html/rfc6797">HSTS</a>) following <a href="https://https.cio.gov/">Federal government policy</a>.</p>
+
+                <h3>Request Endpoint Parameters</h3>
+
+                <p>Parameters are passed using a GET request with a combination of path and optional query parameters. Accepted values are defined in the table below.</p>
+
+                <div id="path-parameters">
+                    <h4>Path Parameters</h4>
+
+                    <p><code id="template-uri"><span class="http"></span>/<wbr>access/<wbr>monitoring/<wbr>climate-at-a-glance/<wbr><span id="scopeUriValue"><strong>{scope}</strong></span>/<wbr>time-series/<wbr><strong class="dk-gray-txt">{<span class="locationVarName">location</span>}</strong>/<wbr><strong class="dk-gray-txt">{parameter}</strong><span id="uriSurface">/<wbr><strong class="dk-gray-txt">{surface}</strong></span>/<wbr><strong class="dk-gray-txt">{timescale}</strong>/<wbr><strong class="dk-gray-txt">{month}</strong>/<wbr><strong class="dk-gray-txt">{begYear}</strong>-<strong class="dk-gray-txt">{endYear}</strong>/data.<strong class="dk-gray-txt">{format}</strong></code></p>
+
+                    <p>The <strong class="dk-gray-txt">{begYear}</strong> and <strong class="dk-gray-txt">{endYear}</strong> parameters are optional. If they are not included, the entire period of record is returned.</p>
+
+                    <p><code id="template-uri"><span class="http"></span>/<wbr>access/<wbr>monitoring/<wbr>climate-at-a-glance/<wbr><span id="scopeUriValue"><strong>{scope}</strong></span>/<wbr>time-series/<wbr><strong class="dk-gray-txt">{<span class="locationVarName">location</span>}</strong>/<wbr><strong class="dk-gray-txt">{parameter}</strong><span id="uriSurface">/<wbr><strong class="dk-gray-txt">{surface}</strong></span>/<wbr><strong class="dk-gray-txt">{timescale}</strong>/<wbr><strong class="dk-gray-txt">{month}</strong>/data.<strong class="dk-gray-txt">{format}</strong></code></p>
+                </div>
+
+                <div id="query-parameters">
+                    <h4>Query Parameters</h4>
+
+                    <p>An optional query component may follow at the end of the URL path, preceded by a question-mark <code>?</code>, in the form of <code>key=value</code> pairs, and separated by an ampersand <code>&amp;</code>.</p>
+
+                    <p><code>&hellip;?<strong class="dk-gray-txt">{basePeriod}</strong>=<em class="dk-gray-txt">[true|false]</em>&<strong class="dk-gray-txt">{basePeriodBegYear}</strong>=<em class="dk-gray-txt">[year]</em>&<strong class="dk-gray-txt">{basePeriodEndYear}</strong>=<em class="dk-gray-txt">[year]</em></code></p>
+                </div>
+
+                <table id="request-parameters">
+                    <thead>
+                        <tr>
+                            <th class="request-parameter">Request Parameter</th>
+                            <th class="parameter-type">Type</th>
+                            <th class="parameter-description">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="scope-parameter">
+                            <td class="request-parameter dk-gray-txt bold">scope</td>
+                            <td class="parameter-type">String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="location-parameter">
+                            <td class="request-parameter dk-gray-txt bold locationVarName">location</td>
+                            <td class="parameter-type">String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="surface-parameter">
+                            <td class="request-parameter dk-gray-txt bold">surface/<wbr>coordinates*</td>
+                            <td class="parameter-type">String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="parameter-parameter">
+                            <td class="request-parameter dk-gray-txt bold">parameter</td>
+                            <td class="parameter-type">String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                                <div id="us-parameter-note">
+                                    <div class="small italic smallMarginTop">*Please note, not all parameters are available for all locations and timescales. <a id="toggle-us-notes" href="#">More info <span>↓</span></a></div>
+                                    <div id="us-notes">
+                                        <div class="small italic marginTop">
+                                            <strong>Degree Days</strong> are not available for:<br>
+                                            <strong class="inline-block bigMarginLeft">Cities</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Alaska</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Hawaii</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Great Plains</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Souther Plains and Gulf Coast</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Rockies and Westward</strong><br>
+                                            <strong class="inline-block bigMarginLeft">River Basins</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Agricultural Belts</strong>
+                                        </div>
+                                        <div class="small italic marginTop">
+                                            <strong>Palmer Indices</strong> are not available for:<br>
+                                            <strong class="inline-block bigMarginLeft">Cities</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Alaska</strong><br>
+                                            <strong class="inline-block bigMarginLeft">Hawaii</strong>
+                                        </div>
+                                        <div class="small italic marginTop"><strong>PDSI</strong>, <strong>PHDI</strong>, and <strong>PMDI</strong> are not offered for multiple-month time scales.</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="timescale-parameter">
+                            <td class="request-parameter dk-gray-txt bold">timescale</td>
+                            <td class="parameter-type">Integer, String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">1-99</div>
+                                        <div class="table-cell">Number of Months</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">ytd</div>
+                                        <div class="table-cell">Year to Date</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="month-parameter">
+                            <td class="request-parameter dk-gray-txt bold">month</td>
+                            <td class="parameter-type">Integer</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">1-12</div>
+                                        <div class="table-cell">January-December</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">0</div>
+                                        <div class="table-cell">All Months</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="begyear-parameter" class="year-parameter">
+                            <td class="request-parameter dk-gray-txt bold">startYear</td>
+                            <td class="parameter-type">Integer</td>
+                            <td class="parameter-description">
+                                4-digit year <span class="small">(must be less than or equal to <strong class="dk-gray-txt">endYear</strong>)</span>
+                                <div class="table-display marginTop">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="endyear-parameter" class="year-parameter">
+                            <td class="request-parameter dk-gray-txt bold">endYear</td>
+                            <td class="parameter-type">Integer</td>
+                            <td class="parameter-description">
+                                4-digit year <span class="small">(must be greater than or equal to <strong class="dk-gray-txt">startYear</strong>)</span>
+                                <div class="table-display marginTop">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="format-parameter">
+                            <td class="request-parameter dk-gray-txt bold">format</td>
+                            <td class="parameter-type">String</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">csv</div>
+                                        <div class="table-cell">Comma-Separated Values</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">json</div>
+                                        <div class="table-cell">JavaScript Object Notation</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">xml</div>
+                                        <div class="table-cell">Extensible Markup Language</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="baseperiod-parameter">
+                            <td class="request-parameter dk-gray-txt bold">basePeriod</td>
+                            <td class="parameter-type">Boolean</td>
+                            <td class="parameter-description">
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">true</div>
+                                        <div class="table-cell">Return departures based on the requested base period average</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-cell dk-gray-txt italic smallPadRight">false</div>
+                                        <div class="table-cell">Return no departures</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="begbaseyear-parameter" class="year-parameter">
+                            <td class="request-parameter dk-gray-txt bold">basePeriodBegYear</td>
+                            <td class="parameter-type">Integer</td>
+                            <td class="parameter-description">
+                                4-digit year <span class="small">(must be less than or equal to <strong class="dk-gray-txt">basePeriodEndYear</strong>)</span>
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="endbaseyear-parameter" class="year-parameter">
+                            <td class="request-parameter dk-gray-txt bold">basePeriodEndYear</td>
+                            <td class="parameter-type">Integer</td>
+                            <td class="parameter-description">
+                                4-digit year <span class="small">(must be greater than or equal to <strong class="dk-gray-txt">basePeriodBegYear</strong>)</span>
+                                <div class="table-display">
+                                    <div class="table-row">
+                                        <div class="table-cell smallPadRight dkest-blue-txt">Accepted Values</div>
+                                        <div class="table-cell"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+{
+  "release": "v0.1.0",
+  "status": "candidate",
+  "repository": "Ninggggy/sgr-webenv",
+  "platform": "linux/amd64",
+  "environments": {
+    "noaa": {
+      "application_version": "2",
+      "browser_version": "2",
+      "port": 8080,
+      "legacy_records": 4,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-noaa-web:2",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-noaa-browser:2"
+      },
+      "data_assets": [
+        {
+          "name": "noaa-data-v0.1.0.tar.gz",
+          "bytes": 22123102,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/noaa-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "blocked-zingchart-oem",
+      "data_redistribution": "NCEI published climate data, attributed US government material; excludes proprietary chart code",
+      "acceptance": "pending",
+      "data_archive_status": "uploaded-private-draft",
+      "required_files": [
+        "climate.sqlite",
+        "metadata.json",
+        "coverage.json"
+      ]
+    },
+    "census": {
+      "application_version": "0.2.1",
+      "browser_version": "0.2",
+      "port": 8081,
+      "legacy_records": 8,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-census-web:0.2.1",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-census-browser:0.2"
+      },
+      "data_assets": [
+        {
+          "name": "census-data-v0.1.0.tar.gz",
+          "bytes": 131009519,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/census-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "pending",
+      "data_redistribution": "published ACS aggregates; CitySDK boundaries MIT notice retained",
+      "acceptance": "eight legacy records, 36 interaction checks and export comparison passed; public install pending",
+      "data_archive_status": "uploaded-private-draft",
+      "required_files": [
+        "census.sqlite"
+      ]
+    },
+    "wonder": {
+      "application_version": "0.3",
+      "browser_version": "0.2",
+      "port": 8082,
+      "legacy_records": 4,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-wonder-web:0.3",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-wonder-browser:0.2"
+      },
+      "data_assets": [],
+      "distribution_status": "blocked-data-redistribution-review",
+      "data_redistribution": "review-required",
+      "acceptance": "four legacy records and 48 source-count checks passed privately; data redistribution withheld"
+    },
+    "arxiv": {
+      "application_version": "0.1.0",
+      "browser_version": "0.1.0",
+      "port": 8083,
+      "legacy_records": 8,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-arxiv-web:0.1.0",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-arxiv-browser:0.1.0",
+        "search": "ghcr.io/ninggggy/sgr-webenv-arxiv-search:0.1.0"
+      },
+      "data_assets": [
+        {
+          "name": "arxiv-data-v0.1.0.tar.gz.part-000",
+          "bytes": 1073741824,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/arxiv-data-v0.1.0.tar.gz.part-000"
+        },
+        {
+          "name": "arxiv-data-v0.1.0.tar.gz.part-001",
+          "bytes": 270783027,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/arxiv-data-v0.1.0.tar.gz.part-001"
+        }
+      ],
+      "distribution_status": "pending",
+      "data_redistribution": "descriptive metadata CC0; no PDFs",
+      "acceptance": "fresh full index, 100 background, 40 exploration, 23 HTTP scope and small-index rebuild checks passed; full legacy replay and public install pending",
+      "data_archive_status": "uploaded-private-draft",
+      "expected_records": 1685244,
+      "expected_versions": 2787373,
+      "required_files": [
+        "snapshot.sqlite"
+      ],
+      "metadata_sources": [
+        {
+          "source_set": "cs:cs",
+          "complete": 1,
+          "response_date": "2026-09-25T06:48:05Z"
+        },
+        {
+          "source_set": "math:math",
+          "complete": 1,
+          "response_date": "2026-09-25T07:03:44Z"
+        },
+        {
+          "source_set": "stat:stat",
+          "complete": 1,
+          "response_date": "2026-09-25T07:04:55Z"
+        }
+      ]
+    },
+    "wateroffice": {
+      "application_version": "0.1.0-dev",
+      "browser_version": "0.1.0-dev",
+      "port": 8084,
+      "legacy_records": 10,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-wateroffice-web:0.1.0-dev",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-wateroffice-browser:0.1.0-dev"
+      },
+      "data_assets": [
+        {
+          "name": "wateroffice-data-v0.1.0.tar.gz",
+          "bytes": 399577798,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/wateroffice-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "pending",
+      "data_redistribution": "Environment Canada attributed non-resale hydrometric data; NRCan basemap OGL-Canada",
+      "acceptance": "41 browser information checks passed; visual and complete install acceptance pending",
+      "data_archive_status": "uploaded-private-draft",
+      "required_files": [
+        "Hydat.sqlite3",
+        "reference.json",
+        "reference-display.json",
+        "realtime-stations.json",
+        "operation-membership.json",
+        "realtime-filter-membership.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-------------------------------------------------->
+        
+        
+        <!-------------------------------------------------->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <meta charset="utf-8">
+        <title>Climate at a Glance | National Centers for Environmental Information (NCEI)</title>
+        <meta name="description" content="Historical and spatial comparisons of local, county, state, regional, national, and global meteorological data to determine trends and patterns">
+        <meta name="keywords" content="temperature, precipication, rain, drought, palmers, cooling degree days, heating degree days, United States, National, globe, global, county maps, state maps, climate division maps, regional maps, county time series, state time series, climate division time series, regional time series, county charts, state charts, climate division charts, regional charts, county rankings, state rankings, climate division rankings, regional rankings">
+        <meta name="author" content="NCEI.Monitoring.Info@noaa.gov">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/themes/custom/ncei/favicon.ico" type="image/vnd.microsoft.icon">
+
+        <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/reset.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/jquery-ui-1.13.2/jquery-ui.min.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" media="all"   href="/cmb-lib/assets/fontawesome6/css/all.min.css">
+        <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/monitoring.css">
+        <link rel="stylesheet" media="print" href="/monitoring-content/lib/css/print.css">
+        
+        <link rel="stylesheet" href="/monitoring-content/cag/template/css/cag.css">
+        <link rel="stylesheet" href="/monitoring-content/cag/template/css/mapping.css">
+        <link rel="stylesheet" href="/monitoring-content/cag/template/css/us-mapping.css">
+        <link rel="stylesheet" href="/cag/assets/tablesorter-2.32.0/css/theme.default.min.css">
+        <link rel="stylesheet" href="/cag/assets/leaflet/leaflet-1.8.0/leaflet.css">
+
+        <script src="/cmb-lib/assets/jquery-3.7.1.min.js"></script>
+        <script src="/cmb-lib/assets/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <script src="/cmb-lib/assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/cmb-lib/js/xss-prevention.js"></script>
+        
+        <script src="/cmb-lib/js/img-overlay.js"></script>
+        
+        <script src="/cmb-lib/js/skip-to-main.js"></script>
+        <script src="/cmb-lib/js/overflow-block.js"></script>
+        
+        
+        <script src="/cag/assets/tablesorter-2.32.0/js/jquery.tablesorter.min.js"></script>
+        <script src="/cag/assets/tablesorter-2.32.0/js/jquery.tablesorter.widgets.min.js"></script>
+        <script src="/cag/assets/leaflet/leaflet-1.8.0/leaflet.js"></script>
+        <script src="/cag/assets/leaflet/easyPrint/bundle.js"></script>
+    <link rel="stylesheet" href="/offline.css"></head>
+    <body>
+        <a class="skip-to-main" href="#main-content" tabindex="0">Skip to main content</a>
+        <header role="banner">
+            <div class="print" id="print-head"><img alt="NOAA Logo" src="/monitoring-content/lib/images/noaa-logo.png"> NOAA's National Centers for Environmental Information</div>
+            <span id="backToTop" title="Back to Top"><span aria-hidden="true"></span></span>
+            <div class="ncei-header-footer-container">
+                <div class="ncei-header-footer">
+                    <div class="ncei-header-footer-inner">
+                        <div class="ncei-footer-third-width">
+                            <div class="ncei-header-logo">
+                                <a href="/"><img src="/monitoring-content/lib/images/ncei/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage"></a>
+                            </div>
+                        </div>
+                        <div class="ncei-footer-third-width">
+                            <div class="product-name">
+                                <h1>Climate at a Glance</h1>
+                            </div>
+                        </div>
+                        <div id="search-monitoring-div" class="ncei-footer-third-width">
+                            <input id="search-monitoring" name="search-monitoring" aria-label="Search Monitoring Products" autocomplete="off" placeholder="Search Monitoring Products" class="ui-autocomplete-input">
+                            <span id="monitoring-search-icon"><span aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-container">
+                <div class="ncei-app-inner container">
+                    <div class="ncei-footer-two-thirds-width">
+                        <nav role="navigation" aria-label="Breadcrumbs">
+                            <ol class="app-breadcrumbs">
+                                <li class="app-breadcrumb-item"><a title="NCEI Home" href="/">Home</a></li>
+                                <li class="app-breadcrumb-item"><a title="Climate Monitoring Home" href="/access/monitoring/products/">Climate Monitoring</a></li>
+                                <li class="app-breadcrumb-item"><a href="/access/monitoring/climate-at-a-glance">Climate at a Glance</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="ncei-footer-third-width" id="next-release">
+                        <a href="/access/monitoring/dyk/monthly-releases"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="alerts"></div>
+        </header>
+        <aside class="offline-notice">Offline CAG · NClimDiv 20260904 · Contiguous U.S. states and climate divisions · <a href="/help">Coverage &amp; data help</a></aside><main role="main" id="main-content" tabindex="-1">
+            <div id="page-content-container">
+                <div id="page-content" class="container">
+                    <div id="title-data-info">
+    <div>
+        <h2 id="section-title" tabindex="0"><span class="scopeName"></span> <span class="sectionName"></span></h2>
+    </div>
+    <div></div>
+</div>
+
+<form id="select-form" method="get">
+    <div id="form-sections" class="with-note">
+        <div id="required">
+            <div id="location-options" class="nowrap">
+                <label for="location">Location:</label>
+                <select id="location" name="location"></select>
+            </div>
+
+            <div class="nowrap">
+                <label for="parameter">Parameter:</label>
+                <select id="parameter" name="parameter"></select>
+            </div>
+
+            <div class="nowrap">
+                <label for="year">Year:</label>
+                <select id="year" name="year" class="year"></select>
+            </div>
+
+            <div class="nowrap">
+                <label for="month">Month:</label>
+                <select id="month" name="month"></select>
+            </div>
+
+            <div class="nowrap">
+                <label for="timescale">Time Scale:</label>
+                <select id="timescale" name="timescale"></select>
+            </div>
+
+            <input id="submit" type="submit" value="Plot">
+        </div>
+
+        <div id="form-notes"></div>
+    </div>
+</form>
+
+<div id="dynamic-content" class="relative">
+    <div id="return" class="center"></div>
+
+    <div id="map-canvas"></div>
+
+    <div id="text-download">
+        <div>
+            <div id="show-text-div" class="hidden">
+                <input type="checkbox" id="show-text" name="show-text" value="show-text">
+                <label id="show-text-label" class="btn btn-primary nowrap" for="show-text">Text Labels</label>
+            </div>
+        </div>
+
+        <div id="download" class="right">
+            <strong>Download:</strong>
+            <span id="data-access"></span>
+        </div>
+    </div>
+
+    <ul id="designations" class="hidden"></ul>
+
+    <div id="data-table"></div>
+</div>
+
+<div class="arrowNav">
+    <div class="arrowLeft" id="prev">
+        <a data-toggle="tooltip" href="#">
+            <i class="fas fa-chevron-circle-left" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="arrowRight" id="next">
+        <a data-toggle="tooltip" href="#">
+            <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+<script>
+window.cag = __CAG_CONFIG__;</script>
+<script type="module" src="/cag/js/index.js"></script>
+                </div>
+            </div>
+        </main>
+        <footer role="contentinfo">
+            <div class="ncei-header-footer-container">
+                <div class="ncei-header-footer">
+                    <div class="ncei-header-footer-inner">
+                        <div class="ncei-footer-half-width">
+                            <div class="ncei-footer-logo">
+                                <a href="https://www.ncei.noaa.gov">
+                                    <img src="/monitoring-content/lib/images/ncei/logo_bw.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ncei-footer-quarter-width">
+                            <p class="ncei-header-footer-title">FOLLOW US</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/NOAANCEI/">
+                                        @NOAANCEI
+                                        <img src="/monitoring-content/lib/images/ncei/facebook-icon.png" width="100" height="100" title="NCEI Facebook" alt="NCEI Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/noaadata/">
+                                        @NOAAData
+                                        <img src="/monitoring-content/lib/images/ncei/instagram-icon.png" width="100" height="100" title="NOAA Data Instagram" alt="NOAA Data Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/NOAANCEI">
+                                        @NOAANCEI
+                                        <img src="/monitoring-content/lib/images/ncei/logo-x.png" width="100" height="102" title="NOAA NCEI Twitter" alt="NOAA NCEI Twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/news.xml">
+                                        News Feed
+                                        <img src="/monitoring-content/lib/images/ncei/rss-icon.png" width="100" height="100" title="NCEI RSS Feed" alt="NCEI RSS Feed">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ncei-footer-quarter-width">
+                            <p class="ncei-header-footer-title">CONTACT US</p>
+                            <ul>
+                                <li><a href="mailto:ncei.info@noaa.gov">Email: ncei.info@noaa.gov</a></li>
+                                <li><a href="tel:8282714800">Phone: (828) 271-4800</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/cmb-lib/js/back-to-top.js"></script>
+        
+        
+    <script src="/offline.js"></script></body>
+</html>

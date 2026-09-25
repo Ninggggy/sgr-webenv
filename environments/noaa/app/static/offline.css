@@ -1,0 +1,6 @@
+.offline-notice{background:#e8f3fa;border-bottom:1px solid #8bb6cf;padding:8px 20px;text-align:center;color:#123c5d;font:14px Arial} .unsupported{opacity:.6} #offline-status{padding:8px;background:#fff4d6;color:#563e00} #map-data-loader-overlay .error-msg{background:white} 
+
+.rank-note{font-size:13px;color:#555;text-align:center;margin:8px 0 14px}
+/* The source tooltip stylesheet is not present in the archived bundle. */
+.info-popup[aria-hidden="true"]{display:none}
+.info-popup[aria-hidden="false"]{position:absolute;z-index:1200;background:white;color:#222;border:1px solid #999;padding:10px;max-width:280px;box-shadow:0 2px 6px #999}

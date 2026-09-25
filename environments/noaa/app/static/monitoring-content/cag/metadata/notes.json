@@ -1,0 +1,14 @@
+{
+    "us": {
+        "city": "**Degree Days** and **Palmer Indices** are not available for **Cities**.",
+        "cityMappingRanks": "Due to varying periods of record, **Ranks** are not provided for **Cities**.",
+        "statewideDivisional": "**Degree Days** and **Palmer Indices** are not available for **Alaska** or **Hawaii**.",
+        "regional": "**Degree Days** are not available for **Great Plains**, **Southern Plains and Gulf Coast**, **Rockies and Westward**, **River Basins**, or **Agricultural Belts**.",
+        "multiMonthPalmers": "**Palmer Drought Severity Index (PDSI)**, **Palmer Hydrological Drought Index (PHDI)**, and **Palmer Modified Drought Index (PMDI)** are not offered for multiple-month time scales.",
+        "bulkDownload": "Data are available for [bulk download](/pub/data/cirs/climdiv/)."
+    },
+    "global": {
+        "mapping": "Global temperature departures are calculated using a 5°x5° grid, based on the **{{_GLOBAL_GRIDDED_BEGYEAR_}}-{{_GLOBAL_GRIDDED_ENDYEAR_}} average**. Global precipitation values use a 2.5°x2.5° grid and departures are relative to the **{{_GLOBAL_PCP_BEGYEAR_}}-{{_GLOBAL_PCP_ENDYEAR_}} average**. Please note, global precipitation data are processed on a different schedule and released separately from global temperature data.",
+        "default": "Please note, gridded global temperature departures are with respect to the **{{_GLOBAL_GRIDDED_BEGYEAR_}}-{{_GLOBAL_GRIDDED_ENDYEAR_}} average**. All other temperature departures are with respect to the **{{_GLOBAL_GLOBE_BEGYEAR_}}-{{_GLOBAL_GLOBE_ENDYEAR_}} average**. Global precipitation data are processed on a different schedule and released separately from global temperature data."
+    }
+}

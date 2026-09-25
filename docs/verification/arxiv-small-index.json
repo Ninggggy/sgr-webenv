@@ -1,0 +1,7 @@
+{
+  "small_index_documents": 3,
+  "official_builder_passed": true,
+  "failed_partial_index_startup_refused": true,
+  "full_index_untouched": true,
+  "fixture_correction": "Added missing harvest_state table with complete=0 after first fixture-only failure"
+}

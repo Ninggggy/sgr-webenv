@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Historical Hydrometric Data Map Search - Water Level and Flow - Environment Canada</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="description" content=""><link href="/vendor/wet/v13.4.0/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="/vendor/wet/v13.4.0/GCWeb/css/theme.min.css" />
+<noscript><link rel="stylesheet" href="/vendor/wet/v13.4.0/wet-boew/css/noscript.min.css" /></noscript>
+<link rel="stylesheet" href="/vendor/css/fontawesome/css/all.min.css"/>
+<link href="/custom/application.css" rel="stylesheet"/>
+<link href="/custom/print.css" rel="stylesheet"/>
+<link href="/custom/map.css" rel="stylesheet"/>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+
+
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to About this site</a></li></ul>
+</nav>
+<header>
+<div id="wb-bnr" class="container">
+<div class="row">
+    <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+<h2 class="wb-inv">Language selection</h2>
+<ul class="list-inline mrgn-bttm-0">
+<li>
+  <a lang="fr" hreflang="fr" href="//eau.ec.gc.ca/map/index_f.html?type=historical">
+    <span class="hidden-xs" translate="no">Français</span>
+    <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
+  </a>
+</li>
+</ul>
+</section>
+  <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+<a href="https://www.canada.ca/en.html" property="url">
+<img src="/vendor/wet/v13.4.0/GCWeb/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" /><span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
+</a>
+<meta property="name" content="Government of Canada">
+<meta property="areaServed" typeof="Country" content="Canada" />
+<link property="logo" href="/vendor/wet/v13.4.0/GCWeb/assets/wmms-blk.svg" />
+</div>
+<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+<h2>Search</h2>
+      <form action="https://canada.ca/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
+        <div class="form-group wb-srch-qry">
+          <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+          <input name="cdn" value="canada" type="hidden">
+          <input name="st" value="s" type="hidden">
+          <input name="num" value="10" type="hidden">
+          <input name="langs" value="en" type="hidden">
+          <input name="st1rt" value="1" type="hidden">
+          <input name="s5bm3ts21rch" value="x" type="hidden">
+          <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+          <input type="hidden" name="_charset_" value="UTF-8">
+          <datalist id="wb-srch-q-ac">
+          </datalist>
+        </div>
+        <div class="form-group submit">
+          <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+        </div>
+      </form></section>
+</div>
+</div>
+<hr>
+<div class="container">
+<div class="row"><div class="col-md-8">
+      <nav class="gcweb-menu" typeof="SiteNavigationElement">
+<h2 class="wb-inv">Menu</h2>
+<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+<ul role="menu" aria-orientation="vertical" data-ajax-replace="/data/pco-fetch/sitemenu-v2-en.html"><li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+<li role="presentation"><a role="menuitem" href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li></ul>
+</nav>
+    </div></div>
+</div>
+<nav id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+	<div class="container">
+		<ol class="breadcrumb" typeof="BreadcrumbList">
+<li><a href="http://www.canada.ca/en/index.html">Home</a></li><li><a href="http://www.canada.ca/en/services/environment/index.html">Environment and natural resources</a></li><li><a href="/index_e.html">Water level and flow</a></li><li><a href="/mainmenu/historical_data_index_e.html">Historical Data</a></li>		</ol>
+	</div>
+</nav>
+</header>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+<div class="container">
+    <noscript>
+    <div class="alert alert-warning">
+      <p>JavaScript in your browser is turned off; for the site to function properly please enable JavaScript.</p>
+    </div>
+  </noscript>
+    <h1 property="name" id="wb-cont">Historical Hydrometric Data Map Search</h1></div>
+<div class="wide">
+  <div class="container">
+  <div class="visible-xs">
+    <details class="hidden-print alert alert-warning mrgn-tp-md mrgn-bttm-md" open>
+      <summary>
+        <h2 class="h3">Notice</h2>
+      </summary>
+      <p>The map search is not optimized for extra small screen. As an alternative, the <a href="/search/historical_e.html">Station Search</a> is available.</p>
+    </details>
+  </div>
+  <button type="button" id="download" class="btn btn-primary pull-right mrgn-bttm-md">Export Metadata for Displayed Stations</button>
+    <div class="clearfix"></div>
+</div>
+<div class="map-container">
+  <div id="menu" class="menu">
+  <div id="layers-header" class="panel-header">
+    <h2 class="h5 mrgn-tp-0 mrgn-bttm-0">
+      <span class="fas fa-chevron-down"></span>
+      Layers    </h2>
+  </div>
+  <div id="layers" class="panel-body" data-state="expanded">
+        <!-- <section>
+      <h3 class="h5 mrgn-tp-0">Basemap</h3>
+      <div class="radio">
+        <label for="transportation">
+          <input type="radio" id="transportation" name="layers" checked>
+          Transportation        </label>
+      </div>
+      <div class="radio">
+        <label for="simple">
+          <input type="radio" id="simple" name="layers">
+          Simple        </label>
+      </div>
+      <div class="radio">
+        <label for="elevation">
+          <input type="radio" id="elevation" name="layers">
+          Elevation        </label>
+      </div>
+      <div class="checkbox">
+        <label for="txt">
+          <input id="txt" type="checkbox" checked>
+          City Names        </label>
+      </div>
+    </section> -->
+    <section>
+      <h3 class="h5 mrgn-tp-0 mrgn-bttm-sm">Drainage Basin Delineation<a href="#basin-help" class="wb-lbx pdng-tp-sm pdng-sm"><span class="fas fa-info-circle text-info"><span class="wb-inv">Help</span></span></a></h3>
+      <button id="basin-display" class="btn-plain toggle" data-state="hide">
+        <span class="fas fa-toggle-off mrgn-rght-sm fa-md"></span>
+        <span>Polygon</span>
+      </button>
+      <div class="form-group mrgn-bttm-0 mrgn-lft-md">
+        <label for="basin-transparency" class="mrgn-bttm-0">Transparency</label>
+        <div style="display: flex;">
+          <span class="transparency-value">20%</span>
+          <input type="range" id="basin-transparency" min="0" max="1" step="0.1" value="0.2" disabled/>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="filters-header" class="panel-header">
+    <h2 class="h5 mrgn-tp-0 mrgn-bttm-0">
+      <span class="fas fa-chevron-down"></span>
+      Station Filters    </h2>
+  </div>
+  <div id="filters" class="panel-body" data-state="expanded">
+    <div class="form-group">
+      <label for="station-id" class="wb-inv">Station Number</label>
+      <input type="text" id="station-id" class="form-control input-sm" placeholder="Station Number"/>
+    </div>
+    <div class="form-group">
+      <label for="station-name" class="wb-inv">Station Name</label>
+      <input type="text" id="station-name" class="form-control input-sm" placeholder="Station Name"/>
+    </div>
+    <div id="marker-filters">
+      <header class="acc-header" data-state="show">
+                <h3 data-marker-header="historical">Markers</h3>
+              </header>
+      <div class="acc-body" data-state="show">
+                <div data-marker-body="historical">
+          <div class="checkbox mrgn-bttm-0">
+            <label>
+              <input type="checkbox" name="historical_markers" value="a_c" checked>
+              <img src="/images/map/historical/orange_pin_check.png" alt="" class="mrgn-lft-sm mrgn-rght-sm">
+              Active Station            </label>
+          </div>
+          <div class="checkbox mrgn-bttm-0">
+            <label>
+              <input type="checkbox" name="historical_markers" value="a_s" checked>
+              <img src="/images/map/historical/orange_tree_check.png" alt="" class="mrgn-lft-sm mrgn-rght-sm">
+              Active Station (Seasonal)            </label>
+          </div>
+          <div class="checkbox mrgn-bttm-0">
+            <label>
+              <input type="checkbox" name="historical_markers" value="d_c" checked>
+              <img src="/images/map/historical/grey_pin_x.png" alt="" class="mrgn-lft-sm mrgn-rght-sm">
+              Discontinued Station            </label>
+          </div>
+          <div class="checkbox mrgn-bttm-0">
+            <label>
+              <input type="checkbox" name="historical_markers" value="d_s" checked>
+              <img src="/images/map/historical/grey_tree_x.png" alt="" class="mrgn-lft-sm mrgn-rght-sm">
+              Discontinued Station (Seasonal)            </label>
+          </div>
+        </div>
+              </div>
+    </div>
+        <header class="acc-header" data-sequence="location" data-type="province" data-state="show">
+      <label for="province">Province/Territory</label>
+    </header>
+    <div class="acc-body" data-sequence="location" data-type="province" data-state="show">
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="all" checked>
+          All Provinces/Territories        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="AB">
+          Alberta        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="BC">
+          British Columbia        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="MB">
+          Manitoba        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="NB">
+          New Brunswick        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="NL">
+          Newfoundland and Labrador        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="NT">
+          Northwest Territories        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="NS">
+          Nova Scotia        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="NU">
+          Nunavut        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="ON">
+          Ontario        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="PE">
+          Prince Edward Island        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="QC">
+          Quebec        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="SK">
+          Saskatchewan        </label>
+      </div>
+            <div class="checkbox mrgn-bttm-0">
+        <label>
+          <input type="checkbox" name="province" value="YT">
+          Yukon        </label>
+      </div>
+          </div>
+    <header class="acc-header" data-sequence="location" data-type="basin">
+      <label for="basin">Basin</label>
+    </header>
+    <div class="acc-body" data-sequence="location" data-type="basin">
+      <select id="basin" class="form-control input-sm">
+        <option value="all">All Basins</option>
+                <option value="01">01 Maritime Provinces</option>
+                <option value="02">02 St. Lawrence</option>
+                <option value="03">03 Northern Quebec and Labrador</option>
+                <option value="04">04 Southwest Hudson Bay</option>
+                <option value="05">05 Nelson River</option>
+                <option value="06">06 Western Hudson Bay</option>
+                <option value="07">07 Great Slave Lake</option>
+                <option value="08">08 Pacific</option>
+                <option value="09">09 Yukon River</option>
+                <option value="10">10 Arctic</option>
+                <option value="11">11 Mississippi River</option>
+              </select>
+    </div>
+    <header class="acc-header last" data-sequence="location" data-type="coords">
+      <span>Bounding Coordinates</span>
+    </header>
+    <div class="acc-body last" data-sequence="location" data-type="coords">
+      <label for="north-lat">North Latitude</label>
+      <input type="text" id="north-lat" class="form-control input-sm" maxlength="8" placeholder="41.50000 - 83.20000">
+      <label for="south-lat">South Latitude</label>
+      <input type="text" id="south-lat" class="form-control input-sm" maxlength="8" placeholder="41.50000 - 83.20000">
+      <label for="east-lon">East Longitude</label>
+      <input type="text" id="east-lon" class="form-control input-sm" maxlength="9" placeholder="51.20000 - 141.50000">
+      <label for="west-lon">West Longitude</label>
+      <input type="text" id="west-lon" class="form-control input-sm" maxlength="9" placeholder="51.20000 - 141.50000">
+    </div>
+        <div class="form-group">
+      <label for="operation-schedule" class="wb-inv">Operation Schedules</label>
+      <select id="operation-schedule" class="form-control input-sm">
+                <option value="all">All Operation Schedules</option>
+                <option value="S">Seasonal</option>
+                <option value="C">Continuous</option>
+                <option value="M">Miscellaneous</option>
+              </select>
+    </div>
+        <div class="form-group">
+      <label for="operating-agency" class="wb-inv">Operating Agency</label>
+      <select id="operating-agency" class="form-control input-sm">
+        <option value="all">All Operating Agencies</option>
+      </select>
+    </div>
+    <button id="reset" class="btn btn-default btn-sm btn-block">Reset</button>
+  </div>
+</div>
+  <div id="map" class="mrgn-bttm-md" data-type="historical" data-marker="data_availability"></div>
+</div>
+<div class="container">
+  <p id="no-stations" class="text-center"></p>
+  <section id="help" class="panel panel-default" data-state="hide">
+  <header class="panel-heading">
+   <h2 class="h3 mrgn-tp-0 mrgn-bttm-0">Help</h2>
+   <!-- <span id="help-close" class="glyphicon glyphicon-remove"></span> -->
+  </header>
+  <div class="panel-body">
+    <p><a href="/contactus/faq_e.html#map-station-location">More Info on Station Marker Locations</a></p>
+    <p>Clicking the station marker will open an info window for the selected station.</p>
+    <p>Please note that more data may be available on one of our            <a href="https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/partners-national-hydrometric-program.html">partner websites</a>.
+          </p>
+    <p class="mrgn-tp-md">Note that the full map cannot be printed using the browser's print function. Please use screen capture to print the map.</p>
+    <details class="mrgn-tp-md">
+      <summary class="pdng-sm">
+        <h3>Map Controls</h3>
+      </summary>
+      <div class="mrgn-tp-sm mrgn-rght-md">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move north by small increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Up arrow</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move south by small increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Down arrow</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move west by small increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Left arrow</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move east by small increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Right arrow</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move north by large increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Page Up</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move south by large increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Page Down</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move west by large increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">Home</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Move east by large increments</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">End</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Zoom in</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">+</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Zoom out</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">-</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Activate Map mode</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">m</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Activate Terrain mode</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">t</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Activate Satellite mode</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">s</div>
+          <div class="clearfix visible-xs"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">Return to default location and zoom</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">h</div>
+          <div class="clearfix visible-xs"></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+  <!-- <div id="popup" class="small">
+    <span id="popup-close" class="glyphicon glyphicon-remove"></span>
+    <div id="popup-content"></div>
+  </div> -->
+  <section id="basin-help" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+      <h2 class="modal-title">Notice</h2>
+    </header>
+    <div class="modal-body">
+      <p>Note that the drainage basin polygons are a prerelease dataset that will continue to be updated as new polygons are added.</p>
+      <p>Users should be aware that drainage areas derived from these polygons may differ from the official hydrometric station drainage areas published by WSC. The official hydrometric station drainage areas will be updated after the polygons have undergone a final review.</p>
+      <p>For more information, please see the <a href="https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/HydrometricNetworkBasinPolygons">documentation</a>.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-default btn-sm popup-modal-dismiss" title="Close overlay (escape key)">Close</button>
+    </div>
+  </section>
+</div>
+<script>function loadGoogleMap(){}</script>
+
+</div>
+<section id="water-topics" class="container hidden-print">
+  <h2 class="wb-inv">What we are doing</h2>
+  <div class="row">
+    <section class="col-lg-4 col-md-6">
+      <h3>Real-time Data</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/search/real_time_e.html">Real-time Station Search</a></li>
+        <li><a href="/map/index_e.html?type=real_time&amp;default_marker=data_availability">Real-time Map Search</a></li>
+        <li><a href="/my_station_list/index_e.html">My Station List</a></li>
+      </ul>
+    </section>
+    <section class="col-lg-4 col-md-6">
+      <h3>Historical Data</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/search/historical_e.html">Historical Station Search</a></li>
+        <li><a href="/map/index_e.html?type=historical">Historical Map Search</a></li>
+        <li><a href="/search/statistics_e.html">Additional Statistics</a></li>
+      </ul>
+    </section>
+    <section class="col-lg-4 col-md-6">
+      <h3>Resources</h3>
+      <ul class="mrgn-bttm-lg">
+        <li><a href="/disclaimer_info_e.html">Disclaimer for Hydrometric Information</a></li>
+        <li><a href="/contactus/faq_e.html">Frequently Asked Questions</a></li>
+                  <li><a href="https://www.canada.ca/en/environment-climate-change/services/meteorological-service-standards/publications/hydrometric-data-information.html">Hydrometric Data and Information Service Standards</a></li>
+              </ul>
+    </section>
+  </div>
+</section>
+<section class="pagedetails container">
+	<h2 class="wb-inv">Page details</h2>
+  <div class="row"><div class="col-sm-8 col-md-9 col-lg-9">
+<div data-ajax-replace="">
+	<div class="row row-no-gutters">
+    <div class="col-sm-9 col-md-6 col-lg-5">
+      <a href="https://weather.gc.ca/mainmenu/water_contact_us_e.html" target="_blank" class="btn btn-default btn-block"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>Feedback<span class="wb-inv"> about this web site</span></a>		</div>
+	</div>
+</div>
+			</div>
+	</div>
+			<dl id="wb-dtmd">
+				<dt>Date modified:</dt>
+				<dd><time property="dateModified">2026-09-11</time></dd>
+			</dl>
+</section>
+</main>
+<footer id="wb-info">
+	<h2 class="wb-inv">About this site</h2>
+  <div class="gc-contextual"><div class="container">
+    <nav>
+        <h3>Environment and natural resources</h3>
+        <ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+            <li><a href="https://weather.gc.ca/mainmenu/water_contact_us_e.html" target="_blank">Contact us</a></li>
+            <li><a href="https://www.canada.ca/en/services/environment/our-environment.html">Our environment</a></li>
+            <li><a href="https://www.canada.ca/en/services/environment/our-environment/nature-based-climate-solutions.html">Nature-based climate solutions</a></li>
+        </ul>
+    </nav>
+</div></div>
+	<div class="gc-main-footer">
+		<div class="container">
+			<nav>
+				<h3>Government of Canada</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://www.canada.ca/en/contact.html">All contacts</a></li>
+					<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+					<li><a href="https://www.canada.ca/en/government/system.html">About government</a></li></ul>
+				<h4><span class="wb-inv">Themes and topics</span></h4>
+				<ul class="list-unstyled colcount-sm-2 colcount-md-3"><li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
+					<li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+					<li><a href="https://travel.gc.ca/">Travel and tourism</a></li>
+					<li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
+					<li><a href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+					<li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
+					<li><a href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+					<li><a href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+					<li><a href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+					<li><a href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+					<li><a href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+					<li><a href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+					<li><a href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+					<li><a href="https://www.canada.ca/en/services/finance.html">Money and finance</a></li>
+					<li><a href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
+					<li><a href="https://www.canada.ca/en/services/indigenous-peoples.html">Indigenous peoples</a></li>
+					<li><a href="https://www.canada.ca/en/services/veterans-military.html">Veterans and military</a></li>
+					<li><a href="https://www.canada.ca/en/services/youth.html">Youth</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada Corporate</h3>
+				<ul>
+					<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+					<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+					<li><a href="https://www.canada.ca/en/government/about.html">About Canada.ca</a></li><li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li></ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="/vendor/wet/v13.4.0/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="/vendor/js/jquery-2.2.4.min.js"></script>
+<script src="/vendor/wet/v13.4.0/wet-boew/js/wet-boew.min.js"></script>
+<script src="/vendor/wet/v13.4.0/GCWeb/js/theme.min.js"></script>
+<script src="/vendor/js/moment.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/application.js"></script>
+<script src="/js/contact_us.js"></script>
+<script src="/js/map_download.js"></script>
+<script src="/js/bundle.js"></script>
+</body>
+</html>

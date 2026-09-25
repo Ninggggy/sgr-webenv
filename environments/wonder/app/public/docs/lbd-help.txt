@@ -1,0 +1,6819 @@
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ Linked Birth / Infant Death Records (Expanded)- Online Database Help 
+ 
+ 
+	 
+		 Skip directly to site content 
+		 Skip directly to page options 
+		 Skip directly to A-Z link 
+		 Skip directly to A-Z link 
+		 Skip directly to A-Z link 
+	 
+
+	 
+	
+
+	 
+	 
+		 
+		 An official website of the United States government  Here's how you know  
+	 
+
+	 
+		 
+			 
+			 
+				 Official websites use .gov 
+				 A .gov website belongs to an official government organization in the United States. 
+			 
+		 
+		 
+			 
+			 
+				 Secure .gov websites use HTTPS 
+				 A lock (   ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. 
+			 
+		 
+	 
+ 
+
+	 
+
+	 
+	 
+		 
+			 
+				  
+				 
+					 
+	 Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People 
+	 
+	 
+ 
+
+				 
+				 
+					 
+	 
+
+		 
+		 Search 
+			 
+			 
+		 
+
+		 
+			 
+				 
+				 
+				 
+					 
+						 Submit 
+						 
+					 
+				 
+			 
+		 
+		 
+	 
+ 
+
+
+				 
+				 
+			 
+		 
+	 
+
+	 
+
+	 
+	 
+		     
+			 CDC WONDER 
+			 FAQs   Help   Contact Us   WONDER Search 
+		     
+	 
+
+	 
+	 
+		 
+	 
+		 
+		 
+
+			 
+				 
+					 Section Navigation 
+					 
+					 
+				 
+
+				 
+					 
+
+						 
+							 
+						 
+						 
+							 
+							 TP Docs Home 
+						 
+					 
+				 
+			 
+		 
+	 
+
+ 
+	
+	 
+
+	 
+	 
+		 
+			 
+				 
+				    
+				 
+				 
+					 
+     
+         Facebook 
+         Twitter 
+         LinkedIn 
+         Syndicate 
+     
+ 
+
+				 
+			 
+		 
+	 
+
+	 
+
+	 
+	   
+
+	 
+	 
+
+		 
+		 
+			 
+			 	 
+			 
+			   
+
+			 
+			 
+				  
+					 
+					 
+					 
+
+
+ 
+
+
+ 
+ 
+ Infant Deaths Data Summary 
+ Linked Birth / Infant Death Records (Expanded) 
+ 2017 - 2023 
+
+ 
+ 
+
+ 
+	 
+		Summary:
+	 
+	     
+	 
+	This data collection provides counts and rates for deaths of infants under 1 year of age, 
+	occurring within the United States to U.S. residents.  
+	Information from death certificates has been linked to corresponding birth certificates. 
+	Data are available by county of mother's residence, child's age, underlying cause of death, 
+	sex, birth weight, birth plurality, birth order, gestational age at birth, period of prenatal care, 
+	maternal race and ethnicity, maternal age, maternal education and marital status. 
+	The "expanded"  data includes additional data for race categories, 
+	paternal characteristics, mother's pregnancy history, risk factors, and 
+	labor and delivery.
+	For the documentation on data for preceding years, see 
+	 Linked Birth / Infant Death Records 1995-2023 .  
+	Please also see
+	 Linked Birth / Infant Death Records Information  
+	for links to the online databases. 
+	
+	
+	 
+	 
+   	  Privacy  polices:  
+   	  
+   	 Any use of these statistics implies consent to the following confidentiality restrictions:   
+
+	  
+	Use these data for statistical reporting and analysis only. 
+
+	  
+	Do not present or publish statistics representing nine or fewer births or deaths, 
+	including rates based on counts of nine or fewer births or deaths, 
+	in figures, graphs, maps, tables, etc. 
+	Statistics representing one through nine (1-9) births or deaths are suppressed on CDC WONDER.  
+
+	  
+	Make no attempt to learn the identity of any person or establishment included in these data. 
+
+	 
+	Make no disclosure or other use of the identity of any person or establishment 
+	discovered  inadvertently and 
+	advise the Confidentiality Officer in the National Center for Health Statistics  of any such discovery.
+	  	Phone:  888-642-4159 
+	     Email:   nchsconfidentiality@cdc.gov 
+	 
+
+	 
+   	See  Assurance of Confidentiality  for more information.
+    	 
+	 
+ 
+
+ 
+	 
+	Population:
+	 
+	     
+	 
+	Live births and infant (age under 365 days) deaths to maternal residents of the United States, 
+	2017 - 2023.
+	 
+
+ 
+     
+	     
+	    Source:
+     
+         
+     
+     
+    Centers for Disease Control and Prevention, 
+    National Center for Health Statistics.  
+    National Vital Statistics System, 
+    Linked Birth / Infant Deaths 
+    on CDC WONDER Online Database. 
+    Data are from the Linked Birth / Infant Deaths Records 2017-2023, 
+    as compiled from data provided by the 57 vital statistics 
+    jurisdictions through the Vital Statistics Cooperative Program. 
+		
+   
+     
+     
+ 
+
+ 
+	 
+	In WONDER:
+	 
+	     
+	  You can produce  tables ,  maps ,  charts , and  data extracts .
+	Request national, state and county summary counts 
+	of infant deaths, live births and 
+	infant death rates.
+ 
+		You can limit and index your data by any and all of these variables: 
+	 
+
+	 
+	 
+	 
+	 Infant Death Variables 
+	     Mother's residence  - 
+			National,  Regional, Division, State and County 
+			(total population of 250,000 or more; no territories) 
+			of mother's legal residence at the time of birth.
+			Data  also available by urbanization categories for counties,
+			based on the 2006 and 2013 urbanization classification schema.   
+	
+	 
+	 
+		  Mother's Characteristics: 
+			 
+		    Maternal Race  in Single-Race categories:
+			 
+			  6 race categories  - 
+							American Indian or Alaska Native (AIAN); 
+							Asian; 
+							Black or African American; 
+							More than one race;  
+							Native Hawaiian or Other Pacific Islander (NHOPI);  
+							White; 
+							Unknown or Not Stated.
+			 
+
+			  15  race categories   - White; Black; American Indian or Alaska Native (AIAN); 
+						Asian Indian; Chinese; Filipino; Japanese; Korean;
+						Vietnamese; Other Asian; 
+						Hawaiian; Guamanian; Samoan; Other Pacific Islander; 
+						More than one race; Unknown or Not Stated. 
+
+			 
+
+			  31  race categories   - White; Black; American Indian or Alaskan Native (AIAN); Asian; 
+						Native Hawaiian or Other Pacific Islander (NHOPI);
+						Black and White; Black and AIAN;  Black and Asian; Black and NHOPI; 
+						AIAN and White; AIAN and Asian; AIAN and NHOPI; 
+						Asian and White; Asian and NHOPI; NHOPI and White;  
+						Black, AIAN, and White;  Black, AIAN, and Asian; Black, AIAN, and NHOPI; 
+						Black, Asian, and White; Black, Asian, and NHOPI; Black, NHOPI, and White;
+						AIAN, Asian, and White;  AIAN, NHOPI, and White;  AIAN, Asian, and NHOPI; 
+						Asian, NHOPI, and White;  Black, AIAN, Asian, and White; 
+						Black, AIAN, Asian, and NHOPI;  Black, AIAN, NHOPI, and White; 
+						Black, Asian, NHOPI, and White; AIAN, Asian, NHOPI, and White;
+						Black, AIAN, Asian, NHOPI, and White; Unknown or Not Stated.
+			 
+
+		 
+
+		   Maternal Hispanic Origin  
+			 
+				Hispanic origin categories -  Hispanic or Latino;  Not Hispanic or Latino; Origin unknown or not stated.
+			 
+				Expanded Hispanic origin categories - Mexican;  Puerto Rican; Cuban; Dominican; Central or South American; Other and Unknown Hispanic;  
+				Non-Hispanic; Unknown or Not Stated.  
+			 
+
+		 
+
+		   Marital Status  - Married; Unmarried; Unknown or Not Stated; Not Available. 
+
+		   Paternity Acknowledgment (if mother unmarried)  - Yes; No;  Unknown or Not Stated;  Not Applicable; Not Reported. 
+		
+		   Age of Mother  - under 15 years through over 50 years. 
+			  Mother's age is available in the following sets of age groups: 
+			    9  groups of 5-year increments: 
+				  under 15 years; 15-19 years; 20-24 years; 25-29 years; 30-34 years; 
+				  35-39 years; 40-44 years; 45-49 years; 50 years and over.  
+			   10  groups with 
+				  categories for  under age 15; 
+				  15-17 years;  18-19 years; 
+				  5-year age increments for older mothers; 
+				  50 years and over. 
+			   13  groups with 
+				  a category for under age 15; 
+				  single-year age categories for 15, 16, 17, 18, and 19 year old mothers;
+			 	  5-year age increments for older mothers; and 
+				  a category for age 50 years and over.  
+		 
+			 
+		 
+				
+		   Mother's Education  - 
+			8th grade or less; 
+			9th through 12th grade with no diploma; 
+			High school graduate or GED completed; Some college credit, but not a degree; 
+			Associate degree (AA, AS); 
+			Bachelor's degree (BA, AB, BS); 
+			Master's degree (MA, MS); 
+			Doctorate (PHD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD); 
+			Unknown or Not Stated; 
+			Excluded.
+		 
+
+		  Mother's birth place: 
+			  	
+			   Mother's Nativity  - 
+				Born in the U.S. (50 US States);
+				Born outside the U.S. (includes possessions);
+				Unknown or Not Stated.
+			 
+
+
+			   Mother's Birth Country  - lists 294 options, 
+				from Afghanistan to Zimbabwe; Unknown or Not Stated. 
+			 
+
+			   Mother's Birth State  - lists 72 options, 
+				for areas affiliated with the United States and Canada; Rest of the World;  Not Classifiable. 
+			 
+			 
+		 
+		 
+
+	 
+
+	 
+		  Paternal Characteristics: 
+		
+		 
+		    Paternal Race  in Single-Race categories:
+			 
+			  6 race categories   - 	American Indian or Alaska Native (AIAN); 
+							Asian; 
+							Black or African American; 
+							More than one race;  
+							Native Hawaiian or Other Pacific Islander (NHOPI);  
+							White; 
+							Unknown or Not Stated.
+			 
+			  15  race categories   - 	White; Black; American Indian or Alaska Native (AIAN); 
+							Asian Indian; Chinese; Filipino; Japanese; Korean;
+							Vietnamese; Other Asian; 
+							Hawaiian; Guamanian; Samoan; Other Pacific Islander; 
+							More than one race; Unknown or Not Stated. 
+
+			 
+			  31  race categories   - 
+						White; Black; American Indian or Alaskan Native (AIAN); Asian; 
+						Native Hawaiian or Other Pacific Islander (NHOPI);
+						Black and White; Black and AIAN;  Black and Asian; Black and NHOPI; 
+						AIAN and White; AIAN and Asian; AIAN and NHOPI; 
+						Asian and White; Asian and NHOPI; NHOPI and White;  
+						Black, AIAN, and White;  Black, AIAN, and Asian; Black, AIAN, and NHOPI; 
+						Black, Asian, and White; Black, Asian, and NHOPI; Black, NHOPI, and White;
+						AIAN, Asian, and White;  AIAN, NHOPI, and White;  AIAN, Asian, and NHOPI; 
+						Asian, NHOPI, and White;  Black, AIAN, Asian, and White; 
+						Black, AIAN, Asian, and NHOPI;  Black, AIAN, NHOPI, and White; 
+						Black, Asian, NHOPI, and White; AIAN, Asian, NHOPI, and White;
+						Black, AIAN, Asian, NHOPI, and White; Unknown or Not Stated.
+			 
+
+		 
+
+		   Father's Hispanic Origin 
+			 
+				 Hispanic origin categories -  Hispanic or Latino;  Not Hispanic or Latino; Origin unknown or not stated.
+			 
+				Expanded Hispanic origin categories - Mexican;  Puerto Rican; Cuban; Dominican; Central or South American; Other and Unknown Hispanic;  
+				Non-Hispanic; Unknown or Not Stated. 
+			  
+
+		 
+
+		   Father's Education  - 
+			8th grade or less; 
+			9th through 12th grade with no diploma; 
+			High school graduate or GED completed; Some college credit, but not a degree; 
+			Associate degree (AA, AS); 
+			Bachelor's degree (BA, AB, BS); 
+			Master's degree (MA, MS); 
+			Doctorate (PHD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD); 
+			Unknown or Not Stated; 
+			Excluded.
+		 
+
+		   Age of Father  - 11 groups of 5-year increments:    
+				  under 15 years; 15-19 years; 20-24 years; 25-29 years; 30-34 years; 
+				  35-39 years; 40-44 years; 45-49 years; 50-54 years, 55-98 years;
+				  Unknown or Not Stated.  
+		 
+		 
+
+	 
+	   
+		  Pregnancy history and prenatal care characteristics: 
+
+		 
+			  Prior pregnancies - timing:
+				 
+				   Interval Since Last Live Birth  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+					Not Applicable (1st live birth);
+					Unknown or Not Stated. 
+				 
+
+				   Interval Since Last Other Pregnancy Outcome  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+					Not Applicable (1st natality event);
+					Unknown or Not Stated. 
+				 
+
+
+				   Interval of Last Pregnancy  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+
+					Not Applicable (no previous pregnancy);
+					Unknown or Not Stated. 
+				 
+			 
+			  Prior pregnancy outcomes:
+
+				 
+				   Prior Births Now Living  
+					-  13 categories: 
+					Zero through 10 births in 1 birth increments (0,1,2... 10); 
+					11 or more (11); 
+					Unknown or Not Stated (99);
+					Not Reported (100). 	
+
+					  
+								 
+				 
+
+				   Prior Births Now Dead  
+					-  5 categories: 
+					Zero through 2 births in 1 birth increments (0,1,2); 
+					3 or more (3); 
+					Unknown or Not Stated (99). 
+					 	
+
+					  
+											 
+				 
+
+				   Prior Other Pregnancy Outcomes 
+					  
+					-  8 categories: 
+					Zero through 5 pregnancies in single increments (0,1,2... 5); 
+					6 or more (6); 
+					Unknown or Not Stated (99). 
+
+					  			 
+				 
+				 
+				
+			 
+			  Birth order:
+				 
+				   Live Birth Order  - 9 categories: 
+					One child born alive to mother through seven live births; 8 or more; Unknown or Not Stated.
+				 
+
+				   Total Birth Order  - 9 categories: 
+					One child born alive to mother through seven live births; 8 or more; Unknown or Not Stated.
+				 
+				 
+
+			 
+			 Prenatal care: 
+				 
+				   Number of Prenatal Visits  - 100 categories: 
+					Zero through 98 prenatal visits; Unknown or Not Stated. 
+				 
+
+				   Number of Prenatal Visits Recode  - 12 categories: 
+					No visits; 1 to 2 visits; 3 to 4 visits; 5 to 6 visits; 7 to 8 visits; 9 to 10 visits;
+					11 to 12 visits; 13 to 14 visits; 15 to 16 visits; 17 to 18 visits; 19 or more visits;
+					Unknown or Not Stated. 
+				 
+
+
+				   Month Maternal Prenatal Care Began  - 12 categories: 
+					No prenatal care; 1st month through 10th month; Unknown or Not Stated.
+				 
+
+				   Trimester Prenatal Care Began  - 6 categories: 
+					1st to 3rd month; 4th to 6th month; 7th to final month; 
+					No prenatal care; Unknown or Not Stated;
+					Not Reported.  
+				 
+				 
+			
+
+			 
+			   WIC  - 3 categories for enrollment in 
+					Women, Infants, and Children supplemental nutrition program: 
+					Yes;  No; Unknown or Not Stated. 
+			 
+
+			  Obstetric procedures:
+				 
+				   Successful External Cephalic Version  - 3 categories 
+					for outcome of procedure to turn non-vertex fetal position to vertex
+					by external manipulation: 
+					Yes;  No; Unknown or Not Stated. 
+				 
+
+				   Failed External Cephalic Version  - 3 categories
+					for outcome of procedure to turn non-vertex fetal position to vertex
+					by external manipulation:
+					Yes;  No; Unknown or Not Stated. 
+				 
+				 
+			 
+		 
+	 
+
+	  
+		  Maternal Risk Factors: 
+		 
+		  Mother's height and weight:
+			 
+			   Mother's Height in Inches  
+				- 19 categories:
+				Under 57 inches (56); 
+				single inch increments from 57 - 72 inches (57, 58, 59... 72); 
+				73 or more inches (73); 
+				Unknown or Not Stated (99). 
+				
+				  
+			 
+
+			   Mother's Pre-pregnancy Weight  - 7 categories in 50 pound increments: 
+				75 - 124 lbs; 125 - 174 lbs; 175 - 224 lbs; 
+				225 - 274 lbs; 275 - 324 lbs; 325 - 375 lbs; 
+				Unknown or Not Stated.
+			  
+
+			   Mother's Pre-pregnancy BMI  - 7 categories for Body Mass Index:
+				Underweight  < 18.5; 
+				Normal 18.5-24.9; 
+				Overweight 25.0-29.9; 
+				Obesity I 30.0-34.9;
+				Obesity II 35.0-39.9; 
+				Extreme Obesity III >39.9; 
+				Unknown or Not Stated.
+			 
+
+			   Mother's Delivery Weight  - 7 categories in 50 pound increments: 
+				100 - 149 lbs; 150 - 199 lbs; 200 - 249 lbs; 
+				250 - 299 lbs; 300 - 349 lbs; 350 - 400 lbs; 
+				Unknown or Not Stated.
+			  
+
+		  
+
+			   Mother's Weight Gain Recode  - 6 categories:
+			Less than 11 pounds; 11 to 20 pounds; 21 to 30 pounds; 31 to 40 pounds; 41 to 98 pounds; 
+			Unknown or Not Stated.
+			 
+		
+			
+			 
+		 
+
+		   Tobacco  use during pregnancy - Yes; No; Unknown or Not Stated.
+		 
+
+		  Cigarette consumption: 
+			 
+			   Number of Cigarettes Before Pregnancy  
+				in the 3 months prior to conception
+				- 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes Before Pregnancy Recode  
+				in the 3 months prior to conception
+				- 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 1st Trimester  - 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 1st Trimester Recode  - 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 	
+	
+			   Number of Cigarettes 2nd Trimester  - 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 2nd Trimester Recode  - 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 	
+
+			   Number of Cigarettes 3rd Trimester  - 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 3rd Trimester Recode  - 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 
+			 
+		 		
+		  
+	 
+
+	  
+		  Pregnancy Risk Factors: 
+		 
+			  Pregnancy related conditions:
+				 
+				   Gestational Diabetes  - Yes; No; Unknown or Not Stated.  
+				   Gestational Hypertension  - Yes; No; Unknown or Not Stated. 
+				   Eclampsia  - Yes; No; Unknown or Not Stated; Not Reported. 
+				 
+			 
+			
+			  Prior conditions:
+				 
+				   Pre-pregnancy Diabetes  - Yes; No; Unknown or Not Stated.  
+			
+			
+				   Pre-pregnancy Hypertension  - Yes; No; Unknown or Not Stated. 
+			
+				 
+			 
+			  Prior deliveries:
+				 		
+					   Previous Preterm Birth  - Yes; No; Unknown or Not Stated. 
+					   Previous Cesarean Delivery  - Yes; No; Unknown or Not Stated. 
+					   Number of Previous Cesareans  
+							7 categories:  
+							single increments of previous cesareans from zero through three (0,1,2,3); 
+							4 or more previous cesareans (4); 
+							Unknown or Not Stated (99). 
+							  
+							
+							  
+						 
+				 
+			 
+
+			
+
+			  Fertility assistance: 
+				  
+					   Infertility Treatment Used  - Yes; No; Unknown or Not Stated. 
+					   Fertility Enhancing Drugs  - Yes; No; Not Applicable; Unknown or Not Stated; Not Reported. 
+					   Assistive Reproductive Technology  	- Yes; No; Not Applicable; Unknown or Not Stated; Not Reported. 
+				 
+			 
+			
+
+			   Risk Factors Checked  - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any pregnancy risk factors were reported. 
+				Selecting "None checked" excludes all records with any pregnancy risk factors. 
+				 
+
+		 
+	 
+
+	   
+		  Maternal infections present and/or treated during pregnancy:  
+		 
+			   Gonorrhea  - Yes; No; Unknown or Not Stated. 
+		
+			   Syphilis  - Yes; No; Unknown or Not Stated. 
+
+			   Chlamydia  - Yes; No; Unknown or Not Stated. 
+
+			   Hepatitis B  - Yes; No; Unknown or Not Stated. 
+
+			   Hepatitis C  - Yes; No; Unknown or Not Stated. 
+
+			   Infections Checked  - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any infections were reported. 
+				Selecting "None checked" excludes all records with any reported infections. 
+				 
+		 
+	 
+
+	     Labor Characteristics: 
+		 
+			   Induction of Labor  - Yes; No; Unknown or Not Stated. 
+
+			   Augmentation of Labor  - Yes; No; Unknown or Not Stated. 
+
+			   Steroids  
+				(glucocorticoids) for fetal lung maturation received by the mother before delivery 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Antibiotics for Mother  during labor
+				- Yes; No; Unknown or Not Stated. 
+
+			   Chorioamnionitis  
+				clinical chorioamnionitis or maternal temperature >= 
+				38 degrees Celsius (100.4 degrees Fahrenheit) 
+				 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Anesthesia  
+				epidural or spinal anesthesia during labor
+				 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Characteristics of Labor Checked  
+				- At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any labor characteristics noted above was reported. 
+				Selecting "None checked" excludes all records with any of the above 
+				labor characteristics.
+			  
+				 
+		 
+	 
+
+	   
+		  Delivery Characteristics: 
+		 
+			  When:
+				 
+				   Year  -  2017 - 2023 for "expanded" linked birth / death records
+					 
+					(less detailed data are available for years 1995 and later at  Linked Birth / Death Records ). 
+					 
+
+				   Month  -  January-December. 
+					 
+
+				   Weekday  - Weekday; Weekend.     
+	
+					  
+
+					 
+
+				   Time of Day  - 10 categories: 
+					 00:00 - 02:29; 03:00 - 05:59; 06:00 - 08:59; 09:00 - 11:59; 12:00 - 14:59;  15:00 - 17:59; 
+					 18:00 - 20:59; 21:00 - 23:59; Unknown or Not Stated, Not Reported.
+					 
+				 
+			 
+			  Where:
+				 
+				   Birthplace  - 9 categories: 
+					Hospital; Freestanding Birth Center; 
+					Home (intended); Home (not intended);  Home (unknown if intended); 
+					Clinic / Doctor's Office; 
+					Other;  Unknown or Not Stated; Not Reported.
+					 
+				   Birthplace Recode 6  - 6 categories: 
+					Hospital; 
+					Freestanding Birth Center; 
+					Clinic / Doctor's Office; 
+					Residence; 
+					Other;  
+					Unknown or Not Stated. 					
+					 
+				   Birthplace Recode 3  - 3 categories: 
+					Hospital; 
+					Not in Hospital; 
+					Unknown or Not Stated. 
+					 
+				   Mother Transferred  - - Yes; No; Unknown or Not Stated.
+					 
+				 
+			 
+			 Medical Attendant  - 
+					Doctor of Medicine (MD); Doctor of Osteopathy (DO); Certified Nurse Midwife (CNM / CM); 
+					Other Midwife; Other;  Unknown or Not Stated.
+			 
+
+			
+			  How: 
+					 	
+						 Fetal Presentation  - 
+						Cephalic; Breech; Other; Unknown or Not Stated. 
+					  
+						 Final Route and Method of Delivery  - 
+						Spontaneous; Forceps; Vacuum; Cesarean; Unknown or Not Stated.  
+					  
+						 Delivery Method Expanded  - 8 categories:
+						Vaginal (excludes vaginal after previous C-section); 
+						Vaginal after previous C-section; 
+						Primary C-section; 
+						Repeat C-section; 
+						Vaginal (unknown if previous C-section); 
+						C-section (unknown if previous C-section); 
+						Unknown or Not Stated;
+						Not Reported. 
+					  
+						 Delivery Method  - 3 categories:
+						Vaginal; Cesarean; Unknown or Not Stated. 
+					  
+						 Trial of Labor Attempted (if cesarean) 
+						Yes; No; Not Applicable; Unknown or Not Stated.
+					  
+				
+				  Payment:
+					  
+						 Source of Payment for Delivery  - 5 categories:
+						Medicaid; Private Insurance; Self Pay; Other; Unknown or Not Stated.
+					  
+						 Source of Payment for Delivery Expanded  - 9 categories:
+						Medicaid; Private Insurance; Self-Pay; 
+						Indian Health Service; CHAMPUS/TRICARE; Other Government (Federal, State, Local); 
+						Other; Unknown or Not Stated; Not Reported.
+					 
+										
+				 		
+						
+
+	 
+	  
+		   Maternal Morbidity: 
+		 
+			   Maternal Transfusion  - Yes; No; Unknown or Not Stated. 
+
+			   Third or Fourth Degree Perineal Laceration  - Yes; No; Unknown or Not Stated. 
+
+			   Ruptured Uterus  - Yes; No; Unknown or Not Stated. 
+
+			   Unplanned Hysterectomy  - Yes; No; Unknown or Not Stated. 
+
+			   Admission to Intensive Care Unit  - Yes; No; Unknown or Not Stated. 
+			
+			   Maternal Morbidity Checked  - At least one checked; None checked; Unknown or Not Stated. 
+					 
+					This field indicates whether any maternal morbidity above was reported. 
+					Selecting "None checked" excludes all records with any of the above maternal morbidity. 
+					 
+					 
+		 
+	 
+
+	   
+		  Infant Characteristics: 
+		 
+		
+		   Sex of Child  - Female; Male. 
+		   Birth Weight  
+			  Infant's weight at birth is available in 3 sets of categories,
+ 				through 8165 grams,  or Not stated: 		
+			   12  groups in 500 gram increments;
+			 14  groups in 250 gram increments;
+			 100 gram increments .
+			   	 
+		 
+		  Multiple Births
+			   Plurality or Multiple Birth  - Single; Twin; Triplet or higher.
+			   Set Order  - 1st; 2nd; 3rd or higher; Unknown or Not Stated.
+			   	
+		 
+			
+		   Gestational Age at Birth  
+			  Gestational age groups are available in 3 sets of categories, 
+			representing the duration of the pregnancy at the time of birth, 
+			based on Last Menstrual Period (LMP) or 
+			Obstetric Estimate (OE):
+			 
+				 10  age groups: Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-35 weeks; 36 weeks; 37-39 weeks; 40 weeks; 41 weeks; 42 weeks or more; Unknown.
+			  
+				 11  age groups: Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-33 weeks; 34-36 weeks; 37-38 weeks; 39 weeks, 40 weeks; 41 weeks; 42 or more weeks; Unknown.
+			  
+				 Weekly  age groups:
+				17 weeks through 47 weeks;  Unknown.
+			 
+		 	
+
+		
+		 APGAR scores 
+			  APGAR scores are available for 5 minutes and 10 minutes after birth, in single increments 
+			or recoded  into 5 categories: 
+			  Single increments of 0 - 10; Unknown or Not Stated; Not Applicable.  
+			  Recoded categories - A score of 0-3; A score of 4-6; A score of 7-8; A score of 9-10; Unknown or Not Stated. 
+			 
+			Note that 10 minute APGARS scores are  categorized as "Not Applicable" 
+			when the 5 minute score was 6 or higher, 
+			and reported as "Unknown or Not Stated" in the recoded categories. 
+		 
+		
+		
+		   Infant Breastfed at Discharge?  -
+			 
+			Yes; No; Unknown or Not Stated; Not Reported. 
+		 
+
+		   Infant Transferred?  -
+			Yes; No; Unknown or Not Stated. 
+		 
+
+		   Infant Living at Time of Report?  -
+			Yes; No; Unknown or Not Stated
+			(vital status from birth certificate) 
+		 
+
+ 
+
+
+		   Age of Infant at Death  -
+				available in 3 lists: 5 age categories; 22 age categories, and number of days. 
+		 
+		 
+
+	 
+
+	   
+		  Abnormal conditions of newborn: 
+		 
+			 Assisted Ventilation  - 
+				Yes; No; Unknown or Not Stated. 
+				  Assisted Ventilation data are available in 2 fields, 
+				  1) Assisted ventilation required immediately following delivery; and
+				  2) Assisted ventilation required for more than six hours. 
+				
+
+			 NICU Admission  - Yes; No; Unknown or Not Stated. 
+
+			 Surfactant Replacement Therapy  - Yes; No; Unknown or Not Stated. 
+
+
+			 Antibiotics for Suspected Neonatal Sepsis  - 
+				Yes; No; Unknown or Not Stated. 
+
+			 Seizures  - Yes; No; Unknown or Not Stated. 
+
+
+			   Abnormal Conditions Checked  - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any abnormal conditions noted above was reported. 
+				Selecting "None checked" excludes all records with any of the above abnormal conditions.
+			 
+			 
+		 
+	 
+
+	   
+		  Congenital anomalies of newborn: 
+		 
+			   Anencephaly  Yes; No; Unknown or Not Stated. 
+			   Cleft Palate Alone  Yes; No; Unknown or Not Stated. 
+			   Cleft Lip with or without Cleft Palate  Yes; No; Unknown or Not Stated. 
+			   Cyanotic Congenital Heart Disease  Yes; No; Unknown or Not Stated. 
+			   Congenital Diaphragmatic Hernia  Yes; No; Unknown or Not Stated. 
+			   Omphalocele  Yes; No; Unknown or Not Stated. 
+			   Gastroschisis  Yes; No; Unknown or Not Stated. 
+			   Hypospadias  Yes; No; Unknown or Not Stated. 
+			   Meningocele / Spina Bifida   Yes; No; Unknown or Not Stated. 
+			   Limb Reduction Defect  Yes; No; Unknown or Not Stated. 
+			
+			   Down Syndrome  Confirmed; Pending; No; Unknown or Not Stated.  
+			   Suspected Chromosomal Disorder  Confirmed; Pending; No; Unknown or Not Stated.  
+
+
+			   Congenital Anomalies Checked  - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any congenital anomalies noted above was reported. 
+				Selecting "None checked" excludes all records with any of the above congenital anomalies. 
+			 
+		 
+	 
+
+	 
+		  Cause of Infant's Death: 
+		  
+			 International Classification of Diseases, revision 10  chapters, sub-chapters and specific causes of death.
+		  
+			 130 Selected Causes of Infant Death  grouped causes of death in International Classification of Diseases, revision 10.
+			
+		 
+	
+	 
+	 
+
+	 
+	 
+ 
+ 
+	 
+		Contents:
+	 
+	    
+	 
+		Please refer to the following topics:
+		   Linked Birth / Infant Death Records Data Request 
+		   Data Source Information 
+		   Additional Information 
+		   Data Items 
+		
+	 
+		          
+ 
+ 
+
+
+	 
+	
+
+	 
+	 
+	 
+	 
+	 Linked Birth / Infant Death Records Data (Expanded) Request 
+	 
+		 
+		 
+			 Output: 
+			    
+			  You can produce  tables ,
+			 maps ,
+			 charts , and
+			 data extracts .
+			 
+			 
+			The following measures are available:
+			   Number of infant deaths (summary frequency counts) 
+			  Number of live births (summary frequency counts)
+			   infant death rates  
+			 	
+			 
+		 
+		 
+			 Variables: 
+			    
+			  
+				 You can limit and index your data by any and all of the data 
+				 variables .
+				 
+			 
+		 
+		 
+			 How? 
+			    
+			 The Request screen has sections to guide you through the 
+			making a data request as step-by-step process. 
+			However, to get your first taste of how the system works,
+			you might want to simply press any Send button,
+			and execute the default data request.
+			The data results for your query appear on the Table screen. 
+			After you get your data results, try the  Chart  and  Map  screens.
+			Or  export  your data to a file (tab-delimited line listing) for download to your computer.
+			 
+			For more information, see the following:
+			   Quick Start Guide ; 
+			   Step 1 , Organize your request ;
+			   Step 2 , Limit births to selected locations (for maternal residence);
+			   Step 2.a , Limit births to selected urbanization classifications (for maternal residence);
+			   Step 3 , Select maternal characteristics;
+			   Step 4 , Select paternal characteristics;
+			   Step 5 , Select pregnancy history and prenatal care characteristics;
+			   Step 6 , Select maternal risk factors;
+			   Step 7 , Select pregnancy risk factors;
+			   Step 8 , Select maternal infections present and/or treated during pregnancy;
+			   Step 9 , Select labor characteristics;
+			   Step 10 , Select delivery characteristics;
+			   Step 11 , Select maternal morbidity;
+			   Step 12 , Select infant characteristics;
+			   Step 13 , Select abnormal conditions of newborn;
+			   Step 14 , Select congenital anomalies of newborn;
+			   Step 15   Select cause of infant death; 
+			   Step 16 , Other options.
+
+			 
+			 
+		 
+		
+		 
+			 Help: 
+			    
+			 
+			Click on any button labeled "Help", located 
+			to the right hand side of the screen at the top of each section.
+			Each Control's label, such as the "Location" label next to the 
+			Location entry box, is linked to the online help for that item.
+			 
+			 
+			 
+			 Send:
+			 
+			    
+			 Sends your data request to be processed on the CDC WONDER databases.
+			The Send buttons are located on the bottom of the Request page, and 
+			also in the upper right corner of each section, for easy access.
+			 
+		 
+		
+	 
+	
+	 
+	 
+	 
+	 Step 1. Organize table layout: 
+	 
+		Select up to five variables that serve as keys for grouping
+		your data.  For example, you could select 
+		to group (summarize, stratify, index)
+		your data by Year, State, Race and Gestational Age.
+		 
+			 How?    
+			See  How do I organize my data?  for more information.
+			Also, see  How do I select items from the list box? 
+			  
+                	 Hints:     
+			 
+			 
+  			 Group results by "15 Leading Causes of Death (Infants)" to get 
+			 death counts and rates for the top 15 rankable causes of death,
+ 			 for your selected query criteria.  
+
+				 
+  			 Note that cross-tabulations, zero value death counts, and suppressed values are not permitted when 
+ 			 you group results by "15 Leading Causes."  
+				 
+ 			 When more than one rankable cause of death occurs in the last position, 
+			 all these causes are shown.
+				  
+  			 The "leading causes of death" published by 
+  			 the National Center for Health Statistics (NCHS) are also
+ 			 called "rankable causes of death."
+ 			 The rankable causes are a subset of the  113 selected causes of death for all ages,  
+  			 and the  130 selected causes of death  for infants. 
+  			 A "#"  symbol preceding the label indicates a "rankable" cause of death, 
+ 			 from the National Center for Health Statistics (NCHS) list of rankable causes of death.
+				 
+  		
+			 
+			To make a map, you must request data with a geographic location variable,
+			such as State, as a "By-Variable."
+			Then click the Map tab.
+			 
+			You cannot make charts when your data has more than two By-Variables. 
+                         
+		 
+			 Title   Enter any desired description to display as a title with your results.
+					
+	 
+	 
+	 
+	 Step 2.  Select maternal residence: 
+	 
+		 
+		Limit the population to specific locations here.
+		Alternately, you can leave the settings at the default values
+		(the United States) and choose to  organize  
+		or group the data results by Region, State or County to show these stratifications.
+		 
+		 
+		 
+		 
+		 
+		 
+		 Location:  Regions, States and Counties 
+		 
+		This dataset includes states (no territories) and counties 
+		with a total population over 250,000 persons.
+		Use this field to specify the location or locations for the query.
+		Select any number of locations.
+		 
+			 How?  
+			  Click a  round button 
+			to switch between the State and County list,
+			the HHS Regions list, or the  Census Regions and Census Divisions list.
+			  See  How do I use a Finder?  for more information.
+			 
+			 Hints: 
+			    The Advanced mode let you easily pick several items from different parts of the list.
+			Items are not selected until you click the "Move" button in Advanced mode.
+			You may also enter values by hand, one code per line, in the Advanced mode.
+			Use the  Finder  to see the correct code format.
+			For example, 02 is the Alaska state code. 
+			    The "plus" symbol, "+" indicates that you can open the item, to see more items below it.
+			     The results to a search are shown in blue, and indicated by ">".
+			 
+		 
+		 
+		 Notes:     
+		 
+		 About geographic classification: 
+			Location is based on mother's legal residence recorded on the birth certificate.  
+	
+     			For events to be included in the linked file, both the birth and death must occur inside the fifty states and the District of Columbia.
+			Tabulations of linked data and denominator data events occurring in each of the respective areas to nonresidents are 
+          		 excluded  from tabulations by place of residence.  
+			These exclusions are based on the place of residence of the mother. 
+		 
+		 
+		 About counties:  
+			County-level data are shown for counties with populations of 250,000 persons or more. 
+			All counties with fewer than 250,000 persons are shown combined together for the state,
+			under the label "Unidentified Counties," due to privacy and confidentiality concerns. 
+			 
+			The data for year 2017 and later years identify counties with a population of 250,000 persons or more in the year 2010 Census.
+			  
+			For more information, refer to the section below discussing 
+			 Unidentified Counties .
+			 
+		 
+			 
+			  About Regions and Divisions: 
+				 
+				Regions and divisions are multi-state groups. 
+				Regions include states and counties, yet do not include territories.  
+				Choose between two types of regions: 
+				  four Census Regions, with nine sub-ordinate divisions, or
+				  ten Health and Human Services (HHS) Regions. 
+				 				
+				 
+				 Census Regions and Divisions from the United States Census Bureau: 
+				 
+					Census Region 1 - Northeast:
+						 
+							Division 1 - New England:   
+							Connecticut, Maine, Massachusetts,
+							New Hampshire, Rhode Island, Vermont.
+						 
+							Division 2 - Middle Atlantic:    
+							New Jersey, New York, Pennsylvania.							  
+						 
+					 	
+					Census Region 2 - Midwest:
+						 
+							Division 3 - East North Central:   
+							Illinois, Indiana, Michigan, Ohio, Wisconsin.
+						 
+							Division 4 - West North Central:   
+							Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota.
+						 
+					 	
+					Census Region 3 - South:
+						 
+							Division 5 - South Atlantic:   
+							Delaware, District of Columbia reporting area, Florida, Georgia, Maryland,
+							North Carolina, South Carolina, Virginia, West Virginia.
+						 
+							Division 6 - East South Central:   
+							Alabama, Kentucky, Mississippi, Tennessee.
+						 
+							Division 7 - West South Central:   
+							Arkansas, Louisiana, Oklahoma, Texas.
+						 
+					 	
+					Census Region 4 - West:
+						 
+							Division 8 - Mountain:   
+							Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming.
+						 
+							Division 9 - Pacific:   
+							Alaska, California, Hawaii, Oregon, Washington.
+						 
+
+					 	
+				 
+					 Health and Human Services (HHS) Regions: 
+					 
+					HHS Region 1 - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont. 
+					 
+					HHS Region 2 - New Jersey, New York 
+							(data for Puerto Rico, Virgin Islands are not included here).  
+					 
+					HHS Region 3 - Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, West Virginia. 
+					 
+					HHS Region 4 - Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, Tennessee. 
+					 
+					HHS Region 5 - Illinois, Indiana, Michigan, Minnesota, Ohio, Wisconsin.
+ 					 
+					HHS Region 6 - Arkansas, Louisiana, New Mexico, Oklahoma, Texas. 
+					 
+					HHS Region 7 - Iowa, Kansas, Missouri, Nebraska.
+					 
+					HHS Region 8 - Colorado, Montana, North Dakota, South Dakota, Utah, Wyoming. 
+					 
+					HHS Region 9 - Arizona, California, Hawaii, Nevada 
+							(data for American Samoa and Guam are not included here). 
+					 
+					HHS Region 10 - Alaska, Idaho, Oregon, Washington 
+					 
+				 
+				When you  export  the results of your data request,
+				the location name and the codes are in separate columns.
+				 
+				To see the full set of available location values for Regions, 
+				group the data by HHS Region, State and County, 
+				or by Census Region, Division, State and County, 
+				and then  export  the results.
+				
+				 	
+		 
+			 
+			  About state and county codes: 
+				 
+				State and County codes are Federal Information Processing Standard (FIPS) codes. 
+				See the  Locations  section for more information
+				about how county FIPS codes have been modified for use in NCHS  public-use data.
+				 
+				The state, region and division data are derived from the "STRESFIPB" variable in the public use files for years 1999-2002, and 
+				from "MRSTATEFIPS" in the public use files for years 2003-2004, and from "MRTERR" for years 2005-2023.
+				The county data are derived from the combined values in variables "STRESFIPB" + "CNTYRFPB" in the public use files  for years 1999-2002, and  from 
+				"MRSTATEFIPS" + "MRCNTYFIPS" in the public use files for years 2003-2004, and from "MRTERR"+ "MRCNTY" for years 2005-2023. 
+				 	
+				When you  export 
+				the results of your data request,
+				the location names and the FIPS codes are in separate columns.
+				 	
+				To see the full list of State locations and codes, 
+				send a request and group results by State, then export  the results of your data request. 
+				 	
+				See  About Counties  
+				for more information about county-level data.
+				 
+		 
+		 
+	   
+
+
+	 
+	 
+	 
+	 Step 2.a  Select urbanization classifications: 
+	 
+		 
+		Limit the population to specific locations here, as categorized for Metro/Nonmetro and urban-rural areas.
+		Alternately, you can leave the settings at the default values
+		(the United States) and choose to  organize  
+		or group the data results by these fields to show these stratifications.
+
+		Select 
+		 Urbanization  and 
+		 Metro/Nonmetro 
+		categories for mother's county of residence, in the classifications for 2006 and 2013.  
+		 
+
+
+ 		 
+					 How?    
+					  
+						Click the  Radio Button  above the box, to pick
+						your preferred list.  
+					 
+						See " How do I select items from the list box? ,"
+						to limit your data to selected categories in the  list. 
+					 
+					 
+					 Notes:   
+					 
+					These categories are from the 2006 or 2013 NCHS Urban-Rural Classification Scheme for Counties.
+					 
+					See the 
+					 
+					NCHS Urban-Rural Classification Scheme for Counties  
+					web page for more information about the Urbanization categories.  
+					 
+				 
+					The large central metro category contains counties in metropolitan statistical areas (MSAs) 
+					of one million or more population that have been identified by NCHS classification rules as central 
+					because they contain all or part of a principal city of the area. 
+					The large fringe metro category contains the remaining counties (similar to suburbs) 
+					in MSAs of one million or more. 
+					Counties in MSAs of 250,000 to 999,999 population are assigned to the 
+					medium metro category and 
+					counties in MSAs with populations under 250,000 are assigned to the small metro category. 
+					Nonmetropolitan counties that are designated by the Office of Management and Budget 
+					as belonging to a micropolitan statistical area are assigned to the micropolitan category 
+					and the remaining nonmetropolitan counties are assigned to the noncore category. 
+					The large central metro category is the most "urban" category and 
+					the noncore category is the most "rural" category.
+					 
+					To understand how the classification schemes were developed, see:
+						    NCHS Urban-Rural Classification Scheme for Counties 
+						   2013 NCHS Urban-Rural Classification Scheme for Counties 
+						 							
+
+					 
+					Most counties are in the same urbanization category for both the 2013 and 2006 schemes. 
+					However, for those counties whose category differs in the two schemes, 
+					some moved from a less urban to a more urban category,  
+					while others moved from a more urban category to a less urban category. 
+					For more information, see 
+					"Changes in county urbanization category:  2013 scheme versus 2006 scheme" 
+					in the report, 
+					 2013 NCHS Urban-Rural Classification Scheme for Counties .
+					  
+					 
+					It is recommended that the micropolitan category not be aggregated with metropolitan categories.
+					 
+					The Urbanization categories are identified by two columns, labels  and codes, 
+					in   data extracts .
+					 
+				 
+		 
+		 
+		 
+		 
+		
+			 
+			 Urbanization 
+			 
+			Use the radio buttons to select either the 2006 or the 2013 NCHS Urban-Rural Scheme for Counties. 
+			Select All Categories or any combination of Urbanization values:  
+			Large Central Metro, Large Fringe Metro, Medium Metro, Small Metro, 
+			Micropolitan (non-metro), NonCore (non-metro).
+			Each county is assigned to one of these six categories.
+			Each birth is associated with a category based on the county of the person's legal residence.
+			 
+			 
+			See  Step 2.a   for more information on how to select categories
+			and notes on how these categories are defined. 
+			 
+
+
+		 
+		 
+		 
+		 
+
+			
+			 
+			 Metro/Nonmetro 
+			 
+			The Metro/Nonmetro list allows you to easily compare metropolitan and rural areas.
+			The Metro group includes counties in these Urbanization categories:  
+			Large Central Metro, Large Fringe Metro, Medium Metro, and Small Metro.
+			The Nonmetro group includes counties in these Urbanization categories:  
+			Micropolitan (non-metro) and NonCore (non-metro). 
+			 
+			 
+			See  Step 2.a   for more information on how to select categories
+			and notes on how categories are defined. 
+			 
+								
+				
+		   
+		 
+
+   
+
+	 
+	 
+	 Step 3.  Select maternal characteristics: 
+	 
+		
+		Limit your data for any of the following data elements:
+
+		 
+		    Maternal Race  in Single-Race categories:
+			 
+			  6 race categories  - 
+							American Indian or Alaska Native (AIAN); 
+							Asian; 
+							Black or African American; 
+							More than one race;  
+							Native Hawaiian or Other Pacific Islander (NHOPI);  
+							White; 
+							Unknown or Not Stated.
+			 
+
+			  15  race categories   - White; Black; American Indian or Alaska Native (AIAN); 
+						Asian Indian; Chinese; Filipino; Japanese; Korean;
+						Vietnamese; Other Asian; 
+						Hawaiian; Guamanian; Samoan; Other Pacific Islander; 
+						More than one race; Unknown or Not Stated. 
+
+			 
+
+			  31  race categories   - White; Black; American Indian or Alaskan Native (AIAN); Asian; 
+						Native Hawaiian or Other Pacific Islander (NHOPI);
+						Black and White; Black and AIAN;  Black and Asian; Black and NHOPI; 
+						AIAN and White; AIAN and Asian; AIAN and NHOPI; 
+						Asian and White; Asian and NHOPI; NHOPI and White;  
+						Black, AIAN, and White;  Black, AIAN, and Asian; Black, AIAN, and NHOPI; 
+						Black, Asian, and White; Black, Asian, and NHOPI; Black, NHOPI, and White;
+						AIAN, Asian, and White;  AIAN, NHOPI, and White;  AIAN, Asian, and NHOPI; 
+						Asian, NHOPI, and White;  Black, AIAN, Asian, and White; 
+						Black, AIAN, Asian, and NHOPI;  Black, AIAN, NHOPI, and White; 
+						Black, Asian, NHOPI, and White; AIAN, Asian, NHOPI, and White;
+						Black, AIAN, Asian, NHOPI, and White; Unknown or Not Stated.
+			 
+
+		 
+
+		   Maternal Hispanic Origin  
+			 
+				Hispanic origin categories -  Hispanic or Latino;  Not Hispanic or Latino; Origin unknown or not stated.
+			 
+				Expanded Hispanic origin categories - Mexican;  Puerto Rican; Cuban; Dominican; Central or South American; Other and Unknown Hispanic;  
+				Non-Hispanic; Unknown or Not Stated.  
+			 
+
+		 
+
+		   Marital Status  - Married; Unmarried; Unknown or Not Stated; Not Available. 
+
+		   Paternity Acknowledgment (if mother unmarried)  - Yes; No; Unknown or Not Stated;  Not Applicable; Not Reported.  
+		
+		   Age of Mother  - under 15 years through over 50 years. 
+			  Mother's age is available in the following sets of age groups: 
+			    9  groups of 5-year increments: 
+				  under 15 years; 15-19 years; 20-24 years; 25-29 years; 30-34 years; 
+				  35-39 years; 40-44 years; 45-49 years; 50 years and over.  
+			   10  groups with 
+				  categories for  under age 15; 
+				  15-17 years;  18-19 years; 
+				  5-year age increments for older mothers; 
+				  50 years and over. 
+			   13  groups with 
+				  a category for under age 15; 
+				  single-year age categories for 15, 16, 17, 18, and 19 year old mothers;
+			 	  5-year age increments for older mothers; and 
+				  a category for age 50 years and over.  
+		 
+			 
+		 
+				
+		   Mother's Education  - 
+			8th grade or less; 
+			9th through 12th grade with no diploma; 
+			High school graduate or GED completed; Some college credit, but not a degree; 
+			Associate degree (AA, AS); 
+			Bachelor's degree (BA, AB, BS); 
+			Master's degree (MA, MS); 
+			Doctorate (PHD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD); 
+			Unknown or Not Stated; 
+			Excluded.
+		 
+
+		  Mother's birth place: 
+			   Mother's Nativity  - 
+				Born in the U.S. (50 US States);
+				Born outside the U.S. (includes possessions);
+				Unknown or Not Stated.
+			 
+
+
+			   Mother's Birth Country  - lists 294 options, 
+				from Afghanistan to Zimbabwe; Unknown or Not Stated. 
+			 
+
+			   Mother's Birth State  - lists 72 options, 
+				for areas affiliated with the United States and Canada; 
+				Rest of the World;  Not Classifiable. 
+			 
+		 
+		 
+
+		 
+
+		 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for maternal age, race and Hispanic origin. 
+			 
+		 
+		
+		 
+		  
+		  
+		  
+		  
+		  
+		 Hispanic Origin 
+		 
+		This field indicates the selected parent's Hispanic origin. Data are available for the mother and the father. 
+		 
+			 How?     
+			See  How do I select items from the list box? .
+
+
+		 
+		 Notes:    
+		 
+			WONDER reports "Missing Ethnicity" for the 
+			"Dominican" category in Mother's Expanded Hispanic Origin 
+			for infant deaths in years before 2019. 
+			Beginning in 2018, the category "Dominican" was added to 
+			"Mother's Expanded Hispanic Origin" data for births.   
+			Before 2019,  for deaths of infants born to Dominican mothers,
+			Mother's Expanded Hispanic Origin data are coded to the 
+			"Other and Unknown Hispanic" category, 
+			thus there is a discontinuity between years 2018 and 2019 
+			for the "Other and Unknown Hispanic" category for mothers.
+
+		 
+			WONDER reports "Missing Ethnicity" for the 
+			"Dominican" category in Father's Expanded Hispanic Origin 
+			for infant deaths in years before 2020. 
+			Before 2020,  for deaths of infants born to Dominican fathers,
+ 			Father's Expanded Hispanic Origin data are coded to the 
+			"Other and Unknown Hispanic" category, 
+			thus there is a discontinuity between years 2019 and 2020 
+			for the "Other and Unknown Hispanic" category for fathers.
+		 
+			Please see  data corrections  below
+			for information on 2017-2018  infant death rates by Mother's Hispanic Origin 
+			reported from September 9, 2020 until April 19, 2021, and from July 22, 2021 until October 13, 2021.
+			Mother's Expanded Hispanic Origin data was not affected by this problem.  
+	
+		 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			 Public Health Information Network (PHIN)  compatible codes are used when applicable.
+		 
+		
+		 
+		 
+			 Hispanic Origin groups: 
+			   Code       Label         
+			   "2135-2"      Hispanic or Latino 	        
+			   "2186-5"      Not Hispanic or Latino   	        
+			   "9"     	     Origin unknown or not stated      
+		 
+		 
+		 
+		 
+			 Expanded Hispanic Origin groups: 
+			   Code       Label         		     
+			   "2148-5"     Mexican    		       
+			   "2180-8"     Puerto Rican 		       
+			   "2182-4"     Cuban      		       
+			   "4"          Central or South American         
+			   "7"          Dominican *     		       
+ 			   "5"          Other and Unknown Hispanic        
+			   "0"          Non-Hispanic 	    	       
+			   "9"          Origin unknown or not stated      
+			   *   Dominican data 
+					are not available for mothers before 2019, 
+					and not available for fathers before 2020.  
+													       
+		 
+		 
+		 		
+		 
+		 
+
+		 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		 Parent's Race 
+		 
+		Limit your data to the selected categories for the race of the selected parent.
+		Data are available for the mother and the father. 
+		The default selection is all race groups.    
+		Three sets of race groups are available in the "expanded"  data:   
+		
+			 
+			  6 race categories  - 
+							American Indian or Alaska Native (AIAN); 
+							Asian; 
+							Black or African American; 
+							More than one race;  
+							Native Hawaiian or Other Pacific Islander (NHOPI);  
+							White; 
+							Unknown or Not Stated.
+			 
+
+			  15  race categories   - White; Black; American Indian or Alaska Native (AIAN); 
+						Asian Indian; Chinese; Filipino; Japanese; Korean;
+						Vietnamese; Other Asian; 
+						Hawaiian; Guamanian; Samoan; Other Pacific Islander; 
+						More than one race; Unknown or Not Stated. 
+
+			 
+
+			  31  race categories   - White; Black; American Indian or Alaskan Native (AIAN); Asian; 
+						Native Hawaiian or Other Pacific Islander (NHOPI);
+						Black and White; Black and AIAN;  Black and Asian; Black and NHOPI; 
+						AIAN and White; AIAN and Asian; AIAN and NHOPI; 
+						Asian and White; Asian and NHOPI; NHOPI and White;  
+						Black, AIAN, and White;  Black, AIAN, and Asian; Black, AIAN, and NHOPI; 
+						Black, Asian, and White; Black, Asian, and NHOPI; Black, NHOPI, and White;
+						AIAN, Asian, and White;  AIAN, NHOPI, and White;  AIAN, Asian, and NHOPI; 
+						Asian, NHOPI, and White;  Black, AIAN, Asian, and White; 
+						Black, AIAN, Asian, and NHOPI;  Black, AIAN, NHOPI, and White; 
+						Black, Asian, NHOPI, and White; AIAN, Asian, NHOPI, and White;
+						Black, AIAN, Asian, NHOPI, and White; Unknown or Not Stated.
+			 
+
+
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+		 Notes:    
+		 
+			 
+			 About "Single Race" categories: 
+			Beginning in 2016, all jurisdictions and the National Center for Health Statistics 
+			are reporting race consistent with the 1997 Office of Management and Budget standards 
+			("single race"). Single race is defined as one race reported on the birth certificate. 
+		 
+			When results are   exported  to a file,
+			the labels and the codes are in separate columns.
+			 Public Health Information Network (PHIN)  
+			compatible codes are used when applicable. 
+			See codes and labels for the Single Race categories below. 
+		 
+		 
+		
+			 
+		 
+			 Six "Single Race" groups: 				 
+			   Code       Label         	 
+			   "1002-5"     American Indian or Alaska Native     	   
+			   "A"     Asian 		   				   
+		   	   "2054-5"     Black or African American    		   	
+			   "NHOPI"     Native Hawaiian or Pacific Islander 	   
+			   "2106-3"     White 					   
+			   "M"     More than one race 		   		   
+		 
+			 
+
+
+		 
+			 
+		 
+			 Fifteen "Single Race" groups: 			 
+			   Code       Label         	 
+			   "1"	     White 	   				   
+			   "2"	     Black      				   
+		   	   "3"	     American Indian or Alaska Native  	   	
+			   "4"	     Asian Indian  			   	
+			   "5"	     Chinese  					   	
+			   "6"	     Filipino  				   	
+			   "7"	     Japanese  				   	
+ 			   "8"	     Korean  					   	
+			   "9"	     Vietnamese 				   	
+			   "10"	     Other Asian 				   	
+			   "11"	     Hawaiian 					   
+			   "12"	     Guamanian 	 			   
+			   "13"	     Samoan 	 				   
+			   "14"	     Other Pacific Islander		   
+			   "15"	     More than one race 		   	   
+		 
+			 
+
+
+		 
+			 
+		 
+			 Thirty One "Single/Multi Race" groups: 		 
+			   Code       Label         	 
+			   "1"	     White (only) 	   			   
+			   "2"	     Black (only)      			   
+		   	   "3"	     AIAN American Indian or Alaska Native  (only)	   	
+			   "4"	     Asian (only)  			   	
+			   "5"	     NHOPI (Native Hawaiian or Other Pacific Islander) (only) 	   	
+			   "6"	     Black and White  				   	
+			   "7"	     Black and AIAN  				   	
+ 			   "8"	     Black and Asian  				   	
+			   "9"	     Black and NHOPI 				   	
+			   "10"	     AIAN and White 				   	
+			   "11"	     AIAN and Asian 				   
+			   "12"	     AIAN and NHOPI 	 			   
+			   "13"	     Asian and White 	 			   
+			   "14"	     Asian and NHOPI				   
+			   "15"	     NHOPI and White 		   		   
+			   "16"	     Black, AIAN, and White  			   	
+			   "17"	     Black, AIAN, and Asian  			   
+			   "18"	     Black, AIAN, and NHOPI  	 		   
+			   "19"	     Black, Asian, and White  	 		   
+			   "20"	     Black, Asian, and NHOPI  			   
+			   "21"	     Black, NHOPI, and White  		   	   
+			   "22"	     AIAN, Asian, and White  	 		   
+			   "23"	     AIAN, NHOPI, and White  	 		   
+			   "24"	     AIAN, Asian, and NHOPI  			   
+			   "25"	     Asian, NHOPI, and White  		   	   
+			   "26"	     Black, AIAN, Asian, and White 		   	
+			   "27"	     Black, AIAN, Asian, and NHOPI 		   
+			   "28"	     Black, AIAN, NHOPI, and White  	 	   
+			   "29"	     Black, Asian, NHOPI, and White 	 	   
+			   "30"	     AIAN, Asian, NHOPI, and White  		   
+			   "31"	     Black, AIAN, Asian, NHOPI, and White  	   
+		 
+			 
+
+
+		 	
+		 
+
+		 
+		  
+		  
+		 Marital Status 
+		 
+		This field indicates the marital status of the mother as recorded on the birth certificate. 
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Beginning in 2017, due to state statutory restrictions, 
+				California no longer provides record-level data 
+				on the marital status of the mother for births 
+				occurring to California residents and non-residents
+				(including residents of other states).  
+				For these births, Marital Status is reported as "Not Available." 
+			 
+
+				Data for the mother's marital status are derived from the 
+				"MAR"  variable in the public use data for years 2003 and later. 
+				(Data are available for years 1995 and later at  Linked Birth / Infant Death Records ). 
+
+			 
+				When the data results are  exported  to a file,
+				the Marital Status code is shown in a separate column from the category label.
+			 
+			 
+			 
+				   Code       Label        	   		   
+				   "01"     Married      		    	   
+				   "02"     Unmarried   			   
+				   "9"      Unknown or Not Stated   	   
+				   "NA"     Not Available   		   
+
+			 
+			 
+			 
+		 	
+		 
+
+		 
+		  
+		 
+		 Paternity Acknowledgment (if mother unmarried) 
+		 
+		This field indicates whether Paternity Acknowledgment is  recorded on the birth certificate, 
+		for mothers who are recorded as unmarried at the time of birth. 
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+
+			 
+				Beginning in 2017, due to state statutory restrictions, 
+				California no longer provides record-level data 
+				on paternity acknowledgment for births 
+				occurring to California residents and non-residents 
+				(including residents of other states).  
+				For these births, Paternity Acknowledgment is reported as "Not Reported." 
+
+			 
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label.
+			 
+			 
+			 
+				   Code       Label        	   	   
+				   "1"      Yes      		   
+				   "2"      No   			   
+				   "9"      Unknown or Not Stated     				
+				   "3"      Not Applicable   	   
+				   "10"     Not Reported   	   
+
+			 
+			 
+			 
+		 	
+		 
+
+		 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		 Age of Mother 
+		 
+		This field indicates the age group of the mother at the time of birth.
+		  Mother's age is available in the following sets of age groups: 
+			    9  groups of 5-year increments: 
+				  under 15 years; 15-19 years; 20-24 years; 25-29 years; 30-34 years; 
+				  35-39 years; 40-44 years; 45-49 years; 50 years and over.  
+			   10  groups with 
+				  categories for  under age 15; 
+				  15-17 years;  18-19 years; 
+				  5-year age increments for older mothers; 
+				  50 years and over. 
+			   13  groups with 
+				  a category for under age 15; 
+				  single-year age categories for 15, 16, 17, 18, and 19 year old mothers;
+			 	  5-year age increments for older mothers; and 
+				  a category for age 50 years and over.  
+		 
+			 
+
+
+		 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button 
+				to switch between the maternal age lists. 
+			 
+		
+			 
+			 Notes:    
+			 
+			Before May 2022,  maternal age was also available in Yearly age groups with
+				  an age category for 10-12 year old mothers,
+				  and single-year age increments for older mothers ages 13-49 years,
+				  an age group for mothers age 50 or more. 
+			 
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the Age group code value and a column for the label. 
+			See codes and labels for the basic 9 age groups below. 
+			 
+			 
+			 
+			   Code       Label 
+			   "15"     Under 15 years     
+			   "15-19"     15 - 19 years    
+			   "20-24"     20 - 24 years    
+			   "25-29"     25 - 29 years    
+			   "30-34"     30 - 34 years    
+			   "35-39"     35 - 39 years    
+			   "40-44"     40 - 44 years    
+			   "45-49"     45 - 49 years    
+			   "50+"       50 years and over     
+			 
+			 
+			 
+			 	
+		 
+
+		 
+		  
+		  
+		  
+		 Parent's Education 
+		 
+		This field indicates a range for the number of years of education 
+		received by the parent at the time of birth. 
+		Data are available for both the mother and the father. 
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for Maternal Education, the code  value and the label.  
+			
+			 
+			 
+			 
+			 Maternal Education: 
+			   Code       Label           			 
+			   "1"     8th grade or less     				   
+			   "2"     9th through 12th grade with no diploma     	   
+			   "3"     High school graduate or GED completed         	   
+			   "4"     Some college credit, but not a degree    	   
+			   "5"     Associate degree (AA, AS) 			   
+			   "6"     Bachelor's degree (BA, AB, BS)        		   
+			   "7"     Master's degree (MA, MS)        		   
+			   "8"     Doctorate (PHD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD)        	   
+			   "Unk"     Unknown/Not on certificate        		   
+			 
+			 
+			 	
+		 
+
+		 
+		  
+		  
+		 Mother's Nativity 
+		 
+		This field categorizes the place of mother's birth, into the following 3 groups:  
+		(1) Born in the U.S. (50 US States); 
+		(2) Born outside the U.S. (includes possessions); 
+		(3) Unknown or Not Stated.  
+		 
+		
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for this field, the code  value and the label, as noted above.  
+			 	
+		 
+
+
+		 
+		  
+		  
+		 Mother's Birth Country 
+		 
+		This field reports the place of mother's birth.
+		The list includes 294 options, from Afghanistan to Zimbabwe; Unknown or Not Stated.  
+		 
+		
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for this field, the code  value and the label.  
+			The codes are also shown inside parenthesis at the end of each label. 
+			 	
+		 
+
+		 
+		  
+		  
+		 Mother's Birth State 
+		 
+		This field reports the state of mother's birth, for mothers born in the United States, 
+		US territories or possessions, or Canada. 
+		The list includes 72 options, including "Rest of the World" and "Not Classifiable."  
+		 
+		
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+			From June 18, 2019 until August 12, 2020, 
+			the labels for Massachusetts and Maine were switched for Mother's Birth State data. 
+			Birth statistics for Massachusetts were shown in the results 
+			when data was limited to Maine as the Mother's Birth State, 
+			or when data was grouped by Mother's Birth State and 
+			the row's label reported Maine in the Mother's Birth State column.  
+			Likewise, birth statistics for Maine were shown in the results  
+			when data was limited to Massachusetts as the Mother's Birth State, 
+			or when data was grouped by Mother's Birth State and  
+			the row's label reported Massachusetts in the Mother's Birth State column.  
+			If data was not limited or grouped by Mother's Births State,  
+			then the problem did not impact the results.  
+			We deeply regret this error and apologize for the inconvenience. 
+			 
+			When the data results are  exported  to a file,
+			two columns are provided for this field, the code  value and the label.  
+			The codes are also shown inside parenthesis at the end of each label. 
+			 
+			 	
+		 
+
+   
+
+
+
+	 
+	 
+	 Step 4.  Select paternal characteristics: 
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+		    Paternal Race  in Single-Race categories:
+			 
+			  6 race categories   - 	American Indian or Alaska Native (AIAN); 
+							Asian; 
+							Black or African American; 
+							More than one race;  
+							Native Hawaiian or Other Pacific Islander (NHOPI);  
+							White; 
+							Unknown or Not Stated.
+			 
+			  15  race categories   - 	White; Black; American Indian or Alaska Native (AIAN); 
+							Asian Indian; Chinese; Filipino; Japanese; Korean;
+							Vietnamese; Other Asian; 
+							Hawaiian; Guamanian; Samoan; Other Pacific Islander; 
+							More than one race; Unknown or Not Stated. 
+
+			 
+			  31  race categories   - 
+						White; Black; American Indian or Alaskan Native (AIAN); Asian; 
+						Native Hawaiian or Other Pacific Islander (NHOPI);
+						Black and White;  Black and AIAN;  Black and Asian; Black and NHOPI; 
+						AIAN and White; AIAN and Asian; AIAN and NHOPI; 
+						Asian and White; Asian and NHOPI; NHOPI and White;  
+						Black, AIAN, and White;  Black, AIAN, and Asian; Black, AIAN, and NHOPI; 
+						Black, Asian, and White; Black, Asian, and NHOPI; Black, NHOPI, and White;
+						AIAN, Asian, and White;  AIAN, NHOPI, and White;  AIAN, Asian, and NHOPI; 
+						Asian, NHOPI, and White;  Black, AIAN, Asian, and White; 
+						Black, AIAN, Asian, and NHOPI;  Black, AIAN, NHOPI, and White; 
+						Black, Asian, NHOPI, and White; AIAN, Asian, NHOPI, and White;
+						Black, AIAN, Asian, NHOPI, and White; Unknown or Not Stated.
+			 
+
+		 
+
+		   Father's Hispanic Origin 
+			 
+				 Hispanic origin categories -  Hispanic or Latino;  Not Hispanic or Latino; Origin unknown or not stated.
+			 
+				Expanded Hispanic origin categories - Mexican;  Puerto Rican; Cuban; Central or South American; Dominican; Other and Unknown Hispanic;  
+				Non-Hispanic; Unknown or Not Stated. 
+			  
+
+		 
+
+		   Father's Education  - 
+			8th grade or less; 
+			9th through 12th grade with no diploma; 
+			High school graduate or GED completed; Some college credit, but not a degree; 
+			Associate degree (AA, AS); 
+			Bachelor's degree (BA, AB, BS); 
+			Master's degree (MA, MS); 
+			Doctorate (PHD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD); 
+			Unknown or Not Stated. 
+		 
+
+		   Age of Father  - 11 groups of 5-year increments:    
+				  under 15 years; 15-19 years; 20-24 years; 25-29 years; 30-34 years; 
+				  35-39 years; 40-44 years; 45-49 years; 50-54 years, 55-98 years;
+				  Unknown or Not Stated.  
+		 
+		 
+
+		 
+
+		 
+			 How?     
+				See  How do I select items from the list box? .
+		 
+
+
+		 
+		  
+		  
+		 Age of Father 
+		 
+		This field indicates the age group of the mother at the time of birth.
+		Paternal age is available in 11 age groups of 5-year increments, and Unknown or Not Stated.   
+		 
+
+		 
+			 
+			 How?     
+				See  How do I select items from the list box? .
+				
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the Age group code value and a column for the label. 
+			See codes and labels for the 11 paternal age groups below. 
+			 
+			 
+			 
+			   Code       Label 
+			   "1"     Under 15 years     
+			   "2"     15 - 19 years    
+			   "3"     20 - 24 years    
+			   "4"     25 - 29 years    
+			   "5"     30 - 34 years    
+			   "6"     35 - 39 years    
+			   "7"     40 - 44 years    
+			   "8"     45 - 49 years    
+			   "9"     50 - 54 years    
+			   "10"     55 - 98 years    
+			   "11"     Unknown or Not Stated    
+			 
+			 
+			
+			 	
+		 
+
+	     
+
+	 
+	 
+	 Step 5. Select pregnancy history and prenatal care characteristics: 
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+			  Prior pregnancies - timing:
+				 
+				   Interval Since Last Live Birth  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+					Not Applicable (1st live birth);
+					Unknown or Not Stated. 
+				 
+
+				   Interval Since Last Other Pregnancy Outcome  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+					Not Applicable (1st natality event);
+					Unknown or Not Stated. 
+				 
+
+
+				   Interval of Last Pregnancy  -  11 categories: 
+					Zero to 3 months (plural delivery); 
+					4 to 11 months; 
+					12 to 17 months; 
+					18 to 23 months; 
+					24 to 35 months; 
+					36 to 47 months; 
+					48 to 59 months; 
+					60 to 71 months; 
+					72 months and over;
+					Not Applicable (no previous pregnancy);
+					Unknown or Not Stated. 
+				 
+
+			  Prior pregnancy outcomes:
+
+				 
+				   Prior Births Now Living  
+					-  13 categories: 
+					Zero through 10 births in 1 birth increments (0,1,2... 10); 
+					11 or more (11); 
+					Unknown or Not Stated (99);
+					Not Reported (100). 	
+
+					  
+								 
+				 
+
+				   Prior Births Now Dead  
+					-  5 categories: 
+					Zero through 2 births in 1 birth increments (0,1,2); 
+					3 or more (3); 
+					Unknown or Not Stated (99). 
+					 	
+
+					  
+											 
+				 
+				   Prior Other Pregnancy Outcomes 
+					  
+					-  8 categories: 
+					Zero through 5 pregnancies in single increments (0,1,2... 5); 
+					6 or more (6); 
+					Unknown or Not Stated (99). 
+
+					  			 
+				 
+				 
+				
+
+			 
+			  Birth order:
+				 
+				   Live Birth Order  - 9 categories: 
+					One child born alive to mother through seven live births; 8 or more; Unknown or Not Stated.
+				 
+
+				   Total Birth Order  - 9 categories: 
+					One child born alive to mother through seven live births; 8 or more; Unknown or Not Stated.
+				 
+				 
+
+			 
+			 Prenatal care: 
+				 
+				   Number of Prenatal Visits  - 100 categories: 
+					Zero through 98 prenatal visits; Unknown or Not Stated. 
+				 
+
+				   Number of Prenatal Visits Recode  - 12 categories: 
+					No visits; 1 to 2 visits; 3 to 4 visits; 5 to 6 visits; 7 to 8 visits; 9 to 10 visits;
+					11 to 12 visits; 13 to 14 visits; 15 to 16 visits; 17 to 18 visits; 19 or more visits;
+					Unknown or Not Stated. 
+				 
+
+
+				   Month Maternal Prenatal Care Began  - 12 categories: 
+					No prenatal care; 1st month through 10th month; Unknown or Not Stated.
+				 
+
+				   Trimester Prenatal Care Began  - 6 categories: 
+					1st to 3rd month; 4th to 6th month; 7th to final month; No prenatal care; 
+					Unknown or Not Stated; Not Reported. 
+				 
+				 
+			
+
+			 
+			   WIC  - 3 categories for enrollment in 
+					Women, Infants, and Children supplemental nutrition program: 
+					Yes;  No; Unknown or Not Stated. 
+			 
+
+			  Obstetric procedures:
+				 
+				   Successful External Cephalic Version  - 3 categories 
+					for outcome of procedure to turn non-vertex fetal position to vertex
+					by external manipulation:
+					Yes;  No; Unknown or Not Stated. 
+				 
+
+				   Failed External Cephalic Version  - 3 categories
+					for outcome of procedure to turn non-vertex fetal position to vertex
+					by external manipulation: 
+					Yes;  No; Unknown or Not Stated. 
+				 
+				 
+			 
+		 
+	
+
+		 
+
+		 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Prenatal Care categories. 
+			 
+		 
+		
+		 
+		  
+		  
+		 Interval Since Last Live Birth 
+		 
+		This field reports the time elapsed since the mother's last live birth,
+		in eleven categories of months, ranging from 
+		zero (plural delivery) through 72 months and over, and including
+		Not Applicable (1st live birth); Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the  code value and a column for the label. 
+			See codes and labels below for the categories. 
+			 
+			 
+			 
+			   Code       Label 
+			   "0"     Zero to 3 months (plural delivery)     
+			   "1"     4 to 11 months    
+			   "2"     12 to 17 months    
+			   "3"     18 to 23 months    
+			   "4"     24 to 35 months    
+			   "5"     36 to 47 months    
+			   "6"     48 to 59 months    
+			   "7"     60 to 71 months    
+			   "8"     72 months and over    
+			   "88"     Not Applicable (1st live birth)    
+			   "99"     Unknown or Not Stated    
+			 
+			 
+			
+			 	
+		 
+		
+
+		 
+		  
+		  
+		 Interval Since Last Other Pregnancy Outcome 
+		 
+		This field reports the time elapsed since the mother's last pregnancy outcome 
+		(for outcomes other than live birth), 
+		in eleven categories of months, ranging from 
+		zero (plural delivery) through 72 months and over, and including
+		Not Applicable (1st natality event); Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the  code value and a column for the label. 
+			See codes and labels below for the categories. 
+			 
+			 
+			 
+			   Code       Label 
+			   "0"     Zero to 3 months (plural delivery)     
+			   "1"     4 to 11 months    
+			   "2"     12 to 17 months    
+			   "3"     18 to 23 months    
+			   "4"     24 to 35 months    
+			   "5"     36 to 47 months    
+			   "6"     48 to 59 months    
+			   "7"     60 to 71 months    
+			   "8"     72 months and over    
+			   "88"     Not Applicable (1st natality event)    
+			   "99"     Unknown or Not Stated    
+			 
+			 
+			
+			 	
+		 
+
+
+		 
+		  
+		  
+		 Interval of Last Pregnancy 
+		 
+		This field reports the time elapsed since the mother's last pregnancy, 
+		in eleven categories of months, ranging from 
+		zero (plural delivery) through 72 months and over, and including
+		Not Applicable (no previous pregnancy); Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the  code value and a column for the label. 
+			See codes and labels below for the categories. 
+			 
+			 
+			 
+			   Code       Label 
+			   "0"     Zero to 3 months (plural delivery)     
+			   "1"     4 to 11 months    
+			   "2"     12 to 17 months    
+			   "3"     18 to 23 months    
+			   "4"     24 to 35 months    
+			   "5"     36 to 47 months    
+			   "6"     48 to 59 months    
+			   "7"     60 to 71 months    
+			   "8"     72 months and over    
+			   "88"     Not Applicable (no previous pregnancy)    
+			   "99"     Unknown or Not Stated    
+			 
+			 
+			
+			 	
+		 
+
+
+		 
+		  
+		  
+		  
+		  
+		 Prior Pregnancy Outcomes 
+		 
+		Three fields report information on the number of prior pregnancy outcomes.      
+		 
+
+			   Prior Births Now Living  
+					-  13 categories: 
+					Zero through 10 births in 1 birth increments (0,1,2... 10); 
+					11 or more (11); 
+					Unknown or Not Stated (99);
+					Not Reported (100). 	
+
+					  
+								 
+				 
+
+				   Prior Births Now Dead  
+					-  5 categories: 
+					Zero through 2 births in 1 birth increments (0,1,2); 
+					3 or more (3); 
+					Unknown or Not Stated (99). 
+					 	
+
+					  
+											 
+				 
+
+				   Prior Other Pregnancy Outcomes  
+					  
+					-  8 categories: 
+					Zero through 5 pregnancies in single increments (0,1,2... 5); 
+					6 or more (6); 
+					Unknown or Not Stated (99). 
+
+					  			 
+				 
+			 
+		 
+		
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+			Before June 2022,  data on prior pregnancy outcomes were available in more detail, 
+			reported in 33 categories: 
+			Zero through thirty births or pregnancies  in single increments (0,1,2... 30);
+			Unknown or Not Stated (99);
+			Not Reported (100). 	
+			 
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the  code value and a column for the label. 
+			Codes values are numeric for the number of prior births, and also 
+			shown in parenthesis after the category labels noted above.     
+			 
+			  
+		 	
+
+
+		 
+		  
+		  
+		 Live Birth Order 
+		 
+		This field indicates the mother's total number of live births, including this birth. 
+		The categories range from one through seven live births; 8 or more; Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+		 
+			For years 2003 and later the live birth order data 
+			is derived from the "LBO_REC" field found in the public use data. 
+			(Data are available for years 1995 and later at  Linked Birth / Infant Death Records ). 
+		 
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label.
+			 
+			 
+			 
+			   Code       Label         				 
+			   "1"         1st child born alive to mother      	   
+			   "2"         2nd child born alive to mother    		   
+			   "3"         3rd child born alive to mother 		   
+			   "4"         4th child born alive to mother   		   
+			   "5"         5th child born alive to mother    		   
+			   "6"         6th child born alive to mother  		   
+			   "7"         7th child born alive to mother  		   
+			   "8"         8th child or more born alive to mother  	   
+			   "9"         Unknown or not stated     			   
+			 
+			 
+		 
+			 
+		 	
+
+		 
+		  
+		  
+		 Total Birth Order 
+		 
+		This field indicates the mother's total number of births, including this birth and stillbirths. 
+		The categories range from one through seven births; 8 or more; Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+		 
+			For years 2003 and later the live birth order data 
+			is derived from the "LBO_REC" field found in the public use data.
+			(Data are available for years 1995 and later at  Linked Birth / Infant Death Records ).  
+		 
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label.
+			 
+			 
+			 
+			   Code       Label         				 
+			   "1"         1st child born to mother      		   
+			   "2"         2nd child born to mother    		   
+			   "3"         3rd child born to mother 			   
+			   "4"         4th child born to mother   			   
+			   "5"         5th child born to mother    		   
+			   "6"         6th child born to mother  			   
+			   "7"         7th child born to mother  			   
+			   "8"         8th child or more born alive to mother  	   
+			   "9"         Unknown or not stated     			   
+			 
+			 
+		 
+			 
+		 	
+
+		 
+		  
+		 WIC 
+		 
+		This field indicates whether the mother received 
+		food for herself from the Women, Infants & Children (WIC)				because she was pregnant with this child 
+		supplemental nutrition program 
+		because she was pregnant with this child. 
+		Data are reported in three categories: 
+		Yes (1); No (2); Unknown or Not Stated (9). 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for this field, label and the code  value, 
+			as noted above inside parenthesis. 
+			 	
+		 
+
+
+
+		 
+		  
+		  
+		 Successful External Cephalic Version 
+		 
+		This field indicates the successful outcome of a procedure to turn 
+		non-vertex fetal position to vertex by external manipulation,
+		in three categories: 
+		Yes (1); No (2); Unknown or Not Stated (9). 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for this field, the code  value and the label, as noted above.  
+			 	
+		 
+
+				
+		 
+		  
+		  
+		 Failed External Cephalic Version 
+		 
+		This field indicates the failed outcome of a procedure to turn 
+		non-vertex fetal position to vertex by external manipulation,
+		in three categories: 
+		Yes (1); No (2); Unknown or Not Stated (9). 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are provided for this field, the code  value and the label, as noted above.  
+			 	
+		 
+
+		 
+		  
+		  
+		  
+		 
+		   
+		  
+		 Prenatal Care 
+
+		Data are available for prenatal care in 4 fields (codes shown in parenthesis before labels below): 
+			  Number of Prenatal Visits
+					 - 100 categories: 
+					(0-98) single increments from zero through 98 prenatal visits; 
+					(99) Unknown or Not Stated. 
+			  Number of Prenatal Visits Recode 
+					- 12 categories: 
+					(1) No visits; (2) 1 to 2 visits; (3) 3 to 4 visits; (4) 5 to 6 visits; (5) 7 to 8 visits; 
+					(6) 9 to 10 visits; (7) 11 to 12 visits; (8) 13 to 14 visits; 
+					(9) 15 to 16 visits; (10) 17 to 18 visits; (11) 19 or more visits;
+					(12) Unknown or Not Stated. 
+			   Month Maternal Prenatal Care Began  
+					- 12 categories: 
+					No prenatal care; 1st month through 10th month; (99) Unknown or Not Stated. 
+			  Trimester Prenatal Care Began 
+					- 6 categories: 
+					(1) 1st to 3rd month; (2) 4th to 6th month; (3) 7th to final month; 
+					(4) No prenatal care; (5) Unknown or Not Stated;  (100) Not Reported.
+			 
+
+		 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Prenatal Care categories. 
+			 
+		 
+
+		 Notes:    
+		 
+			When you group results by the categories for prenatal care data in section 1 on the Request Form tab, 
+			you must also select the round button to show the list of desired data categories in section 5.     
+		 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+		 
+
+		
+		 
+		  
+		  
+		 Month Prenatal Care Began 
+		
+		 
+		This field indicates the month in the pregnancy when prenatal care began. 
+		 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Prenatal Care categories. 
+			 
+		 
+		
+		 
+		 Notes:    
+		 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+		 
+
+		 
+		 
+		 
+			   Code       Label         	 
+			   "0"         No prenatal care  	   
+			   "1"         1st month       	   
+			   "2"         2nd month     	   
+			   "3"         3rd month  		   
+			   "4"         4th month    	   
+			   "5"         5th month     	   
+			   "6"         6th month    	   
+			   "7"         7th month      	   
+			   "8"         8th month  		   
+			   "9"         9th month  		   
+			   "10"        10th month  	   
+			   "99"        Unknown or Not stated 	   
+			
+		 
+		 
+		 
+	 	
+
+ 
+
+ 
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	 Step 6.  Select maternal risk factors: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+		
+		  Mother's height and weight:
+			 
+			   Mother's Height in Inches  
+				- 19 categories:
+				Under 57 inches (56); 
+				single inch increments from 57 - 72 inches (57, 58, 59... 72); 
+				73 or more inches (73); 
+				Unknown or Not Stated (99). 
+				
+				  
+			 
+
+			   Mother's Pre-pregnancy Weight  
+				- 7 categories in 50 pound increments: 
+				75 - 124 lbs; 125 - 174 lbs; 175 - 224 lbs; 
+				225 - 274 lbs; 275 - 324 lbs; 325 - 375 lbs; 
+				Unknown or Not Stated.
+			  
+
+			   Mother's Pre-pregnancy BMI  
+				- 7 categories for Body Mass Index:
+				Underweight  < 18.5; 
+				Normal 18.5-24.9; 
+				Overweight 25.0-29.9; 
+				Obesity I 30.0-34.9;
+				Obesity II 35.0-39.9; 
+				Extreme Obesity III >39.9; 
+				Unknown or Not Stated.
+			 
+
+			   Mother's Delivery Weight  
+				- 7 categories in 50 pound increments: 
+				100 - 149 lbs; 150 - 199 lbs; 200 - 249 lbs; 
+				250 - 299 lbs; 300 - 349 lbs; 350 - 400 lbs; 
+				Unknown or Not Stated.
+			  
+
+			
+		  
+
+			   Mother's Weight Gain Recode  
+				- 6 categories:
+				Less than 11 pounds; 11 to 20 pounds; 
+				21 to 30 pounds; 31 to 40 pounds; 
+				41 to 98 pounds; 
+				Unknown or Not Stated.
+			 
+			 
+		 
+
+		   Tobacco  use during pregnancy - Yes; No; Unknown or Not Stated.
+		 
+
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  Cigarette consumption: 
+			 
+			   Number of Cigarettes Before Pregnancy 
+				in the 3 months prior to conception
+				 - 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes Before Pregnancy Recode  
+				in the 3 months prior to conception
+				- 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 1st Trimester  - 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 1st Trimester Recode  
+				- 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 	
+	
+			   Number of Cigarettes 2nd Trimester  
+				- 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 2nd Trimester Recode  
+				- 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 	
+
+			   Number of Cigarettes 3rd Trimester  
+				- 100 categories in single cigarette increments:
+				0 cigarettes daily through 97 cigarettes daily;  98 or more; Unknown or Not Stated.
+			 
+
+			   Number of Cigarettes 3rd Trimester Recode  
+				- 7 categories 
+				for number of cigarettes consumed daily: 
+				Nonsmoker; 1-5;  6-10;  11-20;  21-40;   
+				41 or more; 
+				Unknown or Not Stated.
+			 
+			 
+		 		
+		  
+	
+		 
+
+		 
+			 How?     
+			 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for  categories for Number of Cigarettes. 
+			 
+			 
+			 Notes:    
+			 
+			
+			Before June 2022, data for Mother's Height and Mother's Weight Gain were available in more detail. 
+			Mother's Height in Inches was available in 50 categories:
+			30 inches or less (30); single inch increments from  31 - 78 inches (31, 32, 33... 78); Unknown or Not Stated (99).
+			Mother's Weight Gain was available in  100 categories in single pound increments:
+			0 pounds through 97 pounds (0,1,2... 97);  98 or more (98); Unknown or Not Stated (99).
+
+			 
+			
+			Beginning in 2018,  the fields 
+			"Number of Cigarettes 3rd Trimester Recode" and 
+			"Number of Cigarettes 3rd Trimester"
+                        were recoded to the "Unknown or Not Stated" category 
+			if the pregnancy didn't last into the 3rd trimester 
+			(obstetric estimate is less than 27 weeks gestational age).
+			Thus there is a discontinuity between 
+			births in 2017 and 2018 for all categories of 
+			"Number of Cigarettes 3rd Trimester Recode" and 
+			"Number of Cigarettes 3rd Trimester."
+                                                               
+			 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns. 
+			 
+			 
+
+		 
+
+		 
+		  
+		  
+		 Tobacco use during pregnancy 
+		 
+		This field indicates whether tobacco use was reported during the pregnancy, 
+		in three categories: 
+		Yes; No; Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+
+			 
+			 Notes:    
+			 
+				For more detailed data on  tobacco use and pregnancy, see 
+				 Cigarettes .
+ 			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				Codes are shown in parenthesis after the category labels below: 
+				Yes (1); No (2); Unknown or Not Stated (9). 
+			 
+			 	
+		 
+	
+	 	
+
+ 
+
+ 
+	 
+	 Step 7.  Select pregnancy risk factors: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+		
+			  Pregnancy related conditions:
+				 
+				   Gestational Diabetes  - Yes; No; Unknown or Not Stated.  
+				   Gestational Hypertension  - Yes; No; Unknown or Not Stated. 
+				   Eclampsia  - Yes; No; Unknown or Not Stated; Not Reported. 
+				 
+			 
+			
+			  Prior conditions:
+				 
+				   Pre-pregnancy Diabetes  - Yes; No; Unknown or Not Stated.  
+			
+			
+				   Pre-pregnancy Hypertension  - Yes; No; Unknown or Not Stated. 
+			
+				 
+			 
+			  Prior deliveries:
+				 		
+					   Previous Pre-term Birth  - Yes; No; Unknown or Not Stated.
+						 
+					   Previous Cesarean Delivery  - Yes; No; Unknown or Not Stated.
+						 
+					
+					   Number of Previous Cesareans  
+							7 categories:  
+							single increments of previous cesareans from zero through three (0,1,2,3); 
+							4 or more previous cesareans (4); 
+							Unknown or Not Stated (99). 
+							 
+							
+							  
+						 
+				 
+			 
+
+			
+
+			  Fertility assistance: 
+				  
+					   Infertility Treatment Used  - Yes; No; Unknown or Not Stated. 
+					   Fertility Enhancing Drugs  - Yes; No; Not Applicable; Unknown or Not Stated; Not Reported. 
+					   Assistive Reproductive Technology  	- Yes; No; Not Applicable; Unknown or Not Stated; Not Reported. 
+				 
+			 
+			
+
+			   Risk Factors Checked  - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any pregnancy risk factors were reported. 
+				Selecting "None checked" excludes all records with any pregnancy risk factors. 
+			 
+		 
+
+		 
+			 
+			 How?     
+			
+				See  How do I select items from the list box? .
+			
+			 
+				 Notes:    
+
+				 
+				Before June 2022, the Number of Previous Cesareans was available in more detail.
+				The Number of Previous Cesareans was reported in 12 categories:   
+				zero through 10 previous cesareans in single increments (0, 1, 2... 10); 
+				Unknown or Not Stated (99). 
+							-
+				 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				 
+			 
+
+		 
+
+
+
+		 
+		  
+		  
+		  
+		 Diabetes 
+		 
+		This field indicates whether Diabetes is reported as a maternal risk factor.
+		Gestational Diabetes and  Pre-pregnancy Diabetes are reported in separate fields. 
+		 
+		
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			The  categories and codes for Diabetes  data are 
+			Yes (1); No (2); Unknown or Not Stated (9). 	
+			 
+		 
+
+		 
+		  
+		  
+		  
+		 Hypertension Disease 
+		 
+		This field indicates whether Hypertension Disease is reported as a maternal risk factor.
+		Gestational Hypertension and Pre-pregnancy Hypertension are reported in separate fields. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			The  categories and codes for Hypertension data are 
+			Yes (1); No (2); Unknown or Not Stated (9). 
+			 
+		 
+		
+	
+		 
+		  
+		 Eclampsia 
+		 
+		This field indicates whether Eclampsia is reported as a maternal  risk factor.
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Eclampsia data are recoded to "Not Reported" for the following 
+				two reporting areas in the indicated years of birth:    
+				  South Carolina:	2017-2021; 
+ 				  Tennessee:		2017-2020. 
+			
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				The categories and codes for Eclampsia data are 
+				Yes (1); No (2); Not Applicable (3); Unknown or Not Stated (9); Not Reported (10). 	
+			 
+			 
+		 
+
+		 
+		  
+		  
+		  
+		 Previous Preterm Birth 
+		 
+		This field indicates whether previous preterm birth is reported as a maternal  risk factor.
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+						
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				The categories and codes are 
+				Yes (1); No (2); Unknown or Not Stated (9).  	
+			
+			 
+		 
+
+		 
+		  
+		  
+		 Previous Cesarean Delivery 
+		 
+		This field indicates whether previous cesarean delivery is reported as a maternal  risk factor.
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+						
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				The categories and codes are 
+				Yes (1); No (2); Unknown or Not Stated (9).  	
+			
+			 
+		 
+
+
+		 
+		  
+		  
+		 Number of Previous Cesareans 
+		 
+		This field indicates the number of previous cesarean deliveries reported as a maternal  risk factor.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+						
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+			 
+				The number or previous cesarean deliveries to this mother are reported 
+				7 categories:  
+				single increments of previous cesareans from zero through three (0,1,2,3); 
+				4 or more previous cesareans (4); 
+				Unknown or Not Stated (99).
+				
+			  
+				Before June 2022,  
+				the number or previous cesarean deliveries to this mother were reported 
+				in 12 categories in increments of 1: 
+				zero through 10 previous cesareans (0,1,2... 10);  
+				Unknown or Not Stated (99).   
+			 
+			 
+		 
+		
+
+
+		 
+		  
+		  
+		 Infertility Treatment Used 
+		 
+		This field indicates whether the use of infertility treatment is reported as a maternal  risk factor.
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+						
+			
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 
+				The categories and codes are 
+				Yes (1); No (2); Unknown or Not Stated (9).  	
+			
+			 
+		 
+			
+		 
+		  
+		  
+		 Assistive Reproductive Technology 
+		 
+		This field indicates whether Assistive Reproductive Technology is reported as a maternal  risk factor.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				The following three reporting areas have Assistive Reproductive Technology 
+				data coded to "Not Reported" for births occurring in the indicated years: 
+				  New Hampshire:   2017; 				
+				  South Carolina:   2017-2021; 
+				  Tennessee:  2017-2020.  
+				
+			 			
+				"Assistive Reproductive Technology" is coded to "Not Applicable" 
+				for records where "Infertility Treatment Used" is "No".
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Assistive Reproductive Technology data are 
+				Yes (1); No (2); Not Applicable (3); Unknown or Not Stated (9); Not Reported (10). 
+			 
+			 
+		 
+
+
+
+		 
+		  
+		  
+		 Fertility Enhancing Drugs 
+		 
+		This field indicates whether the use of fertility enhancing drugs is reported 
+		as a maternal  risk factor.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				"Fertility Enhancing Drugs"  data are data coded to "Not Reported" 
+				for births in these years to mothers residing in the following 
+				three reporting areas:  
+				  New Hampshire	2017; 
+				  South Carolina  2017-2021; 
+				  Tennessee 2017-2020.  
+				
+			 			
+				"Fertility Enhancing Drugs" is coded to "Not Applicable" 
+				for records where "Infertility Treatment Used" is "No".
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Fertility Enhancing Drugs data are 
+				Yes (1); No (2); Not Applicable (3); Unknown or Not Stated (9); Not Reported (10). 
+			 
+			 
+		 
+
+		 
+		  
+		  
+		 Risk Factors Checked 
+		 
+		This field indicates whether any pregnancy risk factors were reported for 
+		1) diabetes (pre-pregnancy or gestational); 
+		2) hypertension (pre-pregnancy or gestational); 
+		3) eclampsia; 
+		4) previous preterm births; 
+		5) pregnancy resulted from infertility treatment; and 
+		6) mother had a previous cesarean delivery.
+		For more information, refer to page 66 in the  
+		 
+		NCHS guide to 2017 birth records data .  
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Selecting "None checked" excludes all records with any pregnancy risk factors. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Risk Factors Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+
+
+	 	
+
+
+ 
+ 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 Step 8.  Select maternal infections present and/or treated during pregnancy: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+			    Gonorrhea   - Yes; No; Unknown or Not Stated.
+			 
+		
+			    Syphilis   - Yes; No; Unknown or Not Stated.
+			 
+
+			    Chlamydia   - Yes; No; Unknown or Not Stated.
+			 
+
+			    Hepatitis B   - Yes; No; Unknown or Not Stated.
+			 
+
+			    Hepatitis C   - Yes; No; Unknown or Not Stated.
+			 
+
+			   Infections Checked  
+				- At least one checked;  None checked;  Unknown or Not Stated.
+				  
+				This field indicates whether any of the above maternal infections were reported. 
+				Selecting "None checked" excludes all records with 
+				any of the above reported infections. 
+				 
+			 
+
+		 
+
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+						
+			
+				When you  export 
+				the results of your data request,
+				the labels and the codes are in separate columns. 
+				The categories and codes for maternal infections 
+				Gonorrhea, Syphilis, Chlamydia, Hepatitis B or Hepatitis C 
+				are 
+				Yes (1); No (2); Unknown or Not Stated (9).  	
+			
+			 
+		 
+			
+		 
+		  
+		  
+		 Infections Checked 
+		 
+			This field indicates whether any maternal infections for 
+			Gonorrhea, Syphilis, Chlamydia, Hepatitis B or Hepatitis C
+			were reported. 
+			Selecting "None checked" excludes all records with any of the above infections. 
+			For more information, refer to page 67 in the  
+			 
+			NCHS guide to 2017 birth records data .  
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Selecting "None checked" excludes all records with any maternal infections checked for
+				Gonorrhea, Syphilis, Chlamydia, Hepatitis B or Hepatitis C. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Maternal Infections Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+
+
+
+	 	
+
+
+ 
+
+ 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 	
+	 
+	 
+	
+	 Step 9.  Select labor characteristics: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+
+			   Induction of Labor  - Yes; No; Unknown or Not Stated. 
+
+			   Augmentation of Labor  - Yes; No; Unknown or Not Stated. 
+
+			   Steroids  
+				(glucocorticoids) for fetal lung maturation received by the mother before delivery 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Antibiotics for Mother  during labor 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Chorioamnionitis 
+				clinical chorioamnionitis or maternal temperature >= 
+				38 degrees Celsius (100.4 degrees Fahrenheit) 
+				 
+				 - Yes; No; Unknown or Not Stated. 
+
+			   Anesthesia  
+				epidural or spinal anesthesia during labor
+				 
+				- Yes; No; Unknown or Not Stated. 
+
+			   Characteristics of Labor Checked 
+				 - At least one checked;  None checked;  Unknown or Not Stated.
+				  This field indicates whether any labor characteristics noted above was reported. 
+				Selecting "None checked" excludes all records with any of the above 
+				labor characteristics.
+			 
+				
+				 
+
+		 
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for labor characteristics data are 
+				Yes (1); No (2); Unknown or Not Stated (9). 
+			
+			 
+		 
+
+
+
+		 
+		  
+		  
+		 Characteristics of Labor Checked 
+		 
+			This field indicates whether any labor characteristics were reported
+			for induction or augmentation of labor, 
+			maternal steroids 
+			(glucocorticoids) for fetal lung maturation received by the mother before delivery,
+			or antibiotics, chorioamnionitis or anesthesia. 
+			Selecting "None checked" excludes all records with any of the above 
+			labor characteristics.
+		  
+			For more information, refer to 	page 60 in the  
+			 
+			NCHS guide to 2017 birth records data . 				
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Selecting "None checked" excludes all records with any labor characteristics checked. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Characteristics of Labor Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+
+	 	
+ 
+
+
+ 
+	 
+	 Step 10.  Select  delivery  characteristics: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+			  When:
+				 
+				   Year  -  2017 - 2023  for "expanded" linked birth / infant death records data 
+					 
+					(less detailed data are available for years 1995 and later at  Linked Birth / Infant Death Records ).   
+
+					 
+
+				   Month  -  January-December.
+					 
+
+				   Weekday  - Weekday; Weekend.     
+	
+					  
+
+					 
+
+				   Time of Day  - 10 categories: 
+					 00:00 - 02:29; 03:00 - 05:59; 06:00 - 08:59; 09:00 - 11:59; 12:00 - 14:59;  15:00 - 17:59; 
+					 18:00 - 20:59; 21:00 - 23:59; Unknown or Not Stated; Not Reported. 
+					 
+				 
+			 
+			  Where:
+				 
+				   Birthplace  - 9 categories: 
+					Hospital; Freestanding Birth Center; 
+					Home (intended); Home (not intended);  Home (unknown if intended); 
+					Clinic / Doctor's Office; 
+					Other;  Unknown or Not Stated; Not Reported.
+					 
+				   Birthplace Recode 6  - 6 categories: 
+					Hospital; 
+					Freestanding Birth Center; 
+					Residence; 
+					Clinic / Doctor's Office; 
+					Other;  
+					Unknown or Not Stated. 					
+					 
+				   Birthplace Recode 3  - 3 categories: 
+					Hospital; 
+					Not in Hospital; 
+					Unknown or Not Stated. 
+					 
+				   Mother Transferred  - - Yes; No; Unknown or Not Stated.
+					 
+				 
+			 
+			 Medical Attendant  - 
+					Doctor of Medicine (MD); Doctor of Osteopathy (DO); Certified Nurse Midwife (CNM / CM); 
+					Other Midwife; Other;  Unknown or Not Stated.
+			 
+
+			
+			  How: 
+					 	
+						 Fetal Presentation  - 
+						Cephalic; Breech; Other; Unknown or Not Stated. 
+					  
+						 Final Route and Method of Delivery  - 
+						Spontaneous; Forceps; Vacuum; Cesarean; Unknown or Not Stated, Not Reported.   
+					  
+						 Delivery Method Expanded  - 8 categories:
+						Vaginal (excludes vaginal after previous C-section); 
+						Vaginal after previous C-section; 
+						Primary C-section; 
+						Repeat C-section; 
+						Vaginal (unknown if previous C-section); 
+						C-section (unknown if previous C-section); 
+						Unknown or Not Stated;
+						Not Reported. 
+					  
+						 Delivery Method  - 3 categories:
+						Vaginal; Cesarean; Unknown or Not Stated. 
+					  
+						 Trial of Labor Attempted (if cesarean) 
+						Yes; No; Not Applicable; Unknown or Not Stated.
+					  
+				
+				  Payment:
+					  
+						 Source of Payment for Delivery  - 5 categories:
+						Medicaid; Private Insurance; Self Pay; Other; Unknown or Not Stated.
+					  
+						 Source of Payment for Delivery Expanded  - 9 categories:
+						Medicaid; Private Insurance; Self-Pay; 
+						Indian Health Service; CHAMPUS/TRICARE; Other Government (Federal, State, Local); 
+						Other; Unknown or Not Stated; Not Reported.
+					 
+										
+				 	
+			 
+		 
+		 
+
+		 
+			 How? 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Birthplace, Delivery Method, and Source of Payment. 
+			  
+			 
+				 Hint:    
+				You can only pick one list for Birthplace, Delivery Method, and Source of Payment
+				for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other gestational age or birth weight lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Source of Payment for Delivery Expanded"  in section 1, 
+				then you should set the radio button to select the same list in section 10. 
+				
+			 
+			 Note:   
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category.  
+			 
+		 
+	
+		 
+		 
+		 
+		 Year of Death 
+		 
+		Pick any combination of years desired.  
+		 	
+		 
+			 
+			 How?     See  How do I select items from the list box? .
+			 
+			 Hint:     
+			Year is limited  to the most recent year of data available by default,
+			you may prefer to change the selection to "All Years."  
+			 
+		 
+		
+
+
+
+		 
+		 
+		 Month 
+		 
+		This field indicates month of birth. 
+ 		 
+		 
+			 
+			 How?     See  How do I select items from the list box? .
+			 
+			 Notes:    
+		    
+			For years 2003 and later the month data are
+			derived from the "dob_mm" field found in the public use data. 
+			Data are  available for year 1995 and later at  Linked Birth / Infant Death Records ).  
+		 
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    	 
+			   "1"          January  	   
+			   "2"          February      
+			   "3"          March  	   
+			   "4"          April  	   
+			   "5"          May  	   
+			   "6"          June  	   
+			   "7"          July  	   
+			   "8"          August  	   
+			   "9"          September     
+			   "10"         October  	   
+			   "11"         November  	   
+			   "12"         December  	   
+			 
+			 
+		 
+		 		
+		 
+
+
+		 
+		 
+		 Weekday 
+		 
+		This field indicates whether the birth occurred on a weekday (Monday - Friday) or weekend (Saturday - Sunday). 
+		  
+		 
+			 
+			 How?     See  How do I select items from the list box? .
+			 
+			 Notes:    
+		    
+			Note that there are a different number of days of the week in each year.
+		 
+			For years 2003 and later the weekday data are  
+			derived from the "dob_wk" field found in the public use data. 
+			(Data are  available for year 1995 and later at  Linked Birth / Infant Death Records ).  
+		 
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label:
+			   Weekend (1);  
+			   Weekday (2).  
+			 
+			Before June 2022, data were available in 7 categories as noted below. 
+			 
+			 
+			   Code       Label   
+			   "1"          Sunday  	   
+			   "2"          Monday        
+			   "3"          Tuesday  	   
+			   "4"          Wednesday     
+			   "5"          Thursday  	   
+			   "6"          Friday  	   
+			   "7"          Saturday  	   
+			   "9"          Unknown  	   
+			 
+			 
+		 
+		 		
+		 
+
+
+		 
+		 
+		 
+		 Time Of Day 
+		 
+		This field indicates the time of birth in 3 hour time period increments in a 24 hour day, 
+		and  categories  for Unknown or Not Stated, and Not Reported.
+		 
+		 
+		 
+		 How?     See  How do I select items from the list box? .
+		 
+			 Note:    
+		    
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code         Label    			 
+			   "0"          00:00 - 02:59  	     	   
+			   "1"          03:00 - 05:59  	     	   
+			   "2"          06:00 - 08:59     		   
+			   "3"          09:00 - 11:59  		   
+			   "4"          12:00 - 14:59  		   
+			   "5"          15:00 - 17:59  		   
+			   "6"          18:00 - 20:59  		   
+			   "7"          21:00 - 23:59  		   
+			   "33"        Unknown or Not Stated 	   
+			   "NR"         Not Reported  		   
+			 
+			 
+		 
+		 		
+		 
+
+
+		 
+		  
+		  
+		  
+		  
+		  
+		 Birthplace 
+		 
+		This field indicates the place of birth. 
+		Birthplace data are available in 3 lists of categories. 
+		The code values are listed in parenthesis after the category labels below. 
+
+			 
+				   Birthplace  - 9 categories: 
+					 
+					Hospital (1); 
+					Freestanding Birth Center (2); 
+					Home (intended) (3); 
+					Home (not intended) (4);  
+					Home (unknown if intended) (5); 
+					Clinic / Doctor's Office (6); 
+					Other (7);  
+					Unknown or Not Stated (9); 
+					Not Reported (10). 
+					 
+				   Birthplace Recode 6  -  6 categories: 
+					 
+					Hospital (1); 
+					Freestanding Birth Center (2); 
+					Clinic / Doctor's Office (3); 
+					Residence (4); 
+					Other (5)
+					Unknown or Not Stated (9). 					
+					 
+				   Birthplace Recode 3   - 3 categories: 
+					  
+					Hospital (1); 
+					Not in Hospital (2); 
+					Unknown or Not Stated (3). 
+					 
+
+			 
+					
+				
+				
+					
+		 
+			 How? 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Birthplace, Delivery Method, and Source of Payment. 
+			  
+			 
+				 Hint:    
+				You can only pick one list for Birthplace for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other birthplace lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Birthplace Recode 6"  in section 1, 
+				then you should set the radio button to select the same list in section 10. 
+				
+			 
+			  	
+			 Notes:    
+			 
+				Birthplace data are categorized as 
+				"Home(unknown if intended)"
+				for home births in years through 2020 
+				to mothers residing in California.  
+				California did not report whether 
+				home births were intended or not 
+				for births before 2021.  
+				 
+			 
+			
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+			 
+			 
+		 	
+
+
+
+		 
+		  
+		  
+		 Mother Transferred 
+		 
+		This field indicates whether the mother was transferred. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:   
+			
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			The three categories and code values are 
+			Yes (1), No (2), or Unknown or Not Stated (9).
+			 
+		  
+
+
+		 
+		  
+		 Medical Attendant 
+		 
+		This field indicates the attendant at the time of birth.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				For years 2003 and later the birth Attendant data are
+				derived from the "ATTEND" field found in the public use data. 
+				Data are  available for year 1995 and later at  Linked Birth / Infant Death Records ). 
+
+			 
+				The category for Certified Nurse Midwife (CNM / CM)  represents  
+				certified nurse midwife (CNM), 
+				certified midwife (CM), and 
+				advanced practice registered nurse (APRN).  
+				The category for Other Midwife represents a midwife other than CNM/CM, 
+				and includes Certified Professional Midwife (CPM). 
+			 
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    		 
+			   "1"          Doctor of Medicine (MD)   	 		   
+			   "2"          Doctor of Osteopathy (DO)     		   
+			   "3"          Certified Nurse Midwife (CNM / CM)  	   			
+			   "4"          Other  Midwife  				   
+			   "5"          Other   					   
+			   "9"          Unknown or Not Stated  			   
+			 
+			 
+			 
+			 
+		 	
+
+
+
+
+		 
+		  
+		  
+		 Fetal Presentation 
+		 
+		This field reports the baby's presentation at birth,
+		in five categories: 
+		Cephalic; Breech; Other; Unknown or Not Stated, or Not Reported. 
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    			 
+			   "1"          Cephalic  	 		   
+			   "2"          Breech       		   
+			   "3"          Other     			   			
+			   "9"          Unknown or Not Stated  	   
+			   "100"        Not Reported  		   
+			 	
+			 
+			 
+		 	
+	
+
+		 
+		  
+		  
+		 
+
+		 Final Route and Method of Delivery 
+		 
+		This field reports the final route and method of delivery 
+		in six categories: 
+		Spontaneous, Forceps, Vacuum, Cesarean, Unknown or Not Stated, Not Reported.  
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    			 
+			   "1"          Spontaneous 	 	 	   
+			   "2"          Forceps  	    	   
+			   "3"          Vacuum    	 		   			
+			   "4"          Cesarean   	 		   			
+			   "9"          Unknown or Not Stated  	   
+			   "100"        Not Reported 	 		   
+			 	
+			 
+			 
+		 	
+	
+
+
+
+		 
+		  
+		  
+		 Delivery Method 
+		 
+		This field indicates whether the baby was born by Cesarean section or vaginal birth. 
+		 
+			 
+			 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Delivery Method. 
+			  
+			 
+				 Hint:    
+				You can only pick one list for  Delivery Method 
+				for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other Delivery Method lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Delivery Method Expanded"  in section 1, 
+				then you should set the radio button to select the same list in section 10. 
+				
+			 
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+				   Code       Label    			   
+				   "1"          Vaginal  	     		   
+				   "2"          Cesarean  	     	   
+				   "9"          Not Stated     		   
+			 
+			 
+			 
+		 	
+
+
+		 
+		  
+		  
+		 Delivery Method Expanded 
+		 
+		This field reports the method of delivery in 
+		eight categories.
+  		 
+		
+		 
+			 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Delivery Method. 
+			  
+			 
+				 Hint:    
+				You can only pick one list for  Delivery Method 
+				for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other Delivery Method lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Delivery Method Expanded"  in section 1, 
+				then you should set the radio button to select the same list in section 10. 
+				
+			 
+			 Note:    
+			
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    					 		 
+			   "1"           Vaginal (excludes vaginal after previous C-section)	 	 	   
+			   "2"           Vaginal after previous C-section		  		    	   
+			   "3"           Primary C-section				    		 		   			
+			   "4"           Repeat C-section				   		 		   			
+			   "5"           Vaginal (unknown if previous C-section)			 		   			
+			   "6"           C-section (unknown if previous C-section)	  		 		   			
+			   "9"           Unknown or Not Stated 					 		   
+			   "100"         Not Reported 						 		   
+			 	
+			 
+			 
+		 	
+
+
+		 
+		  
+		  
+		 Trial of Labor Attempted (if cesarean) 
+		 
+		This field reports if babies born by cesarean delivery attempted labor,
+		in four categories: 
+		Yes; No; Not Applicable; Unknown or Not Stated.
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When the data results are  exported  to a file,
+			the code is shown in a separate column from the category label. 
+			 
+			 
+			 
+			   Code       Label    				 
+			   "1"          Yes			 	 	   
+			   "2"          No			    	   
+			   "3"          Not Applicable	    	 		   			
+			   "9"          Unknown or Not Stated 	 		   
+			 	
+			 
+			 
+		 	
+
+		 
+		  
+		  
+		  
+		  
+		 Source of Payment for Delivery 
+		 
+		This field reports the source of payment for  delivery,
+		in two fields (code values shown inside parenthesis after each category label): 
+		
+			  
+				 Source of Payment for Delivery  - 5 categories:
+				Medicaid (1); 
+				Private Insurance (2); 
+				Self Pay (3); 
+				Other (4); 
+				Unknown or Not Stated (9).
+			  
+				 Source of Payment for Delivery Expanded  - 9 categories:
+				Medicaid (1); 
+				Private Insurance (2); 
+				Self-Pay (3); 
+				Indian Health Service (4); 
+				CHAMPUS/TRICARE (5); 
+				Other Government (Federal, State, Local) (6); 
+				Other (8); 
+				Unknown or Not Stated (9); 
+				Not Reported (10) 
+			 
+											
+		 
+			 
+			 How?     
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Source of Payment. 
+			  
+			 
+				 Hint:   
+				You can only pick one list for Source of Payment for Delivery.
+				The round radio button indicates the selected list, 
+				any selections in the other list are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Source of Payment for Delivery Expanded"  in section 1, 
+				then you should set the radio button to select the same list in section 10. 
+				
+			 
+			 Notes:    
+			 
+				The following reporting areas do not report all of the categories 
+				"Indian Health Service", 
+				"CHAMPUS/TRICARE", and 
+				"Other Government" for the
+				"Source of Payment for Delivery Expanded" data field. 
+				"Source of Payment for Delivery Expanded" data 
+				have been recoded to "Not Reported" 
+				for births to residents of the following reporting areas and years:  
+				Arizona 2017; 
+				Arkansas 2017-2023; 
+				California 2023; 
+				District of Columbia 2017; 
+				Florida 2017-2023; 
+				Illinois 2017-2023; 
+				Michigan 2017-2020; 
+				Minnesota 2017-2023; 
+				Mississippi 2017-2023; 
+				Missouri 2017-2023; 
+				New Hampshire 2017-2023; 
+				New Jersey 2017-2023; 
+				North Carolina 2017-2023;  
+				Pennsylvania 2017-2023;
+				Rhode Island 2019, 2021-2023;   
+				Texas 2017-2020; 
+				Vermont 2017-2023;
+				Virginia 2017-2020
+				(17 reporting areas).  
+			 
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+			  
+			 
+			
+		 		
+		 
+
+	
+
+	 	
+ 
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 Step 11.  Select maternal morbidity: 
+
+	 
+		 
+		Limit your data for any of the following data elements:
+		  
+			   Maternal Transfusion  - Yes; No; Unknown or Not Stated. 
+
+			   Third or Fourth Degree Perineal Laceration  - Yes; No; Unknown or Not Stated. 
+
+			   Ruptured Uterus  - Yes; No; Unknown or Not Stated. 
+
+			   Unplanned Hysterectomy  - Yes; No; Unknown or Not Stated. 
+
+			   Admission to Intensive Care Unit  - Yes; No; Unknown or Not Stated. 
+			
+			   Maternal Morbidity Checked  
+					- At least one checked; None checked; Unknown or Not Stated. 
+					 
+					This field indicates whether any maternal morbidity above was reported. 
+					Selecting "None checked" excludes all records with any of the above maternal morbidity. 
+					 
+					 
+		 
+
+		 
+			 
+				 How? 
+				 
+				See  How do I select items from the list box? .
+			 
+				 Note:   
+			
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+				The categories and codes for maternal morbidity data are 
+				Yes (1); No (2); Unknown or Not Stated (9). 
+			 
+		 
+
+
+
+		 
+		  
+		  
+		 Maternal Morbidity Checked 
+		 
+			This field indicates whether any maternal morbidity attributes were reported
+			for Maternal Transfusion, Third or Fourth Degree Perineal Laceration, 
+			Ruptured Uterus,  Unplanned Hysterectomy, 
+			or Admission to Intensive Care Unit. 
+			Selecting "None checked" excludes all records with any maternal morbidity attributes checked. 
+			For more information, refer to page 67 in the  
+			 
+			NCHS guide to 2017 birth records data . 				
+
+		 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:   
+			 
+				Selecting "None checked" excludes all records with any 
+				maternal morbidity attributes checked. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Maternal Morbidity Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+
+	 	
+ 
+
+
+
+	 
+	 
+	 
+	 Step 12.  Select infant characteristics: 
+
+	 
+		 
+			Limit your data for any of the following data elements:
+
+		  
+			   Sex of Child  - Female; Male. 
+
+			   Birth Weight  
+			  Infant's weight at birth is available in 3 sets of categories,
+ 				through 8165 grams,  or Not stated: 		
+				   12  groups in 500 gram increments;
+				 14  groups in 250 gram increments;
+				 100 gram increments .
+				   	 
+			 
+
+			  Multiple Births
+				   Plurality or Multiple Birth  - Single; Twin; Triplet or higher.
+				   Set Order  - 1st; 2nd; 3rd or higher; Unknown or Not Stated.
+				   	
+			 
+			
+			   Gestational Age at Birth  
+			  Gestational age groups are available in 3 sets of categories, 
+			representing the duration of the pregnancy at the time of birth, 
+			based on Last Menstrual Period (LMP) or 
+			Obstetric Estimate (OE):
+				 
+				 10  age groups: Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-35 weeks; 36 weeks; 37-39 weeks; 40 weeks; 41 weeks; 42 weeks or more; Unknown.
+				  
+				 11  age groups: Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-33 weeks; 34-36 weeks; 37-38 weeks; 39 weeks, 40 weeks; 41 weeks; 42 or more weeks; Unknown.
+				  
+				 Weekly  age groups:
+				17 weeks through 47 weeks;  Unknown.
+				 
+			 	
+
+		
+			 APGAR scores 
+			  APGAR scores are available for 5 minutes and 10 minutes after birth, in single increments 
+			or recoded  into 5 categories: 
+				  Single increments of 0 - 10; Unknown or Not Stated; Not Applicable.  
+				  Recoded categories - A score of 0-3; A score of 4-6; A score of 7-8; A score of 9-10; Unknown or Not Stated. 
+				 
+			Note that 10 minute APGARS scores are  categorized as "Not Applicable" 
+			when the 5 minute score was 6 or higher, 
+			and reported as "Unknown or Not Stated" in the recoded categories. 
+			 
+		
+		
+			   Infant Breastfed at Discharge?  -
+			 
+				Yes; No; Unknown or Not Stated; Not Reported. 
+			 
+
+			   Infant Transferred?  -
+				Yes; No; Unknown or Not Stated. 
+			 
+
+			   Infant Living at Time of Report?  -
+				Yes; No; Unknown or Not Stated. 
+				This field refers to infant's vital status on the birth certificate. 
+			 
+
+ 
+
+			   Age of Infant at Death  -
+				available in 3 lists: 5 age categories; 22 age categories, and number of days. 
+			 
+		 
+		 
+	
+		 
+			 How? 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the lists for Gestational Age, Birth Weight, and Source of Payment. 
+			  
+			 
+				 Hint:    
+				You can only pick one list for Birthplace, Delivery Method, and Apgar Score. 
+				The round radio button indicates the selected list, 
+				any selections in the other gestational age or birth weight lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  the categories in 
+				"Infant Birth Weight 100 gram increments"  in section 1, 
+				then you should set the radio button to select the same list in section 12. 
+				
+			 
+			 
+				 Note:    
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns.
+			 
+		 
+
+
+		 
+		  
+		  
+		  
+		  
+		 
+		   
+		  
+		  
+		  
+		
+		 Infant Birth Weight 
+		 
+		The Infant Birth Weight field indicates weight ranges for the infant at birth. 
+		
+		The infant's weight at birth is available in 3 sets of categories, through 8165 grams, or Not stated: 		
+			    12 groups in 500 gram increments;
+			  14 groups in 250 gram increments;
+			  100 gram increments. 
+			   	 
+
+		 
+			 How? 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the birth weight lists. 
+			  
+			 
+				 Hint:    
+				You can only pick 1 birth weight list for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other birth weight lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  "Infant Birth Weight 100 gram increments"  
+				then the radio button must also be set to the same selection list in section 12.
+			 
+		 
+		 Notes:    
+		 
+			The categories in gram intervals and their equivalents in pounds and ounces are as follows: 
+			  Less than 500 grams = 1 lb 1 oz or less 
+			  500 - 999 grams = 1 lb 2 oz - 2 lb 3 oz 
+			  1,000 - 1,499 grams = 2 lb 4 oz - 3 lb 4 oz 
+			  1,500 - 1,999 grams = 3 lb 5 oz - 4 lb 6 oz 
+			  2,000 - 2,499 grams = 4 lb 7 oz - 5 lb 8 oz 
+			  2,500 - 2,999 grams = 5 lb 9 oz - 6 lb 9 oz 
+			  3,000 - 3,499 grams = 6 lb 10 oz - 7 lb 11 oz 
+			  3,500 - 3,999 grams = 7 lb 12 oz - 8 lb 13 oz
+			  4,000 - 4,499 grams = 8 lb l4 oz - 9 lb l4 oz 
+			  4,500 - 4,999 grams = 9 lb 15 oz - 11 lb 0 oz 
+			  5,000 grams or more = 11 lb 1 oz or more 
+		 
+			 About low birth weight: 
+			  ICD - 9 and ICD - 10 define low birth weight as less than 2,500 grams. 
+			This is a shift of 1 gram from the previous criterion of 2,500 grams or less, 
+			which was recommended by the American Academy of Pediatrics in 1935 and adopted in 1948 
+			by the World Health Organization in the 
+			International Lists of Diseases and Causes of Death, Sixth Revision. 
+				
+		 
+			When the data results are  exported  to a file,
+			two columns are provided, a column for the code and a column for the label. 
+			The table below shows the codes and labels for "Birth Weight 12" with 12 categories.
+		 
+		 
+		 
+			    Code       Label 
+			    "01"     499 grams or less     
+			    "02"     500 - 999 grams    
+			    "03"     1000 - 1499     
+			    "04"     1500 - 1999 grams    
+			    "05"     2000 - 2499 grams    
+			    "06"     2500 - 2999 grams    
+			    "07"     3000 - 3499 grams    
+			    "08"     3500 - 3999 grams    
+			    "09"     4000 - 4499 grams    
+			    "10"     4500 - 4999 grams    
+			    "11"     5000 - 8165 grams    
+			    "12"     Not stated    
+		 
+		 
+		 	
+		 
+		 
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 Gestational Age at Birth 
+		 
+		Select a range of weeks that represents the duration of the pregnancy at the time of birth.
+		 
+
+		 
+		NOTE: Beginning in 2014 NCHS changed the standard for gestational period from the 
+		Last Menstrual Period (LMP) based gestational age to the 
+		Obstetric/clinical Estimate (OE) based gestational age.
+		Obstetric/clinical Estimate (OE) based gestational age groups 
+		are available for years 2007 and later in WONDER since February 2016. 
+		Refer to  
+		Measuring Gestational Age in Vital Statistics Data: Transitioning to the Obstetric Estimate  
+		for more information.
+		 
+
+		 
+		
+		Births data are organized in three groupings:
+			 
+			   Gestational Age with 10 age groups  Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-35 weeks; 36 weeks; 37-39 weeks; 40 weeks; 41 weeks; 42 weeks or more; Unknown. 
+			   Gestational Age with 11 age groups  Under 20 weeks; 20-27 weeks; 28-31 weeks; 32-33 weeks; 34-36 weeks; 37-38 weeks; 39 weeks; 40 weeks; 41 weeks; 42 or more weeks; Unknown. 
+			   Gestational Age - Weekly:   17 weeks;  18 weeks; 19 weeks;  20 weeks; 21 weeks; 22 weeks; 23 weeks; 24 weeks; 
+			25 weeks; 26 weeks; 27 weeks; 28 weeks; 29 weeks; 30 weeks; 31 weeks; 32 weeks; 33 weeks; 34 weeks; 35 weeks; 
+			36 weeks; 37 weeks; 38 weeks; 39 weeks; 40 weeks; 41 weeks; 42 weeks; 43 weeks; 44 weeks; 45 weeks; 46 weeks; 47 weeks; Unknown. 
+			  
+
+		 
+		 
+			 How?    
+			  Click a  round button  to switch between the gestational age lists.
+			  Select your desired age groups. See  How do I select items from the list box? .
+			 Hint: 
+				You can only pick 1 gestational age group list for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other gestational age at birth lists are ignored.
+				The  gestational age at birth "by-variables"  in section 1 and the radio button selections must match.
+				For example, if you select to group results by  "Gestational Age - Weekly"  in section 1, 
+				then you must also select the radio button for the same list in section 12. 
+			
+			 
+			 
+			 Note:    
+				When the data results are  exported  to a file,
+				the Gestational Age codes are shown in a separate column from the category label.
+			 
+			 	
+			 
+			 
+			 
+				Gestational Age at Birth - 10 Groups 
+			   Code       Label 
+         		   "01"      Under 20 weeks  		     
+         		   "02"      20 - 27 weeks   		    
+         		   "03"      28 - 31 weeks   		    
+         		   "04"      32 - 35 weeks   		    
+         		   "05"      36 weeks        		    
+         		   "06"      37 - 39 weeks   		    
+         		   "07"      40 weeks        		    
+         		   "08"      41 weeks        		    
+         		   "09"      42 weeks or more 		    
+         		   "10"      Unknown or Not Stated      
+			 
+			 
+
+			 
+			 
+			 Gestational Age - 11 Groups 
+			   Code       Label 
+         		   "01"      Under 20 weeks  		     
+         		   "02"      20-27 weeks     		    
+         		   "03"      28-31 weeks     		    
+         		   "04"      32-33 weeks     		    
+         		   "05"      34-36 weeks     		    
+         		   "06"      37-38 weeks     		    
+	 		   "07"      39 weeks        		    
+         		   "08"      40 weeks        		    
+         		   "09"      41 weeks        		    
+         		   "10"    42 weeks and over		    
+         		   "11"    Unknown or Not Stated           
+			 
+			 
+
+			
+			 
+			 
+			 Gestational Age - Weekly: 
+			   Code       Label 
+         		   "17"      17 weeks      
+         		   "18"      18 weeks     
+         		   "19"      19 weeks     
+         		   "20"      20 weeks     
+         		   "21"      21 weeks     
+         		   "22"      22 weeks     
+         		   "23"      23 weeks     
+         		   "24"      24 weeks     
+         		   "25"      25 weeks     
+         		   "26"      26 weeks     
+         		   "27"      27 weeks     
+         		   "28"      28 weeks     
+         		   "29"      29 weeks     
+         		   "30"      30 weeks     
+         		   "31"      31 weeks     
+         		   "32"      32 weeks     
+        		   "33"      33 weeks     
+        		   "34"      34 weeks     
+         		   "35"      35 weeks     
+         		   "36"      36 weeks     
+         		   "37"      37 weeks     
+         		   "38"      38 weeks     
+         		   "39"      39 weeks     
+         		   "40"      40 weeks     
+        		   "41"      41 weeks     
+         		   "42"      42 weeks     
+         		   "43"      43 weeks     
+         		   "44"      44 weeks     
+         		   "45"      45 weeks     
+         		   "46"      46 weeks     
+         		   "47"      47 weeks     
+         		   "99"      Unknown or Not Stated
+									          
+			 
+			 
+		 
+		 	
+
+		 
+		  
+		  
+		  
+	
+		 Sex of Infant 
+		 
+		This field indicates the sex of the child as recorded on the birth certificate.
+		 
+
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			   
+			 Note:    
+			When the data results are  exported  to a file,
+			two columns are shown, a column for the code value and a column for the label.
+			 
+			 
+			 
+			   Code       Label 
+			   "F"     Female     
+			   "M"     Male    
+			 
+			 
+			 
+		 	
+
+
+		 
+		  
+		  
+		 Plurality or Multiple Birth 
+		 
+		The Plurality field indicates if more than one infant shared the gestation and birth.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+			Plurality data are available in three categories:  Single; Twin; Triplet or higher.
+			 
+			Before May 2022,  Plurality data were shared in these additional categories: 
+			Triplet; Quadruplet; Quintuplet or higher.  
+			 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			 	
+			 
+			 
+			   Code       Label 
+			   "1"     Single     
+			   "2"     Twin    
+			   "3"     Triplet or higher   
+
+			   Available Before May 2022:    
+			   "3"     Triplet    
+			   "4"     Quadruplet    
+			   "5"     Quintuplet or higher    
+			 
+			 
+			 
+			 	
+		 
+
+		 
+		  
+		  
+		 Set Order 
+		 
+		The Set Order field indicates the order of birth for each infant, 
+		when  more than one infant shared the gestation and birth. 
+		Single births are categorized as Unknown or Not Stated. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			 
+			Set Order data are available in four categories: 
+			1st; 2nd; 3rd or higher; Unknown or Not Stated.
+			 
+			Before May 2022,  Set Order data were available in six categories: 
+			1st; 2nd; 3rd; 4th; 5th to 16th; Unknown or Not Stated.
+			 
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			 	
+			 
+			 
+			   Code       Label 
+			   "1"     1st     
+			   "2"     2nd    
+			   "3"     3rd or higher   
+
+			   Available Before May 2022:    
+			   "3"     3rd    
+			   "4"     4th    
+			   "5"     5th to 16th    
+			   "9"     Unknown or Not Stated    
+			 
+			 
+			 	
+		 
+
+		 
+		  
+		  
+		  
+		  
+		  
+		 APGAR scores 
+		 
+			Data for infant APGAR scores are available in four data fields. 
+			APGAR scores are available for 5 minutes and 10 minutes after birth, 
+			in single increments or recoded  into 5 categories: 
+			    Single increments of 0 - 10; Unknown or Not Stated; Not Applicable.  
+			  Recoded categories - A score of 0-3; A score of 4-6; 
+					A score of 7-8; A score of 9-10; Unknown or Not Stated. 
+			 
+			Note that 10 minute APGARS scores are  categorized as "Not Applicable" 
+			when the 5 minute score was 6 or higher, and 
+			reported as "Unknown or Not Stated" in the recoded categories. 
+		 
+		 
+			 How? 
+			 
+				See  How do I select items from the list box? .
+			 
+				Click a  round button  to switch between
+				the birth weight lists. 
+			  
+			 
+				 Hint:    
+				You can only pick 1 APGAR Score list for any data request.
+				The round radio button indicates the selected list, 
+				any selections in the other APGAR Score lists are ignored.
+				The  "by-variables"  in section 1 and the round radio button selections must match.
+				For example, if you select to group results by  "Five Minute APGAR Score"  
+				then the radio button must also be set to the same selection list in section 12.
+			 
+			
+			 Notes:    
+			 
+				In 1963, the acronym APGAR was coined for the scoring system as a mnemonic learning aid: 
+				Appearance (skin color), Pulse (heart rate), Grimace (reflex irritability), 
+				Activity (muscle tone), and Respiration.  
+				Virginia Apgar, MD, (1909-1974) was an obstetrical anesthesiologist 
+				known for developing the system.  
+				   
+
+			 
+				Ten Minute APGAR Score data are recorded for births with 
+				a score less than six in the Five Minute APGAR Score. 
+				The Ten Minute APGAR Score data field includes an additional category,
+				"Not Applicable" for births with a Five Minute Apgar Score of 6 or more. 
+				Births reporting "Not Applicable" for the Ten Minute APGAR Score
+				are included in the 
+				"Unknown or Not Stated" category in the 
+				"Ten Minute APGAR Score Recode" data. 
+								
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns.
+				 	
+				 
+				  Single increments:  
+				 
+				   Code       Label 
+				   "0"     0     
+				   "1"     1     
+				   "2"     2    
+				   "3"     3    
+				   "4"     4    
+				   "5"     5    
+				   "6"     6     
+				   "7"     7    
+				   "8"     8    
+				   "9"     9    
+				   "10"     10    
+				   "88"     Not Applicable *   
+				   "99"     Unknown or Not Stated    
+				     * Not Applicable category is only reported in Ten Minute APGAR Score data.   
+				 
+				 
+				 	
+				  Recoded categories:  
+				 
+				   Code       Label 
+				   "1"     A score of 0-3     
+				   "2"     A score of 4-6    
+				   "3"     A score of 7-8    
+				   "4"     A score of 9-10    
+				   "5"     Unknown or Not Stated *   
+				     * Includes Not Applicable category in the Ten Minute APGAR Score data.    
+				 
+				 
+				 
+			 
+				
+		 
+			
+
+		 
+		  
+		  
+		 Infant Transferred 
+		 
+		The Infant Transferred field indicates whether the infant was transferred,   
+		in three categories: 
+		Yes, No,  Unknown or Not Stated.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			 	
+			 
+			 
+			   Code       Label 
+			   "1"     Yes     
+			   "2"     No    
+			   "9"     Unknown or Not Stated    
+			 
+			 
+			 	
+		 
+
+
+		 
+		  
+		  
+		 Infant Living at Time of Report 
+		 
+		This field indicates whether the infant was alive 
+		when the birth certificate data was reported,   
+		in three categories: 
+		Yes, No,  Unknown or Not Stated.
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Note:    
+			When you  export  the results of your data request,
+			the labels and the codes are in separate columns.
+			 	
+			 
+			 
+			   Code       Label 
+			   "1"     Yes     
+			   "2"     No    
+			   "9"     Unknown or Not Stated    
+			 
+			 
+			 	
+		 
+
+	
+		 
+		  
+		  
+		 Infant Breastfed at Discharge 
+		 
+		This field indicates whether the infant was  
+		receiving breastmilk or colostrum during the period between birth and discharge from the hospital,   
+		in four categories: 
+		Yes, No,  Unknown or Not Stated; Not Reported. 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Infant Breastfed at Discharge data are coded to 
+				"Not Reported" for births in years 2017-2023 
+				to mothers residing in California and 2017-2020 to mothers resding in Michigan
+				(2 reporting areas).  
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns.
+			 	
+			 
+			 
+			   Code       Label 
+			   "1"     Yes     
+			   "2"     No    
+			   "9"     Unknown or Not Stated    
+			   "10"   Not Reported    
+			 
+			 
+			 
+			 	
+		 
+
+  
+
+		 
+		  
+		  
+		  
+		  
+		 Age of Infant at Death 
+		 
+			Infant's age at death is available in 3 lists:
+			 
+				5 age categories: 
+				Under 1 hour; 1 - 23 hours; 1 - 6 days; 7 - 27 days; 28 - 364 days. 
+			 
+				22 age categories:
+				Under 1 hour (includes not stated hours and minutes); 
+				1 - 23 hours; 1 day (includes not stated days); 2 days; 3 days; 4 days; 5 days; 6 days; 
+				7 - 13 days (includes not stated weeks); 
+				14 - 20 days; 21 - 27 days; 
+				1 month (includes not stated months); 
+				2 months; 3 months; 4 months; 5 months; 6 months; 
+				7 months; 8 months; 9 months; 10 months; 11 months; 
+				Unknown or Not Stated;  
+			 
+				Number of days: single categories range from 0 days through 365 days, 
+				Unknown or Not Stated. 
+			  
+		 
+		 
+		 
+
+			 How?  
+			  Click a  round button  to switch between the ICD chapter and code list, or by the Selected Causes group and ICD code list.
+			  See  How do I use a Finder?  for more information.
+			 
+		 
+			 Notes:    
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns.
+		 	
+		 
+
+	 	
+ 
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 Step 13.  Select abnormal conditions of newborn: 
+
+	 
+		 
+			Limit your data for any of the following data elements:
+
+		  	
+			 Assisted Ventilation  - 
+				Yes; No; Unknown or Not Stated. 
+				  Assisted Ventilation data are available in 2 fields, 
+				  1) Assisted ventilation required immediately following delivery; and
+				  2) Assisted ventilation required for more than six hours. 
+				
+
+			 NICU Admission  - Yes; No; Unknown or Not Stated. 
+
+			 Surfactant Replacement Therapy  - Yes; No; Unknown or Not Stated. 
+
+			 Antibiotics for Suspected Neonatal Sepsis  - 
+				Yes; No; Unknown or Not Stated. 
+
+			 Seizures  - Yes; No; Unknown or Not Stated. 
+
+
+			   Abnormal Conditions Checked 
+				- At least one checked;  None checked;  Unknown or Not Stated.
+				  
+				This field indicates whether 
+				any of the abnormal conditions noted above was reported for the newborn. 
+				Selecting "None checked" excludes all records 
+				with any of the above abnormal conditions. 
+			 
+		 
+
+		 
+			 
+				 How? 
+				 
+				See  How do I select items from the list box? .
+			 
+				 Note: 
+			
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+				The categories and codes for abnormal conditions of newborn data are 
+				Yes (1); No (2); Unknown or Not Stated (9). 
+			 
+		 
+
+
+		 
+		  
+		  
+		 Abnormal Conditions Checked 
+		 
+			This field indicates whether any abnormal conditions was reported for the newborn for 
+			Assisted Ventilation, NICU Admission, Surfactant Replacement Therapy,  
+			Antibiotics for Suspected Neonatal Sepsis, 
+			Seizures or serious neurologic dysfunction.  
+			Selecting "None checked" excludes all records with 
+			any attributes checked for newborn abnormal conditions.
+		  
+			For more information, see page 70 in  the  
+			 
+			NCHS guide for 2017 births data . 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:    
+			 
+				Selecting "None checked" excludes all records with any pregnancy risk factors. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Abnormal Conditions Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+	
+	 	
+ 
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 Step 14.  Select congenital anomalies of newborn: 
+
+	 
+		 
+			Limit your data for any of the following data elements:
+
+		  	
+			   Anencephaly  Yes; No; Unknown or Not Stated. 
+			   Cleft Palate Alone  Yes; No; Unknown or Not Stated. 
+			   Cleft Lip with or without Cleft Palate  Yes; No; Unknown or Not Stated. 
+			   Cyanotic Congenital Heart Disease  Yes; No; Unknown or Not Stated. 
+			   Congenital Diaphragmatic Hernia  Yes; No; Unknown or Not Stated. 
+			   Omphalocele  Yes; No; Unknown or Not Stated. 
+			   Gastroschisis  Yes; No; Unknown or Not Stated. 
+			   Hypospadias  Yes; No; Unknown or Not Stated. 
+			   Meningomyelocele / Spina Bifida   Yes; No; Unknown or Not Stated. 
+			   Limb Reduction Defect  Yes; No; Unknown or Not Stated. 
+			   Down Syndrome  Confirmed; Pending; No; Unknown or Not Stated.  
+			   Suspected Chromosomal Disorder  Confirmed; Pending; No; Unknown or Not Stated.  
+
+
+			   Congenital Anomalies Checked  - 
+				At least one checked;  None checked;  Unknown or Not Stated.
+				  
+				This field indicates whether any congenital anomalies noted above was reported. 
+				Selecting "None checked" excludes all records with any of the above congenital anomalies. 
+			 
+		 
+
+		 
+			 
+				 How? 
+				 
+				See  How do I select items from the list box? .
+			 
+				 Note:   
+				When the data results are  exported  to a file,
+				the code is shown in a separate column from the category label. 
+				The categories and codes for congenital anomalies data are 
+				Yes (1); No (2); Unknown or Not Stated (9). 
+			 
+		 
+
+
+		 
+		  
+		  
+		 Congenital Anomalies Checked 
+		 
+			This field indicates whether any congenital anomalies was reported 
+			in 2003 revision of the standard certificate of birth for 
+			1) anencephaly; 2) meningomyelocele/spina bifida; 
+			3) cyanotic congenital heart disease; 
+			4) congenital diaphragmatic hernia; 
+			5) omphalocele; 
+			6) gastroschisis; 
+			7) limb reduction defect; 
+			8) cleft lip with or without cleft palate; 
+			9) cleft palate alone; 10) Down syndrome; 
+			11) suspected chromosomal disorder; and 12) hypospadias.
+			If the item is not completed 
+			(i.e. none of the boxes are checked in the birth certificate), 
+			then it is classified as "Not stated."
+			Data for the congenital anomaly "Hypospadias" are edited 
+			to exclude this condition where the infant is a female. 
+			
+			For more information, see page 70 in  the  
+			 
+			NCHS guide for 2017 births data . 
+		 
+		 
+			 
+			 How?     
+			See  How do I select items from the list box? .
+			 
+			 Notes:   
+			 
+				Selecting "None checked" excludes all records with any reported congenital anomalies. 
+			 
+				When you  export  the results of your data request,
+				the labels and the codes are in separate columns. 	
+				The categories and codes for Congenital Anomalies Checked data are 
+				At least one checked (0);  None checked (1);  Unknown or Not Stated (9).
+			 
+			 
+		 
+	
+
+	 	
+ 
+
+	 
+	 
+	 Step 15. Select cause of infant death: 
+	 
+		Select  the International Classification of Disease (ICD) categories 
+		that represent the underlying cause of death from the death certificate.
+		Any number of causes  can be specified here.  
+		However, you can only request data from one of the lists:
+		the ICD codes (organized by chapters, sub-chapters and codes), 
+		or the groups of selected causes of death (organized by group and codes).
+		Be sure the radio button for ICD Codes or ICD Groups is set to your choice. 
+		Or, you can leave the field empty to select all causes of death, 
+		and choose to  organize  or group the data results by these variables to show these stratifications.
+		 
+			 How?  
+			  Click a  round button  to switch between the ICD chapter and code list, or by the Selected Causes group and ICD code list.
+			  See  How do I use a Finder?  for more information.
+			 
+
+			 Hints: 
+			  The default is all values (all causes of death).
+			    The Advanced mode let you easily pick several items from different parts of the list.
+			Items are not selected until you click the "Move" button in Advanced mode.
+			You may also enter values by hand, one code per line, in the Advanced mode.
+			Use the  Finder  to see the correct code format.
+			For example, "GR130-120" the Selected Causes group code for Congenital hydrocephalus.
+			    The "plus" symbol, "+" indicates that you can open the item, to see more items below it.
+			     The results to a search are shown in blue, and indicated by ">".
+			 
+
+	
+			 Notes: 
+			  
+			 About the International Classification of Diseases: 
+			The mortality data are compiled in accordance with the World Health Organization (WHO) regulations, 
+			which specify that member nations classify and code causes of death in accordance with the 
+			current revision of the  International Statistical Classification of Diseases and Related Health Problems  (ICD). 
+			The International Classification of Diseases is developed collaboratively between the World Health Organization (WHO) 
+			and 10 international centers, for purposes of ensuring that medical terms reported on death certificates are 
+			internationally comparable and lend themselves to statistical analysis. 
+			The ICD has been revised approximately every 10 years since 1900 in 
+			order to reflect changes in understanding of disease mechanisms and in disease terminology. 
+			    
+			 About  the 9th and 10th ICD revisions: 
+			During the years 1979-1998, the United States used the Ninth Revision of the ICD (ICD-9) to code causes of death. 
+			Effective with deaths occurring in 1999, the United States began using the Tenth Revision of this classification, (ICD-10). 
+			The two revisions differ substantially, and to prevent confusion about the significance of any specific disease code, 
+			data queries are separate.   For more information, see 
+			 Comparability of Cause-of-Death Between ICD Revisions .
+			    
+			 About selecting causes of death for infants: 
+			Years   1999 and later  classify deaths by 
+			 International Classification of Diseases, revision 10  chapters, sub-chapters and specific causes of death.
+				    International Classification of Diseases, revision 10  
+						chapters, sub-chapters and specific causes of death.
+				   130 Selected Causes of Infant Death  
+						grouped causes of death in International Classification of Diseases, revision 10.
+				 
+			 
+
+			
+		 
+		 
+		 
+		 ICD-10 Codes 
+		 
+		Limit the data to any number of causes of death, for selected chapters, sub-chapters or codes.
+		 
+			 How?    
+			See  Step 15.  Select cause of infant death  above.  Check the Hints section.
+			 
+			 
+			 Notes:    
+			 
+			The International Classification of Disease (ICD)  10th revision
+			is used to represent the underlying cause of  death  for the years 1999 and later.
+			The ICD system is organized by chapters, sub-chapters and codes.
+			 
+			ICD-10 uses a 4-length alphanumeric coding scheme. 
+			Each of the 21 chapters in ICD-10 is classified to a letter or letters of the alphabet. 
+			Infectious disease codes in Chapter 1, for example, begin with an "A" or "B". 
+			Thus, Acute poliomyelitis is associated with the codes A80.0-A80.9 and Viral hepatitis is classified as B15.0-B19.9. 
+			The ICD 10 system begins codes with a letter from the alphabet, followed by two numerals,
+			then a decimal point to indicate subordinate position, and then more numerals.
+			Some causes of death in Compressed Mortality are represented by 3 length codes, 
+			although most causes of death are represented by 4 length codes (format A12.3).
+			Greater detail than 4 length codes are not included in the data.
+			 
+			Changes to cause of death classification affect reporting trends.
+			See  ICD-10 Changes  for more information. 
+			 
+			
+		 
+
+		 
+			 ICD-10 Changes 
+			 
+		
+			 About changes in the ICD-10 codes:    
+			
+			The valid ICD-10 codes used to classify underlying cause of death change over time.
+			Effective with the 2019 data year,  1 code was introduced as a valid cause of death. 
+			Effective with the 2020 data year,  1 code was introduced as a valid cause of death. 
+  
+			 
+			 
+			 ICD-10 Changes in Years 2019-2020				 
+			 								 
+
+			  New causes of death in 2020				 
+			 ICD -10 Code  	 Title			 
+			 U07.1 	  	  COVID-19						  
+			 	
+
+			 New causes of death in 2019					 
+			 ICD-10 Code 	 Title					   
+			 U07.0 	  	  Vaping related disorder				  
+			 		
+
+			 
+			 
+			 
+
+		 
+		 
+		 
+		 
+		 
+		 ICD-10 130 Cause List (Infants) 
+		 
+		Limit the data to any number of groups of selected causes of death, or individual codes.
+		 
+			 How?    
+			See  Step 15.  Select cause of infant death  above.
+			 
+			 Notes:    
+			 
+			Deaths in the years 1999 and later are coded to the tenth revision of the International Classification of Diseases (ICD-10).
+			There are 130 Selected Causes of Infant Death groups for the ICD-10 codes.
+			 
+			NCHS has defined selected causes of death groups for analysis of all ages mortality data: 
+			the "72 Selected Causes of Death" for ICD-9 codes and years 1979-1998, 
+			and the "113 Selected Causes of Infant Death" for ICD-10 codes and years 1999 and later. 
+			The group code values are not actual ICD codes published in the International Classification of Diseases, 
+			but are "recodes" defined to support analysis by the Selected Causes of Death groups.  
+			 
+			Data for underlying cause of death, sub-chapter, chapter and the selected causes of death groups 
+			are derived from the "UCOD" field in the public use data for years 1999-2023.
+			 
+			Group the data by "ICD-10 130 Groups" and also by "Cause of Death" to see the individual ICD codes included in each category.  
+			 
+			A "#"  symbol preceding the label indicates a "rankable" cause of death, 
+			from the National Center for Health Statistics (NCHS) list of rankable causes of death.
+			The rankable causes in the Linked Birth / Infant Death Records 
+			are a subset of the 130 selected causes of death for infants. 
+			 
+			Group results by "15 Leading Causes" to get death counts and rates for the top 15 rankable causes of death,
+			for your selected query criteria.  
+			Note that cross-tabulations, zero value death counts, and suppressed values are not permitted when 
+			you group results by "15 Leading Causes."  
+			When more than one rankable cause of death occurs in the last position, all these causes are shown. 
+			 
+		 
+ 
+
+
+		 
+		 
+		 Step 16. Other options: 
+		 
+						 
+				 
+					 Export Results: 
+					     
+					 
+						If checked, then query results are exported to a local file. More information on how to import this file into 
+						other applications can be found  here .
+						 
+						 How?   
+						See  Checkbox .
+						
+					 
+				 
+				 Show Totals: 
+					     
+					 
+						If checked, then totals and sub-totals display in the results table.
+						 
+						 How?   
+						See  CheckBox .
+					
+					 
+				 
+				 Show Zero Values: 
+					     
+					 
+						If checked, then rows containing zero counts are included in the results table.
+						If unchecked, then zero count rows are not included.
+						 
+						 How?   
+						See  Checkbox .
+					
+					 
+				 
+				 Precision: 
+					     
+					 
+						Select the precision for rate calculations. 
+						You may increase the precision to show 
+						more numbers to the right of the decimal point.
+						 
+						 How?   See  How do I select items from the list box? 
+					 
+				 
+				 Data Access Timeout: 
+					     
+					 
+						This value specifies the maximum time to wait for the data access for
+						a query to complete. If the data access takes too long to complete,
+						a message will be displayed and you can increase the timeout or
+						simplify your request. If you can't complete a request using the
+						maximum timeout, contact user support and we will try to run a
+						custom data request for you.
+					 
+				 
+
+				 Calculate Rates Per: 
+					     
+					 
+						Select the factor (multiplier) for your rates.  
+						By default, infant death rates are calculated per 1,000 live births.
+						 
+						 How?   See  How do I select items from the list box? 
+					 
+				 
+
+
+
+			 
+			
+		 
+
+	 
+	 Data Source Information 
+		 
+				 
+
+					See  Source  in the Summary section above, or 
+					see the suggested  citation  below. 
+
+					To learn more about the methods and source of these data please refer to:
+				
+					 
+
+					 Linked Birth and Infant Death Data web page from the National Center for Health Statistics (NCHS) 
+					 
+
+					 Vital Stats Online 
+					 
+				
+				 
+				  Publications  
+					
+					 
+				         Reports: 
+					
+						  
+							 
+							Infant Mortality in the United States, 2023: Data From the Period Linked Birth/Infant Death File     		
+						  
+							 
+							Infant Mortality in the United States, 2022: Data From the Period Linked Birth/Infant Death File     		
+						  
+							 
+							Infant Mortality in the United States, 2021: Data From the Period Linked Birth/Infant Death File     		
+						  	
+							 
+							Infant Mortality in the United States, 2020: Data From the Period Linked Birth/Infant Death File   
+						   
+							 
+							Infant Mortality in the United States, 2019: Data From the Period Linked Birth/Infant Death File   
+						   
+							 
+						   	Infant Mortality in the United States, 2018: Data From the Period Linked Birth/Infant Death File   
+ 						   
+							 	
+						   	Infant Mortality in the United States, 2017: Data From the Period Linked Birth/Infant Death File   
+						 
+					 
+
+				         Guides to data: 
+
+						
+						 
+							 	
+							Guide to 2023 Period / 2022 Cohort Linked Birth / Infant Death Data  
+						 
+							 	
+							Guide to 2022 Period / 2021 Cohort Linked Birth / Infant Death Data  
+						 
+							 	
+							Guide to 2021 Period / 2020 Cohort Linked Birth / Infant Death Data  
+						  
+							 	
+							Guide to 2020 Period / 2019 Cohort Linked Birth / Infant Death Data  
+						 
+							 	
+							Guide to 2019 Period / 2018 Cohort Linked Birth / Infant Death Data     
+						  
+							 
+						    	Guide to 2018 Period /2017 Cohort Linked Birth / Infant Death Data  
+						  	
+						  	 
+						   	Guide to 2017 Period Linked Birth / Infant Death Data  
+						 
+
+				    	  
+					
+				    
+				 
+				  Other Issues 
+					     Weight Factors: Changes Beginning with the 1995 Data Year 
+					    Locations  - changes to state and county areas and codes over time
+					    Additional Information  - data comparability issues, reporting anomalies, data corrections, etc.  
+					 
+
+				 
+				 
+
+
+	 
+	 
+	 Weight Factors: Changes Beginning with the 1995 Data Year 
+
+        
+
+
+
+          Beginning in 1995 data, linked file records 
+          are weighted to compensate for the  < 1 to 3 percent of infant death records 
+          which could not be linked to their corresponding birth certificates. 
+          Although every effort has been made to design weights which will accurately 
+          reflect the distribution of deaths by characteristics, weighting may 
+          contribute to small differences in numbers and rates by specific variables 
+          between the linked file and the vital statistics mortality files. 
+         
+          A weight has been added to the linked numerator file to correct 
+          in part for biases in percent of records linked 
+          by major characteristics. The number of infant deaths in the linked file are weighted 
+          to equal the sum of the linked plus unlinked infant deaths by age at 
+          death and state. The formula for computing the weights is as follows: 
+         
+         
+          
+                  (number of linked infant deaths + number of unlinked infant deaths) 
+           
+          number of linked infant deaths 
+        
+          
+         A separate weight is computed for each reporting area of residence of birth 
+          and each age at death category.  
+         Thus, weights are 1.0 for reporting areas which link all of their infant 
+          deaths. The denominator file is not weighted.  
+
+	 
+          	Note that for years 2002 and later, the following age at death cohorts are used for constructing weights:
+			<7 days, 7-27 days, 28 days to 1 year.
+ 	
+	 
+
+	      
+         An imputation for not-stated birthweight has been added to the data 
+          set, to reduce potential bias in the computation of birthweight-specific 
+          infant mortality rates. Basically, if birthweight is not-stated and 
+          the period of gestation is known, birthweight is assigned the value 
+          from the previous record with the same period of gestation, race, sex, 
+          and plurality. Imputed values are flagged. 
+
+	 
+          For more detail, and to see the percentage of records linked for each year of data,
+          please see the methodology sections in the 
+          publications listed at  Data Source Information .
+         
+
+	 
+	 
+	 
+	 Locations -  About FIPS State and County Codes 
+	 
+    	The FIPS state and county codes were established by the National Bureau
+    	of Standards, U.S. Department of Commerce in 1968.  This standard set
+    	of codes provides names and codes for counties and county equivalents
+    	of the 50 states of the United States and the District of Columbia.
+    	Counties are considered to be the "first order subdivisions " of each
+    	State, regardless of their local designation (county, parish,
+    	borough).  Washington, D.C.; the consolidated government of Columbus,
+    	Georgia; the independent cities of the states of Maryland, Missouri,
+    	Nevada, and Virginia; the census areas and boroughs of Alaska; and that
+    	part of Yellowstone Park in Montana are identified as county
+    	equivalents.  The system is standard throughout the Federal
+    	Government.  The state codes are ascending, two-digit numbers; the
+    	county codes are ascending three-digit numbers.  For both the state and
+    	county codes, space has been left for new states or counties.
+    	Some changes in the FIPS codes have occurred since 1968.
+	 
+    	A modified version of the FIPS state and county codes is used to identify states and
+    	counties on NCHS public-use data files.  
+    	The modifications as implemented in the Linked Birth / Infant Death public-use data are described below.
+	   
+ Modifications of FIPS State and County Codes 
+ 
+ 
+Counties with populations under 250,000 persons are grouped into "Unidentified Counties" (FIPS code 999) to protect privacy.
+ 
+Dade county, Florida (FIPS code 12025) was renamed  Miami-Dade County (FIPS code 12086) effective November 13, 1997.  However, the area is coded to Dade (12025) for all years.
+ 
+Baltimore county, Maryland  (FIPS code 24005) is reported separately from the independent city of Baltimore, Maryland (FIPS code 24510).
+ 
+The independent city of Baltimore, Maryland (FIPS code 24510) is reported separately from Baltimore county (FIPS code 24005).
+ 
+St. Louis county (FIPS code 29189) is reported separately from the independent city of  St. Louis, Missouri  (FIPS code 29510).
+ 
+The independent city of  St. Louis, Missouri  (FIPS code 29510) is reported separately from St. Louis county (FIPS code 29189). 
+ 
+Bronx, New York (FIPS code 36005) represents Bronx Borough, New York City.
+ 
+Kings county, New York (FIPS code 36047) represents Brooklyn Borough, New York City.
+ 
+New York county, New York (FIPS code 36061) represents Manhattan Borough, New York City.
+ 
+Queens, New York (FIPS code 36081) represents Queens Borough, New York City.
+ 
+Richmond county, New York (FIPS code 36085) represents Staten Island Borough, New York City.
+ 
+ 
+	For more information on county level data, refer to the sections  discussing 
+	 About Counties  and 
+	 Unidentified Counties .
+	
+ 
+	
+
+
+		 
+
+
+	 
+	 Additional Information 
+				 
+					 
+						 
+							 
+							Suggested Citation:
+						 
+						     
+						  
+						Centers for Disease Control and Prevention, 
+						National Center for Health Statistics.  
+    						National Vital Statistics System, 
+    						Linked Birth / Infant Deaths 
+    						on CDC WONDER Online Database. 
+    						Data are from the Linked Birth / Infant Deaths Records 2017-2023, 
+    						as compiled from data provided by the 57 vital statistics 
+   						 jurisdictions through the Vital Statistics Cooperative Program.  
+						 
+						 
+					 
+					 
+
+						 
+							 
+							Contact:
+						 
+						     
+						 
+							The National Center for Health Statistics welcomes comments and questions at 	
+							 NCHSed@cdc.gov .
+							
+						 
+					 
+					 
+						 Notes:
+						 
+						     
+						 
+						 
+							 
+							 About "Unidentified Counties:"   
+							The label "Unidentified Counties" indicates counties with less
+							than 250,000 population, combined for the state.
+							When viewing data sorted "by County," please note that not all counties
+							in a given state show births that were registered in that county.  
+							The state total displays all linked births and deaths for a given state 
+							(by mother's residence).
+							Some counties are not associated with tabulated births due to
+							confidentiality concerns.
+							Counties with a total population less than 250,000 report births 
+							under "Unidentified Counties"  to protect personal privacy. 
+							See also  About Counties .  
+							
+							
+						 	
+							 About Births to Foreign Residents:   			
+								Births occurring within the United States 
+								to a mother who is a resident of a foreign country  at the time of birth 
+								are excluded from this data set. 
+								The Linked Birth / Infant Death data set defines "Foreign Residents:  
+								State of occurrence is one of the 50 States or the District of Columbia,				 
+								but place of residence of mother is outside of the 50 States and D.C."
+						 				
+							 
+							 About Weight Factors and Totals: 
+								 Infant deaths are weighted so numbers may not exactly add to totals due to rounding.
+								A record weight is added to the linked file to compensate for the
+								infant death records that could not be linked to their corresponding birth certificates. 
+								This procedure was initiated in 1995.  For more information, see 
+								 Weight Factors  
+						 
+							 
+							 About "Unreliable"  rates representing fewer than 20 deaths: 
+							Rates are flagged as "(Unreliable)"  when there are fewer than 
+							20 deaths in the numerator, 
+							because the figure does not meet the NCHS standard of reliability or precision.
+
+						 	
+							 
+							 
+							 
+							  Assurance of Confidentiality Constraints:    
+ 							 Vital statistics data are suppressed due to confidentiality constraints, in order to protect personal privacy.
+							 Data reports for years 1989 and later must meet the  NCHS data use restrictions .
+							  
+ 							 The term  "Suppressed"  
+  							 replaces vital statistics, 
+  							 when the figure represents one through nine (1-9) births or deaths.	
+  							  
+  							 Totals and sub-totals are suppressed when the value falls within scope of the suppression criteria,
+  							 or when the summary value includes a single suppressed figure,
+  							 in order to prevent the inadvertent disclosure of suppressed values.
+  							  
+							 For Linked Birth / Infant Death Records shared on CDC WONDER, 
+							 county level data are available by identified counties with 
+							 a total population of 250,000 or more. 
+							 Deaths of residents of less populated counties 
+							 are reported separately for each state under the aggregate label 
+							 "Unidentified Counties." 
+							  	
+  							 The confidentiality constraints are established by the original data providers.
+							 For more information, please 
+							  contact  the 
+							  data providers .
+							  
+
+							 
+							  Revised privacy policies: 
+							 
+							Effective May 2023,  the following changes occurred for 
+								Linked Birth / Infant Death Records (expanded) shared on CDC WONDER:  
+								 
+								Statistics representing zero deaths are no longer suppressed. 
+								 	
+								Prior to this change, statistics representing zero deaths 
+								were suppressed. 
+								 
+							 
+				  			Effective June 2022,  the following changes occurred for 
+								Linked Birth / Infant Death Records (expanded) shared on CDC WONDER:  
+								 
+									Prior births now living: from single counts 0-30 to single counts 1-10, 11 or more. 
+								 
+									Prior births now dead: from single counts 0-30 to single counts 0-2, 3 or more. 
+								 
+									Prior other pregnancy outcomes: from single counts 0-30 to single counts 0-5, 6 or more. 
+								 
+									Number of previous cesareans: from single increments  0-12 to  0, 1, 2, 3, 4 or more. 
+								 
+									Mother’s height: from single inches increments 30-78 to Under 57 inches, single inches increments 57-72, and 73 inches or more. 
+								 
+									Mother’s weight gain: single pound increments from 0- 97 pounds are no longer available. 
+								 
+									Weekday: from 7 categories for Saturday-Sunday to 2 categories:  Weekday, Weekend.  
+								  
+							 
+							 Effective May 2022,  the following changes occurred for the 
+								Linked Birth / Infant Death Records (expanded) shared on CDC WONDER:  
+								  
+								All statistics representing less than ten (10), or 
+								zero through nine (0-9) 
+								births or deaths were suppressed in query results. 
+								 
+								Prior to this change on May 23, 2022
+							 	national death counts and birth counts were not suppressed for 
+							 	the Linked Birth / Infant Death Records database on CDC WONDER.  
+								 	
+							 	Plurality or Multiple Birth data details for 
+								categories higher than triplets are 
+								included in a single category for Triplet or higher. 
+								 	
+							 	Mother's age groups by single year increments are no longer available. 
+								 
+							
+							   
+						    
+						
+						 
+							 
+							 Data Revisions and Corrections: 
+
+							 
+
+								See  revised privacy policies  above for 
+								specific information on changes affecting data details available  for 
+								Linked Birth / Infant Death Records shared on CDC WONDER. 
+		
+							
+							 
+
+								In October 2022, with the release of data for infants deaths in year 2020,
+								data reporting the residence of the infant at death 
+								are no longer available for years 2017 and later on WONDER.  
+								This data field had reported the state or territory of the 
+								infant's residence at the time of death.  
+								These data are available in the linked death records. 					 
+
+							 
+
+				
+								 
+								From September 9, 2020 until April 19, 2021,  and 
+								from July 22, 2021 until October 13, 2021, 
+								the 2017-2018 infant death rates and births in the "total" row 
+								were incorrect for queries where Mother's Hispanic Origin 
+								was limited in the "expanded"  online database for 
+								Linked Births / Infant Deaths in years 2017-2018.  
+								Before this correction, 
+								the "total" row reported the denominator 
+								for rate calculations as  the number of live births for all 
+								Mother's Hispanic Origin categories,
+								instead of limiting the denominator population 
+								to only the  selected Hispanic Origin categories. 
+								We regret this error and apologize for the inconvenience. 
+
+							 
+
+								From June 18, 2019 until August 12, 2020, 
+								the labels for Massachusetts and Maine were switched for Mother's Birth State data. 
+								Birth statistics for Massachusetts were shown in the results 
+								when data was limited to Maine as the Mother's Birth State, 
+								or when data was grouped by Mother's Birth State and 
+								the row's label reported Maine in the Mother's Birth State column.  
+								Likewise, birth statistics for Maine were shown in the results  
+								when data was limited to Massachusetts as the Mother's Birth State, 
+								or when data was grouped by Mother's Birth State and  
+								the row's label reported Massachusetts in the Mother's Birth State column.  
+								If data was not limited or grouped by Mother's Births State,  
+								then the problem did not impact the results.  
+								We deeply regret this error and apologize for the inconvenience. 
+
+							 
+ 
+								 
+							
+						 
+			  
+		 
+	 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+This page last reviewed: Thursday, September 10, 2026
+ This information is provided as technical reference material.  Please contact us at  cwus@cdc.gov . 
+   
+				 
+			   
+
+			 
+			 
+			
+			 
+			 
+
+			 
+			 
+			 
+			 
+		    
+
+		 
+		
+	   
+
+	 
+	 
+
+		 
+		 
+			 
+  
+	 
+		 
+			 
+				 
+					 About CDC 
+					 Contact Us 
+					 800-232-4636 
+				 
+			 
+			 
+				 
+					 Facebook 
+					 Twitter 
+					 Instagram 
+					 LinkedIn 
+					 Youtube 
+					 Pinterest 
+					 Snapchat 
+					 RSS 
+
+				 
+			 
+		 
+	 
+	 
+		 
+			 
+				 CONTACT CDC 
+				 
+					 
+						 
+							 
+								 
+									 
+								 
+								 
+									 Contact Us 
+								 
+							 
+							 
+								 
+									 
+								 
+								 
+									 Call 800-232-4636 
+								 
+							 
+							 
+								 
+									 
+								 
+								 
+									 Email Us 
+								 
+							 
+						 
+					 
+				 
+			 
+			 
+				 ABOUT CDC 
+				 
+					 
+						 
+							 About CDC 
+							 Jobs 
+							 Funding 
+						 
+					 
+				 
+			 
+			 
+				 POLICIES 
+				 
+					 
+						 
+							 Accessibility 
+							 External Links 
+							 Privacy 
+							 Web Policies 
+							 FOIA 
+							 OIG 
+							 No Fear Act 
+							 Nondiscrimination 
+							 Vulnerability Disclosure Policy 
+							 CDC Archive 
+							 Public Health Publications 
+							 HHS.gov 
+							 USA.gov 
+						 
+					 
+				 
+			 
+			 
+				 CONNECT WITH US 
+				 
+					 
+						 
+							 
+								 Facebook 
+								 Twitter 
+								 Instagram 
+								 LinkedIn 
+							 
+							 
+								 Youtube 
+								 Pinterest 
+								 Snapchat 
+								 Email 
+							 
+						 
+					 
+				 
+			 
+			 
+				 LANGUAGES 
+				 
+					 
+						 
+							 Español 
+							 繁體中文 
+							 Tiếng Việt 
+							 한국어 
+							 Tagalog 
+							 Русский 
+							 العربية 
+							 Kreyòl Ayisyen 
+							 Français 
+							 Polski 
+							 Português 
+							 Italiano 
+							 Deutsch 
+							 日本語 
+							 فارسی 
+							 English 
+						 
+					 
+				 
+			 
+		 
+	 
+ 
+
+			 
+		 
+
+		 
+		 
+			 
+ 
+	 
+		 
+			 Accessibility 
+			 External Links 
+			 Privacy 
+			 Web Policies 
+			 FOIA 
+			 OIG 
+			 No Fear Act 
+			 Nondiscrimination 
+			 Vulnerability Disclosure Policy 
+			 CDC Archive 
+			 Public Health Publications 
+			 HHS.gov 
+			 USA.gov 
+		 
+	 
+ 
+
+
+			 
+		 
+	 
+
+	 
+ 
+
+	 
+
+
+
+
+	 
+ 
+ 
+ 
+     
+     
+
+     
+     
+     
+     
+        var pageHref = window.location.href.toLowerCase(),
+            pageTitle = document.title,
+            hostName = window.location.hostname.toLowerCase(),
+            simpleUrl = pageHref.split('?')[0].split('#')[0];
+
+        // Metrics Carry Over (from TP3)
+        s.prop2 = pageHref;
+        s.prop26 = pageTitle;
+        s.prop30 = pageTitle;
+        s.prop31 = pageHref;
+        s.prop46 = pageHref;
+        s.server = hostName;
+        //Simplified URL
+        s.prop73 = simpleUrl;
+        s.eVar73 = simpleUrl;
+
+        // Update the level variables here.
+        updateVariables(s);
+
+		// Set the referrer value if passed on the querystring from a CDC page-level redirect.
+	    var qs = function (a) {
+	        if (a === '') {
+	            return;
+	        }
+	        var b = {};
+	        for (var i = 0; i < a.length; ++i) {
+	            var p = a[i].split('=');
+	            if (p.length !== 2 || p[0] == "") {
+	                continue;
+	            }
+	            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, ' '));
+	        }
+	        return b;
+	    }(window.location.search.substr(1).split('&'));
+
+		var refParam = qs['CDC_AA_refVal'];
+		if (refParam) {
+		  s.referrer = refParam;
+		}
+     
+
+     
+         
+             
+         
+     
+     
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+	 
+     
+		 
+     
+     
+		 
+     
+     
+         
+     
+     
+         
+	 
+
+	 
+		 
+	 
+
+	 
+		 
+	 
+
+	 
+	 
+		 
+			 
+				 
+			 
+			 
+				 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+		 
+		 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+		 
+		 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+		 
+	 
+	 
+		 
+		 
+		 
+		 
+		 
+		 
+			 
+		 
+		 
+			 
+		 
+	 
+	 
+		 
+		 
+		 
+		 
+		 
+			 
+	 
+
+ 
+
+ 
+     
+     
+         
+         
+     
+     
+         
+         
+     
+     
+         
+         
+             
+         
+	 
+	 
+		 
+		 
+		 
+	 
+     
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+	 
+ 
+
+ 
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+         
+         
+     
+     
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+     
+     
+         
+         
+         
+         
+         
+     
+     
+         
+     
+ 
+
+ 
+	 
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+     
+     
+         
+	 
+ 
+
+ 
+	 
+	 
+		 
+	 
+
+	 
+	 
+		 
+	 
+
+	 
+	 
+		 
+	 
+
+	 
+		 
+	 
+
+	 
+	 
+		 
+		 
+	 
+
+	 
+	 
+		 
+	 
+
+	 
+	 
+		 
+		 
+		 
+		 
+	 
+
+	 
+	 
+		 
+	 
+
+ 
+
+ 
+	 
+     
+         
+         
+         
+         
+         
+     
+     
+		 
+		 
+		 
+	 
+     
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+     
+     
+         
+         
+         
+     
+     
+		 
+		 
+		 
+		 
+		 
+		 
+     
+     
+         
+         
+         
+     
+
+	 
+		 
+	 
+
+	
+
+
+     
+         
+         
+         
+         
+         
+         
+         
+         
+     
+     
+		 
+		 
+		 
+	 
+	 
+		 
+		 
+		 
+	 
+ 
+
+
+	
+ 
+	window.pageOptions = window.pageOptions || {};
+	window.pageOptions.navigation = window.pageOptions.navigation || {}
+	window.pageOptions.navigation.pathToSelect = window.pageOptions.navigation.pathToSelect || window.location.pathname;
+	window.pageOptions.navigation.breadcrumbs = window.pageOptions.navigation.breadcrumbs || {}
+
+	/* -- Turn off breadcrumbs -------------------------------------
+    window.pageOptions.navigation.breadcrumbs = {
+        mode: 'auto',
+        showCurrentPage: false,
+        prefix: [{
+            text: 'TP4 Documentation',
+            href: '/TemplatePackage/4.0/gallery-internal/'
+        }]
+    };
+	------------------------------------------------------------- */
+
+ 
+
+	 
+	 
+		// Default Settings Object
+		window.pageOptions = window.pageOptions || {};
+
+		// Metrics Settings Overrides
+		
+
+		// Navigation Settings Overrides
+		window.pageOptions.navigation = window.pageOptions.navigation || {}
+		window.pageOptions.navigation.pathToSelect = window.pageOptions.navigation.pathToSelect || window.location.pathname;
+
+		window.CDC.tp4.public.appInit(window.pageOptions);
+	 
+
+
+ 
+ 
+
+
+
+
+        
+ 
