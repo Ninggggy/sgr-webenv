@@ -30,12 +30,12 @@ GitHub or Docker credentials. Do not infer package visibility from source visibi
 
 Official instructions: https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility
 
-## Confirmed old-object issue
+## Private staging history and clean migration
 
 A read-only check on 2026-09-26 confirmed that GitHub can still retrieve the
 excluded ZingChart library through a removed initial commit. Main is clean, but
-rewriting main did not remove the old server-side object. Do not make the current
-private repository public in this state. The issue is recorded in
+rewriting main did not remove the old server-side object. The affected repository is retained privately as
+`sgr-webenv-private-staging`; it must not be made public. The issue is recorded in
 `verification/remote-history-review.json` without republishing the library.
 
 A safe publication route is a new repository containing only the current
@@ -43,7 +43,12 @@ whitelisted source snapshot, with no parent history or fork relationship to the
 private staging repository. Retain the staging repository privately so its draft
 assets, build evidence and rollback material are not lost; re-upload only cleared
 assets to the clean repository. Repository names and GHCR associations would
-need migration. This change has not been performed.
+need migration. The user authorized this migration. A new independent `sgr-webenv` repository
+has been created and populated with a clean source snapshot; the excluded old
+commit/file cannot be retrieved there. The previous staging repository, draft
+assets and audit history are retained privately. Assets are being migrated.
+Existing GHCR packages also need their connected repository checked after the
+rename; the OCI source label alone is not evidence of that connection.
 
 GitHub's [history-removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 explains that cached references may remain after a force-push and that Support
