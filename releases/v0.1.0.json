@@ -92,7 +92,7 @@
       ],
       "distribution_status": "pending",
       "data_redistribution": "descriptive metadata CC0; no PDFs",
-      "acceptance": "fresh full index, 100 background, 40 exploration, 23 HTTP scope and small-index rebuild checks passed; full legacy replay and public install pending",
+      "acceptance": "eight records information replay (1,860 candidate detail visits, 76 pages), fresh full index, 100 background, 40 exploration, 23 HTTP scope, boolean, lifecycle and visual packaging checks completed; anonymous install pending",
       "data_archive_status": "uploaded-private-draft",
       "expected_records": 1685244,
       "expected_versions": 2787373,

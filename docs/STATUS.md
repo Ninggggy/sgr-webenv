@@ -10,7 +10,7 @@ independent of repository visibility: see [publication steps](PUBLICATION.md).
 | Environment | Independent packaged-install evidence | Remaining limits |
 |---|---|---|
 | Census 0.2.1 | 25 table exports; exact-fraction reconstruction of eight CG/GO; 36 customization checks; CSV/Excel comparison; lifecycle/isolation pass. Actual draft-Release archive downloaded and installed in a second clean directory; all 25 exports and eight exact-fraction answers passed again. | Declared partial geographic/product coverage and visual differences; anonymous installation pending. |
-| arXiv 0.1.0 | Fresh complete index of 1,685,244 records; source archive has 2,787,373 version rows. 100 background papers, 40 exploration queries, 14 calendar/navigation actions and 23 HTTP feature-boundary checks pass. Three-record rebuild succeeds and partial-index startup is refused. | Full old-task detail replay is still running; lifecycle and anonymous installation pending; visual packaging comparison completed with documented differences. |
+| arXiv 0.1.0 | Fresh complete index of 1,685,244 records; source archive has 2,787,373 version rows. 100 background papers, 40 exploration queries, 14 calendar/navigation actions and 23 HTTP feature-boundary checks pass. Three-record rebuild succeeds and partial-index startup is refused. | All eight records passed information replay: 1,860 candidate detail visits over 76 result pages. Reset/restart and full-index persistence checks passed. Visual differences remain documented; anonymous installation pending. |
 | WONDER 0.3 | 70 webpage queries; four CG/GO and 48 source-count checks pass in an independent private install; session reset, isolation and restart pass. | Raw databases withheld for unresolved small-cell redistribution review. No complete public install. |
 | Wateroffice 0.1.0-dev | 41 information-access checks across five workflows; session reset, isolation and restart pass. Downloaded Release archive passed required-file and SQLite checks. | Development release, replacement basemap and documented coverage/visual limits; no full visual or autonomous-task acceptance. |
 | NOAA 2 | Data archive downloaded and validated. Source and upstream notices prepared. | Proprietary ZingChart absent; no released image or complete install. New packaged-browser replay is not claimed. Rank/tie differences remain. |
@@ -64,8 +64,7 @@ were preserved throughout.
 
 ## Remaining publication work
 
-Finish arXiv replay and lifecycle checks; consolidate final per-site
-results. Keep NOAA/WONDER incomplete status explicit. Set final Release tag/URLs
+arXiv full replay and lifecycle checks are complete. Keep NOAA/WONDER incomplete status explicit. Set final Release tag/URLs
 only when publishing. Verify repository, assets and every applicable GHCR package
 anonymously after visibility changes. Current private download success does not
 substitute for that check. See [operations and rollback](OPERATIONS.md).

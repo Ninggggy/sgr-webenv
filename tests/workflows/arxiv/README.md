@@ -46,3 +46,9 @@ python3 tests/workflows/arxiv/exploration.py --container sgr-arxiv-v0-1-0_browse
 These scripts check rendering and resource availability, not search relevance.
 The background IDs are preserved in the published verification report. Reset the
 browser before long independent batches or export evidence between batches.
+
+`boolean_search.py` can be passed through `docker exec -i <web-container>
+python3 -` in the same way as `http_scope.py`. It exhausts pagination for two
+ordinary terms over a fixed month and verifies AND/intersection, OR/union and
+NOT/difference. This is a search-algebra consistency check, not an independent
+relevance oracle or a replacement for source-based task adjudication.

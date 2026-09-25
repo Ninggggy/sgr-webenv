@@ -1,0 +1,61 @@
+{
+  "scope": "New packaged-index restricted-browser replay of all four workflows/current eight records. All result pages enumerated and every candidate detail opened. Existing task source/rubric adjudication is not replaced by this information-access check. No autonomous model run.",
+  "results": [
+    {
+      "task": "arxiv_001",
+      "variants": [
+        "arxiv_001",
+        "arxiv_001-g"
+      ],
+      "result_count": 9,
+      "result_pages": 1,
+      "candidate_detail_pages_checked": 9,
+      "missing_required_ids": [],
+      "missing_dates": 0,
+      "missing_publication_clues": 0,
+      "information_replay_passed": true
+    },
+    {
+      "task": "arxiv_002",
+      "variants": [
+        "arxiv_002",
+        "arxiv_002-g"
+      ],
+      "result_count": 97,
+      "result_pages": 4,
+      "candidate_detail_pages_checked": 97,
+      "missing_required_ids": [],
+      "missing_dates": 0,
+      "missing_publication_clues": 0,
+      "information_replay_passed": true
+    },
+    {
+      "task": "arxiv_003",
+      "variants": [
+        "arxiv_003",
+        "arxiv_003-g"
+      ],
+      "result_count": 1199,
+      "result_pages": 48,
+      "candidate_detail_pages_checked": 1199,
+      "missing_required_ids": [],
+      "missing_dates": 0,
+      "missing_publication_clues": 0,
+      "information_replay_passed": true
+    },
+    {
+      "task": "arxiv_004",
+      "variants": [
+        "arxiv_004",
+        "arxiv_004-g"
+      ],
+      "result_count": 555,
+      "result_pages": 23,
+      "candidate_detail_pages_checked": 555,
+      "missing_required_ids": [],
+      "missing_dates": 0,
+      "missing_publication_clues": 0,
+      "information_replay_passed": true
+    }
+  ]
+}
