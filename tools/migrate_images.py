@@ -20,4 +20,6 @@ for image in images:
  tagged=json.loads(subprocess.check_output(['docker','image','inspect',image],text=True))[0]
  assert tagged['Id']==info['Id'],'Tagging must not change validated image content'
  subprocess.run(['docker','push',image],check=True)
+ # Register this accessible repository as a layer source for later pushes.
+ subprocess.run(['docker','pull','--platform','linux/amd64',image],check=True)
  print('Migrated validated image:',image,flush=True)

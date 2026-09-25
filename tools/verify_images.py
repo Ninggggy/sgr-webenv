@@ -25,3 +25,6 @@ for image in images:
  results.append(row)
 out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')
 print(out.read_text())
+
+if os.environ.get("GITHUB_TOKEN") and any(not r.get("association_matches") for r in results):
+ raise SystemExit("Package association with the new repository is not verified; inspect image-verification.json")
