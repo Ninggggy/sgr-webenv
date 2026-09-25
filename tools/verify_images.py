@@ -8,6 +8,18 @@ images=['ghcr.io/ninggggy/sgr-webenv-release-runtime:1','ghcr.io/ninggggy/sgr-we
 for site,spec in manifest['environments'].items():
  if site!='noaa':images.extend(spec['images'].values())
 results=[]
+# The REST package response can omit repository. Query the repository's actual
+# GraphQL package connection instead of treating an absent REST field as proof.
+associations={}
+token=os.environ.get('GITHUB_TOKEN')
+if token:
+ query='query { repository(owner:"Ninggggy", name:"sgr-webenv") { packages(first:100) { pageInfo { hasNextPage } nodes { name repository { nameWithOwner } } } } }'
+ req=urllib.request.Request('https://api.github.com/graphql',data=json.dumps({'query':query}).encode(),headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','User-Agent':'sgr-webenv-verification'})
+ with urllib.request.urlopen(req,timeout=30) as r:g=json.load(r)
+ if g.get('errors'):raise SystemExit('Package association query failed: '+json.dumps(g['errors']))
+ connection=g['data']['repository']['packages']
+ if connection['pageInfo']['hasNextPage']:raise SystemExit('Package association pagination needs extending')
+ associations={p['name']:(p.get('repository') or {}).get('nameWithOwner') for p in connection['nodes']}
 for image in images:
  subprocess.run(['docker','pull','--platform','linux/amd64',image],check=True)
  info=json.loads(subprocess.check_output(['docker','image','inspect',image],text=True))[0]
@@ -20,7 +32,7 @@ for image in images:
   req=urllib.request.Request('https://api.github.com/users/Ninggggy/packages/container/'+package,headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','User-Agent':'sgr-webenv-verification'})
   try:
    with urllib.request.urlopen(req,timeout=30) as r:p=json.load(r)
-   row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=(p.get('repository') or {}).get('full_name');row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv'
+   row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=associations.get(package);row['association_evidence']='GraphQL repository.packages';row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv'
   except urllib.error.HTTPError as e:row['visibility']='unavailable HTTP '+str(e.code)
  results.append(row)
 out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')
