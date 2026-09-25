@@ -1,6 +1,6 @@
 # Public visibility and anonymous validation
 
-Repository and Release are still private/draft. All 11 new packages passed authenticated pulls; their actual repository
+The repository is now public; the Release remains a draft. All 11 new packages passed authenticated pulls; their actual repository
 association remains unverified through the available APIs. This is not anonymous installation acceptance. GHCR granular package visibility
 is separate from repository visibility. The official REST package API does not
 document a visibility-change operation; use each package's web **Package settings**
@@ -31,7 +31,7 @@ code, not the withheld WONDER databases or NOAA's proprietary chart component.
 | [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Private; check linked repository, then set Public |
 
 The repository/Release must remain marked candidate until the declared checks
-pass. The draft uses the final `v0.1.0` asset URLs; verify every download after publication. Anonymous tests must use no
+pass. The manifest uses final `v0.1.0` asset URLs. GitHub currently reports an internal `untagged-...` draft tag; set `v0.1.0` when publishing and verify every download. Anonymous tests must use no
 GitHub or Docker credentials. Do not infer package visibility from source visibility.
 
 Official instructions: https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility

@@ -1,7 +1,6 @@
 # Release preparation status
 
-Version: **v0.1.0 candidate**, updated 2026-09-26. Repository and data Release
-remain private/draft. All 11 non-NOAA images were migrated and passed authenticated pulls under
+Version: **v0.1.0 candidate**, updated 2026-09-26. The repository is public; the data Release remains a draft. All 11 non-NOAA images were migrated and passed authenticated pulls under
 the new package names. API-based repository association checks remain unresolved;
 anonymous downloads and pulls have not passed yet. Package visibility is
 independent of repository visibility: see [publication steps](PUBLICATION.md).
@@ -82,3 +81,14 @@ substitute for that check. See [operations and rollback](OPERATIONS.md).
 Visual comparison details and a non-answer form screenshot pair are in [VISUAL_CHECKS](VISUAL_CHECKS.md).
 
 Point-in-time memory and unpacked data sizes are recorded in `verification/resource-observations.json`; they are not peak-install or minimum hardware requirements. The four runnable environments also passed 24 direct private-path requests (`verification/private-paths.json`).
+
+## Anonymous recheck after repository visibility change
+
+The source repository returned HTTP 200 and unauthenticated `git ls-remote`
+succeeded. The old staging repository remains private. All five data URLs
+returned HTTP 404 because the Release is still a draft. All 11 new GHCR
+package pages returned HTTP 404, and all 11 pulls with an empty Docker
+credential directory failed. The package visibility change is therefore not
+verified; public repository visibility alone is insufficient. Reports:
+`verification/anonymous-publication.json` and `verification/anonymous-package-pages.json`.
+No environment is promoted to public-install acceptance by this result.

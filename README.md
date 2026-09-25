@@ -2,7 +2,7 @@
 
 Reproducible offline website environments for SGR-BENCH. [中文说明](README.zh-CN.md).
 
-**Release status: private preparation candidate. No public release or clean-install acceptance is claimed yet.**
+**Release status: public source, distribution candidate. Data assets remain draft and GHCR images do not yet pass anonymous pulls. Public-install acceptance is not claimed.**
 See [release status](docs/STATUS.md), [known differences](docs/SCOPE.md), and [third-party terms](docs/THIRD_PARTY.md).
 
 This repository contains independent reconstructions of NOAA Climate at a Glance,

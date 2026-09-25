@@ -1,0 +1,117 @@
+{
+  "scope": "No Authorization header or GitHub credential. Docker pulls use an empty credential directory; daemon layers may already be cached. Not an independent-machine installation.",
+  "checks": [
+    {
+      "kind": "anonymous_repository",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "kind": "anonymous_asset",
+      "name": "noaa-data-v0.1.0.tar.gz",
+      "status": 404,
+      "expected_bytes": 22123102,
+      "content_length": "9",
+      "passed": false
+    },
+    {
+      "kind": "anonymous_asset",
+      "name": "census-data-v0.1.0.tar.gz",
+      "status": 404,
+      "expected_bytes": 131009519,
+      "content_length": "9",
+      "passed": false
+    },
+    {
+      "kind": "anonymous_asset",
+      "name": "arxiv-data-v0.1.0.tar.gz.part-000",
+      "status": 404,
+      "expected_bytes": 1073741824,
+      "content_length": null,
+      "passed": false
+    },
+    {
+      "kind": "anonymous_asset",
+      "name": "arxiv-data-v0.1.0.tar.gz.part-001",
+      "status": 404,
+      "expected_bytes": 270783027,
+      "content_length": null,
+      "passed": false
+    },
+    {
+      "kind": "anonymous_asset",
+      "name": "wateroffice-data-v0.1.0.tar.gz",
+      "status": 404,
+      "expected_bytes": 399577798,
+      "content_length": "9",
+      "passed": false
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-runtime:1",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-browser-base:1",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-census-web:0.2.1",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-census-browser:0.2",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-wonder-web:0.3",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-wonder-browser:0.2",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-web:0.1.0",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-browser:0.1.0",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-search:0.1.0",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-web:0.1.0-dev",
+      "passed": false,
+      "exit_code": 1
+    },
+    {
+      "kind": "anonymous_image_pull",
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-browser:0.1.0-dev",
+      "passed": false,
+      "exit_code": 1
+    }
+  ],
+  "passed": false
+}
