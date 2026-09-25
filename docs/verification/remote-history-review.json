@@ -4,5 +4,7 @@
   "excluded_library_retrievable_by_old_ref": true,
   "library_bytes": 876721,
   "main_branch_contains_excluded_library": false,
-  "public_transition": "blocked until old GitHub objects are removed or publication is transferred to a genuinely clean repository"
+  "public_transition": "Old affected repository retained privately as sgr-webenv-private-staging. New independent sgr-webenv repository populated from whitelisted snapshot; old commit unavailable (API422 No commit found), old excluded library unavailable (API404).",
+  "migration_authorized": true,
+  "new_repository_is_fork": false
 }

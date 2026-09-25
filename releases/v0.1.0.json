@@ -17,7 +17,7 @@
         {
           "name": "noaa-data-v0.1.0.tar.gz",
           "bytes": 22123102,
-          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/noaa-data-v0.1.0.tar.gz"
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/noaa-data-v0.1.0.tar.gz"
         }
       ],
       "distribution_status": "blocked-zingchart-oem",
@@ -43,7 +43,7 @@
         {
           "name": "census-data-v0.1.0.tar.gz",
           "bytes": 131009519,
-          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/census-data-v0.1.0.tar.gz"
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/census-data-v0.1.0.tar.gz"
         }
       ],
       "distribution_status": "pending",
@@ -82,12 +82,12 @@
         {
           "name": "arxiv-data-v0.1.0.tar.gz.part-000",
           "bytes": 1073741824,
-          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/arxiv-data-v0.1.0.tar.gz.part-000"
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/arxiv-data-v0.1.0.tar.gz.part-000"
         },
         {
           "name": "arxiv-data-v0.1.0.tar.gz.part-001",
           "bytes": 270783027,
-          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/arxiv-data-v0.1.0.tar.gz.part-001"
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/arxiv-data-v0.1.0.tar.gz.part-001"
         }
       ],
       "distribution_status": "pending",
@@ -130,7 +130,7 @@
         {
           "name": "wateroffice-data-v0.1.0.tar.gz",
           "bytes": 399577798,
-          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/untagged-1294003e9655fc50c583/wateroffice-data-v0.1.0.tar.gz"
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/wateroffice-data-v0.1.0.tar.gz"
         }
       ],
       "distribution_status": "pending",
