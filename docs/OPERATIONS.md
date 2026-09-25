@@ -26,6 +26,12 @@ Use the same `--state-dir /your/writable/path` on every command to relocate data
 `prepare` downloads archives, verifies expected sizes, safely extracts them,
 checks SQLite integrity and builds the arXiv search index. Allow space for the
 compressed parts, assembled archive, uncompressed data, images and index.
+For arXiv, plan a host with at least 24 GiB available for the search service plus
+space for the web/browser and operating system. Its 24 GiB container bound and
+2 GiB Java heap match the successful author build; this is a conservative
+configuration, not a measured minimum RAM requirement. The public index is
+persistent on disk, unlike the RAM-backed author validation used to preserve
+the server root free-space floor.
 `start` reuses prepared data; for arXiv it refuses an index with an incomplete
 record count. Do not run `prepare` again merely to restart an existing index:
 the importer refuses to overwrite it. Diagnose failed builds before creating a

@@ -46,8 +46,9 @@ and unrelated user data remain unchanged. Only existing/free resources are used.
 The native validation directory is independent of production. arXiv's fresh
 index occupies about 4.6 GiB in a host RAM-backed directory. This is a measured
 index size, not a minimum-memory claim. The public configuration uses persistent
-disk, an 8 GiB search-container limit and 2 GiB Java heap; full-build memory on
-that disk-backed configuration is not established by the RAM-backed test.
+disk and now adopts the successful test's 24 GiB search-container bound with a
+2 GiB Java heap. This replaces the unverified 8 GiB default. Minimum memory and
+full-build peak on persistent disk are not established by the RAM-backed test.
 
 The first author index attempt used a 16 GiB container tmpfs with an 8 GiB memory
 limit and was OOM-killed. The successful retry used a host RAM directory and a
