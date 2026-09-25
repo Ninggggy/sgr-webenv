@@ -37,7 +37,7 @@ author research material and the proprietary chart library. A bounded scan of
 scan of 12,644 packaged JSON files found none of the tested author-answer,
 credential or personal-path patterns. These checks are not an exhaustive security
 or legal audit. Main history was cleaned of inadvertently copied withheld files;
-a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. Data assets and GHCR association are being migrated. See `PUBLICATION.md`.
+a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. Data assets are being migrated; unchanged validated images use new `sgr-webenv-release-*` packages because the new repository token cannot access the old private packages. See `PUBLICATION.md`.
 
 ## Resource measurements and failed attempts
 

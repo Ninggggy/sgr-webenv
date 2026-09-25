@@ -11,17 +11,17 @@ code, not the withheld WONDER databases or NOAA's proprietary chart component.
 
 | Package | Current verified visibility |
 |---|---|
-| [sgr-webenv-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-runtime) | private |
-| [sgr-webenv-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-browser-base) | private |
-| [sgr-webenv-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-census-web) | private |
-| [sgr-webenv-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-census-browser) | private |
-| [sgr-webenv-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wonder-web) | private |
-| [sgr-webenv-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wonder-browser) | private |
-| [sgr-webenv-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-web) | private |
-| [sgr-webenv-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-browser) | private |
-| [sgr-webenv-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-arxiv-search) | private |
-| [sgr-webenv-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wateroffice-web) | private |
-| [sgr-webenv-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-wateroffice-browser) | private |
+| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | private |
+| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | private |
+| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | private |
+| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | private |
+| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | private |
+| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | private |
+| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | private |
+| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | private |
+| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | private |
+| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | private |
+| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | private |
 
 The repository/Release must remain marked candidate until the declared checks
 pass. Before publishing a stable tag, replace draft `untagged-...` asset URLs with
@@ -47,8 +47,12 @@ need migration. The user authorized this migration. A new independent `sgr-weben
 has been created and populated with a clean source snapshot; the excluded old
 commit/file cannot be retrieved there. The previous staging repository, draft
 assets and audit history are retained privately. Assets are being migrated.
-Existing GHCR packages also need their connected repository checked after the
-rename; the OCI source label alone is not evidence of that connection.
+The old GHCR packages were not readable by the new repository token (HTTP 403).
+The unchanged validated images are being published under `sgr-webenv-release-*`
+so their package association can be established with the new repository. Old
+packages remain untouched for rollback. Use only the **new package links above**
+for public visibility settings. The OCI source label alone is not evidence of
+the actual GitHub package/repository connection.
 
 GitHub's [history-removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 explains that cached references may remain after a force-push and that Support
