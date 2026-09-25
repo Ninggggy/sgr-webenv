@@ -1,27 +1,34 @@
 # Public visibility and anonymous validation
 
-Repository and Release are still private/draft. Authenticated image pulls passed before migration; the new package verification
-is in progress. This is not anonymous installation acceptance. GHCR granular package visibility
+Repository and Release are still private/draft. All 11 new packages passed authenticated pulls; their actual repository
+association remains unverified through the available APIs. This is not anonymous installation acceptance. GHCR granular package visibility
 is separate from repository visibility. The official REST package API does not
 document a visibility-change operation; use each package's web **Package settings**
 → **Change visibility** → **Public** when publication is ready.
 
+For each **new** package below, first check the linked repository on the package
+page. It must be `Ninggggy/sgr-webenv`. If no repository is linked, choose
+**Connect repository** and select the new `sgr-webenv`. If it points to private
+staging, correct the connection in Package settings. Do not publish the staging
+repository or old packages. The API checks could not establish this connection;
+this is an unverified check, not a claim that the connection is absent.
+
 Never send an account token in chat. These packages contain application/browser
 code, not the withheld WONDER databases or NOAA's proprietary chart component.
 
-| Package | Required visibility action |
+| Package | Verified state / manual action |
 |---|---|
-| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | Set public after upload and association verification |
-| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | Set public after upload and association verification |
-| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | Set public after upload and association verification |
-| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | Set public after upload and association verification |
-| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Set public after upload and association verification |
-| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | Set public after upload and association verification |
-| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | Set public after upload and association verification |
-| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Set public after upload and association verification |
-| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Set public after upload and association verification |
-| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | Set public after upload and association verification |
-| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Set public after upload and association verification |
+| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Private; check linked repository, then set Public |
 
 The repository/Release must remain marked candidate until the declared checks
 pass. The draft uses the final `v0.1.0` asset URLs; verify every download after publication. Anonymous tests must use no
@@ -47,7 +54,7 @@ has been created and populated with a clean source snapshot; the excluded old
 commit/file cannot be retrieved there. The previous staging repository, draft
 assets and audit history are retained privately. All five cleared data assets have been migrated; their contents match the validated archives.
 The old GHCR packages were not readable by the new repository token (HTTP 403).
-The unchanged validated images are being published under `sgr-webenv-release-*`
+The unchanged validated images have been published privately under `sgr-webenv-release-*`
 so their package association can be established with the new repository. Old
 packages remain untouched for rollback. Use only the **new package links above**
 for public visibility settings. The OCI source label alone is not evidence of

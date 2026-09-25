@@ -32,7 +32,7 @@ for image in images:
   req=urllib.request.Request('https://api.github.com/users/Ninggggy/packages/container/'+package,headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','User-Agent':'sgr-webenv-verification'})
   try:
    with urllib.request.urlopen(req,timeout=30) as r:p=json.load(r)
-   row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=associations.get(package);row['association_evidence']='GraphQL repository.packages';row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv'
+   row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=associations.get(package);row['association_evidence']='GraphQL repository.packages';row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv';row['association_status']='verified' if row['association_matches'] else 'unverified; inspect package web page'
   except urllib.error.HTTPError as e:row['visibility']='unavailable HTTP '+str(e.code)
  results.append(row)
 out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')

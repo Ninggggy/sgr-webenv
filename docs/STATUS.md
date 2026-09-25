@@ -1,8 +1,8 @@
 # Release preparation status
 
 Version: **v0.1.0 candidate**, updated 2026-09-26. Repository and data Release
-remain private/draft. The 11 non-NOAA images passed authenticated pulls before repository migration.
-Publication under the new package names and association checks are in progress;
+remain private/draft. All 11 non-NOAA images were migrated and passed authenticated pulls under
+the new package names. API-based repository association checks remain unresolved;
 anonymous downloads and pulls have not passed yet. Package visibility is
 independent of repository visibility: see [publication steps](PUBLICATION.md).
 
@@ -23,12 +23,20 @@ No task files or author evidence are mounted in runtime containers.
 
 ## Build, downloads and privacy
 
-The full shared runtime/browser dependency chain and four non-NOAA image families
-were built and uploaded using a temporary self-hosted Actions runner. All 11
-original images pulled with authentication are Linux amd64. The earlier
-`verification/registry-pulls.json` records the pre-migration pull; it does not
-verify the new package names. A temporary runner is active for package migration
-and will be unregistered after verification. No metered hosted build was used.
+The shared runtime/browser dependency chain and four non-NOAA image families
+were built and migrated using a temporary self-hosted Actions runner. All 11
+new packages pulled successfully and are Linux amd64, with unchanged image
+content (`verification/image-migration.json`, `verification/registry-pulls.json`).
+The association check failed: neither the REST response nor GraphQL repository
+package listing established the package/repository connection. This is recorded
+as unverified, not proof that association is absent. The OCI label is correct,
+but is not substituted for actual association evidence. Web confirmation is
+required together with the separate public-visibility change.
+
+Migration run `36177201820` succeeded. Verification runs `36179035281` and
+`36179277485` pulled every image but failed the association check. The temporary
+runner was then unregistered; GitHub reports zero runners, and local runner
+registration credentials were removed. No metered hosted build was used.
 
 Four datasets are uploaded as five private draft assets. arXiv is split below
 GitHub's per-asset limit and rebuilt locally into a search index. Downloaded
@@ -39,7 +47,7 @@ author research material and the proprietary chart library. A bounded scan of
 scan of 12,644 packaged JSON files found none of the tested author-answer,
 credential or personal-path patterns. These checks are not an exhaustive security
 or legal audit. Main history was cleaned of inadvertently copied withheld files;
-a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. All five cleared data assets have been migrated and compared byte-for-byte with the validated archives (`verification/release-migration.json`); unchanged validated images use new `sgr-webenv-release-*` packages because the new repository token cannot access the old private packages. See `PUBLICATION.md`.
+a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. All five cleared data assets have been migrated and compared byte-for-byte with the validated archives (`verification/release-migration.json`); unchanged validated images have been uploaded to new `sgr-webenv-release-*` packages because the new repository token cannot access the old private packages. See `PUBLICATION.md`.
 
 ## Resource measurements and failed attempts
 
