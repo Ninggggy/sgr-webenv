@@ -1,7 +1,8 @@
 # Release preparation status
 
 Version: **v0.1.0 candidate**, updated 2026-09-26. Repository and data Release
-remain private/draft. All 11 non-NOAA images passed authenticated GHCR pulls;
+remain private/draft. The 11 non-NOAA images passed authenticated pulls before repository migration.
+Publication under the new package names and association checks are in progress;
 anonymous downloads and pulls have not passed yet. Package visibility is
 independent of repository visibility: see [publication steps](PUBLICATION.md).
 
@@ -24,9 +25,10 @@ No task files or author evidence are mounted in runtime containers.
 
 The full shared runtime/browser dependency chain and four non-NOAA image families
 were built and uploaded using a temporary self-hosted Actions runner. All 11
-images pulled with authentication are Linux amd64 and associated with this
-repository (`verification/registry-pulls.json`). The runner is unregistered and
-its registration credentials removed. No metered hosted build was used.
+original images pulled with authentication are Linux amd64. The earlier
+`verification/registry-pulls.json` records the pre-migration pull; it does not
+verify the new package names. A temporary runner is active for package migration
+and will be unregistered after verification. No metered hosted build was used.
 
 Four datasets are uploaded as five private draft assets. arXiv is split below
 GitHub's per-asset limit and rebuilt locally into a search index. Downloaded
@@ -37,7 +39,7 @@ author research material and the proprietary chart library. A bounded scan of
 scan of 12,644 packaged JSON files found none of the tested author-answer,
 credential or personal-path patterns. These checks are not an exhaustive security
 or legal audit. Main history was cleaned of inadvertently copied withheld files;
-a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. Data assets are being migrated; unchanged validated images use new `sgr-webenv-release-*` packages because the new repository token cannot access the old private packages. See `PUBLICATION.md`.
+a direct read-only check confirmed the excluded chart library remains retrievable through an old GitHub commit. The affected repository was renamed to private staging with user authorization. This repository is a new independent clean snapshot; the excluded old commit and file are not retrievable here. All five cleared data assets have been migrated and compared byte-for-byte with the validated archives (`verification/release-migration.json`); unchanged validated images use new `sgr-webenv-release-*` packages because the new repository token cannot access the old private packages. See `PUBLICATION.md`.
 
 ## Resource measurements and failed attempts
 
@@ -65,8 +67,7 @@ were preserved throughout.
 
 ## Remaining publication work
 
-arXiv full replay and lifecycle checks are complete. Keep NOAA/WONDER incomplete status explicit. Set final Release tag/URLs
-only when publishing. Verify repository, assets and every applicable GHCR package
+arXiv full replay and lifecycle checks are complete. Keep NOAA/WONDER incomplete status explicit. The draft tag and asset URLs now use `v0.1.0`. Verify repository, assets and every applicable GHCR package
 anonymously after visibility changes. Current private download success does not
 substitute for that check. See [operations and rollback](OPERATIONS.md).
 

@@ -1,7 +1,7 @@
 # Public visibility and anonymous validation
 
-Repository and Release are still private/draft. Authenticated image pull passed;
-this is not anonymous installation acceptance. GHCR granular package visibility
+Repository and Release are still private/draft. Authenticated image pulls passed before migration; the new package verification
+is in progress. This is not anonymous installation acceptance. GHCR granular package visibility
 is separate from repository visibility. The official REST package API does not
 document a visibility-change operation; use each package's web **Package settings**
 → **Change visibility** → **Public** when publication is ready.
@@ -9,23 +9,22 @@ document a visibility-change operation; use each package's web **Package setting
 Never send an account token in chat. These packages contain application/browser
 code, not the withheld WONDER databases or NOAA's proprietary chart component.
 
-| Package | Current verified visibility |
+| Package | Required visibility action |
 |---|---|
-| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | private |
-| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | private |
-| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | private |
-| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | private |
-| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | private |
-| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | private |
-| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | private |
-| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | private |
-| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | private |
-| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | private |
-| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | private |
+| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | Set public after upload and association verification |
+| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | Set public after upload and association verification |
+| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | Set public after upload and association verification |
+| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | Set public after upload and association verification |
+| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Set public after upload and association verification |
+| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | Set public after upload and association verification |
+| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | Set public after upload and association verification |
+| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Set public after upload and association verification |
+| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Set public after upload and association verification |
+| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | Set public after upload and association verification |
+| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Set public after upload and association verification |
 
 The repository/Release must remain marked candidate until the declared checks
-pass. Before publishing a stable tag, replace draft `untagged-...` asset URLs with
-the final release URLs and verify every download. Anonymous tests must use no
+pass. The draft uses the final `v0.1.0` asset URLs; verify every download after publication. Anonymous tests must use no
 GitHub or Docker credentials. Do not infer package visibility from source visibility.
 
 Official instructions: https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility
@@ -46,7 +45,7 @@ assets to the clean repository. Repository names and GHCR associations would
 need migration. The user authorized this migration. A new independent `sgr-webenv` repository
 has been created and populated with a clean source snapshot; the excluded old
 commit/file cannot be retrieved there. The previous staging repository, draft
-assets and audit history are retained privately. Assets are being migrated.
+assets and audit history are retained privately. All five cleared data assets have been migrated; their contents match the validated archives.
 The old GHCR packages were not readable by the new repository token (HTTP 403).
 The unchanged validated images are being published under `sgr-webenv-release-*`
 so their package association can be established with the new repository. Old
