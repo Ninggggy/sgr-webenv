@@ -6,7 +6,7 @@ on:
         description: Dependency chain or environment to build
         type: choice
         required: true
-        options: [base, census, wonder, arxiv, wateroffice, verify]
+        options: [base, census, wonder, arxiv, wateroffice, verify, migrate]
 permissions:
   contents: read
   packages: write
@@ -25,10 +25,13 @@ jobs:
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: printf '%s' "$GHCR_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
       - name: Build and push
-        if: inputs.site != 'verify'
+        if: inputs.site != 'verify' && inputs.site != 'migrate'
         env:
           SITE: ${{ inputs.site }}
         run: python3 tools/build.py "$SITE" --push
+      - name: Publish validated local images to migrated packages
+        if: inputs.site == 'migrate'
+        run: python3 tools/migrate_images.py
       - name: Verify registry images
         if: inputs.site == 'verify'
         env:

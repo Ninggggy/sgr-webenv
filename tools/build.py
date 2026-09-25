@@ -3,7 +3,7 @@
 import argparse,json,subprocess,shutil,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-PREFIX='ghcr.io/ninggggy/sgr-webenv-'
+PREFIX='ghcr.io/ninggggy/sgr-webenv-release-'
 def build(tag,file,context,args=()):
  if shutil.disk_usage('/').free<5*1024**3:raise RuntimeError('Root free space below 5 GiB; build stopped')
  subprocess.run(['docker','build','--platform','linux/amd64','--label','org.opencontainers.image.source=https://github.com/Ninggggy/sgr-webenv','-t',PREFIX+tag,'-f',str(file),*args,str(context)],check=True)

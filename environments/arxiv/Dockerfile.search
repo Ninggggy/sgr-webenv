@@ -1,4 +1,4 @@
-ARG BASE=ghcr.io/ninggggy/sgr-webenv-runtime:1
+ARG BASE=ghcr.io/ninggggy/sgr-webenv-release-runtime:1
 FROM ${BASE} AS native
 RUN mkdir -p /native && curl --fail --location --retry 3 --retry-all-errors --connect-timeout 30 --max-time 300 https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/4.5.1/jna-4.5.1.jar -o /tmp/jna.jar && unzip -j /tmp/jna.jar com/sun/jna/linux-x86-64/libjnidispatch.so -d /native && rm /tmp/jna.jar
 FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.4

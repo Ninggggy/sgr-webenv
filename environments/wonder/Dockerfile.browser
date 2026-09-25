@@ -1,4 +1,4 @@
-ARG BASE=ghcr.io/ninggggy/sgr-webenv-browser-base:1
+ARG BASE=ghcr.io/ninggggy/sgr-webenv-release-browser-base:1
 FROM ${BASE}
 WORKDIR /browser
 COPY runner/bridge.py /browser/bridge.py

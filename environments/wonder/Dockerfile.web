@@ -1,4 +1,4 @@
-ARG BASE=ghcr.io/ninggggy/sgr-webenv-runtime:1
+ARG BASE=ghcr.io/ninggggy/sgr-webenv-release-runtime:1
 FROM ${BASE}
 WORKDIR /app
 COPY app/ /app/

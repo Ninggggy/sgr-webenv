@@ -4,7 +4,7 @@ import json,os,subprocess,urllib.request,urllib.error
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 manifest=json.loads((root/'releases/v0.1.0.json').read_text())
-images=['ghcr.io/ninggggy/sgr-webenv-runtime:1','ghcr.io/ninggggy/sgr-webenv-browser-base:1']
+images=['ghcr.io/ninggggy/sgr-webenv-release-runtime:1','ghcr.io/ninggggy/sgr-webenv-release-browser-base:1']
 for site,spec in manifest['environments'].items():
  if site!='noaa':images.extend(spec['images'].values())
 results=[]

@@ -10,8 +10,8 @@
       "port": 8080,
       "legacy_records": 4,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-noaa-web:2",
-        "browser": "ghcr.io/ninggggy/sgr-webenv-noaa-browser:2"
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-noaa-web:2",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-noaa-browser:2"
       },
       "data_assets": [
         {
@@ -36,8 +36,8 @@
       "port": 8081,
       "legacy_records": 8,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-census-web:0.2.1",
-        "browser": "ghcr.io/ninggggy/sgr-webenv-census-browser:0.2"
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-census-web:0.2.1",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-census-browser:0.2"
       },
       "data_assets": [
         {
@@ -60,8 +60,8 @@
       "port": 8082,
       "legacy_records": 4,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-wonder-web:0.3",
-        "browser": "ghcr.io/ninggggy/sgr-webenv-wonder-browser:0.2"
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-wonder-web:0.3",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-wonder-browser:0.2"
       },
       "data_assets": [],
       "distribution_status": "blocked-data-redistribution-review",
@@ -74,9 +74,9 @@
       "port": 8083,
       "legacy_records": 8,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-arxiv-web:0.1.0",
-        "browser": "ghcr.io/ninggggy/sgr-webenv-arxiv-browser:0.1.0",
-        "search": "ghcr.io/ninggggy/sgr-webenv-arxiv-search:0.1.0"
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-web:0.1.0",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-browser:0.1.0",
+        "search": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-search:0.1.0"
       },
       "data_assets": [
         {
@@ -123,8 +123,8 @@
       "port": 8084,
       "legacy_records": 10,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-wateroffice-web:0.1.0-dev",
-        "browser": "ghcr.io/ninggggy/sgr-webenv-wateroffice-browser:0.1.0-dev"
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-web:0.1.0-dev",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-browser:0.1.0-dev"
       },
       "data_assets": [
         {
