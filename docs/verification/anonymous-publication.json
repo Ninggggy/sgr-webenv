@@ -49,26 +49,26 @@
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-runtime:1",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-browser-base:1",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-census-web:0.2.1",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-census-browser:0.2",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
@@ -79,14 +79,14 @@
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-wonder-browser:0.2",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-web:0.1.0",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
@@ -103,14 +103,14 @@
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-web:0.1.0-dev",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-browser:0.1.0-dev",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     }
   ],
   "passed": false

@@ -92,3 +92,13 @@ credential directory failed. The package visibility change is therefore not
 verified; public repository visibility alone is insufficient. Reports:
 `verification/anonymous-publication.json` and `verification/anonymous-package-pages.json`.
 No environment is promoted to public-install acceptance by this result.
+
+## Second package visibility recheck
+
+Eight of eleven images now pass anonymous pulls and their public package pages
+resolve to this repository. `sgr-webenv-release-wonder-web`,
+`sgr-webenv-release-arxiv-browser` and `sgr-webenv-release-arxiv-search` still
+return HTTP 404 on their package pages and fail anonymous pulls. The Release
+remains a draft, so all five data URLs still return 404. Current evidence is in
+`verification/anonymous-publication.json` and `verification/public-package-association.json`.
+The previous all-private observations above are historical.
