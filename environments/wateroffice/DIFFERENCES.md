@@ -9,7 +9,7 @@ The environment provides station search, historical observations, archived realt
 - Daily means and watch-list summaries: separate official source snapshots with their own collection timestamps.
 - Station datum/reference pages: archived official HTML for the historical/realtime station union.
 
-Use each station’s archive metadata and report notice to identify its available period. Upgraded stations retain published Approval, Grade and Qualifiers; official blanks remain blank. Original GeoMet unit observations do not supply Approval/Grade and retain that limitation. New status fields are never combined with old values. Dates, graphs and exports use the same per-station snapshot. See the [0.1.0 validation report](../../reports/wateroffice-0.1.0/README.md) for the declared support scope and evidence.
+Use each station’s archive metadata and report notice to identify its available period. Upgraded stations retain published Approval, Grade and Qualifiers; official blanks remain blank. Original GeoMet unit observations do not supply Approval/Grade and retain that limitation. New status fields are never combined with old values. Dates, graphs and exports use the same per-station snapshot.
 
 ## Maps and search
 

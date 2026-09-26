@@ -1,6 +1,6 @@
 # Wateroffice 0.1.0
 
-Offline hydrometric station search, historical and realtime reports, maps, lists and downloads. Linux amd64 is the validated platform.
+Offline hydrometric station search, historical and realtime reports, maps, lists and downloads. Platform: Linux amd64.
 
 ## Install and run
 
@@ -25,7 +25,7 @@ The 2,248-station realtime catalog is retained. **483 stations** have official C
 
 HYDAT 2026-07-17, station metadata, datum/reference pages, map resources and watch summaries are retained. Official no-data observations and blank quality fields remain empty. Watch summaries have their own capture times. No new status is attached to an old observation.
 
-The compressed data archive is 407,458,840 bytes (about 389 MiB). Allow roughly 2 GiB for extracted runtime data plus image layers and download staging; Docker's shared base layers may already be present. The server-side validation preserved at least 5 GiB free. See [validation results](../../reports/wateroffice-0.1.0/README.md), [coverage](DIFFERENCES.md) and [rebuild/tests](VALIDATION.md).
+The compressed data archive is 407,458,840 bytes (about 389 MiB). Allow roughly 2 GiB for extracted runtime data plus image layers and download staging; Docker's shared base layers may already be present. Keep at least 5 GiB free during preparation. See [data coverage](DIFFERENCES.md) and [data preparation](BUILDING.md).
 
 ## Upgrade and rollback
 

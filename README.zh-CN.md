@@ -90,4 +90,4 @@ Cellosaurus 数据采用 **CC BY 4.0**；CLASTR 及其修改保留 **GPL-3.0**�
 
 研究中使用这些环境时，请引用 SGR-BENCH，并记录仓库地址、发布标签以及所用环境和数据版本。
 
-Wateroffice `0.1.0` 保留2,248站目录，其中483站提供30天观测及官方状态，其余1,765站沿用原快照。详见[安装与回退说明](environments/wateroffice/README.md)和[验收报告](reports/wateroffice-0.1.0/README.md)。
+Wateroffice `0.1.0` 保留2,248站目录，其中483站提供30天观测及官方状态，其余1,765站沿用原快照。详见[安装与回退说明](environments/wateroffice/README.md)。

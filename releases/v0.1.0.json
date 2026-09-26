@@ -1,6 +1,6 @@
 {
   "release": "v0.1.0",
-  "status": "released-with-declared-limitations",
+  "status": "released",
   "repository": "Ninggggy/sgr-webenv",
   "platform": "linux/amd64",
   "environments": {
@@ -20,15 +20,15 @@
           "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/noaa-data-v0.1.0.tar.gz"
         }
       ],
-      "distribution_status": "blocked-zingchart-oem",
+      "distribution_status": "ready-local-build",
       "data_redistribution": "NCEI published climate data, attributed US government material; excludes proprietary chart code",
-      "acceptance": "pending",
       "data_archive_status": "release-v0.1.0",
       "required_files": [
         "climate.sqlite",
         "metadata.json",
         "coverage.json"
-      ]
+      ],
+      "installation": "Download ZingChart separately and build the images locally; see environments/noaa/README.md."
     },
     "census": {
       "application_version": "0.2.1",
@@ -48,7 +48,6 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "published ACS aggregates; CitySDK boundaries MIT notice retained",
-      "acceptance": "eight legacy records, 36 interaction checks and export comparison passed; anonymous images passed; data URL verification accompanies publication",
       "data_archive_status": "release-v0.1.0",
       "required_files": [
         "census.sqlite"
@@ -64,9 +63,9 @@
         "browser": "ghcr.io/ninggggy/sgr-webenv-release-wonder-browser:0.2"
       },
       "data_assets": [],
-      "distribution_status": "blocked-data-redistribution-review",
-      "data_redistribution": "review-required",
-      "acceptance": "four legacy records and 48 source-count checks passed privately; data redistribution withheld"
+      "distribution_status": "source-only",
+      "data_redistribution": "NCHS source terms; see environments/wonder/licenses/DATA_USE_NOTICE.md.",
+      "installation": "Use release v0.1.1 or later for the WONDER runtime data archive."
     },
     "arxiv": {
       "application_version": "0.1.0",
@@ -92,7 +91,6 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "descriptive metadata CC0; no PDFs",
-      "acceptance": "eight records information replay (1,860 candidate detail visits, 76 pages), fresh full index, 100 background, 40 exploration, 23 HTTP scope, boolean, lifecycle and visual packaging checks completed; anonymous images passed; data URL verification accompanies publication",
       "data_archive_status": "release-v0.1.0",
       "expected_records": 1685244,
       "expected_versions": 2787373,
@@ -135,7 +133,6 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "Environment Canada attributed non-resale hydrometric data; NRCan basemap OGL-Canada",
-      "acceptance": "41 browser information checks passed; development scope only; full visual acceptance not claimed",
       "data_archive_status": "release-v0.1.0",
       "required_files": [
         "Hydat.sqlite3",

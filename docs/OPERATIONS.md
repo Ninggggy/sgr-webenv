@@ -33,7 +33,7 @@ fresh index; never delete a production index as a test.
 browser sessions and download registry. It preserves data and the arXiv index.
 `stop` removes the instance's containers/networks, not data or named volumes.
 Author-exported evidence outside the containers is not deleted by reset.
-`verify` checks HTTP availability only. Use the scripts and reports under
+`verify` checks HTTP availability only. Use the scripts under
 `tests/workflows/` for behavioral checks.
 
 ## Source build or prebuilt images
@@ -66,4 +66,4 @@ as a reset/rollback procedure: they can destroy unrelated or retained state.
 
 For Cellosaurus, explicitly pass `--release v0.1.2` to its commands. Its Java backend is on a separate internal network. `--port 18086` can be added to preview startup for a parallel test instance without taking over an existing listener. See [Cellosaurus operations and tests](../environments/cellosaurus/README.md).
 
-Wateroffice `0.1.0` uses `--release v0.1.3`. See its [install, data scope and rollback guide](../environments/wateroffice/README.md). The prior development application is retained by `v0.1.2`.
+Wateroffice `0.1.0` uses `--release v0.1.3`. See its [install, data scope and rollback guide](../environments/wateroffice/README.md). Use `v0.1.2` to install the earlier dataset and application.
