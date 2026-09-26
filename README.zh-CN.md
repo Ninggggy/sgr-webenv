@@ -55,3 +55,7 @@ WONDER 数据附有 NCHS 使用限制和来源说明，不能当作无限制授�
 原有网页回放证据与本次新安装验收分别记录，不表示重新完成了付费模型盲测。
 
 [安装、重置、升级与回退说明](docs/OPERATIONS.md)。
+
+## Cellosaurus 开源发布准备
+
+Cellosaurus 0.1.0 source and reproducible builds are being validated for distribution v0.1.2. See [environment documentation](environments/cellosaurus/README.md). Data/image publication status remains candidate until independent installation checks finish.

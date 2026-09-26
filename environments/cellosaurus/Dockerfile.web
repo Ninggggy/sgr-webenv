@@ -1,0 +1,7 @@
+FROM ghcr.io/ninggggy/sgr-webenv-release-runtime:1
+WORKDIR /app
+COPY app/ /app/
+COPY licenses/ /licenses/
+USER 1000:1000
+ENV PYTHONDONTWRITEBYTECODE=1
+CMD ["python3", "/app/server.py"]

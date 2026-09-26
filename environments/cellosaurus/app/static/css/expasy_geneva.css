@@ -1,0 +1,1735 @@
+/* Inspired by style-start.css, c.f. https://github.com/kevin-powell/learn-grid-the-easy-way/blob/main/style-start.css*/
+:root {
+	--clr-primary-400: 263 55% 52%;
+	--clr-secondary-400: 217 19% 35%;
+	--clr-secondary-500: 219 29% 14%;
+	--clr-neutral-100: 0 0% 100%; /* white */
+	--clr-neutral-200: 210 46% 95%;
+	/* ~v. light blue, c.f. https://convertingcolors.com/hsl-color-210_46_95.html */
+	--clr-neutral-210: 233 100% 97%;
+	/* ~v. light purple, replace with 265 30% 96%? */
+	--clr-neutral-215: 236 100% 87%; /* ~ purple */
+	--clr-neutral-220: 333 37% 96%;
+	/* ~v. light pink, replace with 330 38% 94% ?*/
+	--clr-neutral-230: 153 27% 94%; /* ~v. light green #ecf4f0 */
+	--clr-neutral-240: 31 40% 94%; /* ~v. light brown */
+	--clr-neutral-300: 216 19% 95%; /* ~v. light gray */
+	--clr-neutral-310: 194 33% 92%; /* ~ v. light grayish cyan */
+	--clr-header-default: var(--clr-neutral-210);
+	--clr-header-cello: var(--clr-neutral-230);
+	--clr-header-hamap: var(--clr-neutral-220);
+	--clr-header-prosite: var(--clr-neutral-200);
+	--clr-footer-default: var(--clr-neutral-210);
+	--clr-footer-cello: var(--clr-neutral-230);
+	--clr-footer-hamap: var(--clr-neutral-220);
+	--clr-footer-prosite: var(--clr-neutral-200);
+	--clr-default-1: var(--clr-neutral-300);
+	--clr-cello-1: var(--clr-neutral-220);
+	--clr-enzyme-1: var(--clr-neutral-200);
+	--clr-hamap-1: var(--clr-neutral-300);
+	--clr-hamap-2: var(--clr-neutral-210);
+	--clr-hamap-3: var(--clr-neutral-220);
+	--clr-hamap-4: var(--clr-neutral-215);
+	--clr-hamap-5: var(--clr-neutral-230);
+	--clr-prosite-1: var(--clr-neutral-200);
+	--clr-translate-1: var(--clr-neutral-310);
+	--clr-box-shadow-1: 0 0% 53.3%; /* #888 some gray  */
+	--clr-box-shadow-2: 0 0% 71%; /* #888 some gray  */
+	--clr-border-1: 0 0% 87.8%; /* #e0e0e0, v. light gray */
+	--clr-alert-1: 60 100% 90.4%; /* #FFFFCE ~yellow */
+	--clr-alert-2: 0 100% 70%; /* #ff6666 ~red */
+	--clr-help: 60 100% 90%; /* #ffc ~light yellow  */
+	--clr-help-border: 60 100% 50%; /* #ffff00 =yellow */
+	--ff-primary: "Barlow Semi Condensed", sans-serif;
+	--fw-400: 500;
+	--fw-700: 600;
+	--fs-xl: 5rem;
+	--fs-600: 1.5rem;
+	--fs-500: 1.25rem;
+	--fs-450: 1.125rem; /* i.e. 18px */
+	--fs-400: 1rem; /* i.e. 16px, default for browsers */
+	/*   --fs-400: clamp(0.5rem, 1vw + 1rem, 1.5rem); */
+}
+
+/* From style-start.css: Box sizing rules */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* From style-start.css: Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl {
+	margin: 0;
+}
+
+/* From style-start.css: Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"], ol[role="list"] {
+	list-style: none;
+}
+
+/* From style-start.css: Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* From style-start.css: Elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* From style-start.css: Make images easier to work with */
+img, picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* From style-start.css: Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media ( prefers-reduced-motion : reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* From style-start.css: */
+h1, h2, h3 {
+	font-weight: var(--fw-700);
+}
+
+/* TODO: not sure why it needs to be specified, it's in firefox html.css */
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+/* BODY HEADER MAIN FOOTER */
+body {
+	display: grid;
+	grid-template-areas: "header" "main" "footer";
+	grid-template-rows: auto 1fr auto; /* keeps footer at bottom */
+	gap: 0.25rem;
+	min-height: 100vh; /* from style-start.css */
+	text-rendering: optimizeSpeed; /* from style-start.css */
+	font-family: var(--ff-primary); /* from style-start.css */
+	font-weight: var(--fw-400); /* from style-start.css */
+	font-size: var(--fs-400); /* TODO: necessary? */
+	max-width: 100vw;
+}
+
+body:not(.cello) {
+	line-height: 1.5; /* from style-start.css */
+}
+
+body.world-2dpage img {
+	display: inline;
+}
+
+header.header-grid {
+	grid-area: header;
+	/* offset-x | offset-y | blur-radius | color */
+	box-shadow: 0px 5px 10px hsl(var(--clr-box-shadow-1));
+	/*  max-width: 100vw; */
+	/* don't set max-width: 100vw, otherwise main may overflow horizontally */
+}
+
+body.cello>header.header-grid {
+	line-height: 1.5;
+}
+
+main {
+	grid-area: main;
+	padding: 1rem 1rem 2rem 1rem;
+}
+
+footer {
+	grid-area: footer;
+	box-shadow: 0px 0px 10px hsl(var(--clr-box-shadow-1));
+	/*  max-width: 100vw; */
+	/* don't set max-width: 100vw, otherwise main may overflow horizontally */
+}
+
+.header-grid {
+	display: grid;
+	/* gap: 0.5rem; */ /* TODO */
+}
+
+/* HEADER */
+/* 2 rows, 2 columns,
+the 1st column holds the logo,
+the 2nd column holds the title (if any) on one row and the menu on the 2nd row
+*/
+body>.header-grid {
+	/* in main.js, the 2nd row, which holds the menu is reset to a specific size 
+    when there's enough space to have all menu items in one row */
+	grid-template-rows: 2rem auto;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "logo title" "menu menu";
+	background-color: hsl(var(--clr-header-default));
+}
+/* 2 rows, 2 columns 
+the 1st row holds the cello and expasy logos,
+the second row holds the menu */
+body.cello>.header-grid {
+	grid-template-rows: 2rem auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "logo logo2" "menu menu";
+	background-color: hsl(var(--clr-header-cello));
+}
+
+body.hamap>.header-grid {
+	grid-template-columns: auto;
+	grid-template-areas: "logo" "menu";
+	background-color: hsl(var(--clr-header-hamap));
+}
+
+body.prosite>.header-grid {
+	grid-template-columns: auto;
+	grid-template-areas: "logo" "menu";
+	background-color: hsl(var(--clr-header-prosite));
+}
+
+body.venomzone header {
+	background: #f4480c
+		none
+		repeat-x;
+	height: 81px;
+}
+
+body.viralzone header {
+	background: linear-gradient(to bottom, rgba(95, 195, 255, .19),
+		rgba(123, 199, 254, .1));
+	background-color: rgba(0, 0, 0, 0);
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-image: linear-gradient(rgba(95, 195, 255, 0.19),
+		rgba(123, 199, 254, 0.1));
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+}
+
+body.world-2dpage>.header-grid {
+	grid-template-columns: 6rem auto;
+}
+
+@media screen and (min-width: 1200px) {
+	body.cello>.header-grid {
+		grid-template-columns: 10rem auto 4rem;
+		grid-template-areas: "logo menu logo2";
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	/* 2 rows, 2 columns,
+    the 1st column holds the logo,
+    the 2nd column holds the title (if any) on one row and the menu on the 2nd row
+    */
+	body>.header-grid {
+		/* in main.js, the 2nd row, which holds the menu is reset to a specific size 
+        when there's enough space to have all menu items in one row */
+		grid-template-rows: auto auto;
+		grid-template-columns: minmax(4rem, 8rem) auto;
+		grid-template-areas: "logo title" "logo menu";
+	}
+	body.cello>.header-grid {
+		grid-template-columns: 14rem auto 8rem;
+		grid-template-areas: "logo menu logo2";
+	}
+	body.hamap>.header-grid {
+		grid-template-areas: "logo menu";
+		grid-template-columns: 10rem auto;
+	}
+	body.prosite>.header-grid {
+		grid-template-areas: "logo menu";
+		grid-template-columns: 10rem auto;
+	}
+}
+/* HEADER logo */
+.header-elmt:nth-child(1) {
+	grid-area: logo;
+	align-self: center;
+}
+
+/* HEADER logo */
+.header-elmt:nth-child(1) {
+	grid-area: logo;
+	align-self: center;
+}
+
+body.viralzone .header-grid>.header-elmt:nth-child(1) {
+	justify-self: end;
+	margin-right: 1rem;
+}
+
+/* logo (resource logo if resource logo, expasy logo otherwise */
+body>.header-grid>.header-elmt:nth-child(1) img {
+	max-height: 3rem;
+}
+/* cello logo */
+body.cello>.header-grid>.header-elmt:nth-child(1) img {
+	max-height: 2rem;
+}
+
+body.hamap>.header-grid>.header-elmt:nth-child(1) img {
+	max-height: 7rem;
+	max-width: unset;
+}
+
+body.prosite>.header-grid>.header-elmt:nth-child(1) img {
+	max-height: 5rem;
+	max-width: unset;
+	padding-left: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+body.venomzone .header-grid>.header-elmt:nth-child(1) img {
+	max-width: revert;
+	max-height: revert;
+	width: 160px;
+	height: 49px;
+	margin-left: 12px;
+	margin-bottom: 5px;
+}
+
+body.viralzone .header-grid>.header-elmt:nth-child(1) img {
+	
+}
+
+body.world-2dpage>.header-grid>.header-elmt:nth-child(1) img {
+	max-height: 5rem;
+	max-width: unset;
+}
+
+body.cello>.header-grid>.header-elmt:nth-child(3) {
+	grid-area: logo2;
+	align-self: center;
+	justify-self: end;
+}
+/* expasy logo */
+body.cello>.header-grid>.header-elmt:nth-child(3) img {
+	height: 1.5rem;
+	/* otherwise expasy icon gets bigger that cello  large on chrome */
+}
+
+@media screen and (min-width: 1500px) {
+	body.prosite>.header-grid>.header-elmt:nth-child(1) img {
+		margin-top: unset;
+	}
+}
+
+/* HEADER title */
+/*  h3.header-elmt and h4.header-elmt are only for resources that do not have a logo 
+    h3.header-elmt is used for resources that have only 2 menu items (home and contact) e.g. https://web.expasy.org/variant_pages/
+    h4.header-elmt is used for other resources  e.g. https://enzyme.expasy.org/
+*/
+h3.header-elmt, h4.header-elmt {
+	/* .header-elmt:nth-child(2) if title, nothing otherwise  */
+	grid-area: title;
+	align-self: center;
+	justify-self: start;
+}
+
+h3.header-elmt a, h4.header-elmt a {
+	/* .header-elmt:nth-child(2) if title, no h3 or h4 otherwise  */
+	color: black;
+}
+
+body.viralzone h3.header-elmt {
+	font-size: xx-large;
+}
+
+@media screen and (min-width: 1200px) {
+	body:not(.viralzone) h3.header-elmt, h4.header-elmt {
+		/* .header-elmt:nth-child(2) if title, nothing otherwise  */
+		grid-column-start: 1; /* make it span whole row length */
+		justify-self: center;
+		/* to have it justified centrally on the logo-title row */
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	body.viralzone h3.header-elmt { /* Display of "ViralZone" in header  */
+		grid-row: 1/span 2;
+		align-self: center;
+	}
+}
+
+/* HEADER nav */
+nav.header-elmt {
+	/* = .header-elmt:nth-child(3) if title, header-elmt:nth-child(2) otherwise */
+	grid-area: menu;
+	display: grid;
+}
+
+/* menus and sub-menus */
+nav.header-elmt ul {
+	display: grid;
+	list-style-type: none;
+	z-index: 1; /* necessary for sub-menus - overflows header */
+}
+
+/* menu */
+nav.header-elmt>ul {
+	gap: 0.25rem;
+}
+
+nav.header-elmt>ul:not(.menu-2-items) {
+	padding-left: 0.25rem; /* less than default */
+}
+
+body.cello>.header-grid>nav.header-elmt>ul, body.hamap>.header-grid>nav.header-elmt>ul,
+	body.prosite>.header-grid>nav.header-elmt>ul, body.world-2dpage>.header-grid>nav.header-elmt>ul
+	{
+	padding-left: revert;
+}
+
+/* sub-menus */
+nav.header-elmt>ul>li>ul {
+	padding: 0.5em;
+	display: none;
+	/* by default, sub-menus are not displayed (except for menu-2-items, i.e. menus that have 2 items */
+	/*     background: linear-gradient(hsl(var(--clr-header-default)), white); */
+	/* box-shadow: 0px 10px 0 hsl(var(--clr-header-default)); */
+	background-color: hsl(var(--clr-header-default));
+	border-bottom: 2px solid hsl(var(--clr-neutral-300));
+}
+
+body.cello>.header-grid>nav.header-elmt>ul>li>ul {
+	background-color: hsl(var(--clr-header-cello));
+}
+
+body.hamap>.header-grid>nav.header-elmt>ul>li>ul {
+	background-color: hsl(var(--clr-header-hamap));
+}
+
+body.prosite>.header-grid>nav.header-elmt>ul>li>ul {
+	background-color: hsl(var(--clr-header-prosite));
+}
+/* menu items icons  */
+nav.header-elmt>ul img {
+	max-width: 1.25rem;
+	display: inline;
+	vertical-align: middle;
+}
+
+nav.header-elmt a {
+	color: black;
+	text-decoration: none;
+}
+
+nav.header-elmt>ul>li:hover>img { /* menu item icon */
+	filter: invert(20%) sepia(90%) saturate(1888%) hue-rotate(346deg)
+		brightness(89%) contrast(82%);
+}
+
+nav.header-elmt>ul li:hover>a { /* menu item */
+	color: brown;
+}
+
+/* 2 columns by default and no display of sub-menus except for menu-2-items*/
+nav.header-elmt>ul.menu-2-items {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+nav.header-elmt>ul:not(.menu-2-items) {
+	/* menu-3-items, menu-4-items, menu-5-items, menu-6-items, menu-7-items, menu-8-items and menu-9-items */
+	grid-template-columns: repeat(2, minmax(max-content, auto));
+}
+
+nav.header-elmt>ul.menu-3-items { /* each item on a row */
+	grid-template-columns: unset;
+}
+
+body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items {
+	font-size: small;
+}
+
+body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items, body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items
+	{
+	font-size: small;
+}
+
+/* menu-2-items */
+/* triangle on the RHS of menu item for items that have a sub-menu 
+NOTE - would be an appropriate use of :has() pseudo-class, but it's not supported in all browsers
+nav.header-elmt > ul > li:has(ul) > a::after
+*/
+nav.header-elmt>ul.menu-2-items>li.with-submenu>a::after {
+	content: "";
+	display: inline;
+	position: absolute;
+	margin-top: 0.7rem;
+	margin-left: 0.25rem;
+	border-top: 0.45rem solid;
+	border-left: 0.35rem solid transparent;
+	border-right: 0.35rem solid transparent;
+	border-bottom: 0;
+}
+
+nav.header-elmt>ul.menu-2-items>li {
+	grid-row: 1;
+}
+
+nav.header-elmt>ul.menu-2-items>li:nth-child(1) {
+	/* 1st item spans 2 columns */
+	grid-column: 1/span 2;
+}
+
+nav.header-elmt>ul.menu-2-items>li:nth-child(2) {
+	/* 2nd and last item spans 1 column */
+	grid-column: 2;
+}
+
+/* display menu-6-items (body.cello) on 3 columns */
+@media screen and (min-width: 400px) {
+	nav.header-elmt>ul.menu-3-items { /* each item on a row */
+		grid-template-columns: repeat(2, minmax(max-content, auto));
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items {
+		padding-left: revert;
+	}
+	body.cello .header-grid>nav.header-elmt>ul.menu-6-items {
+		/*  grid-template-columns: repeat(3, minmax(max-content,auto)); */
+		/*         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1.5rem); */
+		/*  padding-left: 0.25rem; */
+		
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items, body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items
+		{
+		font-size: unset;
+	}
+}
+/* start showing sub-menus for menu-3-items
+display menu-6-items (body not .cello) on 3 columns
+display menu-8-items on 4 columns
+display menu-9-items on 5 columns
+*/
+@media screen and (min-width: 600px) {
+	/* start showing sub-menues for menu-3-items */
+	.header-grid>nav.header-elmt>ul.menu-3-items, .header-grid>nav.header-elmt>ul.menu-4-itemsm .header-grid>nav.header-elmt>ul.menu-5-items
+		{
+		padding-left: revert;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items {
+		grid-template-columns: repeat(3, minmax(max-content, auto));
+		font-size: unset;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items {
+		grid-template-columns: repeat(4, minmax(max-content, auto));
+		margin-top: 0.15rem; /* less than auto  */
+	}
+	nav.header-elmt>ul.menu-8-items {
+		grid-template-columns: repeat(4, minmax(max-content, auto));
+	}
+	nav.header-elmt>ul.menu-9-items {
+        grid-template-columns: repeat(5, minmax(max-content, auto));
+    }
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items {
+		font-size: xx-small;
+	}
+	body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items {
+		font-size: small;
+	}
+}
+
+/* start showing sub-menus for menu-4-items
+display menu-7-items on 4 columns
+*/
+@media screen and (min-width: 900px) {
+	nav.header-elmt>ul.menu-2-items {
+		justify-self: end;
+		/* may need to be increased if first menu item has sub-menus */
+		min-width: 20rem;
+	}
+	nav.header-elmt>ul.menu-3-items>li.with-submenu>a::after {
+		content: "";
+		display: inline;
+		position: absolute;
+		margin-top: 0.7rem;
+		margin-left: 0.25rem;
+		border-top: 0.45rem solid;
+		border-left: 0.35rem solid transparent;
+		border-right: 0.35rem solid transparent;
+		border-bottom: 0;
+	}
+	nav.header-elmt>ul.menu-3-items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	body.translate>.header-grid>nav.header-elmt>ul.menu-3-items {
+		grid-template-columns: repeat(3, minmax(max-content, auto));
+		/* ok if no sub-menus otherwise width of items varies when showing sub-menus */
+	}
+	nav.header-elmt>ul.menu-3-items>li {
+		grid-row: 1;
+	}
+	nav.header-elmt>ul.menu-3-items>li:nth-child(1) {
+		/* 1st item spans 2 columns */
+		grid-column: 1/span 2;
+	}
+	nav.header-elmt>ul.menu-3-items>li:nth-child(2) {
+		/* 2nd item spans 2 columns */
+		grid-column: 2/span 2;
+	}
+	nav.header-elmt>ul.menu-3-items>li:nth-child(3) {
+		/* 3rd and last item spans 1 column */
+		grid-column: 3;
+	}
+	nav.header-elmt>ul.menu-4-items>li.with-submenu>a::after, nav.header-elmt>ul.menu-5-items>li.with-submenu>a::after
+		{
+		content: "";
+		display: inline;
+		position: absolute;
+		margin-top: 0.7rem;
+		margin-left: 0.25rem;
+		border-top: 0.45rem solid;
+		border-left: 0.35rem solid transparent;
+		border-right: 0.35rem solid transparent;
+		border-bottom: 0;
+	}
+	nav.header-elmt>ul.menu-4-items {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	nav.header-elmt>ul.menu-5-items {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	nav.header-elmt>ul.menu-4-items>li, nav.header-elmt>ul.menu-5-items>li {
+		grid-row: 1;
+	}
+	nav.header-elmt>ul.menu-4-items>li:nth-child(1), nav.header-elmt>ul.menu-5-items>li:nth-child(1)
+		{ /* 1st item spans 2 columns */
+		grid-column: 1/span 2;
+	}
+	nav.header-elmt>ul.menu-4-items>li:nth-child(2), nav.header-elmt>ul.menu-5-items>li:nth-child(2)
+		{ /* 2nd item spans 2 columns */
+		grid-column: 2/span 2;
+	}
+	nav.header-elmt>ul.menu-4-items>li:nth-child(3), nav.header-elmt>ul.menu-5-items>li:nth-child(3)
+		{ /* 3rd item spans 2 columns */
+		grid-column: 3/span 2;
+	}
+	nav.header-elmt>ul.menu-4-items>li:nth-child(4) {
+		/* 4th and last item spans 1 column */
+		grid-column: 4;
+	}
+	nav.header-elmt>ul.menu-5-items>li:nth-child(4) {
+		/* 4th item spans 2 columns */
+		grid-column: 4/span 2;
+	}
+	nav.header-elmt>ul.menu-5-items>li:nth-child(5) {
+		/* 5th and last item spans 1 column */
+		grid-column: 5;
+	}
+	nav.header-elmt>ul.menu-7-items {
+		grid-template-columns: repeat(4, minmax(max-content, auto));
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items, body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items
+		{
+		font-size: unset;
+	}
+}
+
+/* start showing sub-menus for body.cello menu-6-items */
+@media screen and (min-width: 900px) { /* show sub-menus */
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li.with-submenu>a::after
+		{
+		content: "";
+		display: inline;
+		position: absolute;
+		margin-top: 0.7rem;
+		margin-left: 0.25rem;
+		border-top: 0.45rem solid;
+		border-left: 0.35rem solid transparent;
+		border-right: 0.35rem solid transparent;
+		border-bottom: 0;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items {
+		max-width: 55rem;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li {
+		grid-row: 1;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(1)
+		{ /* 1st item spans 2 columns */
+		grid-column: 1/span 2;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(2)
+		{ /* 2nd item spans 2 columns */
+		grid-column: 2/span 2;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(3)
+		{ /* 3rd item spans 2 columns */
+		grid-column: 3/span 2;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(4)
+		{ /* 4th item spans 2 columns */
+		grid-column: 4/span 2;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(5)
+		{ /* 5th item spans 2 columns */
+		grid-column: 5/span 2;
+	}
+	body.cello>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(6)
+		{ /* 4th and last item spans 2 columns */
+		grid-column: 6;
+	}
+}
+
+/* start showing sub-menus for menu-6-items( body not .cello), menu-7-items, menu-8-items and menu-9-items */
+@media screen and (min-width: 1200px) {
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li.with-submenu>a::after,
+		nav.header-elmt>ul.menu-7-items>li.with-submenu>a::after, nav.header-elmt>ul.menu-8-items>li.with-submenu>a::after,
+		nav.header-elmt>ul.menu-9-items>li.with-submenu>a::after
+		{
+		content: "";
+		display: inline;
+		position: absolute;
+		margin-top: 0.7rem;
+		margin-left: 0.25rem;
+		border-top: 0.45rem solid;
+		border-left: 0.35rem solid transparent;
+		border-right: 0.35rem solid transparent;
+		border-bottom: 0;
+	}
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items>li.with-submenu>a::after
+		{
+		margin-top: 0.5rem;
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items>li.with-submenu>a::after,
+		body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items>li.with-submenu>a::after
+		{
+		margin-top: 0.3rem;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items {
+		font-size: x-small;
+		margin-top: 1rem;
+	}
+	nav.header-elmt>ul.menu-7-items {
+		grid-template-columns: repeat(7, 1fr);
+	}
+	body.world-2dpage .header-grid>nav.header-elmt>ul.menu-7-items {
+		/* when no sub-menu no need to set the column width 1fr as it's not subject to move,
+        the content always being the same */
+		grid-template-columns: repeat(7, minmax(max-content, auto));
+	}
+	nav.header-elmt>ul.menu-8-items {
+		grid-template-columns: repeat(8, 1fr);
+	}
+	nav.header-elmt>ul.menu-9-items {
+        grid-template-columns: repeat(9, 1fr);
+    }
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items, body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items
+		{
+		font-size: xx-small;
+		margin-top: 1rem; /* ~ same as auto if no sub-menu is shown  */
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li, nav.header-elmt>ul.menu-7-items>li,
+		nav.header-elmt>ul.menu-8-items>li, nav.header-elmt>ul.menu-9-items>li {
+		grid-row: 1;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(1),
+		nav.header-elmt>ul.menu-7-items>li:nth-child(1), nav.header-elmt>ul.menu-8-items>li:nth-child(1),
+		nav.header-elmt>ul.menu-9-items>li:nth-child(1)
+		{
+		grid-column: 1/span 2;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(2),
+		nav.header-elmt>ul.menu-7-items>li:nth-child(2), nav.header-elmt>ul.menu-8-items>li:nth-child(2),
+		nav.header-elmt>ul.menu-9-items>li:nth-child(2)
+		{
+		grid-column: 2/span 2;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(3),
+		nav.header-elmt>ul.menu-7-items>li:nth-child(3), nav.header-elmt>ul.menu-8-items>li:nth-child(3),
+		nav.header-elmt>ul.menu-9-items>li:nth-child(3)
+		{
+		grid-column: 3/span 2;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(4),
+		nav.header-elmt>ul.menu-7-items>li:nth-child(4), nav.header-elmt>ul.menu-8-items>li:nth-child(4),
+		nav.header-elmt>ul.menu-9-items>li:nth-child(4)
+		{
+		grid-column: 4/span 2;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(5),
+		nav.header-elmt>ul.menu-7-items>li:nth-child(5), nav.header-elmt>ul.menu-8-items>li:nth-child(5),
+		nav.header-elmt>ul.menu-9-items>li:nth-child(5)
+		{
+		grid-column: 5/span 2;
+	}
+	body:not(.cello)>.header-grid>nav.header-elmt>ul.menu-6-items>li:nth-child(6)
+		{
+		grid-column: 6;
+	}
+	nav.header-elmt>ul.menu-7-items>li:nth-child(6), nav.header-elmt>ul.menu-8-items>li:nth-child(6),
+	nav.header-elmt>ul.menu-9-items>li:nth-child(6)		{
+		grid-column: 6/span 2;
+	}
+	nav.header-elmt>ul.menu-7-items>li:nth-child(7) {
+		grid-column: 7;
+	}
+	nav.header-elmt>ul.menu-8-items>li:nth-child(7), nav.header-elmt>ul.menu-9-items>li:nth-child(7) {
+		grid-column: 7/span 2;
+	}
+	nav.header-elmt>ul.menu-8-items>li:nth-child(8) {
+		grid-column: 8;
+	}
+	nav.header-elmt>ul.menu-9-items>li:nth-child(8) {
+        grid-column: 8/span 2;
+    }
+	nav.header-elmt>ul.menu-9-items>li:nth-child(9) {
+        grid-column: 9;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items>li.with-submenu>a::after
+		{
+		margin-top: 0.6rem;
+	}
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items {
+		font-size: small;
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items>li.with-submenu>a::after,
+		body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items>li.with-submenu>a::after
+		{
+		margin-top: 0.4rem;
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items, body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items
+		{
+		font-size: x-small;
+		margin-top: 3rem;
+	}
+	body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items {
+		
+	}
+	body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items {
+		
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items>li.with-submenu>a::after,
+		body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items>li.with-submenu>a::after,
+		body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items>li.with-submenu>a::after
+		{
+		margin-top: 0.6rem;
+	}
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items, body.hamap>.header-grid>nav.header-elmt>ul.menu-9-items,
+		body.prosite>.header-grid>nav.header-elmt>ul.menu-8-items {
+		font-size: unset;
+	}
+	body.enzyme>.header-grid>nav.header-elmt>ul.menu-6-items {
+		margin-top: 0.75rem;
+	}
+}
+
+/* MAIN */
+.main-grid {
+	display: grid;
+	align-self: start;
+	height: min-content;
+	/* needed otherwise pages with little vertical content look weird  */
+}
+
+body:not(.abcd) .main-grid {
+	justify-self: center;
+}
+
+body:not(.cello) .main-grid {
+	gap: 0.5rem;
+}
+
+body.cello .main-grid {
+	gap: 0.25rem;
+	padding-top: 0.25rem; /* less than auto  */
+}
+
+@media screen and (min-width: 1500px) {
+	body.cello>main.main-grid {
+		min-width: 70%;
+	}
+}
+
+/* TODO: don't know if it looks better  */
+/* @media screen and (min-width: 1500px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+        min-width: 60%;
+        width: min-content;
+        min-width: 60rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 80rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+        min-width: 65rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 85rem;
+    }
+}
+@media screen and (min-width: 1700px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 70rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 90rem;
+    }
+}
+@media screen and (min-width: 1800px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+    }
+}
+@media screen and (min-width: 1900px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+        min-width: 75rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 95rem;
+    }
+}
+@media screen and (min-width: 2000px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 80rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 100rem;
+    }
+}
+@media screen and (min-width: 2100px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 85rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 105rem;
+    }
+}
+@media screen and (min-width: 2200px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 90rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 110rem;
+    }
+}
+@media screen and (min-width: 2300px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 95rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 115rem;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 100rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 120rem;
+    }
+} */
+
+/* @media screen and (min-width: 100px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         width: min-content;
+    }
+}
+@media screen and (min-width: 600px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 25rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 25rem;
+    }
+} */
+
+/* @media screen and (min-width: 700px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 30rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 30rem;
+    }
+} */
+
+/* @media screen and (min-width: 800px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 35rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 35rem;
+    }
+} */
+
+/* 
+@media screen and (min-width: 900px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 40rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 40rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+        min-width: 45rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 45rem;
+    }
+}
+@media screen and (min-width: 1100px) {
+    body:not(.abcd):not(.cello) > main.main-grid {
+         min-width: 50rem;
+    }
+    body:not(.abcd):not(.cello) > main.main-grid > .main-elmt.restrict-width {
+        max-width: 50rem;
+    }
+} */
+body:not(.abcd):not(.cello)>main.main-grid {
+	max-width: 100vw;
+}
+
+@media screen and (min-width: 1200px) {
+	body:not(.abcd):not(.cello):not(.glycomod):not(.peptide_mass)>main.main-grid
+		{
+		width: min-content;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 59rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 59rem;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 59rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 60rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 60rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 65rem;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 65rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 70rem;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 65rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 75rem;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 70rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 80rem;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 75rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 85rem;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 80rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 90rem;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 85rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 95rem;
+	}
+}
+
+@media screen and (min-width: 2100px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 90rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 100rem;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 95rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 105rem;
+	}
+}
+
+@media screen and (min-width: 2300px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 100rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 110rem;
+	}
+}
+
+@media screen and (min-width: 2400px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 105rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 115rem;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	body:not(.abcd):not(.cello)>main.main-grid {
+		min-width: 110rem;
+	}
+	body:not(.abcd):not(.cello)>main.main-grid>.main-elmt.restrict-width {
+		max-width: 120rem;
+	}
+}
+
+/* From base.css */
+input.mandatory {
+	display: none;
+}
+
+/* From base.css */
+.hidden {
+	display: none;
+}
+
+hr {
+	color: hsl(var(--clr-neutral-300));
+}
+
+h1 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: x-large;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	h1 {
+		font-size: xx-large;
+	}
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+pre {
+	line-height: normal;
+	white-space: pre-wrap;
+}
+
+pre.inline { /* used in pratt_doc.html and pratt_form.pl  */
+	display: inline;
+}
+
+fieldset {
+	border-radius: 5px;
+	border: solid 1px hsl(var(--clr-border-1));
+	box-shadow: 3px 3px 5px hsl(var(--clr-box-shadow-2));
+	margin-top: 0.5rem;
+}
+
+body.cello fieldset {
+	background: hsl(var(--clr-cello-1));
+}
+
+body.enzyme fieldset {
+	background: hsl(var(--clr-enzyme-1));
+}
+
+body.hamap fieldset {
+	background: hsl(var(--clr-hamap-1));
+}
+
+body.prosite fieldset {
+	background: hsl(var(--clr-prosite-1));
+}
+
+fieldset>legend {
+	border-radius: 5px;
+	background-color: #fff;
+	border: solid 1px hsl(var(--clr-border-1));
+	color: #000;
+	padding: 0.3rem;
+	box-shadow: 3px 3px 5px hsl(var(--clr-box-shadow-1));
+}
+
+body.cello fieldset>legend {
+	background: linear-gradient(hsl(var(--clr-cello-1)), white);
+}
+
+body.enzyme fieldset>legend {
+	background: linear-gradient(hsl(var(--clr-enzyme-1)), white);
+}
+
+body.hamap fieldset>legend {
+	background: linear-gradient(hsl(var(--clr-hamap-1)), white);
+}
+
+body.prosite fieldset>legend {
+	background: linear-gradient(hsl(var(--clr-prosite-1)), white);
+}
+
+/* alert1 and alert2 set in Layout.pm */
+.main-elmt.alert1_style, .main-elmt.alert2_style {
+	color: black;
+	font-size: var(--fs-450);
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.main-elmt.alert1_style {
+	background-color: hsl(var(--clr-alert-1));
+}
+
+.main-elmt.alert2_style {
+	background-color: hsl(var(--clr-alert-2));
+}
+
+/* search form added on every hamap and prosite page */
+body.hamap>.main-grid>form.main-elmt:first-child, body.prosite>.main-grid>form.main-elmt:first-child
+	{
+	text-align: right;
+}
+
+/* .icon-grid */
+.icon-grid {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	gap: 0.5rem;
+}
+
+h1.icon-grid {
+	align-items: end;
+	justify-self: center;
+}
+
+:not(h1).icon-grid {
+	align-items: center;
+}
+
+h1.icon-grid>img.icon-elmt {
+	max-width: 10rem;
+	align-self: center;
+}
+
+:not(h1).icon-grid>img.icon-elmt {
+	max-width: 3rem;
+}
+
+/* cols-2-grid, ..., cols-3-grid */
+.cols-2-grid, .cols-2-grid-type-2, .cols-2-grid-type-3, .cols-3-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+	.cols-2-grid {
+		/* enzyme index, prosite index, prorule.html and hamap index  */
+		grid-template-columns: 1fr 1fr;
+	}
+	.cols-2-grid-type-2 {
+		/* abcd index, cellosaurus index and pRoc index  */
+		grid-template-columns: 2fr 1fr;
+	}
+	.cols-2-grid-type-3 { /* VAR_035718.html */
+		grid-template-columns: min-content auto;
+	}
+	.cols-3-grid { /* hamap index */
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+body:not(.hamap) input:not([type]), body:not(.hamap) input[type="text"],
+	body:not(.hamap) textarea, body:not(.hamap) select {
+	width: 100%;
+	max-width: max-content;
+}
+
+@media screen and (min-width: 1200px) {
+	body:not(.hamap) input:not([type]), body:not(.hamap) input[type="text"],
+		body:not(.hamap) textarea, body:not(.hamap) select {
+		width: unset;
+		max-width: unset;
+	}
+}
+
+body.hamap input[type="text"], body.hamap input:not([type]), body.hamap textarea
+	{
+	width: 100%;
+	max-width: max-content;
+}
+
+@media screen and (min-width: 1200px) {
+	body.hamap input[type="text"], body.hamap input:not([type]), body.hamap textarea
+		{
+		width: unset;
+		max-width: unset;
+	}
+}
+
+.button_help>img {
+	display: inline;
+}
+
+.help {
+	background-color: hsl(var(--clr-help));
+	border: 1px solid hsl(var(--clr-help-border));
+	display: block;
+	margin: 8px 8px 8px 0;
+	padding: 8px;
+}
+
+.background-1 {
+	background: hsl(var(--clr-default-1));
+}
+
+body.prosite .background-1 {
+	background: hsl(var(--clr-prosite-1));
+}
+
+body.hamap .background-1 {
+	background: hsl(var(--clr-hamap-1));
+}
+
+body.hamap .background-2 {
+	background: hsl(var(--clr-hamap-2));
+}
+
+body.hamap .background-3 {
+	background: hsl(var(--clr-hamap-3));
+}
+
+body.hamap .background-4 {
+	background: hsl(var(--clr-hamap-4));
+}
+
+body.hamap .background-5 {
+	background: hsl(var(--clr-hamap-5));
+}
+
+table.type-1 tr td, table.type-1 tr th {
+	padding: 0.25rem;
+}
+
+table.type-1 tr th {
+	font-size: smaller;
+}
+
+table.type-1 tbody>tr>td:not(:last-child) {
+	border-right: 1px solid hsl(var(--clr-border-1));
+}
+
+table.type-1>tbody>tr:not(:last-child)>td {
+	border-bottom: 1px solid hsl(var(--clr-border-1));
+}
+
+table.type-1.no-right-border>tbody>tr>td {
+	border-right: none;
+}
+
+table.type-1 th {
+	background: hsl(var(--clr-default-1));
+}
+
+body.enzyme table.type-1 th {
+	background: hsl(var(--clr-enzyme-1));
+}
+
+body.hamap table.type-1 th {
+	background: hsl(var(--clr-hamap-1));
+}
+
+body.prosite table.type-1 th {
+	background: hsl(var(--clr-prosite-1));
+}
+
+table.type-2 tr td, table.type-1 tr th {
+	padding: 0.25rem;
+}
+
+table.type-2 tr th {
+	font-size: smaller;
+}
+
+table.type-2, table.type-2 tr, table.type-2 tr td, table.type-2 tr th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.type-2 th {
+	background: hsl(var(--clr-default-1));
+}
+
+/* #menu-hor  */
+#menu-hor {
+	font-family: arial;
+	text-align: center;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	max-width: 100vw;
+}
+
+#menu-hor ul {
+	list-style: none;
+	display: inline-table;
+	margin: auto;
+	text-align: left;
+}
+
+#menu-hor ul li {
+	float: left;
+}
+
+#menu-hor ul li:hover {
+	background: #fff;
+}
+
+#menu-hor ul li a {
+	color: #000;
+	display: block;
+	padding: 0.75rem 1rem;
+}
+
+#menu-hor ul ul {
+	position: absolute;
+	padding: 0;
+}
+
+#menu-hor ul ul li {
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	float: none;
+}
+
+#menu-hor, #menu-hor ul {
+	background: hsl(var(--clr-default-1));
+}
+
+body.hamap #menu-hor, body.hamap #menu-hor ul {
+	background: hsl(var(--clr-hamap-1));
+}
+
+body.prosite #menu-hor, body.prosite #menu-hor ul {
+	background: hsl(var(--clr-prosite-1));
+}
+
+/* different titles */
+[class^="section-1-type-"], [class^="section-2-type-"], [class^="section-3-type-"],
+	[class^="section-4-type-"], [class^="section-5-type-"] {
+	color: #000;
+	font-style: normal;
+	font-weight: normal;
+}
+
+[class^="section-1-type-"] {
+	font-size: xxx-large;
+}
+
+[class^="section-2-type-"] {
+	font-size: xx-large;
+}
+
+[class^="section-3-type-"] {
+	font-size: x-large;
+}
+
+[class^="section-4-type-"] {
+	font-size: large;
+}
+
+.section-3-type-1 {
+	padding-bottom: 3px;
+	padding-top: 3px;
+	text-align: center;
+	background: hsl(var(--clr-default-1));
+}
+
+body.prosite .section-3-type-1 {
+	background: hsl(var(--clr-prosite-1));
+}
+
+body.hamap .section-3-type-1 {
+	background: hsl(var(--clr-hamap-2));
+}
+
+.section-3-type-2 {
+	text-decoration: underline;
+}
+
+.section-4-type-1 {
+	text-decoration: underline;
+}
+
+.section-4-type-2 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+[class^="section-5-type-"] {
+	font-size: medium;
+}
+
+.section-5-type-1 {
+	text-decoration: underline;
+}
+
+.section-3-type-1 {
+	background: hsl(var(--clr-default-1));
+}
+
+.button-ex-1 {
+	background: #616161; /* Very dark gray */
+	/* Dark gray to Light gray*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#7b7b7b),
+		to(#d3d3d3));
+	background: -webkit-linear-gradient(top, #7b7b7b, #d3d3d3);
+	background: -moz-linear-gradient(top, #7b7b7b, #d3d3d3);
+	background: -ms-linear-gradient(top, #7b7b7b, #d3d3d3);
+	background: -o-linear-gradient(top, #7b7b7b, #d3d3d3);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-top: 1px solid #ffffff; /* White */
+	box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	color: #ffffff; /* White */
+	cursor: pointer;
+	font-family: Helvetica, serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+	vertical-align: top;
+}
+
+/* FOOTER */
+.footer-grid {
+	display: grid;
+	gap: 0;
+	grid-template-columns: 1fr;
+	align-items: center;
+	min-height: auto;
+	font-size: x-small;
+	min-height: 4rem;
+	background-color: hsl(var(--clr-footer-default));
+}
+
+body.cello>.footer-grid {
+	background-color: hsl(var(--clr-footer-cello));
+	font-size: small;
+}
+
+body.hamap>.footer-grid {
+	background-color: hsl(var(--clr-footer-hamap));
+}
+
+body.prosite>.footer-grid {
+	background-color: hsl(var(--clr-footer-prosite));
+}
+
+.footer-elmt:nth-child(1) {
+	display: none;
+}
+
+.footer-elmt:nth-child(2) {
+	text-align: center;
+}
+
+body.cello>.footer-grid .footer-elmt:nth-child(2) {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+	padding-top: 0.5rem;
+	text-align: left;
+	justify-self: center;
+}
+
+/* "back to top" */
+.footer-elmt:nth-child(3) {
+	display: none;
+}
+
+@media all and (min-width: 400px) {
+	.footer-grid {
+		font-size: small;
+	}
+}
+
+@media all and (min-width:600px) {
+	body.cello>.footer-grid {
+		font-size: unset;
+		height: 8rem; /* necessary so that main does not overflow footer?! */
+	}
+	body.cello>.footer-grid .footer-elmt:nth-child(2) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (min-width: 900px) {
+	.footer-grid {
+		grid-template-columns: 12rem 1fr 12rem;
+	}
+	.footer-elmt:nth-child(1) {
+		display: inherit;
+		/* if revert => block and block prevents to vertically align centrally */
+		max-width: 8rem;
+		align-self: center;
+		justify-self: start;
+	}
+	.footer-elmt:nth-child(1) img {
+		max-width: unset;
+		width: 4.5rem;
+		padding-left: 0.5rem;
+	}
+	.footer-elmt:nth-child(2) {
+		justify-self: center;
+	}
+	body.cello>.footer-grid {
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.footer-elmt:nth-child(3) {
+		display: inherit;
+		/* if revert => block and block prevents to vertically align centrally */
+		justify-self: end;
+		padding-right: 2rem;
+		/* if less looks funny if main overflows horizontally, see e.g. https://hamap.expasy.org/signature/taxonomic_distribution/MF_00012 */
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.footer-grid {
+		font-size: unset;
+	}
+	body.cello>.footer-grid .footer-elmt:nth-child(2) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+/* from https://www.sitepoint.com/css-printer-friendly-pages/ */
+@media print {
+	body {
+		margin: 0;
+		color: #000;
+		background-color: #fff;
+	}
+	a::after { /* prints url after link */
+		content: " (" attr(href) ")";
+	}
+	main::after {
+		/*    content: "Copyright site.com";
+      display: block;
+      text-align: center; */
+		
+	}
+	header {
+		break-after: avoid !important;
+		break-inside: avoid !important;
+	}
+	main {
+		break-before: avoid !important;
+	}
+	h1.main-elmt {
+		break-before: avoid !important;
+		break-after: avoid !important;
+	}
+	img, svg, pre, fieldset, footer {
+		break-inside: avoid !important;
+	}
+	input:not([type]), input[type="text"], textarea, select {
+		width: unset;
+		max-width: unset;
+	}
+}
+/*  A4 print resolution: 2480 px x 3508 px
+  A4 screen resolutio: 595 px x 842 px */
+@media print and (min-width: 800px) {
+	.main-grid {
+		min-width: 60rem !important;
+	}
+}
+
+.to_inspect {
+	background-color: red;
+}

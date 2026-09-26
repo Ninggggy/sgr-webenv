@@ -3,7 +3,7 @@
 import argparse,json,os,platform,shutil,sqlite3,subprocess,sys,tarfile,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-SITES=('noaa','census','wonder','arxiv','wateroffice')
+SITES=('noaa','census','wonder','arxiv','wateroffice','cellosaurus')
 def run(args,**kwargs):
  return subprocess.run(args,check=True,**kwargs)
 def load(site,release):
@@ -40,6 +40,8 @@ def validate_data(site,spec,directory):
   if database.suffix not in ('.sqlite','.sqlite3','.db'):continue
   with sqlite3.connect('file:'+str(database)+'?mode=ro',uri=True) as c:
    if c.execute('pragma quick_check').fetchone()[0]!='ok':raise ValueError('Invalid SQLite data: '+database.name)
+   if site=='cellosaurus' and database.name=='cellosaurus.sqlite':
+    if c.execute('select count(*) from cell').fetchone()[0]!=spec['expected_records']:raise ValueError('Incomplete Cellosaurus database')
    if site=='arxiv' and database.name=='snapshot.sqlite':
     for table,key in [('records','expected_records'),('versions','expected_versions')]:
      count=c.execute('select count(*) from '+table+(' where deleted=0' if table=='records' else '')).fetchone()[0]
@@ -60,6 +62,15 @@ def compose(site,spec,state,mode):
   services[web]['environment']={'ELASTICSEARCH_SERVICE_HOST':'search','ELASTICSEARCH_INDEX':'arxiv-release-0-1-0','ARXIV_RELEASE_STATUS':('accepted-current-eight' if spec['distribution_status']=='ready' else 'candidate')}
   services['search']={'image':spec['images']['search'],'user':'1000:0','read_only':True,'cap_drop':['ALL'],'security_opt':['no-new-privileges:true'],'networks':['index'],'volumes':['search-data:/usr/share/elasticsearch/data',str(envdir/'config/elasticsearch.yml')+':/usr/share/elasticsearch/config/elasticsearch.yml:ro'],'environment':{'discovery.type':'single-node','ES_JAVA_OPTS':'-Xms2g -Xmx2g -XX:ParallelGCThreads=4 -XX:ConcGCThreads=2 -Djna.boot.library.path=/usr/share/elasticsearch/native','xpack.security.enabled':'false','xpack.monitoring.enabled':'false','xpack.watcher.enabled':'false','xpack.ml.enabled':'false'},'tmpfs':['/tmp:rw,noexec,nosuid,size=256m','/usr/share/elasticsearch/logs:rw,nosuid,size=32m,uid=1000,gid=0'],'mem_limit':'24g','pids_limit':256}
   volumes['search-data']={}
+ if site=='cellosaurus':
+  networks['clastr']={'internal':True}
+  services[web]['networks']=['browsing','clastr']
+  services[browser]['mem_limit']='2g'
+  services['cellosaurus-clastr']={**common,'image':spec['images']['clastr'],'networks':['clastr'],'mem_limit':'1536m','tmpfs':['/tmp:rw,nosuid,nodev,size=384m,mode=1777'],'volumes':[str(state/'data/cellosaurus.xml.gz')+':/data/cellosaurus.xml.gz:ro'],'environment':{'JAVA_OPTS':'-Xms128m -Xmx1024m -Djava.io.tmpdir=/tmp','CELLOSAURUS_XML':'/data/cellosaurus.xml.gz'}}
+  services['cellosaurus-clastr']['healthcheck']={'test':['CMD','python3','-c','import urllib.request,json; d=json.load(urllib.request.urlopen("http://127.0.0.1:8080/str-search/api/database")); assert d["version"]=="56.0"'],'interval':'5s','timeout':'3s','retries':36}
+  services[web]['healthcheck']={'test':['CMD','python3','-c','import urllib.request; urllib.request.urlopen("http://127.0.0.1:8080/health")'],'interval':'5s','timeout':'3s','retries':12}
+  services[web]['depends_on']={'cellosaurus-clastr':{'condition':'service_healthy'}}
+  services[browser]['depends_on']={web:{'condition':'service_healthy'}}
  if mode=='preview':
   networks['preview']={}
   services['preview']={**common,'image':spec['images']['web'],'command':['python3','/app/_preview_proxy.py'],'environment':{'UPSTREAM':f'http://{web}:8080'},'networks':['browsing','preview'],'ports':[f'127.0.0.1:{spec["port"]}:8080'],'mem_limit':'128m','depends_on':[web]}

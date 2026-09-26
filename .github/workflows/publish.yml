@@ -6,7 +6,7 @@ on:
         description: Dependency chain or environment to build
         type: choice
         required: true
-        options: [base, census, wonder, arxiv, wateroffice, verify, migrate]
+        options: [base, census, wonder, arxiv, wateroffice, cellosaurus, verify, migrate]
 permissions:
   contents: read
   packages: write

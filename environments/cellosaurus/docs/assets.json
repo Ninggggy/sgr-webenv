@@ -1,0 +1,122 @@
+{
+  "/str-search/external/jquery.min.js": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+    "bytes": 88145
+  },
+  "/str-search/external/jquery-ui.min.js": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+    "bytes": 253669
+  },
+  "/str-search/external/jquery-ui.min.css": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css",
+    "bytes": 32076
+  },
+  "/str-search/external/papaparse.min.js": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js",
+    "bytes": 18838
+  },
+  "/str-search/external/xlsx.full.min.js": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js",
+    "bytes": 929460
+  },
+  "/js/main.js": {
+    "url": "https://www.cellosaurus.org/js/main.js",
+    "bytes": 16162
+  },
+  "/css/expasy_geneva.css": {
+    "url": "https://www.cellosaurus.org/css/expasy_geneva.css",
+    "bytes": 44119
+  },
+  "/css/normalize.css": {
+    "url": "https://www.cellosaurus.org/css/normalize.css",
+    "bytes": 6138
+  },
+  "/images/cellosaurus/cellosaurus.png": {
+    "url": "https://www.cellosaurus.org/images/cellosaurus/cellosaurus.png",
+    "bytes": 55991
+  },
+  "/images/icons/home.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/home.svg",
+    "bytes": 1074
+  },
+  "/images/icons/browse.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/browse.svg",
+    "bytes": 565
+  },
+  "/images/icons/tool.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/tool.svg",
+    "bytes": 1075
+  },
+  "/images/icons/download.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/download.svg",
+    "bytes": 339
+  },
+  "/images/icons/help.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/help.svg",
+    "bytes": 375
+  },
+  "/images/icons/contact.svg": {
+    "url": "https://www.cellosaurus.org/images/icons/contact.svg",
+    "bytes": 271
+  },
+  "/images/expasy_logos/Expasy_logo_base_addon.svg": {
+    "url": "https://www.cellosaurus.org/images/expasy_logos/Expasy_logo_base_addon.svg",
+    "bytes": 3712
+  },
+  "/images/expasy_logos/irdirc_logo.png": {
+    "url": "https://www.cellosaurus.org/images/expasy_logos/irdirc_logo.png",
+    "bytes": 52266
+  },
+  "/images/expasy_logos/elixir_logo.png": {
+    "url": "https://www.cellosaurus.org/images/expasy_logos/elixir_logo.png",
+    "bytes": 15605
+  },
+  "/images/sib_images/sib_logo_199x106.gif": {
+    "url": "https://www.cellosaurus.org/images/sib_images/sib_logo_199x106.gif",
+    "bytes": 6798
+  },
+  "/css/cellosaurus/cello.css": {
+    "url": "https://www.cellosaurus.org/css/cellosaurus/cello.css",
+    "bytes": 169
+  },
+  "/css/cite.css": {
+    "url": "https://www.cellosaurus.org/css/cite.css",
+    "bytes": 3134
+  },
+  "/js/cite.js": {
+    "url": "https://www.cellosaurus.org/js/cite.js",
+    "bytes": 7719
+  },
+  "/js/cellosaurus/cello.js": {
+    "url": "https://www.cellosaurus.org/js/cellosaurus/cello.js",
+    "bytes": 1464
+  },
+  "/js/jquery.min.js": {
+    "url": "https://www.cellosaurus.org/js/jquery.min.js",
+    "bytes": 89501
+  },
+  "/str-search/external/images/ui-icons_444444_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_444444_256x240.png",
+    "bytes": 3764
+  },
+  "/str-search/external/images/ui-icons_555555_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_555555_256x240.png",
+    "bytes": 3767
+  },
+  "/str-search/external/images/ui-icons_777620_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_777620_256x240.png",
+    "bytes": 3767
+  },
+  "/str-search/external/images/ui-icons_777777_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_777777_256x240.png",
+    "bytes": 3764
+  },
+  "/str-search/external/images/ui-icons_cc0000_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_cc0000_256x240.png",
+    "bytes": 3764
+  },
+  "/str-search/external/images/ui-icons_ffffff_256x240.png": {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png",
+    "bytes": 3764
+  }
+}

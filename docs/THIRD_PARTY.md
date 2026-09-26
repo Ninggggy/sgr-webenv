@@ -91,3 +91,7 @@ permission or an unrestricted-data license. Do not replace data terms with the
 code's Apache-2.0 license. The existing query suppression, reliability indicators
 and more conservative parent protection are not weakened. Details and limits:
 [completed review](reviews/WONDER_DATA_REDISTRIBUTION.md).
+
+## Cellosaurus
+
+Cellosaurus data and owned resources use CC BY 4.0; modified CLASTR source and frontend use GPL-3.0. Separate bundled dependency terms remain in force. Complete corresponding source is included. Institutional partner badges are omitted from the distribution interface. See [component notices](../environments/cellosaurus/licenses/NOTICE.md).

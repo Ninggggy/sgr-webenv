@@ -18,3 +18,7 @@ Submission timestamps, first-announcement month, and OAI update dates are not in
 Current task coverage is 4 + 8 + 4 + 8 + 10 CG/GO records. Prior original-host
 verification is historical evidence only. New package acceptance must verify
 candidate completeness, output fields, background queries, isolation and recovery.
+
+## Cellosaurus 0.1.0
+
+Release 56.0 core website and CLASTR; 168,970 records and separate release 53/54 name-conflict archives. Not the full REST/RDF/SPARQL or external-site surface. Original unstable equal-name ties, original large-result truncation and four upstream truncated STR display names are documented in the [environment scope](../environments/cellosaurus/README.md). Distribution validation is pending for v0.1.2; no change to existing deployments.

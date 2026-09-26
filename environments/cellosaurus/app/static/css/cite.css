@@ -1,0 +1,180 @@
+/* base button */
+.cite-btn {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3rem 0.6rem;
+	background-color: #f3f4f6;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	color: #374151;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.cite-btn:hover {
+	background-color: #d6d7d8;
+	border-color: #9ca3af;
+}
+
+.cite-btn::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	background-color: currentColor;
+	mask: url("/images/icons/cite1.svg") no-repeat center/contain;
+	-webkit-mask: url("/images/icons/cite1.svg") no-repeat center/contain;
+}
+
+/* icon only appears if --icon is defined */
+.cite-btn::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+
+    background-color: currentColor;
+
+    mask: var(--icon) no-repeat center / contain;
+    -webkit-mask: var(--icon) no-repeat center / contain;
+
+    margin-right: 8px;
+
+    display: none; /* hidden by default */
+}
+
+/* show icon only when variable exists */
+.cite-btn.icon::before {
+    display: inline-block;
+}
+
+/* icon definitions */
+.icon-doc {
+	--icon: url("/images/icons/doc.svg");
+}
+.icon-opening-quote {
+    --icon: url("/images/icons/opening_quote.svg");
+}
+.icon-closing-quote {
+	--icon: url("/images/icons/closing_quote.svg");
+}
+.icon-collection {
+	--icon: url("/images/icons/collection.svg");
+}
+/* link2.svg  */
+.icon-link {
+    --icon: url("/images/icons/link2.svg");
+}
+
+.pm-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+.pm-modal {
+	background: white;
+	width: 90%;
+	max-width: 500px;
+	border-radius: 8px;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	animation: pm-fade-in 0.2s ease-out;
+}
+
+@
+keyframes pm-fade-in {from { opacity:0;
+	transform: scale(0.95);
+}
+
+to {
+	opacity: 1;
+	transform: scale(1);
+}
+
+}
+.pm-modal-header {
+	padding: 16px;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pm-modal-title {
+	font-weight: 600;
+	font-size: 16px;
+	margin: 0;
+	color: #111;
+}
+
+.pm-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+	line-height: 1;
+}
+
+.pm-modal-body {
+	padding: 20px;
+}
+
+.pm-citation-box {
+	border: 1px solid #ddd;
+	padding: 16px;
+	min-height: 100px;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: 16px;
+	background: #fafafa;
+	word-break: break-word;
+}
+
+.pm-modal-footer {
+	padding: 12px 16px;
+	background: #f9fafb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #eee;
+}
+
+.pm-format-select {
+	padding: 4px 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	font-size: 13px;
+}
+
+.pm-copy-btn {
+	background: #0071bc;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.pm-copy-btn:hover {
+	background: #005a96;
+}
+
+.pm-loading {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}

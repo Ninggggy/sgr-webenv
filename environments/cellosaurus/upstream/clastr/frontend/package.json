@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-terser": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}

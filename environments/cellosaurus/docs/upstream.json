@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/calipho-sib/cellosaurus-STR-similarity-search-tool",
+  "commit": "1505b91664c9b1f6557ef3aa7c67dc8877be34ab",
+  "license": "GPL-3.0",
+  "changes": [
+    "Local gzipped XML only; fail startup on wrong release or parse failure",
+    "Enable actual JUnit5 core tests",
+    "Legacy XML species parsing compatibility; canonical species display",
+    "Restrict uploaded ZIP entry labels to basenames",
+    "Front-end URL state and stale-response cancellation",
+    "Buffer SAX text through element boundaries; fail closed for malformed XML",
+    "Regression tests for single-byte input chunks and external entities",
+    "Publish actual per-species STR counts in database information",
+    "Local frontend assets and external-link scope notices; uploaded content excluded from URLs",
+    "Enable Web JUnit5 tests with UTF-8; normalize legacy species labels; correct stale nonconflict source expectations based on upstream399faabaacde; all score expectations unchanged",
+    "Validated presentation rowOrder shared by CSV/XLSX and browser JSON export; original grouped scientific results and profile identities retained",
+    "Source-scope regression for both legacy/current XML allele tags; sorted/interleaved profile export and invalid-order tests",
+    "Cancel stale batch, conversion and FileReader callbacks; preserve URL and independent tab state without serializing uploads",
+    "Correct Sample column, Dog marker normalization and per-row alias normalization; validate malformed imports and escape sample labels",
+    "Decode legacy detail-prefill query parameters individually; preserve special characters in names"
+  ]
+}

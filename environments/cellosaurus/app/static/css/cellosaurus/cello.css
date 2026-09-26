@@ -1,0 +1,8 @@
+/** CSS Specific for cellosaurus **/
+
+.button-more-authors, .button-less-authors {
+  cursor: pointer;
+/*  font-weight: bold; */
+  font-style: oblique;
+  color: green;
+}

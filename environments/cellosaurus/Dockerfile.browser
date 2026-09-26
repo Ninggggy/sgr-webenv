@@ -1,0 +1,6 @@
+FROM ghcr.io/ninggggy/sgr-webenv-release-browser-base:1
+WORKDIR /browser
+COPY runner/bridge.py /browser/bridge.py
+USER 1000:1000
+ENV PYTHONDONTWRITEBYTECODE=1
+CMD ["python3", "/browser/bridge.py"]

@@ -1,0 +1,237 @@
+{
+  "release": "v0.1.2",
+  "status": "released-with-declared-limitations",
+  "repository": "Ninggggy/sgr-webenv",
+  "platform": "linux/amd64",
+  "environments": {
+    "noaa": {
+      "application_version": "2",
+      "browser_version": "2",
+      "port": 8080,
+      "legacy_records": 4,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-noaa-web:2",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-noaa-browser:2"
+      },
+      "data_assets": [
+        {
+          "name": "noaa-data-v0.1.0.tar.gz",
+          "bytes": 22123102,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/noaa-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "blocked-zingchart-oem",
+      "data_redistribution": "NCEI published climate data, attributed US government material; excludes proprietary chart code",
+      "acceptance": "pending",
+      "data_archive_status": "release-v0.1.0",
+      "required_files": [
+        "climate.sqlite",
+        "metadata.json",
+        "coverage.json"
+      ]
+    },
+    "census": {
+      "application_version": "0.2.1",
+      "browser_version": "0.2",
+      "port": 8081,
+      "legacy_records": 8,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-census-web:0.2.1",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-census-browser:0.2"
+      },
+      "data_assets": [
+        {
+          "name": "census-data-v0.1.0.tar.gz",
+          "bytes": 131009519,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/census-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "ready",
+      "data_redistribution": "published ACS aggregates; CitySDK boundaries MIT notice retained",
+      "acceptance": "eight legacy records, 36 interaction checks and export comparison passed; anonymous images passed; data URL verification accompanies publication",
+      "data_archive_status": "release-v0.1.0",
+      "required_files": [
+        "census.sqlite"
+      ]
+    },
+    "wonder": {
+      "application_version": "0.3",
+      "browser_version": "0.2",
+      "port": 8082,
+      "legacy_records": 4,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-wonder-web:0.3",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-wonder-browser:0.2"
+      },
+      "data_assets": [
+        {
+          "name": "wonder-data-v0.1.1.tar.gz",
+          "bytes": 34507734,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.1/wonder-data-v0.1.1.tar.gz"
+        }
+      ],
+      "distribution_status": "ready",
+      "data_redistribution": "National NCHS public-use-derived computational data; retain source attribution and NCHS usage conditions. See DATA_USE_NOTICE.md and completed review.",
+      "acceptance": "Four legacy records and 48 independent source-count checks previously passed; all 16 packaged databases preserve every runtime row and 70 query replays match prior browser exports.",
+      "data_archive_status": "release-v0.1.1",
+      "required_files": [
+        "linked-2017.sqlite",
+        "linked-2017.json",
+        "linked-2018.sqlite",
+        "linked-2018.json",
+        "linked-2019.sqlite",
+        "linked-2019.json",
+        "linked-2020.sqlite",
+        "linked-2020.json",
+        "linked-2021.sqlite",
+        "linked-2021.json",
+        "linked-2022.sqlite",
+        "linked-2022.json",
+        "linked-2023.sqlite",
+        "linked-2023.json",
+        "natality-2016.sqlite",
+        "natality-2016.json",
+        "natality-2017.sqlite",
+        "natality-2017.json",
+        "natality-2018.sqlite",
+        "natality-2018.json",
+        "natality-2019.sqlite",
+        "natality-2019.json",
+        "natality-2020.sqlite",
+        "natality-2020.json",
+        "natality-2021.sqlite",
+        "natality-2021.json",
+        "natality-2022.sqlite",
+        "natality-2022.json",
+        "natality-2023.sqlite",
+        "natality-2023.json",
+        "natality-2024.sqlite",
+        "natality-2024.json",
+        "DATA_USE_NOTICE.md",
+        "PROVENANCE.json"
+      ],
+      "data_version": "2026.09.18"
+    },
+    "arxiv": {
+      "application_version": "0.1.0",
+      "browser_version": "0.1.0",
+      "port": 8083,
+      "legacy_records": 8,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-web:0.1.0",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-browser:0.1.0",
+        "search": "ghcr.io/ninggggy/sgr-webenv-release-arxiv-search:0.1.0"
+      },
+      "data_assets": [
+        {
+          "name": "arxiv-data-v0.1.0.tar.gz.part-000",
+          "bytes": 1073741824,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/arxiv-data-v0.1.0.tar.gz.part-000"
+        },
+        {
+          "name": "arxiv-data-v0.1.0.tar.gz.part-001",
+          "bytes": 270783027,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/arxiv-data-v0.1.0.tar.gz.part-001"
+        }
+      ],
+      "distribution_status": "ready",
+      "data_redistribution": "descriptive metadata CC0; no PDFs",
+      "acceptance": "eight records information replay (1,860 candidate detail visits, 76 pages), fresh full index, 100 background, 40 exploration, 23 HTTP scope, boolean, lifecycle and visual packaging checks completed; anonymous images passed; data URL verification accompanies publication",
+      "data_archive_status": "release-v0.1.0",
+      "expected_records": 1685244,
+      "expected_versions": 2787373,
+      "required_files": [
+        "snapshot.sqlite"
+      ],
+      "metadata_sources": [
+        {
+          "source_set": "cs:cs",
+          "complete": 1,
+          "response_date": "2026-09-25T06:48:05Z"
+        },
+        {
+          "source_set": "math:math",
+          "complete": 1,
+          "response_date": "2026-09-25T07:03:44Z"
+        },
+        {
+          "source_set": "stat:stat",
+          "complete": 1,
+          "response_date": "2026-09-25T07:04:55Z"
+        }
+      ]
+    },
+    "wateroffice": {
+      "application_version": "0.1.0-dev",
+      "browser_version": "0.1.0-dev",
+      "port": 8084,
+      "legacy_records": 10,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-web:0.1.0-dev",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-wateroffice-browser:0.1.0-dev"
+      },
+      "data_assets": [
+        {
+          "name": "wateroffice-data-v0.1.0.tar.gz",
+          "bytes": 399577798,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/wateroffice-data-v0.1.0.tar.gz"
+        }
+      ],
+      "distribution_status": "ready",
+      "data_redistribution": "Environment Canada attributed non-resale hydrometric data; NRCan basemap OGL-Canada",
+      "acceptance": "41 browser information checks passed; development scope only; full visual acceptance not claimed",
+      "data_archive_status": "release-v0.1.0",
+      "required_files": [
+        "Hydat.sqlite3",
+        "reference.json",
+        "reference-display.json",
+        "realtime-stations.json",
+        "operation-membership.json",
+        "realtime-filter-membership.json"
+      ]
+    },
+    "cellosaurus": {
+      "application_version": "0.1.0",
+      "browser_version": "0.1.0",
+      "port": 8086,
+      "legacy_records": 0,
+      "supplementary_records": 4,
+      "images": {
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0",
+        "browser": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-browser:0.1.0",
+        "clastr": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-clastr:0.1.0"
+      },
+      "data_assets": [
+        {
+          "name": "cellosaurus-data-v0.1.2.tar.gz",
+          "bytes": 228776097,
+          "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.2/cellosaurus-data-v0.1.2.tar.gz"
+        }
+      ],
+      "distribution_status": "candidate",
+      "data_redistribution": "CC BY 4.0 (CALIPHO/SIB); GPL-3.0 CLASTR source and separate dependency licenses",
+      "acceptance": "Publication validation pending; original deployment acceptance retained separately",
+      "expected_records": 168970,
+      "data_version": "56.0",
+      "required_files": [
+        "cellosaurus.sqlite",
+        "sources.json",
+        "history/sources.json",
+        "README.gz",
+        "cellosaurus_faq.txt.gz",
+        "cellosaurus.txt.gz",
+        "cellosaurus.xml.gz",
+        "cellosaurus_refs.txt.gz",
+        "cellosaurus_xrefs.txt.gz",
+        "cellosaurus_relnotes.txt.gz",
+        "cellosaurus.xsd.gz",
+        "cellosaurus_name_conflicts.txt.gz",
+        "cellopub.txt.gz",
+        "cellosaurus_deleted_ACs.txt.gz",
+        "cellosaurus.obo.gz",
+        "history/53/cellosaurus_name_conflicts.txt.gz",
+        "history/54/cellosaurus_name_conflicts.txt.gz"
+      ]
+    }
+  }
+}

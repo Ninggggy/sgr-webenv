@@ -1,0 +1,5 @@
+data
+validation
+**/__pycache__
+**/target
+.git

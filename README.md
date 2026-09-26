@@ -75,3 +75,7 @@ paper metadata is not invented here; the release tag and repository URL identify
 this software independently of the paper.
 
 [Operation, upgrades and rollback](docs/OPERATIONS.md).
+
+## Cellosaurus release preparation
+
+Cellosaurus 0.1.0 source and reproducible builds are being validated for distribution v0.1.2. See [environment documentation](environments/cellosaurus/README.md). Data/image publication status remains candidate until independent installation checks finish.
