@@ -26,9 +26,8 @@ SGR-WebEnv 将网站应用、固定数据和受限浏览器打包为 Docker 环�
 运行要求：**Linux amd64**、支持 **Compose v2** 的 Docker Engine，以及 **Python 3.9+**。准备阶段需要联网下载数据和镜像。各环境的资源需求不同，安装前请查看 [资源配置说明](docs/OPERATIONS.md)。
 
 ```bash
-git clone https://github.com/Ninggggy/sgr-webenv.git
+git clone --branch main https://github.com/Ninggggy/sgr-webenv.git
 cd sgr-webenv
-git checkout v0.1.2
 
 python3 tools/env.py prepare cellosaurus --release v0.1.2
 python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview

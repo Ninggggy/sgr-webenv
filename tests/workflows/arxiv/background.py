@@ -2,7 +2,7 @@
 import argparse,json,subprocess,time
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--container',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-r=Path(__file__).resolve().parents[3];papers=[row['id'] for row in json.loads((r/'docs/verification/arxiv-background.json').read_text())['results']];out=a.output;out.parent.mkdir(parents=True,exist_ok=True);results=[]
+r=Path(__file__).resolve().parents[3];papers=json.loads((Path(__file__).with_name('background_ids.json')).read_text());out=a.output;out.parent.mkdir(parents=True,exist_ok=True);results=[]
 for _ in range(30):
  if subprocess.run(['docker','exec',a.container,'test','-S','/tmp/arxiv-browser.sock'],capture_output=True).returncode==0:break
  time.sleep(1)

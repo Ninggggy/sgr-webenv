@@ -26,9 +26,8 @@ See [data and feature scope](docs/SCOPE.md) for the included datasets and query 
 Requirements: **Linux amd64**, Docker Engine with **Compose v2**, and **Python 3.9+**. Preparation requires Internet access to download data and images. See [resource configuration](docs/OPERATIONS.md) before installing; requirements vary by environment.
 
 ```sh
-git clone https://github.com/Ninggggy/sgr-webenv.git
+git clone --branch main https://github.com/Ninggggy/sgr-webenv.git
 cd sgr-webenv
-git checkout v0.1.2
 
 python3 tools/env.py prepare cellosaurus --release v0.1.2
 python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
