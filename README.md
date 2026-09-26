@@ -2,18 +2,18 @@
 
 Reproducible offline website environments for SGR-BENCH. [中文说明](README.zh-CN.md).
 
-**v0.1.1: public distribution for Census, arXiv, WONDER, and Wateroffice (development version). NOAA remains a partial release; see the limitations below.**
+**v0.1.2 adds Cellosaurus; public distributions also cover Census, arXiv, WONDER, and Wateroffice (development version). NOAA remains a partial release; see the limitations below.**
 See [release status](docs/STATUS.md), [known differences](docs/SCOPE.md), and [third-party terms](docs/THIRD_PARTY.md).
 
 This repository contains independent reconstructions of NOAA Climate at a Glance,
-Census / ACS, CDC WONDER, arXiv, and Wateroffice. It is not affiliated with or endorsed
+Census / ACS, CDC WONDER, arXiv, Wateroffice, and Cellosaurus. It is not affiliated with or endorsed
 by these agencies or services. These environments reproduce a documented subset
 of interactions and data; they are not complete replicas of the original websites.
 
 ## Distribution
 
 - Source, Dockerfiles, acquisition tools and tests: this repository.
-- Versioned data archives: [v0.1.1 Release](https://github.com/Ninggggy/sgr-webenv/releases/tag/v0.1.1).
+- Versioned data archives: [Releases](https://github.com/Ninggggy/sgr-webenv/releases).
 - Runtime containers: associated GHCR packages (when builds pass).
 - Task answers and author audit directories are never mounted in runtime containers.
 
@@ -76,6 +76,15 @@ this software independently of the paper.
 
 [Operation, upgrades and rollback](docs/OPERATIONS.md).
 
-## Cellosaurus release preparation
+## Cellosaurus (v0.1.2)
 
-Cellosaurus 0.1.0 source and reproducible builds are being validated for distribution v0.1.2. See [environment documentation](environments/cellosaurus/README.md). Data/image publication status remains candidate until independent installation checks finish.
+Complete Release 56.0 metadata (168,970 records), core website and CLASTR, plus separate historical name-conflict downloads. The main application is 0.1.0; the web image packaging revision is `0.1.0-1` for streaming large preview downloads. It is not the complete REST/RDF/SPARQL or external-site surface.
+
+```sh
+git checkout v0.1.2
+python3 tools/env.py prepare cellosaurus --release v0.1.2
+python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
+# Open http://127.0.0.1:8086/
+```
+
+Pass `--release v0.1.2` to Cellosaurus verify/reset/stop commands too. See [operations, licenses and scope](environments/cellosaurus/README.md) and [publication report](docs/verification/cellosaurus-acceptance-v0.1.2.json). Source/data workflow tests are not autonomous model success rates.

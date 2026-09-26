@@ -1,7 +1,7 @@
 # SGR-WebEnv：离线网站环境
 
-本仓库整理 NOAA、Census / ACS、WONDER、arXiv、Wateroffice 五个独立环境。
-**v0.1.1 提供 Census、arXiv、WONDER 和 Wateroffice（开发版）的公开安装材料。NOAA 仍是部分发布，不表示五站全部通过。**
+本仓库整理 NOAA、Census / ACS、WONDER、arXiv、Wateroffice、Cellosaurus 六个独立环境。
+**v0.1.2 新增 Cellosaurus；Census、arXiv、WONDER 和 Wateroffice（开发版）继续沿用已有公开材料。NOAA 仍是部分发布，不表示六站全部功能均已复刻。**
 
 源码放在仓库，固定数据放在 GitHub Releases，镜像放在关联 GHCR。
 不需要原作者的服务器账号。本站不是任何原网站的官方产品或背书项目。
@@ -38,6 +38,7 @@ WONDER 数据附有 NCHS 使用限制和来源说明，不能当作无限制授�
 | wonder | 8082 | 4 | 全国分组与既有保护；附 NCHS 使用限制的数据包 |
 | arxiv | 8083 | 8 | cs/math/stat 最新元数据和版本时间线 |
 | wateroffice | 8084 | 10 | 0.1.0-dev，不升级为完整复刻通过 |
+| cellosaurus | 8086 | 补充 4 条 | Release 56.0 全量元数据、核心站点和 CLASTR；非完整 API/RDF/SPARQL |
 
 `start` 默认隔离评测模式，无宿主机端口。`--mode preview` 仅向本机回环地址开放。
 `reset` 清空容器中的会话和下载状态；`stop` 保留数据与索引。
@@ -56,6 +57,18 @@ WONDER 数据附有 NCHS 使用限制和来源说明，不能当作无限制授�
 
 [安装、重置、升级与回退说明](docs/OPERATIONS.md)。
 
-## Cellosaurus 开源发布准备
+## Cellosaurus 安装（v0.1.2）
 
-Cellosaurus 0.1.0 source and reproducible builds are being validated for distribution v0.1.2. See [environment documentation](environments/cellosaurus/README.md). Data/image publication status remains candidate until independent installation checks finish.
+包含 168,970 条完整记录、CLASTR 及独立的 53/54 版历史同名冲突文件。应用为 0.1.0，网页镜像采用 `0.1.0-1` 打包修订，解决大文件下载时的预览内存问题。源码、数据和三个镜像均提供公开链接。
+
+```bash
+git checkout v0.1.2
+python3 tools/env.py prepare cellosaurus --release v0.1.2
+python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
+# 打开 http://127.0.0.1:8086/
+python3 tools/env.py verify cellosaurus --release v0.1.2
+python3 tools/env.py reset cellosaurus --release v0.1.2
+python3 tools/env.py stop cellosaurus --release v0.1.2
+```
+
+数据遵循 CC BY 4.0；CLASTR 及其修改保留 GPL-3.0 和完整对应源码。它是有明确功能范围的独立复现，不是官方网站，也不承诺逐像素一致。原正式 100 条中没有 Cellosaurus 题；额外四条候选的作者侧回放不代表模型自主成功率。详见 [使用与范围说明](environments/cellosaurus/README.md)、[许可清单](environments/cellosaurus/licenses/NOTICE.md) 和 [发布验收报告](docs/verification/cellosaurus-acceptance-v0.1.2.json)。

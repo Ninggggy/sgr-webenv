@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "note": "Docker Engine serialization adds omitted false/empty Config defaults during save/load, including the default WorkingDir for CLASTR. Filesystem layers and all other runtime fields match.",
+  "images": [
+    {
+      "role": "web",
+      "same_filesystem_layers": true,
+      "same_runtime_configuration": true,
+      "default_field_normalizations": [
+        "Image",
+        "AttachStdin",
+        "OpenStdin",
+        "Domainname",
+        "AttachStderr",
+        "Tty",
+        "StdinOnce",
+        "AttachStdout",
+        "Hostname"
+      ]
+    },
+    {
+      "role": "browser",
+      "same_filesystem_layers": true,
+      "same_runtime_configuration": true,
+      "default_field_normalizations": [
+        "Image",
+        "AttachStdin",
+        "OpenStdin",
+        "Domainname",
+        "AttachStderr",
+        "Tty",
+        "StdinOnce",
+        "AttachStdout",
+        "Hostname"
+      ]
+    },
+    {
+      "role": "clastr",
+      "same_filesystem_layers": true,
+      "same_runtime_configuration": true,
+      "default_field_normalizations": [
+        "AttachStderr",
+        "Tty",
+        "Image",
+        "StdinOnce",
+        "WorkingDir",
+        "AttachStdin",
+        "OpenStdin",
+        "AttachStdout",
+        "Domainname",
+        "Hostname"
+      ]
+    }
+  ]
+}

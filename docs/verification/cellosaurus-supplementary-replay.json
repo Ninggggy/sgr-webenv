@@ -1,0 +1,22 @@
+{
+  "formal100_matches": [],
+  "http_records": 89,
+  "all_raw_equal": true,
+  "supplementary": [
+    {
+      "id": "cellosaurus_001",
+      "CG_GO": 2,
+      "answer_equal": true,
+      "row_count": 5
+    },
+    {
+      "id": "cellosaurus_002",
+      "CG_GO": 2,
+      "row_count": 9,
+      "structural_differences": [],
+      "answer_equal_with_retained_author_origin_interpretation": true
+    }
+  ],
+  "not_autonomous_agent_evaluation": true,
+  "note": "Independent author calculators retained. Author semantic labels are used only by the calculator, never in runtime data."
+}

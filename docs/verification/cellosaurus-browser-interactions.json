@@ -1,0 +1,243 @@
+[
+  {
+    "name": "human csv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "human csv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "human tsv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "human tsv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "human txt named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "human txt upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "mouse csv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "mouse csv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "mouse tsv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "mouse tsv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "mouse txt named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "mouse txt upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "dog csv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "dog csv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "dog tsv named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "dog tsv upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "dog txt named sample and marker",
+    "passed": true
+  },
+  {
+    "name": "dog txt upload excluded from URL",
+    "passed": true
+  },
+  {
+    "name": "xls workbook upload",
+    "passed": true
+  },
+  {
+    "name": "xlsx workbook upload",
+    "passed": true
+  },
+  {
+    "name": "invalid upload bad.exe",
+    "passed": true
+  },
+  {
+    "name": "invalid upload empty.csv",
+    "passed": true
+  },
+  {
+    "name": "invalid upload unnamed.csv",
+    "passed": true
+  },
+  {
+    "name": "invalid upload unrecognized.csv",
+    "passed": true
+  },
+  {
+    "name": "invalid upload alleles.csv",
+    "passed": true
+  },
+  {
+    "name": "invalid upload ragged.csv",
+    "passed": true
+  },
+  {
+    "name": "invalid upload bad.xlsx",
+    "passed": true
+  },
+  {
+    "name": "invalid upload no-markers.csv",
+    "passed": true
+  },
+  {
+    "name": "batch sample list",
+    "passed": true
+  },
+  {
+    "name": "batch browser download two samples",
+    "passed": true
+  },
+  {
+    "name": "late human response cannot replace dog",
+    "passed": true
+  },
+  {
+    "name": "Reset rejects late query",
+    "passed": true
+  },
+  {
+    "name": "navigation rejects late query",
+    "passed": true
+  },
+  {
+    "name": "Reset rejects late batch download",
+    "passed": true
+  },
+  {
+    "name": "Reset rejects late conversion download",
+    "passed": true
+  },
+  {
+    "name": "readAsText callback after Reset ignored",
+    "passed": true
+  },
+  {
+    "name": "readAsBinaryString callback after Reset ignored",
+    "passed": true
+  },
+  {
+    "name": "back restores human query",
+    "passed": true
+  },
+  {
+    "name": "forward restores dog form",
+    "passed": true
+  },
+  {
+    "name": "copied URL restores complete query",
+    "passed": true
+  },
+  {
+    "name": "other tab reset isolated",
+    "passed": true
+  },
+  {
+    "name": "empty result clears old rows",
+    "passed": true
+  },
+  {
+    "name": "CVCL_2257 STR navigation",
+    "passed": true
+  },
+  {
+    "name": "CVCL_3984 STR navigation",
+    "passed": true
+  },
+  {
+    "name": "CVCL_WS63 STR navigation",
+    "passed": true
+  },
+  {
+    "name": "encoded name preserved",
+    "passed": true
+  },
+  {
+    "name": "deleted record CVCL_0222",
+    "passed": true
+  },
+  {
+    "name": "deleted record CVCL_0048",
+    "passed": true
+  },
+  {
+    "name": "reference authors expandable",
+    "passed": true
+  },
+  {
+    "name": "author expansion functional",
+    "passed": true
+  },
+  {
+    "name": "STR collapses",
+    "passed": true
+  },
+  {
+    "name": "group navigation",
+    "passed": true
+  },
+  {
+    "name": "group history",
+    "passed": true
+  },
+  {
+    "name": "panel navigation",
+    "passed": true
+  },
+  {
+    "name": "description archived content",
+    "passed": true
+  },
+  {
+    "name": "historical archive 53",
+    "passed": true
+  },
+  {
+    "name": "historical archive 54",
+    "passed": true
+  },
+  {
+    "name": "CLASTR result detail popup https://web.expasy.org/cellosaurus/",
+    "passed": true
+  },
+  {
+    "name": "CLASTR result detail popup https://www.cellosaurus.org/",
+    "passed": true
+  },
+  {
+    "name": "no browser JS exceptions",
+    "passed": true,
+    "errors": []
+  }
+]

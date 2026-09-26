@@ -1,0 +1,1353 @@
+{
+  "checks": [
+    {
+      "check": "source TXT CVCL_0001",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_0001",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_0001",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_0I94",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_0I94",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_0I94",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_1251",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_1251",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_1251",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_1L19",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_1L19",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_1L19",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_2484",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_2484",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_2484",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_2N48",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_2N48",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_2N48",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_3712",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_3712",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_3712",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_3Q75",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_3Q75",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_3Q75",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_4948",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_4948",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_4948",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_4T07",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_4T07",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_4T07",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_5C79",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_5C79",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_5C79",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_5W36",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_5W36",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_5W36",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_6G05",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_6G05",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_6G05",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_6Z62",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_6Z62",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_6Z62",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_7I38",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_7I38",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_7I38",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_8197",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_8197",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_8197",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_8K73",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_8K73",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_8K73",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_9432",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_9432",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_9432",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_9N00",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_9N00",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_9N00",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_A0R0",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_A0R0",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_A0R0",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_A2NJ",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_A2NJ",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_A2NJ",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_A4L2",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_A4L2",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_A4L2",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_A6IH",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_A6IH",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_A6IH",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_A8FW",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_A8FW",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_A8FW",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_AC18",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_AC18",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_AC18",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_AV76",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_AV76",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_AV76",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_B1KB",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_B1KB",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_B1KB",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_B3HU",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_B3HU",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_B3HU",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_B5FB",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_B5FB",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_B5FB",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_B7CY",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_B7CY",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_B7CY",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_B9AB",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_B9AB",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_B9AB",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_BJ92",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_BJ92",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_BJ92",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C0H5",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C0H5",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C0H5",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C2EJ",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C2EJ",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C2EJ",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C4BX",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C4BX",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C4BX",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C676",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C676",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C676",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C7ZH",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C7ZH",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C7ZH",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_C9WV",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_C9WV",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_C9WV",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_CS47",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_CS47",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_CS47",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_D1AZ",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_D1AZ",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_D1AZ",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_D343",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_D343",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_D343",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_D4YJ",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_D4YJ",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_D4YJ",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_D6W8",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_D6W8",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_D6W8",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_D8TL",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_D8TL",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_D8TL",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_DG59",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_DG59",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_DG59",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E020",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E020",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E020",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E1XY",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E1XY",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E1XY",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E3VJ",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E3VJ",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E3VJ",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E5SX",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E5SX",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E5SX",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E7QD",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E7QD",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E7QD",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_E9MS",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_E9MS",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_E9MS",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_EP28",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_EP28",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_EP28",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_F0UX",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_F0UX",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_F0UX",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_F4MP",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_F4MP",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_F4MP",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_F957",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_F957",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_F957",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_FT15",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_FT15",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_FT15",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_GD55",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_GD55",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_GD55",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_GX13",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_GX13",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_GX13",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_HF82",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_HF82",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_HF82",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_HZ39",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_HZ39",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_HZ39",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_IH96",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_IH96",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_IH96",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_J160",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_J160",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_J160",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_JK21",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_JK21",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_JK21",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_K380",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_K380",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_K380",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_KM37",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_KM37",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_KM37",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_L603",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_L603",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_L603",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_LP73",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_LP73",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_LP73",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_M835",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_M835",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_M835",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_MR92",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_MR92",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_MR92",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_NA49",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_NA49",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_NA49",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_NU06",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_NU06",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_NU06",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_PC62",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_PC62",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_PC62",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_PW19",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_PW19",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_PW19",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_QE76",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_QE76",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_QE76",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_QY33",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_QY33",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_QY33",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_RG90",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_RG90",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_RG90",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_S051",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_S051",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_S051",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_SJ12",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_SJ12",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_SJ12",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_T269",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_T269",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_T269",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_TL27",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_TL27",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_TL27",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_U488",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_U488",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_U488",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_UN61",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_UN61",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_UN61",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_V728",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_V728",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_V728",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_VQ86",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_VQ86",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_VQ86",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_W949",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_W949",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_W949",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_WT14",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_WT14",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_WT14",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_XB83",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_XB83",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_XB83",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_XV43",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_XV43",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_XV43",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_YE16",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_YE16",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_YE16",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_YX79",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_YX79",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_YX79",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_ZG40",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_ZG40",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_ZG40",
+      "passed": true
+    },
+    {
+      "check": "source TXT CVCL_ZZ99",
+      "passed": true
+    },
+    {
+      "check": "detail CVCL_ZZ99",
+      "passed": true
+    },
+    {
+      "check": "source present in search export CVCL_ZZ99",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set hela",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"HeLa\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set CVCL_0030",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set RRID:CVCL_0030",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set CCL-2",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set A-549",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set A549",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HEK293",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HEK 293",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set MCF-7",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set MCF7",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set Hep-G2",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HepG2",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set CHO-K1",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set Vero",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set Jurkat",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set K-562",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set NIH/3T3",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set MDCK",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"Homo sapiens\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"Mus musculus\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"Canis lupus familiaris\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set hepatoblastoma",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set melanoma",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"problematic cell line\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"NCI-60\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"cervix\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set Gey",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"tissue culture\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set 11416159",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set BRAF",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set V600E",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa AND human",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa OR A549",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa NOT S3",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa S3",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set HeLa*",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set \"same individual\"",
+      "passed": true
+    },
+    {
+      "check": "official search candidate set zzzz_no_such_cell_927361",
+      "passed": true
+    },
+    {
+      "check": "complete original download README",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_relnotes.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_refs.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus.xml",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus.xsd",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_xrefs.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_deleted_ACs.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_name_conflicts.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellopub.txt",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus.obo",
+      "passed": true
+    },
+    {
+      "check": "complete original download cellosaurus_faq.txt",
+      "passed": true
+    },
+    {
+      "check": "history 53",
+      "passed": true
+    },
+    {
+      "check": "history 54",
+      "passed": true
+    },
+    {
+      "check": "private path denied /data/cellosaurus.sqlite",
+      "passed": true
+    },
+    {
+      "check": "private path denied /.git/config",
+      "passed": true
+    },
+    {
+      "check": "private path denied /app/server.py",
+      "passed": true
+    },
+    {
+      "check": "private path denied /proc/self/environ",
+      "passed": true
+    },
+    {
+      "check": "private path denied /%2e%2e/etc/passwd",
+      "passed": true
+    },
+    {
+      "check": "private path denied /validation/task-checks.json",
+      "passed": true
+    },
+    {
+      "check": "CLASTR same release",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

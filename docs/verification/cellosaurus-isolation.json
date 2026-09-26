@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "role": "cellosaurus-web",
+      "nonroot": true,
+      "readonly": true,
+      "cap_drop_all": true,
+      "no_new_privileges": true,
+      "memory_limit": 1610612736,
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0-1",
+      "oom_killed": false
+    },
+    {
+      "role": "cellosaurus-browser",
+      "nonroot": true,
+      "readonly": true,
+      "cap_drop_all": true,
+      "no_new_privileges": true,
+      "memory_limit": 2147483648,
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-browser:0.1.0",
+      "oom_killed": false
+    },
+    {
+      "role": "cellosaurus-clastr",
+      "nonroot": true,
+      "readonly": true,
+      "cap_drop_all": true,
+      "no_new_privileges": true,
+      "memory_limit": 1610612736,
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-clastr:0.1.0",
+      "oom_killed": false
+    },
+    {
+      "role": "preview",
+      "nonroot": true,
+      "readonly": true,
+      "cap_drop_all": true,
+      "no_new_privileges": true,
+      "memory_limit": 134217728,
+      "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0-1",
+      "oom_killed": false
+    }
+  ],
+  "internal_browsing_and_backend": true,
+  "root_free_bytes": 7530274816,
+  "passed": true
+}

@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "cellosaurus": [
+      {
+        "path": "/.git/config",
+        "status": 404,
+        "bytes": 1639,
+        "denied": true
+      },
+      {
+        "path": "/benchmark/constraint.jsonl",
+        "status": 404,
+        "bytes": 1639,
+        "denied": true
+      },
+      {
+        "path": "/data/metadata.sqlite",
+        "status": 404,
+        "bytes": 1639,
+        "denied": true
+      },
+      {
+        "path": "/app/app.py",
+        "status": 404,
+        "bytes": 1639,
+        "denied": true
+      },
+      {
+        "path": "/proc/self/environ",
+        "status": 404,
+        "bytes": 1639,
+        "denied": true
+      },
+      {
+        "path": "/%2e%2e/etc/passwd",
+        "status": 404,
+        "bytes": 22,
+        "denied": true
+      }
+    ]
+  },
+  "note": "Wateroffice uses its existing unsupported-scope HTTP 503 for unimplemented paths. NOAA distribution is blocked and not tested here."
+}

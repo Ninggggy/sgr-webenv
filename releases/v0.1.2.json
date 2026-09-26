@@ -208,9 +208,9 @@
           "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.2/cellosaurus-data-v0.1.2.tar.gz"
         }
       ],
-      "distribution_status": "candidate",
+      "distribution_status": "ready",
       "data_redistribution": "CC BY 4.0 (CALIPHO/SIB); GPL-3.0 CLASTR source and separate dependency licenses",
-      "acceptance": "Publication validation pending; original deployment acceptance retained separately",
+      "acceptance": "Fresh source-derived archive: complete XML/SQLite and index checks, 40 official search cases plus 4 complete partitions, 337 source-to-HTTP checks, 15 browser RPC and 60 interaction checks, four supplementary author replays, lifecycle and isolation pass. Three public Linux amd64 images. No autonomous model success rate or whole-site equivalence claimed.",
       "expected_records": 168970,
       "data_version": "56.0",
       "required_files": [
@@ -230,8 +230,10 @@
         "cellosaurus_deleted_ACs.txt.gz",
         "cellosaurus.obo.gz",
         "history/53/cellosaurus_name_conflicts.txt.gz",
-        "history/54/cellosaurus_name_conflicts.txt.gz"
-      ]
+        "history/54/cellosaurus_name_conflicts.txt.gz",
+        "NOTICE.md"
+      ],
+      "data_archive_status": "release-v0.1.2"
     }
   }
 }

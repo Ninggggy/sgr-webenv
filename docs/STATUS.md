@@ -1,7 +1,7 @@
 # Release preparation status
 
-Version: **v0.1.1**, updated 2026-09-26. Census, arXiv and WONDER are distributed
-within their declared scope; Wateroffice remains 0.1.0-dev. NOAA remains a partial release, not a complete public installation. All 11 images now pass
+Version: **v0.1.2**, updated 2026-09-26. Census, arXiv and WONDER are distributed
+within their declared scope; Cellosaurus is added with core website/CLASTR scope; Wateroffice remains 0.1.0-dev. NOAA remains a partial release, not a complete public installation. All 14 images now pass
 anonymous pulls. Public package pages display the correct new repository link.
 Public data URL checks have passed; see `verification/anonymous-publication.json`
 for the latest result (earlier failure reports are historical, not new acceptance).
@@ -14,6 +14,7 @@ for the latest result (earlier failure reports are historical, not new acceptanc
 | arXiv 0.1.0 | Fresh complete index of 1,685,244 records; source archive has 2,787,373 version rows. 100 background papers, 40 exploration queries, 14 calendar/navigation actions and 23 HTTP feature-boundary checks pass. Three-record rebuild succeeds and partial-index startup is refused. | All eight records passed information replay: 1,860 candidate detail visits over 76 result pages. Reset/restart and full-index persistence checks passed. Visual differences remain documented; independent-machine installation not claimed. |
 | WONDER 0.3 | 70 webpage queries; four CG/GO and 48 source-count checks pass in an independent private install; session reset, isolation and restart pass. | Source-specific review completed; national public-use-derived data carry NCHS usage conditions. 16 consistent database copies retain every runtime row; 70 packaged query replays match earlier browser exports. |
 | Wateroffice 0.1.0-dev | 41 information-access checks across five workflows; session reset, isolation and restart pass. Downloaded Release archive passed required-file and SQLite checks. | Development release, replacement basemap and documented coverage/visual limits; no full visual or autonomous-task acceptance. |
+| Cellosaurus 0.1.0 (web packaging 0.1.0-1) | Full 168,970-record source reconciliation; 40 official queries plus four full partitions; 337 source-to-HTTP checks; 15 RPC and 60 interaction checks; four supplementary author replays (89 raw records); reset/restart, private paths and isolation pass. Three new images anonymously pull and link to this repository. | Not complete REST/RDF/SPARQL or pixel-equivalent; original equal-name ties, large-result truncation and STR display-name differences remain documented. Preview streams large files within 128 MiB after fixing an initial OOM. |
 | NOAA 2 | Data archive downloaded and validated. Source and upstream notices prepared. | Proprietary ZingChart absent; no released image or complete install. New packaged-browser replay is not claimed. Rank/tie differences remain. |
 
 Reports are in [verification](verification/). These are webpage and data checks,
@@ -126,3 +127,5 @@ from the author machine. No global proxy or original service was changed. This
 is same-server isolated acceptance, not an independent-machine/direct-download
 claim. The temporary v0.1.1 acceptance containers were stopped afterward.
 See `verification/wonder-v011-install.json` and `wonder-anonymous-data.json`.
+
+Cellosaurus detailed acceptance: [report](verification/cellosaurus-acceptance-v0.1.2.json). The post-publication anonymous data-download report is attached to the v0.1.2 Release. Original services and earlier release tags remain unchanged.
