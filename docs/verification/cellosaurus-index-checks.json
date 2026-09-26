@@ -1,0 +1,16 @@
+{
+  "release": "56.0",
+  "core_records": 168970,
+  "indexed_records": 168970,
+  "unique_index_accessions": 168970,
+  "unindexed": [],
+  "unknown": [],
+  "integrity_check": [
+    [
+      "ok"
+    ]
+  ],
+  "foreign_key_errors": [],
+  "seconds": 16.087173223495483,
+  "passed": true
+}

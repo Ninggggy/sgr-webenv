@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "name": "XML version/count",
+      "pass": true,
+      "actual": {
+        "version": "56.0",
+        "updated": "2026-06-25",
+        "nb-cell-lines": "168970",
+        "nb-publications": "29972"
+      }
+    },
+    {
+      "name": "Full XML record count",
+      "pass": true,
+      "actual": 168970
+    },
+    {
+      "name": "All identity/category/parent/donor/species/alias comparisons",
+      "pass": true,
+      "differences": 0
+    },
+    {
+      "name": "SQLite structural check",
+      "pass": true
+    }
+  ],
+  "differences": [],
+  "categories": {
+    "Hybridoma": 13448,
+    "Transformed cell line": 53337,
+    "Cancer cell line": 43514,
+    "Finite cell line": 12509,
+    "Spontaneously immortalized cell line": 7484,
+    "Induced pluripotent stem cell": 18789,
+    "Telomerase immortalized cell line": 928,
+    "Undefined cell line type": 253,
+    "Hybrid cell line": 802,
+    "Embryonic stem cell": 16762,
+    "Somatic stem cell": 231,
+    "Factor-dependent cell line": 438,
+    "Stromal cell line": 66,
+    "Conditionally immortalized cell line": 409
+  },
+  "samples": {},
+  "seconds": 57.61049294471741
+}

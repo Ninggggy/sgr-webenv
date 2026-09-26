@@ -80,11 +80,15 @@ def main():
  p.add_argument('action',choices=['prepare','start','verify','reset','stop'])
  p.add_argument('site',choices=SITES);p.add_argument('--release',default='v0.1.1')
  p.add_argument('--mode',choices=['preview','eval'],default='eval')
+ p.add_argument('--port',type=int,help='Override the preview loopback port for an additional instance')
  p.add_argument('--state-dir',type=Path,default=ROOT/'.state')
  p.add_argument('--data-archive',type=Path,help='Install a locally staged archive')
  p.add_argument('--local-images',action='store_true',help='Use already built Linux amd64 images instead of pulling; prepare only')
  p.add_argument('--allow-candidate',action='store_true',help='Author validation of an unpublished candidate')
  args=p.parse_args();m,spec=load(args.site,args.release)
+ if args.port is not None:
+  if not 1<=args.port<=65535:raise ValueError('Preview port must be 1..65535')
+  spec={**spec,'port':args.port}
  state=(args.state_dir/args.release/args.site).resolve();state.mkdir(parents=True,exist_ok=True)
  config=state/'compose.json'
  compose_cmd=['docker','compose']
