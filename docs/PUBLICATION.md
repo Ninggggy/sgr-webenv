@@ -1,39 +1,23 @@
-# Public visibility and anonymous validation
+# Publication and anonymous validation
 
-The repository is now public; the Release remains a draft. All 11 new packages passed authenticated pulls. Eight now pass anonymous pulls
-and their public package pages confirm association with this repository.
-Three still return 404/unauthorized: wonder-web, arxiv-browser and arxiv-search. This is not anonymous installation acceptance. GHCR granular package visibility
-is separate from repository visibility. The official REST package API does not
-document a visibility-change operation; use each package's web **Package settings**
-→ **Change visibility** → **Public** when publication is ready.
+The source repository and all 11 `sgr-webenv-release-*` packages are public.
+All 11 anonymous image pulls passed using an empty Docker credential directory.
+Each public package page links to `Ninggggy/sgr-webenv`, not private staging.
+See `verification/public-package-pages.json`. The old API-only association
+attempts were inconclusive and are superseded by this public-page observation.
 
-For each **new** package below, first check the linked repository on the package
-page. It must be `Ninggggy/sgr-webenv`. If no repository is linked, choose
-**Connect repository** and select the new `sgr-webenv`. If it points to private
-staging, correct the connection in Package settings. Do not publish the staging
-repository or old packages. The API checks could not establish this connection;
-this is an unverified check, not a claim that the connection is absent.
+The v0.1.0 Release contains five cleared data attachments. The latest anonymous
+source/data/image test is `verification/anonymous-publication.json`; full streamed
+asset comparisons are recorded separately when completed. Cached Docker layers
+may be reused; this is not independent-machine install evidence.
 
-Never send an account token in chat. These packages contain application/browser
-code, not the withheld WONDER databases or NOAA's proprietary chart component.
+Census and arXiv keep their declared supported scope; Wateroffice remains a
+development version. NOAA's proprietary chart component and WONDER's raw data
+are withheld. Do not interpret public materials as complete five-site parity.
 
-| Package | Verified state / manual action |
-|---|---|
-| [sgr-webenv-release-runtime:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Not publicly accessible; set Public |
-| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Not publicly accessible; set Public |
-| [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Public; anonymous pull and repository association verified |
-
-The repository/Release must remain marked candidate until the declared checks
-pass. The manifest uses final `v0.1.0` asset URLs. GitHub currently reports an internal `untagged-...` draft tag; set `v0.1.0` when publishing and verify every download. Anonymous tests must use no
-GitHub or Docker credentials. Do not infer package visibility from source visibility.
+Package links are listed in `verification/public-package-pages.json` and image
+names in `releases/v0.1.0.json`. For future versions, GitHub package visibility
+must be checked separately from repository visibility.
 
 Official instructions: https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility
 

@@ -1,7 +1,7 @@
 # SGR-WebEnv：离线网站环境
 
 本仓库整理 NOAA、Census / ACS、WONDER、arXiv、Wateroffice 五个独立环境。
-**目前源码已公开，但仍是发布候选，不表示五站已经完成开源安装验收。**
+**v0.1.0 提供 Census、arXiv 和 Wateroffice（开发版）的公开安装材料。NOAA、WONDER 仍是部分发布，不表示五站全部通过。**
 
 源码放在仓库，固定数据放在 GitHub Releases，镜像放在关联 GHCR。
 不需要原作者的服务器账号。本站不是任何原网站的官方产品或背书项目。
@@ -9,7 +9,7 @@
 ## 使用方式
 
 正式支持 Linux amd64、Docker Compose v2、Python 3.9+；先准备资源，再断网运行。
-源码已能匿名访问，但数据 Release 仍为草稿，镜像尚不能匿名拉取，因此不能匿名一键安装。对应环境在发布清单中标为 `ready` 后，可执行：
+Census、arXiv 和 Wateroffice 的发布清单已标为 `ready`（材料可安装，不代表原站全部功能等价）。以 arXiv 为例：
 
 ```bash
 git clone https://github.com/Ninggggy/sgr-webenv.git

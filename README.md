@@ -2,7 +2,7 @@
 
 Reproducible offline website environments for SGR-BENCH. [中文说明](README.zh-CN.md).
 
-**Release status: public source, distribution candidate. Data assets remain draft and GHCR images do not yet pass anonymous pulls. Public-install acceptance is not claimed.**
+**v0.1.0: public distribution for Census, arXiv, and Wateroffice (development version). NOAA and WONDER remain partial releases; see the limitations below.**
 See [release status](docs/STATUS.md), [known differences](docs/SCOPE.md), and [third-party terms](docs/THIRD_PARTY.md).
 
 This repository contains independent reconstructions of NOAA Climate at a Glance,
@@ -13,7 +13,7 @@ of interactions and data; they are not complete replicas of the original website
 ## Distribution
 
 - Source, Dockerfiles, acquisition tools and tests: this repository.
-- Versioned data archives: GitHub Releases (when redistribution review passes).
+- Versioned data archives: [v0.1.0 Release](https://github.com/Ninggggy/sgr-webenv/releases/tag/v0.1.0).
 - Runtime containers: associated GHCR packages (when builds pass).
 - Task answers and author audit directories are never mounted in runtime containers.
 
@@ -23,7 +23,7 @@ The supported target is Linux amd64, Docker Engine with Compose v2 and Python 3.
 The Docker version must support isolated bridge networks. Preparation downloads
 artifacts; evaluation runtime uses internal networks and does not require the Internet.
 
-After a release is marked ready:
+For Census, arXiv, or Wateroffice:
 
 ```sh
 python3 tools/env.py prepare arxiv --release v0.1.0
@@ -34,7 +34,7 @@ python3 tools/env.py reset arxiv
 python3 tools/env.py stop arxiv
 ```
 
-Replace `arxiv` with `noaa`, `census`, `wonder`, or `wateroffice`. The default start
+Replace `arxiv` with `census` or `wateroffice`. NOAA has no redistributable chart image; WONDER has no public data archive. The default start
 mode is `eval`, with no host ports. Preview exposes only a proxy on loopback.
 `verify` performs a health smoke check, **not benchmark correctness acceptance**.
 Unreleased environments refuse installation unless the author explicitly uses
