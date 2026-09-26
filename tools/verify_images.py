@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Pull declared non-NOAA images and inspect their platform/repository association."""
-import json,os,subprocess,urllib.request,urllib.error
+import json,os,subprocess,urllib.request,urllib.error,urllib.parse
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 manifest=json.loads((root/'releases/v0.1.0.json').read_text())
@@ -34,9 +34,21 @@ for image in images:
    with urllib.request.urlopen(req,timeout=30) as r:p=json.load(r)
    row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=associations.get(package);row['association_evidence']='GraphQL repository.packages';row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv';row['association_status']='verified' if row['association_matches'] else 'unverified; inspect package web page'
   except urllib.error.HTTPError as e:row['visibility']='unavailable HTTP '+str(e.code)
+ # Public GHCR pages redirect to a repository-scoped package URL when linked.
+ # This is directly observable even when API package listings omit containers.
+ package=image.rsplit('/',1)[1].split(':')[0]
+ public_url='https://github.com/users/Ninggggy/packages/container/package/'+package
+ try:
+  with urllib.request.urlopen(public_url,timeout=30) as response:
+   resolved=response.geturl()
+  expected='/Ninggggy/sgr-webenv/pkgs/container/'+package
+  if urllib.parse.urlparse(resolved).netloc=='github.com' and urllib.parse.urlparse(resolved).path==expected:
+   row.update(visibility='public',associated_repository='Ninggggy/sgr-webenv',association_matches=True,association_status='verified',association_evidence='Anonymous package page redirects to repository-scoped URL',package_url=resolved)
+ except urllib.error.HTTPError:
+  pass
  results.append(row)
 out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')
 print(out.read_text())
 
-if os.environ.get("GITHUB_TOKEN") and any(not r.get("association_matches") for r in results):
+if any(not r.get("association_matches") for r in results):
  raise SystemExit("Package association with the new repository is not verified; inspect image-verification.json")

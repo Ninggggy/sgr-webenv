@@ -39,7 +39,7 @@ has been created and populated with a clean source snapshot; the excluded old
 commit/file cannot be retrieved there. The previous staging repository, draft
 assets and audit history are retained privately. All five cleared data assets have been migrated; their contents match the validated archives.
 The old GHCR packages were not readable by the new repository token (HTTP 403).
-The unchanged validated images have been published privately under `sgr-webenv-release-*`
+The unchanged validated images were initially published privately and are now public under `sgr-webenv-release-*`
 so their package association can be established with the new repository. Old
 packages remain untouched for rollback. Use only the **new package links above**
 for public visibility settings. The OCI source label alone is not evidence of

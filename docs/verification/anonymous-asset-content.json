@@ -1,0 +1,41 @@
+{
+  "scope": "Credential-free full HTTP GET, streamed comparison with previously downloaded and independently validated archive; no new full-file duplicate saved.",
+  "assets": [
+    {
+      "asset": "noaa-data-v0.1.0.tar.gz",
+      "anonymous_full_download": true,
+      "bytes": 22123102,
+      "equal_to_validated_archive": true,
+      "elapsed_seconds": 3.56
+    },
+    {
+      "asset": "census-data-v0.1.0.tar.gz",
+      "anonymous_full_download": true,
+      "bytes": 131009519,
+      "equal_to_validated_archive": true,
+      "elapsed_seconds": 15.97
+    },
+    {
+      "asset": "arxiv-data-v0.1.0.tar.gz.part-000",
+      "anonymous_full_download": true,
+      "bytes": 1073741824,
+      "equal_to_validated_archive": true,
+      "elapsed_seconds": 123.74
+    },
+    {
+      "asset": "arxiv-data-v0.1.0.tar.gz.part-001",
+      "anonymous_full_download": true,
+      "bytes": 270783027,
+      "equal_to_validated_archive": true,
+      "elapsed_seconds": 31.44
+    },
+    {
+      "asset": "wateroffice-data-v0.1.0.tar.gz",
+      "anonymous_full_download": true,
+      "bytes": 399577798,
+      "equal_to_validated_archive": true,
+      "elapsed_seconds": 46.75
+    }
+  ],
+  "complete": true
+}

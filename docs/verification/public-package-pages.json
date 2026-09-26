@@ -4,76 +4,98 @@
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-runtime",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-runtime",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-browser-base",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-browser-base",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-census-web",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-web",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-census-browser",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-browser",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-wonder-web",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wonder-web",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-wonder-browser",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wonder-browser",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-arxiv-web",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-arxiv-web",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-arxiv-browser",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-arxiv-browser",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-arxiv-search",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-arxiv-search",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-wateroffice-web",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-web",
+    "repository_association_verified": true
   },
   {
     "package": "sgr-webenv-release-wateroffice-browser",
     "http": 200,
     "repository_link_present": true,
     "staging_link_present": false,
-    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser"
+    "url": "https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser",
+    "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-browser",
+    "repository_association_verified": true
   }
 ]

@@ -4,7 +4,7 @@ Version: **v0.1.0**, updated 2026-09-26. Census and arXiv are distributed
 within their declared scope; Wateroffice remains 0.1.0-dev. NOAA and WONDER are
 partial releases, not complete public installations. All 11 images now pass
 anonymous pulls. Public package pages display the correct new repository link.
-Data URL checks accompany Release publication; see `verification/anonymous-publication.json`
+Public data URL checks have passed; see `verification/anonymous-publication.json`
 for the latest result (earlier failure reports are historical, not new acceptance).
 
 ## What is verified
@@ -85,33 +85,20 @@ Visual comparison details and a non-answer form screenshot pair are in [VISUAL_C
 
 Point-in-time memory and unpacked data sizes are recorded in `verification/resource-observations.json`; they are not peak-install or minimum hardware requirements. The four runnable environments also passed 24 direct private-path requests (`verification/private-paths.json`).
 
-## Historical first anonymous recheck (before package visibility change)
+## Public access verification
 
-The source repository returned HTTP 200 and unauthenticated `git ls-remote`
-succeeded. The old staging repository remains private. All five data URLs
-returned HTTP 404 because the Release is still a draft. All 11 new GHCR
-package pages returned HTTP 404, and all 11 pulls with an empty Docker
-credential directory failed. The package visibility change is therefore not
-verified; public repository visibility alone is insufficient. Reports:
-`verification/anonymous-publication.json` and `verification/anonymous-package-pages.json`.
-No environment is promoted to public-install acceptance by this result.
+The final source, five data URLs and 11 image-pull checks all pass anonymously
+(`verification/anonymous-publication.json`). All 11 package pages resolve to
+`Ninggggy/sgr-webenv/pkgs/container/...`, confirming the correct association
+(`verification/public-package-pages.json`). The previous zero-, eight- and
+nine-image intermediate results are superseded. Immediately after publishing,
+some asset URLs briefly returned 404; subsequent checks returned 200 with the
+expected sizes. Full streamed comparisons are recorded in
+`verification/anonymous-asset-content.json`.
 
-## Second package visibility recheck
-
-Eight of eleven images now pass anonymous pulls and their public package pages
-resolve to this repository. `sgr-webenv-release-wonder-web`,
-`sgr-webenv-release-arxiv-browser` and `sgr-webenv-release-arxiv-search` still
-return HTTP 404 on their package pages and fail anonymous pulls. The Release
-remains a draft, so all five data URLs still return 404. Current evidence is in
-`verification/anonymous-publication.json` and `verification/public-package-association.json`.
-The previous all-private observations above are historical.
-
-### Second package-visibility recheck
-
-Nine of 11 new images now pass anonymous pulls. Their public package pages
-resolve to this repository's package pages, confirming their association.
-`sgr-webenv-release-arxiv-browser:0.1.0` and
-`sgr-webenv-release-arxiv-search:0.1.0` still fail anonymous pulls, and their
-package pages return HTTP 404. The five data assets remain in the draft Release.
-The latest `anonymous-publication.json` supersedes the earlier zero-of-11 result;
-`public-package-association.json` records the package-page evidence.
+An unauthenticated clone of the published `v0.1.0` tag succeeded. Its six
+distribution-tool tests passed, with Census/arXiv/Wateroffice marked `ready` and
+NOAA/WONDER explicitly blocked. `ready` describes available installation
+materials, not complete website parity or a change to Wateroffice's maturity.
+The older staging repository remains private and no temporary Actions runner is
+registered. No original production website was changed during publication.
