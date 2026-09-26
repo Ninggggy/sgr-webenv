@@ -2,12 +2,9 @@
 
 Run the standard-library script through the isolated web container's loopback
 HTTP interface using `docker exec -i <web-container> python3 < http_scope.py`.
-It exercises existing website/API/citation paths only. No answer interface is
-introduced and no benchmark file is mounted.
 
 Expected statuses distinguish unsupported historical/identifier/fulltext features
-(501), unknown versions (404), and out-of-scope categories (503). The historical
-submission-date example comes from the existing source record, not its identifier.
+(501), unknown versions (404), and out-of-scope categories (503).
 
 ## Restricted-browser workflow replay
 

@@ -27,7 +27,7 @@ Other NOAA dependency notices accompany jQuery, jQuery UI, Bootstrap, Bootstrap 
 
 ## Wateroffice resources
 
-The map uses NRCan Toporama rather than Google Maps. Bundled library notices cover Font Awesome Free 5.15.3 (MIT/OFL/CC BY 4.0 by component), Lato and Noto Sans (OFL), Chart.js (MIT), WET-BOEW, GCWeb and Leaflet. See `environments/wateroffice/app/static/licenses/` for notices and source links.
+The map uses NRCan Toporama. Bundled library notices cover Font Awesome Free 5.15.3 (MIT/OFL/CC BY 4.0 by component), Lato and Noto Sans (OFL), Chart.js (MIT), WET-BOEW, GCWeb and Leaflet. See `environments/wateroffice/app/static/licenses/` for notices and source links.
 
 ## WONDER data
 
@@ -35,6 +35,6 @@ The runtime data derive from national NCHS public-use files. Preserve source att
 
 ## Cellosaurus resources
 
-See [component notices](../environments/cellosaurus/licenses/NOTICE.md) for Cellosaurus CC BY 4.0, CLASTR GPL-3.0 and bundled JavaScript/Java dependencies. Preserve corresponding modified source with GPL-covered distributions. Institutional partner badges are represented by text attribution.
+See [component notices](../environments/cellosaurus/licenses/NOTICE.md) for Cellosaurus CC BY 4.0, CLASTR GPL-3.0 and bundled JavaScript/Java dependencies. Preserve corresponding modified source with GPL-covered distributions.
 
 Agency names and identity artwork identify the source websites.

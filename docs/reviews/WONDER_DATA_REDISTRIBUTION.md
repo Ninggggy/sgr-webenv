@@ -24,7 +24,7 @@ Small multiplicities are computational inputs. Apply query suppression and relia
 2. Preserve the accompanying [data-use notice](../../environments/wonder/licenses/DATA_USE_NOTICE.md) with redistributed copies.
 3. Use the data for statistical reporting and analysis. Do not identify people or establishments, link to individually identifiable data, or conduct re-identification/disclosure-protection-method research prohibited by the NCHS agreement.
 4. Retain the website/export small-cell protections. Do not use this archive to reconstruct suppressed geographic WONDER information.
-5. Keep project transformations distinct from source data; do not imply CDC endorsement or apply Apache-2.0 to the data.
+5. Identify project transformations and retain the source data terms.
 6. Review the applicable source terms separately before adding other datasets or using the materials for a different purpose.
 
 The linked source terms describe data use and redistribution conditions.

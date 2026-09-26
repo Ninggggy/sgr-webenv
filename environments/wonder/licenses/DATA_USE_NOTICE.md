@@ -33,6 +33,3 @@ CDC reproduction/attribution terms:
 https://www.cdc.gov/other/agencymaterials.html
 NVSS public-use versus restricted data policy:
 https://www.cdc.gov/nchs/nvss/dvs_data_release.htm
-
-This frozen research snapshot does not update automatically. Refer to official
-CDC sources for current data and guidance.

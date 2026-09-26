@@ -3,7 +3,7 @@
 This offline research environment uses the following data, software and resources.
 
 * Cellosaurus Release 56.0 (2026-06-25), documentation and Cellosaurus-owned website resources: CALIPHO group, SIB Swiss Institute of Bioinformatics, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Official FAQ Q22](https://www.cellosaurus.org/faq#Q22) explicitly permits redistribution and adaptation with attribution. [SIB resource listing](https://www.expasy.org/resources/cellosaurus). Sources and retrieval times accompany the data archive. The SQLite/FTS representation and offline interface are adaptations; the source TXT/XML records are unchanged. Separate Release 53/54 name-conflict archives retain their release identities.
-* CLASTR Java and frontend: Thibault Robin / CALIPHO, GPL-3.0. Complete corresponding modified source, tests and build files are included under `upstream/clastr`; changes are described in `docs/upstream.json`. `app/static/str-search` contains the corresponding modified frontend. Preserve its GPL notice; the repository Apache-2.0 license does not replace it.
+* CLASTR Java and frontend: Thibault Robin / CALIPHO, GPL-3.0. Complete corresponding modified source, tests and build files are included under `upstream/clastr`; changes are described in `docs/upstream.json`. `app/static/str-search` contains the corresponding modified frontend. Preserve its GPL notice.
 * Snowball English 3.0.1: BSD-3-Clause, retained in `app/vendor/snowballstemmer/LICENSE`.
 * jQuery 3.4.1 and 3.5.1, jQuery UI 1.12.1 (including theme sprites), normalize.css: MIT; embedded copyright notices and license texts retained.
 * PapaParse 5.1.0: MIT. SheetJS/xlsx 0.15.3: Apache-2.0. License texts included here; Java dependencies retain notices in their JARs.

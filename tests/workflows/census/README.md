@@ -26,6 +26,6 @@ sandbox/network limits, place `export_jobs.json` at `/tmp/legacy-jobs.json`, the
 execute the script with `/usr/local/lib/python3.10/dist-packages/playwright/driver/node` (the bundled Playwright Node runtime). Do not start a second Chromium inside the running
 RPC container. Downloads are written to `/tmp/oldtasks`; export that directory
 with `docker exec <author-container> tar -C /tmp -cf - oldtasks` before stopping
-the temporary container. The input contains table/geography requests, not answers.
+the temporary container.
 Use `verify_legacy.py /path/to/oldtasks` on the host for independent exact-fraction
 reconstruction against the repository's current eight records.

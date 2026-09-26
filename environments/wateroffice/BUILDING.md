@@ -25,7 +25,7 @@ python environments/wateroffice/tools/verify_realtime_source.py \
   --reference WORK/reference --report WORK/source-check.json
 ```
 
-Select a stratified sample of stations from the dataset being prepared. Cached reference responses retain their request URLs and acquisition times. `--fetch-only` saves reference responses but does not validate the runtime data. Values are compared at the published CSV precision. Internal graph approval codes are not inferred from CSV labels; published Provisional/Final status, Grade and Qualifiers are checked separately.
+Select a stratified sample of stations from the dataset being prepared. Cached reference responses retain their request URLs and acquisition times. Values are compared at the published CSV precision. Published Provisional/Final status, Grade and Qualifiers are checked separately.
 
 ## Browser checks
 
@@ -52,6 +52,6 @@ python tools/package_wateroffice_month.py \
   --output wateroffice-data-30d.tar.gz
 ```
 
-This streams unchanged historical and static members into the new archive and replaces observations only for upgraded stations. Other observations and legacy daily means remain available. It does not unpack or rewrite HYDAT. It excludes collection scratch files, logs and author task materials. Keep at least 5 GiB free on the server throughout validation and deployment.
+This streams unchanged historical and static members into the new archive and replaces observations only for upgraded stations. Other observations and legacy daily means remain available. It excludes collection scratch files, logs and author task materials. Keep at least 5 GiB free on the server throughout validation and deployment.
 
 Use a separate installation to check the generated package. Retain the previous data and image versions for rollback.
