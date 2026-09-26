@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Browser protocol/isolation smoke. Does not measure task correctness."""
 import argparse,json,subprocess,time
-p=argparse.ArgumentParser();p.add_argument('site',choices=['noaa','census','wonder','arxiv','wateroffice','cellosaurus']);p.add_argument('--release',default='v0.1.1');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('site',choices=['noaa','census','wonder','arxiv','wateroffice','cellosaurus','chemexpo']);p.add_argument('--release',default='v0.1.4');a=p.parse_args()
 project='sgr-'+a.site+'-'+a.release.replace('.','-')
 service='browser' if a.site=='arxiv' else a.site+'-browser'
 ids=subprocess.check_output(['docker','ps','--filter','label=com.docker.compose.project='+project,'--filter','label=com.docker.compose.service='+service,'--format','{{.ID}}'],text=True).split()

@@ -1,0 +1,95 @@
+import base64
+import re
+
+from django.shortcuts import render
+from django.contrib import messages
+from django.http import HttpResponseRedirect
+
+from elastic.search import run_query, get_unique_count, FACETS_NAME, VALID_MODELS
+from elastic.models import QueryLog
+
+# Testing
+
+from factotum.app_type import select_template_for_app
+
+
+def search_model(
+    request,
+    model,
+    template_name=select_template_for_app(
+        internal="search/base_internal.html", external="search/base.html"
+    ),
+):
+    """
+    Submits a search query to the elasticsearch `dashboard` index.
+    The search term is passed in the request as a b64-encoded bytestring
+    and then decoded and the special characters are escaped.
+    """
+    page = request.GET.get("page", 1)
+    encoded_q = request.GET.get("q", "")
+    decoded_q = base64.b64decode(encoded_q).decode("unicode_escape")
+
+    # Ensure querystring is not too long
+    max_q_size = QueryLog._meta.get_field("query").max_length
+    if len(decoded_q) > max_q_size:
+        err_msg = "Please limit your query to %d characters." % max_q_size
+        messages.error(request, err_msg)
+        return HttpResponseRedirect(request.headers.get("referer", "/"))
+
+    # Escape the special characters
+    # method from https://stackoverflow.com/questions/40222694/escaping-special-characters-in-elasticsearch
+    ELASTIC_SPECIAL = '/ + & | ! ( ) { } [ ] ^ " ~ * ? : \\'.split(" ")
+    escaped_q = re.sub("([{}])".format("\\".join(ELASTIC_SPECIAL)), r"\\\1", decoded_q)
+
+    # Base64 decode the facets
+    facets = {}
+    for f in FACETS_NAME:
+        if f in request.GET:
+            facet_strs = []
+            for s in request.GET[f].split(","):
+                try:
+                    facet_strs.append(base64.b64decode(s).decode("unicode_escape"))
+                except:
+                    pass
+            if facet_strs:
+                facets[f] = facet_strs
+    # Log the initial query
+    # The default model is "datadocument", the default page is 1, and the default has no facets.
+    # Only this initial query will be logged.
+    if page == 1 and model == "datadocument" and not facets:
+        user_id = request.user.pk if request.user else None
+        QueryLog.objects.create(
+            query=decoded_q, application=QueryLog.FACTOTUM, user_id=user_id
+        )
+        # Get model counts for fresh search
+        get_model_counts(request, escaped_q)
+
+    # In case counts are missing from session data, catch up
+    if not request.session.has_key("unique_counts"):
+        get_model_counts(request, escaped_q)
+
+    result = run_query(escaped_q, model, size=40, facets=facets, page=page)
+    context = {
+        "encoded_q": encoded_q,
+        "decoded_q": decoded_q,
+        "escaped_q": escaped_q,
+        "result": result,
+        "model": model,
+        "faceted": bool(facets),
+        "unique_counts": request.session["unique_counts"],
+    }
+    return render(request, template_name, context)
+
+
+def get_model_counts(request, decoded_q):
+    """
+    Get the unique count for each model and store results in session.
+    :param request: the request
+    :param decoded_q: the query string
+    :return: the unique counts
+    """
+    unique_counts = {}
+    for model in VALID_MODELS:
+        unique_counts[model] = get_unique_count(decoded_q, model)
+    request.session["unique_counts"] = unique_counts
+    return unique_counts

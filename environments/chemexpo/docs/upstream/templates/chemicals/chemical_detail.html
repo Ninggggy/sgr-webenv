@@ -1,0 +1,424 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load humanize %}
+{% load tags %}
+{% load list_index %}
+{% load dashboard_extras %}
+
+{% block title %}Chemical Detail: {{ chemical|title }}{% endblock %}
+
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-6 p-0" id="chemical"
+             data-sid="{{ chemical.sid }}"
+             data-puc="{{ puc.pk }}"
+             data-pid=""
+             data-is_co_chem="{{ is_co_chem}}"
+             data-puc-parents="{{ puc.get_parent_ids }}">
+            <h1>
+            <span class='pr-1' data-toggle="tooltip" data-placement="right" title="Chemical Name">{{ chemical|title }}
+            </span>
+            </h1>
+            <h4>
+            <span class='pr-1' data-toggle="tooltip" data-placement="right" title="View in CompTox Chemicals Dashboard">
+                <a target="_blank" href="https://comptox.epa.gov/dashboard/dsstoxdb/results?search={{ chemical.sid }}">
+                    {{ chemical.sid }}
+                </a>
+            </span>
+            </h4>
+            <h4>
+            <span class='pr-1' data-toggle="tooltip" data-placement="right" title="CAS">{{ chemical.true_cas|title }}
+            </span>
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="text-left">
+                Explore products containing this chemical. Use the filter buttons to filter the tables below to certain Product Use Categories. Click the info button (<i class="fas fa-info-circle icon-secondary"></i>) next to each PUC to access its detailed chemical and product data.
+                <br>
+                Note: the high-level PUCs link to products that can’t be further categorized; drill down to access products with refined PUC categorizations. 
+            </div>
+        </div>
+    </div>
+
+    {# Formulation PUCs    #}
+    <div class="row mt-2">
+        <div class="col-5 p-0">
+            {% show_bubble_puc_legend formulation_pucs "FO" True %}
+        </div>
+        <div class="col-7">
+            {% if formulation_pucs.children %}
+                <svg id="nestedcircles_FO" class="nestedcircles" width="100%" height="500"></svg>
+            {% else %}
+                <h3>No Formulation PUCs associated with this chemical.</h3>
+            {% endif %}
+        </div>
+    </div>
+
+    {# Article PUCs    #}
+    <div class="row mt-2">
+        <div class="col-5 p-0">
+            {% show_bubble_puc_legend article_pucs "AR" True %}
+        </div>
+        <div class="col-7">
+            {% if article_pucs.children %}
+                <svg id="nestedcircles_AR" class="nestedcircles" width="100%" height="500"></svg>
+            {% else %}
+                <h3>No Article PUCs associated with this chemical.</h3>
+            {% endif %}
+        </div>
+    </div>
+
+    {# Occupation PUCs    #}
+    <div class="row mt-2">
+        <div class="col-5 p-0">
+            {% show_bubble_puc_legend occupation_pucs "OC" True %}
+        </div>
+        <div class="col-7">
+            {% if occupation_pucs.children %}
+                <svg id="nestedcircles_OC" class="nestedcircles" width="100%" height="500"></svg>
+            {% else %}
+                <h3>No Industrial and Occupational PUCs associated with this chemical.</h3>
+            {% endif %}
+        </div>
+    </div>
+
+
+  <div class="row mt-4">
+    <div class="tab-content col-12">
+      {% if keysets|length > 0 %}
+        <div class="accordion" id="lpkAccordion">
+          <div class="card border-bottom rounded">
+            <div class="card-header p-1 px-3 row"
+                 id="lpkHeading"
+                 data-toggle="collapse"
+                 data-target="#lpkCollapse"
+                 aria-expanded="true"
+                 aria-controls="lpkCollapse"
+            >
+              <h5 class="text-center col-10 offset-1 mb-0">
+                <b>Filter By List Presence Keyword Sets Associated with Chemicals</b>
+              </h5>
+              <h5 class="text-right col-1 mb-0 ">
+                <i class="fas fa-chevron-down h-100"></i>
+              </h5>
+            </div>
+            <div id="lpkCollapse"
+                 class="collapse"
+                 aria-labelledby="lpkHeading"
+                 data-parent="#lpkAccordion"
+            >
+              {% for keyset in keysets %}
+              {% if keyset.count != 0 %}
+                <div class="card rounded-0">
+                  <div class="card-header-sm bg-light"
+                       id="keyCard"
+                  >
+                    <span>
+                      <span class="dot dot-dg-chem text-center ml-2"
+                            title="Number of related documents"
+                            data-toggle="tooltip"
+                      >
+                          <small><b>{{ keyset.count }}</b></small>
+                      </span>
+                      <button class="btn btn-light"
+                          {% if keyset.keywords|join:', '|length <= 80 %}
+                              disabled
+                          {% endif %}
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#pid-{{ keyset.presence_id }}"
+                              aria-expanded="true"
+                              aria-controls="pid-{{ keyset.presence_id }}"
+                      >
+                          <b id="keyset-{{ keyset.presence_id }}">{ {{ keyset.keywords|join:", "|truncatechars:80 }} }</b>
+                      </button>
+                      <a id="keywords-{{ forloop.counter }}"
+                         class="float-right rounded mr-2 my-1 p-1"
+                         title="Filter table by Keyword Set"
+                         data-presence-id="{{ forloop.counter0 }}"
+                         data-included_ids="{{ chemical.final_docs|list_index:chemical.pk }}"
+                         data-toggle="tooltip"
+                         data-placement="top"
+                      >
+                          <i class="fa fa-filter fa-lg icon-secondary"></i>
+                      </a>
+                    </span>
+
+                  </div>
+                  {% if keyset.keywords|join:", "|length > 80 %}
+                    <div id="pid-{{ keyset.presence_id }}"
+                         class="collapse"
+                         aria-labelledby="keyCard"
+                         data-parent="#lpkCollapse"
+                    >
+                      <div class="card-body py-0">
+                        <b id="keyset-{{ keyset.presence_id }}">{ {{ keyset.keywords|join:", " }} }</b>
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <div class="card text-center pt-2 mt-2">
+          <h5>
+            <i class="fa fa-ban" aria-hidden="true"></i>
+            <b>No List Presence Keyword Sets Associated with Chemicals</b>
+          </h5>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+    <div class="col-lg-12 mt-4" id="tables">
+        {% select_for_app_type internal="2" external="4" as button_width %}
+        <ul class="row nav nav-pills mb-3">
+            {# these anchors' links are disabled via e.preventDefault(); see corresponding JS (jquery) files #}
+            <li class="col-lg-{{button_width}} nav-item h-nav border rounded p-0">
+                <a class="nav-link text-center active"
+                   data-toggle="pill"
+                   href="#product-table-div"
+                   id="product-tab-header">
+                    <b>Products</b>
+                </a>
+            </li>
+            <li class="col-lg-{{button_width}} nav-item h-nav border rounded p-0">
+                <a class="nav-link text-center"
+                   data-toggle="pill"
+                   href="#document-table-div"
+                   id="document-tab-header">
+                    <b>Documents</b>
+                </a>
+            </li>
+            <li class="col-lg-{{button_width}} nav-item h-nav border rounded p-0">
+                <a class="nav-link text-center"
+                   data-toggle="pill"
+                   href="#functional-use-table-div"
+                   id="functional-use-tab-header">
+                    <b>Function</b>
+                </a>
+            </li>
+            {% block lmhhe_button_internal %}{% endblock lmhhe_button_internal %}
+            {% block mmdb_button_internal %}{% endblock mmdb_button_internal %}
+        </ul>
+        <!-- PRODUCTS TABLE -->
+        <div class="tab-content">
+            <div class="tab-pane container p-0 active" id="product-table-div">
+                <h4 class="mt-2 mb-2">Products Containing "{{ chemical.true_chemname }}"
+                    <span class="float-right">
+                    <button id="reset-products" class="btn btn-outline-secondary p-1"
+                            disabled>Show All Products</button>
+                </span>
+                </h4>
+                <table class="table table-striped dataTable table-sm" id="products">
+                    <thead>
+                    <tr>
+                        <th data-toggle="tooltip" title="Product entry containing chemical of interest">
+                          Product
+                        </th>
+                        <th data-toggle="tooltip" title="The company/business who created the product">
+                          Manufacturer
+                        </th>
+                        <th data-toggle="tooltip" title="The brand name associated with the product or product line">
+                          Brand
+                        </th>
+                        <th data-toggle="tooltip" title="Original source data document associated with product">
+                          Document
+                        </th>
+                        <th data-toggle="tooltip" title="Product use category (PUC) assigned to the product">
+                          PUC
+                        </th>
+                        <th data-toggle="tooltip" title="Product Category Kind">
+                          PUC Kind
+                        </th>
+                        <th data-toggle="tooltip" title="Curation method used to assign product to PUC (Product Use Category)">
+                          Classification Method
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot class="m-0">
+                    <tr>
+                        <th id="products-info-text" class="m-0"></th>
+                        <th></th>
+                        <th></th>
+                        <th class="m-0 p-0">
+                            {% if puc_kinds|length > 1 %}
+                                <div class="form-group ml-1">
+                                    <select class="form-control"
+                                            id="puc_kinds_dropdown"
+                                            data-toggle="tooltip"
+                                            title="Filter by PUC Kind"
+                                            data-placement="left"
+                                            autocomplete="off">
+                                        <option value="all" selected>
+                                            All
+                                        </option>
+                                        <option value="none">
+                                            No PUC assigned
+                                        </option>
+                                        {% for puc_kind in puc_kinds %}
+                                            <option value="{{ puc_kind.code }}">
+                                                {{ puc_kind.name }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            {% else %}
+                                All 1 GroupType
+                            {% endif %}
+                        </th>
+                        <th class="m-0 p-0">
+                            <div class="form-group ml-1">
+                                <select class="form-control"
+                                        id="classification_methods_dropdown"
+                                        data-toggle="tooltip"
+                                        title="Filter by Classification Method"
+                                        data-placement="left"
+                                        autocomplete="off">
+                                    <option value="all" selected>
+                                        All
+                                    </option>
+                                    {% for cm in classification_methods %}
+                                        <option value="{{ cm.code }}">
+                                            {{ cm.name }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!-- DOCUMENTS TABLE -->
+            <div class="tab-pane container p-0 fade" id="document-table-div">
+                <h4 class="mt-2 mb-2">Documents Associated with "{{ chemical.true_chemname }}"
+                    <span class="float-right">
+                    <button id="reset-documents" class="btn btn-outline-secondary p-1" disabled>
+                        Show All Documents
+                    </button>
+                </span>
+                </h4>
+                <table class="table table-striped dataTable table-sm" id="documents">
+                    <thead>
+                    <tr>
+                        <th data-toggle="tooltip" title="Original source data document containing chemical of interest">
+                          Document
+                        </th>
+                        <th data-toggle="tooltip" title="Data group type used in {{app_name}} curation">
+                          Data Type
+                        </th>
+                        <th data-toggle="tooltip" title="Date of most recent revision as reported on original data source">
+                          Document Date
+                        </th>
+                        <th data-toggle="tooltip" title="Chemical name as reported in original study">
+                            Reported Chemical Name
+                        </th>
+                        <th data-toggle="tooltip"title="Chemical abstract service registry number (CASRN) as reported in original study">
+                            Reported CAS
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot class="m-0">
+                    <tr>
+                        <th id="documents-info-text" class="m-0"></th>
+                        <th class="m-0 p-0">
+                            {% if group_types.count > 1 %}
+                                <div class="form-group m-0">
+                                    <select class="form-control"
+                                            id="group_type_dropdown"
+                                            data-toggle="tooltip"
+                                            title="Filter by Group Type"
+                                            data-placement="left">
+                                        <option value="-1">
+                                            All
+                                        </option>
+                                        {% for gt in group_types %}
+                                            <option value="{{ gt.pk }}">
+                                                {{ gt }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            {% else %}
+                                All 1 GroupType
+                            {% endif %}
+                        </th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!-- FUNCTIONAL USES TABLE -->
+            <div class="tab-pane container p-0 fade" id="functional-use-table-div">
+                <h4 class="mt-2 mb-2"> Functions Associated with "{{ chemical.true_chemname }}"
+                    <span class="float-right">
+                    <button id="reset-functional-uses" class="btn btn-outline-secondary p-1"
+                            disabled>Show All Functions</button>
+                    </span>
+                </h4>
+                <table class="table table-striped dataTable table-sm" id="functional-uses">
+                    <thead> 
+                    <tr>
+                        <th data-toggle="tooltip" title="Data group type used in {{app_name}} curation">
+                          Data Type
+                        </th>
+                        <th data-toggle="tooltip" title="Original source data document containing the chemical and associated functional use">
+                          Document
+                        </th>
+                        <th data-toggle="tooltip" title="Functional use of the chemical in a product, as reported by the original data source">
+                          Reported Function
+                        </th>
+                        <th data-toggle="tooltip" title="Function category assigned via manual curation">
+                          Harmonized Function
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!-- LITERATURE MONITORING & HUMAN HEALTH TABLE -->
+            {% block lmhhe_table_internal %}{% endblock lmhhe_table_internal %}
+            <!-- MMDB SAMPLE SUMMARIES TABLE -->
+            {% block mmdb_table_internal %}{% endblock mmdb_table_internal %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/dashboard/chemical_detail.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/d3.v5.min.js' %}"></script>
+    <script src="{% static 'js/bubble_chart.js' %}"></script>
+    <script src="{% static 'js/bubble_puc_legend.js' %}"></script>
+    <script src="{% static 'DataTables/ellipsis.js' %}"></script>
+    {% if app_is_internal %}
+        <script type="text/javascript">
+            var _filter_divs = ['#document-table-div','#functional-use-table-div','#lmhh-table-div','#mmdb-table-div'];
+            var _filter_headers = ['#document-tab-header','#functional-use-tab-header','#lmhh-tab-header','#mmdb-tab-header'];
+            var _keywords_divs = ['#product-table-div','#functional-use-table-div','#lmhh-table-div','#mmdb-table-div'];
+            var _keywords_headers = ['#product-tab-header','#functional-use-tab-header','#lmhh-tab-header','#mmdb-tab-header'];
+        </script>
+    {% else %}
+        <script type="text/javascript">
+            var _filter_divs = ['#document-table-div','#functional-use-table-div'];
+            var _filter_headers = ['#document-tab-header','#functional-use-tab-header'];
+            var _keywords_divs = ['#product-table-div','#functional-use-table-div'];
+            var _keywords_headers = ['#product-tab-header','#functional-use-tab-header'];
+        </script>
+    {% endif %}
+    {# Below must come after variable declarations #}
+    <script src="{% static 'js/dashboard/chemical_detail.js' %}"></script>
+
+{% endblock %}

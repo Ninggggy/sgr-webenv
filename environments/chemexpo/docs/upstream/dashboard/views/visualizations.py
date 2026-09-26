@@ -1,0 +1,113 @@
+from django.db.models import F
+from django.http import JsonResponse
+from django.shortcuts import render
+from django.views import View
+
+from dashboard.models import PUC, CumulativeProductsPerPuc, DSSToxLookup, News
+from lib.cache import cache_page, timeout
+
+from factotum.app_type import select_template_for_app
+
+
+class Visualizations(View):
+    """
+    The basic GET version of the view
+    """
+
+    template_name = select_template_for_app(
+        internal="visualizations/visualizations_internal.html",
+        external="visualizations/visualizations.html",
+    )
+
+    def get(self, request):
+        context = {}
+        pucs = (
+            CumulativeProductsPerPuc.objects.filter(puc__kind__code="FO")
+            .filter(cumulative_product_count__gt=0)
+            .select_related("puc")
+            .astree()
+        )
+        context["formulation_pucs"] = pucs
+
+        pucs = (
+            CumulativeProductsPerPuc.objects.filter(puc__kind__code="AR")
+            .filter(cumulative_product_count__gt=0)
+            .select_related("puc")
+            .astree()
+        )
+        context["article_pucs"] = pucs
+
+        pucs = (
+            CumulativeProductsPerPuc.objects.filter(puc__kind__code="OC")
+            .filter(cumulative_product_count__gt=0)
+            .select_related("puc")
+            .astree()
+        )
+        context["occupation_pucs"] = pucs
+        context["maintenance"] = News.objects.filter(section="maintenance")
+        return render(request, self.template_name, context)
+
+
+@cache_page(timeout)
+def bubble_PUCs(request):
+    """This view is used to download all of the PUCs in nested JSON form."""
+    dtxsid = request.GET.get("dtxsid", None)
+    kind = request.GET.get("kind", "FO")
+    if dtxsid:
+        # avoid joining in the subsequent queryset by looking up the pk once
+        dss = DSSToxLookup.objects.filter(sid=dtxsid).first()
+        # filter by products by a related DSSTOX
+        pucs = dss.get_cumulative_puc_products_tree(kind, data_format="dict")
+    else:
+        if kind:
+            pucs = (
+                CumulativeProductsPerPuc.objects.filter(puc__kind__code=kind)
+                .filter(cumulative_product_count__gt=0)
+                .select_related("puc")
+            )
+        else:
+            pucs = CumulativeProductsPerPuc.objects.filter(
+                cumulative_product_count__gt=0
+            ).select_related("puc")
+
+        pucs = (
+            pucs.annotate(
+                kind_id=F("puc__kind_id"),
+                gen_cat=F("puc__gen_cat"),
+                prod_fam=F("puc__prod_fam"),
+                prod_type=F("puc__prod_type"),
+            )  # change the nested __puc field names
+            .values(
+                "kind_id",
+                "puc_id",
+                "gen_cat",
+                "prod_fam",
+                "prod_type",
+                "product_count",
+                "cumulative_product_count",
+                "puc_level",
+            )
+            .flatdictastree()
+        )
+
+    return JsonResponse(pucs.asdict())
+
+
+@cache_page(timeout)
+def collapsible_tree_PUCs(request):
+    """This view is used to download all of the PUCs in nested JSON form.
+    Regardless of if it is associated with an item
+    """
+    pucs = (
+        PUC.objects.all()
+        .annotate(puc_id=F("id"))
+        .filter(kind__code="FO")
+        .values("kind_id", "puc_id", "gen_cat", "prod_fam", "prod_type")
+        .astree()
+        .asdict()
+    )
+
+    # Name the first element.  Default = Root
+    pucs["name"] = "Formulations"
+
+    return JsonResponse(pucs)

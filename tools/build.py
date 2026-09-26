@@ -8,7 +8,7 @@ def build(tag,file,context,args=()):
  if shutil.disk_usage('/').free<5*1024**3:raise RuntimeError('Root free space below 5 GiB; build stopped')
  subprocess.run(['docker','build','--platform','linux/amd64','--label','org.opencontainers.image.source=https://github.com/Ninggggy/sgr-webenv','-t',PREFIX+tag,'-f',str(file),*args,str(context)],check=True)
 def main():
- p=argparse.ArgumentParser();p.add_argument('site',choices=['base','noaa','census','wonder','arxiv','wateroffice','cellosaurus']);p.add_argument('--push',action='store_true');p.add_argument('--release',default='v0.1.3');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('site',choices=['base','noaa','census','wonder','arxiv','wateroffice','cellosaurus','chemexpo']);p.add_argument('--push',action='store_true');p.add_argument('--release',default='v0.1.4');a=p.parse_args()
  if '/' in a.release or '..' in a.release:raise ValueError('Invalid release')
  if a.site=="noaa":raise RuntimeError("NOAA distribution is withheld: ZingChart OEM redistribution permission is not established; see docs/THIRD_PARTY.md")
  tags=[]

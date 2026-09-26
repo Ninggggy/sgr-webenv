@@ -6,14 +6,14 @@ spec=importlib.util.spec_from_file_location('env',P/'tools/env.py');env=importli
 class Distribution(unittest.TestCase):
  def test_all_sites_isolated(self):
   for site in env.SITES:
-   _,s=env.load(site,'v0.1.2');c=env.compose(site,s,Path('/tmp/example'), 'eval')
+   _,s=env.load(site,'v0.1.4');c=env.compose(site,s,Path('/tmp/example'), 'eval')
    self.assertTrue(all(n.get('internal') for n in c['networks'].values()))
    for role,v in c['services'].items():
     self.assertNotIn('ports',v);self.assertTrue(v['read_only']);self.assertIn('ALL',v['cap_drop']);self.assertNotEqual(v['user'].split(':')[0],'0')
     self.assertFalse(any('author' in x or 'answers' in x for x in v.get('volumes',[])))
  def test_preview_only_proxy_published(self):
   for site in env.SITES:
-   _,s=env.load(site,'v0.1.2');c=env.compose(site,s,Path('/tmp/example'),'preview')
+   _,s=env.load(site,'v0.1.4');c=env.compose(site,s,Path('/tmp/example'),'preview')
    self.assertEqual([k for k,v in c['services'].items() if v.get('ports')],['preview'])
    self.assertTrue(c['services']['preview']['ports'][0].startswith('127.0.0.1:'))
  def test_browser_cannot_reach_index_network(self):

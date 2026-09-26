@@ -3,7 +3,7 @@
 import argparse,json,os,platform,shutil,sqlite3,subprocess,sys,tarfile,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-SITES=('noaa','census','wonder','arxiv','wateroffice','cellosaurus')
+SITES=('noaa','census','wonder','arxiv','wateroffice','cellosaurus','chemexpo')
 def run(args,**kwargs):
  return subprocess.run(args,check=True,**kwargs)
 def load(site,release):
@@ -62,6 +62,10 @@ def compose(site,spec,state,mode):
   services[web]['environment']={'ELASTICSEARCH_SERVICE_HOST':'search','ELASTICSEARCH_INDEX':'arxiv-release-0-1-0','ARXIV_RELEASE_STATUS':('accepted-current-eight' if spec['distribution_status']=='ready' else 'candidate')}
   services['search']={'image':spec['images']['search'],'user':'1000:0','read_only':True,'cap_drop':['ALL'],'security_opt':['no-new-privileges:true'],'networks':['index'],'volumes':['search-data:/usr/share/elasticsearch/data',str(envdir/'config/elasticsearch.yml')+':/usr/share/elasticsearch/config/elasticsearch.yml:ro'],'environment':{'discovery.type':'single-node','ES_JAVA_OPTS':'-Xms2g -Xmx2g -XX:ParallelGCThreads=4 -XX:ConcGCThreads=2 -Djna.boot.library.path=/usr/share/elasticsearch/native','xpack.security.enabled':'false','xpack.monitoring.enabled':'false','xpack.watcher.enabled':'false','xpack.ml.enabled':'false'},'tmpfs':['/tmp:rw,noexec,nosuid,size=256m','/usr/share/elasticsearch/logs:rw,nosuid,size=32m,uid=1000,gid=0'],'mem_limit':'24g','pids_limit':256}
   volumes['search-data']={}
+ if site=='chemexpo':
+  services[web]['mem_limit']='3g'
+  services[web]['tmpfs']=['/tmp:rw,nosuid,nodev,size=512m,mode=1777']
+  services[browser]['mem_limit']='2g'
  if site=='cellosaurus':
   networks['clastr']={'internal':True}
   services[web]['networks']=['browsing','clastr']
@@ -78,7 +82,7 @@ def compose(site,spec,state,mode):
 def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('action',choices=['prepare','start','verify','reset','stop'])
- p.add_argument('site',choices=SITES);p.add_argument('--release',default='v0.1.1')
+ p.add_argument('site',choices=SITES);p.add_argument('--release',default='v0.1.4')
  p.add_argument('--mode',choices=['preview','eval'],default='eval')
  p.add_argument('--port',type=int,help='Override the preview loopback port for an additional instance')
  p.add_argument('--state-dir',type=Path,default=ROOT/'.state')
@@ -100,7 +104,7 @@ def main():
   if not config.exists():raise ValueError('No installed instance')
  else:
   if spec['distribution_status'] not in ('ready','ready-local-build') and not args.allow_candidate:raise ValueError('This environment is not released: see docs/STATUS.md. Author testing requires --allow-candidate.')
-  if spec['distribution_status']=='ready-local-build' and args.action=='prepare' and not args.local_images:raise ValueError('Prepare the chart dependency and build local images, then use --local-images. See environments/noaa/README.md.')
+  if spec['distribution_status']=='ready-local-build' and args.action=='prepare' and not args.local_images:raise ValueError(f'Build local images, then use --local-images. See environments/{args.site}/README.md.')
   config.write_text(json.dumps(compose(args.site,spec,state,args.mode),indent=2)+'\n')
  if args.action=='prepare':
   if platform.system()!='Linux' or platform.machine() not in ('x86_64','AMD64'):raise ValueError('Installation is currently supported on Linux amd64 only')

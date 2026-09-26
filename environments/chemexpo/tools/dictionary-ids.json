@@ -1,0 +1,2116 @@
+{
+  "retrieved_utc": "2026-09-25T15:38:05Z",
+  "data": {
+    "functions": [
+      {
+        "id": 1,
+        "title": "Abrasive",
+        "description": "Chemical substance used to abrade, smooth, or polish an object. Used to smooth, scour, scrub, clean, wear down, or polish surfaces by rubbing against the surface and removing imperfections from a surface. May be used in processes such as sputter etching and physical dry etching. Also referred to as a grinding agent; usually in the form of fine powders of hard substances; e.g., sandstones; pumice; quartz; silicates; aluminium oxides; and glass. See closely related: etching agent.",
+        "product_count": 110,
+        "document_count": 659
+      },
+      {
+        "id": 2,
+        "title": "Absorbent",
+        "description": "Chemical substance used to retain other substances by assimilation. Also referred to as an antisiccative. See closely related: adsorbent.",
+        "product_count": 123,
+        "document_count": 419
+      },
+      {
+        "id": 3,
+        "title": "Adhesion/cohesion promoter",
+        "description": "Chemical substance, either inorganic or organic, natural or synthetic, used to join opposite surfaces to each other; to promote bonding between other substances; to promote adhesion of surfaces; or to fasten other materials together. Generally applied from a solvent solution and allowed to dry on the two facing surfaces. Also referred to as glue; paste; coupling agent; gum; adhesive cement; bonding agent; inner coating; and anchor coating.",
+        "product_count": 337,
+        "document_count": 2380
+      },
+      {
+        "id": 4,
+        "title": "Adsorbent",
+        "description": "Chemical substance used to retain other substances by accumulation on their surface; Exhibits a large surface area which can attract dissolved or finely dispersed substances from another medium. See closely related: absorbent; dehydrating agent.",
+        "product_count": 13,
+        "document_count": 68
+      },
+      {
+        "id": 5,
+        "title": "Aerating and deaerating agents",
+        "description": "Chemical substance that influences the amount of air or gases entrained in a material.",
+        "product_count": 5,
+        "document_count": 17
+      },
+      {
+        "id": 6,
+        "title": "Alloying element",
+        "description": "Chemical substances that are added to materials/metals to modify properties such as strength, hardness, or to facilitate treatment.",
+        "product_count": 13,
+        "document_count": 29
+      },
+      {
+        "id": 7,
+        "title": "Anti-adhesive/cohesive",
+        "description": "Chemical substance that prevents or reduces the adhesion of a material to itself or to another material; prevents bonding between other substances by discouraging surface attachment; functions as the antithesis of adhesive. Also referred to as a release agent; parting agent; anti-blocking agent; slip-aid; external lubricant; anti-setoff agent; de-dust oil; or dusting agent.",
+        "product_count": 64,
+        "document_count": 1094
+      },
+      {
+        "id": 8,
+        "title": "Anti-caking agent",
+        "description": "Chemical substance that prevents granular or particulate materials from sticking or caking during transfer, storage, or use. See closely related: deflocculant.",
+        "product_count": 126,
+        "document_count": 380
+      },
+      {
+        "id": 9,
+        "title": "Anti-condensation agent",
+        "description": "Chemical substance or material that is used to avoid condensation on surfaces and in the atmosphere. Also referred to as an anti-dim agent or condensation remover.",
+        "product_count": 0,
+        "document_count": 1
+      },
+      {
+        "id": 123,
+        "title": "Anti-dandruff (EPA)",
+        "description": "An agent intended to reduce the formation of dandruff flakes on scalp.",
+        "product_count": 13,
+        "document_count": 139
+      },
+      {
+        "id": 10,
+        "title": "Anti-freeze agent",
+        "description": "Chemical substance added to fluids, especially water, to reduce the freezing point of the mixture; or applied to surfaces to melt or prevent the build-up of ice. Also referred to as a de-icing agent or de-icer; e.g., antifreeze liquids; windshield de-icers; aircraft de-icers; lock release agents; ice melting crystals; and rock salt.",
+        "product_count": 3,
+        "document_count": 89
+      },
+      {
+        "id": 12,
+        "title": "Anti-redeposition agent",
+        "description": "Chemical substance that prevents dirt and grease from resettling on a cleaned surface or that helps keep soils from re-depositing onto clothing in the wash water after they have been removed. Anti-redeposition agents are water-soluble and typically negatively charged.",
+        "product_count": 290,
+        "document_count": 236
+      },
+      {
+        "id": 13,
+        "title": "Anti-scaling agent",
+        "description": "Chemical substance added to products to prevent the build-up of inorganic oxide deposits. Prevents the build-up or removes lime scale and fouling. Also referred to as a descalers or descaling agent. Not corrosion inhibitor. The formation of scale can be caused by the deposition of salts or minerals and may not necessarily lead to surface corrosion.",
+        "product_count": 24,
+        "document_count": 151
+      },
+      {
+        "id": 14,
+        "title": "Anti-slip agent",
+        "description": "Chemical substance used to enhance friction between two objects. Also referred to as a friction agent.",
+        "product_count": 0,
+        "document_count": 188
+      },
+      {
+        "id": 15,
+        "title": "Anti-stain agent",
+        "description": "Chemical substance that provides stain blocking and soil resistance in soft surface cleaners and protectors. Also referred to as a soil release agent.",
+        "product_count": 170,
+        "document_count": 175
+      },
+      {
+        "id": 16,
+        "title": "Anti-static agent",
+        "description": "Chemical substance that prevents or reduces the tendency of a material to accumulate a static charge or alters the electrical properties of materials by reducing their tendency to acquire an electrical charge. Used in diesel fuel to prevent the build-up of static electricity. Also referred to as a charge stabilizer.",
+        "product_count": 127,
+        "document_count": 1896
+      },
+      {
+        "id": 17,
+        "title": "Anti-streaking agent",
+        "description": "Chemical substance which serves to enhance evaporation or reduce film formation in order to prevent the formation of streaks on a surface during cleaning. Also referred to as a film reducer.",
+        "product_count": 18,
+        "document_count": 22
+      },
+      {
+        "id": 11,
+        "title": "Antioxidant",
+        "description": "Chemical substance that retards oxidation, rancidity, deterioration, and gum formation. Used to maintain the quality, integrity, and safety of finished products by inhibiting the oxidative degradation of the ingredients in the formulation. Also referred to as an oxidation inhibitor; or anti-skinning agent.",
+        "product_count": 396,
+        "document_count": 4247
+      },
+      {
+        "id": 121,
+        "title": "Antiperspirant (EPA)",
+        "description": "An agent that reduces perspiration or sweating",
+        "product_count": 250,
+        "document_count": 304
+      },
+      {
+        "id": 122,
+        "title": "Astringent (EPA)",
+        "description": "An agent that shrinks or constricts body tissues",
+        "product_count": 17,
+        "document_count": 760
+      },
+      {
+        "id": 18,
+        "title": "Binder",
+        "description": "Chemical substances that are either synthetic/polymeric resins that further polymerize, provide structure and cohesiveness or are substances added to compounded dry powders to provide adhesive qualities during and after compression to make tablets or cakes. Also referred to as a binding agent or resin.",
+        "product_count": 2387,
+        "document_count": 4125
+      },
+      {
+        "id": 19,
+        "title": "Biocide",
+        "description": "Chemical substance that prevents, neutralizes, destroys, repels, or mitigates the effects of any pest or microorganism; including fungal cells; decreases the number of microorganisms present; Also referred to as a disinfectant; pesticide; insecticide, herbicide, rodenticide; antifungal agent; antimicrobial agent; horticultural spray oil; non\u2011agricultural pesticide; or plant protection active substance. Not embalming agent or preservative.",
+        "product_count": 655,
+        "document_count": 4851
+      },
+      {
+        "id": 20,
+        "title": "Bleaching agent",
+        "description": "Chemical substance that lightens or whitens a substrate through chemical reaction. Usually involves oxidative or reductive processes that decolorizes or degrades colour systems. Can occur by destroying one or more of the double bonds in the conjugated chain; by cleaving the conjugated chain; or by oxidation of one of the other moieties in the conjugated chain. See closely related: brightener.",
+        "product_count": 403,
+        "document_count": 786
+      },
+      {
+        "id": 21,
+        "title": "Brightener",
+        "description": "Chemical substance used to brighten, whiten, or enhance the appearance of colour of fabric and paper, usually by absorbing light in the ultraviolet and violet region (340-370 nm) of the electromagnetic spectrum, and re-emitting light in the blue region (420-470 nm). Causes a \u201cwhitening\u201d effect by increasing the overall amount of blue light reflected. Optically colourless on the substrate and does not absorb in the visible part of the spectrum. Also referred to as a brightening agent; fluorescent whitening agent; optical brightener; or whitener. See closely related: bleaching agent; photosensitive agent.",
+        "product_count": 866,
+        "document_count": 943
+      },
+      {
+        "id": 22,
+        "title": "Catalyst",
+        "description": "Chemical substance that increases the rate of the intended chemical reaction but is in its original state at the completion of the reaction. See closely related: chemical reaction regulator.",
+        "product_count": 402,
+        "document_count": 2092
+      },
+      {
+        "id": 23,
+        "title": "Chain transfer agent",
+        "description": "Chemical substance that terminates the growth of a molecular chain and forms a new radical that can act as the initiator for a new chain.",
+        "product_count": 0,
+        "document_count": 15
+      },
+      {
+        "id": 24,
+        "title": "Chelating agent",
+        "description": "Chemical substance that has the ability to complex with and inactivate metallic ions by forming two or more coordinate bonds with a single metal ion. After the first coordinate bond, each successive donor atom that binds creates a ring containing the metal ion; this cyclic structure is called a chelation complex or chelate. Used in wash solutions in regions where water is hard (to inactivate calcium and magnesium and soften water). Used to remove ions from solutions and soils by forming a type of coordination complex that can be removed without further interactions. Cleans oxide films from metals by stabilizing metal ions through complexing heterocyclic rings around each ion. Also referred to as a chelant; sequestrant; sequestering agent; complexing agent; chlorine scavenger; or builder.",
+        "product_count": 2642,
+        "document_count": 3549
+      },
+      {
+        "id": 25,
+        "title": "Chemical reaction regulator",
+        "description": "Chemical substance used to change the rate of a chemical reaction, start or stop the reaction, or otherwise influence the course of the reaction. May or may not be consumed or becomes a part of the reaction product. Also referred to as an accelerator; activator; inhibitor; cross linking agent; initiator; enzyme; exotherm modifier; lytic agent; foam catalyst; polymer cross linking agent; rubber accelerator activator; retarder; shortstops; or vulcanizing agent. See closely related: catalyst and terminators/blockers.",
+        "product_count": 881,
+        "document_count": 2931
+      },
+      {
+        "id": 26,
+        "title": "Cleaning agent",
+        "description": "Chemical substance used to remove or breakdown soils, stains, or impurities from surfaces into smaller, more soluble pieces for removal; e.g., enzymes; other microbial cleaning agents; oxides; and sulfides. Not: abrasive; chelating agent; anti-scaling agent; detergent; foamant; solvent; soap; soap scum remover; surfactant; or brightener.",
+        "product_count": 1323,
+        "document_count": 3645
+      },
+      {
+        "id": 27,
+        "title": "Cloud-point depressant",
+        "description": "Chemical substance that depresses the temperature at which solids begin to separate from a liquid at a temperature lower than that normally allowed",
+        "product_count": 0,
+        "document_count": 5
+      },
+      {
+        "id": 28,
+        "title": "Coalescing agent",
+        "description": "Chemical substance used in polymer emulsions that lower the glass-transition temperature (Tg) which results in the decrease in the minimum film-forming temperature (MFT) and upon evaporation, yields a hard film. Used in polishes; e.g., glycol; ether; pyrrolidines; and benzoates. Also referred to as a minimum film-forming temperature (MFT) modifier.",
+        "product_count": 118,
+        "document_count": 157
+      },
+      {
+        "id": 127,
+        "title": "Color scavenger (EPA)",
+        "description": "Chemical substance which binds with a dye that may separate from a fabric during the wash cycle before it can deposit on another fabric.",
+        "product_count": 5,
+        "document_count": 5
+      },
+      {
+        "id": 29,
+        "title": "Conductive agent",
+        "description": "Chemical substance used to conduct electrical current. Also referred to as an electrolyte; or electrode material.",
+        "product_count": 35,
+        "document_count": 231
+      },
+      {
+        "id": 30,
+        "title": "Corrosion inhibitor",
+        "description": "Chemical substance used to prevent or retard corrosion on metallic materials. Used in many products packaged in metal containers (such as aerosol products). Used in lubricants and other metal treatment products to provide protection to the substrates or surfaces on which the lubricants are used. Also referred to as a corrosion\u2011inhibiting additive; rust preventative; anticorrosion agent; or antirust agent.",
+        "product_count": 485,
+        "document_count": 1456
+      },
+      {
+        "id": 31,
+        "title": "Crystal growth modifiers (nucleating agents)",
+        "description": "Chemical substance used to reduce or increase crystal growth.",
+        "product_count": 15,
+        "document_count": 104
+      },
+      {
+        "id": 32,
+        "title": "Deflocculant",
+        "description": "Chemical substance used to fluidize concentrated slurries to reduce their bulk viscosity or stickiness in processing or handling. See closely related: anti-caking agent.",
+        "product_count": 2,
+        "document_count": 5
+      },
+      {
+        "id": 33,
+        "title": "Defoamer",
+        "description": "Chemical substance that controls foam; prevents foam from forming; breaks down any foam that does form; and reduces foaming from proteins, gases, or nitrogenous materials. Reduces the tendency of finished products to generate foam upon shaking or agitation. The ability of a material to act as antifoam depends on its tendency to concentrate on the surface of existing or forming bubbles and to disrupt the continuous films of liquid surrounding them. Used as a process aid to improve filtration, dewatering, washing, and drainage of many types of suspensions, mixtures, and slurries. Also referred to as an antifoaming agent.",
+        "product_count": 948,
+        "document_count": 2032
+      },
+      {
+        "id": 125,
+        "title": "Degradant/impurity (EPA)",
+        "description": "Chemical substance reported as a degradant, impurity, contaminant, etc.",
+        "product_count": 510,
+        "document_count": 973
+      },
+      {
+        "id": 34,
+        "title": "Dehydrating agent (desiccant)",
+        "description": "Chemical substance used to absorb and remove water from gases or liquids to induce or maintain a state of dryness. Substances are usually hygroscopic materials. See closely related: humectant; adsorbent.",
+        "product_count": 17,
+        "document_count": 63
+      },
+      {
+        "id": 35,
+        "title": "Demulsifier",
+        "description": "Chemical substance used to destroy an emulsion or prevent its formation.",
+        "product_count": 0,
+        "document_count": 29
+      },
+      {
+        "id": 36,
+        "title": "Density modifier",
+        "description": "Chemical substance that modifies the density of a material. Also referred to as density modifying agents. See closely related: viscosity modifier; thickening agent.",
+        "product_count": 0,
+        "document_count": 41
+      },
+      {
+        "id": 37,
+        "title": "Deodorizer",
+        "description": "Chemical substance that reduces or eliminates unpleasant odour and protects against the formation of malodour on body surfaces. Counteraction, sometimes referred to as neutralization, occurs when two odorous substances are mixed in a given ratio and the resulting odour of the mixture is less intense than that of the separate components. Also referred to as a deodorizing agent.",
+        "product_count": 237,
+        "document_count": 2552
+      },
+      {
+        "id": 119,
+        "title": "Depilatory (EPA)",
+        "description": "Custom category added by EPA/ORD for hair-removing chemicals",
+        "product_count": 36,
+        "document_count": 100
+      },
+      {
+        "id": 38,
+        "title": "Diluent",
+        "description": "Chemical substance typically in the form of a volatile liquid that serves primarily to reduce the concentration of the other ingredients in a formulation or to modify the consistency or other properties. The term is most often used for liquid formulations, with the term filler used for solid or powder formulations. Also referred to as a thinner; or mineral spirits. See closely related: solvent.",
+        "product_count": 1959,
+        "document_count": 2100
+      },
+      {
+        "id": 39,
+        "title": "Dispersing agent",
+        "description": "Chemical substance added to a suspending medium or suspension to improve the separation of particles; to ensure proper dispersion; to prevent settling or clumping; to encourage uniform and maximum separation of individual, extremely fine solid particles or liquid droplets, often of colloidal size. Used in dispersal of dyes to ensure uniform coloration. Also referred to as an anti-settling agent; dispersant; solids separation agent; or suspending agent. Not: surfactant.",
+        "product_count": 702,
+        "document_count": 2177
+      },
+      {
+        "id": 40,
+        "title": "Drier",
+        "description": "Chemical substance that speeds the drying of paint, ink, etc. Often organometallic compounds. Also referred to as a siccative. See closely related: adsorbent; dehydrating agent. Example: metal soaps which are used as drying agents that promote the hardening of coatings. Not: Hardener.",
+        "product_count": 38,
+        "document_count": 235
+      },
+      {
+        "id": 41,
+        "title": "Dust suppressant",
+        "description": "Chemical substance used to control finely grained solid particles to reduce their discharge into the air. Also referred to as a dust binding agent.",
+        "product_count": 12,
+        "document_count": 32
+      },
+      {
+        "id": 42,
+        "title": "Dusting agent",
+        "description": "Chemical substance that is dusted on to the surface of a material (e.g., rubber) to reduce surface tack. Also referred to as a detackifier.",
+        "product_count": 0,
+        "document_count": 13
+      },
+      {
+        "id": 43,
+        "title": "Dye",
+        "description": "Chemical substance used to impart colour to other materials or mixtures. Added to a material for colour and generally requires some degree of solubility to allow it to dissolve or disperse in water or diffuse into the polymeric matrix. Molecularly dispersed within a liquid, transferred to a material, and bound to that material through intermolecular forces. Typically, organic substances, although exceptions do exist. Also referred to as a colorant. See closely related: pigment.",
+        "product_count": 2700,
+        "document_count": 4614
+      },
+      {
+        "id": 44,
+        "title": "Elasticizer",
+        "description": "Chemical substance that increases the elasticity of a material.",
+        "product_count": 11,
+        "document_count": 26
+      },
+      {
+        "id": 45,
+        "title": "Embalming agent",
+        "description": "Chemical substance used for the preservation of biological tissue; e.g., embalming fluid, arterial fluid, cavity fluid, surface embalming fluids. Not: biocide; preservative.",
+        "product_count": 0,
+        "document_count": 5
+      },
+      {
+        "id": 46,
+        "title": "Emulsifier",
+        "description": "Chemical substance used to ensure that a thick mixture of oil and water will maintain an even distribution of ingredients that will not separate. Without emulsifiers, the liquid will separate into two parts or phases. Emulsifiers are used to prepare emulsions, such as fabric softeners, creams, lotions and many food products. Emulsifiers have both lipophilic and hydrophilic components. Also referred to as emulsifying agent. See closely related: surfactant.",
+        "product_count": 1672,
+        "document_count": 6511
+      },
+      {
+        "id": 47,
+        "title": "Energy releasers (explosives, motive propellant)",
+        "description": "Chemical substance characterized by chemical stability, but may be induced to undergo rapid chemical change without an outside source of oxygen, rapidly producing a large quantity of energy and gas accompanied by a large increase in volume and an explosion, bursting, or expansion. Also referred to as a blasting agent; detonator; incendiary; or pyrotechnic.",
+        "product_count": 0,
+        "document_count": 31
+      },
+      {
+        "id": 48,
+        "title": "Etching agent",
+        "description": "Chemical substance that removes unprotected areas of metal or glass surfaces via chemical action. Usually acids or bases. Used in processes such as chemical milling; industrial etching; electro etching; photochemical machining; photochemical milling; photo etching; acid etching; vapour phase etching; See closely related: abrasives.",
+        "product_count": 0,
+        "document_count": 72
+      },
+      {
+        "id": 49,
+        "title": "Explosion inhibitor",
+        "description": "Chemical substance used to reduce the explosion potential of flammable materials.",
+        "product_count": 0,
+        "document_count": 1
+      },
+      {
+        "id": 50,
+        "title": "Filler",
+        "description": "Chemical substance added to fill out a dry product formulation and to lower the concentration of other ingredients. A finely divided substance usually added to extend volume and sometimes to improve desired properties, such as whiteness, consistency, lubricity, density or tensile strength. Used to provide bulk, increase strength, increase hardness, or improve resistance to impact. Used to extend a material and to reduce its cost by minimizing the amount of more expensive substances used in the production of articles. Used to fill cavities or tighten joints. Relatively inert and normally non-fibrous. Also referred to as a bulking agent; pigment extender; inert filler; or impact modifier.",
+        "product_count": 1154,
+        "document_count": 3076
+      },
+      {
+        "id": 51,
+        "title": "Film former",
+        "description": "Chemical substance used in forming a thin continuous sheet on its substrate that acts as a barrier against the environment. Silicone is a good film-former in furniture polishes because of its ease of application, soil removal, and depth of glossiness. Polymers are the most commonly used film formers. Also referred to as a drying oil.",
+        "product_count": 389,
+        "document_count": 2134
+      },
+      {
+        "id": 52,
+        "title": "Fire extinguishing agent",
+        "description": "Chemical substance that aids to slow down combustion once started; remove heat faster than it is released; separates the fuel and oxidizing agent; and/or dilutes the vapour phase concentration of the fuel and oxidizing agent below what is needed for combustion.",
+        "product_count": 6,
+        "document_count": 41
+      },
+      {
+        "id": 53,
+        "title": "Fixing agent (mordant)",
+        "description": "Chemical substance used to interact with a dye on fibres to improve fastness. Also referred to as a dye transfer inhibitor.",
+        "product_count": 87,
+        "document_count": 138
+      },
+      {
+        "id": 54,
+        "title": "Flame retardant",
+        "description": "Chemical substance that alters the normal degradation or combustion processes of plastics, rubbers, textiles, papers and woods, etc. Used on the surface of or incorporated into combustible materials to reduce or eliminate their tendency to ignite when exposed to heat or a flame for a short period of time. Used to raise the ignition point; and/or to slow down or prevent combustion.",
+        "product_count": 242,
+        "document_count": 1503
+      },
+      {
+        "id": 55,
+        "title": "Flavouring and nutrient",
+        "description": "Chemical substance used in food, animal feedstuffs, and some non-food products to produce or alter taste or odour or nutritional value. Used to stimulate the human taste chemical senses or to enhance nutritional value. Also referred to as a flavouring agent or bittering agent (denaturant); vitamins or minerals.",
+        "product_count": 418,
+        "document_count": 1348
+      },
+      {
+        "id": 56,
+        "title": "Flocculating agent",
+        "description": "Chemical substance that facilitates flocculation of suspended solids in liquid by acting on the surface of particles to reduce repulsive forces and increase attractive forces on a molecular level. Flocculating agents are chemical additives, which, at relatively low levels compared to the weight of the solid phase, increase the degree of flocculation of a suspension. Principally used to aid in making solid\u2013liquid separations. Also referred to as a coagulant.",
+        "product_count": 5,
+        "document_count": 96
+      },
+      {
+        "id": 57,
+        "title": "Flotation agent",
+        "description": "Chemical substance used to concentrate targeted substances or materials on the surface of a liquid mixture for subsequent separation. Used to obtain minerals from ores; to float suspended materials separated from the water column in water clarifiers, to remove ink in deinking processes. Also referred to as flotation oil or flotation depressant.",
+        "product_count": 0,
+        "document_count": 45
+      },
+      {
+        "id": 58,
+        "title": "Flow promoter",
+        "description": "Chemical substance that reduces drag in fluids in motion and between a fluid and a conduit surface.",
+        "product_count": 400,
+        "document_count": 886
+      },
+      {
+        "id": 59,
+        "title": "Flux agent",
+        "description": "Chemical substance used to promote the fusing of minerals or prevent oxide formation. Used for casting or joining materials. Also referred to as a welding agent or soldering agent.",
+        "product_count": 11,
+        "document_count": 69
+      },
+      {
+        "id": 60,
+        "title": "Foamant",
+        "description": "Chemical substance that promotes or enhances formation of a lather or foam (e.g. a dispersion of a gas in a liquid or solid). Used to form physically, by expansion of compressed gases or vaporization of liquid, or chemically, by decomposition evolving a gas, a foam or cellular structure in a plastic or rubber material. Also referred to as a foaming agent; blowing agent; expanding agent; frother; or foam booster.",
+        "product_count": 206,
+        "document_count": 1211
+      },
+      {
+        "id": 128,
+        "title": "Food preservative (EPA)",
+        "description": "Chemical substance intended to preserve food products by inhibiting the growth of micro-organisms.",
+        "product_count": 0,
+        "document_count": 10
+      },
+      {
+        "id": 61,
+        "title": "Fragrance",
+        "description": "Chemical substance used to control odours or impart pleasing odours. Fragrance compounds are molecules that stimulate the human olfactory chemical senses.",
+        "product_count": 5133,
+        "document_count": 11257
+      },
+      {
+        "id": 62,
+        "title": "Freeze-thaw additive",
+        "description": "Chemical substance used in synthetic resin emulsions or synthetic lattices to enable paints, coatings, and other products to retain original consistency and to resist coagulation when exposed to freezing and thawing prior to application.",
+        "product_count": 37,
+        "document_count": 55
+      },
+      {
+        "id": 63,
+        "title": "Fuel",
+        "description": "Chemical substance used to create mechanical or thermal energy through chemical reactions. Used to evolve energy in a controlled combustion reaction.",
+        "product_count": 2,
+        "document_count": 756
+      },
+      {
+        "id": 64,
+        "title": "Fuel agents",
+        "description": "Chemical substance added to a fuel for the purpose of improving combustion limiting the production of undesirable combustion products; e.g. combustion accelerators, cetane improvers, antiknock agents. Not: corrosion inhibition; lubrication; anti-oxidant; odorant; or detergency.",
+        "product_count": 0,
+        "document_count": 164
+      },
+      {
+        "id": 129,
+        "title": "Hair fixative (EPA)",
+        "description": "Chemical substance added to hair care products to impart stickiness or hold hair in a desired style.",
+        "product_count": 6,
+        "document_count": 348
+      },
+      {
+        "id": 131,
+        "title": "Hair waving or straightening (EPA)",
+        "description": "Chemical included to permanently wave or straighten hair.",
+        "product_count": 1,
+        "document_count": 93
+      },
+      {
+        "id": 65,
+        "title": "Hardener",
+        "description": "Chemical substance used to increase the strength, hardness, and abrasion resistance of coatings, adhesives, sealants, elastomers, and other products. Also referred to as curative or curing agent.",
+        "product_count": 193,
+        "document_count": 1312
+      },
+      {
+        "id": 66,
+        "title": "Heat stabilizer",
+        "description": "Chemical substances that protect substrates such as polymers from degrading effects of heat by dissipating heat through the process of erosion, melting, or vaporization. Also referred to as ablative.",
+        "product_count": 49,
+        "document_count": 722
+      },
+      {
+        "id": 67,
+        "title": "Heat transferring agent",
+        "description": "Chemical substance used to transmit or to remove heat from another material; e.g., cooling agent; heating agent; surface cooling agent; and coolants.",
+        "product_count": 22,
+        "document_count": 102
+      },
+      {
+        "id": 68,
+        "title": "Humectant",
+        "description": "Chemical substance used to retard moisture loss from the product during use. Generally performed by hygroscopic materials. Also used in personal care and other products with skin exposure to prevent loss of moisture from the skin and retain natural moisture The efficacy of humectants depends to a large extent on the ambient relative humidity. See closely related: dehydrating agent (desiccant).",
+        "product_count": 734,
+        "document_count": 6459
+      },
+      {
+        "id": 69,
+        "title": "Hydraulic fluids",
+        "description": "Chemical substance, typically liquid or gaseous, used for transmitting pressure and Extreme Pressure (EP)-additives; and to transfer power in hydraulic machinery. Also referred to as a pressure transfer agent; e.g., hydraulic/transmission fluid; brake fluid; power steering fluid; and shock absorbers.",
+        "product_count": 7,
+        "document_count": 137
+      },
+      {
+        "id": 70,
+        "title": "Impregnation agent",
+        "description": "Chemical substance used to admix with solid materials, which retain their original form. Also referred to as an entrainment aid.",
+        "product_count": 1,
+        "document_count": 22
+      },
+      {
+        "id": 71,
+        "title": "Incandescent agent",
+        "description": "Chemical substance that is used to emit electromagnetic radiation at high temperature.",
+        "product_count": 0,
+        "document_count": 5
+      },
+      {
+        "id": 72,
+        "title": "Insulators",
+        "description": "Chemical substance used to prevent or inhibit the flow of heat, electrical current, light, and the transmission of sound between two media. Acoustic, electrical, and thermal insulators; e.g., dielectric fluid; electric resistant materials; and encapsulant.",
+        "product_count": 40,
+        "document_count": 88
+      },
+      {
+        "id": 73,
+        "title": "Intermediate",
+        "description": "Chemical substance consumed in a reaction in order to manufacture other chemical substances at an industrial processing facility. Formed (directly or indirectly) from reactants and reacted further to create (either directly or indirectly) the products of a chemical reaction.",
+        "product_count": 25,
+        "document_count": 4261
+      },
+      {
+        "id": 74,
+        "title": "Ion exchange agent",
+        "description": "Chemical substance, usually in the form of a solid matrix, used to selectively remove targeted ions from a solution by adsorbing ions of a given charge (either cations or anions) in solution and replacing/releasing equivalent quantities of other ions of the same charge into the solution.",
+        "product_count": 0,
+        "document_count": 130
+      },
+      {
+        "id": 75,
+        "title": "Leaching agent",
+        "description": "Chemical substance that, when added to a solvent, aids in the dissolution of a component of an insoluble solid mixture. Used to extract certain components from the solid phase into the liquid phase. See closely related: solubility enhancer.",
+        "product_count": 0,
+        "document_count": 9
+      },
+      {
+        "id": 120,
+        "title": "Leavening agent (EPA)",
+        "description": "Chemical substance that causes food to expand by releasing gas once mixed with liquid, acid or heat.",
+        "product_count": 0,
+        "document_count": 12
+      },
+      {
+        "id": 76,
+        "title": "Lubricating agent",
+        "description": "Chemical substance introduced between two moving surfaces or adjacent solid surface to reduce the friction between them, improve efficiency, reduce wear, and reduce heat generation. Enhances the lubricity of other substances to shear easily by minimizing contact between the rubbing surfaces so that the frictional force opposing the rubbing motion is low.",
+        "product_count": 226,
+        "document_count": 3489
+      },
+      {
+        "id": 77,
+        "title": "Magnetic element",
+        "description": "Chemical substance added into materials to make them magnetic.",
+        "product_count": 0,
+        "document_count": 17
+      },
+      {
+        "id": 78,
+        "title": "Monomers",
+        "description": "Chemical substance usually containing carbon and of a low molecular weight and simple structure which is capable of conversion to polymers, synthetic resins, or elastomers by repetitive combination with itself or other similar molecules.",
+        "product_count": 243,
+        "document_count": 973
+      },
+      {
+        "id": 116,
+        "title": "No specific technical function",
+        "description": "Chemical substance with no pre-defined function. If no specific technical function is selected, the function should be written in. (e.g. case where a processing aid remains in the matrix of an article without fulfilling any technical function during Service life)",
+        "product_count": 688,
+        "document_count": 1600
+      },
+      {
+        "id": 79,
+        "title": "Opacifer",
+        "description": "Chemical substance that renders solutions opaque; reduces transparency or the ability of light to pass through solution; added to finished products to reduce their clear or transparent appearance.",
+        "product_count": 237,
+        "document_count": 656
+      },
+      {
+        "id": 117,
+        "title": "Other",
+        "description": "Chemical substances contained in products intended for consumer, commercial, or industrial use that are not covered under another product category. Specify the function.",
+        "product_count": 37,
+        "document_count": 39
+      },
+      {
+        "id": 80,
+        "title": "Oxidizing agent",
+        "description": "Chemical substance that gains electrons during their reaction with a reducing agent. Oxidizing agents commonly contribute oxygen to other substances. Also referred to as an oxidant.",
+        "product_count": 380,
+        "document_count": 511
+      },
+      {
+        "id": 81,
+        "title": "pH regulating agent",
+        "description": "Chemical substance used to alter, stabilize, or control the pH (hydrogen ion concentration) within a desired range. Also referred to as a buffering agent; pH adjuster; pH regulating agent; or neutralizing agent.",
+        "product_count": 2634,
+        "document_count": 3461
+      },
+      {
+        "id": 118,
+        "title": "Pharmaceutical (EPA)",
+        "description": "Custom category added by EPA/ORD as placeholder for pharmaceutical active ingredients.",
+        "product_count": 258,
+        "document_count": 1163
+      },
+      {
+        "id": 126,
+        "title": "Pharmaceutical disintegrant (EPA)",
+        "description": "Chemical substance used to ensure that solids (capsule, tablet, etc.) disintegrate properly after consumption, to promote drug release.",
+        "product_count": 19,
+        "document_count": 21
+      },
+      {
+        "id": 124,
+        "title": "Pharmaceutical excipient (EPA)",
+        "description": "An inactive substance formulated alongside the active ingredient of a medication that does not provide direct therapeutic action, but may aid in the manufacturing process; protect, support or enhance stability; or improve bioavailability or patient acceptability.",
+        "product_count": 84,
+        "document_count": 86
+      },
+      {
+        "id": 82,
+        "title": "Photosensitive agent",
+        "description": "Chemical substance that emits visible radiation as a direct consequence of the absorption of photons, charged particles, or chemical (e.g., UV light) and that ceases to emit radiation when the stimulating radiation is discontinued. Also referred to as a luminescent agent; or fluorescent agent. See closely related: brightener.",
+        "product_count": 0,
+        "document_count": 300
+      },
+      {
+        "id": 83,
+        "title": "Photosensitizers",
+        "description": "Chemical substance that absorbs electromagnetic radiation and transfers energy to other materials making them susceptible to chemical change. e.g., activation of photographic emulsions; and photoresist.",
+        "product_count": 11,
+        "document_count": 358
+      },
+      {
+        "id": 84,
+        "title": "Pigment",
+        "description": "Chemical substance, usually in the form of a dry powder and with a positive colorant value, that imparts colour to another substance or mixture by attaching themselves to the surface of the substrate through binding or adhesion. May contribute towards opacity, durability, and corrosion resistance and may scatter and absorb light. Larger than molecular particle size and held in place by corresponding low mobility. Pigments differ from dyes in that they are insoluble in the vehicle and exist as dispersed compounds in paint rather than as a solute. See closely related: dye.",
+        "product_count": 1047,
+        "document_count": 3601
+      },
+      {
+        "id": 85,
+        "title": "Plasticizer",
+        "description": "Chemical substance that softens synthetic polymers. Added to a high polymer to facilitate processing and to increase flexibility, plasticity, fluidity and toughness of the final product by internal modification (solution) of the polymer molecule. May be added internally or externally. A rigid polymer can also be externally plasticized by addition of a plasticizer, which imparts the desired flexibility but is not chemically changed by reaction with the polymer.",
+        "product_count": 410,
+        "document_count": 2644
+      },
+      {
+        "id": 86,
+        "title": "Plating agent",
+        "description": "Chemical substance used as a source of metal or inorganic compound that is deposited on another surface or that aids in such a deposition. Used in processes such as electroplating; galvanization; coating; phosphate treatment; chromate treatment; black oxide coating; anodic oxidation; diffusion treatment; carburizing; nitriding; and carbon nitriding. Also referred to as electroplating agent; galvanization agent; or coating agent.",
+        "product_count": 9,
+        "document_count": 283
+      },
+      {
+        "id": 87,
+        "title": "Polymerization promoter",
+        "description": "Chemical substance that enables a reaction between two or more dissimilar polymers, allowing them to become more intimately mixed than before.",
+        "product_count": 2,
+        "document_count": 123
+      },
+      {
+        "id": 88,
+        "title": "Preservative",
+        "description": "Chemical substance used to eliminate or minimize the build-up of microbial growth to protect against decay, decomposition discoloration or spoilage and maintain product performance over full shelf-life; e.g.,  wood preservative; cosmetic preservative; and drug preservative. Not: biocide or embalming agent. However, some organizations consider preservatives as a subset of biocides. Excludes substances intended to preserve food products. See Closely Related: Food preservative (EPA)",
+        "product_count": 2441,
+        "document_count": 2829
+      },
+      {
+        "id": 89,
+        "title": "Processing aids not otherwise specified",
+        "description": "Chemical substance used to improve the processing characteristics or the operation of process equipment when added to a process or to a substance or mixture to be processed. Does not become a part of the reaction product nor has function in the reaction product. Not intended to affect the function of a substance or article created; e.g., mold release agent.",
+        "product_count": 1337,
+        "document_count": 5002
+      },
+      {
+        "id": 90,
+        "title": "Propellants, non-motive (blowing agents)",
+        "description": "Chemical substance that is used for expelling products from pressurized containers. Used to dissolve or suspend other substances and either to expel those substances from a container in the form of an aerosol or to impart a cellular structure. Provides the force necessary to expel the contents of aerosol containers upon discharge of the internal pressure through expansion of the liquefied or compressed gas. The formulated product in the pressurized container may be in solution, emulsion, or suspension.",
+        "product_count": 1265,
+        "document_count": 1506
+      },
+      {
+        "id": 91,
+        "title": "Reducing agent",
+        "description": "Chemical substance that during reactions with oxidizing agents lose electrons. Acts as an electron donor in chemical reactions by contributing hydrogen to other substances or removing oxygen.",
+        "product_count": 5,
+        "document_count": 206
+      },
+      {
+        "id": 92,
+        "title": "Refrigerants",
+        "description": "Chemical substances used within machines such as air conditioning units, refrigerators, and walk-in freezers to cool indoor air and reduce temperatures. Not sealants for coating material \u2013 see hardener.",
+        "product_count": 13,
+        "document_count": 54
+      },
+      {
+        "id": 132,
+        "title": "Retention Agent (EPA)",
+        "description": "Chemical process that improves the retention of a functional chemical in a substrate. It can also refer to a chemical that binds fillers to paper, or a food additive that prevents color change.",
+        "product_count": 0,
+        "document_count": 7
+      },
+      {
+        "id": 93,
+        "title": "Sealant (barrier)",
+        "description": "Chemical substances used to fill up a space (e.g. joints, gaps or cavities between two substrates) and prevent seepage of moisture or air, e.g., mastic sealant. Not sealants for coating material \u2013 see hardener.",
+        "product_count": 159,
+        "document_count": 319
+      },
+      {
+        "id": 94,
+        "title": "Semiconductor and photovoltaic agent",
+        "description": "Chemical substance that has resistivity between that of insulators and metals. Usually changeable by light, heat or electrical or magnetic field. Generates electromotive force upon the incidence of radiant energy. Used in manufacturing of electrical components and electronic devices such as transistors and diodes; e.g., semiconductor materials; and liquid crystal materials.",
+        "product_count": 0,
+        "document_count": 70
+      },
+      {
+        "id": 95,
+        "title": "Sizing agent",
+        "description": "Chemical substance applied to substrates such as fabric, yarn, paper products, or plaster to increase abrasive resistance, stiffness, strength, smoothness, or reduce absorption.",
+        "product_count": 10,
+        "document_count": 60
+      },
+      {
+        "id": 96,
+        "title": "Softener and conditioner",
+        "description": "Substance used for softening materials to improve feel, to facilitate finishing process, or to impart flexibility or workability; used in textile finishing to impart superior \u201chand\u201d to the fabric and facilitate mechanical processing; has the capability of imparting softness and pliability to washable textile fabrics. E.g., fabric softener; fabric conditioner; conditioning agent; and moisturizer.",
+        "product_count": 1040,
+        "document_count": 25112
+      },
+      {
+        "id": 97,
+        "title": "Soil amendments",
+        "description": "Chemical substance used to increase the productivity and quality of farm crops, plants, and forests. Added to soil to promote better plant growth. Includes fertilizers, nutrient additives, and soil conditioners.",
+        "product_count": 1,
+        "document_count": 887
+      },
+      {
+        "id": 98,
+        "title": "Solids separation (precipitating) agent, not other",
+        "description": "Chemical substance used to promote the separation of suspended solids from a liquid; e.g., dewatering aids; and drainage aids. Not: flocculating agent; or flotation agent.",
+        "product_count": 0,
+        "document_count": 161
+      },
+      {
+        "id": 99,
+        "title": "Solubility enhancer",
+        "description": "Chemical substance that prevents chemicals or materials from separating or falling out of solution and increases the concentration of the solute in the concentrated solution. Often used in concentrated formulations. See closely related: leaching agent.",
+        "product_count": 1323,
+        "document_count": 1575
+      },
+      {
+        "id": 100,
+        "title": "Solvent",
+        "description": "Chemical substance primarily used to dissolve another substance (solute) to form a uniformly dispersed mixture (solution) at the molecular or ionic size level; to suspend solid particles or colloidal materials to yield suspensions or gels, to provide dissolving capability required for a stable formulation; to dissolve certain components of the formulation to aid dispersion of components; to aid in oil cleansing power and control film drying rate; to solubilize soils on surfaces and facilitate removal. Used to dissolve, thin, and extract. Also referred to as a vehicle. See closely related: diluent.",
+        "product_count": 3793,
+        "document_count": 6654
+      },
+      {
+        "id": 101,
+        "title": "Stabilizing agent",
+        "description": "Chemical substance that tends to keep a compound, solution, or mixture from changing its form or chemical nature. Renders or maintains a solution, mixture, suspension, or state resistant to chemical change. Used to prevent or slow down spontaneous changes in and aging of materials.",
+        "product_count": 1159,
+        "document_count": 1721
+      },
+      {
+        "id": 102,
+        "title": "Surface modifier",
+        "description": "Chemical substance that may be added to other ingredients to adjust the optical properties associated with the surface of a material such as affect the lustre, increase gloss, and alter the reflectance exhibited by a surface. Also referred to as a levelling agent; polishing agent; refractive index modifier; surface coating agent; flatting agent; or gloss agent.",
+        "product_count": 325,
+        "document_count": 1472
+      },
+      {
+        "id": 103,
+        "title": "Surfactant (surface active agent)",
+        "description": "Chemical substance which, when added to water, has surface active properties and is capable of reducing the surface tension of the water promoting the penetration of or spread over the surface of another material and reducing interfacial tension between two liquids, between a liquid and a solid, or between liquid and air. Closely related: emulsifier, wetting agent. Note, aqueous wetting agents that are added to water are included in this category. A new category for non-aqueous wetting agents was added as these are not added to water.",
+        "product_count": 2816,
+        "document_count": 8957
+      },
+      {
+        "id": 104,
+        "title": "Swelling agent",
+        "description": "Chemical substance added to a material to cause that material to increase in volume and become softer.",
+        "product_count": 0,
+        "document_count": 25
+      },
+      {
+        "id": 105,
+        "title": "Tanning agents not otherwise specified",
+        "description": "Chemical substances used for treating or pre-treating leather materials such as hides and skins and not covered by other function categories; e.g., leather oils, defatting agents, fat liquoring agents; and de-liming agents.",
+        "product_count": 0,
+        "document_count": 37
+      },
+      {
+        "id": 106,
+        "title": "Terminator/blocker",
+        "description": "Chemical substance that reacts with the end of a growing polymer chain, stopping further polymerization (terminator) or a substance used to protect a reactive moiety on a precursor during organic synthesis of a product that is subsequently removed regenerating the reactive moiety (blocker). See closely related: chemical reaction regulator.",
+        "product_count": 0,
+        "document_count": 11
+      },
+      {
+        "id": 107,
+        "title": "Thickening agent",
+        "description": "Chemical substances, typically hydrophilic, used to form solid or semisolid dispersions of a mixture or increase the viscosity of liquid mixtures and solutions and to aid in maintaining stability by their emulsifying properties without changing their other properties. Four classifications are recognized: 1) Starches, gums, casein, gelatine and phycocolloids; 2) semisynthetic cellulose derivatives (e.g. carboxymethyl-cellulose); 3) polyvinyl alcohol and carboxy-vinylates (synthetic); and 4) bentonite, silicates, and colloidal silica. May also be hydrophobic at lower temperatures. Also referred to as a rheology modifier; viscosity index improver. See closely related: density modifier; and viscosity modifier.",
+        "product_count": 1295,
+        "document_count": 2640
+      },
+      {
+        "id": 108,
+        "title": "Tracer",
+        "description": "Chemical substance that possesses a readily detectable radioactive/isotopic label or chemical moiety which is added to biological/environmental media or chemical reactions to elucidate the transformation/transportation processes that are occurring.",
+        "product_count": 71,
+        "document_count": 74
+      },
+      {
+        "id": 109,
+        "title": "UV stabilizer",
+        "description": "Chemical substance that protects the product from chemical or physical deterioration induced by ultraviolet light. Absorbs UV radiation, thereby protecting products including varnishes, pigments, and certain polymers against UV degradation. Also referred to as a UV absorber or light stabilizer.",
+        "product_count": 436,
+        "document_count": 2055
+      },
+      {
+        "id": 110,
+        "title": "Vapor pressure modifiers",
+        "description": "Chemical substance added to a liquid to modify its vapour pressure and to reduce evaporation",
+        "product_count": 3,
+        "document_count": 9
+      },
+      {
+        "id": 111,
+        "title": "Viscosity modifier",
+        "description": "Chemical substance used to alter the viscosity of another substance. Used to decrease or increase the viscosity of finished products; to modify the flow characteristics of other substances, or mixtures to which they are added; to control the deformation or flow ability of a wax product. High molecular weight pre-polymer resins and reactive precursor resins generally lower viscosity while thickeners (e.g., gums and hydroxyethyl cellulose) increase viscosity. Thermoplastic resins soften when exposed to heat and return to original form at room temperature, and thermosetting resins solidify irreversibly due to cross-linking when heated. Also referred to as a viscosity adjuster; or viscosity controlling agent. See closely related: density modifier; gelling modifier, thickening agent.",
+        "product_count": 953,
+        "document_count": 3284
+      },
+      {
+        "id": 112,
+        "title": "Waterproofing agent",
+        "description": "Chemical substance that lowers the surface energy to protect surfaces against water by forming water beads. Also referred to as a water-beading agent.",
+        "product_count": 279,
+        "document_count": 480
+      },
+      {
+        "id": 113,
+        "title": "Wetting agent (non-aqueous)",
+        "description": "Chemical substance that promotes coating of an organic liquid on a solid material by lowering the surface tension. Note, the chemical substance is not added to water. Wetting agents that are added to water (aqueous wetting agents) are covered under the Surfactant (surface active agent) category.",
+        "product_count": 177,
+        "document_count": 1577
+      },
+      {
+        "id": 114,
+        "title": "Wrinkle resisting agent",
+        "description": "Chemical substance used to impart wrinkle-resistance in in textiles, paper and leather.",
+        "product_count": 0,
+        "document_count": 3
+      },
+      {
+        "id": 115,
+        "title": "X-Ray absorber",
+        "description": "Chemical substance used to block or attenuate X-rays.",
+        "product_count": 0,
+        "document_count": 0
+      }
+    ],
+    "keywords": [
+      {
+        "kind__name": "Modifiers",
+        "name": "active_ingredient",
+        "definition": "active ingredients in a product",
+        "id": 412,
+        "Document_Count": 542
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "agricultural",
+        "definition": "general term pertaining to agriculture or agricultural practices, including the raising and farming of animals and growing of crops",
+        "id": 425,
+        "Document_Count": 976
+      },
+      {
+        "kind__name": "Media",
+        "name": "air",
+        "definition": "air - media specific to the chemical presence",
+        "id": 492,
+        "Document_Count": 147
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "animal_feed",
+        "definition": "Includes hay, alfalfa hay, and pastures/rangeland",
+        "id": 476,
+        "Document_Count": 16
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "animal_products",
+        "definition": "Meat, poultry, fish and eggs (includes honey)",
+        "id": 445,
+        "Document_Count": 42
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "applied",
+        "definition": "modifier, e.g. for a pesticide applied to a particular crop (as compared to a pesticide being detected in that crop or food product)",
+        "id": 457,
+        "Document_Count": 357
+      },
+      {
+        "kind__name": "Media",
+        "name": "artificial_saliva",
+        "definition": "artificial saliva - media specific to the chemical presence",
+        "id": 494,
+        "Document_Count": 16
+      },
+      {
+        "kind__name": "Media",
+        "name": "artificial_sweat",
+        "definition": "artificial sweat - media specific to the chemical presence",
+        "id": 493,
+        "Document_Count": 25
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies",
+        "definition": "general arts and crafts or office supplies which can not be classified into a more refined category",
+        "id": 479,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - body paint",
+        "definition": "products placed on the skin for decorative purposes (body paints, markers, glitters, play cosmetics, Halloween cosmetics, and henna)",
+        "id": 502,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - body paint - tattoo ink",
+        "definition": "inks used for permanent tattoos",
+        "id": 525,
+        "Document_Count": 32
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - children's art and toys",
+        "definition": "General children's art supplies and toys which can not be classified into a more refined category",
+        "id": 416,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - children's art and toys - crayons",
+        "definition": "wax crayons for coloring or illustration",
+        "id": 417,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - children's art and toys - modeling clay",
+        "definition": "soft modeling compounds",
+        "id": 408,
+        "Document_Count": 8
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/office supplies - children's arts and crafts - slime",
+        "definition": "children's play slime, including flubber, silly putty, etc. Also includes liquid and powder solutions to make slime.",
+        "id": 565,
+        "Document_Count": 8
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - fabric treatment and dye",
+        "definition": "Fabric treatments or dyes which can not be assigned to a more refined category",
+        "id": 428,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - general arts and crafts supplies",
+        "definition": "arts and crafts supplies which can not be assigned to a more refined category",
+        "id": 485,
+        "Document_Count": 7
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - general arts and crafts supplies - arts and crafts adhesive",
+        "definition": "glue sticks, glitter glues, fabric glues, craft glue, spray mounts, stencil sprays, and other adhesives used for primarily craft purposes",
+        "id": 472,
+        "Document_Count": 7
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - general arts and crafts supplies - arts and crafts paint",
+        "definition": "paints (including acrylic and enamel), colorants (materials that color solid objects, i.e. glass, porcelain), and pigments primarily used for craft purposes",
+        "id": 473,
+        "Document_Count": 20
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - general arts and crafts supplies - flocking",
+        "definition": "products used to create textured or fiber covered surfaces, including artificial snow",
+        "id": 486,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Arts and crafts/Office supplies - home office - pens and markers",
+        "definition": "writing utensils containing liquid or gel ink",
+        "id": 471,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "Location",
+        "name": "Australia",
+        "definition": "Sources specific to Australia",
+        "id": 470,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "baby_food",
+        "definition": "Jarred and canned foods intended for consumption by infants and toddlers (includes formula)",
+        "id": 447,
+        "Document_Count": 18
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "banned",
+        "definition": "noted chemical is banned from specified use",
+        "id": 543,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Batteries",
+        "definition": "A device consisting of one or more electrochemical cells with external connections used in powering electrical devices.",
+        "id": 541,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "Location",
+        "name": "Canada",
+        "definition": "Sources specific to Canada",
+        "id": 463,
+        "Document_Count": 15
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "CEDI",
+        "definition": "The U.S. FDA Cumulative Estimated Daily Intake database of publicly available cumulative estimated daily intakes (CEDIs) for a large number of food contact substances",
+        "id": 459,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Subpopulation",
+        "name": "children",
+        "definition": "pertaining to, or intended for use specifically by children",
+        "id": 478,
+        "Document_Count": 45
+      },
+      {
+        "kind__name": "PUC - industrial",
+        "name": "Cleaning and safety - cleaning products - industrial disinfectant",
+        "definition": "products used to control viruses, bacteria, etc. on hard surfaces in commercial/industrial settings. Includes disinfectant sprays, wipes, etc.",
+        "id": 562,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care",
+        "definition": "Cleaning and household care products that can not be placed in a more refined category",
+        "id": 435,
+        "Document_Count": 17
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - air freshener",
+        "definition": "home air fresheners, including candles with a fragrance",
+        "id": 468,
+        "Document_Count": 9
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - carpet and floor",
+        "definition": "Household carpet and floor cleaning products that can not be assigned to a more refined category",
+        "id": 436,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - carpet and floor - carpet cleaner",
+        "definition": "carpet cleaning products that may be used directly (or require dilution), includes solutions that may be used by hand or in mechanical carpet cleaners",
+        "id": 523,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - carpet and floor - floor polish",
+        "definition": "products that impart a shine to solid floors",
+        "id": 430,
+        "Document_Count": 7
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - dishwasher and dishes",
+        "definition": "cleaning products used in the dishwasher or on dishes, which do not fit into a more refined category",
+        "id": 517,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - dishwasher and dishes - automatic dishwashing additive",
+        "definition": "products used in automatic dishwashers other than detergents (rinse aids, spot removers, and dishwasher cleaners/scale or rust removers)",
+        "id": 433,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - dishwasher and dishes - automatic dishwashing detergent",
+        "definition": "detergents for automatic dishwashers",
+        "id": 546,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - general household cleaning",
+        "definition": "cleaning products for general household cleaning, which do not fit into a more refined category",
+        "id": 514,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - general household cleaning - surface cleaner",
+        "definition": "products used to clean hard surfaces in the home, including kitchen specific hard surface cleaners",
+        "id": 515,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - laundry and fabric treatment",
+        "definition": "Cleaning or care products for laundry and fabric treatment which do not fit into a more refined category",
+        "id": 469,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - laundry and fabric treatment - fabric deodorizer",
+        "definition": "fabric deodorizers",
+        "id": 484,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - laundry and fabric treatment - fabric softener",
+        "definition": "products used to improve tactile properties of fabrics that are added to the rinse water of clothes washers (excluding dryer sheets)",
+        "id": 518,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - laundry and fabric treatment - laundry detergent",
+        "definition": "products used in washing machines to clean fabrics",
+        "id": 545,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - laundry and fabric treatment - laundry stain remover",
+        "definition": "stain removers or laundry pre-treatment products",
+        "id": 506,
+        "Document_Count": 14
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - lime remover",
+        "definition": "products used to remove lime or scale from hard surfaces, excludes dishwasher related products",
+        "id": 516,
+        "Document_Count": 0
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - oven - oven cleaner",
+        "definition": "products used to clean grills, ovens, or range cooktops",
+        "id": 454,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - shoes",
+        "definition": "Products related to the care of footwear which do not fit into a more refined category",
+        "id": 455,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Cleaning products and household care - shoes - shoe polish or protectant",
+        "definition": "products applied to footwear to color, polish, clean, or add a protective surface",
+        "id": 429,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Cons electronics mech appliances and machinery",
+        "definition": "Including small and large consumer electronics appliances (e.g. refrigerator, washing machine, vacuum cleaner, computer, phone, smoke detector, electric tools, lamps); includes small electronics with direct personal contact such as massagers; excludes electronics specifically intended for use by children; excludes electronics with direct food contact (e.g. electric blender)",
+        "id": 482,
+        "Document_Count": 41
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Construction and building materials",
+        "definition": "Materials used for construction (e.g. flooring, tile, sinks, bathtubs, mirrors, wall materials/drywall, wall-to-wall carpets, insulation, playground surfaces); includes  semi-permanent fixtures such as faucets and light fixtures",
+        "id": 409,
+        "Document_Count": 18
+      },
+      {
+        "kind__name": "General use",
+        "name": "consumer_product",
+        "definition": "Indicated as related to, or in, consumer products, but with no more specific information designating product category",
+        "id": 465,
+        "Document_Count": 23
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "cotton",
+        "definition": "of or related to the growing of cotton, or processed cotton used as a textile for consumer goods",
+        "id": 424,
+        "Document_Count": 18
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "dairy",
+        "definition": "milk and foods produced from or containing milk",
+        "id": 448,
+        "Document_Count": 11
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "detected",
+        "definition": "chemicals measured or identified in environmental media or products",
+        "id": 400,
+        "Document_Count": 1185
+      },
+      {
+        "kind__name": "Media",
+        "name": "drinking_water",
+        "definition": "water intended for drinking, or related to drinking water; includes bottled water, finished water from drinking water treatment plants, and untreated water that has been denoted as a drinking source",
+        "id": 422,
+        "Document_Count": 66
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Electronics/small appliances - computers and accessories/supplies - printer ink",
+        "definition": "ink for inkjet printers",
+        "id": 550,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "General use",
+        "name": "emissions",
+        "definition": "release of a chemical from a source to an environmental medium; includes off-gassing",
+        "id": 509,
+        "Document_Count": 197
+      },
+      {
+        "kind__name": "Location",
+        "name": "Europe",
+        "definition": "Sources specific to a European country or subset of countries",
+        "id": 407,
+        "Document_Count": 786
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Flavornet",
+        "definition": "substances on the Flavornet list of compounds found in the human odor sphere",
+        "id": 495,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Food and drug - smoking-related products",
+        "definition": "Smoking related products that do not fit within a more refined category",
+        "id": 561,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Food contact items",
+        "definition": "articles intended for food contact, including food-contact packaging (e.g. glasses, plates, pots/pans, food storage containers, cloth napkins and placemats, cutlery, paper plates, and plastic utensils, take-out containers, plastic wrap and foil; includes small electronics with direct food contact (e.g. blender)",
+        "id": 432,
+        "Document_Count": 60
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "food_additive",
+        "definition": "substances added to food to preserve flavor or enhance taste, appearance, or other sensory qualities",
+        "id": 524,
+        "Document_Count": 15
+      },
+      {
+        "kind__name": "General use",
+        "name": "fossil_fuels",
+        "definition": "coal, petroleum, natural gas, and heavy oils",
+        "id": 540,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "General use",
+        "name": "fracking",
+        "definition": "chemicals related to or used during the fracking process",
+        "id": 511,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "fruits_and_vegetables",
+        "definition": "includes fresh, canned and frozen forms, as well as juices and sauces (e.g. applesauce), excludes forms intended for consumption by young children (i.e. baby foods); includes green beans and peas",
+        "id": 442,
+        "Document_Count": 593
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Furniture and Furnishings",
+        "definition": "Items used to furnish a home or workplace, e.g. tables, chairs, sofa, outdoor patio furniture, sofa cover, hammock, mattress, area rug",
+        "id": 439,
+        "Document_Count": 37
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "general_crops",
+        "definition": "Misc. crops, including sunflowers",
+        "id": 477,
+        "Document_Count": 34
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "general_foods",
+        "definition": "unspecified foods or beverages for human consumption; these may be crops (e.g. raw fruits or vegetables) or processed goods",
+        "id": 481,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "grain",
+        "definition": "excludes soybean grain (included with legumes'; excludes corn grain (included with fruits and vegetables)",
+        "id": 443,
+        "Document_Count": 56
+      },
+      {
+        "kind__name": "Media",
+        "name": "ground_water",
+        "definition": "of, found in, or related to ground water",
+        "id": 419,
+        "Document_Count": 36
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - adhesives and adhesive removers - multipurpose adhesive",
+        "definition": "general purpose repair adhesives including all purpose glues, super glue, and epoxies; not including wood glues",
+        "id": 513,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - adhesives and adhesive removers - wood adhesive",
+        "definition": "adhesives specifically designated for gluing wooden surfaces together",
+        "id": 527,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - caulk/sealant",
+        "definition": "liquid or gels designed to seal cracks or fill cracks and depressions on hard surfaces",
+        "id": 522,
+        "Document_Count": 18
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - concrete",
+        "definition": "products for modifying concrete surfaces, including patch and repair, sealers, coatings, surface treatments, etc.",
+        "id": 567,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - paint/stain and related products",
+        "definition": "paint or stain related products that do not fit into a more refined category",
+        "id": 551,
+        "Document_Count": 15
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - patch and repair - putty or filler",
+        "definition": "products used to fill cracks and holes in wooden and other surfaces",
+        "id": 566,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Home maintenance - plumbing",
+        "definition": "miscellaneous plumbing repair products (putties, tapes, cements)",
+        "id": 434,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "IFRA Transparency",
+        "definition": "substances on the International Fragrance Association's ordered register of all fragrance ingredients used in consumer goods by the fragrance industry's customers worldwide",
+        "id": 519,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Indirect additives food contact (10/2018)",
+        "definition": "U.S. FDA list of Indirect Additives used in Food Contact Substances; presence of a substance in this list indicates that only certain intended uses and use conditions are authorized by FDA regulations (version of list updated 10/4/2018)",
+        "id": 460,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - industrial",
+        "name": "Industrial products - marking paint",
+        "definition": "Specialty paint that adheres to outdoor surfaces (gravel, soil, trees, grass, concrete, blacktop, etc,) used by professionals (in land surveying, utility locating, traffic marking, public safety, etc.) for marking outdoor environments (construction sites, roads, yards, etc.)",
+        "id": 553,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "inert_ingredient",
+        "definition": "inert (non-active) ingredients in a product",
+        "id": 462,
+        "Document_Count": 10
+      },
+      {
+        "kind__name": "Location",
+        "name": "Israel",
+        "definition": "Sources specific to Israel",
+        "id": 418,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "Location",
+        "name": "Japan",
+        "definition": "Sources specific to Japan",
+        "id": 568,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Landscape/yard",
+        "definition": "products related or for use in the outdoor landscape or yard, which do not fit into a more refined category",
+        "id": 552,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Landscape/Yard - cleaner",
+        "definition": "products used to clean  hard surfaces outside of the  home including decks, driveways, and external walls; includes products used as part of a mechanical cleaning system (e.g. solutions for pressure sprayers)",
+        "id": 440,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "legumes",
+        "definition": "Legumes, excludes green beans and peas (included with fruits and vegetables); excludes peanuts and peanut butter (included with nuts)",
+        "id": 444,
+        "Document_Count": 23
+      },
+      {
+        "kind__name": "Manufacturing",
+        "name": "manufacturing",
+        "definition": "Related to the creation or production of goods",
+        "id": 480,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - industrial",
+        "name": "Medical/dental",
+        "definition": "Medical and dental supplies and equipment, e.g. medical equipment used in a hospital or doctor's office setting, at home (e.g. wheelchairs, colostomy bag). Includes clothing and personal protective equipment used in medical settings (e.g. scrubs, face masks, gowns, gloves)",
+        "id": 496,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "MN Chemical Screening",
+        "definition": "applied to all data sources used in MN DoH chemical screening proof of concept",
+        "id": 392,
+        "Document_Count": 84
+      },
+      {
+        "kind__name": "Location",
+        "name": "New Zealand",
+        "definition": "Sources specific to New Zealand",
+        "id": 411,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "nondetect",
+        "definition": "Chemicals that were tested for but not found in media or products. May include concentrations below the limit of detection, and instances where a measurement was not reported due to issues with measuring equipment, QA concerns, or other reasons.",
+        "id": 427,
+        "Document_Count": 176
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "non_food_use",
+        "definition": "chemicals specifically designated as not for food use (e.g., pesticides approved for non-food use)",
+        "id": 464,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "nuts",
+        "definition": "includes peanuts and nut butters",
+        "id": 450,
+        "Document_Count": 17
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "occupational",
+        "definition": "relating to a job or profession",
+        "id": 449,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "OEHHA Proposition 65 (1/2023)",
+        "definition": "California Office of Environmental Health Hazard Assessment Proposition 65; version of list updated 1/27/2023",
+        "id": 564,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "OEHHA Proposition 65 (3/2019)",
+        "definition": "California Office of Environmental Health Hazard Assessment Proposition 65; version of list updated 3/18/2019",
+        "id": 452,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "organic",
+        "definition": "for food or crops that are specified as being grown or produced organically",
+        "id": 451,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Other direct contact consumer goods",
+        "definition": "Misc. consumer goods likely to have direct contact with the user (e.g. sports equipment, hand-held non-electric tools, jewelry, clothing, jackets, bags/luggage/purses, and other apparel, blankets and sheets, newspapers, adult diapers, feminine hygiene products, pencils and writing implements",
+        "id": 415,
+        "Document_Count": 109
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Other direct contact consumer goods - apparel",
+        "definition": "Clothing and accessories likely to have direct contact with the user. Includes jackets, hats, shoes, etc.",
+        "id": 547,
+        "Document_Count": 20
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Other indirect contact consumer goods",
+        "definition": "Misc. consumer goods likely to have indirect contact with the user (e.g. home decor (paintings, decorations), lampshades)",
+        "id": 497,
+        "Document_Count": 27
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Packaging (non-food contact)",
+        "definition": "Packaging that does not come into contact with food, e.g. boxes, cloth packaging, phone covers, bubble wrap",
+        "id": 549,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care",
+        "definition": "General personal care products which can not be assigned to a more refined category",
+        "id": 402,
+        "Document_Count": 47
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body adhesive",
+        "definition": "adhesive products for attaching clothing or accessories to skin",
+        "id": 526,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body hygiene",
+        "definition": "products related to body hygiene which do not fit into a more refined category",
+        "id": 559,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body hygiene - body wash",
+        "definition": "body cleaners, washes, shower gels",
+        "id": 532,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body hygiene - feminine hygiene",
+        "definition": "Feminine hygiene products such as vaginal washes",
+        "id": 413,
+        "Document_Count": 0
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body hygiene - hand soap",
+        "definition": "liquid hand soaps",
+        "id": 491,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - body oil",
+        "definition": "lipophilic producs applied to skin (excluding baby oils)",
+        "id": 490,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - child specific",
+        "definition": "Personal care products intended for use by children, which do not fit into a more specific category",
+        "id": 548,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - child specific - baby wipes",
+        "definition": "textile wipes and towelettes specifically marketed for use on infants",
+        "id": 558,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - dental care - toothpaste",
+        "definition": "toothpastes and dentrifices",
+        "id": 534,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - deodorant",
+        "definition": "deodorants and antiperspirants",
+        "id": 503,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - eye care and contacts - eye cream",
+        "definition": "products applied to skin located around the eye to moisturize or improve skin qualities",
+        "id": 557,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - facial cleansing and moisturizing",
+        "definition": "facial cleansing and moisturizing products which do not fit into a more refined category",
+        "id": 556,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - fragrance",
+        "definition": "fragrances, colognes, and perfumes",
+        "id": 535,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - general moisturizing",
+        "definition": "general moisturizing products which do not fit into a more refined category",
+        "id": 560,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - general moisturizing - hand/body lotion",
+        "definition": "products specifically marketed for application to hands or body to moisturize or improve skin characteristics (excluding baby lotion)",
+        "id": 487,
+        "Document_Count": 12
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair coloring",
+        "definition": "general hair coloring products which can not be classified into a more refined category",
+        "id": 501,
+        "Document_Count": 18
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair coloring - hair color - permanent",
+        "definition": "hair colors and dyes characterized as permanent, excludes dyes intended for use by professionals",
+        "id": 537,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair coloring - hair color - professional",
+        "definition": "hair colors and dyes characterized as for professional use",
+        "id": 536,
+        "Document_Count": 10
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair styling and care",
+        "definition": "general hair styling or hair care products which do not fit into a more refined category",
+        "id": 555,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair styling and care - hair conditioner",
+        "definition": "rinse-out everyday hair conditioners (excluding combo shampoo/conditioner products)",
+        "id": 533,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair styling and care - shampoo",
+        "definition": "shampoos, including dual shampoo/conditioner products",
+        "id": 528,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - hair styling and care - shampoo-dandruff",
+        "definition": "shampoos, including dual shampoo/conditioner products for treatment of dandruff",
+        "id": 507,
+        "Document_Count": 16
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - liniment",
+        "definition": "products for treatment of muscle or joint pain",
+        "id": 505,
+        "Document_Count": 7
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - make-up and related",
+        "definition": "make-up or cosmetic products which do not fit into a more refined category",
+        "id": 475,
+        "Document_Count": 15
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - make-up and related - eye liner",
+        "definition": "eye liners or brow coloring products",
+        "id": 504,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - make-up and related - toner",
+        "definition": "face and skin toners and astringents excluding eye related products",
+        "id": 529,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - nails",
+        "definition": "products for nail or cuticle treatment or decoration",
+        "id": 498,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - nails - nail adhesive",
+        "definition": "adhesives for repairing fingernails or attaching artificial nails",
+        "id": 500,
+        "Document_Count": 0
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - nails - nail polish",
+        "definition": "clear or colored nail enamels, polishes, basecoats, topcoats, and other acrylic coatings",
+        "id": 499,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - oral and dental care",
+        "definition": "personal care products related to oral or dental care, which do not fit into a more refined category",
+        "id": 437,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - oral and dental care - teeth whitener",
+        "definition": "teeth whitening products (excluding toothpastes)",
+        "id": 563,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - self-tanner",
+        "definition": "chemical products for tanning, staining, or coloring the skin",
+        "id": 542,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - sexual wellness",
+        "definition": "sexual wellness products, including personal lubricants",
+        "id": 414,
+        "Document_Count": 8
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - shaving and hair removal - shaving cream",
+        "definition": "shaving creams, foams, balms and soaps",
+        "id": 554,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - specialized bath products - bath salts",
+        "definition": "solid or powdered products added to bathwater including bath salts, soaks, and fizzes",
+        "id": 530,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - specialized bath products - bubble bath",
+        "definition": "products added to bath water to create bubbles, may provide cleaning, fragrance, or improve skin characteristics (including bubble bath marketed to babies or children)",
+        "id": 531,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Personal care - sunscreen",
+        "definition": "products applied to the skin to block harmful effects of sunlight",
+        "id": 488,
+        "Document_Count": 5
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Pesticides",
+        "definition": "Relating to pesticides or pesticide usage. Includes specific types of pesticides, e.g. insecticides,  herbicides, fungicides, and fumigants; also includes general biocides",
+        "id": 423,
+        "Document_Count": 1111
+      },
+      {
+        "kind__name": "General use",
+        "name": "pharmaceutical",
+        "definition": "includes, medicinal and illicit drugs, biologics, and the salts, esters, and hydrates of pharmaceuticals, includes precursors to pharmaceuticals, additives, and pharmaceuticals for animal/veterinary use",
+        "id": 401,
+        "Document_Count": 187
+      },
+      {
+        "kind__name": "Manufacturing",
+        "name": "plastic_additive",
+        "definition": "additives used in plastics",
+        "id": 410,
+        "Document_Count": 12
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "prohibited",
+        "definition": "noted chemical is prohibited from specified use",
+        "id": 403,
+        "Document_Count": 13
+      },
+      {
+        "kind__name": "General use",
+        "name": "radioactive",
+        "definition": "compounds identified as being radioactive",
+        "id": 539,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - industrial",
+        "name": "Raw materials",
+        "definition": "Pure chemicals or ingredients",
+        "id": 520,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "residue",
+        "definition": "chemical residues, typically from drugs or pesticides",
+        "id": 446,
+        "Document_Count": 537
+      },
+      {
+        "kind__name": "Modifiers",
+        "name": "restricted",
+        "definition": "noted chemical is restricted from specified use",
+        "id": 406,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Road vehicles",
+        "definition": "Road vehicles for passengers and goods (e.g. cars, trucks, vans), including vehicle parts (tires, brakes, etc.)",
+        "id": 538,
+        "Document_Count": 13
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "SCIL (9/2019)",
+        "definition": "present on the Safer Chemicals Ingredients List (SCIL) (https://www.epa.gov/saferchoice/safer-ingredients); version of list updated 9/14/2019",
+        "id": 398,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Media",
+        "name": "soil",
+        "definition": "of, found in, or related to sediment or soil (including sand)",
+        "id": 489,
+        "Document_Count": 8
+      },
+      {
+        "kind__name": "Location",
+        "name": "Southeast Asia",
+        "definition": "Sources specific to ASEAN countries, governing body for various Southeast Asian countries",
+        "id": 405,
+        "Document_Count": 10
+      },
+      {
+        "kind__name": "PUC - industrial",
+        "name": "Specialty occupational products",
+        "definition": "Specialty products used in a specific occupational setting, by members of that occupation (e.g. firefighting foam, metal working fluids, products used in portable toilets)",
+        "id": 508,
+        "Document_Count": 6
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Stockholm Convention",
+        "definition": "List of chemicals from the Stockholm Convention on Persistent Organic Pollutants, which was adopted at a Conference of Plenipotentiaries on 22 May 2001 in Stockholm, Sweden.",
+        "id": 569,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Substances Added to Food (formerly EAFUS) (2/2019)",
+        "definition": "U.S. FDA Substances Added to Food inventory (formerly known as 'Everything Added to Foods in the United States (EAFUS)' (version of list updated 2/8/2019)",
+        "id": 461,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Substances in PCP - Canada (4/2014)",
+        "definition": "Substances in cosmetics and personal care products regulated under the Canadian Food and Drugs Act (F&DA) that were in commerce between January 1, 1987 and September 13, 2001; list updated 4/24/2014)",
+        "id": 466,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "Substances in Products - Canada (4/2014)",
+        "definition": "Substances in products regulated under the Canadian Food and Drugs Act (F&DA) that were in Commerce between January 1, 1987 and September 13, 2001 (list updated 4/24/2014)",
+        "id": 467,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "supplements",
+        "definition": "supplements for human consumption, includes prebiotics, probiotics, and vitamins",
+        "id": 510,
+        "Document_Count": 31
+      },
+      {
+        "kind__name": "Media",
+        "name": "surface_water",
+        "definition": "of, in, or related to surface water",
+        "id": 420,
+        "Document_Count": 43
+      },
+      {
+        "kind__name": "Manufacturing",
+        "name": "textiles",
+        "definition": "related to the manufacturing of textiles,  natural or synthetic materials made from fibers, yarns, or filaments that are woven, knitted, or crocheted into fabrics",
+        "id": 571,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Foods & Agriculture",
+        "name": "tobacco",
+        "definition": "any product made or derived from tobacco that is intended for human consumption, including smoked and chewed tobacco products",
+        "id": 458,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - article",
+        "name": "Toys and children's products",
+        "definition": "Toys and articles intended for use by children (not including formulations) (e.g. stuffed toys, blankets, games, baby bottles and pacifiers, dolls)",
+        "id": 399,
+        "Document_Count": 153
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Vehicle - car interior",
+        "definition": "formulation products used on the interior of cars, which do not fit into a more refined category",
+        "id": 512,
+        "Document_Count": 38
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Vehicle - car interior - auto air freshener",
+        "definition": "products for masking odors or adding fragrance to car cabin air",
+        "id": 483,
+        "Document_Count": 4
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Vehicle - car surface treatment",
+        "definition": "treatments for the surfaces/body of vehicles that can not be otherwise categorized",
+        "id": 438,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Vehicle - car surface treatment - body cleaner",
+        "definition": "cleaners, shampoos, and washes for auto body exterior (not including wax products or combo wash/wax products)",
+        "id": 441,
+        "Document_Count": 2
+      },
+      {
+        "kind__name": "PUC - formulation",
+        "name": "Vehicle - car surface treatment - body wax",
+        "definition": "auto body waxes and coatings, excluding combo wash/wax products",
+        "id": 431,
+        "Document_Count": 3
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "WA Children's Safe Product Act (4/2020)",
+        "definition": "present on the WA State Department of Ecology - Chemicals of High Concern to Children Reporting List (version of list pulled 4/24/2020)",
+        "id": 453,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Specialty list",
+        "name": "WA PBT",
+        "definition": "From the State of Washington list of Persistent, Bioaccumulative, and Toxic (PBT) list. (version pulled Nov. 30, 2020)",
+        "id": 570,
+        "Document_Count": 1
+      },
+      {
+        "kind__name": "Media",
+        "name": "wastewater",
+        "definition": "of, in, or related to wastewater, includes sludge and biosolids",
+        "id": 421,
+        "Document_Count": 22
+      },
+      {
+        "kind__name": "Media",
+        "name": "water",
+        "definition": "found in water of a nondescript or unspecified type (e.g. not ground water, surface water, etc)",
+        "id": 521,
+        "Document_Count": 10
+      }
+    ]
+  }
+}
