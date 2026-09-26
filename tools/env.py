@@ -145,7 +145,7 @@ def main():
  elif args.action=='verify':
   web='web' if args.site=='arxiv' else args.site+'-web'
   path='/' if args.site=='arxiv' else '/health'
-  dc('exec','-T',web,'python3','-c',f'import urllib.request; r=urllib.request.urlopen("http://127.0.0.1:8080{path}",timeout=30); assert r.status==200; print("HTTP smoke passed; this is not task acceptance")')
+  dc('exec','-T',web,'python3','-c',f'import urllib.request; r=urllib.request.urlopen("http://127.0.0.1:8080{path}",timeout=30); assert r.status==200; print("Service health check passed")')
 if __name__=='__main__':
  try:main()
  except (ValueError,FileNotFoundError,subprocess.CalledProcessError) as e:sys.exit(str(e))

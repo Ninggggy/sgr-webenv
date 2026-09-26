@@ -1,38 +1,9 @@
-# NCHS-derived runtime data: source and use conditions
+# NCHS data use
 
-Source: CDC / National Center for Health Statistics, National Vital Statistics
-System. Original public-use data are available free of charge:
-https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm
+Source: CDC / National Center for Health Statistics, National Vital Statistics System. [Public-use data](https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm).
 
-This archive is a project-prepared national public-use derivative for statistical
-reporting and analysis. Source files and project transformations are documented
-in the accompanying provenance.
-The code's Apache-2.0 license does not relicense these data.
+Follow the [NCHS Data User Agreement](https://www.cdc.gov/nchs/policy/data-user-agreement.html): use the data for statistical reporting and analysis; do not identify people or establishments, link to identifiable records, or conduct prohibited re-identification or disclosure-protection-method research. Preserve these terms and attribution in redistributed copies.
 
-Follow the NCHS Data User Agreement:
-https://www.cdc.gov/nchs/policy/data-user-agreement.html
-Use only for statistical reporting/analysis. Do not identify people or
-establishments, link to individually identifiable data, or research
-re-identification or disclosure-protection methods. Retain these terms and
-attribution in redistributed copies.
+Apply the website’s suppression and disclosure protections to query results and exports. Do not publish restricted small-cell results. See [WONDER data-use conditions](https://wonder.cdc.gov/datause.html).
 
-The SQLite files contain selected public-use fields grouped with multiplicities
-and original death weights. Counts may be small; the files are computational
-inputs, not publication-ready small-cell tables. The website retains suppression
-of 1–9 birth/death counts and associated rates, along with additional protections.
-Do not weaken those protections or publish restricted small-cell query results:
-https://wonder.cdc.gov/datause.html
-
-Coverage: national US residents; Natality 2016–2024, Period Linked 2017–2023.
-No restricted geography, exact calendar dates, direct identifiers or WONDER
-query captures are included. The 2021 Natality derivative uses the public 2021
-linked birth denominator and documented birthweight flag; see provenance.
-Project transforms/known differences are documented separately from CDC inputs.
-
-CDC reproduction/attribution terms:
-https://www.cdc.gov/other/agencymaterials.html
-NVSS public-use versus restricted data policy:
-https://www.cdc.gov/nchs/nvss/dvs_data_release.htm
-
-This frozen research snapshot does not update automatically. Refer to official
-CDC sources for current data and guidance.
+The data are project-prepared derivatives of the cited public-use files. Source locations and transformations accompany the archive. See [CDC reproduction terms](https://www.cdc.gov/other/agencymaterials.html).
