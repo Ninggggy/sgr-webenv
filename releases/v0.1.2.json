@@ -197,7 +197,7 @@
       "legacy_records": 0,
       "supplementary_records": 4,
       "images": {
-        "web": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0",
+        "web": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0-1",
         "browser": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-browser:0.1.0",
         "clastr": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-clastr:0.1.0"
       },
