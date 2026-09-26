@@ -1,0 +1,18 @@
+code,label,count_weight_rounding_denominator_match,has_protected_displayed_descendant,classification,action
+GR130-001,"Certain infectious and parasitic diseases (A00-B99,U07.1)",True,True,retained_additional_ancestor_protection,retain
+GR130-012,"Viral diseases (A80-B34,U07.1)",True,True,retained_additional_ancestor_protection,retain
+GR130-033,"Endocrine, nutritional and metabolic diseases (E00-E88)",True,True,retained_additional_ancestor_protection,retain
+GR130-039,Diseases of the nervous system (G00-G98),True,True,retained_additional_ancestor_protection,retain
+GR130-046,#Diseases of the circulatory system (I00-I99),True,True,retained_additional_ancestor_protection,retain
+GR130-053,"Diseases of the respiratory system (J00-J98,U04)",True,True,retained_additional_ancestor_protection,retain
+GR130-055,#Influenza and pneumonia (J09-J18),True,True,retained_additional_ancestor_protection,retain
+GR130-070,Certain conditions originating in the perinatal period (P00-P96),True,True,retained_additional_ancestor_protection,retain
+GR130-071,"Newborn affected by maternal factors and by complications of pregnancy, labor and delivery (P00-P04)",True,True,retained_additional_ancestor_protection,retain
+GR130-079,"#Newborn affected by complications of placenta, cord and membranes (P02)",True,True,retained_additional_ancestor_protection,retain
+GR130-086,Disorders related to length of gestation and fetal malnutrition (P05-P08),True,True,retained_additional_ancestor_protection,retain
+GR130-105,Infections specific to the perinatal period (P35-P39),True,True,retained_additional_ancestor_protection,retain
+GR130-109,Hemorrhagic and hematological disorders of newborn (P50-P61),True,True,retained_additional_ancestor_protection,retain
+GR130-138,"External causes of mortality (*U01,V01-Y84)",True,True,retained_additional_ancestor_protection,retain
+GR130-139,#Accidents (unintentional injuries) (V01-X59),True,True,retained_additional_ancestor_protection,retain
+GR130-140,Transport accidents (V01-V99),True,True,retained_additional_ancestor_protection,retain
+GR130-152,"#Assault (homicide) (*U01,X85-Y09)",True,True,retained_additional_ancestor_protection,retain

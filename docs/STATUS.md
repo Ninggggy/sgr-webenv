@@ -129,3 +129,7 @@ claim. The temporary v0.1.1 acceptance containers were stopped afterward.
 See `verification/wonder-v011-install.json` and `wonder-anonymous-data.json`.
 
 Cellosaurus detailed acceptance: [report](verification/cellosaurus-acceptance-v0.1.2.json). The post-publication anonymous data-download report is attached to the v0.1.2 Release. Original services and earlier release tags remain unchanged.
+
+## WONDER protection recheck — 2026-09-26
+
+All 17 recorded parent visibility differences were independently reproduced from the original archive and classified as retained additional ancestor protection. No arithmetic or propagation-scope error was found in the tested cases. Ten independent cause-query cases, eight synthetic tests, 70 browser/export replays and four CG/GO regressions pass. Application 0.3 and data remain unchanged. See the [itemized review](WONDER_PROTECTION_REVIEW.md).
