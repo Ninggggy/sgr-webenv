@@ -144,7 +144,7 @@ class Handler(BaseHTTPRequestHandler):
                 if q.get(key):
                     if key!='sid':integer(q,key)
                     if not db.execute(f'SELECT 1 FROM {table} WHERE {column}=?',(q[key],)).fetchone():
-                        self.send(404,{'error':'Requested '+key+' is outside the archived scope; no empty-result claim is made'});return
+                        self.send(404,{'error':'Requested '+key+' is outside the archived scope'});return
         if endpoint=='status':
             imports=allrows(db,'SELECT * FROM imports');r=DATA/'relations.json';relations=json.loads(r.read_text()) if r.exists() else {'complete':False}
             complete=relations.get('complete',False) and db.execute('SELECT count(*) FROM product_document').fetchone()[0]==relations.get('records') and len(imports)==3 and all(r['complete'] for r in imports)
@@ -282,7 +282,7 @@ class Handler(BaseHTTPRequestHandler):
             total=db.execute('SELECT count(*) FROM ('+sql+')',args).fetchone()[0]
             rel=DATA/'relations.json';complete=rel.exists() and json.loads(rel.read_text()).get('complete') and db.execute('SELECT count(*) FROM product_document').fetchone()[0]==json.loads(rel.read_text())['records']
             if endpoint=='associated_export':
-                if view=='products' and not complete:self.send(503,{'error':'Product relationship collection is incomplete; export would omit candidates'});return
+                if view=='products' and not complete:self.send(503,{'error':'Export unavailable for this selection'});return
                 cursor=db.execute(sql+' ORDER BY '+order,args)
                 self.send_response(200);self.send_header('Content-Type','text/csv; charset=utf-8');self.send_header('Content-Disposition','attachment; filename="ChemExpo_associated.csv"');self.end_headers();buf=io.StringIO();w=csv.writer(buf);w.writerow([c[0] for c in cursor.description]);self.wfile.write(buf.getvalue().encode('utf-8-sig'))
                 for r in cursor:

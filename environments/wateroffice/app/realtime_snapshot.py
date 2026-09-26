@@ -128,16 +128,10 @@ def graph_series(data, station, parameter, start=None, end=None):
 
 
 def description(data, station=None):
-    w = window(data,station)
-    if station is None and 'covered_stations' in w:
-        return (str(len(w['covered_stations']))+' stations have official CSV observations for the thirty-day window '+w['from']+' through '+w['to']+'. Other catalog stations retain the original seven-day GeoMet observations and separately dated daily means. Unit-value Approval and Grade are unavailable in that older source. Each station uses its own complete source snapshot; new quality fields are never attached to old values.')
-    if w.get('format')!='wateroffice-csv-v2':
-        return 'Seven-day GeoMet observation snapshot: '+w['from']+' through '+w['to']+'. Unit-value Approval and Grade are unavailable from this source. Daily means retain their separately archived source metadata.'
-    return ('Fixed UTC observation window: ' + w['from'] + ' through ' + w['to'] +
-            '. Local boundary dates may be partial. Official values and quality fields were collected ' +
-            w.get('collection_started', 'at the documented per-request times') + ' through ' +
-            w.get('collection_finished', 'the documented end of collection') +
-            '; this is a dated acquisition, not a simultaneous historical website snapshot.')
+    w = window(data, station)
+    if station is None:
+        return 'Station pages show observation dates and source information.'
+    return 'Observation window (UTC): ' + w['from'] + ' through ' + w['to'] + '.'
 
 
 def export_zip(data, numbers, parameter, fmt, start=None, end=None):
