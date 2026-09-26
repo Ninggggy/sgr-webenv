@@ -1,17 +1,13 @@
-# Search and export repair evidence (2026-09-26)
+# Search and export semantics
 
 ## Search
-The original main-site HTML, not the separate API schema, supplies expected results.
-`search-followup.json` and `observations/search-followup-*.html.gz` show Gey and Gei are distinct (6 vs 4), while culture/cultured/culturing return the same 10415 records. Snowball English with raw reference line-prefix removal matches these observed rules. SQLite Porter1 incorrectly merged Gey with Gei; retaining RA/RT serialization prefixes broke 19 title phrases. Neither fix names specific queries or accessions. This is a behavior-validated compatible analyzer, not a claim that the official server internally runs Snowball. The English-only vendored implementation is Snowball3.0.1 from the official PyPI distribution; the upstream BSD license is retained beside the code.
 
-Asterisks are punctuation, not prefix expansion in the observed main site: HeLa*, *HeLa and HeLa all give2867; HeL* gives36. Internal punctuation is a token boundary: He*La returns1 while G*ey returns0; no concatenation or wildcard expansion is performed. A colon is also punctuation inside the term: name:HeLa gives3 and RRID:CVCL_0030 gives0. Exact-name promotion uses the original literal query, before punctuation processing.
+The local analyzer uses Snowball English stemming with reference line-prefix removal. Punctuation separates terms; asterisks do not expand prefixes, and a colon within a phrase is not an API field selector. Exact-name promotion uses the literal query before punctuation processing.
 
-The archived K-562 response puts CVCL_UC14 before CVCL_B0FH. Two repeated original responses put CVCL_B0FH before CVCL_UC14. The cervix response similarly reverses HeLa-Luc/HeLa-luc. Raw responses and full sets are saved in search-repeats.json/observations/search-repeat-*.html.gz. Production uses name casefold order plus accession for stable ties. Verification retains the strict archived-order result AND a separate comparison which permits only identical casefold-name ties; it never permits candidate changes or inversions between distinct names.
+Results sort by casefolded name and accession for stable equal-name ties. Large result sets remain complete rather than inheriting the original HTML display cap. API syntax and external services are separate from the core website search.
 
-The original Homo sapiens HTML declares124256 hits but includes100000 links. The local site does not truncate its124256 matches. The first AND cancer partition is complete. The NOT cancer transfer was interrupted and retained as incomplete; four mutually exclusive partitions (41403,23950,8636,50267) now verify the complete union of124256 with zero overlap and exact membership. See search-human-partitions.json and search-human-incomplete.json. No incomplete original set is labelled a complete comparison.
+## STR results and exports
 
-## Legacy Web fixture
-Official upstream commit399faabaacde added sources.clear/xrefSources.clear/references.clear at each marker-data start. The old searchTest2 expectation still inherited the preceding conflict reference into18 source-less markers. The current parser matches explicit marker-data source scope. Only those18 stale arrays were corrected; the complete scores, alleles, candidate, conflict-source and metadata assertions remain. A separate synthetic test checks absence of source leakage for both legacy/current allele tag spellings. Commit JSON is archived as upstream-399faabaacde.json.
+Marker-data source scope follows each marker's explicit sources. CSV and XLSX follow displayed profile-row order. JSON retains grouped scientific results and includes `rowOrder` as result/profile index pairs. Row-order inputs must be complete permutations without duplicates, omissions or invalid indices.
 
-## Sorted exports
-Browser rows carry result/profile indices. Each download snapshots every rendered result row in DOM order. Optional rowOrder is a complete permutation validated at conversion; duplicates, omissions, out-of-range and non-integer indices fail. CSV and XLSX use that order and retain original Best/Worst labels. JSON preserves the grouped scientific results and adds rowOrder, which explicitly specifies the displayed order without duplicating or splitting cell-line identities. API query/batch JSON remains unchanged. Name quotes are escaped in CSV. Sort column/direction are restored by URL state and reset clears them.
+Best/Worst labels and source names are preserved. CSV quotes are escaped. Sort state is restored from the URL and cleared by session reset.

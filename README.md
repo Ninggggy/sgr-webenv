@@ -2,32 +2,28 @@
 
 Offline website environments for reproducible web-agent research with SGR-BENCH.
 
-[中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Coverage and limitations](docs/SCOPE.md) · [Verification](docs/STATUS.md)
+[中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Coverage and limitations](docs/SCOPE.md) · [Operations](docs/OPERATIONS.md)
 
 SGR-WebEnv packages website applications, fixed datasets, and restricted browsers into Docker environments. Researchers can run interactive search, navigation, and data-retrieval workflows locally. After preparation, supported workflows run without contacting the live websites.
 
 The repository covers six websites. Each environment has a documented data and feature scope. These are independent reconstructions, unaffiliated with the original services.
 
-## Available environments
+## Environments
 
-**v0.1.2 adds Cellosaurus** and retains the existing distributions of Census, WONDER, arXiv, and Wateroffice.
-
-| Environment | Distribution | Included scope and main limitations | Preview port |
+| Environment | Features | Setup | Preview port |
 |---|---|---|---:|
-| Census / ACS | Available · 0.2.1 | Archived regions, years, and tables; not nationwide coverage of all ACS products. | 8081 |
-| CDC WONDER | Available · 0.3 | National natality and linked infant mortality queries, charts, and CSV exports; query, interaction, and legacy-task regressions passed. | 8082 |
-| arXiv | Available · 0.1.0 | 1,685,244 cs/math/stat records with latest metadata and version timelines; excludes historical version content, daily announcements, and full text. | 8083 |
-| Wateroffice | Development · 0.1.0-dev | Archived hydrometric data and query workflows; map, coverage, and visual limitations remain. | 8084 |
-| Cellosaurus | Available · 0.1.0 | Release 56.0 metadata: 168,970 records, core website, and CLASTR; excludes the complete REST/RDF/SPARQL interface. | 8086 |
-| NOAA Climate at a Glance | Available · manual dependency setup | Climate queries and charts; download ZingChart separately and build locally using the [NOAA setup guide](environments/noaa/README.md). | 8080* |
+| Census / ACS | ACS tables, geographic selection, maps, and customized exports | Prebuilt images | 8081 |
+| CDC WONDER | National natality and linked infant mortality queries, charts, and CSV exports | Prebuilt images | 8082 |
+| arXiv | cs/math/stat metadata, search, version timelines, and category browsing | Prebuilt images | 8083 |
+| Wateroffice | Hydrometric station search, historical and archived realtime observations, maps, and downloads | Prebuilt images | 8084 |
+| Cellosaurus | Cell-line records, search, linked entities, downloads, and CLASTR | Prebuilt images | 8086 |
+| NOAA Climate at a Glance | Climate queries, maps, time-series charts, and data exports | Available · [manual chart dependency](environments/noaa/README.md) | 8080 |
 
-*NOAA requires a user-supplied chart dependency. Follow its dedicated setup steps before starting the preview.*
-
-See [coverage and known differences](docs/SCOPE.md) for feature boundaries and [verification results](docs/STATUS.md) for the evidence behind each release.
+See [data and feature scope](docs/SCOPE.md) for the included datasets and query boundaries.
 
 ## Quick start
 
-Requirements: **Linux amd64**, Docker Engine with **Compose v2**, and **Python 3.9+**. Preparation requires Internet access to download data and images. See the [resource measurements](docs/STATUS.md) before installing; requirements vary by environment.
+Requirements: **Linux amd64**, Docker Engine with **Compose v2**, and **Python 3.9+**. Preparation requires Internet access to download data and images. See [resource configuration](docs/OPERATIONS.md) before installing; requirements vary by environment.
 
 ```sh
 git clone https://github.com/Ninggggy/sgr-webenv.git
@@ -72,7 +68,7 @@ Once prepared, the chart library is served locally during offline operation. Kee
 | Material | Location |
 |---|---|
 | Application source, Dockerfiles, preparation tools, and tests | This repository |
-| Versioned data archives and publication reports | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
+| Versioned data archives | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
 | Application and restricted-browser images | [GHCR packages](https://github.com/Ninggggy/sgr-webenv/packages) |
 | Exact artifact URLs and image versions | [v0.1.2 manifest](releases/v0.1.2.json) |
 
@@ -86,14 +82,6 @@ python3 tools/env.py prepare cellosaurus --release v0.1.2 \
 ```
 
 Builds require online access to upstream dependencies. Runtime uses the prepared local resources. arXiv retains Elasticsearch 6.2.4 and its ICU configuration for compatibility; keep these research environments local or isolated rather than exposing them as public services.
-
-## Verification and scope
-
-Published reports distinguish source-data checks, webpage workflow replay, packaged installation, and isolation tests. These checks are not measurements of autonomous model success. Installation methods and untested configurations are recorded alongside the results.
-
-WONDER passed 10 independent query comparisons, eight boundary tests, 70 webpage-query and CSV regressions, four CG/GO task records, and 34 webpage interaction checks. All 17 parent-category visibility differences were individually confirmed as retained additional privacy protection; no statistical calculation or protection-propagation scope errors were found. See the [focused verification report](docs/WONDER_PROTECTION_REVIEW.md). The released application, data, and images remain unchanged.
-
-Cellosaurus includes full source-record reconciliation, 337 data/export checks, 75 browser checks, four supplementary task replays, and anonymous data/image download verification. See its [publication report](docs/verification/cellosaurus-publication-report-v0.1.2.json) and the [cross-environment status report](docs/STATUS.md). The original 100-task set contains no Cellosaurus tasks.
 
 ## Licenses and citation
 

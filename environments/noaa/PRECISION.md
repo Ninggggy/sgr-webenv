@@ -1,18 +1,16 @@
-# CAG 数值渠道与新题构造
+# Numeric channels and task design
 
-适用数据：NClimDiv 20260904；本轮原站观测时间2026-09-13。完整证据位于validation/repair-20260913。
+Data version: NClimDiv 20260904. The webpage, standard downloads and raw frontend input use distinct formatting channels.
 
-| 查询/分区/字段 | 原站raw | 网页显示（原站与离线） | 标准JSON/CSV（原站与离线） |
+| Query | Raw input | Webpage | Standard JSON/CSV |
 |---|---:|---:|---:|
-|196612 / 24月Z / 4104 Anomaly|-0.205|-0.20|-0.21|
-|190704 / 10月Z / 4101 Value|1.325|1.32|1.33|
-|190704 / 10月Z / 4107 Anomaly|-0.945|-0.94|-0.95|
-|192304 / 10月Z / 4107 Anomaly|-0.175|-0.17|-0.18|
+| 196612 / 24-month Z / 4104 Anomaly | -0.205 | -0.20 | -0.21 |
+| 190704 / 10-month Z / 4101 Value | 1.325 | 1.32 | 1.33 |
+| 190704 / 10-month Z / 4107 Anomaly | -0.945 | -0.94 | -0.95 |
+| 192304 / 10-month Z / 4107 Anomaly | -0.175 | -0.17 | -0.18 |
 
-这四处是实测原站行为，不能为了统一而篡改网页或下载。原站映射格式化器`us-map-data-formatter.js`使用`Number(parseFloat(num).toFixed(precision))`，之后地图、悬停和表格共用处理后的属性。二进制表示会影响中点；不要将此称作统一的十进制四舍五入。
+Window aggregates and baseline calculations use rational arithmetic. Standard JSON/CSV/XML round at the indicator precision, with decimal midpoint rounding away from zero and normalized negative zero. Frontend raw values retain the precision expected by the original JavaScript formatter, which uses `Number(parseFloat(num).toFixed(precision))`.
 
-离线值/距平/均值使用有理数完成窗口聚合和基期计算。标准JSON/CSV/XML按指标精度、十进制中点远离零舍入并归一负零。raw面向原站前端：Z等value/anomaly保留四位小数，度日整数，mean采用显示精度；随后的JS舍入保留原站行为。所有渠道都来自同一窗口，不对题目或分区补值。
+Rank uses a separate quantization and tie path. Displayed values are not sufficient to infer official ranks; local Rank results can differ from the official archive at tie and boundary windows. Do not use those paths as an exact NOAA ranking oracle. `rankStart` and `rankEnd` describe ties, not a tolerance interval for an incorrect rank.
 
-Rank的量化和并列处理是独立路径，不能由显示值排序推定官方名次。当前仍有三个官方Rank反例，详见修复报告；暂不能据此构造要求精确NOAA名次的新题。rankStart/rankEnd不是对错误名次的容错范围。
-
-新题作者必须在题面及评分说明中选定读取渠道（网页显示、标准导出、或明确允许的raw），说明单位、精度、阈值比较和计算顺序。例如要求使用网页显示的两位小数计算差值，就不能用raw未显示的小数判分；要求标准导出则不得偷偷按截图舍入判分。允许多个渠道时，应明确数值等价规则，避免0.01和符号零歧义。不能据此放宽旧题评分，也不向网站植入题目专属操作提示。
+When defining a task, specify the reading channel, units, precision, threshold comparison and operation order. Judge webpage-based calculations using the displayed values; judge download-based calculations using the specified export. If several channels are allowed, define the equivalence rule explicitly.

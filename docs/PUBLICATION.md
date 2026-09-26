@@ -1,61 +1,20 @@
-# Publication and anonymous validation
+# Source, data and images
 
-The source repository and all 11 `sgr-webenv-release-*` packages are public.
-All 11 anonymous image pulls passed using an empty Docker credential directory.
-Each public package page links to `Ninggggy/sgr-webenv`, not private staging.
-See `verification/public-package-pages.json`. The old API-only association
-attempts were inconclusive and are superseded by this public-page observation.
+| Material | Location |
+|---|---|
+| Applications, deployment files, collectors and tests | This repository |
+| Versioned runtime data archives | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
+| Container images | [Repository packages](https://github.com/Ninggggy/sgr-webenv/packages) |
+| Data URLs, image tags and application versions | [Release manifest](../releases/v0.1.2.json) |
 
-The v0.1.0 Release contains five cleared data attachments. The latest anonymous
-source/data/image test is `verification/anonymous-publication.json`; full streamed
-asset comparisons are recorded separately when completed. Cached Docker layers
-may be reused; this is not independent-machine install evidence.
+`tools/env.py prepare <site> --release v0.1.2` downloads the artifacts selected by the manifest. A release may reuse unchanged data or images from an earlier version. arXiv data are split into archive parts; the installer assembles them and builds the local search index.
 
-Census and arXiv keep their declared supported scope; Wateroffice remains a
-development version. NOAA's proprietary chart component remains withheld. WONDER's reviewed national public-use-derived archive is added in v0.1.1 with NCHS terms. Do not interpret public materials as complete five-site parity.
+NOAA uses a [user-supplied ZingChart dependency and local image build](../environments/noaa/README.md). Keep that dependency and images containing it out of redistribution unless your license permits it.
 
-Package links are listed in `verification/public-package-pages.json` and image
-names in `releases/v0.1.0.json`. For future versions, GitHub package visibility
-must be checked separately from repository visibility.
+## Preparing a distribution
 
-Official instructions: https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility
+Use a runtime-file whitelist. Keep credentials, browser profiles, author research materials and task answers out of images and data archives. Export SQLite through a consistent backup rather than copying a live database with incomplete WAL files. Preserve source metadata and component licenses.
 
-## Private staging history and clean migration
+Retain the prior release and its artifacts for rollback. Check that a reader without repository credentials can retrieve the intended source, data and images. Repository visibility and GHCR package visibility are separate settings; consult [GitHub package access guidance](https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility).
 
-A read-only check on 2026-09-26 confirmed that GitHub can still retrieve the
-excluded ZingChart library through a removed initial commit. Main is clean, but
-rewriting main did not remove the old server-side object. The affected repository is retained privately as
-`sgr-webenv-private-staging`; it must not be made public. The issue is recorded in
-`verification/remote-history-review.json` without republishing the library.
-
-A safe publication route is a new repository containing only the current
-whitelisted source snapshot, with no parent history or fork relationship to the
-private staging repository. Retain the staging repository privately so its draft
-assets, build evidence and rollback material are not lost; re-upload only cleared
-assets to the clean repository. Repository names and GHCR associations would
-need migration. The user authorized this migration. A new independent `sgr-webenv` repository
-has been created and populated with a clean source snapshot; the excluded old
-commit/file cannot be retrieved there. The previous staging repository, draft
-assets and audit history are retained privately. All five cleared data assets have been migrated; their contents match the validated archives.
-The old GHCR packages were not readable by the new repository token (HTTP 403).
-The unchanged validated images were initially published privately and are now public under `sgr-webenv-release-*`
-so their package association can be established with the new repository. Old
-packages remain untouched for rollback. Use only the **new package links above**
-for public visibility settings. The OCI source label alone is not evidence of
-the actual GitHub package/repository connection.
-
-GitHub's [history-removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
-explains that cached references may remain after a force-push and that Support
-does not promise removal of non-sensitive data. Do not assume a support request
-will solve this licensing-related object issue. No external message has been sent.
-
-## v0.1.1 data supplement
-
-WONDER's data-use review is complete. v0.1.1 adds a separately attributed national
-public-use-derived archive, preserves existing query protections, and reuses
-all previously published container images. The other four datasets retain
-their v0.1.0 asset URLs. Historical v0.1.0 reports remain unchanged.
-
-## v0.1.2 Cellosaurus supplement
-
-Cellosaurus adds a complete Release 56.0-derived runtime database, twelve source downloads and separate Release 53/54 name-conflict archives. Code and resource license notices are in `environments/cellosaurus/licenses/NOTICE.md`. Build inputs are public Maven/Java/Tomcat distributions and the existing public base images. The original deployment and all earlier release tags are unchanged. Publication validation remains recorded separately from original-site acceptance.
+Use a trusted build runner and remove its registration credentials after use. Do not publish excluded proprietary files or private staging history. See [third-party terms](THIRD_PARTY.md) and [operation and rollback](OPERATIONS.md).

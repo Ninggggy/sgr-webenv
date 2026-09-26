@@ -2,32 +2,28 @@
 
 面向 SGR-BENCH 与网页智能体研究的可复现离线网站环境。
 
-[English](README.md) · [发布版本](https://github.com/Ninggggy/sgr-webenv/releases) · [覆盖与限制](docs/SCOPE.md) · [验收记录](docs/STATUS.md)
+[English](README.md) · [发布版本](https://github.com/Ninggggy/sgr-webenv/releases) · [覆盖与限制](docs/SCOPE.md) · [操作指南](docs/OPERATIONS.md)
 
 SGR-WebEnv 将网站应用、固定数据和受限浏览器打包为 Docker 环境，支持在本地开展交互式搜索、页面浏览和数据查询研究。资源准备完成后，已支持的工作流可以离线运行，无需连接原网站。
 
 仓库包含六个网站的独立复现。各环境均有明确的数据与功能范围。本项目与原网站及其运营机构无隶属或背书关系。
 
-## 环境与发布范围
+## 网站环境
 
-**v0.1.2 新增 Cellosaurus**，并继续提供 Census、WONDER、arXiv 和 Wateroffice 的已有发布材料。
-
-| 环境 | 发布状态 | 包含内容与主要限制 | 预览端口 |
+| 环境 | 主要功能 | 安装方式 | 预览端口 |
 |---|---|---|---:|
-| Census / ACS | 可安装 · 0.2.1 | 已归档的地区、年份与表格；不覆盖全国所有 ACS 产品。 | 8081 |
-| CDC WONDER | 可安装 · 0.3 | 全国出生与关联婴儿死亡数据的分组查询、图表及 CSV 导出；已通过查询、交互和旧题回归。 | 8082 |
-| arXiv | 可安装 · 0.1.0 | 1,685,244 篇 cs/math/stat 论文的最新元数据与版本时间线；不含旧版本内容、每日公告及全文。 | 8083 |
-| Wateroffice | 开发版 · 0.1.0-dev | 已归档水文数据与查询流程；地图、覆盖和外观仍有限制。 | 8084 |
-| Cellosaurus | 可安装 · 0.1.0 | Release 56.0 的 168,970 条元数据、核心网站与 CLASTR；不包含完整 REST/RDF/SPARQL 接口。 | 8086 |
-| NOAA Climate at a Glance | Available · 需自行准备依赖 | 气候查询与图表；自行下载 ZingChart 后，按 [NOAA 安装说明](environments/noaa/README.md)在本地构建。 | 8080* |
+| Census / ACS | ACS 表格、地理选区、地图和定制导出 | 预构建镜像 | 8081 |
+| CDC WONDER | 全国出生与关联婴儿死亡数据查询、图表和 CSV 导出 | 预构建镜像 | 8082 |
+| arXiv | cs/math/stat 元数据、搜索、版本时间线和分类浏览 | 预构建镜像 | 8083 |
+| Wateroffice | 水文站搜索、历史与归档实时观测、地图和下载 | 预构建镜像 | 8084 |
+| Cellosaurus | 细胞系记录、搜索、关联导航、下载和 CLASTR | 预构建镜像 | 8086 |
+| NOAA Climate at a Glance | 气候查询、地图、时间序列图表和数据导出 | Available · [自行准备图表依赖](environments/noaa/README.md) | 8080 |
 
-*NOAA 需要用户自行准备图表依赖，请先完成其专用安装步骤再启动预览。*
-
-各站详细功能边界见 [覆盖与差异](docs/SCOPE.md)，发布依据见 [验收记录](docs/STATUS.md)。
+具体数据与查询边界见[功能与数据范围](docs/SCOPE.md)。
 
 ## 快速开始
 
-运行要求：**Linux amd64**、支持 **Compose v2** 的 Docker Engine，以及 **Python 3.9+**。准备阶段需要联网下载数据和镜像。各环境的资源需求不同，安装前请查看 [资源测量与验证情况](docs/STATUS.md)。
+运行要求：**Linux amd64**、支持 **Compose v2** 的 Docker Engine，以及 **Python 3.9+**。准备阶段需要联网下载数据和镜像。各环境的资源需求不同，安装前请查看 [资源配置说明](docs/OPERATIONS.md)。
 
 ```bash
 git clone https://github.com/Ninggggy/sgr-webenv.git
@@ -72,7 +68,7 @@ NOAA 采用本地源码构建方式提供。**ZingChart 需要用户自行下载
 | 材料 | 位置 |
 |---|---|
 | 应用源码、Dockerfile、数据准备工具与测试 | 本仓库 |
-| 固定版本的数据包与发布报告 | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
+| 固定版本的数据包 | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
 | 应用与受限浏览器镜像 | [GHCR Packages](https://github.com/Ninggggy/sgr-webenv/packages) |
 | 具体下载地址与镜像版本 | [v0.1.2 发布清单](releases/v0.1.2.json) |
 
@@ -86,14 +82,6 @@ python3 tools/env.py prepare cellosaurus --release v0.1.2 \
 ```
 
 构建阶段需要联网获取上游依赖，运行阶段使用已准备好的本地资源。arXiv 为保持查询兼容性，保留 Elasticsearch 6.2.4 及对应 ICU 配置；这些研究环境应在本地或隔离网络中使用，不应直接作为公共服务开放。
-
-## 验证与适用范围
-
-验收报告分别记录来源数据核对、网页工作流回放、打包安装和隔离测试，并说明实际安装方式与未验证的配置。这些结果不代表模型自主解题成功率。
-
-WONDER 已通过 10 组独立查询对照、8 组边界测试、70 条网页查询与 CSV 回归，以及四条 CG/GO 和 34 项网页交互检查。17 项父类别显示差异已逐项确认属于保留的额外隐私保护，未发现统计计算或保护传播范围错误；详见 [专项核验报告](docs/WONDER_PROTECTION_REVIEW.md)。应用、数据与镜像继续沿用已发布版本。
-
-Cellosaurus 已完成全量记录来源核对、337 项数据与导出检查、75 项浏览器检查、四条补充题回放，以及数据和镜像的匿名下载验证。详见 [发布报告](docs/verification/cellosaurus-publication-report-v0.1.2.json) 和 [各环境验收记录](docs/STATUS.md)。原有 100 条正式题目中不包含 Cellosaurus。
 
 ## 许可与引用
 

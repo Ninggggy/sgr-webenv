@@ -1,24 +1,16 @@
-# Supported scope and known differences
+# Features and data scope
 
-The following describes existing website implementations. It is not a claim that
-newly packaged containers have passed release acceptance.
+Each environment serves a fixed archive. Use the release manifest and included source metadata to identify data versions and collection dates.
 
-| Site | App | Supported scope | Known differences |
-|---|---|---|---|
-| NOAA | 2 | Archived Climate at a Glance queries, values and anomalies | Rank/tie mismatches remain, including boundary windows. Do not use unresolved Rank paths as exact-parity tasks. |
-| Census / ACS | 0.2.1 | Archived tables, years and geographies; corrected 002/004 definitions | Not nationwide all-product coverage; 95 median investigations and complete visual equivalence deferred. |
-| WONDER | 0.3 | Resident national natality 2016–2024 and linked 2017–2023 fields in the archive | 17 parent-category visibility differences and stronger suppression propagation retained. The installed 0.3 data restores 2021 detailed origin from the same-year public linked birth denominator, with documented birthweight-flag handling and prior joint-distribution checks; older unrecovered archives remain limited. No fabricated local geography data. |
-| arXiv | 0.1.0 | 1,685,244 current cs/math/stat records, 2,787,373 version timestamps, search/latest details/monthly browsing | Historical content/citations/search, daily new/recent/catchup, incomplete author identifiers and MSC/ACM queries return unsupported responses. PDF/fulltext/account/third-party functions excluded. |
-| Wateroffice | 0.1.0-dev | HYDAT 2026-07-17 and separately dated archived realtime/reference datasets | Map provider/zoom and visual differences; unavailable ApprovalGrade; snapshot cutoffs differ by product. Remains development status. |
+| Environment | Data and features | Query boundaries |
+|---|---|---|
+| NOAA Climate at a Glance | Archived statewide/divisional climate queries, maps, time series, values and anomalies | 48 contiguous states and 344 climate divisions, 1895-01 through 2026-08. Prepare ZingChart separately. For exact-ranking tasks, consult the [numeric rules](../environments/noaa/PRECISION.md). |
+| Census / ACS | ACS tables, E/M values, geographic selection, maps and customized downloads | Archived 2016–2019 ACS1/ACS5 regions and tables; selection maps are national but numerical coverage follows the archive. See [sources](../environments/census/SOURCES.md) and [precision](../environments/census/PRECISION.md). |
+| CDC WONDER | National U.S.-resident Natality 2016–2024 and Period Linked 2017–2023 queries, charts and exports | National queries with the fields in [COVERAGE](../environments/wonder/COVERAGE.md). State/county geography, confidence intervals and fertility rates are outside this dataset. [Protection rules](WONDER_PROTECTION_REVIEW.md) apply to results and exports. |
+| arXiv | 1,685,244 cs/math/stat records, latest metadata, 2,787,373 version timestamps, search and year/month browsing | Historical version contents, daily announcements, ORCID/author-ID/MSC/ACM field search, PDF/full text/source, accounts and third-party services return a scope explanation. |
+| Wateroffice | HYDAT 2026-07-17, archived realtime observations, station metadata, reference material, maps and downloads | Historical and realtime sources have separate dates. Map areas and observation fields are described in [the data guide](../environments/wateroffice/DIFFERENCES.md). |
+| Cellosaurus | Release 56.0: 168,970 records, core website and CLASTR, plus separate Release 53/54 name-conflict archives | Core webpage workflows; external database content and the complete REST/RDF/SPARQL interface are outside the package. See [the environment guide](../environments/cellosaurus/README.md). |
 
-The arXiv archive retains all categories of included records, not just cs/math/stat.
-Data was acquired over a source interval, not a simultaneous snapshot of the live site.
-Submission timestamps, first-announcement month, and OAI update dates are not interchangeable.
+arXiv retains every category assigned to an included record, including cross-listings. First submission, latest submission, first-announcement month and source update times have distinct meanings. Relative-date queries use the archive's reference date.
 
-Current task coverage is 4 + 8 + 4 + 8 + 10 CG/GO records. Prior original-host
-verification is historical evidence only. New package acceptance must verify
-candidate completeness, output fields, background queries, isolation and recovery.
-
-## Cellosaurus 0.1.0
-
-Release 56.0 core website and CLASTR; 168,970 records and separate release 53/54 name-conflict archives. Not the full REST/RDF/SPARQL or external-site surface. Original unstable equal-name ties, original large-result truncation and four upstream truncated STR display names are documented in the [environment scope](../environments/cellosaurus/README.md). v0.1.2 independent installation validation passed within this scope; existing deployments were not changed.
+These archives do not update automatically. Restore the same release data to repeat an experiment; collect a new dataset separately when a different source date is required.

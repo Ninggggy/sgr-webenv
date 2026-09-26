@@ -1,42 +1,34 @@
-# Rebuilding versus restoring a release
+# Restoring and rebuilding data
 
-The supported repeatable runtime input is a versioned Release data archive, not a
-new crawl of a changing website. Acquisition scripts are author-side tools; they
-require Internet access and may produce a different data version. Do not overwrite
-an accepted data directory with a new crawl. Benchmark records remain separate.
+Use the versioned Release archive as the input for a repeatable installation. Acquisition tools retrieve upstream data and require Internet access; a new crawl may have a different source date. Keep new acquisitions separate from an installed dataset.
 
-## WONDER data is withheld
+## Restore an environment
 
-There is no downloadable prepared database in this release candidate.
-`sources/download-manifest.json` lists the original annual public-use archives;
-`sources/layouts.json` records the reviewed record layouts used by the importer.
-Readers must review the NCHS data-use conditions before obtaining or processing
-those inputs. `tools/import_data.py` requires a product, year and a local annual
-archive; it refuses to overwrite an existing import or use an unreviewed layout.
-The source descriptor is not authorization to redistribute a prepared small-cell
-database. Website suppression does not apply to direct database access.
+```sh
+python3 tools/env.py prepare census --release v0.1.2
+python3 tools/env.py start census --release v0.1.2 --mode preview
+```
+
+To use an archive already stored locally, add `--data-archive /path/to/data.tar.gz`. Add `--local-images` when using images built on the same Docker host. See [operations](OPERATIONS.md).
+
+## WONDER
+
+The Release archive contains national NCHS public-use-derived runtime databases. Preserve the [data-use notice](../environments/wonder/licenses/DATA_USE_NOTICE.md).
+
+The environment's `sources/download-manifest.json` identifies original annual archives and `sources/layouts.json` records importer layouts. `tools/import_data.py` takes a product, year and local annual archive; use a new output location. Source and 2021 field definitions are described in [SOURCES](../environments/wonder/SOURCES.md). Website suppression rules do not turn raw database rows into publication-ready tables.
 
 ## arXiv
 
-The archive contains the latest descriptive metadata and complete version times.
-`prepare` builds a new Elasticsearch index with the preserved official query
-mapping. `start` compares the index count with source records and refuses partial
-results. An interrupted build must be diagnosed before retry; never point a
-production service at an in-progress index. Older version content and daily
-announcement features remain unsupported regardless of any author-side material.
+The data archive contains latest descriptive metadata and version times. Preparation builds Elasticsearch using the packaged query mapping. Startup checks the index against the source record count. Diagnose interrupted builds before retrying, and use a separate index for a new data version. Historical content and daily announcement features are outside this dataset.
 
-## Census, NOAA and Wateroffice
+## Census and NOAA
 
-Restore the per-site Release archive for the published snapshot. Census source
-collectors require the originally selected products, years and geography, and
-some author import tools refer to acquisition/validation material that is not
-in the runtime package. Their presence is not a claim that a fresh live crawl
-recreates the frozen release byte for byte.
+Restore the corresponding fixed Release archive. Census collectors select explicit years, products and states; see [Census sources](../environments/census/SOURCES.md). For NOAA, prepare the [chart dependency](../environments/noaa/README.md) before building the web image.
 
-NOAA's proprietary chart component is deliberately absent. Its source/data
-materials do not form a complete chart-capable install without an appropriate
-license or a separately tested replacement.
+## Wateroffice
 
-Wateroffice requires HYDAT plus all listed real-time snapshots, dictionaries,
-datum/reference information and map material. HYDAT alone is not sufficient.
-The replacement NRCan basemap and dev maturity must remain disclosed.
+Use the complete per-site archive: HYDAT, realtime snapshots, dictionaries, datum/reference information and map resources. HYDAT alone supplies historical observations but not the other website workflows. See [Wateroffice data and map behavior](../environments/wateroffice/DIFFERENCES.md).
+
+## Cellosaurus
+
+Place the archived Release 56.0 source files in the environment's `data/` directory and run `python3 tools/import_data.py` from that environment directory. Keep Release 53/54 historical name-conflict files separate. The importer checks the source release and refuses to overwrite an existing database; see [the environment guide](../environments/cellosaurus/README.md).

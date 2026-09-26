@@ -6,8 +6,6 @@ NOAA is available as source and data with a **manual chart-dependency step**. Th
 
 Use the [official ZingChart download page](https://www.zingchart.com/download), which also links to the npm package. The required package version is **2.9.16-1**; the archived library is identified internally as **2.9.16-hf1**. Do not substitute an unpinned latest version.
 
-The official npm package was reachable and its `es6.js` module entry was inspected on 2026-09-26. This is an acquisition/layout check, not a new end-to-end NOAA acceptance result.
-
 Before using the library, check the [applicable terms](https://www.zingchart.com/pricing/branded-license). The Branded license permits use subject to its branding requirements but excludes distributing the library in installable software products. This repository does not grant you a license, remove branding, or provide an OEM redistribution right. If your use is not covered by your license, obtain suitable permission before proceeding. Do not publish locally built images containing the library without that permission.
 
 From the repository root, an explicit download through the official npm channel is:
@@ -72,13 +70,13 @@ python3 tools/env.py reset noaa --release v0.1.2
 python3 tools/env.py stop noaa --release v0.1.2
 ```
 
-Here `--local-images` uses the images you built instead of requesting unpublished NOAA images. The existing `--allow-candidate` flag opts into this local build because the historical release manifest does not declare a prebuilt NOAA distribution. It does not change runtime isolation, waive a license requirement, or mark full benchmark acceptance. Both `prepare` and `start` require it; `verify`, `reset`, and `stop` use the installed configuration.
+Here `--local-images` uses the images you built instead of requesting unpublished NOAA images. The existing `--allow-candidate` flag opts into this local build because the historical release manifest does not declare a prebuilt NOAA distribution. It does not change runtime isolation, waive a license requirement, or expand the dataset scope. Both `prepare` and `start` require it; `verify`, `reset`, and `stop` use the installed configuration.
 
 For evaluation, replace `--mode preview` with `--mode eval`; no host port is published. Chart files are served by the local application, without a runtime CDN dependency. Data remain mounted read-only. Keep at least 5 GiB free while preparing and building.
 
-## Verification scope
+## Using the environment
 
-`verify` is a service-health check. Check the time-series chart in the browser after supplying the library; health alone does not prove chart rendering. This documentation update does not claim a newly verified clean installation or change existing Rank/tie findings. See [precision notes](PRECISION.md), [scope](../../docs/SCOPE.md), and [verification status](../../docs/STATUS.md).
+`verify` checks HTTP health. Open a time-series page after installation to check the locally supplied chart dependency. For calculations and exact-ranking queries, consult [numeric rules](PRECISION.md) and [data scope](../../docs/SCOPE.md).
 
 ## 中文说明
 
@@ -90,4 +88,4 @@ NOAA 采用“自行准备依赖 + 本地构建”的方式安装：
 4. `prepare` 使用 `--local-images --allow-candidate`，`start` 使用 `--allow-candidate`；数据包由现有公开 Release 下载。
 5. 打开 `http://127.0.0.1:8080/`，检查查询与时间序列图表。评测模式使用 `--mode eval`。
 
-`--allow-candidate` 是现有发布清单对本地构建的显式启用参数，不代表授权豁免或全部验收通过。仓库不附带图表库，准备后离线运行也不访问在线 CDN。保留既有版权和品牌标识；如需再分发含该组件的材料，另行确认相应权限。
+`--allow-candidate` 是现有发布清单对本地构建的显式启用参数，不代表授权豁免或扩大数据范围。仓库不附带图表库，准备后离线运行也不访问在线 CDN。保留既有版权和品牌标识；如需再分发含该组件的材料，另行确认相应权限。

@@ -1,13 +1,15 @@
-# 数值、注释与语义 — 0.2.1
+# Numeric values, annotations and statistical populations
 
-旧25,647格保留原Census格式化CSV所存精度。新增4,642,936格来自固定年度官方Summary E/M原值；独立按原始布局比较9,285,872项E/M零差异。源空值仍计入“格记录”，不能解释为零。
+Archived formatted CSV cells retain their source precision. Summary File cells retain the fixed-year estimate and margin-of-error values. A missing source value is not zero.
 
-普通负数是合法估计值，过滤/排序/地图不能一律去掉。官方特殊码按渠道分别解释：MOE -1表示该指标没有MOE，点号保留“不提供（Summary File .）”说明，MOE0保留0并附受控估计*****。空串不擅自推断为官方不发布；源文件完整归档，可追查原码。
+Ordinary negative estimates are valid. Special codes are interpreted by channel: MOE -1 means no MOE; a Summary File dot retains its unavailable annotation; MOE 0 remains zero with its applicable controlled-estimate annotation.
 
-463格中位数附加说明，原estimate未改：335格收入/earnings的raw2499标2,500-；33格B25092 raw9用同年同地B25091分布确认低于10%；其余95格标median precision unresolved，不猜上下界。界面数值过滤、排序、地图不将带估计注释值当精确数值。导出保留注释，JSON API保留原值+注释字段。作者必须排除精度未决值，或把识别界限作为任务明确要求。
+Annotated medians are not treated as exact values in numeric filtering, sorting or maps. Exports preserve annotations; JSON preserves the value and annotation separately. Values marked `median precision unresolved` should be excluded from exact-threshold tasks unless interpreting the bound is part of the task.
 
-四道底题完整候选分别100/33/58/67县，八记录的数值、最终行数20/5/4/7、顺序和原答案均匹配。比较使用精确分数，最后按原结构三位小数输出；边界复核见legacy-boundaries.json。该计算回归不解决题义冲突。
+## Task definitions
 
-002的C16002是全部limited-English-speaking households，不是租房与LEP交叉总体；B25003租房数独立。原租金负担分子008+009+010涵盖35%以上，分母001−011排除Not computed。004采用B18105 civilian noninstitutionalized 65+分母，不能替换为B01001全部65+。正式四条CG/GO记录已按上述口径修订；答案不变。见[修订与复算](validation/repair-20260918/REPORT.md)。
+For 002, C16002 limited-English-speaking households use the full household population; B25003 renter households are a separate condition. The rent-burden numerator covers 35% or more of income, with `Not computed` excluded from the denominator.
 
-未对跨表派生比例捏造MOE，也未将不同统计总体直接混用。目录和完整原始数值不能自动保证任意新题的定义、候选或精度正确。
+For 004, the 65+ population and ambulatory-difficulty denominator use B18105 civilian noninstitutionalized residents. B01001 total residents are a different population. Other housing and household measures retain their own universes.
+
+Use exact fractions for threshold comparisons and round only the final output. Read each table's universe and units before combining values. Derived cross-table margins of error are not supplied.

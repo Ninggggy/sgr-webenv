@@ -16,9 +16,9 @@ python3 tools/env.py stop cellosaurus --release v0.1.2
 
 Open http://127.0.0.1:8086/ ; CLASTR: http://127.0.0.1:8086/str-search/ . Omit `--mode preview` for isolated evaluation without a host port. The web application can reach CLASTR on an internal backend network; the browser can only reach the web application. Only read-only data are mounted. `reset` recreates transient browser/download state without deleting the dataset.
 
-For source builds, run `python3 tools/build.py cellosaurus` before prepare and pass `--local-images`. All three Linux amd64 images are built from public inputs; Maven dependencies are resolved during build. No original server, host Java installation or private Maven cache is needed. Java core and Web tests run during build; no tests are skipped. Maven 3.9.11, Java 17, Tomcat 11.0.11 and application dependencies are specified in the Dockerfile/POM files. Shared runtime/browser bases have their build sources in the top-level `docker/` directory.
+For source builds, run `python3 tools/build.py cellosaurus` before prepare and pass `--local-images`. All three Linux amd64 images are built from public inputs; Maven dependencies are resolved during build. No original server, host Java installation or private Maven cache is needed. Java core and Web tests run during build. Maven 3.9.11, Java 17, Tomcat 11.0.11 and application dependencies are specified in the Dockerfile/POM files. Shared runtime/browser bases have their build sources in the top-level `docker/` directory.
 
-Allow approximately 5.2 GiB of runtime memory limits (web 1.5 GiB, CLASTR 1.5 GiB, browser 2 GiB, preview proxy 128 MiB). Data unpack to approximately 528 MiB; installation also needs archive/cache and image/build space. A full clean Java build uses additional dependency cache and intermediate layers. These are allowances, not measured performance guarantees. Keep at least 5 GiB free on the root filesystem.
+Allow approximately 5.2 GiB of runtime memory limits (web 1.5 GiB, CLASTR 1.5 GiB, browser 2 GiB, preview proxy 128 MiB). Data unpack to approximately 528 MiB; installation also needs archive/cache and image/build space. A full clean Java build uses additional dependency cache and intermediate layers. These values describe configured container limits; build caches and temporary files need additional space. Keep at least 5 GiB free on the root filesystem.
 
 ## Supported scope and differences
 
@@ -27,9 +27,9 @@ Allow approximately 5.2 GiB of runtime memory limits (web 1.5 GiB, CLASTR 1.5 Gi
 * Search, records, original TXT, parent/child/same-individual links, groups/panels, references, downloads, and CLASTR human/mouse/dog authentication search, uploads and exports.
 * Not the complete REST API, RDF/SPARQL, external database content, videos or social features. Not a pixel-identical copy. Institutional partner badges are replaced by text attribution in this distribution.
 * Original equal-name tie order is unstable: local accession tie-breaking is deterministic. The original large HTML query truncated to 100,000 records; this environment returns the complete 124,256-record result. Four STR comparison cases differ only in original truncated display names; local names preserve source XML. No change to candidates or scores.
-* Original formal 100-record benchmark has no Cellosaurus tasks. Four supplementary CG/GO records had author-side workflow checks; answers and task evidence are not shipped with the runtime. This does not measure autonomous model success.
+* Task files and expected answers belong in author-side test directories and are not mounted by runtime containers.
 
-See [licenses/NOTICE.md](licenses/NOTICE.md), [upstream changes](docs/upstream.json), and the publication verification report under `docs/verification/` at repository root.
+See [licenses/NOTICE.md](licenses/NOTICE.md), [upstream changes](docs/upstream.json), and [shared operations](../../docs/OPERATIONS.md).
 
 ## Data reconstruction and rollback
 
@@ -43,4 +43,4 @@ With the data archive extracted under this environment's `data/` directory (auth
 
 For an installed v0.1.2 environment, run `python3 tools/browser_smoke.py cellosaurus --release v0.1.2` from repository root. To run the 15-step structured browser regression, set `CELLOSAURUS_BROWSER_CONTAINER` to the installed browser container name and run `python3 environments/cellosaurus/tests/browser_rpc.py`. `tests/browser_interactions.py` is an author-only Playwright suite; run it in a separate restricted test browser attached to the instance's browsing network, mount only the test script and an empty `/results` output directory, and stop the instance browser during this test to avoid duplicating browser memory. It is never exposed through the agent RPC.
 
-The published web image uses packaging revision `0.1.0-1`: its preview proxy streams large downloads within the original 128 MiB limit. The earlier packaging attempt `cellosaurus-web:0.1.0` in GHCR should not be used for preview; the release manifest selects the corrected image. Core application/data remain 0.1.0 / 56.0.
+Use the manifest-selected web image `0.1.0-1` for streaming preview downloads. Pin the image tags from the manifest when deploying.
