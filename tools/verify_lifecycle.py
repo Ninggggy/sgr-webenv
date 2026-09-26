@@ -2,9 +2,9 @@
 """Author-side lifecycle check against an already isolated installation."""
 import argparse,json,subprocess,sys,time
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('site',choices=['census','wonder','wateroffice','arxiv']);p.add_argument('--state-dir',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-root=Path(__file__).resolve().parents[1];base=[sys.executable,str(root/'tools/env.py')];common=[a.site,'--state-dir',str(a.state_dir)]
-project='sgr-'+a.site+'-v0-1-0';browser=project+'_'+a.site+'-browser_1';web=project+'_'+a.site+'-web_1'
+p=argparse.ArgumentParser();p.add_argument('site',choices=['census','wonder','wateroffice','arxiv']);p.add_argument('--state-dir',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--release',default='v0.1.1');a=p.parse_args()
+root=Path(__file__).resolve().parents[1];base=[sys.executable,str(root/'tools/env.py')];common=[a.site,'--state-dir',str(a.state_dir),'--release',a.release]
+project='sgr-'+a.site+'-'+a.release.replace('.','-');browser=project+'_'+a.site+'-browser_1';web=project+'_'+a.site+'-web_1'
 def locate(service):
  ids=subprocess.check_output(['docker','ps','--filter','label=com.docker.compose.project='+project,'--filter','label=com.docker.compose.service='+service,'--format','{{.ID}}'],text=True).split();assert len(ids)==1;return ids[0]
 def ready():
@@ -36,7 +36,7 @@ for url in ['https://example.com/','file:///etc/passwd','http://169.254.169.254/
 if a.site=='arxiv':
  # Preserve the actual isolated instance configuration, including author-side
  # storage placement. Do not regenerate it or delete its persistent index.
- config=a.state_dir/'v0.1.0/arxiv/compose.json'
+ config=a.state_dir/a.release/'arxiv/compose.json'
  compose=['docker','compose']
  if subprocess.run(compose+['version'],capture_output=True).returncode:compose=['docker-compose']
  dc=compose+['-p',project,'-f',str(config)]

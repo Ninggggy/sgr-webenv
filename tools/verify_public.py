@@ -2,8 +2,8 @@
 """Anonymous source, Release and GHCR checks. Does not use a GitHub credential."""
 import argparse,json,os,subprocess,tempfile,urllib.request,urllib.error
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--pull-images',action='store_true');a=p.parse_args()
-root=Path(__file__).resolve().parents[1];m=json.loads((root/'releases/v0.1.0.json').read_text());checks=[]
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--pull-images',action='store_true');p.add_argument('--release',default='v0.1.1');a=p.parse_args()
+root=Path(__file__).resolve().parents[1];m=json.loads((root/'releases'/f'{a.release}.json').read_text());checks=[]
 def http(url,method='GET'):
  try:
   with urllib.request.urlopen(urllib.request.Request(url,method=method,headers={'User-Agent':'sgr-webenv-anonymous-check'}),timeout=60) as r:return r.status,r.headers, r.read() if method=='GET' else b''

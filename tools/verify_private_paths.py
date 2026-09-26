@@ -2,7 +2,7 @@
 """Check that private-path requests cannot read runtime or author files."""
 import argparse,json,subprocess
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--release',default='v0.1.1');p.add_argument('--sites',nargs='+',choices=['census','wonder','arxiv','wateroffice'],default=['census','wonder','arxiv','wateroffice']);a=p.parse_args()
 code='''import urllib.request,urllib.error,json
 paths=['/.git/config','/benchmark/constraint.jsonl','/data/metadata.sqlite','/app/app.py','/proc/self/environ','/%2e%2e/etc/passwd']
 rows=[]
@@ -14,8 +14,8 @@ for path in paths:
 print(json.dumps(rows))
 '''
 out={}
-for site in ('census','wonder','arxiv','wateroffice'):
- project='sgr-'+site+'-v0-1-0';service='web' if site=='arxiv' else site+'-web'
+for site in a.sites:
+ project='sgr-'+site+'-'+a.release.replace('.','-');service='web' if site=='arxiv' else site+'-web'
  ids=subprocess.check_output(['docker','ps','--filter','label=com.docker.compose.project='+project,'--filter','label=com.docker.compose.service='+service,'--format','{{.ID}}'],text=True).split()
  if len(ids)!=1:raise RuntimeError('Expected one running '+site+' web service')
  result=subprocess.run(['docker','exec','-i',ids[0],'python3','-'],input=code,text=True,capture_output=True,check=True)

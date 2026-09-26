@@ -1,8 +1,8 @@
 # Third-party materials and data redistribution
 
 The root Apache-2.0 license applies only to original project contributions.
-This inventory is being checked before public release. Unresolved components
-must not be described as cleared merely because the repository remains private.
+This inventory records component-specific publication decisions. Source code,
+application assets and data have separate terms; no blanket agency clearance is implied.
 
 | Material | Source / terms | Release handling |
 |---|---|---|
@@ -11,16 +11,15 @@ must not be described as cleared merely because the repository remains private.
 | Open Sans | SIL Open Font License | Notice retained with arXiv runtime. |
 | NOAA data/site assets | [NOAA disclaimer](https://www.noaa.gov/disclaimer) | Climate data originate from NCEI; chart redistribution is blocked below. Included third-party library/font notices are preserved separately. |
 | Census data/site assets | [Census policies](https://www.census.gov/about/policies.html) | Published ACS aggregate data and official CitySDK boundaries; CitySDK MIT notice is retained. The logo is used only to identify this unaffiliated research reproduction. |
-| WONDER / NCHS | [WONDER data use](https://wonder.cdc.gov/datause.html), original public-use file terms | Data packages withheld pending direct-database redistribution review. Never weaken query suppression to simplify release. |
+| WONDER / NCHS | [WONDER data use](https://wonder.cdc.gov/datause.html), original public-use file terms | Audited national public-use derivative released with DATA_USE_NOTICE; website suppression retained. See the detailed review. |
 | Wateroffice hydrometric data | [Environment Canada disclaimer](https://wateroffice.ec.gc.ca/disclaimer_info_e.html) | Retain attribution and source warnings; map/font rights separately reviewed. |
 | Chromium / Chrome for Testing | Official download and bundled notices | Download pinned browser in build; preserve bundled notices. |
 | Elasticsearch / ICU / JNA | Elastic distribution, ICU plugin and JNA 4.5.1 Maven artifact | Preserve upstream image and artifact notices; security boundary remains isolated. |
 
-WONDER inspection found many cells with n=1–9 in the prepared SQLite databases,
-including mortality tables. They originate from public-use source processing,
-so their applicable source terms must be distinguished from WONDER's query
-output restrictions. Until that analysis is resolved, the databases are not
-included in a Release. A protected web interface does not protect a downloaded DB.
+WONDER's national runtime archive is derived from NCHS public-use files,
+not unsuppressed WONDER query captures. The completed [source-specific review](reviews/WONDER_DATA_REDISTRIBUTION.md)
+permits release with the included NCHS use conditions and attribution. Small
+multiplicities remain computational inputs; website/export protection is unchanged.
 
 No agency affiliation, endorsement, or trademark license is implied.
 
@@ -75,17 +74,20 @@ NOAA installation acceptance.
 
 The NOAA data-only archive contains NCEI climate series, metadata and coverage information. The [NCEI copyright notice](https://data.ngdc.noaa.gov/ngdcinfo/privacy.html) permits copying its public information, with source credit, while retaining third-party exceptions. NCEI government data in this archive are identified as such and are not relicensed under Apache-2.0. The chart code is outside that data permission.
 
-## WONDER review conclusion for this candidate
+## WONDER source-specific review completed
 
-The reviewed NCHS public-use agreement restricts use to statistical analysis and
-forbids identification, identifiable-data linkage and re-identification research.
-The WONDER data-use page adds a prohibition on publishing birth/death statistics
-with counts of nine or fewer. These are distinct source/use conditions; a raw
-NCHS public-use archive is not a WONDER query export. The import manifests point
-to NCHS annual ZIPs, while the prepared joint-distribution database contains
-small cells readable without the website's suppression layer. No statement in
-this review establishes clearance to redistribute that prepared database.
-It is therefore withheld; this is a release decision under unresolved terms,
-not a claim that every use of NCHS public-use data is forbidden. Source collectors
-and public source descriptors remain available for readers to assess their own
-permitted preparation. No contacts were sent or permissions invented.
+The earlier hold treated the presence of 1–9 multiplicities as sufficient reason
+to withhold all prepared public-use data. That reasoning was incomplete. The
+[NVSS policy](https://www.cdc.gov/nchs/nvss/dvs_data_release.htm) distinguishes
+national downloadable public-use microdata from geography-rich web tabulations.
+All 16 installed databases trace to the former. They add no direct identifiers,
+restricted geography or exact calendar event dates and contain no WONDER query
+capture. The 2021 source substitution is separately disclosed in the review.
+
+Release these audited derivatives with `environments/wonder/licenses/DATA_USE_NOTICE.md`,
+source attribution, original usage restrictions and no implied CDC endorsement.
+This is the project's interpretation of published terms, not individual CDC
+permission or an unrestricted-data license. Do not replace data terms with the
+code's Apache-2.0 license. The existing query suppression, reliability indicators
+and more conservative parent protection are not weakened. Details and limits:
+[completed review](reviews/WONDER_DATA_REDISTRIBUTION.md).

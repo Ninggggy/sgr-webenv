@@ -12,8 +12,7 @@ asset comparisons are recorded separately when completed. Cached Docker layers
 may be reused; this is not independent-machine install evidence.
 
 Census and arXiv keep their declared supported scope; Wateroffice remains a
-development version. NOAA's proprietary chart component and WONDER's raw data
-are withheld. Do not interpret public materials as complete five-site parity.
+development version. NOAA's proprietary chart component remains withheld. WONDER's reviewed national public-use-derived archive is added in v0.1.1 with NCHS terms. Do not interpret public materials as complete five-site parity.
 
 Package links are listed in `verification/public-package-pages.json` and image
 names in `releases/v0.1.0.json`. For future versions, GitHub package visibility
@@ -49,3 +48,10 @@ GitHub's [history-removal guidance](https://docs.github.com/en/authentication/ke
 explains that cached references may remain after a force-push and that Support
 does not promise removal of non-sensitive data. Do not assume a support request
 will solve this licensing-related object issue. No external message has been sent.
+
+## v0.1.1 data supplement
+
+WONDER's data-use review is complete. v0.1.1 adds a separately attributed national
+public-use-derived archive, preserves existing query protections, and reuses
+all previously published container images. The other four datasets retain
+their v0.1.0 asset URLs. Historical v0.1.0 reports remain unchanged.

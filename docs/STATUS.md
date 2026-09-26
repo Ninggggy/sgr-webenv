@@ -1,8 +1,7 @@
 # Release preparation status
 
-Version: **v0.1.0**, updated 2026-09-26. Census and arXiv are distributed
-within their declared scope; Wateroffice remains 0.1.0-dev. NOAA and WONDER are
-partial releases, not complete public installations. All 11 images now pass
+Version: **v0.1.1**, updated 2026-09-26. Census, arXiv and WONDER are distributed
+within their declared scope; Wateroffice remains 0.1.0-dev. NOAA remains a partial release, not a complete public installation. All 11 images now pass
 anonymous pulls. Public package pages display the correct new repository link.
 Public data URL checks have passed; see `verification/anonymous-publication.json`
 for the latest result (earlier failure reports are historical, not new acceptance).
@@ -13,7 +12,7 @@ for the latest result (earlier failure reports are historical, not new acceptanc
 |---|---|---|
 | Census 0.2.1 | 25 table exports; exact-fraction reconstruction of eight CG/GO; 36 customization checks; CSV/Excel comparison; lifecycle/isolation pass. Actual draft-Release archive downloaded and installed in a second clean directory; all 25 exports and eight exact-fraction answers passed again. | Declared partial geographic/product coverage and visual differences; independent-machine installation not claimed. |
 | arXiv 0.1.0 | Fresh complete index of 1,685,244 records; source archive has 2,787,373 version rows. 100 background papers, 40 exploration queries, 14 calendar/navigation actions and 23 HTTP feature-boundary checks pass. Three-record rebuild succeeds and partial-index startup is refused. | All eight records passed information replay: 1,860 candidate detail visits over 76 result pages. Reset/restart and full-index persistence checks passed. Visual differences remain documented; independent-machine installation not claimed. |
-| WONDER 0.3 | 70 webpage queries; four CG/GO and 48 source-count checks pass in an independent private install; session reset, isolation and restart pass. | Raw databases withheld for unresolved small-cell redistribution review. No complete public install. |
+| WONDER 0.3 | 70 webpage queries; four CG/GO and 48 source-count checks pass in an independent private install; session reset, isolation and restart pass. | Source-specific review completed; national public-use-derived data carry NCHS usage conditions. 16 consistent database copies retain every runtime row; 70 packaged query replays match earlier browser exports. |
 | Wateroffice 0.1.0-dev | 41 information-access checks across five workflows; session reset, isolation and restart pass. Downloaded Release archive passed required-file and SQLite checks. | Development release, replacement basemap and documented coverage/visual limits; no full visual or autonomous-task acceptance. |
 | NOAA 2 | Data archive downloaded and validated. Source and upstream notices prepared. | Proprietary ZingChart absent; no released image or complete install. New packaged-browser replay is not claimed. Rank/tie differences remain. |
 
@@ -40,7 +39,7 @@ registration credentials were removed. No metered hosted build was used.
 
 Four datasets are provided as five Release assets. arXiv is split below
 GitHub's per-asset limit and rebuilt locally into a search index. Downloaded
-archives were safely extracted and checked independently. WONDER data is absent.
+archives were safely extracted and checked independently. The initial v0.1.0 omitted WONDER data; v0.1.1 adds its reviewed archive.
 The source whitelist excludes deployment histories, private credentials, raw
 author research material and the proprietary chart library. A bounded scan of
 2,995 tracked files found no tested credential/personal-path patterns; a recursive
@@ -75,7 +74,7 @@ were preserved throughout.
 
 ## Distribution boundaries
 
-NOAA/WONDER remain incomplete. Public data and image access checks are separate
+NOAA remains incomplete. WONDER is released within its documented national scope. Public data and image access checks are separate
 from the earlier native isolated-install tests. The Docker daemon may reuse
 cached layers, and this is not a second-machine clean install. Public access does
 not change Wateroffice's development maturity or any documented website differences.
@@ -98,7 +97,21 @@ expected sizes. Full streamed comparisons are recorded in
 
 An unauthenticated clone of the published `v0.1.0` tag succeeded. Its six
 distribution-tool tests passed, with Census/arXiv/Wateroffice marked `ready` and
-NOAA/WONDER explicitly blocked. `ready` describes available installation
+NOAA/WONDER explicitly blocked in that historical v0.1.0 tag. The v0.1.1 manifest enables WONDER after the completed source-specific review. `ready` describes available installation
 materials, not complete website parity or a change to Wateroffice's maturity.
 The older staging repository remains private and no temporary Actions runner is
 registered. No original production website was changed during publication.
+
+## WONDER data review and v0.1.1
+
+The [completed review](reviews/WONDER_DATA_REDISTRIBUTION.md) distinguishes NCHS
+national public-use computational data from WONDER output restrictions. This
+release preserves NCHS usage conditions and agency attribution, not an
+unrestricted-data license. All 16 SQLite copies retain every original runtime
+row; 70 query results match previously validated browser exports. The website's
+suppression and conservative parent protection are unchanged. Packaged metadata
+omits author marginal tables/timings and retains all runtime catalog fields.
+
+Existing images and other sites' v0.1.0 data assets are reused. No original
+production service or original dataset was changed. See `wonder-data-release.json`
+and `wonder-packaged-queries.json` under verification.

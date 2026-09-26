@@ -1,7 +1,7 @@
 # SGR-WebEnv：离线网站环境
 
 本仓库整理 NOAA、Census / ACS、WONDER、arXiv、Wateroffice 五个独立环境。
-**v0.1.0 提供 Census、arXiv 和 Wateroffice（开发版）的公开安装材料。NOAA、WONDER 仍是部分发布，不表示五站全部通过。**
+**v0.1.1 提供 Census、arXiv、WONDER 和 Wateroffice（开发版）的公开安装材料。NOAA 仍是部分发布，不表示五站全部通过。**
 
 源码放在仓库，固定数据放在 GitHub Releases，镜像放在关联 GHCR。
 不需要原作者的服务器账号。本站不是任何原网站的官方产品或背书项目。
@@ -9,13 +9,13 @@
 ## 使用方式
 
 正式支持 Linux amd64、Docker Compose v2、Python 3.9+；先准备资源，再断网运行。
-Census、arXiv 和 Wateroffice 的发布清单已标为 `ready`（材料可安装，不代表原站全部功能等价）。以 arXiv 为例：
+Census、arXiv、WONDER 和 Wateroffice 的发布清单已标为 `ready`（材料可安装，不代表原站全部功能等价）。以 arXiv 为例：
 
 ```bash
 git clone https://github.com/Ninggggy/sgr-webenv.git
 cd sgr-webenv
-git checkout v0.1.0
-python3 tools/env.py prepare arxiv --release v0.1.0
+git checkout v0.1.1
+python3 tools/env.py prepare arxiv --release v0.1.1
 python3 tools/env.py start arxiv --mode preview
 # 浏览器打开 http://127.0.0.1:8083
 python3 tools/env.py verify arxiv
@@ -24,10 +24,10 @@ python3 tools/env.py stop arxiv
 ```
 
 `prepare` 下载固定数据和镜像，并为 arXiv 构建本地索引。索引不完整时拒绝启动。
-数据目录默认是 `.state/v0.1.0/arxiv`；每次命令都可用 `--state-dir` 指定其他目录。
+数据目录默认是 `.state/v0.1.1/arxiv`；每次命令都可用 `--state-dir` 指定其他目录。
 `--allow-candidate` 仅供作者验证候选版，不代表许可问题或验收问题已解决。
-当前 NOAA 缺少可再分发的图表组件，WONDER 未提供数据附件，两者不能套用上述
-命令宣称完成安装。资源要求与实测情况见 [状态报告](docs/STATUS.md)。
+当前 NOAA 缺少可再分发的图表组件，不能套用上述命令宣称完成安装。
+WONDER 数据附有 NCHS 使用限制和来源说明，不能当作无限制授权数据。资源要求与实测情况见 [状态报告](docs/STATUS.md)。
 
 站名与预览端口分别为：
 
@@ -35,7 +35,7 @@ python3 tools/env.py stop arxiv
 |---|---:|---:|---|
 | noaa | 8080 | 4 | Rank/并列差异；ZingChart 授权未确认，完整安装暂不可发布 |
 | census | 8081 | 8 | 当前收录地区、年份和表；非全国全量 |
-| wonder | 8082 | 4 | 全国分组与既有保护；数据包再分发仍需审查 |
+| wonder | 8082 | 4 | 全国分组与既有保护；附 NCHS 使用限制的数据包 |
 | arxiv | 8083 | 8 | cs/math/stat 最新元数据和版本时间线 |
 | wateroffice | 8084 | 10 | 0.1.0-dev，不升级为完整复刻通过 |
 

@@ -4,16 +4,17 @@ Use Linux amd64, Docker Engine/Compose and Python 3.9+. Commands run from a
 checkout of the release repository. Only environments marked `ready` in the
 release manifest support normal installation. During private acceptance, the
 author adds `--allow-candidate`; this does not waive the documented limitations.
-NOAA has no distributable chart image and WONDER has no downloadable database.
+NOAA has no distributable chart image. WONDER has a national public-use-derived
+data archive with NCHS usage conditions; see its DATA_USE_NOTICE.md.
 
 ## Prepare once and run
 
 ```sh
-python3 tools/env.py prepare census --release v0.1.0
-python3 tools/env.py start census --release v0.1.0 --mode preview
-python3 tools/env.py verify census --release v0.1.0
-python3 tools/env.py reset census --release v0.1.0
-python3 tools/env.py stop census --release v0.1.0
+python3 tools/env.py prepare census --release v0.1.1
+python3 tools/env.py start census --release v0.1.1 --mode preview
+python3 tools/env.py verify census --release v0.1.1
+python3 tools/env.py reset census --release v0.1.1
+python3 tools/env.py stop census --release v0.1.1
 ```
 
 Preview is loopback-only: NOAA 8080, Census 8081, WONDER 8082, arXiv 8083,
@@ -49,7 +50,7 @@ Author-exported evidence outside the containers is not deleted by reset.
 ```sh
 python3 tools/build.py base
 python3 tools/build.py census
-python3 tools/env.py prepare census --local-images --data-archive /path/to/census-data-v0.1.0.tar.gz
+python3 tools/env.py prepare census --local-images --data-archive /path/to/census-data-v0.1.1.tar.gz
 ```
 
 The default preparation path pulls versioned GHCR images. `--local-images`

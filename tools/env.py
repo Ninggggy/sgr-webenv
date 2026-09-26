@@ -67,7 +67,7 @@ def compose(site,spec,state,mode):
 def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('action',choices=['prepare','start','verify','reset','stop'])
- p.add_argument('site',choices=SITES);p.add_argument('--release',default='v0.1.0')
+ p.add_argument('site',choices=SITES);p.add_argument('--release',default='v0.1.1')
  p.add_argument('--mode',choices=['preview','eval'],default='eval')
  p.add_argument('--state-dir',type=Path,default=ROOT/'.state')
  p.add_argument('--data-archive',type=Path,help='Install a locally staged archive')
