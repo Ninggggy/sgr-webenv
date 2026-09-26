@@ -23,7 +23,7 @@ multiplicities remain computational inputs; website/export protection is unchang
 
 No agency affiliation, endorsement, or trademark license is implied.
 
-## Confirmed NOAA distribution blocker
+## NOAA user-supplied dependency and redistribution
 
 The archived NOAA chart dependency is ZingChart 2.9.16-hf1. Its embedded notice
 requires permission. The [Branded License](https://www.zingchart.com/pricing/branded-license)
@@ -34,7 +34,7 @@ include the library in public source history. The new main branch has been clean
 other release work may continue.
 No purchase or request to the vendor has been made on the user's behalf.
 
-The proprietary ZingChart files have been removed from the distribution tree. NOAA source and data are retained, but its chart-dependent install is incomplete. Acquisition or replacing the library is not silently automated. Original private server deployments remain unchanged.
+ZingChart is excluded from the distribution tree. Users may obtain the required version themselves under an applicable license and build for their own use following the [NOAA setup guide](../environments/noaa/README.md). This manual-dependency route does not grant redistribution permission or authorize publishing images containing the library. Download and placement are explicit user steps; original private server deployments remain unchanged.
 
 ## Wateroffice assets checked during packaging
 

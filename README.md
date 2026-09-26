@@ -19,9 +19,9 @@ The repository covers six websites. Each environment has a documented data and f
 | arXiv | Available · 0.1.0 | 1,685,244 cs/math/stat records with latest metadata and version timelines; excludes historical version content, daily announcements, and full text. | 8083 |
 | Wateroffice | Development · 0.1.0-dev | Archived hydrometric data and query workflows; map, coverage, and visual limitations remain. | 8084 |
 | Cellosaurus | Available · 0.1.0 | Release 56.0 metadata: 168,970 records, core website, and CLASTR; excludes the complete REST/RDF/SPARQL interface. | 8086 |
-| NOAA Climate at a Glance | Source and data | Climate data and application source; component availability and supported workflows are documented in the [release notes](docs/STATUS.md). | 8080* |
+| NOAA Climate at a Glance | Available · manual dependency setup | Climate queries and charts; download ZingChart separately and build locally using the [NOAA setup guide](environments/noaa/README.md). | 8080* |
 
-*8080 is the configured NOAA preview port. See the [deployment status](docs/STATUS.md) for preparation requirements.*
+*NOAA requires a user-supplied chart dependency. Follow its dedicated setup steps before starting the preview.*
 
 See [coverage and known differences](docs/SCOPE.md) for feature boundaries and [verification results](docs/STATUS.md) for the evidence behind each release.
 
@@ -56,6 +56,16 @@ python3 tools/env.py stop cellosaurus --release v0.1.2
 Preview binds only to `127.0.0.1`. For evaluation, omit `--mode preview` or use `--mode eval`: this is the default mode and publishes no host ports. Runtime containers use isolated networks and do not mount task answers or author audit directories.
 
 State is stored in `.state/<release>/<site>`; `--state-dir` changes the base directory. See [operations](docs/OPERATIONS.md) for browser access, upgrades, rollback, and instance management, and the [Cellosaurus guide](environments/cellosaurus/README.md) for its specific features.
+
+## NOAA: prepare the chart dependency first
+
+NOAA is available through a local source build. **Download ZingChart yourself; it is not included in this repository, the data archive, or a public NOAA image.**
+
+1. Obtain **ZingChart 2.9.16-1** through the [official download page](https://www.zingchart.com/download) or its linked npm package, under a license appropriate for your use.
+2. Place the complete package contents in `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`, including `es6.js` and `zingchart-es6.min.js`.
+3. Follow the [dependency checks and local build/start commands](environments/noaa/README.md). The current release manifest requires the documented local-image opt-in; the ordinary prebuilt-image quick start above does not apply to NOAA.
+
+Once prepared, the chart library is served locally during offline operation. Keep its notices and required branding, and do not redistribute the library or images containing it without the applicable permission. The [license notes](docs/THIRD_PARTY.md) distinguish local use from redistribution.
 
 ## Source, data, and images
 

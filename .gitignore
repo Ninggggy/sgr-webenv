@@ -9,3 +9,6 @@
 *.tar
 *.tar.gz
 *.part-*
+
+# User-supplied proprietary NOAA chart dependency; never publish.
+/environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/

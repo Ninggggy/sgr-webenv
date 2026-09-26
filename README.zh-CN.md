@@ -19,9 +19,9 @@ SGR-WebEnv 将网站应用、固定数据和受限浏览器打包为 Docker 环�
 | arXiv | 可安装 · 0.1.0 | 1,685,244 篇 cs/math/stat 论文的最新元数据与版本时间线；不含旧版本内容、每日公告及全文。 | 8083 |
 | Wateroffice | 开发版 · 0.1.0-dev | 已归档水文数据与查询流程；地图、覆盖和外观仍有限制。 | 8084 |
 | Cellosaurus | 可安装 · 0.1.0 | Release 56.0 的 168,970 条元数据、核心网站与 CLASTR；不包含完整 REST/RDF/SPARQL 接口。 | 8086 |
-| NOAA Climate at a Glance | 源码与数据 | 气候数据与应用源码；组件配置及适用工作流详见[发布说明](docs/STATUS.md)。 | 8080* |
+| NOAA Climate at a Glance | Available · 需自行准备依赖 | 气候查询与图表；自行下载 ZingChart 后，按 [NOAA 安装说明](environments/noaa/README.md)在本地构建。 | 8080* |
 
-*8080 为 NOAA 配置中的预览端口，部署准备要求见[发布说明](docs/STATUS.md)。*
+*NOAA 需要用户自行准备图表依赖，请先完成其专用安装步骤再启动预览。*
 
 各站详细功能边界见 [覆盖与差异](docs/SCOPE.md)，发布依据见 [验收记录](docs/STATUS.md)。
 
@@ -56,6 +56,16 @@ python3 tools/env.py stop cellosaurus --release v0.1.2
 预览模式仅绑定 `127.0.0.1`。评测时省略 `--mode preview` 或指定 `--mode eval`：这是默认模式，不向宿主机开放端口。运行容器使用隔离网络，不挂载题目答案或作者审计目录。
 
 状态默认保存在 `.state/<release>/<site>`，可用 `--state-dir` 修改基础目录。浏览器接入、升级、回退和多实例管理见 [操作指南](docs/OPERATIONS.md)；Cellosaurus 的具体功能见 [站点说明](environments/cellosaurus/README.md)。
+
+## NOAA：先自行准备图表依赖
+
+NOAA 采用本地源码构建方式提供。**ZingChart 需要用户自行下载，仓库和数据包不附带该组件，也不提供包含它的公开 NOAA 镜像。**
+
+1. 从 [ZingChart 官方下载页](https://www.zingchart.com/download)或其提供的 npm 渠道获取 **2.9.16-1**，并确保所持许可适用于自己的使用方式。
+2. 将完整包内容放入 `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`，其中应包含 `es6.js` 和 `zingchart-es6.min.js`。
+3. 按 [NOAA 专用说明](environments/noaa/README.md)检查依赖、构建本地镜像并启动。当前发布清单需使用说明中的本地镜像启用参数，不能直接套用上方预构建镜像流程。
+
+准备完成后，图表库从本地加载，运行时不依赖在线 CDN。保留组件版权声明及许可要求的品牌标识；若要再分发组件或包含它的镜像，应另行确认相应权限。具体见[许可说明](docs/THIRD_PARTY.md)。
 
 ## 源码、数据与镜像
 

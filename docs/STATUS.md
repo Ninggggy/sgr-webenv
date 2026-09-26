@@ -1,7 +1,7 @@
 # Release preparation status
 
 Version: **v0.1.2**, updated 2026-09-26. Census, arXiv and WONDER are distributed
-within their declared scope; Cellosaurus is added with core website/CLASTR scope; Wateroffice remains 0.1.0-dev. NOAA remains a partial release, not a complete public installation. All 14 images now pass
+within their declared scope; Cellosaurus is added with core website/CLASTR scope; Wateroffice remains 0.1.0-dev. NOAA uses a user-supplied chart dependency and local source build; no bundled NOAA image is published. All 14 images now pass
 anonymous pulls. Public package pages display the correct new repository link.
 Public data URL checks have passed; see `verification/anonymous-publication.json`
 for the latest result (earlier failure reports are historical, not new acceptance).
@@ -15,7 +15,7 @@ for the latest result (earlier failure reports are historical, not new acceptanc
 | WONDER 0.3 | 70 webpage queries; four CG/GO and 48 source-count checks pass in an independent private install; session reset, isolation and restart pass. | Source-specific review completed; national public-use-derived data carry NCHS usage conditions. 16 consistent database copies retain every runtime row; 70 packaged query replays match earlier browser exports. |
 | Wateroffice 0.1.0-dev | 41 information-access checks across five workflows; session reset, isolation and restart pass. Downloaded Release archive passed required-file and SQLite checks. | Development release, replacement basemap and documented coverage/visual limits; no full visual or autonomous-task acceptance. |
 | Cellosaurus 0.1.0 (web packaging 0.1.0-1) | Full 168,970-record source reconciliation; 40 official queries plus four full partitions; 337 source-to-HTTP checks; 15 RPC and 60 interaction checks; four supplementary author replays (89 raw records); reset/restart, private paths and isolation pass. Three new images anonymously pull and link to this repository. | Not complete REST/RDF/SPARQL or pixel-equivalent; original equal-name ties, large-result truncation and STR display-name differences remain documented. Preview streams large files within 128 MiB after fixing an initial OOM. |
-| NOAA 2 | Data archive downloaded and validated. Source and upstream notices prepared. | Proprietary ZingChart absent; no released image or complete install. New packaged-browser replay is not claimed. Rank/tie differences remain. |
+| NOAA 2 | Data archive downloaded and validated. Source and upstream notices prepared. | User-supplied ZingChart and a local build are required; see the NOAA setup guide. No bundled image or newly verified clean-install/browser replay is claimed. Rank/tie differences remain. |
 
 Reports are in [verification](verification/). These are webpage and data checks,
 not newly measured autonomous model success rates. 34 records are included as
@@ -133,3 +133,7 @@ Cellosaurus detailed acceptance: [report](verification/cellosaurus-acceptance-v0
 ## WONDER protection recheck — 2026-09-26
 
 All 17 recorded parent visibility differences were independently reproduced from the original archive and classified as retained additional ancestor protection. No arithmetic or propagation-scope error was found in the tested cases. Ten independent cause-query cases, eight synthetic tests, 70 browser/export replays and four CG/GO regressions pass. Application 0.3 and data remain unchanged. See the [itemized review](WONDER_PROTECTION_REVIEW.md).
+
+## NOAA manual dependency setup — 2026-09-26
+
+The README now labels NOAA **Available · manual dependency setup**, referring to source/data availability plus the [user-supplied dependency route](../environments/noaa/README.md). The official npm package 2.9.16-1 was successfully retrieved and its module entry checked. The chart library and NOAA images containing it are not redistributed. Historical manifests, existing acceptance findings, and public image availability remain unchanged. This documentation change is not a new clean-install or chart-rendering acceptance result.
