@@ -1,5 +1,0 @@
-{
-  "text_files_scanned": 2302,
-  "findings": [],
-  "scope": "Tracked source text only; personal deployment paths, private-key headers and common GitHub token formats. No guarantee against every secret form."
-}

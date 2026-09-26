@@ -1,8 +1,0 @@
-{
-  "query_count": 70,
-  "all_results_equal_to_previously_validated_browser_exports": true,
-  "differences": [],
-  "scope": "Query-engine replay against consistent release copies in isolated non-root read-only container; original browser and independent-source evidence reported separately.",
-  "application_image": "wonder-web:0.3",
-  "runtime_data_only_mount": true
-}

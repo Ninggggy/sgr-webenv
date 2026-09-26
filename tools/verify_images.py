@@ -47,7 +47,7 @@ for image in images:
  except urllib.error.HTTPError:
   pass
  results.append(row)
-out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')
+out=root/'image-verification.json';out.write_text(json.dumps({'kind':'Registry image check','images':results},indent=2)+'\n')
 print(out.read_text())
 
 if any(not r.get("association_matches") for r in results):
