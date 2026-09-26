@@ -1,0 +1,120 @@
+{
+  "release": "v0.1.2",
+  "environment": "cellosaurus",
+  "publication_passed": true,
+  "report_time_utc": "2026-09-26T03:20:06.734535+00:00",
+  "release_url": "https://github.com/Ninggggy/sgr-webenv/releases/tag/v0.1.2",
+  "installation_instructions": "https://github.com/Ninggggy/sgr-webenv/blob/v0.1.2/environments/cellosaurus/README.md",
+  "anonymous_release_metadata": {
+    "passed": true,
+    "draft": false,
+    "data_asset_bytes": 232136706,
+    "data_asset_url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.2/cellosaurus-data-v0.1.2.tar.gz"
+  },
+  "anonymous_data_download": {
+    "passed": true,
+    "full_download_bytes": 232136706,
+    "all_bytes_equal_to_native_installed_archive": true,
+    "seconds": 27.711637542,
+    "method": "Completed full unauthenticated download after publication; byte-for-byte comparison with the exact archive used by the independent native test installation."
+  },
+  "anonymous_images": {
+    "passed": true,
+    "method": "Empty Docker credential directory; existing daemon layers may be cached. Public package-page redirects verify repository association.",
+    "images": [
+      {
+        "role": "web",
+        "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-web:0.1.0-1",
+        "anonymous_pull": true,
+        "package_page": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-cellosaurus-web",
+        "architecture": "linux/amd64"
+      },
+      {
+        "role": "browser",
+        "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-browser:0.1.0",
+        "anonymous_pull": true,
+        "package_page": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-cellosaurus-browser",
+        "architecture": "linux/amd64"
+      },
+      {
+        "role": "clastr",
+        "image": "ghcr.io/ninggggy/sgr-webenv-release-cellosaurus-clastr:0.1.0",
+        "anonymous_pull": true,
+        "package_page": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-cellosaurus-clastr",
+        "architecture": "linux/amd64"
+      }
+    ]
+  },
+  "acceptance": {
+    "release": "v0.1.2",
+    "environment": "cellosaurus",
+    "application_version": "0.1.0",
+    "web_packaging_revision": "0.1.0-1",
+    "data_version": "56.0",
+    "records": 168970,
+    "data_archive_bytes": 232136706,
+    "data_archive_unpacked_bytes": 553412581,
+    "acceptance_passed": true,
+    "build": {
+      "source_commit": "dddf483",
+      "actions_run": "https://github.com/Ninggggy/sgr-webenv/actions/runs/36213394364",
+      "core_tests": 113,
+      "web_tests": 13,
+      "skipped": 0,
+      "source_build": "Public Maven 3.9.11/Java 17/Tomcat 11.0.11 inputs; no original-host Maven cache",
+      "target": "linux/amd64"
+    },
+    "checks": {
+      "full_source_xml_reconciliation": true,
+      "index_records": 168970,
+      "official_search_queries": 40,
+      "complete_additional_partitions": 4,
+      "partition_union_records": 124256,
+      "source_to_http_checks": 337,
+      "structured_browser_checks": 15,
+      "browser_interaction_checks": 60,
+      "supplementary_records": 4,
+      "supplementary_http_records": 89,
+      "supplementary_answer_rows": [
+        5,
+        9
+      ],
+      "private_path_checks": 6,
+      "lifecycle_checks": 5,
+      "external_tcp_denied": true,
+      "anonymous_image_pulls": 3,
+      "native_images_match_public_image_layers_and_configuration": true
+    },
+    "fixed_during_distribution": {
+      "problem": "Buffering a large preview CSV export caused the 128 MiB preview container to exit with OOMKilled=true.",
+      "fix": "Streaming response chunks; original 128 MiB limit retained. Corrected image 0.1.0-1.",
+      "verification": "All 337 source-to-HTTP checks, including full source downloads, passed via the preview proxy. Container remained running with OOMKilled=false."
+    },
+    "installation_method": "Anonymous public source archives and locally built/public-registry images staged into an independent Linux amd64 test instance. Exact Release archive input reused for the native installation. Host GitHub/daemon registry connectivity was unavailable; no global proxy changed. Docker save/load used no persistent image archive. This is not an independent-machine download/install test.",
+    "data_build": "Database reconstructed locally from the complete archived 56.0 source files; source reconciliation and all query checks passed. This avoids dependence on the original deployment database layout. A consistent backup of the rebuilt database was compared table-for-table during packaging.",
+    "runtime": "Non-root, read-only filesystem/data, dropped capabilities, no-new-privileges, Chromium sandbox and internal browsing/backend networks. No task answers or author material mounted. Preview tested on loopback port 18086; default 8086 production service untouched.",
+    "root_free_bytes_at_verification": 7530274816,
+    "limits": [
+      "Main interface is not pixel-identical. Institutional partner badges replaced with text attribution.",
+      "Full REST API, RDF/SPARQL and external website content are not reproduced.",
+      "Original equal-name ties can differ; original very large HTML results were truncated; four original STR display names were truncated. Candidate/scores/exports preserved; strict original equality is not claimed.",
+      "Original formal 100 records include no Cellosaurus task; four supplementary author replays retain prior documented semantic interpretations.",
+      "No paid model evaluation or autonomous agent success measurement."
+    ],
+    "redistribution_notice": "environments/cellosaurus/licenses/NOTICE.md",
+    "post_publication_report": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.2/cellosaurus-publication-report-v0.1.2.json",
+    "archive_files": 18
+  },
+  "cleanup": {
+    "temporary_test_deployment_stopped": true,
+    "temporary_actions_runner_removed": true,
+    "original_production_service_unchanged_and_healthy": true
+  },
+  "limitations": [
+    "Main interface is not pixel-identical. Institutional partner badges replaced with text attribution.",
+    "Full REST API, RDF/SPARQL and external website content are not reproduced.",
+    "Original equal-name ties can differ; original very large HTML results were truncated; four original STR display names were truncated. Candidate/scores/exports preserved; strict original equality is not claimed.",
+    "Original formal 100 records include no Cellosaurus task; four supplementary author replays retain prior documented semantic interpretations.",
+    "No paid model evaluation or autonomous agent success measurement."
+  ]
+}
