@@ -8,13 +8,14 @@ def build(tag,file,context,args=()):
  if shutil.disk_usage('/').free<5*1024**3:raise RuntimeError('Root free space below 5 GiB; build stopped')
  subprocess.run(['docker','build','--platform','linux/amd64','--label','org.opencontainers.image.source=https://github.com/Ninggggy/sgr-webenv','-t',PREFIX+tag,'-f',str(file),*args,str(context)],check=True)
 def main():
- p=argparse.ArgumentParser();p.add_argument('site',choices=['base','noaa','census','wonder','arxiv','wateroffice','cellosaurus']);p.add_argument('--push',action='store_true');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('site',choices=['base','noaa','census','wonder','arxiv','wateroffice','cellosaurus']);p.add_argument('--push',action='store_true');p.add_argument('--release',default='v0.1.3');a=p.parse_args()
+ if '/' in a.release or '..' in a.release:raise ValueError('Invalid release')
  if a.site=="noaa":raise RuntimeError("NOAA distribution is withheld: ZingChart OEM redistribution permission is not established; see docs/THIRD_PARTY.md")
  tags=[]
  if a.site=='base':
   for name,file in [('runtime:1','runtime.Dockerfile'),('browser-base:1','browser-base.Dockerfile')]:build(name,ROOT/'docker'/file,ROOT/'docker');tags.append(name)
  else:
-  s=json.loads((ROOT/'releases/v0.1.2.json').read_text())['environments'][a.site]
+  s=json.loads((ROOT/'releases'/f'{a.release}.json').read_text())['environments'][a.site]
   for role,image in s['images'].items():
    tag=image[len(PREFIX):];build(tag,ROOT/'environments'/a.site/('Dockerfile.'+role),ROOT/'environments'/a.site);tags.append(tag)
  if a.push:

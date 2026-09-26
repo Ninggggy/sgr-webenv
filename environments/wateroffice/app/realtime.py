@@ -1,5 +1,6 @@
 import csv,datetime,gzip,json,collections
 import realtime_metadata
+import realtime_snapshot as snapshot
 
 def stations(data,q):
  source=json.loads((data/'realtime-stations.json').read_text());rows=source['stations']
@@ -30,12 +31,26 @@ def stations(data,q):
  return rows
 
 def observations(data,number,start=None,end=None):
+ if snapshot.is_official_csv(data,number):
+  w=snapshot.window(data);lo=snapshot.timestamp(start or w['from']);hi=snapshot.timestamp(end or w['to'])
+  if not snapshot.timestamp(w['from'])<=lo<=hi<=snapshot.timestamp(w['to']):raise ValueError('Outside the archived real-time window')
+  metadata=json.loads((data/'realtime'/f'{number}.json').read_text());merged={}
+  if not metadata.get('complete'):raise OSError('This station snapshot is incomplete')
+  if not metadata['parameters']:return []
+  local_lo,local_hi=snapshot.bounds(data,number)
+  for code,field in [('46','LEVEL'),('47','DISCHARGE')]:
+   if code not in metadata['parameters']:continue
+   for r in snapshot.records(data,number,code,str(local_lo.date()),str(local_hi.date())):
+    if not lo<=snapshot.timestamp(r['utc'])<=hi:continue
+    row=merged.setdefault(r['utc'],{'STATION_NUMBER':number,'DATETIME':r['utc'],'DATETIME_LST':snapshot.timestamp(r['utc']).astimezone(snapshot.timezone(data,number)).isoformat(),'LEVEL':'','DISCHARGE':'','LEVEL_SYMBOL_EN':'','DISCHARGE_SYMBOL_EN':''})
+    row[field]=r['value'];row[field+'_SYMBOL_EN']=r['qualifiers'];row[field+'_APPROVAL']=r['approval'];row[field+'_GRADE']=r['grade']
+  return [merged[k] for k in sorted(merged)]
  path=data/'realtime'/f'{number}.csv.gz';meta=data/'realtime'/f'{number}.json'
  if not path.exists() or not meta.exists():raise OSError('This station has not been completely archived')
- window=json.loads((data/'realtime/window.json').read_text())
+ window=snapshot.window(data,number)
  start=start or window['from'];end=end or window['to']
  def dt(s):return datetime.datetime.fromisoformat(s.replace('Z','+00:00'))
- if dt(start)<dt(window['from']) or dt(end)>dt(window['to']):raise ValueError('Outside the archived seven-day real-time window')
+ if dt(start)<dt(window['from']) or dt(end)>dt(window['to']):raise ValueError('Outside the archived real-time window')
  if dt(end)<dt(start):raise ValueError('Invalid date interval')
  with gzip.open(path,'rt') as f:rows=list(csv.DictReader(f))
  return [r for r in rows if dt(start)<=dt(r['DATETIME'])<=dt(end)]
@@ -46,8 +61,16 @@ def axes(number):
 def graph(data,q):
  import calendar
  if any(q.get(k) in ('1','true') for k in q if any(word in k.lower() for word in ('mean','median','upper','lower','maximum','minimum'))):raise ValueError('Historical statistics are not included in the real-time snapshot')
- number=q.get('station','');rows=observations(data,number)
- window=json.loads((data/'realtime/window.json').read_text())
+ number=q.get('station','')
+ if snapshot.is_official_csv(data,number):
+  result={}
+  for key in ('param1','param2'):
+   code=q.get(key)
+   if code in (None,'','0','-1'):continue
+   result[code]=snapshot.graph_series(data,number,code,q.get('start_date'),q.get('end_date'))
+  return result
+ rows=observations(data,number)
+ window=snapshot.window(data,number)
  # Date controls express local standard dates; first and final dates are partial.
  dates=[datetime.datetime.fromisoformat(r['DATETIME_LST']).date() for r in rows]
  lower=min(dates) if dates else datetime.date.fromisoformat(window['from'][:10]);upper=max(dates) if dates else datetime.date.fromisoformat(window['to'][:10])

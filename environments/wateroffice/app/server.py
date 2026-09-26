@@ -4,12 +4,13 @@ from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from urllib.parse import parse_qs,urlsplit,urlencode,unquote
 from hydat import Hydat,month_evidence
+import realtime_snapshot
 import reference, report, realtime, mapview, downloads, stationlists, remarks, realtime_metadata, datums
 from metadata import station_metadata
 ROOT=pathlib.Path(__file__).resolve().parent
 DATA=pathlib.Path(os.environ.get('WATEROFFICE_DATA','/data'))
 DB=Hydat(DATA/'Hydat.sqlite3')
-VERSION='0.1.0-dev'
+VERSION='0.1.0'
 SESSIONS={}
 SESSION_LOCK=threading.RLock()
 def esc(v):return html.escape('' if v is None else str(v),quote=True)
@@ -209,8 +210,10 @@ class Handler(BaseHTTPRequestHandler):
    self.new_cookie=None
    u=urlsplit(self.path);path=unquote(u.path);raw=parse_qs(u.query,keep_blank_values=True);q={k:v[-1] for k,v in raw.items()}
    if u.netloc or '\\' in path or '..' in path.split('/') or '\x00' in path:return self.send('Forbidden',403)
-   if path=='/offline-coverage.html':return self.send(content_page('home','Offline archive — coverage and versions','<p>Development version 0.1.0-dev. Historical source: official HYDAT SQLite release 2026-07-17, 8,057 stations with all archived Flow and Level years. National reference index captured 2026-09-25.</p><p>Real-time: national website list captured 2026-09-25, 2,249 result rows / 2,248 unique stations. Observation window: 2026-09-18 09:40 UTC to 2026-09-25 09:40 UTC. This is a fixed snapshot, not a live feed. 67 stations returned no observations in the official snapshot API. Missing observations are not zero.</p><p>Interface source: Wateroffice release 60 / WET 13.4.0 captured September 2026; earlier task archives use release 58. Metadata changes after the HYDAT release are not rewritten into historical data.</p><p>Map: official station metadata; offline Natural Resources Canada Toporama tiles, national zoom 2–5 plus selected river regions through zoom 10. Basemap and map engine differ from the original Google map. Outside coverage, more detailed tiles are not available.</p><p>Operation-schedule filters use a complete official national search snapshot, retaining original duplicate rows. Parameter-specific combinations returned official server errors during capture and are unavailable. Vertical datum descriptions and the illustrated datum FAQ are archived independently for the full 8,082-station HYDAT/real-time union, captured 14:07–14:25 UTC on September 25. Conversion factors, uncertainty and remarks reproduce published text; they are not derived from HYDAT. Historical comparison statistics and station remarks are implemented; statistical curves have been compared against 13 original samples. Real-time parameter, regulation, operation and agency filters use published national memberships, checked in eight combined searches. Real-time station details use a separate official metadata snapshot collected 13:16–13:26 UTC. Area comparisons and coordinate bounds were checked against 17 original queries, including exact boundary cases. Precise coordinates come from the official real-time map, with the official historical map supplying stations absent from the real-time map. Daily-mean products 3/6 are archived independently for September 18–25: 29,978 observations across published parameters; 42 stations have no published daily parameter. September 25 is partial, collected between 12:53 and 13:08 UTC, independently of the 09:40 UTC unit-value cutoff. Watch List month/week/day trend symbols and displayed values are separately archived official summaries for all 2,248 stations, captured 13:35–13:41 UTC; they do not imply that month-long raw observations are included. Not yet validated: unit-value approval metadata, some list/graph interactions and visual parity. Map downloads use original columns and include the complete filtered station set; empty filters produce a header-only file instead of the original script’s fallback to all stations. Unsupported selections produce explicit feedback. Sediment products and external Government of Canada pages are outside this release scope.</p><p>Empty query results, no published observations, and resources not included in the offline archive are separate conditions.</p>'))
-   if path=='/health':return self.send(json.dumps({'version':VERSION,'historical_database':DB.path.is_file(),'release_ready':False}),kind='application/json')
+   if path=='/offline-coverage.html' and realtime_snapshot.is_official_csv(DATA):
+    return self.send(content_page('home','Offline archive — coverage and versions','<p>'+esc(realtime_snapshot.description(DATA))+'</p><p>Official Wateroffice CSV values, Approval, Grade and Qualifiers are retained at published CSV precision. Blank fields remain blank. Graph series distinguish published Provisional and Final status; internal upstream approval codes are not inferred from CSV labels.</p><p>HYDAT 2026-07-17 and the archived national station catalog, reference pages, datum descriptions and Watch List summaries retain their separate source dates. Leaflet/Toporama basemap coverage and controls differ from the original Google Maps; satellite and terrain modes are outside this release. Watch summaries are independently archived; their graph links use the available observation interval.</p><p>See the release verification report for tested workflows. No data, unavailable parameters and incomplete acquisition are distinct conditions.</p>'))
+   if path=='/offline-coverage.html':return self.send(content_page('home','Offline archive — coverage and versions','<p>Legacy seven-day dataset. Historical source: official HYDAT SQLite release 2026-07-17, 8,057 stations with all archived Flow and Level years. National reference index captured 2026-09-25.</p><p>Real-time: national website list captured 2026-09-25, 2,249 result rows / 2,248 unique stations. Observation window: 2026-09-18 09:40 UTC to 2026-09-25 09:40 UTC. This is a fixed snapshot, not a live feed. 67 stations returned no observations in the official snapshot API. Missing observations are not zero.</p><p>Interface source: Wateroffice release 60 / WET 13.4.0 captured September 2026; earlier task archives use release 58. Metadata changes after the HYDAT release are not rewritten into historical data.</p><p>Map: official station metadata; offline Natural Resources Canada Toporama tiles, national zoom 2–5 plus selected river regions through zoom 10. Basemap and map engine differ from the original Google map. Outside coverage, more detailed tiles are not available.</p><p>Operation-schedule filters use a complete official national search snapshot, retaining original duplicate rows. Parameter-specific combinations returned official server errors during capture and are unavailable. Vertical datum descriptions and the illustrated datum FAQ are archived independently for the full 8,082-station HYDAT/real-time union, captured 14:07–14:25 UTC on September 25. Conversion factors, uncertainty and remarks reproduce published text; they are not derived from HYDAT. Historical comparison statistics and station remarks are implemented; statistical curves have been compared against 13 original samples. Real-time parameter, regulation, operation and agency filters use published national memberships, checked in eight combined searches. Real-time station details use a separate official metadata snapshot collected 13:16–13:26 UTC. Area comparisons and coordinate bounds were checked against 17 original queries, including exact boundary cases. Precise coordinates come from the official real-time map, with the official historical map supplying stations absent from the real-time map. Daily-mean products 3/6 are archived independently for September 18–25: 29,978 observations across published parameters; 42 stations have no published daily parameter. September 25 is partial, collected between 12:53 and 13:08 UTC, independently of the 09:40 UTC unit-value cutoff. Watch List month/week/day trend symbols and displayed values are separately archived official summaries for all 2,248 stations, captured 13:35–13:41 UTC; they do not imply that month-long raw observations are included. This legacy data source does not provide unit-value Approval or Grade. Map downloads use original columns and include the complete filtered station set; empty filters produce a header-only file instead of the original script’s fallback to all stations. Unsupported selections produce explicit feedback. Sediment products and external Government of Canada pages are outside this release scope.</p><p>Empty query results, no published observations, and resources not included in the offline archive are separate conditions.</p>'))
+   if path=='/health':return self.send(json.dumps({'version':VERSION,'historical_database':DB.path.is_file(),'release_ready':bool(realtime_snapshot.window(DATA).get('complete'))}),kind='application/json')
    if path.startswith(('/vendor/','/custom/','/js/','/images/','/data/pco-fetch/')):
     p=(ROOT/'static'/path.lstrip('/')).resolve()
     if not p.is_relative_to((ROOT/'static').resolve()) or not p.is_file():return self.send('Asset not archived',404)
@@ -352,6 +355,9 @@ class Handler(BaseHTTPRequestHandler):
     state['results_type']='real_time'
     if q.get('stations'):state['selected']=q['stations'].split(',')
     if number not in state['selected']:state['selected']=[number]
+    default_start,default_end=realtime_snapshot.dates(DATA,number)
+    start_date=q.get('startDate',str(default_start));end_date=q.get('endDate',str(default_end))
+    realtime_snapshot.dates(DATA,number,start_date,end_date)
     table_mode=q.get('mode')=='Table'
     page=template('real-table' if table_mode else 'real-report-accepted').replace('01AF002',esc(number)).replace('SAINT JOHN RIVER AT GRAND FALLS',esc(meta['name']))
     parameters=list(dict.fromkeys(q.get(k,default) for k,default in [('prm1','46'),('prm2','47')]))
@@ -364,11 +370,15 @@ class Handler(BaseHTTPRequestHandler):
      if key=='prm2':options.insert(0,('-1','(Second Parameter)'))
      page=report.select(page,ident,options,q.get(key,default))
     if table_mode:
-     graph=realtime.graph(DATA,{'station':number,'start_date':q.get('startDate','2026-09-18'),'end_date':q.get('endDate','2026-09-25'),'param1':q.get('prm1','46'),'param2':q.get('prm2','47')})
-     rows=[];series={p:{r[0]:r for k in ('final','provisional') for r in graph[p][k]} for p in parameters}
+     if realtime_snapshot.is_official_csv(DATA,number):
+      series={p:{r[0]:r for r in realtime_snapshot.table_series(DATA,number,p,start_date,end_date)} for p in parameters}
+     else:
+      graph=realtime.graph(DATA,{'station':number,'start_date':start_date,'end_date':end_date,'param1':q.get('prm1','46'),'param2':q.get('prm2','47')})
+      series={p:{r[0]:r for k in ('final','provisional') for r in graph[p][k]} for p in parameters}
+     rows=[]
      for timestamp in sorted({t for values in series.values() for t in values}):
       if all(values.get(timestamp,[None,None])[1] is None for values in series.values()):continue
-      cells=[esc(timestamp)]
+      cells=[esc(timestamp).replace(' ','&nbsp;')]
       for code in parameters:
        a=series[code].get(timestamp)
        value='' if a is None or a[1] is None else downloads.value_text(a[1],'Level' if code in ('3','46') else 'Flow')
@@ -376,20 +386,32 @@ class Handler(BaseHTTPRequestHandler):
         integer,dot,fraction=value.partition('.')
         value=format(int(integer),',')+(dot+fraction if dot else '')
        cells.append(esc(value))
-       if code in ('46','47'):cells.extend(['—' if a else '','',esc(a[6]) if a else ''])
+       if code in ('46','47'):cells.extend([esc(realtime_snapshot.approval_label(a[2])) if a else '',esc(a[4]) if a else '',esc(a[6]) if a else ''])
       rows.append('<tr>'+''.join('<td>'+v+'</td>' for v in cells)+'</tr>')
      page=replace_body(page,''.join(rows))
+     # Numeric sorting applies only to the selected value columns. Status
+     # columns are text, and a single daily parameter has only two columns.
+     numeric_columns=[]; column=1
+     for code in parameters:
+      numeric_columns.append(column); column+=4 if code in ('46','47') else 1
+     page=page.replace('"targets": [1, 2]', '"targets": '+json.dumps(numeric_columns),1)
      heading='<tr><th scope="col">Date (AST)</th>'
      for code in parameters:
       heading+='<th scope="col">'+realtime.label(code)+(' (m)' if code in ('3','46') else ' (m³/s)')+'</th>'
       if code in ('46','47'):heading+='<th scope="col">Approval</th><th scope="col">Grade</th><th scope="col">Qualifiers</th>'
      page=re.sub(r'<thead>.*?</thead>',lambda _:'<thead>'+heading+'</tr></thead>',page,count=1,flags=re.S)
-     if any(p in ('46','47') for p in parameters):page=page.replace('</caption>',' Approval flags are not supplied by the archived GeoMet source.</caption>',1)
+     if not realtime_snapshot.is_official_csv(DATA,number) and any(p in ('46','47') for p in parameters):page=page.replace('</caption>',' Approval flags are not supplied by the archived GeoMet source.</caption>',1)
+     if not rows:
+      page=re.sub(r'<table\b[^>]*class="[^"]*wb-tables[^"]*".*?</table>','<p>No data available for the selected time period.</p>',page,count=1,flags=re.S)
 
     page=page.replace('[NB]','['+esc(meta['province'])+']')
+    coverage=realtime_snapshot.window(DATA,number)
+    note=('30-day official CSV snapshot; quality fields retained.' if realtime_snapshot.is_official_csv(DATA,number) else '7-day GeoMet snapshot; unit-value Approval and Grade unavailable.')
+    if 'covered_stations' in realtime_snapshot.window(DATA):page=page.replace('</h1>','</h1><p class="small">'+note+' <a href="/offline-coverage.html">Data coverage</a></p>',1)
     mapmeta=next((r for r in json.loads((DATA/'map-stations-real_time.json').read_text()) if r['station_id']==number),{})
     timezone=mapmeta.get('timezone_abbr_en','Local standard time')
-    page=page.replace('Atlantic Standard Time (AST)',esc(timezone)).replace('>AST<','>'+esc(timezone)+'<').replace('Date (AST)','Date ('+esc(timezone)+')')
+    timezone_name=realtime_snapshot.TIMEZONE_NAMES.get(timezone,'Local standard time')
+    page=page.replace('Atlantic Standard Time (AST)',esc(timezone_name+' ('+timezone+')')).replace('>AST<','>'+esc(timezone)+'<').replace('Date (AST)','Date (<abbr title="'+esc(timezone_name)+'">'+esc(timezone)+'</abbr>)')
     if (DATA/'realtime-metadata/manifest.json').exists():
      source=realtime_metadata.catalog(DATA)[number];values={k:realtime_metadata.render_field(v) for k,v in source['fields'].items()};history=[]
      if source.get('history_html'):
@@ -407,9 +429,11 @@ class Handler(BaseHTTPRequestHandler):
     page=re.sub(r'<table\b.*?</table>',history_table,page,flags=re.S)
     # Field-visit measurements/rating shifts in the source template are station-specific.
     page=re.sub(r'<p>The most recent .*?(?=<section>)','<p>Observations shown are the dated offline snapshot. Field-visit measurements and rating-shift commentary are not part of this archive.</p>',page,flags=re.S)
-    for id,value in [('start-date',q.get('startDate','2026-09-18')),('end-date',q.get('endDate','2026-09-25'))]:
+    for id,value in [('start-date',q.get('startDate',str(default_start))),('end-date',q.get('endDate',str(default_end)))]:
      datetime.date.fromisoformat(value)
      page=re.sub(r'(<input[^>]*id="'+id+r'"[^>]*value=")[^"]*',lambda m:m[1]+esc(value),page)
+     lo,hi=realtime_snapshot.bounds(DATA,number)
+     page=re.sub(r'<input\b[^>]*id="'+id+r'"[^>]*>',lambda m:re.sub(r'\s(?:min|max)="[^"]*"','',m[0])[:-1]+' min="'+str(lo.date())+'" max="'+str(hi.date())+'">',page)
     for key,ident in [('y1Max','y1-max'),('y1Min','y1-min'),('y2Max','y2-max'),('y2Min','y2-min')]:
      if q.get(key):
       import math
@@ -420,7 +444,6 @@ class Handler(BaseHTTPRequestHandler):
 
     page=page.replace('/download/index_e.html?results_type=real_time','/download/index_e.html?'+esc(urlencode({'results_type':'real_time','stations':','.join(state['selected']),**{k:q[k] for k in ('startDate','endDate') if q.get(k)}})))
     page=report_selection(page,state['selected'],number,q,'real_time')
-    page=page.replace('</h1>','</h1><p class="small">Offline snapshot: 2026-09-18 09:40 UTC through 2026-09-25 09:40 UTC. First and final calendar dates may be partial. Daily means are separately archived official values for September 18–25; September 25 reflects the later per-station acquisition time, not the unit-value cutoff.</p>',1)
     return self.send(page)
    if path=='/services/historical_graph/json/inline':return self.send(json.dumps(report.graph(DB,q)),kind='application/json')
    if path=='/report/historical_e.html':

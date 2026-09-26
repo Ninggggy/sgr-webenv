@@ -303,8 +303,7 @@ loadingOverlay = {
 
 $(document).on('ready', function(e){
   var timeRange = $('#days').find(":selected").text();
-  var start_date = moment.utc('2026-09-25').subtract(timeRange, 'days').format('YYYY-MM-DD');
-  var end_date = moment.utc('2026-09-25').format('YYYY-MM-DD');
+  var start_date, end_date;
   var stationObject = {};
 
   loadingOverlay.add();
@@ -332,6 +331,8 @@ $(document).on('ready', function(e){
 
   $('section.graph').each(function(k, v){
     var $this = $(this);
+    start_date = $this.attr('data-start-date');
+    end_date = $this.attr('data-end-date');
 
     if($this.find('span.text-danger').length === 0){
       stationID = $this.find('[data-stationid]').attr('data-stationid');

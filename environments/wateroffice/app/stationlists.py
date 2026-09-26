@@ -1,6 +1,7 @@
 import html,json,re,functools
 from urllib.parse import urlencode
 import realtime
+import realtime_snapshot
 from report import select
 from downloads import value_text
 
@@ -31,21 +32,25 @@ def home(data,state,q,load):
  if lists:
   current=q.get('id',next(iter(lists)));item=lists.get(current)
   if not item:raise ValueError('Unknown quick graph list')
-  if q.get('days','7')!='7':raise ValueError('Only the archived seven-day snapshot is available')
+  days=int(q.get('days','7'))
+  if days not in (7,14,21,28):raise ValueError('Invalid quick-graph interval')
+  if not realtime_snapshot.is_official_csv(data) and days!=7:raise ValueError('Selected interval exceeds the archived snapshot')
   source=load('my-list-with-quick')
   form=re.search(r'<form role="form" action="/my_station_list/index_e.html".*?</form>',source,re.S)[0]
+  form=select(form,'days',[(str(n),str(n)) for n in (7,14,21,28)],str(days))
   form=select(form,'list-id',[(k,v['name']) for k,v in lists.items()],current)
   controls='<a class="btn btn-primary mrgn-bttm-md hidden-print" href="/my_station_list/quick_graph_list/configure_e.html">Edit Quick Graph List</a>'+form
   for n,params in item['stations'].items():
+   start_date,end_date=realtime_snapshot.dates(data,n,days=days)
    combined='46' in params and '47' in params
    groups=([['46','47']] if combined else [])+[[code] for code in params if not (combined and code in ('46','47'))]
    for group in groups:
-    controls+='<section class="mrgn-tp-lg graph"><h3 class="h5 mrgn-bttm-sm mrgn-tp-0">'+esc(meta[n]['name'])+' (<span data-stationid="'+esc(n)+'">'+esc(n)+'</span>)<br>'
+    controls+='<section data-start-date="'+str(start_date)+'" data-end-date="'+str(end_date)+'" class="mrgn-tp-lg graph"><h3 class="h5 mrgn-bttm-sm mrgn-tp-0">'+esc(meta[n]['name'])+' (<span data-stationid="'+esc(n)+'">'+esc(n)+'</span>)<br>'
     for i,code in enumerate(group):
      unit,title=('m','metre') if code in ('3','46') else ('m³/s','cubic metre per second')
      attrs=('class="axis y y1" data-parameterid="'+code+'"' if i==0 else 'class="combine axis y y2" data-combined="true" data-parameterid2="'+code+'"') if len(group)==2 else 'data-parameterid="'+code+'"'
      controls+='<span '+attrs+'><small>'+realtime.label(code)+' (<abbr title="'+title+'">'+unit+'</abbr>)</small></span>'
-    controls+='</h3><a href="/report/real_time_e.html?'+esc(urlencode({'stn':n,'prm1':group[0],'prm2':group[1] if len(group)==2 else '-1','startDate':'2026-09-18','endDate':'2026-09-25'}))+'"><div class="quick-graph"></div></a></section>'
+    controls+='</h3><p class="small">Available interval: '+str(start_date)+' through '+str(end_date)+'.</p><a href="/report/real_time_e.html?'+esc(urlencode({'stn':n,'prm1':group[0],'prm2':group[1] if len(group)==2 else '-1','startDate':str(start_date),'endDate':str(end_date)}))+'"><div class="quick-graph"></div></a></section>'
   scripts=''.join('<script src="/vendor/js/flot/'+name+'.js"></script>' for name in ['jquery.flot','jquery.flot.resize','jquery.flot.time'])+'<script src="/js/quick_graph.js"></script>'
   page=page.replace('</body>',scripts+'</body>')
   page=page.replace('<p>No quick graph list is available</p>',controls).replace('<a class="btn btn-primary" href="/my_station_list/quick_graph_list/new_e.html">Create New Quick Graph List</a>','')
@@ -54,19 +59,22 @@ def home(data,state,q,load):
   if not 0<=current<pages:raise ValueError('Invalid watch-list page')
   cards='<a class="btn btn-primary mrgn-bttm-md hidden-print" href="/my_station_list/watch_list_custom_e.html">Edit Watch List</a>'
   snapshot=watch_snapshot(data) if (data/'watch-snapshot/manifest.json').exists() else None
-  if snapshot:cards+='<p class="small">Published Watch List summaries captured '+esc(snapshot['manifest']['first_acquired'])+' through '+esc(snapshot['manifest']['last_acquired'])+'. These summary timestamps are separate from the unit-value archive; the month-long observation graph is outside the seven-day archive.</p>'
+  if snapshot:cards+='<p class="small">Published Watch List summaries captured '+esc(snapshot['manifest']['first_acquired'])+' through '+esc(snapshot['manifest']['last_acquired'])+'. These summaries have separate acquisition times; graph links use the available archived observation interval.</p>'
   window=json.loads((data/'realtime/window.json').read_text());end=window['to'][:10]
   import datetime
   for n in ids[current*5:(current+1)*5]:
    summary=snapshot['stations'][n] if snapshot else None
    cards+='<div class="watch-list panel panel-default"><div class="panel-heading"><h3 class="panel-title">'+esc(meta[n]['name'])+' ('+esc(n)+')</h3></div><div class="panel-body"><div class="row">'
-   for i,(label,days) in enumerate([('Last Month',31),('Last Week',7),('Last Day',1)]):
+   for i,(label,days) in enumerate([('Last Month',30),('Last Week',7),('Last Day',1)]):
     start=str(datetime.date.fromisoformat(end)-datetime.timedelta(days=days));link='/report/real_time_e.html?'+urlencode({'stn':n,'startDate':start,'endDate':end,'prm1':'46','prm2':'-1'})
     if summary:
      trend=summary['trends'][i];link=trend['href'];display=('<img class="img-responsive center-block" src="'+esc(trend['image'])+'" alt="'+esc(trend['text'])+'" title="'+esc(trend['text'])+'">') if trend['image'] else '<p class="mrgn-bttm-0">'+esc(trend['text'])+'</p>'
     else:display='<span class="small">'+('Outside archive' if days>7 else 'Trend unavailable')+'</span>'
     inner=label+':<br>'+display
-    if link:inner='<a href="'+esc(link)+'">'+inner+'</a>'
+    if link:
+     available_start,available_end=realtime_snapshot.dates(data,n,days=days)
+     link='/report/real_time_e.html?'+urlencode({'stn':n,'startDate':str(available_start),'endDate':str(available_end),'prm1':'46','prm2':'-1'})
+     inner='<a href="'+esc(link)+'">'+inner+'</a>'
     cards+='<div class="col-md-3 col-sm-6 col-xs-12 padding-rght-0 mrgn-bttm-sm"><div class="text-center">'+inner+'</div></div>'
    if summary:value=summary['value']
    else:

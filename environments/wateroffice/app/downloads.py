@@ -51,6 +51,19 @@ def daily_csv(db,numbers,form,missing=True):
  return out.getvalue().encode('utf-8')
 
 def realtime_zip(data,numbers,code,fmt,start=None,end=None):
+ import realtime_snapshot
+ kinds=[realtime_snapshot.is_official_csv(data,n) for n in numbers]
+ if kinds and all(kinds):return realtime_snapshot.export_zip(data,numbers,code,fmt,start,end)
+ if any(kinds):
+  import zipfile
+  combined=io.BytesIO()
+  with zipfile.ZipFile(combined,'w',zipfile.ZIP_DEFLATED) as target:
+   for number in numbers:
+    content=realtime_zip(data,[number],code,fmt,start,end)
+    with zipfile.ZipFile(io.BytesIO(content)) as source:
+     for name in source.namelist():
+      target.writestr(number+'-'+name if name=='OFFLINE_SNAPSHOT.txt' else name,source.read(name))
+  return combined.getvalue()
  import json,zipfile,xml.etree.ElementTree as ET
  from realtime import observations
  if code in ('3','6'):return realtime_daily_zip(data,numbers,code,fmt,start,end)
