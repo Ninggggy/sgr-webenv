@@ -59,33 +59,19 @@ Use the two `docker build` commands above for NOAA.
 ## 3. Prepare data and run
 
 ```bash
-python3 tools/env.py prepare noaa --release v0.1.2 \
+python3 tools/env.py prepare noaa --release v0.1.3 \
   --local-images
-python3 tools/env.py start noaa --release v0.1.2 \
+python3 tools/env.py start noaa --release v0.1.3 \
   --mode preview
 # Open http://127.0.0.1:8080/
 
-python3 tools/env.py verify noaa --release v0.1.2
-python3 tools/env.py reset noaa --release v0.1.2
-python3 tools/env.py stop noaa --release v0.1.2
+python3 tools/env.py verify noaa --release v0.1.3
+python3 tools/env.py reset noaa --release v0.1.3
+python3 tools/env.py stop noaa --release v0.1.3
 ```
 
 `--local-images` selects the locally built images. `start`, `verify`, `reset`, and `stop` use the prepared environment.
 
 For evaluation, replace `--mode preview` with `--mode eval`; no host port is published. Chart files are served by the local application, without a runtime CDN dependency. Data remain mounted read-only. Keep at least 5 GiB free while preparing and building.
 
-## Using the environment
-
-`verify` checks HTTP health. Open a time-series page after installation to check the locally supplied chart dependency. For calculations and exact-ranking queries, consult [numeric rules](PRECISION.md) and [data scope](../../docs/SCOPE.md).
-
-## 中文说明
-
-NOAA 采用“自行准备依赖 + 本地构建”的方式安装：
-
-1. 自行从 ZingChart 官方渠道下载 **2.9.16-1**，确认自己的使用方式符合相应许可。
-2. 按上方目录放置完整包，运行文件与版本检查。
-3. 使用上方两条 `docker build` 命令构建本地镜像。
-4. `prepare` 使用 `--local-images` 准备环境，再运行 `start`；数据包由公开 Release 下载。
-5. 打开 `http://127.0.0.1:8080/`，检查查询与时间序列图表。评测模式使用 `--mode eval`。
-
-`--local-images` 使用本地构建的镜像。图表库由用户准备，运行时从本地加载。组件使用与再分发遵循其许可条款。
+See [operation and resource requirements](../../docs/OPERATIONS.md) and [data definitions](SOURCES.md).

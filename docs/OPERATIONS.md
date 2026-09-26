@@ -1,63 +1,33 @@
-# Installation, operation and rollback
+# Operation and resource requirements
 
-Use Linux amd64, Docker Engine with Compose v2 and Python 3.9+. Run commands from the repository root. Census, WONDER, arXiv, Wateroffice and Cellosaurus use the prebuilt-image workflow below. NOAA uses the [manual chart dependency and local build workflow](../environments/noaa/README.md).
+Use Linux amd64, Docker Engine with Compose v2 and Python 3.9+. Run commands from the repository root and specify `--release v0.1.3`.
 
-## Prepare once and run
+## Preview and evaluation
 
-```sh
-python3 tools/env.py prepare census --release v0.1.2
-python3 tools/env.py start census --release v0.1.2 --mode preview
-python3 tools/env.py verify census --release v0.1.2
-python3 tools/env.py reset census --release v0.1.2
-python3 tools/env.py stop census --release v0.1.2
-```
+`start --mode preview` binds the environment's port to `127.0.0.1`. For a remote host, forward that port through SSH. `start --mode eval` runs the isolated evaluation environment. Use the browser service's bridge protocol to interact with it.
 
-Preview is loopback-only: NOAA 8080, Census 8081, WONDER 8082, arXiv 8083,
-Wateroffice 8084, Cellosaurus 8086.
-For a remote host, keep the loopback binding and forward the selected port through SSH.
-Omitting `--mode preview` starts the isolated evaluation mode with no host ports.
-Use the same `--state-dir /your/writable/path` on every command to relocate data.
+`verify` checks service health. `reset` recreates transient containers and clears sessions and downloads, preserving datasets and the arXiv index. `stop` removes the instance's containers and network while retaining data.
 
-`prepare` downloads archives, verifies expected sizes, safely extracts them,
-checks SQLite integrity and builds the arXiv search index. Allow space for the
-compressed parts, assembled archive, uncompressed data, images and index.
-For arXiv, plan a host with at least 24 GiB available for the search service plus
-space for the web/browser and operating system. The search container is configured with a 24 GiB memory limit and a 2 GiB Java heap. The index uses persistent disk storage. Keep at least 5 GiB free on the root filesystem during preparation and building.
-`start` reuses prepared data; for arXiv it refuses an index with an incomplete
-record count. Use `start` to restart an existing index. Diagnose an interrupted build in a separate working directory while preserving the installed index.
+State is stored under `.state/<release>/<site>`. Use the same `--state-dir /your/writable/path` on every command to change this location. Use `--port 18084`, for example, to assign a separate preview port.
 
-`reset` recreates web/browser/preview containers and clears their transient
-browser sessions and download registry. It preserves data and the arXiv index.
-`stop` removes the instance's containers/networks, not data or named volumes.
-Author-exported evidence outside the containers is not deleted by reset.
-`verify` checks HTTP availability. Use the scripts under
-`tests/workflows/` for behavioral checks.
+## Resources
 
-## Source build or prebuilt images
+Reserve space for compressed downloads, extracted data, images and indexes. Keep at least 5 GiB free during preparation.
+
+arXiv uses a search container with a 24 GiB memory limit and a 2 GiB Java heap, plus its web/browser services. Preparation builds a persistent search index. Use `start` to reuse it.
+
+Cellosaurus container memory limits total approximately 5.2 GiB. Its extracted data occupy approximately 528 MiB. Wateroffice needs roughly 2 GiB for extracted data. Allow additional storage for image layers and build caches.
+
+## Local builds and data
 
 ```sh
 python3 tools/build.py base
 python3 tools/build.py census
-python3 tools/env.py prepare census --release v0.1.2 --local-images --data-archive /path/to/census-data-v0.1.0.tar.gz
+python3 tools/env.py prepare census --release v0.1.3 --local-images --data-archive /path/to/census-data-v0.1.0.tar.gz
 ```
 
-The default preparation path pulls versioned GHCR images. `--local-images`
-checks already built images instead. Runtime has no need for source collectors,
-benchmark files, personal credentials or network access to upstream websites.
-Keep those files outside container mounts.
+For NOAA, use the [dedicated local-build instructions](../environments/noaa/README.md). [Data preparation](REBUILDING.md) describes source inputs.
 
-## Upgrade and rollback
+## Switching versions
 
-Distribution versions use separate manifests and state directories. For an upgrade, retain the previous Git tag, manifest, image
-versions and prepared state directory. Stop the old instance before using the
-same preview port. Prepare the new version in its own versioned state directory;
-preserve the old database and its read-only mount. Test the new
-version before switching evaluation jobs to it.
-
-Rollback means stopping the new version, checking out the old source tag and
-starting the old release with its original state directory. Compose project and
-arXiv volume names include the release version. Use the provided `reset` and `stop` commands for lifecycle management, keeping data volumes available for rollback.
-
-For Cellosaurus, explicitly pass `--release v0.1.2` to its commands. Its Java backend is on a separate internal network. `--port 18086` can be added to preview startup for a parallel test instance without taking over an existing listener. See [Cellosaurus operations and tests](../environments/cellosaurus/README.md).
-
-Wateroffice `0.1.0` uses `--release v0.1.3`. See its [install, data scope and rollback guide](../environments/wateroffice/README.md). Use `v0.1.2` to install the earlier dataset and application.
+Keep each release in its own state directory. Stop the running instance before reusing its port, then start the selected release with its corresponding `--release` value. Retain the earlier data and images for rollback. Use the supplied `reset` and `stop` commands for lifecycle management.
