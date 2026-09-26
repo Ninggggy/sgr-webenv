@@ -35,5 +35,4 @@ NVSS public-use versus restricted data policy:
 https://www.cdc.gov/nchs/nvss/dvs_data_release.htm
 
 This frozen research snapshot does not update automatically. Refer to official
-CDC sources for current data and guidance. No individual CDC authorization or
-legal guarantee is represented by this project review.
+CDC sources for current data and guidance.

@@ -99,7 +99,8 @@ def main():
  if args.action in ('stop','reset','verify'):
   if not config.exists():raise ValueError('No installed instance')
  else:
-  if spec['distribution_status']!='ready' and not args.allow_candidate:raise ValueError('This environment is not released: see docs/STATUS.md. Author testing requires --allow-candidate.')
+  if spec['distribution_status'] not in ('ready','ready-local-build') and not args.allow_candidate:raise ValueError('This environment is not released: see docs/STATUS.md. Author testing requires --allow-candidate.')
+  if spec['distribution_status']=='ready-local-build' and args.action=='prepare' and not args.local_images:raise ValueError('Prepare the chart dependency and build local images, then use --local-images. See environments/noaa/README.md.')
   config.write_text(json.dumps(compose(args.site,spec,state,args.mode),indent=2)+'\n')
  if args.action=='prepare':
   if platform.system()!='Linux' or platform.machine() not in ('x86_64','AMD64'):raise ValueError('Installation is currently supported on Linux amd64 only')

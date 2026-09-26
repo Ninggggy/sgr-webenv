@@ -25,7 +25,7 @@ Allow approximately 5.2 GiB of runtime memory limits (web 1.5 GiB, CLASTR 1.5 Gi
 * Complete Cellosaurus Release 56.0 (2026-06-25), 168,970 entries; 30,159 parsed references. The original XML header reference count differs and is preserved.
 * Twelve original download files plus separate full Release 53/54 name-conflict files; main records are not mixed with historical releases.
 * Search, records, original TXT, parent/child/same-individual links, groups/panels, references, downloads, and CLASTR human/mouse/dog authentication search, uploads and exports.
-* Not the complete REST API, RDF/SPARQL, external database content, videos or social features. Not a pixel-identical copy. Institutional partner badges are replaced by text attribution in this distribution.
+* Not the complete REST API, RDF/SPARQL, external database content, videos or social features. Institutional partner badges are replaced by text attribution in this distribution.
 * Original equal-name tie order is unstable: local accession tie-breaking is deterministic. The original large HTML query truncated to 100,000 records; this environment returns the complete 124,256-record result. Four STR comparison cases differ only in original truncated display names; local names preserve source XML. No change to candidates or scores.
 * Task files and expected answers belong in author-side test directories and are not mounted by runtime containers.
 

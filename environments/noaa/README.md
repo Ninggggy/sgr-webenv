@@ -70,7 +70,7 @@ python3 tools/env.py reset noaa --release v0.1.2
 python3 tools/env.py stop noaa --release v0.1.2
 ```
 
-Here `--local-images` uses the images you built instead of requesting unpublished NOAA images. The existing `--allow-candidate` flag opts into this local build because the historical release manifest does not declare a prebuilt NOAA distribution. It does not change runtime isolation, waive a license requirement, or expand the dataset scope. Both `prepare` and `start` require it; `verify`, `reset`, and `stop` use the installed configuration.
+`--local-images` selects the locally built images. The commands retain `--allow-candidate` for compatibility with the original release-tag installer; the main-branch installer recognizes NOAA as a local-build distribution. `verify`, `reset`, and `stop` use the installed configuration.
 
 For evaluation, replace `--mode preview` with `--mode eval`; no host port is published. Chart files are served by the local application, without a runtime CDN dependency. Data remain mounted read-only. Keep at least 5 GiB free while preparing and building.
 
@@ -88,4 +88,4 @@ NOAA 采用“自行准备依赖 + 本地构建”的方式安装：
 4. `prepare` 使用 `--local-images --allow-candidate`，`start` 使用 `--allow-candidate`；数据包由现有公开 Release 下载。
 5. 打开 `http://127.0.0.1:8080/`，检查查询与时间序列图表。评测模式使用 `--mode eval`。
 
-`--allow-candidate` 是现有发布清单对本地构建的显式启用参数，不代表授权豁免或扩大数据范围。仓库不附带图表库，准备后离线运行也不访问在线 CDN。保留既有版权和品牌标识；如需再分发含该组件的材料，另行确认相应权限。
+`--local-images` 使用本地构建的镜像。上述命令保留 `--allow-candidate` 以兼容原始发布标签中的安装工具；主分支安装工具直接识别 NOAA 的本地构建方式。图表库由用户准备，运行时从本地加载。组件使用与再分发遵循其许可条款。

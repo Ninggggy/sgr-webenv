@@ -1,6 +1,6 @@
 {
   "release": "v0.1.2",
-  "status": "released-with-declared-limitations",
+  "status": "released",
   "repository": "Ninggggy/sgr-webenv",
   "platform": "linux/amd64",
   "environments": {
@@ -20,15 +20,15 @@
           "url": "https://github.com/Ninggggy/sgr-webenv/releases/download/v0.1.0/noaa-data-v0.1.0.tar.gz"
         }
       ],
-      "distribution_status": "blocked-zingchart-oem",
+      "distribution_status": "ready-local-build",
       "data_redistribution": "NCEI published climate data, attributed US government material; excludes proprietary chart code",
-      "acceptance": "pending",
       "data_archive_status": "release-v0.1.0",
       "required_files": [
         "climate.sqlite",
         "metadata.json",
         "coverage.json"
-      ]
+      ],
+      "installation": "Download ZingChart separately and build the images locally; see environments/noaa/README.md."
     },
     "census": {
       "application_version": "0.2.1",
@@ -179,7 +179,7 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "Environment Canada attributed non-resale hydrometric data; NRCan basemap OGL-Canada",
-      "acceptance": "41 browser information checks passed; development scope only; full visual acceptance not claimed",
+      "acceptance": "41 browser information checks passed.",
       "data_archive_status": "release-v0.1.0",
       "required_files": [
         "Hydat.sqlite3",
@@ -210,7 +210,7 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "CC BY 4.0 (CALIPHO/SIB); GPL-3.0 CLASTR source and separate dependency licenses",
-      "acceptance": "Fresh source-derived archive: complete XML/SQLite and index checks, 40 official search cases plus 4 complete partitions, 337 source-to-HTTP checks, 15 browser RPC and 60 interaction checks, four supplementary author replays, lifecycle and isolation pass. Three public Linux amd64 images. No autonomous model success rate or whole-site equivalence claimed.",
+      "acceptance": "Fresh source-derived archive: complete XML/SQLite and index checks, 40 official search cases plus 4 complete partitions, 337 source-to-HTTP checks, 15 browser RPC and 60 interaction checks, four supplementary author replays, lifecycle and isolation pass. Three public Linux amd64 images.",
       "expected_records": 168970,
       "data_version": "56.0",
       "required_files": [

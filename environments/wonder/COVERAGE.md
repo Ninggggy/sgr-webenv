@@ -5,7 +5,7 @@ The annual joint data cover Natality 2016–2024 and period Linked 2017–2023, 
 | Dimension | Natality | Linked | Browser filter | Limits |
 |---|---|---|---|---|
 | Year | 2016–2024 | 2017–2023 | Multi-select / All / Clear | All includes every imported year; no silent skip |
-| Birth month | Yes | Not promised | Natality | Linked is period mortality |
+| Birth month | Yes | — | Natality | Birth-month queries use Natality; Linked queries use period mortality |
 | Maternal race 6, age 9 | Yes | Yes | Yes | Other race/age recodes remain outside scope |
 | Broad Hispanic origin | Yes | Yes | Yes | Independent of maternal race |
 | Expanded origin | Yes, including 2021 | Yes, early years cannot split Dominican | Yes, year-aware explanation | Nat 2021 uses the detailed origin categories; early-year product restrictions apply |

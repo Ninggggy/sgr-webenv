@@ -1,5 +1,6 @@
 import importlib.util,io,json,tarfile,tempfile,unittest
 from pathlib import Path
+from unittest.mock import patch,Mock
 P=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('env',P/'tools/env.py');env=importlib.util.module_from_spec(spec);spec.loader.exec_module(env)
 class Distribution(unittest.TestCase):
@@ -19,6 +20,24 @@ class Distribution(unittest.TestCase):
   _,s=env.load('arxiv','v0.1.0');c=env.compose('arxiv',s,Path('/tmp/example'),'eval')
   self.assertEqual(c['services']['browser']['networks'],['browsing'])
   self.assertEqual(c['services']['search']['networks'],['index'])
+ def test_noaa_prepare_requires_local_images(self):
+  with tempfile.TemporaryDirectory() as tmp, patch.object(env.sys,'argv',['env.py','prepare','noaa','--release','v0.1.2','--state-dir',tmp]), patch.object(env.subprocess,'run',return_value=Mock(returncode=0)), patch.object(env,'download') as download:
+   with self.assertRaisesRegex(ValueError,'--local-images'):env.main()
+   download.assert_not_called()
+ def test_noaa_local_prepare_inspects_images_without_pull(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   state=Path(tmp)/'v0.1.2/noaa';(state/'data').mkdir(parents=True)
+   argv=['env.py','prepare','noaa','--release','v0.1.2','--state-dir',tmp,'--local-images','--data-archive',str(Path(tmp)/'data.gz')]
+   with patch.object(env.sys,'argv',argv), patch.object(env.platform,'system',return_value='Linux'), patch.object(env.platform,'machine',return_value='x86_64'), patch.object(env.subprocess,'run',return_value=Mock(returncode=0)) as run, patch.object(env.subprocess,'check_output',return_value='[{"Os":"linux","Architecture":"amd64"}]') as inspect, patch.object(env,'validate_data'):
+    env.main()
+    self.assertEqual(inspect.call_count,2)
+    self.assertFalse(any('pull' in c.args[0] for c in run.call_args_list))
+ def test_noaa_start_without_candidate_flag(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   (Path(tmp)/'v0.1.2/noaa/data').mkdir(parents=True)
+   with patch.object(env.sys,'argv',['env.py','start','noaa','--release','v0.1.2','--state-dir',tmp]), patch.object(env.subprocess,'run',return_value=Mock(returncode=0)) as run:
+    env.main()
+    self.assertEqual(run.call_args.args[0][-2:],['up','-d'])
  def archive(self,path,name,link=False):
   with tarfile.open(path,'w:gz') as t:
    m=tarfile.TarInfo(name);m.size=2
