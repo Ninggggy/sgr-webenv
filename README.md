@@ -1,90 +1,92 @@
 # SGR-WebEnv
 
-Reproducible offline website environments for SGR-BENCH. [中文说明](README.zh-CN.md).
+Offline website environments for reproducible web-agent research with SGR-BENCH.
 
-**v0.1.2 adds Cellosaurus; public distributions also cover Census, arXiv, WONDER, and Wateroffice (development version). NOAA remains a partial release; see the limitations below.**
-See [release status](docs/STATUS.md), [known differences](docs/SCOPE.md), and [third-party terms](docs/THIRD_PARTY.md).
+[中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Coverage and limitations](docs/SCOPE.md) · [Verification](docs/STATUS.md)
 
-This repository contains independent reconstructions of NOAA Climate at a Glance,
-Census / ACS, CDC WONDER, arXiv, Wateroffice, and Cellosaurus. It is not affiliated with or endorsed
-by these agencies or services. These environments reproduce a documented subset
-of interactions and data; they are not complete replicas of the original websites.
+SGR-WebEnv packages website applications, fixed datasets, and restricted browsers into Docker environments. Researchers can run interactive search, navigation, and data-retrieval workflows locally, without access to the original deployment server. After preparation, supported workflows run without contacting the live websites.
 
-## Distribution
+The repository covers six websites. Each environment has a documented data and feature scope; release availability does not imply full equivalence to the original website. These are independent reconstructions, unaffiliated with the original services.
 
-- Source, Dockerfiles, acquisition tools and tests: this repository.
-- Versioned data archives: [Releases](https://github.com/Ninggggy/sgr-webenv/releases).
-- Runtime containers: associated GHCR packages (when builds pass).
-- Task answers and author audit directories are never mounted in runtime containers.
+## Available environments
 
-## Installation
+**v0.1.2 adds Cellosaurus** and retains the existing distributions of Census, WONDER, arXiv, and Wateroffice.
 
-The supported target is Linux amd64, Docker Engine with Compose v2 and Python 3.9+.
-The Docker version must support isolated bridge networks. Preparation downloads
-artifacts; evaluation runtime uses internal networks and does not require the Internet.
+| Environment | Distribution | Included scope and main limitations | Preview port |
+|---|---|---|---:|
+| NOAA Climate at a Glance | Partial release | Source and climate data; the proprietary chart component is excluded, so a complete installation is unavailable. Rank/tie differences remain. | 8080* |
+| Census / ACS | Available · 0.2.1 | Archived regions, years, and tables; not nationwide coverage of all ACS products. | 8081 |
+| CDC WONDER | Available · 0.3 | National grouped queries within the documented coverage; protection-rule differences and NCHS data-use conditions apply. | 8082 |
+| arXiv | Available · 0.1.0 | 1,685,244 cs/math/stat records with latest metadata and version timelines; excludes historical version content, daily announcements, and full text. | 8083 |
+| Wateroffice | Development · 0.1.0-dev | Archived hydrometric data and query workflows; map, coverage, and visual limitations remain. | 8084 |
+| Cellosaurus | Available · 0.1.0 | Release 56.0 metadata: 168,970 records, core website, and CLASTR; excludes the complete REST/RDF/SPARQL interface. | 8086 |
 
-For Census, arXiv, WONDER, or Wateroffice:
+*NOAA's port is reserved for its deployment configuration; the partial release cannot be installed as a complete environment.*
 
-```sh
-python3 tools/env.py prepare arxiv --release v0.1.1
-python3 tools/env.py start arxiv --mode preview
-# Open http://127.0.0.1:8083
-python3 tools/env.py verify arxiv
-python3 tools/env.py reset arxiv
-python3 tools/env.py stop arxiv
-```
+See [coverage and known differences](docs/SCOPE.md) for feature boundaries and [verification results](docs/STATUS.md) for the evidence behind each release.
 
-Replace `arxiv` with `census`, `wonder`, or `wateroffice`. NOAA has no redistributable chart image. WONDER data retain NCHS usage conditions; see `environments/wonder/licenses/DATA_USE_NOTICE.md`. The default start
-mode is `eval`, with no host ports. Preview exposes only a proxy on loopback.
-`verify` performs a health smoke check, **not benchmark correctness acceptance**.
-Unreleased environments refuse installation unless the author explicitly uses
-`--allow-candidate`; unpublished data cannot be downloaded automatically.
+## Quick start
 
-State is stored under `.state/<release>/<site>` or `--state-dir`. Stopping does not
-remove data or the arXiv index. Reset recreates website/browser containers, clears
-their transient state and leaves read-only data and the index intact. Do not run
-two instances of one site with the same Compose project name concurrently.
-
-## Building
+Requirements: **Linux amd64**, Docker Engine with **Compose v2**, and **Python 3.9+**. Preparation requires Internet access to download data and images. See the [resource measurements](docs/STATUS.md) before installing; requirements vary by environment.
 
 ```sh
-python3 tools/build.py base
-python3 tools/build.py arxiv
-python3 -m unittest discover -s tests -v
-```
-
-After building, use `prepare --local-images --data-archive /path/to/data.tar.gz`
-to install the locally built images without pulling replacement tags. This still
-requires a released environment (or explicit author `--allow-candidate`), and
-validates that the local images target Linux amd64.
-
-Builds require online access to Ubuntu, PyPI, Chrome for Testing and (for arXiv)
-Elastic/Maven artifacts. Runtime does not. arXiv keeps Elasticsearch 6.2.4 and ICU
-compatibility; this research environment must not be exposed as a public service.
-Resource measurements and clean-install results will be recorded in
-[STATUS](docs/STATUS.md); do not infer minimum RAM or install time from original-host runs.
-
-## License and citation
-
-New project code is Apache-2.0. Upstream source, archived website assets, fonts,
-maps, and data retain their respective terms; the root license does not relicense
-them. See [NOTICE](NOTICE) and [third-party inventory](docs/THIRD_PARTY.md).
-
-Cite the SGR-BENCH paper and the exact repository/data release used. Bibliographic
-paper metadata is not invented here; the release tag and repository URL identify
-this software independently of the paper.
-
-[Operation, upgrades and rollback](docs/OPERATIONS.md).
-
-## Cellosaurus (v0.1.2)
-
-Complete Release 56.0 metadata (168,970 records), core website and CLASTR, plus separate historical name-conflict downloads. The main application is 0.1.0; the web image packaging revision is `0.1.0-1` for streaming large preview downloads. It is not the complete REST/RDF/SPARQL or external-site surface.
-
-```sh
+git clone https://github.com/Ninggggy/sgr-webenv.git
+cd sgr-webenv
 git checkout v0.1.2
+
 python3 tools/env.py prepare cellosaurus --release v0.1.2
 python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
 # Open http://127.0.0.1:8086/
 ```
 
-Pass `--release v0.1.2` to Cellosaurus verify/reset/stop commands too. See [operations, licenses and scope](environments/cellosaurus/README.md) and [publication report](docs/verification/cellosaurus-acceptance-v0.1.2.json). Source/data workflow tests are not autonomous model success rates.
+Replace `cellosaurus` with `census`, `wonder`, `arxiv`, or `wateroffice` and use the port listed above. The release manifest selects the appropriate data archives and image versions; some unchanged artifacts come from earlier releases. arXiv preparation also builds its local search index.
+
+Always pass `--release v0.1.2` for this release, including subsequent commands:
+
+```sh
+python3 tools/env.py verify cellosaurus --release v0.1.2
+python3 tools/env.py reset cellosaurus --release v0.1.2
+python3 tools/env.py stop cellosaurus --release v0.1.2
+```
+
+- `verify` checks service health. It does not run benchmark correctness tests.
+- `reset` clears transient website/browser state and downloads, preserving datasets and the arXiv index.
+- `stop` stops the environment and retains its persistent data.
+
+Preview binds only to `127.0.0.1`. For evaluation, omit `--mode preview` or use `--mode eval`: this is the default mode and publishes no host ports. Runtime containers use isolated networks and do not mount task answers or author audit directories.
+
+State is stored in `.state/<release>/<site>`; `--state-dir` changes the base directory. See [operations](docs/OPERATIONS.md) for browser access, upgrades, rollback, and instance management, and the [Cellosaurus guide](environments/cellosaurus/README.md) for its specific features.
+
+## Source, data, and images
+
+| Material | Location |
+|---|---|
+| Application source, Dockerfiles, preparation tools, and tests | This repository |
+| Versioned data archives and publication reports | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
+| Application and restricted-browser images | [GHCR packages](https://github.com/Ninggggy/sgr-webenv/packages) |
+| Exact artifact URLs and image versions | [v0.1.2 manifest](releases/v0.1.2.json) |
+
+To build from source, for example:
+
+```sh
+python3 tools/build.py base
+python3 tools/build.py cellosaurus
+python3 tools/env.py prepare cellosaurus --release v0.1.2 \
+  --local-images --data-archive /path/to/cellosaurus-data-v0.1.2.tar.gz
+```
+
+Builds require online access to upstream dependencies. Runtime uses the prepared local resources. arXiv retains Elasticsearch 6.2.4 and its ICU configuration for compatibility; keep these research environments local or isolated rather than exposing them as public services.
+
+## Verification and scope
+
+Published reports distinguish source-data checks, webpage workflow replay, packaged installation, and isolation tests. These checks are not measurements of autonomous model success. Installation methods and untested configurations are recorded alongside the results.
+
+Cellosaurus includes full source-record reconciliation, 337 data/export checks, 75 browser checks, four supplementary task replays, and anonymous data/image download verification. See its [publication report](docs/verification/cellosaurus-publication-report-v0.1.2.json) and the [cross-environment status report](docs/STATUS.md). The original 100-task set contains no Cellosaurus tasks.
+
+## Licenses and citation
+
+Original project code is licensed under **Apache-2.0**. Upstream code, data, fonts, maps, and archived assets retain their own terms; see [NOTICE](NOTICE) and the [third-party inventory](docs/THIRD_PARTY.md).
+
+Cellosaurus data use **CC BY 4.0**; CLASTR and its modifications retain **GPL-3.0** with corresponding source. WONDER data carry [NCHS use conditions](environments/wonder/licenses/DATA_USE_NOTICE.md).
+
+When using these environments in research, cite SGR-BENCH and record the repository URL, release tag, and environment/data versions used.
