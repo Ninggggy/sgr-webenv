@@ -55,3 +55,7 @@ WONDER's data-use review is complete. v0.1.1 adds a separately attributed nation
 public-use-derived archive, preserves existing query protections, and reuses
 all previously published container images. The other four datasets retain
 their v0.1.0 asset URLs. Historical v0.1.0 reports remain unchanged.
+
+## v0.1.2 Cellosaurus supplement
+
+Cellosaurus adds a complete Release 56.0-derived runtime database, twelve source downloads and separate Release 53/54 name-conflict archives. Code and resource license notices are in `environments/cellosaurus/licenses/NOTICE.md`. Build inputs are public Maven/Java/Tomcat distributions and the existing public base images. The original deployment and all earlier release tags are unchanged. Publication validation remains recorded separately from original-site acceptance.
