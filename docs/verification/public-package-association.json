@@ -1,74 +1,76 @@
 {
-  "scope": "Anonymous package page redirects into actual repository package pages; no OCI-label inference.",
-  "packages": [
+  "scope": "Anonymous GitHub package pages resolve to the repository-scoped package page, not merely an OCI source label.",
+  "checks": [
     {
       "package": "sgr-webenv-release-runtime",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-runtime",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-runtime",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-browser-base",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-browser-base",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-browser-base",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-census-web",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-web",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-web",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-census-browser",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-browser",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-census-browser",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-wonder-web",
-      "passed": false,
-      "error": "HTTP Error 404: Not Found"
+      "status": 200,
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wonder-web",
+      "associated_repository": "Ninggggy/sgr-webenv",
+      "passed": true
     },
     {
       "package": "sgr-webenv-release-wonder-browser",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wonder-browser",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wonder-browser",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-arxiv-web",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-arxiv-web",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-arxiv-web",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-arxiv-browser",
-      "passed": false,
-      "error": "HTTP Error 404: Not Found"
+      "status": 404,
+      "passed": false
     },
     {
       "package": "sgr-webenv-release-arxiv-search",
-      "passed": false,
-      "error": "HTTP Error 404: Not Found"
+      "status": 404,
+      "passed": false
     },
     {
       "package": "sgr-webenv-release-wateroffice-web",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-web",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-web",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     },
     {
       "package": "sgr-webenv-release-wateroffice-browser",
       "status": 200,
-      "final_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-browser",
+      "resolved_url": "https://github.com/Ninggggy/sgr-webenv/pkgs/container/sgr-webenv-release-wateroffice-browser",
       "associated_repository": "Ninggggy/sgr-webenv",
       "passed": true
     }

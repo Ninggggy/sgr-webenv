@@ -1,31 +1,31 @@
 [
   {
     "package": "sgr-webenv-release-runtime",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-browser-base",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-census-web",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-census-browser",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-wonder-web",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-wonder-browser",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-arxiv-web",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-arxiv-browser",
@@ -37,10 +37,10 @@
   },
   {
     "package": "sgr-webenv-release-wateroffice-web",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   },
   {
     "package": "sgr-webenv-release-wateroffice-browser",
-    "anonymous_page_status": 404
+    "anonymous_page_status": 200
   }
 ]

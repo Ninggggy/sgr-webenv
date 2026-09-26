@@ -23,11 +23,11 @@ code, not the withheld WONDER databases or NOAA's proprietary chart component.
 | [sgr-webenv-release-browser-base:1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-browser-base) | Public; anonymous pull and repository association verified |
 | [sgr-webenv-release-census-web:0.2.1](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-web) | Public; anonymous pull and repository association verified |
 | [sgr-webenv-release-census-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-census-browser) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-wonder-web:0.3](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-web) | Public; anonymous pull and repository association verified |
 | [sgr-webenv-release-wonder-browser:0.2](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wonder-browser) | Public; anonymous pull and repository association verified |
 | [sgr-webenv-release-arxiv-web:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-web) | Public; anonymous pull and repository association verified |
-| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Private; check linked repository, then set Public |
-| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Private; check linked repository, then set Public |
+| [sgr-webenv-release-arxiv-browser:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-browser) | Not publicly accessible; set Public |
+| [sgr-webenv-release-arxiv-search:0.1.0](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-arxiv-search) | Not publicly accessible; set Public |
 | [sgr-webenv-release-wateroffice-web:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-web) | Public; anonymous pull and repository association verified |
 | [sgr-webenv-release-wateroffice-browser:0.1.0-dev](https://github.com/users/Ninggggy/packages/container/package/sgr-webenv-release-wateroffice-browser) | Public; anonymous pull and repository association verified |
 

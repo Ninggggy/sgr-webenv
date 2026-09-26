@@ -102,3 +102,13 @@ return HTTP 404 on their package pages and fail anonymous pulls. The Release
 remains a draft, so all five data URLs still return 404. Current evidence is in
 `verification/anonymous-publication.json` and `verification/public-package-association.json`.
 The previous all-private observations above are historical.
+
+### Second package-visibility recheck
+
+Nine of 11 new images now pass anonymous pulls. Their public package pages
+resolve to this repository's package pages, confirming their association.
+`sgr-webenv-release-arxiv-browser:0.1.0` and
+`sgr-webenv-release-arxiv-search:0.1.0` still fail anonymous pulls, and their
+package pages return HTTP 404. The five data assets remain in the draft Release.
+The latest `anonymous-publication.json` supersedes the earlier zero-of-11 result;
+`public-package-association.json` records the package-page evidence.

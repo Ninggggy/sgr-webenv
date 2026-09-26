@@ -73,8 +73,8 @@
     {
       "kind": "anonymous_image_pull",
       "image": "ghcr.io/ninggggy/sgr-webenv-release-wonder-web:0.3",
-      "passed": false,
-      "exit_code": 1
+      "passed": true,
+      "exit_code": 0
     },
     {
       "kind": "anonymous_image_pull",
