@@ -5,11 +5,11 @@ The environment provides station search, historical observations, archived realt
 ## Data sources and time ranges
 
 - Historical data: official HYDAT release 2026-07-17, including monthly flags, daily values, zeros and quality symbols.
-- Thirty-day upgrade: 483 stations have official Wateroffice CSV observations for 2026-08-26 09:40 UTC through 2026-09-25 09:40 UTC. The other stations retain the original seven-day GeoMet snapshot. The station catalog still contains 2,248 unique stations. First and last local calendar dates may be partial.
+- Realtime data: 2,248 catalog stations; official CSV observations for 483 stations cover 2026-08-26 09:40 UTC through 2026-09-25 09:40 UTC, and 1,765 stations use seven-day GeoMet snapshots. Station metadata records the observation intervals.
 - Daily means and watch-list summaries: separate official source snapshots with their own collection timestamps.
 - Station datum/reference pages: archived official HTML for the historical/realtime station union.
 
-Use each station’s archive metadata and report notice to identify its available period. Upgraded stations retain published Approval, Grade and Qualifiers; official blanks remain blank. Original GeoMet unit observations do not supply Approval/Grade and retain that limitation. New status fields are never combined with old values. Dates, graphs and exports use the same per-station snapshot.
+Station pages show source-provided Approval, Grade and Qualifiers. Dates, graphs and exports use the same per-station snapshot, preserving source values and blank fields.
 
 ## Maps and search
 

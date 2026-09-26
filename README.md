@@ -90,4 +90,4 @@ Cellosaurus data use **CC BY 4.0**; CLASTR and its modifications retain **GPL-3.
 
 When using these environments in research, cite SGR-BENCH and record the repository URL, release tag, and environment/data versions used.
 
-Wateroffice `0.1.0` retains the 2,248-station catalog: 483 stations have thirty-day observations and published status, while 1,765 retain the prior snapshot. See [installation and rollback](environments/wateroffice/README.md).
+Wateroffice `0.1.0` provides a 2,248-station catalog, historical and realtime observations, quality information, maps and downloads. See [installation and rollback](environments/wateroffice/README.md).

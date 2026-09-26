@@ -21,9 +21,7 @@ Reset clears session lists and browser downloads, retaining the data. Stop remov
 
 ## Data
 
-The 2,248-station realtime catalog is retained. **483 stations** have official CSV observations from **2026-08-26 09:40 UTC to 2026-09-25 09:40 UTC**, with published Approval, Grade and Qualifiers. The other **1,765 stations** retain the original seven-day GeoMet observations and separately dated daily means; unit Approval/Grade are unavailable in that source. The report and coverage page identify each station's available interval. This is a fixed, partly upgraded dataset, not a nationwide thirty-day capture.
-
-HYDAT 2026-07-17, station metadata, datum/reference pages, map resources and watch summaries are retained. Official no-data observations and blank quality fields remain empty. Watch summaries have their own capture times. No new status is attached to an old observation.
+The dataset combines a 2,248-station catalog, HYDAT 2026-07-17 historical data, archived realtime observations, quality fields, station metadata, datum/reference pages, map resources and watch summaries. Station pages display the observation interval and source quality information. See [data sources and periods](DIFFERENCES.md) for snapshot details.
 
 The compressed data archive is 407,458,840 bytes (about 389 MiB). Allow roughly 2 GiB for extracted runtime data plus image layers and download staging; Docker's shared base layers may already be present. Keep at least 5 GiB free during preparation. See [data coverage](DIFFERENCES.md) and [data preparation](BUILDING.md).
 
