@@ -15,7 +15,7 @@ The repository covers six websites. Each environment has a documented data and f
 | Environment | Distribution | Included scope and main limitations | Preview port |
 |---|---|---|---:|
 | Census / ACS | Available · 0.2.1 | Archived regions, years, and tables; not nationwide coverage of all ACS products. | 8081 |
-| CDC WONDER | Available · 0.3 | National grouped queries within the documented coverage; protection-rule differences and NCHS data-use conditions apply. | 8082 |
+| CDC WONDER | Available · 0.3 | National natality and linked infant mortality queries, charts, and CSV exports; query, interaction, and legacy-task regressions passed. | 8082 |
 | arXiv | Available · 0.1.0 | 1,685,244 cs/math/stat records with latest metadata and version timelines; excludes historical version content, daily announcements, and full text. | 8083 |
 | Wateroffice | Development · 0.1.0-dev | Archived hydrometric data and query workflows; map, coverage, and visual limitations remain. | 8084 |
 | Cellosaurus | Available · 0.1.0 | Release 56.0 metadata: 168,970 records, core website, and CLASTR; excludes the complete REST/RDF/SPARQL interface. | 8086 |
@@ -80,6 +80,8 @@ Builds require online access to upstream dependencies. Runtime uses the prepared
 ## Verification and scope
 
 Published reports distinguish source-data checks, webpage workflow replay, packaged installation, and isolation tests. These checks are not measurements of autonomous model success. Installation methods and untested configurations are recorded alongside the results.
+
+WONDER passed 10 independent query comparisons, eight boundary tests, 70 webpage-query and CSV regressions, four CG/GO task records, and 34 webpage interaction checks. All 17 parent-category visibility differences were individually confirmed as retained additional privacy protection; no statistical calculation or protection-propagation scope errors were found. See the [focused verification report](docs/WONDER_PROTECTION_REVIEW.md). The released application, data, and images remain unchanged.
 
 Cellosaurus includes full source-record reconciliation, 337 data/export checks, 75 browser checks, four supplementary task replays, and anonymous data/image download verification. See its [publication report](docs/verification/cellosaurus-publication-report-v0.1.2.json) and the [cross-environment status report](docs/STATUS.md). The original 100-task set contains no Cellosaurus tasks.
 
