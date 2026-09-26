@@ -115,3 +115,14 @@ omits author marginal tables/timings and retains all runtime catalog fields.
 Existing images and other sites' v0.1.0 data assets are reused. No original
 production service or original dataset was changed. See `wonder-data-release.json`
 and `wonder-packaged-queries.json` under verification.
+
+WONDER's 34,507,734-byte v0.1.1 archive passed anonymous full-download byte
+comparison. A fresh independent native installation from the public source/data
+archives and exact public images passed health, browser isolation, reset/restart
+and six private-path checks. All 70 query replays also matched under the actual
+public image. Direct GitHub downloads on the server timed out and its registry
+proxy was unavailable, so anonymously obtained public artifacts were transferred
+from the author machine. No global proxy or original service was changed. This
+is same-server isolated acceptance, not an independent-machine/direct-download
+claim. The temporary v0.1.1 acceptance containers were stopped afterward.
+See `verification/wonder-v011-install.json` and `wonder-anonymous-data.json`.

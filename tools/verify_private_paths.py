@@ -25,4 +25,4 @@ for site in a.sites:
 report={'checks':out,'note':'Wateroffice uses its existing unsupported-scope HTTP 503 for unimplemented paths. NOAA distribution is blocked and not tested here.'}
 a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2)+'\n')
 if not all(r['denied'] for rows in out.values() for r in rows):raise SystemExit('Private-path check failed')
-print('24 private-path checks passed')
+print(str(sum(len(rows) for rows in out.values()))+' private-path checks passed')
