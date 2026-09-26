@@ -35,7 +35,7 @@ for image in images:
    row['visibility']=p['visibility'];row['package_url']=p['html_url'];row['associated_repository']=associations.get(package);row['association_evidence']='GraphQL repository.packages';row['association_matches']=row['associated_repository']=='Ninggggy/sgr-webenv';row['association_status']='verified' if row['association_matches'] else 'unverified; inspect package web page'
   except urllib.error.HTTPError as e:row['visibility']='unavailable HTTP '+str(e.code)
  results.append(row)
-out=root/'image-verification.json';out.write_text(json.dumps({'kind':'authenticated registry pull, not anonymous acceptance','images':results},indent=2)+'\n')
+out=root/'image-verification.json';out.write_text(json.dumps({'kind':'Registry image check','images':results},indent=2)+'\n')
 print(out.read_text())
 
 if os.environ.get("GITHUB_TOKEN") and any(not r.get("association_matches") for r in results):

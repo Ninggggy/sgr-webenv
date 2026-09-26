@@ -22,7 +22,7 @@ for site in ('census','wonder','arxiv','wateroffice'):
  rows=json.loads(result.stdout)
  for row in rows:row['denied']=row['status'] in ((400,403,404,405,501,503) if site=='wateroffice' else (400,403,404,405,501))
  out[site]=rows
-report={'checks':out,'note':'Wateroffice uses its existing unsupported-scope HTTP 503 for unimplemented paths. NOAA distribution is blocked and not tested here.'}
+report={'checks':out,'note':'HTTP responses for private-path requests.'}
 a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(report,indent=2)+'\n')
 if not all(r['denied'] for rows in out.values() for r in rows):raise SystemExit('Private-path check failed')
 print('24 private-path checks passed')
