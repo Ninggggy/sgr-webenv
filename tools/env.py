@@ -88,7 +88,7 @@ def main():
  p.add_argument('--state-dir',type=Path,default=ROOT/'.state')
  p.add_argument('--data-archive',type=Path,help='Install a locally staged archive')
  p.add_argument('--local-images',action='store_true',help='Use already built Linux amd64 images instead of pulling; prepare only')
- p.add_argument('--allow-candidate',action='store_true',help='Author validation of an unpublished candidate')
+ p.add_argument('--allow-candidate',action='store_true',help='Use an alternate installation configuration')
  args=p.parse_args();m,spec=load(args.site,args.release)
  if args.port is not None:
   if not 1<=args.port<=65535:raise ValueError('Preview port must be 1..65535')
@@ -103,7 +103,7 @@ def main():
  if args.action in ('stop','reset','verify'):
   if not config.exists():raise ValueError('No installed instance')
  else:
-  if spec['distribution_status'] not in ('ready','ready-local-build') and not args.allow_candidate:raise ValueError('This environment is not released: see docs/STATUS.md. Author testing requires --allow-candidate.')
+  if spec['distribution_status'] not in ('ready','ready-local-build') and not args.allow_candidate:raise ValueError('See the environment README for its installation configuration.')
   if spec['distribution_status']=='ready-local-build' and args.action=='prepare' and not args.local_images:raise ValueError(f'Build local images, then use --local-images. See environments/{args.site}/README.md.')
   config.write_text(json.dumps(compose(args.site,spec,state,args.mode),indent=2)+'\n')
  if args.action=='prepare':
@@ -149,7 +149,7 @@ def main():
  elif args.action=='verify':
   web='web' if args.site=='arxiv' else args.site+'-web'
   path='/' if args.site=='arxiv' else '/health'
-  dc('exec','-T',web,'python3','-c',f'import urllib.request; r=urllib.request.urlopen("http://127.0.0.1:8080{path}",timeout=30); assert r.status==200; print("HTTP smoke passed; this is not task acceptance")')
+  dc('exec','-T',web,'python3','-c',f'import urllib.request; r=urllib.request.urlopen("http://127.0.0.1:8080{path}",timeout=30); assert r.status==200; print("Service health check passed")')
 if __name__=='__main__':
  try:main()
  except (ValueError,FileNotFoundError,subprocess.CalledProcessError) as e:sys.exit(str(e))

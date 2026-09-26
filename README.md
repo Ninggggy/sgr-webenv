@@ -33,6 +33,6 @@ python3 tools/env.py stop cellosaurus --release v0.1.4
 
 `verify` checks service health. `reset` clears session state and downloads while retaining data. `stop` stops the environment. Use `--mode eval` for the isolated evaluation mode.
 
-See [operation and resource requirements](docs/OPERATIONS.md) and [data details](docs/SCOPE.md). Code and component terms are listed in [LICENSE](LICENSE), [NOTICE](NOTICE) and [third-party notices](docs/THIRD_PARTY.md).
+See [operation instructions](docs/OPERATIONS.md). Code and component terms are listed in [LICENSE](LICENSE), [NOTICE](NOTICE) and [third-party notices](docs/THIRD_PARTY.md).
 
 For ChemExpo / CPDat, follow the [local build and setup steps](environments/chemexpo/README.md).

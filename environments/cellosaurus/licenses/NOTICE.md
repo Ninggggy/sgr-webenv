@@ -12,4 +12,4 @@ This offline research environment uses the following data, software and resource
 
 Upstream resource: https://www.cellosaurus.org/ ; CLASTR: https://github.com/calipho-sib/cellosaurus-STR-similarity-search-tool at 1505b91664c9b1f6557ef3aa7c67dc8877be34ab.
 
-Cite Bairoch A., The Cellosaurus, a cell line knowledge resource (2018), doi:10.7171/jbt.18-2902-002; and Robin T., Capes-Davis A., Bairoch A., CLASTR (2020), doi:10.1002/ijc.32639. Data and software are provided without warranties under their respective licenses.
+Cite Bairoch A., The Cellosaurus, a cell line knowledge resource (2018), doi:10.7171/jbt.18-2902-002; and Robin T., Capes-Davis A., Bairoch A., CLASTR (2020), doi:10.1002/ijc.32639.

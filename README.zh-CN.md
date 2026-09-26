@@ -33,6 +33,6 @@ python3 tools/env.py stop cellosaurus --release v0.1.4
 
 `verify` 检查服务健康；`reset` 清空会话和下载，保留数据；`stop` 停止环境。隔离评测使用 `--mode eval`。
 
-详见[运行与资源要求](docs/OPERATIONS.md)及[数据说明](docs/SCOPE.md)。代码和组件条款见 [LICENSE](LICENSE)、[NOTICE](NOTICE) 和[第三方说明](docs/THIRD_PARTY.md)。
+详见[运行说明](docs/OPERATIONS.md)。代码和组件条款见 [LICENSE](LICENSE)、[NOTICE](NOTICE) 和[第三方说明](docs/THIRD_PARTY.md)。
 
 ChemExpo / CPDat 使用[本地构建与安装步骤](environments/chemexpo/README.md)。

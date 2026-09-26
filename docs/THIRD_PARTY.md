@@ -31,7 +31,7 @@ The map uses NRCan Toporama. Bundled library notices cover Font Awesome Free 5.1
 
 ## WONDER data
 
-The runtime data derive from national NCHS public-use files. Preserve source attribution, statistical-use restrictions and small-cell protection rules. NCHS terms govern the data. See [source and use conditions](reviews/WONDER_DATA_REDISTRIBUTION.md).
+The runtime data derive from national NCHS public-use files. Preserve source attribution, statistical-use restrictions and small-cell protection rules. NCHS terms govern the data. See [data-use terms](../environments/wonder/licenses/DATA_USE_NOTICE.md).
 
 ## Cellosaurus resources
 

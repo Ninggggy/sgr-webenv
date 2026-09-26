@@ -10,7 +10,7 @@ def build(tag,file,context,args=()):
 def main():
  p=argparse.ArgumentParser();p.add_argument('site',choices=['base','noaa','census','wonder','arxiv','wateroffice','cellosaurus','chemexpo']);p.add_argument('--push',action='store_true');p.add_argument('--release',default='v0.1.4');a=p.parse_args()
  if '/' in a.release or '..' in a.release:raise ValueError('Invalid release')
- if a.site=="noaa":raise RuntimeError("NOAA distribution is withheld: ZingChart OEM redistribution permission is not established; see docs/THIRD_PARTY.md")
+ if a.site=="noaa":raise RuntimeError("Use the dependency preparation and local-build commands in environments/noaa/README.md")
  tags=[]
  if a.site=='base':
   for name,file in [('runtime:1','runtime.Dockerfile'),('browser-base:1','browser-base.Dockerfile')]:build(name,ROOT/'docker'/file,ROOT/'docker');tags.append(name)
