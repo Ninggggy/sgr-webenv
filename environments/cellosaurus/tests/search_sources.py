@@ -15,3 +15,12 @@ for case in json.loads((R/'tests/search-expected.json').read_text()):
 for c in out:print({k:v for k,v in c.items() if k not in ['missing','extra']},flush=True)
 
 assert all(c.get("count_pass") and c.get("set_pass") is not False and c.get("order_except_casefold_ties") for c in out), "Search regression failed"
+
+parts=json.loads((R/'tests/search-partitions.json').read_text());union=set();results=[]
+for case in parts:
+ assert case['complete'] and not union.intersection(case['accessions'])
+ actual={r[0] for r in search(db,case['query'])};expected=set(case['accessions'])
+ assert actual==expected,case['query']
+ union.update(expected);results.append({'query':case['query'],'count':len(actual),'set_pass':True})
+assert len(union)==124256 and {r[0] for r in search(db,'"Homo sapiens"')}==union
+(R/'validation/partition-checks.json').write_text(json.dumps({'partitions':results,'union':len(union),'passed':True},indent=2))

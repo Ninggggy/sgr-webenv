@@ -17,6 +17,14 @@ with sqlite3.connect('file:'+str(a.data/'cellosaurus.sqlite')+'?mode=ro',uri=Tru
   status,body=get('/'+ac);check('detail '+ac,status==200 and ac.encode() in body)
   q=urllib.parse.quote(ac);status,body=get('/search/export?query='+q+'&format=csv')
   rows=list(csv.DictReader(io.StringIO(body.decode())));check('source present in search export '+ac,status==200 and any(r['Accession']==ac and r['Record'].encode()==raw for r in rows))
+testdir=Path(__file__).resolve().parent
+parts=json.loads((testdir/'search-partitions.json').read_text());complete_human=set().union(*(set(p['accessions']) for p in parts))
+for case in json.loads((testdir/'search-expected.json').read_text()):
+ expected=set(case['accessions']) if case['complete'] else complete_human
+ url=a.origin+'/search/export?format=csv&query='+urllib.parse.quote(case['query'])
+ with urllib.request.urlopen(url,timeout=180) as response:
+  actual={r['Accession'] for r in csv.DictReader(io.TextIOWrapper(response,encoding='utf-8'))}
+ check('official search candidate set '+case['query'],actual==expected and len(actual)==case['total'])
 for name,meta in json.loads((a.data/'sources.json').read_text()).items():
  total=0
  with urllib.request.urlopen(a.origin+'/databases/cellosaurus/'+name,timeout=180) as response,gzip.open(a.data/(name+'.gz'),'rb') as source:

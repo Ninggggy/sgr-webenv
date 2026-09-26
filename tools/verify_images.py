@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Pull declared non-NOAA images and inspect their platform/repository association."""
-import json,os,subprocess,urllib.request,urllib.error,urllib.parse
+import argparse,json,os,subprocess,urllib.request,urllib.error,urllib.parse
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-manifest=json.loads((root/'releases/v0.1.0.json').read_text())
+parser=argparse.ArgumentParser();parser.add_argument('--release',default='v0.1.1');args=parser.parse_args()
+manifest=json.loads((root/'releases'/f'{args.release}.json').read_text())
 images=['ghcr.io/ninggggy/sgr-webenv-release-runtime:1','ghcr.io/ninggggy/sgr-webenv-release-browser-base:1']
 for site,spec in manifest['environments'].items():
  if site!='noaa':images.extend(spec['images'].values())
