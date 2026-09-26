@@ -4,9 +4,9 @@ Offline website environments for reproducible web-agent research with SGR-BENCH.
 
 [中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Coverage and limitations](docs/SCOPE.md) · [Verification](docs/STATUS.md)
 
-SGR-WebEnv packages website applications, fixed datasets, and restricted browsers into Docker environments. Researchers can run interactive search, navigation, and data-retrieval workflows locally, without access to the original deployment server. After preparation, supported workflows run without contacting the live websites.
+SGR-WebEnv packages website applications, fixed datasets, and restricted browsers into Docker environments. Researchers can run interactive search, navigation, and data-retrieval workflows locally. After preparation, supported workflows run without contacting the live websites.
 
-The repository covers six websites. Each environment has a documented data and feature scope; release availability does not imply full equivalence to the original website. These are independent reconstructions, unaffiliated with the original services.
+The repository covers six websites. Each environment has a documented data and feature scope. These are independent reconstructions, unaffiliated with the original services.
 
 ## Available environments
 
@@ -14,14 +14,14 @@ The repository covers six websites. Each environment has a documented data and f
 
 | Environment | Distribution | Included scope and main limitations | Preview port |
 |---|---|---|---:|
-| NOAA Climate at a Glance | Partial release | Source and climate data; the proprietary chart component is excluded, so a complete installation is unavailable. Rank/tie differences remain. | 8080* |
 | Census / ACS | Available · 0.2.1 | Archived regions, years, and tables; not nationwide coverage of all ACS products. | 8081 |
 | CDC WONDER | Available · 0.3 | National grouped queries within the documented coverage; protection-rule differences and NCHS data-use conditions apply. | 8082 |
 | arXiv | Available · 0.1.0 | 1,685,244 cs/math/stat records with latest metadata and version timelines; excludes historical version content, daily announcements, and full text. | 8083 |
 | Wateroffice | Development · 0.1.0-dev | Archived hydrometric data and query workflows; map, coverage, and visual limitations remain. | 8084 |
 | Cellosaurus | Available · 0.1.0 | Release 56.0 metadata: 168,970 records, core website, and CLASTR; excludes the complete REST/RDF/SPARQL interface. | 8086 |
+| NOAA Climate at a Glance | Source and data | Climate data and application source; component availability and supported workflows are documented in the [release notes](docs/STATUS.md). | 8080* |
 
-*NOAA's port is reserved for its deployment configuration; the partial release cannot be installed as a complete environment.*
+*8080 is the configured NOAA preview port. See the [deployment status](docs/STATUS.md) for preparation requirements.*
 
 See [coverage and known differences](docs/SCOPE.md) for feature boundaries and [verification results](docs/STATUS.md) for the evidence behind each release.
 
