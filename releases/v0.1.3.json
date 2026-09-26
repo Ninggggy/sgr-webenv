@@ -188,13 +188,7 @@
         "DATA_VERSION.json",
         "NOTICE.md"
       ],
-      "data_version": "2026-09-26-partial-30d",
-      "coverage": {
-        "realtime_catalog_stations": 2248,
-        "official_30day_stations": 483,
-        "legacy_7day_stations": 1765,
-        "national_30day_complete": false
-      }
+      "data_version": "2026-09-26-partial-30d"
     },
     "cellosaurus": {
       "application_version": "0.1.0",
