@@ -1,0 +1,121 @@
+{
+  "records": [
+    {
+      "name": "historical-graph-1948",
+      "pass": true
+    },
+    {
+      "name": "historical-table-download",
+      "pass": true
+    },
+    {
+      "name": "realtime-one-parameter",
+      "pass": true
+    },
+    {
+      "name": "realtime-cross-tab-download",
+      "pass": true
+    },
+    {
+      "name": "realtime-graph",
+      "pass": true
+    },
+    {
+      "name": "quick-list-create",
+      "pass": true
+    },
+    {
+      "name": "quick-list-graph",
+      "pass": true
+    },
+    {
+      "name": "map-filter-url",
+      "pass": true
+    },
+    {
+      "name": "map-current-conditions",
+      "pass": true
+    },
+    {
+      "name": "cross-page-multiselect",
+      "pass": true
+    },
+    {
+      "name": "realtime-mode-retains-query",
+      "pass": true
+    },
+    {
+      "name": "historical-statistics-settings",
+      "pass": true
+    },
+    {
+      "name": "remarks-navigation",
+      "pass": true
+    },
+    {
+      "name": "map-popup-basin",
+      "pass": true
+    },
+    {
+      "name": "realtime-station-timezone",
+      "pass": true
+    },
+    {
+      "name": "realtime-search-combination",
+      "pass": true
+    },
+    {
+      "name": "watch-list-add-delete",
+      "pass": true
+    },
+    {
+      "name": "historical-history-tabs",
+      "pass": true
+    },
+    {
+      "name": "annual-extremes-modes",
+      "pass": true
+    },
+    {
+      "name": "map-popup-drag-stale",
+      "pass": true
+    },
+    {
+      "name": "realtime-daily-mixed",
+      "pass": true
+    },
+    {
+      "name": "realtime-spatial-metadata",
+      "pass": true
+    },
+    {
+      "name": "map-complete-download",
+      "pass": true
+    },
+    {
+      "name": "watch-snapshot-pagination",
+      "pass": true
+    },
+    {
+      "name": "realtime-live-state-links",
+      "pass": true
+    },
+    {
+      "name": "quick-list-parameter-edit",
+      "pass": true
+    },
+    {
+      "name": "quick-list-delete-confirmation",
+      "pass": true
+    },
+    {
+      "name": "datum-navigation",
+      "pass": true
+    },
+    {
+      "name": "new-session-empty",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

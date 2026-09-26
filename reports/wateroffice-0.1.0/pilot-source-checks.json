@@ -1,0 +1,315 @@
+{
+  "checks": [
+    {
+      "station": "08GA043",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "08GA043",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "08GA043",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "08GA043",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06FA001",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06FA001",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06FA001",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06FA001",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01BL003",
+      "parameter": "46",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01BL003",
+      "parameter": "47",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01BL003",
+      "parameter": "3",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01BL003",
+      "parameter": "6",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02YJ001",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02YJ001",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02YJ001",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02YJ001",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01EA003",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01EA003",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01EA003",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01EA003",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "10GC003",
+      "parameter": "46",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "10GC003",
+      "parameter": "47",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "10GC003",
+      "parameter": "3",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "10GC003",
+      "parameter": "6",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06JC002",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06JC002",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06JC002",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "06JC002",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05AB047",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05AB047",
+      "parameter": "47",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05AB047",
+      "parameter": "3",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05AB047",
+      "parameter": "6",
+      "rows": 0,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01CC005",
+      "parameter": "46",
+      "rows": 285,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01CC005",
+      "parameter": "47",
+      "rows": 286,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01CC005",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "01CC005",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05PE031",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05PE031",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05ND012",
+      "parameter": "46",
+      "rows": 288,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "05ND012",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02OA003",
+      "parameter": "46",
+      "rows": 282,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02OA003",
+      "parameter": "47",
+      "rows": 282,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02OA003",
+      "parameter": "3",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    },
+    {
+      "station": "02OA003",
+      "parameter": "6",
+      "rows": 1,
+      "passed": true,
+      "comparison": "UTC/local timestamps, values at published CSV precision, approval, blank grade and qualifiers"
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "seconds": 12.447922332998132
+}

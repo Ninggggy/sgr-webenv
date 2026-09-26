@@ -29,19 +29,19 @@ SGR-WebEnv 将网站应用、固定数据和受限浏览器打包为 Docker 环�
 git clone --branch main https://github.com/Ninggggy/sgr-webenv.git
 cd sgr-webenv
 
-python3 tools/env.py prepare cellosaurus --release v0.1.2
-python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
+python3 tools/env.py prepare cellosaurus --release v0.1.3
+python3 tools/env.py start cellosaurus --release v0.1.3 --mode preview
 # 浏览器打开 http://127.0.0.1:8086/
 ```
 
 将 `cellosaurus` 替换为 `census`、`wonder`、`arxiv` 或 `wateroffice`，并使用上表对应端口即可。发布清单会选择对应的数据包和镜像版本；未变更的材料沿用早期发布附件。arXiv 的准备过程还会构建本地搜索索引。
 
-本版本的后续命令也请显式指定 `--release v0.1.2`：
+本版本的后续命令也请显式指定 `--release v0.1.3`：
 
 ```bash
-python3 tools/env.py verify cellosaurus --release v0.1.2
-python3 tools/env.py reset cellosaurus --release v0.1.2
-python3 tools/env.py stop cellosaurus --release v0.1.2
+python3 tools/env.py verify cellosaurus --release v0.1.3
+python3 tools/env.py reset cellosaurus --release v0.1.3
+python3 tools/env.py stop cellosaurus --release v0.1.3
 ```
 
 - `verify` 检查服务健康。
@@ -69,14 +69,14 @@ NOAA 采用本地源码构建方式提供。**请从官方渠道自行下载 Zin
 | 应用源码、Dockerfile、数据准备工具与测试 | 本仓库 |
 | 固定版本的数据包 | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
 | 应用与受限浏览器镜像 | [GHCR Packages](https://github.com/Ninggggy/sgr-webenv/packages) |
-| 具体下载地址与镜像版本 | [v0.1.2 发布清单](releases/v0.1.2.json) |
+| 具体下载地址与镜像版本 | [v0.1.3 发布清单](releases/v0.1.3.json) |
 
 如需从源码构建，以 Cellosaurus 为例：
 
 ```bash
 python3 tools/build.py base
 python3 tools/build.py cellosaurus
-python3 tools/env.py prepare cellosaurus --release v0.1.2 \
+python3 tools/env.py prepare cellosaurus --release v0.1.3 \
   --local-images --data-archive /path/to/cellosaurus-data-v0.1.2.tar.gz
 ```
 
@@ -89,3 +89,5 @@ python3 tools/env.py prepare cellosaurus --release v0.1.2 \
 Cellosaurus 数据采用 **CC BY 4.0**；CLASTR 及其修改保留 **GPL-3.0**，并提供对应源码。WONDER 数据须遵守 [NCHS 使用条件](environments/wonder/licenses/DATA_USE_NOTICE.md)。
 
 研究中使用这些环境时，请引用 SGR-BENCH，并记录仓库地址、发布标签以及所用环境和数据版本。
+
+Wateroffice `0.1.0` 保留2,248站目录，其中483站提供30天观测及官方状态，其余1,765站沿用原快照。详见[安装与回退说明](environments/wateroffice/README.md)和[验收报告](reports/wateroffice-0.1.0/README.md)。

@@ -1,6 +1,6 @@
 # Wateroffice snapshot validation
 
-The thirty-day upgrade is a candidate until its declared station subset, source comparisons, browser regression and distribution checks have passed. The user-approved scope is 483 upgraded stations; other stations retain their existing seven-day observations. The previously published development snapshot remains available for rollback.
+The thirty-day upgrade is validated for the declared station subset; see the [release report](../../reports/wateroffice-0.1.0/README.md). The user-approved scope is 483 upgraded stations; other stations retain their existing seven-day observations. The previously published development snapshot remains available for rollback.
 
 ## Collect and verify source data
 

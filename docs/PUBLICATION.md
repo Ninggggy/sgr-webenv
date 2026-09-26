@@ -5,9 +5,9 @@
 | Applications, deployment files, collectors and tests | This repository |
 | Versioned runtime data archives | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
 | Container images | [Repository packages](https://github.com/Ninggggy/sgr-webenv/packages) |
-| Data URLs, image tags and application versions | [Release manifest](../releases/v0.1.2.json) |
+| Data URLs, image tags and application versions | [Release manifest](../releases/v0.1.3.json) |
 
-`tools/env.py prepare <site> --release v0.1.2` downloads the artifacts selected by the manifest. A release may reuse unchanged data or images from an earlier version. arXiv data are split into archive parts; the installer assembles them and builds the local search index.
+`tools/env.py prepare <site> --release v0.1.3` downloads the artifacts selected by the manifest. A release may reuse unchanged data or images from an earlier version. arXiv data are split into archive parts; the installer assembles them and builds the local search index.
 
 NOAA uses a [user-supplied ZingChart dependency and local image build](../environments/noaa/README.md). Keep that dependency and images containing it out of redistribution unless your license permits it.
 

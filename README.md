@@ -29,19 +29,19 @@ Requirements: **Linux amd64**, Docker Engine with **Compose v2**, and **Python 3
 git clone --branch main https://github.com/Ninggggy/sgr-webenv.git
 cd sgr-webenv
 
-python3 tools/env.py prepare cellosaurus --release v0.1.2
-python3 tools/env.py start cellosaurus --release v0.1.2 --mode preview
+python3 tools/env.py prepare cellosaurus --release v0.1.3
+python3 tools/env.py start cellosaurus --release v0.1.3 --mode preview
 # Open http://127.0.0.1:8086/
 ```
 
 Replace `cellosaurus` with `census`, `wonder`, `arxiv`, or `wateroffice` and use the port listed above. The release manifest selects the appropriate data archives and image versions; some unchanged artifacts come from earlier releases. arXiv preparation also builds its local search index.
 
-Always pass `--release v0.1.2` for this release, including subsequent commands:
+Always pass `--release v0.1.3` for this release, including subsequent commands:
 
 ```sh
-python3 tools/env.py verify cellosaurus --release v0.1.2
-python3 tools/env.py reset cellosaurus --release v0.1.2
-python3 tools/env.py stop cellosaurus --release v0.1.2
+python3 tools/env.py verify cellosaurus --release v0.1.3
+python3 tools/env.py reset cellosaurus --release v0.1.3
+python3 tools/env.py stop cellosaurus --release v0.1.3
 ```
 
 - `verify` checks service health.
@@ -69,14 +69,14 @@ Once prepared, the chart library is served locally during offline operation. Kee
 | Application source, Dockerfiles, preparation tools, and tests | This repository |
 | Versioned data archives | [GitHub Releases](https://github.com/Ninggggy/sgr-webenv/releases) |
 | Application and restricted-browser images | [GHCR packages](https://github.com/Ninggggy/sgr-webenv/packages) |
-| Exact artifact URLs and image versions | [v0.1.2 manifest](releases/v0.1.2.json) |
+| Exact artifact URLs and image versions | [v0.1.3 manifest](releases/v0.1.3.json) |
 
 To build from source, for example:
 
 ```sh
 python3 tools/build.py base
 python3 tools/build.py cellosaurus
-python3 tools/env.py prepare cellosaurus --release v0.1.2 \
+python3 tools/env.py prepare cellosaurus --release v0.1.3 \
   --local-images --data-archive /path/to/cellosaurus-data-v0.1.2.tar.gz
 ```
 
@@ -89,3 +89,5 @@ Original project code is licensed under **Apache-2.0**. Upstream code, data, fon
 Cellosaurus data use **CC BY 4.0**; CLASTR and its modifications retain **GPL-3.0** with corresponding source. WONDER data carry [NCHS use conditions](environments/wonder/licenses/DATA_USE_NOTICE.md).
 
 When using these environments in research, cite SGR-BENCH and record the repository URL, release tag, and environment/data versions used.
+
+Wateroffice `0.1.0` retains the 2,248-station catalog: 483 stations have thirty-day observations and published status, while 1,765 retain the prior snapshot. See [installation and rollback](environments/wateroffice/README.md) and [validation](reports/wateroffice-0.1.0/README.md).
