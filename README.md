@@ -2,11 +2,11 @@
 
 Offline website environments for reproducible web-agent research with SGR-BENCH.
 
-[中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Coverage and limitations](docs/SCOPE.md) · [Operations](docs/OPERATIONS.md)
+[中文](README.zh-CN.md) · [Releases](https://github.com/Ninggggy/sgr-webenv/releases) · [Features and data](docs/SCOPE.md) · [Operations](docs/OPERATIONS.md)
 
 SGR-WebEnv packages website applications, fixed datasets, and restricted browsers into Docker environments. Researchers can run interactive search, navigation, and data-retrieval workflows locally. After preparation, supported workflows run without contacting the live websites.
 
-The repository covers six websites. Each environment has a documented data and feature scope. These are independent reconstructions, unaffiliated with the original services.
+The repository covers six websites. Each environment has a documented data and feature scope. Each website is reconstructed as a standalone offline environment.
 
 ## Environments
 
@@ -44,7 +44,7 @@ python3 tools/env.py reset cellosaurus --release v0.1.2
 python3 tools/env.py stop cellosaurus --release v0.1.2
 ```
 
-- `verify` checks service health. It does not run benchmark correctness tests.
+- `verify` checks service health.
 - `reset` clears transient website/browser state and downloads, preserving datasets and the arXiv index.
 - `stop` stops the environment and retains its persistent data.
 
@@ -54,11 +54,11 @@ State is stored in `.state/<release>/<site>`; `--state-dir` changes the base dir
 
 ## NOAA: prepare the chart dependency first
 
-NOAA is available through a local source build. **Download ZingChart yourself; it is not included in this repository, the data archive, or a public NOAA image.**
+NOAA is available through a local source build. **Download ZingChart from its official distribution and build the NOAA images locally.**
 
 1. Obtain **ZingChart 2.9.16-1** through the [official download page](https://www.zingchart.com/download) or its linked npm package, under a license appropriate for your use.
 2. Place the complete package contents in `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`, including `es6.js` and `zingchart-es6.min.js`.
-3. Follow the [dependency checks and local build/start commands](environments/noaa/README.md). The current release manifest requires the documented local-image opt-in; the ordinary prebuilt-image quick start above does not apply to NOAA.
+3. Follow the [dependency checks and local build/start commands](environments/noaa/README.md). Use `--local-images` when preparing NOAA with your locally built images.
 
 Once prepared, the chart library is served locally during offline operation. Keep its notices and required branding, and do not redistribute the library or images containing it without the applicable permission. The [license notes](docs/THIRD_PARTY.md) distinguish local use from redistribution.
 

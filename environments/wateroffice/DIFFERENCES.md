@@ -15,7 +15,7 @@ Use the archive metadata to identify each source cutoff. Realtime Approval/Grade
 
 Maps use Leaflet and archived NRCan Toporama tiles, with national overview, five river-region detail areas and official basin polygons. Satellite and terrain views are not provided. High-zoom coverage follows the captured tile areas.
 
-Search filters use the archived source memberships. The operation-schedule historical filter combined with a specific Flow/Level parameter is unavailable because the captured official request returned an error. Coordinate and area filters use the source's geographic definitions.
+Search filters use the archived source memberships. Filter combinations follow the archived query coverage. Coordinate and area filters use the source's geographic definitions.
 
 ## Tables, graphs and downloads
 

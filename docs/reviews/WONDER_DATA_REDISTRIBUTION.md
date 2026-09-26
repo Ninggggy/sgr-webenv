@@ -27,4 +27,4 @@ Small multiplicities are computational inputs. Apply query suppression and relia
 5. Keep project transformations distinct from source data; do not imply CDC endorsement or apply Apache-2.0 to the data.
 6. Review the applicable source terms separately before adding other datasets or using the materials for a different purpose.
 
-These notes summarize the applicable published terms; they do not grant rights beyond those terms or individual CDC permission.
+The linked source terms describe data use and redistribution conditions.

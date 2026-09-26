@@ -5,8 +5,8 @@ System. Original public-use data are available free of charge:
 https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm
 
 This archive is a project-prepared national public-use derivative for statistical
-reporting and analysis. It is not an official CDC WONDER database or query export.
-CDC, NCHS, HHS and the United States Government do not endorse SGR-WebEnv.
+reporting and analysis. Source files and project transformations are documented
+in the accompanying provenance.
 The code's Apache-2.0 license does not relicense these data.
 
 Follow the NCHS Data User Agreement:

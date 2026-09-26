@@ -11,6 +11,6 @@ Data version: NClimDiv 20260904. The webpage, standard downloads and raw fronten
 
 Window aggregates and baseline calculations use rational arithmetic. Standard JSON/CSV/XML round at the indicator precision, with decimal midpoint rounding away from zero and normalized negative zero. Frontend raw values retain the precision expected by the original JavaScript formatter, which uses `Number(parseFloat(num).toFixed(precision))`.
 
-Rank uses a separate quantization and tie path. Displayed values are not sufficient to infer official ranks; local Rank results can differ from the official archive at tie and boundary windows. Do not use those paths as an exact NOAA ranking oracle. `rankStart` and `rankEnd` describe ties, not a tolerance interval for an incorrect rank.
+Rank uses a separate quantization and tie path. Displayed values are not sufficient to infer official ranks; local Rank results can differ from the official archive at tie and boundary windows. `rankStart` and `rankEnd` describe ties, not a tolerance interval for an incorrect rank.
 
 When defining a task, specify the reading channel, units, precision, threshold comparison and operation order. Judge webpage-based calculations using the displayed values; judge download-based calculations using the specified export. If several channels are allowed, define the equivalence rule explicitly.

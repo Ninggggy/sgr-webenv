@@ -2,11 +2,11 @@
 
 面向 SGR-BENCH 与网页智能体研究的可复现离线网站环境。
 
-[English](README.md) · [发布版本](https://github.com/Ninggggy/sgr-webenv/releases) · [覆盖与限制](docs/SCOPE.md) · [操作指南](docs/OPERATIONS.md)
+[English](README.md) · [发布版本](https://github.com/Ninggggy/sgr-webenv/releases) · [功能与数据](docs/SCOPE.md) · [操作指南](docs/OPERATIONS.md)
 
 SGR-WebEnv 将网站应用、固定数据和受限浏览器打包为 Docker 环境，支持在本地开展交互式搜索、页面浏览和数据查询研究。资源准备完成后，已支持的工作流可以离线运行，无需连接原网站。
 
-仓库包含六个网站的独立复现。各环境均有明确的数据与功能范围。本项目与原网站及其运营机构无隶属或背书关系。
+仓库包含六个网站的独立复现。各环境均有明确的数据与功能范围。各网站以独立的离线环境提供。
 
 ## 网站环境
 
@@ -44,7 +44,7 @@ python3 tools/env.py reset cellosaurus --release v0.1.2
 python3 tools/env.py stop cellosaurus --release v0.1.2
 ```
 
-- `verify` 检查服务健康，不执行题目正确性验收。
+- `verify` 检查服务健康。
 - `reset` 清空网站和浏览器的临时状态及下载，保留数据与 arXiv 索引。
 - `stop` 停止环境，保留持久化数据。
 
@@ -54,11 +54,11 @@ python3 tools/env.py stop cellosaurus --release v0.1.2
 
 ## NOAA：先自行准备图表依赖
 
-NOAA 采用本地源码构建方式提供。**ZingChart 需要用户自行下载，仓库和数据包不附带该组件，也不提供包含它的公开 NOAA 镜像。**
+NOAA 采用本地源码构建方式提供。**请从官方渠道自行下载 ZingChart，并在本地构建 NOAA 镜像。**
 
 1. 从 [ZingChart 官方下载页](https://www.zingchart.com/download)或其提供的 npm 渠道获取 **2.9.16-1**，并确保所持许可适用于自己的使用方式。
 2. 将完整包内容放入 `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`，其中应包含 `es6.js` 和 `zingchart-es6.min.js`。
-3. 按 [NOAA 专用说明](environments/noaa/README.md)检查依赖、构建本地镜像并启动。当前发布清单需使用说明中的本地镜像启用参数，不能直接套用上方预构建镜像流程。
+3. 按 [NOAA 专用说明](environments/noaa/README.md)检查依赖、构建本地镜像并启动。准备 NOAA 时使用 `--local-images` 选择本地构建的镜像。
 
 准备完成后，图表库从本地加载，运行时不依赖在线 CDN。保留组件版权声明及许可要求的品牌标识；若要再分发组件或包含它的镜像，应另行确认相应权限。具体见[许可说明](docs/THIRD_PARTY.md)。
 
