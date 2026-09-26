@@ -7,7 +7,7 @@ https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm
 This archive is a project-prepared national public-use derivative for statistical
 reporting and analysis. Source files and project transformations are documented
 in the accompanying provenance.
-The code's Apache-2.0 license does not relicense these data.
+The data retain their NCHS use conditions.
 
 Follow the NCHS Data User Agreement:
 https://www.cdc.gov/nchs/policy/data-user-agreement.html
@@ -18,7 +18,7 @@ attribution in redistributed copies.
 
 The SQLite files contain selected public-use fields grouped with multiplicities
 and original death weights. Counts may be small; the files are computational
-inputs, not publication-ready small-cell tables. The website retains suppression
+inputs for the query and export layer. The website retains suppression
 of 1–9 birth/death counts and associated rates, along with additional protections.
 Do not weaken those protections or publish restricted small-cell query results:
 https://wonder.cdc.gov/datause.html

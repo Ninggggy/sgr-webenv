@@ -8,7 +8,7 @@ When a selected cause category is suppressed, a displayed ancestor in the same g
 
 Birth denominators are hidden on protected death rows. Overlapping cause categories are not combined into a total. The cause and leading-cause displays use their corresponding aggregation rules; see [query coverage](../environments/wonder/COVERAGE.md).
 
-The additional ancestor and denominator protections are intentional local display rules. Refer to the [official linked-data help](https://wonder.cdc.gov/wonder/help/lbd-expanded.html) for source definitions and to the [data-use notice](../environments/wonder/licenses/DATA_USE_NOTICE.md) for applicable conditions.
+The display applies ancestor and denominator protection consistently across query results and exports. Refer to the [official linked-data help](https://wonder.cdc.gov/wonder/help/lbd-expanded.html) for source definitions and to the [data-use notice](../environments/wonder/licenses/DATA_USE_NOTICE.md) for applicable conditions.
 
 ## Running boundary tests
 

@@ -4,7 +4,7 @@ Install NOAA by **downloading ZingChart from its official distribution and build
 
 ## 1. Download the dependency yourself
 
-Use the [official ZingChart download page](https://www.zingchart.com/download), which also links to the npm package. The required package version is **2.9.16-1**; the archived library is identified internally as **2.9.16-hf1**. Do not substitute an unpinned latest version.
+Use the [official ZingChart download page](https://www.zingchart.com/download), which also links to the npm package. The required package version is **2.9.16-1**; the archived library is identified internally as **2.9.16-hf1**. Use this version for the local build.
 
 Use ZingChart under the [applicable license terms](https://www.zingchart.com/pricing/branded-license), retaining the required branding and notices. Distribution in installable software products requires the applicable OEM permission; see [third-party terms](../../docs/THIRD_PARTY.md).
 
@@ -22,7 +22,7 @@ tar -xzf .state/noaa-dependency/zingchart-2.9.16-1.tgz \
   -C environments/noaa/app/static/cag/assets/zingchart-2.9.16-1
 ```
 
-Alternatively download through the official page and place the package contents in the same directory. Keep the full package and its embedded notices. The directory is ignored by Git; do not force-add it, commit license keys, or upload the downloaded package to this repository or its Releases.
+Alternatively download through the official page and place the package contents in the same directory. Keep the full package and its embedded notices. Store the package and any license keys locally; the dependency directory is excluded from Git.
 
 ## 2. Check the files and build locally
 

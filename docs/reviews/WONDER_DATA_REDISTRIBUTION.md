@@ -16,7 +16,7 @@ The sixteen SQLite files represent Natality 2016â€“2024 and Period Linked 2017â€
 
 The 2021 Natality derivative uses the same-year public linked birth denominator and its birthweight imputation flag. See [source definitions](../../environments/wonder/SOURCES.md). Project recodings and grouped representations are adaptations rather than an unchanged official CDC database.
 
-Small multiplicities are computational inputs. Apply query suppression and reliability rules when displaying or exporting statistics; raw runtime tables are not publication-ready small-cell tables.
+Small multiplicities are computational inputs. Apply query suppression and reliability rules when displaying or exporting statistics; the query and export layer produces protected statistical tables.
 
 ## Conditions for use and redistribution
 

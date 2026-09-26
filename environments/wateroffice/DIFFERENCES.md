@@ -13,7 +13,7 @@ Station pages show source-provided Approval, Grade and Qualifiers. Dates, graphs
 
 ## Maps and search
 
-Maps use Leaflet and archived NRCan Toporama tiles, with national overview, five river-region detail areas and official basin polygons. Satellite and terrain views are not provided. High-zoom coverage follows the captured tile areas.
+Maps use Leaflet and archived NRCan Toporama tiles, with national overview, five river-region detail areas and official basin polygons. Zoom levels follow the archived Toporama tiles.
 
 Search filters use the archived source memberships. Filter combinations follow the archived query coverage. Coordinate and area filters use the source's geographic definitions.
 
@@ -21,7 +21,7 @@ Search filters use the archived source memberships. Filter combinations follow t
 
 Historical workflows include daily, monthly and annual extreme values, statistics, datum pages and remarks. Realtime graphs can combine unit water level and discharge on dual axes; daily means are separate series.
 
-Downloads contain the full selected set rather than only the displayed page. Empty map filters export a header-only file. URL state restores graph/table/download parameters across refresh, copied links and browser history. This history behavior is a local adaptation.
+Downloads contain the full selected set rather than only the displayed page. Empty map filters export a header-only file. URL state restores graph/table/download parameters across refresh, copied links and browser history.
 
 ## Session lists and operation
 

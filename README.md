@@ -60,7 +60,7 @@ NOAA is available through a local source build. **Download ZingChart from its of
 2. Place the complete package contents in `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`, including `es6.js` and `zingchart-es6.min.js`.
 3. Follow the [dependency checks and local build/start commands](environments/noaa/README.md). Use `--local-images` when preparing NOAA with your locally built images.
 
-Once prepared, the chart library is served locally during offline operation. Keep its notices and required branding, and do not redistribute the library or images containing it without the applicable permission. The [license notes](docs/THIRD_PARTY.md) distinguish local use from redistribution.
+Once prepared, the chart library is served locally during offline operation. Retain the required notices and branding. For redistribution, follow the [component license terms](docs/THIRD_PARTY.md).
 
 ## Source, data, and images
 
@@ -80,7 +80,7 @@ python3 tools/env.py prepare cellosaurus --release v0.1.3 \
   --local-images --data-archive /path/to/cellosaurus-data-v0.1.2.tar.gz
 ```
 
-Builds require online access to upstream dependencies. Runtime uses the prepared local resources. arXiv retains Elasticsearch 6.2.4 and its ICU configuration for compatibility; keep these research environments local or isolated rather than exposing them as public services.
+Builds require online access to upstream dependencies. Runtime uses the prepared local resources. arXiv retains Elasticsearch 6.2.4 and its ICU configuration for compatibility; run these research environments on a local or isolated network.
 
 ## Licenses and citation
 

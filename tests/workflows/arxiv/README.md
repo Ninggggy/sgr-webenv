@@ -23,8 +23,7 @@ python3 tests/workflows/arxiv/replay.py \
 This author-side script reads the eight records from `benchmark/`; none are
 copied into a runtime container. It enumerates every result page, checks all
 candidate detail pages, and compares required visible fields against those
-existing records. It is an information-access regression, not an independent
-semantic adjudication or autonomous model score. The search intentionally uses
+existing records. It checks access to the information required by each task. The search intentionally uses
 an inclusive superset around UTC date boundaries; source-based task adjudication
 must apply the exact rubric afterward.
 
@@ -43,12 +42,11 @@ python3 tests/workflows/arxiv/export_browser_evidence.py --container sgr-arxiv-v
 python3 tests/workflows/arxiv/exploration.py --container sgr-arxiv-v0-1-0_browser_1 --output /path/to/evidence/exploration.json
 ```
 
-These scripts check rendering and resource availability, not search relevance.
+These scripts check rendering and resource availability.
 The background IDs are listed in `background_ids.json`. Reset the
 browser before long independent batches or export evidence between batches.
 
 `boolean_search.py` can be passed through `docker exec -i <web-container>
 python3 -` in the same way as `http_scope.py`. It exhausts pagination for two
 ordinary terms over a fixed month and verifies AND/intersection, OR/union and
-NOT/difference. This is a search-algebra consistency check, not an independent
-relevance oracle or a replacement for source-based task adjudication.
+NOT/difference. This checks the consistency of search set operations.

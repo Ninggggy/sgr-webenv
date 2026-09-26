@@ -60,7 +60,7 @@ NOAA 采用本地源码构建方式提供。**请从官方渠道自行下载 Zin
 2. 将完整包内容放入 `environments/noaa/app/static/cag/assets/zingchart-2.9.16-1/`，其中应包含 `es6.js` 和 `zingchart-es6.min.js`。
 3. 按 [NOAA 专用说明](environments/noaa/README.md)检查依赖、构建本地镜像并启动。准备 NOAA 时使用 `--local-images` 选择本地构建的镜像。
 
-准备完成后，图表库从本地加载，运行时不依赖在线 CDN。保留组件版权声明及许可要求的品牌标识；若要再分发组件或包含它的镜像，应另行确认相应权限。具体见[许可说明](docs/THIRD_PARTY.md)。
+准备完成后，图表库从本地加载，运行时不依赖在线 CDN。保留组件版权声明和品牌标识，再分发按[组件许可条款](docs/THIRD_PARTY.md)办理。
 
 ## 源码、数据与镜像
 
@@ -80,7 +80,7 @@ python3 tools/env.py prepare cellosaurus --release v0.1.3 \
   --local-images --data-archive /path/to/cellosaurus-data-v0.1.2.tar.gz
 ```
 
-构建阶段需要联网获取上游依赖，运行阶段使用已准备好的本地资源。arXiv 为保持查询兼容性，保留 Elasticsearch 6.2.4 及对应 ICU 配置；这些研究环境应在本地或隔离网络中使用，不应直接作为公共服务开放。
+构建阶段需要联网获取上游依赖，运行阶段使用已准备好的本地资源。arXiv 为保持查询兼容性，保留 Elasticsearch 6.2.4 及对应 ICU 配置；请在本地或隔离网络中运行这些研究环境。
 
 ## 许可与引用
 

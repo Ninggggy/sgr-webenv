@@ -1,7 +1,6 @@
 # Author-side Census regression
 
-These scripts are excluded from runtime images and mounts. They are deterministic
-workflow checks, not autonomous-model scores.
+Run these deterministic workflow checks in a separate test environment.
 
 `customization.cjs` runs in a dedicated browser test container with the same
 Chromium sandbox and network policy. Do not launch it beside an already running
@@ -20,8 +19,6 @@ in `benchmark/`. It takes a directory containing the 25 `YYYY-TABLE.zip` exports
 ```sh
 python3 tests/workflows/census/verify_legacy.py /path/to/legacy-table-exports
 ```
-
-No private server location or precomputed answer API is used.
 
 `export_legacy.cjs` performs the 25 normal table ZIP downloads used by
 `verify_legacy.py`. In a dedicated author browser container using the same
