@@ -1,6 +1,6 @@
 {
   "release": "v0.1.3",
-  "status": "candidate",
+  "status": "released",
   "repository": "Ninggggy/sgr-webenv",
   "platform": "linux/amd64",
   "environments": {
@@ -179,7 +179,7 @@
       ],
       "distribution_status": "ready",
       "data_redistribution": "Environment Canada attributed non-resale hydrometric data; NRCan basemap OGL-Canada",
-      "acceptance": "483 upgraded stations verified; 41 legacy information checks, 29 workflows, source and export comparisons passed. Final image/install acceptance is pending; see Wateroffice validation report.",
+      "acceptance": "483 upgraded stations verified; 41 legacy information checks (ten CG/GO records), 29 workflows, 24 responsive/monthly checks, 132 export comparisons, 12+30 source-station checks, 13 isolation/reset checks, fresh package extraction and public image pulls passed. See reports/wateroffice-0.1.0.",
       "data_archive_status": "release-v0.1.3",
       "required_files": [
         "Hydat.sqlite3",
